@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-BUR-05",
+  "raw_query": "Should you put butter or oil on a burn?",
+  "normalized_query": "Should you put butter or oil on a burn? (burns scalds cold water cool running water blister first aid)",
+  "language_category": "English",
+  "expected_source_id": "DOC-NHS-005",
+  "gold_chunk_ids": [
+    "DOC-NHS-005-HYB-001"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 550.0,
+  "dense_rank": 2,
+  "dense_r15": true,
+  "rerank_rank": 2,
+  "in_top5": true,
+  "is_top1": false,
+  "gold_rerank_score": 0.6589254140853882,
+  "rank1_chunk_id": "DOC-NHS-005-HYB-004",
+  "rank1_source_id": "DOC-NHS-005",
+  "rank1_heading": "",
+  "rank1_length": 373,
+  "rank1_score": 0.8531039953231812,
+  "score_margin_vs_gold": 0.19417858123779297,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "SAME_DOC_SUBSTANTIVE_SECTION_COMPETITION",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-005-HYB-004",
+    "DOC-NHS-005-HYB-001",
+    "DOC-NHS-005-HYB-003",
+    "DOC-NHS-005-HYB-000",
+    "DOC-NHS-005-HYB-002"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-005-HYB-004",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.8531039953231812,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-005-HYB-001",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.6589254140853882,
+      "is_gold": true
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-005-HYB-003",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.034687381237745285,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-005-HYB-000",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.015076645743101835,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-005-HYB-002",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.011297369375824928,
+      "is_gold": false
+    }
+  ]
+}

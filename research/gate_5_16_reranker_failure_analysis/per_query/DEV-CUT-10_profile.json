@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-CUT-10",
+  "raw_query": "rokto konovabei thamtasena 10 min hoise a&e jabo?",
+  "normalized_query": "rokto konovabei thamtasena 10 min hoise a&e jabo? (cuts grazes bleeding pressure clean dressing wound)",
+  "language_category": "Abbreviated_Banglish",
+  "expected_source_id": "DOC-NHS-006",
+  "gold_chunk_ids": [
+    "DOC-NHS-006-HYB-002"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 620.0,
+  "dense_rank": 2,
+  "dense_r15": true,
+  "rerank_rank": 4,
+  "in_top5": true,
+  "is_top1": false,
+  "gold_rerank_score": 0.01055647898465395,
+  "rank1_chunk_id": "DOC-NHS-006-HYB-003",
+  "rank1_source_id": "DOC-NHS-006",
+  "rank1_heading": "",
+  "rank1_length": 618,
+  "rank1_score": 0.03869372233748436,
+  "score_margin_vs_gold": 0.02813724335283041,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "SAME_DOC_SUBSTANTIVE_SECTION_COMPETITION",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-006-HYB-003",
+    "DOC-NHS-006-HYB-006",
+    "DOC-NHS-004-HYB-004",
+    "DOC-NHS-006-HYB-002",
+    "DOC-NHS-006-HYB-004"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-006-HYB-003",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.03869372233748436,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-006-HYB-006",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.021412568166851997,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-004-HYB-004",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.01999511569738388,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-006-HYB-002",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.01055647898465395,
+      "is_gold": true
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-006-HYB-004",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.007667590398341417,
+      "is_gold": false
+    }
+  ]
+}

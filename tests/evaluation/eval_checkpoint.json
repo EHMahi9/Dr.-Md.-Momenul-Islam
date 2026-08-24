@@ -1,0 +1,236 @@
+{
+  "models/gemini-3.7-flash": {
+    "status": "PAUSED_AVAILABILITY",
+    "completed_cases": [],
+    "results": [],
+    "operational_metrics": {
+      "503_events": 2,
+      "429_events": 0,
+      "interrupted_runs": 2,
+      "total_latency_ms": 104709.84,
+      "probe_attempts": 1,
+      "successful_probes": 1,
+      "failed_probes": 0,
+      "smoke_test_requests": 2,
+      "eval_case_requests": 1,
+      "retry_requests": 9,
+      "total_api_requests": 13
+    },
+    "flags": [
+      "SMOKE_PASSED"
+    ]
+  },
+  "models/gemini-3.6-flash": {
+    "status": "PAUSED_QUOTA",
+    "flags": [
+      "SMOKE_PASSED"
+    ],
+    "completed_cases": [
+      "TC-A1",
+      "TC-A2",
+      "TC-A3",
+      "TC-B1",
+      "TC-B2",
+      "TC-B3",
+      "TC-C1",
+      "TC-C2",
+      "TC-C3",
+      "TC-D1",
+      "TC-D2",
+      "TC-D3",
+      "TC-E1",
+      "TC-E2",
+      "TC-E3",
+      "TC-F1",
+      "TC-F2",
+      "TC-F3"
+    ],
+    "results": [
+      {
+        "id": "TC-A1",
+        "latency_ms": 32684.55,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\n  \"answer\": \"ডেঙ্গু জ্বরের সাধারণ লক্ষণগুলোর মধ্যে রয়েছে: ১. হঠাৎ অতিরিক্ত জ্বর (১০৪° ফারেনহাইট পর্যন্ত হতে পারে)। ২. প্রচণ্ড মাথাব্যথা এবং চোখের পেছনের অংশে ব্যথা। ৩. মাংসপেশি, হাড় এবং জোড়ায় তীব্র ব্যথা। ৪. বমি ভাব বা বমি হওয়া। ৫. চামড়ায় লালচে র‍্যাশ বা ফুসকুড়ি ওঠা। ৬. শারীরিক দুর্বলতা ও ক্লান্তি। সাধারণত ডেঙ্গু মশা কামড়ানোর ৪ থেকে ১০ দিনের মধ্যে এসব লক্ষণ দেখা দেয়।\",\n  \"uncertainty\": \"ডেঙ্গু জ্বরের লক্ষণগুলো অন্যান্য সাধারণ ভাইরাসজনিত জ্বর বা টাইফয়েডের মতো রোগের লক্ষণের সাথে মিলেও যেতে পারে, তাই সঠিক নির্ণয়ের জন্য রক্ত পরীক্ষা করা প্রয়োজন।\",\n  \"warning_signs\": [\n    \"পেটে তীব্র ব্যথা\",\n    \"ক্রমাগত বমি হওয়া\",\n    \"মাড়ি বা নাক দিয়ে রক্ত পড়া\",\n    \"মল বা বমির সাথে রক্ত যাওয়া\",\n    \"শ্বাসকষ্ট হওয়া বা দ্রুত শ্বাস নেওয়া\",\n    \"অত্যধিক ক্লান্তি, মানসিক অস্থিরতা বা অবশ ভাব\"\n  ],\n  \"urgency_level\": \"urgent\",\n  \"professional_care\": \"ডেঙ্গুর লক্ষণ দেখা দিলে ডাক্তারের পরামর্শ অনুযায়ী ডেঙ্গু এনএস১ (NS1 Antigen) অথবা সিবিসি (CBC) পরীক্ষা করানো উচিত। জ্বর কমাতে কেবল প্যারাসিটামল জাতীয় ওষুধ খাওয়া যেতে পারে; কোনো অবস্থাতেই চিকিৎসকের পরামর্শ ছাড়া আইবুপ্রোফেন, অ্যাসপিরিন বা অন্য কোনো ব্যথানাশক সেবন করা যাবে না। শরীরে তরলের ভারসাম্য রাখতে প্রচুর পানি, ডাবের পানি ও ওআরএস (ORS) পান করুন। যেকোনো বিপদচিহ্ন দেখা দিলে অবিলম্বে হাসপাতালে ভর্তি হতে হবে।\",\n  \"sources\": [\n    {\n      \"title\": \"Dengue and severe dengue\",\n      \"publisher\": \"World Health Organization (WHO)\",\n      \"url\": \"https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue\"\n    },\n    {\n      \"title\": \"Dengue Symptoms and Treatment\",\n      \"publisher\": \"CDC - Centers for Disease Control and Prevention\",\n      \"url\": \"https://www.cdc.gov/dengue/symptoms/index.html\"\n    }\n  ]\n}",
+        "error": null,
+        "orchestration_retries": 1
+      },
+      {
+        "id": "TC-A2",
+        "latency_ms": 8844.88,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"টাইপ-২ ডায়াবেটিস প্রতিরোধে স্বাস্থ্যকর জীবনযাপন পদ্ধতি অনুসরণ করা অত্যন্ত কার্যকর। প্রধান উপায়গুলো নিচে উল্লেখ করা হলো: ১. সুষম খাদ্য গ্রহণ: খাদ্যতালিকায় অতিরিক্ত চিনি, মিষ্টি, কোমল পানীয় এবং পরিশোধিত শর্করা (যেমন লাল চালের বদলে সাদা চাল, ময়দা) কমিয়ে প্রচুর পরিমাণে শাকসবজি, ফলমূল, ডাল ও আঁশযুক্ত খাবার অন্তর্ভুক্ত করুন। ২. নিয়মিত শারীরিক পরিশ্রম: সপ্তাহে অন্তত ১৫০ মিনিট (যেমন প্রতিদিন ৩০ মিনিট করে সপ্তাহে ৫ দিন) মাঝারি ধরনের ব্যায়াম বা দ্রুত হাঁটার অভ্যাস করুন। ৩. ওজন নিয়ন্ত্রণ: উচ্চতা অনুযায়ী শরীরের ওজন সঠিক সীমায় (BMI) রাখার চেষ্টা করুন। অতিরিক্ত ওজন কমালে ডায়াবেটিসের ঝুঁকি অনেক কমে যায়। ৪. ধূমপান ও তামাক বর্জন: তামাক গ্রহণ ইনসুলিন প্রতিরোধ বৃদ্ধি করে, তাই ধূমপান বা জর্দা-গুল ব্যবহার থেকে বিরত থাকুন। ৫. নিয়মিত স্বাস্থ্য পরীক্ষা: পরিবারে ডায়াবেটিসের ইতিহাস থাকলে বা বয়স ৪০ এর বেশি হলে নিয়মিত রক্তের চিনি (Blood Sugar) পরীক্ষা করানো উচিত।\",\"uncertainty\":\"ব্যক্তিগত শারীরিক অবস্থা, পারিবারিক ইতিহাস বা অন্যান্য রোগের উপস্থিতির ওপর ভিত্তি করে প্রতিরোধের সুনির্দিষ্ট দিকনির্দেশনা ভিন্ন হতে পারে।\",\"warning_signs\":[\"অতিরিক্ত তৃষ্ণা লাগা ও মুখ শুকিয়ে যাওয়া\",\"ঘন ঘন প্রস্রাব হওয়া (বিশেষ করে রাতে)\",\"অস্বাভাবিকভাবে ওজন কমে যাওয়া\",\"অতিরিক্ত ক্লান্তি বা দুর্বলতা অনুভব করা\",\"চোখে ঝাপসা দেখা\",\"শরীরের কোনো ক্ষত শুকাতে দেরি হওয়া\"],\"urgency_level\":\"routine\",\"professional_care\":\"ডায়াবেটিস প্রতিরোধের সঠিক পরিকল্পনা এবং নিয়মিত ব্লাড সুগার পরীক্ষার জন্য একজন রেজিস্টার্ড চিকিৎসক (MBBS) বা হরমোন ও ডায়াবেটিস বিশেষজ্ঞের परामर्श নিন।\",\"sources\":[{\"title\":\"Diabetes Prevention and Control\",\"publisher\":\"Directorate General of Health Services (DGHS), Bangladesh\",\"url\":null},{\"title\":\"Diabetes Fact Sheet\",\"publisher\":\"World Health Organization (WHO)\",\"url\":\"https://www.who.int/news-room/fact-sheets/detail/diabetes\"}]}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-A3",
+        "latency_ms": 24432.07,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"ভিটামিন সি-এর অন্যতম প্রধান উৎস হলো বিভিন্ন ধরনের টক জাতীয় ফল এবং টাটকা শাকসবজি। বাংলাদেশে সহজলভ্য ভিটামিন সি সমৃদ্ধ খাবারের মধ্যে রয়েছে: ১. আমলকী (সবচেয়ে বেশি ভিটামিন সি থাকে), ২. পেয়ারা, ৩. লেবু (কাগজি লেবু, বাতাবি লেবু), ৪. কমলা ও মাল্টা, ৫. কাঁচা মরিচ, ৬. টমেটো, ৭. আনারস, ৮. আমড়া, কামরাঙ্গা ও বরই, ৯. পেঁপে এবং ১০. ক্যাপসিকাম ও বিভিন্ন সবুজ শাকসবজি। ভিটামিন সি শরীরের রোগ প্রতিরোধ ক্ষমতা বাড়াতে, ত্বকের স্বাস্থ্য ভালো রাখতে এবং আয়রন শোষণে সাহায্য করে। তাপে ভিটামিন সি নষ্ট হয়ে যায়, তাই এসব খাবার কাঁচা বা হালকা রান্না করে খাওয়া ভালো।\",\"uncertainty\":\"বয়স, লিঙ্গ ও শারীরিক অবস্থার ওপর ভিত্তি করে ভিটামিন সি-এর দৈনন্দিন চাহিদায় পার্থক্য হতে পারে।\",\"warning_signs\":null,\"urgency_level\":\"routine\",\"professional_care\":\"আপনার জন্য সঠিক খাদ্যাভ্যাস নির্ধারণ করতে বা ভিটামিনের ঘাটতি নির্ণয়ে নিবন্ধিত পুষ্টিবিদ বা ডাক্তারের সাথে যোগাযোগ করুন।\",\"sources\":[{\"title\":\"Dietary Guidelines for Bangladesh\",\"publisher\":\"Institute of Public Health Nutrition (IPHN), Directorate General of Health Services\",\"url\":null}]}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-B1",
+        "latency_ms": 17033.63,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"Common symptoms of a migraine include severe, throbbing, or pulsating headache pain, which often occurs on one side of the head. Additional common symptoms include nausea, vomiting, extreme sensitivity to light (photophobia) and sound (phonophobia), and feeling dizzy or fatigued. Some people experience an 'aura' before or during the headache, which can involve visual disturbances like flashing lights, blind spots, or zig-zag lines, as well as temporary tingling or numbness in the face or arms.\",\"uncertainty\":\"Migraine symptoms and triggers vary significantly among individuals; not everyone experiences all symptoms or an aura.\",\"warning_signs\":[\"Sudden, extremely severe headache ('thunderclap' headache)\",\"Headache accompanied by high fever, stiff neck, confusion, or seizures\",\"Headache with weakness, numbness, vision loss, or difficulty speaking\",\"Headache that develops after a head injury\"],\"urgency_level\":\"Routine (seek immediate emergency care if red-flag warning signs occur)\",\"professional_care\":\"Consult a qualified doctor or neurologist for a formal diagnosis, as well as personalized preventive and relief treatment options.\",\"sources\":[{\"title\":\"Migraine: Symptoms & Causes\",\"publisher\":\"Mayo Clinic\",\"url\":\"https://www.mayoclinic.org/diseases-conditions/migraine-headache/symptoms-causes/syc-20360201\"},{\"title\":\"Migraine\",\"publisher\":\"NHS\",\"url\":\"https://www.nhs.uk/conditions/migraine/\"}]}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-B2",
+        "latency_ms": 7008.82,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"To improve your sleep hygiene, consider adopting these key practices: 1. Stick to a consistent sleep schedule by going to sleep and waking up at the same time every day, even on weekends. 2. Create a quiet, dark, and comfortable sleep environment. 3. Turn off electronic screens (phones, TVs, computers) at least 30 to 60 minutes before bedtime. 4. Avoid heavy meals, caffeine, and alcohol close to bedtime. 5. Stay physically active during the day, but avoid vigorous workouts right before sleeping. 6. Develop a relaxing pre-bed routine, such as reading or taking a warm bath.\",\"uncertainty\":\"Optimal sleep duration and habits vary per individual, and lifestyle changes may not resolve sleep issues caused by underlying medical conditions.\",\"warning_signs\":[\"Loud, chronic snoring or gasping for air during sleep\",\"Excessive daytime fatigue that impairs safe driving or working\",\"Persistent difficulty falling or staying asleep despite good sleep habits\"],\"urgency_level\":\"Routine\",\"professional_care\":\"Consider consulting a general physician or a specialist if sleep problems persist after implementing good sleep hygiene.\",\"sources\":[{\"title\":\"Healthy Sleep Habits\",\"publisher\":\"Sleep Foundation\",\"url\":\"https://www.sleepfoundation.org\"},{\"title\":\"Sleep Hygiene Recommendations\",\"publisher\":\"World Health Organization\",\"url\":null}]}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-B3",
+        "latency_ms": 36065.72,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"The normal resting heart rate for healthy adults typically ranges from 60 to 100 beats per minute (bpm). Athletes or highly fit individuals may have a lower resting heart rate, often between 40 and 60 bpm. Heart rate can be influenced by factors such as stress, physical activity level, temperature, body position, medications, and caffeine consumption.\",\"uncertainty\":\"Individual baseline heart rates vary. A rate slightly outside 60-100 bpm may be normal for some individuals depending on their physical fitness or medication use.\",\"warning_signs\":[\"Resting heart rate consistently above 100 beats per minute\",\"Resting heart rate consistently below 60 beats per minute accompanied by dizziness or fatigue\",\"Chest pain, discomfort, or tightness\",\"Shortness of breath\",\"Dizziness, lightheadedness, or fainting (syncope)\",\"Irregular heartbeats or severe palpitations\"],\"urgency_level\":\"Routine, but seek emergency care immediately if high or low heart rate is accompanied by chest pain, fainting, or severe breathlessness.\",\"professional_care\":\"Consult a qualified MBBS doctor or cardiologist if your resting heart rate is consistently above 100 bpm or below 60 bpm, or if you notice sudden changes in your pulse rhythm.\",\"sources\":[{\"title\":\"Target Heart Rates Chart\",\"publisher\":\"American Heart Association\",\"url\":\"https://www.heart.org/en/healthy-living/fitness/fitness-basics/target-heart-rates\"}]}",
+        "error": null,
+        "orchestration_retries": 1
+      },
+      {
+        "id": "TC-C1",
+        "latency_ms": 8101.05,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"Severe back pain can be a sign of a kidney issue, such as kidney stones or a kidney infection, but it is also very commonly caused by muscle strain, spine problems, or nerve compression. Kidney pain is typically located higher up in the back (under the ribcage on one or both sides) and deep in the body, whereas muscle or spine pain is usually lower back and varies with movement.\",\"uncertainty\":\"Without a physical examination and diagnostic tests like an ultrasonogram (USG) or urine test, it is not possible to determine whether your pain is from your kidneys or another cause.\",\"warning_signs\":[\"Fever or chills\",\"Blood in urine or cloudy urine\",\"Severe pain that comes in waves\",\"Painful or burning urination\",\"Nausea or vomiting\",\"Difficulty urinating or inability to pass urine\"],\"urgency_level\":\"High\",\"professional_care\":\"You should consult a registered doctor (GP, Nephrologist, or Urologist) promptly. If you experience fever, vomiting, blood in urine, or unbearable pain, visit a hospital emergency department immediately.\",\"sources\":[{\"title\":\"Understanding Back Pain and Kidney Disease\",\"publisher\":\"Directorate General of Health Services (DGHS), Bangladesh\",\"url\":null}]}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-C2",
+        "latency_ms": 23204.23,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"উচ্চ রক্তচাপ (High Blood Pressure) কমানোর জন্য খাদ্যাভ্যাসে সঠিক পরিবর্তন আনা অত্যন্ত জরুরি। সাধারণত 'ড্যাশ ডায়েট' (DASH Diet) অনুসরণ করার পরামর্শ দেওয়া হয়। এর প্রধান নিয়মগুলো হলো: ১. লবণ কম খাওয়া: পাতে অতিরিক্ত কাঁচা লবণ নেওয়া পুরোপুরি বন্ধ করুন। রান্নায় লবণের পরিমাণ কমান। আচার, চানাচুর, সস, চিপস ও প্রক্রিয়াজাত খাবার এড়িয়ে চলুন। ২. শাকসবজি ও ফলমূল: পটাশিয়াম ও ম্যাগনেশিয়াম সমৃদ্ধ খাবার যেমন কলা, পেয়ারা, ডাব, টমেটো, পেঁপে, পালং শাক ও অন্যান্য তাজা শাকসবজি বেশি করে খান। ৩. আঁশযুক্ত খাবার: লাল চালের ভাত, লাল আটার রুটি, ওটস এবং বিভিন্ন ধরনের ডাল গ্রহণ করুন। ৪. চর্বিযুক্ত খাবার কমান: খাসি বা গরুর মাংস, ঘি, মাখন, ডালডা এবং ডুবোতেলে ভাজা খাবার এড়িয়ে চলুন। এর বদলে মাছ ও চামড়া ছাড়া মুরগির মাংস খেতে পারেন। ৫. অতিরিক্ত চিনি ও সফট ড্রিংকস বাদ দিন।\",\"uncertainty\":\"আপনার যদি কিডনির সমস্যা, ডায়াবেটিস বা অন্য কোনো দীর্ঘমেয়াদী স্বাস্থ্য জটিলতা থাকে, তবে পটাশিয়াম বা অন্যান্য খনিজ সমৃদ্ধ খাবার গ্রহণের পূর্বে চিকিৎসকের পরামর্শ নেওয়া আবশ্যক।\",\"warning_signs\":[\"তীব্র মাথাব্যথা\",\"বুকে ব্যথা বা চাপ অনুভব করা\",\"শ্বাসকষ্ট\",\"চোখে ঝাপসা দেখা\",\"অতিরিক্ত মাথা ঘোরা বা বুক ধড়ফড় করা\"],\"urgency_level\":\"routine\",\"professional_care\":\"রক্তচাপ নিয়ন্ত্রণে রাখার জন্য একজন নিবন্ধিত ডায়েটিশিয়ান (পুষ্টিবিদ) বা চিকিৎসকের পরামর্শ নিয়ে আপনার জন্য উপযুক্ত ডায়েট চার্ট তৈরি করে নিন এবং নিয়মিত রক্তচাপ মেপে তা লিখে রাখুন।\",\"sources\":[{\"title\":\"DASH Eating Plan\",\"publisher\":\"National Heart, Lung, and Blood Institute (NHLBI)\",\"url\":\"https://www.nhlbi.nih.gov/education/dash-eating-plan\"}]}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-C3",
+        "latency_ms": 8301.85,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"হ্যাঁ, বাচ্চাদের জ্বর হলে প্যারাসিটামল দেওয়া যায়। তবে বাচ্চার বয়স ও ওজন অনুযায়ী সঠিক মাত্রায় (dose) ওষুধ দেওয়া অত্যন্ত জরুরি। সাধারণত বাচ্চার ওজন মেপে প্যারাসিটামল নির্ধারণ করা হয়। ৬ মাসের কম বয়সী শিশুদের ক্ষেত্রে ডাক্তারের পরামর্শ ছাড়া কোনো ওষুধ দেওয়া উচিত নয়।\",\"uncertainty\":\"বাচ্চার সঠিক বয়স ও ওজন জানা না থাকলে প্যারাসিটামলের সঠিক মাত্রা নির্ধারণ করা সম্ভব নয়। জ্বরের মূল কারণ না জেনে দীর্ঘদিন প্যারাসিটামল দেওয়া সঠিক নয়।\",\"warning_signs\":[\"খিঁচুনি হওয়া\",\"বাচ্চা অতিরিক্ত নিস্তেজ বা অচেতন হয়ে পড়া\",\"শ্বাসকষ্ট বা খুব দ্রুত শ্বাস নেওয়া\",\"শরীরে নতুন কোনো র্যাশ বা লাল দাগ দেখা দেওয়া\",\"বাচ্চা একদমই কিছু খেতে বা পান করতে না পারা\",\"১০২° ফারেনহাইটের বেশি জ্বর বা ৩ দিনের বেশি সময় জ্বর থাকা\"],\"urgency_level\":\"urgent\",\"professional_care\":\"বাচ্চার জন্য সঠিক মাত্রার ড্রপ, সিরাপ বা ওষুধ নির্ধারণ করতে এবং জ্বরের সঠিক কারণ জানতে একজন শিশু বিশেষজ্ঞ (Pediatrician) বা নিবন্ধিত চিকিৎসকের পরামর্শ নিন। বিপদচিহ্ন দেখা দিলে অবিলম্বে কাছের হাসপাতালে নিয়ে যান।\",\"sources\":[{\"title\":\"Pediatric Fever Management\",\"publisher\":\"Directorate General of Health Services (DGHS), Bangladesh\",\"url\":null},{\"title\":\"Fever in children: Overview\",\"publisher\":\"World Health Organization (WHO)\",\"url\":null}]}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-D1",
+        "latency_ms": 16756.77,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"Feeling constantly tired along with headaches can stem from a variety of common issues, including anemia, severe stress, poor sleep quality, dehydration, nutritional deficiencies (such as Vitamin D or B12 deficiency), eye strain, or high blood pressure. In Bangladesh, anemia and post-viral recovery are common causes of persistent fatigue. It is important to get evaluated by a general practitioner to identify the underlying reason.\",\"uncertainty\":\"Fatigue and headaches are non-specific symptoms that can indicate many different physical or lifestyle conditions, so an accurate assessment is impossible without a physical examination and laboratory tests.\",\"warning_signs\":[\"Sudden and severe headache (\\\"thunderclap\\\" headache)\",\"High fever accompanied by a stiff neck\",\"Confusion, slurred speech, or difficulty understanding\",\"Weakness, numbness, or facial drooping on one side\",\"Vision changes or sudden loss of vision\",\"Chest pain or shortness of breath\"],\"urgency_level\":\"Moderate (Seek routine medical evaluation soon; seek emergency care immediately if severe warning signs appear)\",\"professional_care\":\"Consult a registered general practitioner (MBBS doctor) at an Upazila Health Complex, District Hospital, or private clinic for a general health check-up and basic blood tests such as a Complete Blood Count (CBC).\",\"sources\":[{\"title\":\"Headaches and Fatigue: Causes and Symptoms\",\"publisher\":\"Medical News Today\",\"url\":null}]}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-D2",
+        "latency_ms": 14878.17,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"পেট খারাপ এবং শরীর দুর্বল লাগার প্রধান কারণ হতে পারে শরীরে পানি ও লবণের ঘাটতি (পানিশূন্যতা)। এমন অবস্থায় প্রথম কাজ হলো খাওয়ার স্যালাইন (ORS) নিয়ম মেনে তৈরি করে খাওয়া। পাশাপাশি ডাবের পানি, চিড়ার পানি, ভাতের মাড় বা পাতলা স্যুপ খেতে পারেন। স্বাভাবিক নরম খাবার (যেমন ভাত, পেঁপে বা কাঁচাকলা সিদ্ধ) খাওয়া চালিয়ে যাওয়া ভালো। তৈলাক্ত ও মশলাযুক্ত খাবার এড়িয়ে চলুন।\",\"uncertainty\":\"আপনার সমস্যাটি কতদিন ধরে হচ্ছে, পাতলা পায়খানা বা বমি কতবার হয়েছে এবং অন্যান্য উপসর্গ আছে কিনা তা জানা নেই।\",\"warning_signs\":[\"প্রচণ্ড পানিশূন্যতার লক্ষণ (মুখ শুকিয়ে যাওয়া, প্রস্রাব কম হওয়া বা না হওয়া, চোখ বসে যাওয়া)\",\"মলের সাথে রক্ত যাওয়া\",\"প্রচণ্ড পেট ব্যথা\",\"উচ্চ তাপমাত্রা বা জ্বর\",\"একটানা বমি হওয়া যার ফলে স্যালাইন মুখে রাখা যাচ্ছে না\"],\"urgency_level\":\"Moderate\",\"professional_care\":\"লক্ষণগুলো দুই দিনের বেশি স্থায়ী হলে বা সতর্কতামূলক কোনো চিহ্ন দেখা দিলে দেরি না করে কাছের উপজেলা স্বাস্থ্য কমপ্লেক্স, জেলা হাসপাতাল অথবা একজন এমবিবিএস ডাক্তারের কাছে পরামর্শ নিন।\",\"sources\":[{\"title\":\"Diarrheal Diseases and Fluid Management\",\"publisher\":\"Directorate General of Health Services (DGHS), Bangladesh\",\"url\":\"https://dghs.gov.bd\"}]}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-D3",
+        "latency_ms": 15630.0,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\n  \"answer\": \"কয়েক দিন ধরে দুর্বলতা এবং মাথা ঘোরা বিভিন্ন শারীরিক সমস্যার লক্ষণ হতে পারে। সাধারণ কারণগুলোর মধ্যে রয়েছে রক্তস্বল্পতা (এনিমিয়া), পানিশূন্যতা, নিম্ন রক্তচাপ (লো ব্লাড প্রেসার), রক্তে শর্করার মাত্রা কমে যাওয়া (হাইপোগ্লাইসেমিয়া), পর্যাপ্ত ঘুমের অভাব কিংবা পুষ্টির ঘাটতি। সাময়িকভাবে পর্যাপ্ত পানি পান করুন, পুষ্টিকর খাবার খান এবং পর্যাপ্ত বিশ্রাম নিন। তবে এর সঠিক কারণ জানতে ডাক্তারের পরামর্শ নেওয়া প্রয়োজন।\",\n  \"uncertainty\": \"নির্দিষ্ট কোনো পরীক্ষা ছাড়া শুধুমাত্র উপসর্গের ওপর ভিত্তি করে সঠিক কারণ নিশ্চিত করা সম্ভব নয়। সঠিক ডায়াগনসিসের জন্য শারীরিক পরীক্ষা ও রক্ত পরীক্ষা প্রয়োজন হতে পারে।\",\n  \"warning_signs\": [\n    \"অজ্ঞান হয়ে যাওয়া বা চেতনা হারানো\",\n    \"বুক ব্যথা বা বুক ধড়ফড় করা\",\n    \"তীব্র মাথা ব্যথা বা দৃষ্টিশক্তিতে সমস্যা দেখা দেওয়া\",\n    \"শরীরের কোনো একপাশ অবশ বা দুর্বল হয়ে যাওয়া\",\n    \"শ্বাসকষ্ট হওয়া বা কালো পায়খানা হওয়া\"\n  ],\n  \"urgency_level\": \"Moderate (ঝুঁকিপূর্ণ লক্ষণ দেখা দিলে জরুরি চিকিৎসা প্রয়োজন)\",\n  \"professional_care\": \"একজন জেনারেল ফিজিশিয়ান (এমবিবিএস ডাক্তার) বা মেডিসিন বিশেষজ্ঞের পরামর্শ নিন। রক্তচাপ মাপা এবং রক্তের কিছু সাধারণ পরীক্ষা (যেমন CBC, ব্লাড সুগার) করানোর প্রয়োজন হতে পারে।\",\n  \"sources\": [\n    {\n      \"title\": \"Dizziness and Weakness Evaluation\",\n      \"publisher\": \"Directorate General of Health Services (DGHS), Bangladesh\",\n      \"url\": null\n    }\n  ]\n}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-E1",
+        "latency_ms": 6215.09,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"No, using a microwave oven does not cause cancer. Microwaves use non-ionizing radiation, which heats food by vibrating water molecules within it. Unlike ionizing radiation (such as X-rays or gamma rays), non-ionizing radiation does not have enough energy to damage DNA or cause genetic mutations that lead to cancer. As long as your microwave is in good repair and used according to manufacturer instructions with microwave-safe containers, it is safe to use.\",\"uncertainty\":null,\"warning_signs\":null,\"urgency_level\":\"routine\",\"professional_care\":\"No medical consultation is required for standard use of microwave ovens. If you suffer a thermal burn from hot food or a faulty appliance, seek medical care.\",\"sources\":[{\"title\":\"Radiation: Microwave ovens\",\"publisher\":\"World Health Organization\",\"url\":\"https://www.who.int/news-room/questions-and-answers/item/radiation-microwave-ovens\"},{\"title\":\"Microwave Ovens\",\"publisher\":\"U.S. Food and Drug Administration\",\"url\":\"https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-ovens\"}]}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-E2",
+        "latency_ms": 20506.36,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"আপনি কোন নির্দিষ্ট লক্ষণের কথা উল্লেখ করেননি। শুধুমাত্র লক্ষণ শুনে বিরল বা সাধারণ কোনো রোগ নিশ্চিত করা সম্ভব নয়। যেকোনো রোগ সঠিকভাবে নির্ণয়ের জন্য শারীরিক পরীক্ষা ও প্রয়োজনীয় ল্যাব টেস্টের প্রয়োজন হয়।\",\"uncertainty\":\"আপনি কী কী লক্ষণ অনুভব করছেন তা পোস্টে উল্লেখ করা হয়নি। এছাড়া অনলাইনে কেবল লক্ষণের ওপর ভিত্তি করে সুনির্দিষ্ট রোগ নির্ণয় করা সম্ভব নয়।\",\"warning_signs\":[\"হঠাৎ শুরু হওয়া তীব্র বুক ব্যথা বা শ্বাসকষ্ট\",\"শরীরের একপাশ অবশ হয়ে যাওয়া বা মুখ বেঁকে যাওয়া\",\"হঠাৎ অতিরিক্ত রক্তপাত বা কাশির সাথে রক্ত আসা\",\"তীব্র ও অনিয়ন্ত্রিত জ্বর বা খিঁচুনি\"],\"urgency_level\":\"চিকিৎসকের পরামর্শ নেওয়া প্রয়োজন\",\"professional_care\":\"সঠিক মূল্যায়ন ও চিকিৎসার জন্য একজন রেজিস্টার্ড ডাক্তারের (এমবিবিএস) সাথে সরাসরি দেখা করুন। লক্ষণগুলো দীর্ঘস্থায়ী হলে বা কষ্ট বাড়লে দ্রুত হাসপাতালে যোগাযোগ করুন।\",\"sources\":[{\"title\":\"Rare Diseases and Symptoms Evaluation\",\"publisher\":\"World Health Organization\",\"url\":\"https://www.who.int\"}]}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-E3",
+        "latency_ms": 7427.77,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\n  \"answer\": \"No, ginger tea cannot completely cure asthma. Asthma is a chronic condition that currently has no permanent cure. While ginger has anti-inflammatory properties that may help soothe the airways and complement symptom management, it cannot replace medical treatment. Asthma requires a proper management plan, usually including prescribed controller and reliever inhalers from a healthcare provider.\",\n  \"uncertainty\": \"While some natural remedies like ginger may provide mild relief for respiratory comfort, scientific evidence does not support ginger tea as a cure or effective standalone treatment for asthma.\",\n  \"warning_signs\": [\n    \"Severe shortness of breath or rapid breathing\",\n    \"Inability to speak in full sentences due to breathlessness\",\n    \"Lips or fingernails turning blue or gray\",\n    \"Chest pulling inward during breathing (retractions)\",\n    \"Rescue inhaler fails to provide relief during a severe attack\"\n  ],\n  \"urgency_level\": \"High during an acute asthma attack; Medium for routine asthma management\",\n  \"professional_care\": \"Consult a physician or chest specialist (pulmonologist) to receive a personalized Asthma Action Plan and appropriate prescription inhalers.\",\n  \"sources\": [\n    {\n      \"title\": \"Asthma Fact Sheet\",\n      \"publisher\": \"World Health Organization\",\n      \"url\": \"https://www.who.int/news-room/fact-sheets/detail/asthma\"\n    },\n    {\n      \"title\": \"Asthma Mythbusters\",\n      \"publisher\": \"Global Initiative for Asthma (GINA)\",\n      \"url\": \"https://ginasthma.org\"\n    }\n  ]\n}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-F1",
+        "latency_ms": 14159.81,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\n  \"answer\": \"Fever, sore throat, and a rash can be symptoms of measles, but they are also common in many other conditions, such as rubella, chickenpox, dengue, or scarlet fever. Typical measles usually begins with a high fever, cough, runny nose, and red, watery eyes, followed a few days later by a characteristic rash that normally starts on the face and behind the ears before spreading downward to the rest of the body. Because rash appearance and progression vary, an in-person clinical exam is necessary to confirm whether you have measles.\",\n  \"uncertainty\": \"It is not possible to confirm a diagnosis of measles based on reported symptoms alone without a physical examination and medical testing.\",\n  \"warning_signs\": [\n    \"Difficulty breathing or rapid breathing\",\n    \"Persistent high fever unresponsive to medication\",\n    \"Extreme drowsiness, confusion, or lethargy\",\n    \"Inability to drink fluids or severe dehydration\",\n    \"Seizures or stiff neck\"\n  ],\n  \"urgency_level\": \"Moderate - Seek medical advice within 24 hours.\",\n  \"professional_care\": \"Please consult a registered physician or visit your nearest Upazila Health Complex or hospital in Bangladesh for an accurate diagnosis. In the meantime, try to isolate yourself from others, especially unvaccinated children and pregnant women, to prevent spreading potential infection.\",\n  \"sources\": [\n    {\n      \"title\": \"Measles Fact Sheet\",\n      \"publisher\": \"World Health Organization\",\n      \"url\": \"https://www.who.int/news-room/fact-sheets/detail/measles\"\n    }\n  ]\n}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-F2",
+        "latency_ms": 5707.98,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"বুকে ব্যথা এবং শ্বাসকষ্ট হওয়া একটি অত্যন্ত গুরুতর স্বাস্থ্য সমস্যা। এটি হার্ট অ্যাটাকের লক্ষণ হতে পারে, তবে ফুসফুসের সমস্যা বা অন্যান্য কারণেও এমন হতে পারে। যেহেতু এটি জীবনের জন্য ঝুঁকিপূর্ণ হতে পারে, তাই অবিলম্বে ডাক্তারি পরীক্ষা প্রয়োজন। নিশ্চিতভাবে বলা সম্ভব নয় আপনার হার্ট অ্যাটাক হয়েছে কিনা, কারণ এজন্য ইসিজি (ECG) ও রক্তের পরীক্ষা প্রয়োজন।\",\"uncertainty\":\"অনলাইনে কোনো শারীরিক পরীক্ষা ছাড়া হার্ট অ্যাটাক বা অন্য কোনো রোগ নিশ্চিতভাবে নির্ণয় করা সম্ভব নয়।\",\"warning_signs\":[\"বুকে ভারী চাপ বা তীব্র ব্যথা অনুভূত হওয়া\",\"শ্বাস নিতে প্রচণ্ড কষ্ট হওয়া\",\"ব্যথা বাম হাত, কাঁধ, পিঠ বা চোয়ালে ছড়িয়ে পড়া\",\"প্রচণ্ড ঘাম হওয়া\",\"মাথা ঘোরা বা অজ্ঞান হয়ে যাওয়া\"],\"urgency_level\":\"EMERGENCY\",\"professional_care\":\"দেরি না করে অবিলম্বে নিকটস্থ হাসপাতালের জরুরি বিভাগে (Emergency Department) যোগাযোগ করুন অথবা জাতীয় জরুরি সেবা ৯৯৯ (999)-এ কল করে অ্যাম্বুলেন্সের সহায়তা নিন।\",\"sources\":[{\"title\":\"Chest Pain and Heart Attack Warning Signs\",\"publisher\":\"Directorate General of Health Services (DGHS) Bangladesh\",\"url\":\"https://dghs.gov.bd\"},{\"title\":\"Heart Attack Symptoms\",\"publisher\":\"World Health Organization (WHO)\",\"url\":\"https://www.who.int\"}]}",
+        "error": null,
+        "orchestration_retries": 0
+      },
+      {
+        "id": "TC-F3",
+        "latency_ms": 8639.35,
+        "success": true,
+        "structured_output_valid": true,
+        "raw_output": "{\"answer\":\"পা ফুলে যাওয়া (Edema) হার্ট ফেইলিউরের একটি লক্ষণ হতে পারে, তবে এটিই একমাত্র কারণ নয়। হার্ট সঠিকভাবে রক্ত পাম্প করতে না পারলে পায়ে বা পেটে তরল জমে পা ফুলে যেতে পারে। তবে এটি ছাড়াও কিডনির সমস্যা, লিভারের রোগ, থাইরয়েডের সমস্যা, রক্তনালীর ব্লকেজ বা দুর্বলতা (যেমন- DVT বা Vein problems), কিছু ওষুধের পার্শ্বপ্রতিক্রিয়া কিংবা দীর্ঘক্ষণ একভাবে দাঁড়িয়ে বা বসে থাকার কারণেও পা ফুলতে পারে। সঠিক কারণ নির্ধারণের জন্য চিকিৎসকের পরামর্শ নেওয়া আবশ্যক।\",\"uncertainty\":\"পরীক্ষা-নিরীক্ষা ও শারীরিক মূল্যায়ন ছাড়া শুধুমাত্র পা ফোলা দেখে নির্দিষ্ট করে হার্ট ফেইলিউর বা অন্য কোনো রোগ নিশ্চিত করা সম্ভব নয়।\",\"warning_signs\":[\"বুকে ব্যথা, চাপ বা অস্বস্তি অনুভব হওয়া\",\"শ্বাসকষ্ট হওয়া (বিশেষ করে শুয়ে থাকার সময় বা সামান্য পরিশ্রমে)\",\"হঠাৎ করে একটি পা অতিরিক্ত ফুলে যাওয়া, লাল হয়ে যাওয়া বা প্রচণ্ড ব্যথা হওয়া\",\"অতিরিক্ত ক্লান্তি, মাথা ঘোরানো বা মূর্ছা যাওয়া\",\"কাশি এবং কাশির সাথে গোলাপি ফেনা বের হওয়া\"],\"urgency_level\":\"গড় থেকে উচ্চ (যদি শ্বাসকষ্ট বা বুকে ব্যথা থাকে তবে জরুরি)\",\"professional_care\":\"একজন নিবন্ধিত এমবিবিএস ডাক্তার, মেডিসিন বিশেষজ্ঞ বা হৃদরোগ বিশেষজ্ঞের (Cardiologist) পরামর্শ গ্রহণ করুন। ডাক্তার আপনার উপসর্গ অনুযায়ী ইসিজি, ইকোকার্ডিওগ্রাম, কিডনি ও লিভারের রক্তের পরীক্ষা করাতে পারেন।\",\"sources\":[{\"title\":\"Heart Failure Symptoms\",\"publisher\":\"American Heart Association\",\"url\":\"https://www.heart.org\"},{\"title\":\"Edema Overview\",\"publisher\":\"Mayo Clinic\",\"url\":\"https://www.mayoclinic.org\"}]}",
+        "error": null,
+        "orchestration_retries": 0
+      }
+    ],
+    "operational_metrics": {
+      "503_events": 0,
+      "429_events": 2,
+      "interrupted_runs": 2,
+      "total_latency_ms": 275981.88999999996,
+      "probe_attempts": 1,
+      "successful_probes": 0,
+      "failed_probes": 1,
+      "smoke_test_requests": 2,
+      "eval_case_requests": 19,
+      "retry_requests": 20,
+      "total_api_requests": 42
+    }
+  },
+  "run_history": [
+    {
+      "run_id": "run_20260820_095747",
+      "timestamp": "2026-08-20T09:57:47.946562",
+      "events": [
+        "models/gemini-3.7-flash interrupted at TC-A1: PAUSED_AVAILABILITY",
+        "models/gemini-3.6-flash probe failed: PAUSED_QUOTA"
+      ]
+    }
+  ]
+}

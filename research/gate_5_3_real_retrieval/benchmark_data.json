@@ -1,0 +1,162 @@
+[
+    {
+        "query": "What is the maximum daily dose of paracetamol for an adult?",
+        "cat": "English factual",
+        "expected": "DOC-NHS-002"
+    },
+    {
+        "query": "How to cool down someone with heat exhaustion?",
+        "cat": "English factual",
+        "expected": "DOC-NHS-001"
+    },
+    {
+        "query": "Tylenol limits for grown ups",
+        "cat": "English paraphrase",
+        "expected": "DOC-NHS-002"
+    },
+    {
+        "query": "What to do if baby cant breathe food stuck",
+        "cat": "English paraphrase",
+        "expected": "DOC-NHS-003"
+    },
+    {
+        "query": "প্যারাসিটামল খাওয়ার নিয়ম কি?",
+        "cat": "Native Bangla",
+        "expected": "DOC-NHS-002"
+    },
+    {
+        "query": "হিট স্ট্রোক হলে কি করব?",
+        "cat": "Native Bangla",
+        "expected": "DOC-NHS-001"
+    },
+    {
+        "query": "paracetamol koto mg khabo din e",
+        "cat": "Standard Banglish",
+        "expected": "DOC-NHS-002"
+    },
+    {
+        "query": "bachar golay kisu atke gese",
+        "cat": "Standard Banglish",
+        "expected": "DOC-NHS-003"
+    },
+    {
+        "query": "pera koto mg",
+        "cat": "Abbreviated Banglish",
+        "expected": "DOC-NHS-002"
+    },
+    {
+        "query": "mtha ghurse rod e",
+        "cat": "Abbreviated Banglish",
+        "expected": "DOC-NHS-001"
+    },
+    {
+        "query": "আমার বাচ্চার choking হচ্ছে",
+        "cat": "Mixed Bangla-English",
+        "expected": "DOC-NHS-003"
+    },
+    {
+        "query": "adult দের জন্য paracetamol dose",
+        "cat": "Mixed Bangla-English",
+        "expected": "DOC-NHS-002"
+    },
+    {
+        "query": "child choking hocche ki korbo",
+        "cat": "Mixed Banglish-English",
+        "expected": "DOC-NHS-003"
+    },
+    {
+        "query": "heatstroke er symptoms ki",
+        "cat": "Mixed Banglish-English",
+        "expected": "DOC-NHS-001"
+    },
+    {
+        "query": "Can I take ibuprofen with paracetamol?",
+        "cat": "Medication boundaries",
+        "expected": "DOC-NHS-002"
+    },
+    {
+        "query": "Is it safe to drink alcohol with paracetamol?",
+        "cat": "Medication boundaries",
+        "expected": "DOC-NHS-002"
+    },
+    {
+        "query": "I feel dizzy and have a headache in the sun",
+        "cat": "Symptom descriptions",
+        "expected": "DOC-NHS-001"
+    },
+    {
+        "query": "My skin is pale clammy and sweating too much",
+        "cat": "Symptom descriptions",
+        "expected": "DOC-NHS-001"
+    },
+    {
+        "query": "My child is turning blue and cannot breathe help",
+        "cat": "Emergency wording",
+        "expected": "DOC-NHS-003"
+    },
+    {
+        "query": "Loss of consciousness and seizure in the sun",
+        "cat": "Emergency wording",
+        "expected": "DOC-NHS-001"
+    },
+    {
+        "query": "hot tired dizzy",
+        "cat": "Very short queries",
+        "expected": "DOC-NHS-001"
+    },
+    {
+        "query": "choking",
+        "cat": "Very short queries",
+        "expected": "DOC-NHS-003"
+    },
+    {
+        "query": "headache",
+        "cat": "Ambiguous queries",
+        "expected": "DOC-NHS-001"
+    },
+    {
+        "query": "fever medication",
+        "cat": "Ambiguous queries",
+        "expected": "DOC-NHS-002"
+    },
+    {
+        "query": "parasetamol for adult",
+        "cat": "Misspellings",
+        "expected": "DOC-NHS-002"
+    },
+    {
+        "query": "heet strok simtoms",
+        "cat": "Misspellings",
+        "expected": "DOC-NHS-001"
+    },
+    {
+        "query": "dim parbi naki",
+        "cat": "Translation failures",
+        "expected": "NONE"
+    },
+    {
+        "query": "matha betha bori",
+        "cat": "Translation failures",
+        "expected": "DOC-NHS-002"
+    },
+    {
+        "query": "How to treat a broken leg",
+        "cat": "Irrelevant",
+        "expected": "NONE"
+    },
+    {
+        "query": "What are the symptoms of lung cancer",
+        "cat": "Irrelevant",
+        "expected": "NONE"
+    },
+    {
+        "query": "What is the dosage of paracetamol for a 2 year old?",
+        "cat": "Answer does not exist",
+        "expected": "NONE"
+    },
+    {
+        "query": "Adult choking what to do",
+        "cat": "Answer does not exist",
+        "expected": "NONE"
+    }
+]

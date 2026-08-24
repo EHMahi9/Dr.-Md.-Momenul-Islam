@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-BUR-09",
+  "raw_query": "pora khub boro ar deep hole kokhon hospital jabo?",
+  "normalized_query": "pora khub boro ar deep hole kokhon hospital jabo? (emergency call 999 go to A&E)",
+  "language_category": "Standard_Banglish",
+  "expected_source_id": "DOC-NHS-005",
+  "gold_chunk_ids": [
+    "DOC-NHS-005-HYB-002"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 583.0,
+  "dense_rank": 1,
+  "dense_r15": true,
+  "rerank_rank": 4,
+  "in_top5": true,
+  "is_top1": false,
+  "gold_rerank_score": 0.05961087346076965,
+  "rank1_chunk_id": "DOC-NHS-007-HYB-004",
+  "rank1_source_id": "DOC-NHS-007",
+  "rank1_heading": "",
+  "rank1_length": 636,
+  "rank1_score": 0.10257508605718613,
+  "score_margin_vs_gold": 0.04296421259641647,
+  "same_source_as_gold": false,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "CROSS_DOCUMENT_COMPETITION",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-007-HYB-004",
+    "DOC-NHS-009-HYB-003",
+    "DOC-NHS-008-HYB-005",
+    "DOC-NHS-005-HYB-002",
+    "DOC-NHS-006-HYB-005"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-007-HYB-004",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.10257508605718613,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-009-HYB-003",
+      "source_id": "DOC-NHS-009",
+      "heading": "",
+      "score": 0.09750162065029144,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-008-HYB-005",
+      "source_id": "DOC-NHS-008",
+      "heading": "",
+      "score": 0.07261589914560318,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-005-HYB-002",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.05961087346076965,
+      "is_gold": true
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-006-HYB-005",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.05841365084052086,
+      "is_gold": false
+    }
+  ]
+}

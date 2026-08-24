@@ -1,0 +1,102 @@
+--- LOST AFTER RERANK ---
+[TEST-DIA-08] (English): 'When to call 999 or go to A&E for diarrhoea with bloody vomit?'
+  Topic: Diarrhoea bloody vomit A&E 999
+  Gold: ['DOC-NHS-008-HYB-003']
+  Dense Rank: 10, Final Top-5: ['DOC-NHS-008-HYB-005', 'DOC-NHS-007-HYB-004', 'DOC-NHS-009-HYB-003', 'DOC-NHS-006-HYB-005', 'DOC-NHS-011-HYB-002']
+
+[TEST-DIA-09] (Native_Bangla): 'বমির সাথে রক্ত আসলে কি দ্রুত হাসপাতালে যাওয়া দরকার?'
+  Topic: Diarrhoea bloody vomit A&E 999
+  Gold: ['DOC-NHS-008-HYB-003']
+  Dense Rank: 7, Final Top-5: ['DOC-NHS-008-HYB-005', 'DOC-NHS-006-HYB-005', 'DOC-NHS-011-HYB-003', 'DOC-NHS-011-HYB-006', 'DOC-NHS-005-HYB-002']
+
+[TEST-HEA-05] (English): 'When is a sudden severe headache an emergency requiring 999?'
+  Topic: Severe sudden headache 999
+  Gold: ['DOC-NHS-009-HYB-002']
+  Dense Rank: 4, Final Top-5: ['DOC-NHS-009-HYB-003', 'DOC-NHS-008-HYB-005', 'DOC-NHS-011-HYB-002', 'DOC-NHS-004-HYB-004', 'DOC-NHS-007-HYB-004']
+
+[TEST-HEA-07] (Standard_Banglish): 'hotath extreme matha betha ar ghaar shokto 999 call dibo?'
+  Topic: Severe sudden headache 999
+  Gold: ['DOC-NHS-009-HYB-002']
+  Dense Rank: 11, Final Top-5: ['DOC-NHS-011-HYB-002', 'DOC-NHS-004-HYB-004', 'DOC-NHS-010-HYB-004', 'DOC-NHS-011-HYB-000', 'DOC-NHS-008-HYB-006']
+
+[TEST-HEA-08] (Abbreviated_Banglish): 'blurry vision ar mathay prachondo betha emergency A&E jabo'
+  Topic: Severe sudden headache 999
+  Gold: ['DOC-NHS-009-HYB-002']
+  Dense Rank: 6, Final Top-5: ['DOC-NHS-009-HYB-003', 'DOC-NHS-007-HYB-004', 'DOC-NHS-008-HYB-006', 'DOC-NHS-010-HYB-005', 'DOC-NHS-008-HYB-005']
+
+[TEST-HEA-10] (Standard_Banglish): 'matha betha keno hoy causes ki ki?'
+  Topic: Causes of headaches
+  Gold: ['DOC-NHS-009-HYB-003', 'DOC-NHS-009-HYB-004']
+  Dense Rank: 6, Final Top-5: ['DOC-NHS-010-HYB-005', 'DOC-NHS-008-HYB-005', 'DOC-NHS-011-HYB-002', 'DOC-NHS-004-HYB-000', 'DOC-NHS-011-HYB-001']
+
+[TEST-FEV-06] (Native_Bangla): 'বাচ্চার জ্বর কমাতে বাড়িতে প্রচুর তরল ও প্যারাসিটামল কীভাবে দেব?'
+  Topic: Fever home care children
+  Gold: ['DOC-NHS-010-HYB-000', 'DOC-NHS-010-HYB-001']
+  Dense Rank: 14, Final Top-5: ['DOC-NHS-010-HYB-002', 'DOC-NHS-008-HYB-001', 'DOC-NHS-010-HYB-003', 'DOC-NHS-007-HYB-005', 'DOC-NHS-008-HYB-000']
+
+[TEST-FEV-09] (Native_Bangla): 'বাচ্চার তীব্র জ্বর ও নীলচে ঠোঁট হলে অবিলম্বে কি ৯৯৯ কল করতে হবে?'
+  Topic: Child fever emergency 999
+  Gold: ['DOC-NHS-010-HYB-003']
+  Dense Rank: 11, Final Top-5: ['DOC-NHS-008-HYB-005', 'DOC-NHS-010-HYB-004', 'DOC-NHS-008-HYB-004', 'DOC-NHS-004-HYB-004', 'DOC-NHS-007-HYB-004']
+
+[TEST-FEV-10] (Abbreviated_Banglish): 'bacha ghum theke jagena ar thot neel 999 call korbo?'
+  Topic: Child fever emergency 999
+  Gold: ['DOC-NHS-010-HYB-003']
+  Dense Rank: 14, Final Top-5: ['DOC-NHS-011-HYB-002', 'DOC-NHS-010-HYB-004', 'DOC-NHS-004-HYB-004', 'DOC-NHS-011-HYB-000', 'DOC-NHS-006-HYB-005']
+
+[TEST-ANA-02] (Native_Bangla): 'অ্যানাফাইলাক্সিস বা তীব্র অ্যালার্জিক রিঅ্যাকশনের লক্ষণগুলো কী?'
+  Topic: Anaphylaxis symptoms
+  Gold: ['DOC-NHS-011-HYB-001']
+  Dense Rank: 13, Final Top-5: ['DOC-NHS-011-HYB-000', 'DOC-NHS-011-HYB-003', 'DOC-NHS-011-HYB-004', 'DOC-NHS-011-HYB-009', 'DOC-NHS-011-HYB-008']
+
+[TEST-ANA-08] (English): 'Should you call 999 immediately if someone has an anaphylactic shock?'
+  Topic: Anaphylaxis 999 emergency
+  Gold: ['DOC-NHS-011-HYB-002']
+  Dense Rank: 8, Final Top-5: ['DOC-NHS-011-HYB-000', 'DOC-NHS-011-HYB-004', 'DOC-NHS-004-HYB-004', 'DOC-NHS-007-HYB-004', 'DOC-NHS-009-HYB-003']
+
+
+--- OUTSIDE DENSE 15 ---
+[TEST-DIA-04] (Abbreviated_Banglish): 'patla paykhana ar bomi hosse onk fluid khabo?'
+  Topic: Diarrhoea home care fluids
+  Gold: ['DOC-NHS-008-HYB-000']
+  Dense Top-5: ['DOC-NHS-008-HYB-005', 'DOC-NHS-007-HYB-004', 'DOC-NHS-011-HYB-002', 'DOC-NHS-010-HYB-005', 'DOC-NHS-011-HYB-001']
+
+[TEST-DIA-10] (Abbreviated_Banglish): 'bomir shathe rokto ase green bomi emergency hospital jabo?'
+  Topic: Diarrhoea bloody vomit A&E 999
+  Gold: ['DOC-NHS-008-HYB-003']
+  Dense Top-5: ['DOC-NHS-008-HYB-005', 'DOC-NHS-007-HYB-004', 'DOC-NHS-009-HYB-003', 'DOC-NHS-007-HYB-003', 'DOC-NHS-005-HYB-002']
+
+[TEST-HEA-03] (Standard_Banglish): 'matha betha hole bashay ki korle kombe?'
+  Topic: Relieve headache water painkillers
+  Gold: ['DOC-NHS-009-HYB-000']
+  Dense Top-5: ['DOC-NHS-010-HYB-005', 'DOC-NHS-011-HYB-002', 'DOC-NHS-008-HYB-005', 'DOC-NHS-011-HYB-001', 'DOC-NHS-004-HYB-017']
+
+[TEST-HEA-04] (Abbreviated_Banglish): 'matha betha paracetamol khabo ar pani khabo kina'
+  Topic: Relieve headache water painkillers
+  Gold: ['DOC-NHS-009-HYB-000']
+  Dense Top-5: ['DOC-NHS-010-HYB-003', 'DOC-NHS-008-HYB-003', 'DOC-NHS-010-HYB-002', 'DOC-NHS-005-HYB-004', 'DOC-NHS-010-HYB-005']
+
+[TEST-FEV-07] (Standard_Banglish): 'bachar jor komate fluid ar paracetamol dawa jabe?'
+  Topic: Fever home care children
+  Gold: ['DOC-NHS-010-HYB-000', 'DOC-NHS-010-HYB-001']
+  Dense Top-5: ['DOC-NHS-010-HYB-003', 'DOC-NHS-008-HYB-003', 'DOC-NHS-007-HYB-004', 'DOC-NHS-004-HYB-004', 'DOC-NHS-011-HYB-006']
+
+[TEST-FEV-08] (English): 'When to call 999 for a child with high fever and rash or breathing trouble?'
+  Topic: Child fever emergency 999
+  Gold: ['DOC-NHS-010-HYB-003']
+  Dense Top-5: ['DOC-NHS-010-HYB-004', 'DOC-NHS-005-HYB-002', 'DOC-NHS-009-HYB-003', 'DOC-NHS-008-HYB-005', 'DOC-NHS-007-HYB-004']
+
+[TEST-ANA-01] (English): 'What are the main symptoms of a severe anaphylaxis allergic reaction?'
+  Topic: Anaphylaxis symptoms
+  Gold: ['DOC-NHS-011-HYB-001']
+  Dense Top-5: ['DOC-NHS-011-HYB-000', 'DOC-NHS-011-HYB-003', 'DOC-NHS-011-HYB-009', 'DOC-NHS-011-HYB-008', 'DOC-NHS-011-HYB-006']
+
+[TEST-ANA-03] (Standard_Banglish): 'anaphylaxis allergic reaction hole ki ki lokkhon dekha jay?'
+  Topic: Anaphylaxis symptoms
+  Gold: ['DOC-NHS-011-HYB-001']
+  Dense Top-5: ['DOC-NHS-011-HYB-000', 'DOC-NHS-011-HYB-009', 'DOC-NHS-011-HYB-003', 'DOC-NHS-011-HYB-008', 'DOC-NHS-011-HYB-005']
+
+[TEST-ANA-04] (Abbreviated_Banglish): 'muk fule geche shash nite parsenana allergy r jonno anaphylaxis naki'
+  Topic: Anaphylaxis symptoms
+  Gold: ['DOC-NHS-011-HYB-001']
+  Dense Top-5: ['DOC-NHS-011-HYB-009', 'DOC-NHS-011-HYB-003', 'DOC-NHS-004-HYB-017', 'DOC-NHS-011-HYB-004', 'DOC-NHS-011-HYB-006']

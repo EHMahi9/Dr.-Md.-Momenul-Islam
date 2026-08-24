@@ -1,0 +1,4322 @@
+{
+  "STRATEGY_1_CONTROL_BASELINE": {
+    "strategy_name": "STRATEGY_1_CONTROL_BASELINE",
+    "final_chunk_r1": "19/40 (47.50%)",
+    "final_chunk_r3": "27/40 (67.50%)",
+    "final_chunk_r5": "35/40 (87.50%)",
+    "final_context_recall": "35/40 (87.50%)",
+    "mrr": 0.615,
+    "language_breakdown": {
+      "English": {
+        "n": 12,
+        "r1": "8/12 (66.7%)",
+        "r3": "10/12 (83.3%)",
+        "r5": "11/12 (91.7%)",
+        "mrr": 0.7611
+      },
+      "Native_Bangla": {
+        "n": 10,
+        "r1": "5/10 (50.0%)",
+        "r3": "6/10 (60.0%)",
+        "r5": "9/10 (90.0%)",
+        "mrr": 0.615
+      },
+      "Standard_Banglish": {
+        "n": 10,
+        "r1": "3/10 (30.0%)",
+        "r3": "6/10 (60.0%)",
+        "r5": "8/10 (80.0%)",
+        "mrr": 0.4867
+      },
+      "Abbreviated_Banglish": {
+        "n": 8,
+        "r1": "3/8 (37.5%)",
+        "r3": "5/8 (62.5%)",
+        "r5": "7/8 (87.5%)",
+        "mrr": 0.5563
+      }
+    },
+    "query_evaluations": [
+      {
+        "query_id": "DEV-AST-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-004-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-02",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-011-HYB-001",
+          "DOC-NHS-004-HYB-010"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-03",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-008"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-010"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-05",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-011"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-06",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-011-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-07",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-010"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-08",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-011-HYB-000",
+          "DOC-NHS-009-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-09",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-014",
+          "DOC-NHS-004-HYB-011",
+          "DOC-NHS-004-HYB-015",
+          "DOC-NHS-004-HYB-012"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-10",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-01",
+        "language_category": "English",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-02",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-008-HYB-002",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-010-HYB-001"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-03",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-010-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-010-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-05",
+        "language_category": "English",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-005-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-000",
+          "DOC-NHS-005-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-06",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-005-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-000",
+          "DOC-NHS-005-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 12,
+        "top1_cid": "DOC-NHS-010-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-007-HYB-003",
+          "DOC-NHS-005-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-08",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-005-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-09",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-005-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-008-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-02",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-006-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-03",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-010-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-011-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-05",
+        "language_category": "English",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-006-HYB-006",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-06",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-008-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-011-HYB-004",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-010-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-003",
+          "DOC-NHS-008-HYB-002",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-011-HYB-001"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-08",
+        "language_category": "English",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 10,
+        "top1_cid": "DOC-NHS-006-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-09",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-011-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-000",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-02",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-000",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-03",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-007-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-007-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-05",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-006",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-008-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-06",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-006",
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-007-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-008-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-007",
+          "DOC-NHS-008-HYB-000",
+          "DOC-NHS-007-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-08",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-007-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-009-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-09",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-009-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-011-HYB-000",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-007-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-011-HYB-002"
+        ]
+      }
+    ]
+  },
+  "STRATEGY_2_SECTION_HEADER_CROSS_ENCODER": {
+    "strategy_name": "STRATEGY_2_SECTION_HEADER_CROSS_ENCODER",
+    "final_chunk_r1": "19/40 (47.50%)",
+    "final_chunk_r3": "27/40 (67.50%)",
+    "final_chunk_r5": "34/40 (85.00%)",
+    "final_context_recall": "34/40 (85.00%)",
+    "mrr": 0.6086,
+    "language_breakdown": {
+      "English": {
+        "n": 12,
+        "r1": "8/12 (66.7%)",
+        "r3": "10/12 (83.3%)",
+        "r5": "11/12 (91.7%)",
+        "mrr": 0.7611
+      },
+      "Native_Bangla": {
+        "n": 10,
+        "r1": "5/10 (50.0%)",
+        "r3": "6/10 (60.0%)",
+        "r5": "8/10 (80.0%)",
+        "mrr": 0.6117
+      },
+      "Standard_Banglish": {
+        "n": 10,
+        "r1": "3/10 (30.0%)",
+        "r3": "5/10 (50.0%)",
+        "r5": "8/10 (80.0%)",
+        "mrr": 0.456
+      },
+      "Abbreviated_Banglish": {
+        "n": 8,
+        "r1": "3/8 (37.5%)",
+        "r3": "6/8 (75.0%)",
+        "r5": "7/8 (87.5%)",
+        "mrr": 0.5667
+      }
+    },
+    "query_evaluations": [
+      {
+        "query_id": "DEV-AST-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-004-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-02",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-011-HYB-001"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-03",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-008"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-05",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-011"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-06",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-011-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-07",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-010"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-08",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-011-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-09",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-011",
+          "DOC-NHS-004-HYB-014",
+          "DOC-NHS-004-HYB-015",
+          "DOC-NHS-004-HYB-012"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-10",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-01",
+        "language_category": "English",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-02",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-008-HYB-002",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-010-HYB-001"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-03",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-008-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-007-HYB-007"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-05",
+        "language_category": "English",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-005-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-000",
+          "DOC-NHS-005-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-06",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-005-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 13,
+        "top1_cid": "DOC-NHS-010-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-007-HYB-007"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-08",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-005-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-009-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-09",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-005-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-02",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-006-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-03",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-010-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-011-HYB-006",
+          "DOC-NHS-007-HYB-003",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-05",
+        "language_category": "English",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-006-HYB-006",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-06",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 6,
+        "top1_cid": "DOC-NHS-008-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-011-HYB-004",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-011-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-010-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-003",
+          "DOC-NHS-008-HYB-002",
+          "DOC-NHS-011-HYB-001",
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-006-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-08",
+        "language_category": "English",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 10,
+        "top1_cid": "DOC-NHS-006-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-09",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-011-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-006-HYB-006",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-006-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-000",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-001"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-02",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-000",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-03",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-007-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-007-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-05",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-006",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-008-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-06",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-006",
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-007-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-008-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-007",
+          "DOC-NHS-008-HYB-000",
+          "DOC-NHS-007-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-08",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-007-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-009-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-09",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-009-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-011-HYB-000",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-007-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-007-HYB-003"
+        ]
+      }
+    ]
+  },
+  "STRATEGY_3_SAME_DOC_OVERVIEW_DEBIASING": {
+    "strategy_name": "STRATEGY_3_SAME_DOC_OVERVIEW_DEBIASING",
+    "final_chunk_r1": "19/40 (47.50%)",
+    "final_chunk_r3": "27/40 (67.50%)",
+    "final_chunk_r5": "35/40 (87.50%)",
+    "final_context_recall": "35/40 (87.50%)",
+    "mrr": 0.615,
+    "language_breakdown": {
+      "English": {
+        "n": 12,
+        "r1": "8/12 (66.7%)",
+        "r3": "10/12 (83.3%)",
+        "r5": "11/12 (91.7%)",
+        "mrr": 0.7611
+      },
+      "Native_Bangla": {
+        "n": 10,
+        "r1": "5/10 (50.0%)",
+        "r3": "6/10 (60.0%)",
+        "r5": "9/10 (90.0%)",
+        "mrr": 0.615
+      },
+      "Standard_Banglish": {
+        "n": 10,
+        "r1": "3/10 (30.0%)",
+        "r3": "6/10 (60.0%)",
+        "r5": "8/10 (80.0%)",
+        "mrr": 0.4867
+      },
+      "Abbreviated_Banglish": {
+        "n": 8,
+        "r1": "3/8 (37.5%)",
+        "r3": "5/8 (62.5%)",
+        "r5": "7/8 (87.5%)",
+        "mrr": 0.5563
+      }
+    },
+    "query_evaluations": [
+      {
+        "query_id": "DEV-AST-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-004-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-02",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-011-HYB-001",
+          "DOC-NHS-004-HYB-010"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-03",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-008"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-05",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-011"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-06",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-011-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-07",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-010"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-08",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-011-HYB-000",
+          "DOC-NHS-009-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-09",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-014",
+          "DOC-NHS-004-HYB-011",
+          "DOC-NHS-004-HYB-015",
+          "DOC-NHS-004-HYB-012"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-10",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-01",
+        "language_category": "English",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-02",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-008-HYB-002",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-010-HYB-001"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-03",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-010-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-010-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-05",
+        "language_category": "English",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-005-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-000",
+          "DOC-NHS-005-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-06",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-005-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 12,
+        "top1_cid": "DOC-NHS-010-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-007-HYB-003",
+          "DOC-NHS-005-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-08",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-005-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-09",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-005-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-008-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-02",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-006-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-03",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-010-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-011-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-05",
+        "language_category": "English",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-006-HYB-006",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-06",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-008-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-011-HYB-004",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-010-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-003",
+          "DOC-NHS-008-HYB-002",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-011-HYB-001"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-08",
+        "language_category": "English",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 10,
+        "top1_cid": "DOC-NHS-006-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-09",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-011-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-000",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-02",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-000",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-03",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-007-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-007-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-05",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-006",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-008-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-06",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-006",
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-007-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-008-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-007",
+          "DOC-NHS-008-HYB-000",
+          "DOC-NHS-007-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-08",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-007-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-009-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-09",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-009-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-011-HYB-000",
+          "DOC-NHS-007-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-011-HYB-002"
+        ]
+      }
+    ]
+  },
+  "STRATEGY_4_DENSE_CROSSENCODER_SCORE_FUSION": {
+    "strategy_name": "STRATEGY_4_DENSE_CROSSENCODER_SCORE_FUSION",
+    "final_chunk_r1": "18/40 (45.00%)",
+    "final_chunk_r3": "27/40 (67.50%)",
+    "final_chunk_r5": "33/40 (82.50%)",
+    "final_context_recall": "33/40 (82.50%)",
+    "mrr": 0.5859,
+    "language_breakdown": {
+      "English": {
+        "n": 12,
+        "r1": "8/12 (66.7%)",
+        "r3": "10/12 (83.3%)",
+        "r5": "11/12 (91.7%)",
+        "mrr": 0.762
+      },
+      "Native_Bangla": {
+        "n": 10,
+        "r1": "4/10 (40.0%)",
+        "r3": "6/10 (60.0%)",
+        "r5": "8/10 (80.0%)",
+        "mrr": 0.5383
+      },
+      "Standard_Banglish": {
+        "n": 10,
+        "r1": "3/10 (30.0%)",
+        "r3": "5/10 (50.0%)",
+        "r5": "7/10 (70.0%)",
+        "mrr": 0.4491
+      },
+      "Abbreviated_Banglish": {
+        "n": 8,
+        "r1": "3/8 (37.5%)",
+        "r3": "6/8 (75.0%)",
+        "r5": "7/8 (87.5%)",
+        "mrr": 0.5521
+      }
+    },
+    "query_evaluations": [
+      {
+        "query_id": "DEV-AST-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-004-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-02",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-010"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-03",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-004-HYB-000",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-05",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-011"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-06",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-011-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-07",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-010"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-08",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-011-HYB-000",
+          "DOC-NHS-009-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-09",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-014",
+          "DOC-NHS-004-HYB-011",
+          "DOC-NHS-004-HYB-015",
+          "DOC-NHS-004-HYB-012"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-10",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-008"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-01",
+        "language_category": "English",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-02",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-010-HYB-001",
+          "DOC-NHS-010-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-03",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-010-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-007-HYB-003",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000",
+          "DOC-NHS-010-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-05",
+        "language_category": "English",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-005-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-06",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-005-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 11,
+        "top1_cid": "DOC-NHS-004-HYB-015",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-015",
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-005-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-08",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-005-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-09",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-005-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-004-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-02",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-006-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-03",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-005-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-010-HYB-003",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-005-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-05",
+        "language_category": "English",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-006-HYB-006",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-06",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 10,
+        "top1_cid": "DOC-NHS-011-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-011-HYB-003",
+          "DOC-NHS-011-HYB-004",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-010-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 15,
+        "top1_cid": "DOC-NHS-008-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-011-HYB-001",
+          "DOC-NHS-011-HYB-004",
+          "DOC-NHS-008-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-08",
+        "language_category": "English",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 9,
+        "top1_cid": "DOC-NHS-006-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-09",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-011-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-006-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-000",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-02",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-000",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-03",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-007-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-007-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-007-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-05",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-006",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-008-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-06",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-007-HYB-006",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-006",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-007-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-008-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-000",
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-008-HYB-007"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-08",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-007-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-009-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-09",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-009-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-011-HYB-000",
+          "DOC-NHS-007-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-011-HYB-002"
+        ]
+      }
+    ]
+  },
+  "STRATEGY_5_CONTEXT_EXPANSION_TOP7": {
+    "strategy_name": "STRATEGY_5_CONTEXT_EXPANSION_TOP7",
+    "final_chunk_r1": "19/40 (47.50%)",
+    "final_chunk_r3": "27/40 (67.50%)",
+    "final_chunk_r5": "35/40 (87.50%)",
+    "final_context_recall": "35/40 (87.50%)",
+    "mrr": 0.615,
+    "language_breakdown": {
+      "English": {
+        "n": 12,
+        "r1": "8/12 (66.7%)",
+        "r3": "10/12 (83.3%)",
+        "r5": "11/12 (91.7%)",
+        "mrr": 0.7611
+      },
+      "Native_Bangla": {
+        "n": 10,
+        "r1": "5/10 (50.0%)",
+        "r3": "6/10 (60.0%)",
+        "r5": "9/10 (90.0%)",
+        "mrr": 0.615
+      },
+      "Standard_Banglish": {
+        "n": 10,
+        "r1": "3/10 (30.0%)",
+        "r3": "6/10 (60.0%)",
+        "r5": "8/10 (80.0%)",
+        "mrr": 0.4867
+      },
+      "Abbreviated_Banglish": {
+        "n": 8,
+        "r1": "3/8 (37.5%)",
+        "r3": "5/8 (62.5%)",
+        "r5": "7/8 (87.5%)",
+        "mrr": 0.5563
+      }
+    },
+    "query_evaluations": [
+      {
+        "query_id": "DEV-AST-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-004-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-02",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-011-HYB-001",
+          "DOC-NHS-004-HYB-010"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-03",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-008"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-010"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-05",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-011"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-06",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-011-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-07",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-010"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-08",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-011-HYB-000",
+          "DOC-NHS-009-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-09",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-014",
+          "DOC-NHS-004-HYB-011",
+          "DOC-NHS-004-HYB-015",
+          "DOC-NHS-004-HYB-012"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-10",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-01",
+        "language_category": "English",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-02",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-008-HYB-002",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-010-HYB-001"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-03",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-010-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-010-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-05",
+        "language_category": "English",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-005-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-000",
+          "DOC-NHS-005-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-06",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-005-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-000",
+          "DOC-NHS-005-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 12,
+        "top1_cid": "DOC-NHS-010-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-007-HYB-003",
+          "DOC-NHS-005-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-08",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-005-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-09",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-005-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-008-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-02",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-006-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-03",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-010-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-011-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-05",
+        "language_category": "English",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-006-HYB-006",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-06",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-008-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-011-HYB-004",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-010-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-003",
+          "DOC-NHS-008-HYB-002",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-011-HYB-001"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-08",
+        "language_category": "English",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 10,
+        "top1_cid": "DOC-NHS-006-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-09",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-011-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-000",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-02",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-000",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-03",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-007-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-007-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-05",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-006",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-008-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-06",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-006",
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-007-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-008-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-007",
+          "DOC-NHS-008-HYB-000",
+          "DOC-NHS-007-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-08",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-007-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-009-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-09",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-009-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-011-HYB-000",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-007-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-011-HYB-002"
+        ]
+      }
+    ]
+  },
+  "STRATEGY_6_SYNERGISTIC_SECTION_AWARE_DIVERSIFICATION": {
+    "strategy_name": "STRATEGY_6_SYNERGISTIC_SECTION_AWARE_DIVERSIFICATION",
+    "final_chunk_r1": "19/40 (47.50%)",
+    "final_chunk_r3": "25/40 (62.50%)",
+    "final_chunk_r5": "34/40 (85.00%)",
+    "final_context_recall": "34/40 (85.00%)",
+    "mrr": 0.6015,
+    "language_breakdown": {
+      "English": {
+        "n": 12,
+        "r1": "8/12 (66.7%)",
+        "r3": "10/12 (83.3%)",
+        "r5": "11/12 (91.7%)",
+        "mrr": 0.7611
+      },
+      "Native_Bangla": {
+        "n": 10,
+        "r1": "5/10 (50.0%)",
+        "r3": "6/10 (60.0%)",
+        "r5": "8/10 (80.0%)",
+        "mrr": 0.6117
+      },
+      "Standard_Banglish": {
+        "n": 10,
+        "r1": "3/10 (30.0%)",
+        "r3": "4/10 (40.0%)",
+        "r5": "8/10 (80.0%)",
+        "mrr": 0.4527
+      },
+      "Abbreviated_Banglish": {
+        "n": 8,
+        "r1": "3/8 (37.5%)",
+        "r3": "5/8 (62.5%)",
+        "r5": "7/8 (87.5%)",
+        "mrr": 0.5354
+      }
+    },
+    "query_evaluations": [
+      {
+        "query_id": "DEV-AST-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-004-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-02",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-011-HYB-001"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-03",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-008"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-05",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-011"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-06",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-011-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-07",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-010"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-08",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-011-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-09",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-004-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-011",
+          "DOC-NHS-004-HYB-014",
+          "DOC-NHS-004-HYB-015",
+          "DOC-NHS-004-HYB-012"
+        ]
+      },
+      {
+        "query_id": "DEV-AST-10",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-004-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-01",
+        "language_category": "English",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-02",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-008-HYB-002",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-010-HYB-001"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-03",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-008-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-007-HYB-007"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-005-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-05",
+        "language_category": "English",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-005-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-000",
+          "DOC-NHS-005-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-06",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 2,
+        "top1_cid": "DOC-NHS-005-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-006-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 13,
+        "top1_cid": "DOC-NHS-010-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-007-HYB-007"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-08",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-005-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-009-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-09",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-BUR-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-005-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-02",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-006-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-03",
+        "language_category": "Standard_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 0,
+        "top1_cid": "DOC-NHS-010-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-011-HYB-006",
+          "DOC-NHS-007-HYB-003",
+          "DOC-NHS-006-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-05",
+        "language_category": "English",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-006-HYB-006",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-002"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-06",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 6,
+        "top1_cid": "DOC-NHS-008-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-011-HYB-004",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-011-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-010-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-010-HYB-003",
+          "DOC-NHS-008-HYB-002",
+          "DOC-NHS-011-HYB-001",
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-006-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-08",
+        "language_category": "English",
+        "r1": false,
+        "r3": false,
+        "r5": false,
+        "r_context": false,
+        "rank": 10,
+        "top1_cid": "DOC-NHS-006-HYB-005",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-006"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-09",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-006-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-001",
+          "DOC-NHS-011-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-CUT-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 3,
+        "top1_cid": "DOC-NHS-006-HYB-006",
+        "top5_cids": [
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-006-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-01",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-000",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-001"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-02",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-000",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-03",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-007-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-008-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-04",
+        "language_category": "Abbreviated_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-007-HYB-002",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-007-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-05",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-006",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-008-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-06",
+        "language_category": "Native_Bangla",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-001",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-007-HYB-006",
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-007-HYB-007",
+          "DOC-NHS-007-HYB-005"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-07",
+        "language_category": "Standard_Banglish",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 4,
+        "top1_cid": "DOC-NHS-008-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-008-HYB-007",
+          "DOC-NHS-007-HYB-002",
+          "DOC-NHS-008-HYB-000"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-08",
+        "language_category": "English",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-007-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-009-HYB-003"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-09",
+        "language_category": "Native_Bangla",
+        "r1": false,
+        "r3": false,
+        "r5": true,
+        "r_context": true,
+        "rank": 5,
+        "top1_cid": "DOC-NHS-009-HYB-003",
+        "top5_cids": [
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-011-HYB-000",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-007-HYB-004"
+        ]
+      },
+      {
+        "query_id": "DEV-DEH-10",
+        "language_category": "Abbreviated_Banglish",
+        "r1": true,
+        "r3": true,
+        "r5": true,
+        "r_context": true,
+        "rank": 1,
+        "top1_cid": "DOC-NHS-007-HYB-004",
+        "top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-007-HYB-003"
+        ]
+      }
+    ]
+  }
+}

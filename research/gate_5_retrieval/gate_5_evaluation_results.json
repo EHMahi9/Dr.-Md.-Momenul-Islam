@@ -1,0 +1,717 @@
+{
+    "0.15": {
+        "metrics": {
+            "total": 32,
+            "recall_1": 20,
+            "recall_3": 22,
+            "mrr": 20.666666666666664,
+            "no_result_correct": 1,
+            "false_retrieval": 4,
+            "false_no_result": 1,
+            "translation_failures": 1,
+            "latencies_ms": [
+                12.558698654174805,
+                15.432357788085938,
+                15.478849411010742,
+                15.700340270996094,
+                15.02847671508789,
+                16.855239868164062,
+                16.805410385131836,
+                15.034675598144531,
+                13.832807540893555,
+                16.16048812866211,
+                14.81318473815918,
+                15.756607055664062,
+                15.753746032714844,
+                15.284538269042969,
+                15.66004753112793,
+                18.069982528686523,
+                13.234853744506836,
+                16.4792537689209,
+                14.783620834350586,
+                16.568422317504883,
+                14.829158782958984,
+                15.60831069946289,
+                15.975236892700195,
+                16.193151473999023,
+                14.514923095703125,
+                16.176462173461914,
+                16.646385192871094,
+                15.884637832641602,
+                15.518665313720703,
+                15.689611434936523,
+                15.300273895263672,
+                15.50436019897461
+            ]
+        },
+        "per_category": {
+            "English factual": {
+                "total": 2,
+                "correct": 2
+            },
+            "English paraphrase": {
+                "total": 2,
+                "correct": 1
+            },
+            "Native Bangla": {
+                "total": 2,
+                "correct": 1
+            },
+            "Standard Banglish": {
+                "total": 2,
+                "correct": 2
+            },
+            "Abbreviated Banglish": {
+                "total": 2,
+                "correct": 1
+            },
+            "Mixed Bangla-English": {
+                "total": 2,
+                "correct": 2
+            },
+            "Mixed Banglish-English": {
+                "total": 2,
+                "correct": 2
+            },
+            "Medication boundaries": {
+                "total": 2,
+                "correct": 2
+            },
+            "Symptom descriptions": {
+                "total": 2,
+                "correct": 1
+            },
+            "Emergency wording": {
+                "total": 2,
+                "correct": 2
+            },
+            "Very short queries": {
+                "total": 2,
+                "correct": 2
+            },
+            "Ambiguous queries": {
+                "total": 2,
+                "correct": 2
+            },
+            "Misspellings": {
+                "total": 2,
+                "correct": 0
+            },
+            "Translation failures": {
+                "total": 2,
+                "correct": 1
+            },
+            "Irrelevant": {
+                "total": 2,
+                "correct": 0
+            },
+            "Answer does not exist": {
+                "total": 2,
+                "correct": 0
+            }
+        },
+        "failures": [
+            {
+                "query": "Tylenol limits for grown ups",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "predicted": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ]
+            },
+            {
+                "query": "pera koto mg",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "predicted": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-001"
+                ]
+            },
+            {
+                "query": "parasetamol for adult",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "predicted": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ]
+            },
+            {
+                "query": "heet strok simtoms",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.0
+            },
+            {
+                "query": "matha betha bori",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "predicted": [
+                    "DOC-NHS-001"
+                ]
+            },
+            {
+                "query": "How to treat a broken leg",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "score": 0.49180327868852464
+            },
+            {
+                "query": "What are the symptoms of lung cancer",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "score": 0.5633802816901409
+            },
+            {
+                "query": "What is the dosage of paracetamol for a 2 year old?",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "score": 0.6306306306306306
+            },
+            {
+                "query": "Adult choking what to do",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "score": 0.7843137254901962
+            }
+        ]
+    },
+    "0.2": {
+        "metrics": {
+            "total": 32,
+            "recall_1": 20,
+            "recall_3": 22,
+            "mrr": 20.666666666666664,
+            "no_result_correct": 1,
+            "false_retrieval": 4,
+            "false_no_result": 2,
+            "translation_failures": 1,
+            "latencies_ms": [
+                15.290498733520508,
+                14.853954315185547,
+                15.311479568481445,
+                15.97452163696289,
+                15.663385391235352,
+                15.048742294311523,
+                16.681194305419922,
+                16.32237434387207,
+                18.993616104125977,
+                11.281490325927734,
+                16.587257385253906,
+                14.944076538085938,
+                15.4266357421875,
+                15.98978042602539,
+                15.74397087097168,
+                15.930414199829102,
+                15.680551528930664,
+                16.672372817993164,
+                15.03443717956543,
+                15.23900032043457,
+                16.009807586669922,
+                15.303611755371094,
+                16.10398292541504,
+                16.204118728637695,
+                16.82901382446289,
+                17.858028411865234,
+                14.05954360961914,
+                14.557600021362305,
+                16.3118839263916,
+                14.837980270385742,
+                15.60831069946289,
+                15.672922134399414
+            ]
+        },
+        "per_category": {
+            "English factual": {
+                "total": 2,
+                "correct": 2
+            },
+            "English paraphrase": {
+                "total": 2,
+                "correct": 1
+            },
+            "Native Bangla": {
+                "total": 2,
+                "correct": 1
+            },
+            "Standard Banglish": {
+                "total": 2,
+                "correct": 2
+            },
+            "Abbreviated Banglish": {
+                "total": 2,
+                "correct": 1
+            },
+            "Mixed Bangla-English": {
+                "total": 2,
+                "correct": 2
+            },
+            "Mixed Banglish-English": {
+                "total": 2,
+                "correct": 2
+            },
+            "Medication boundaries": {
+                "total": 2,
+                "correct": 2
+            },
+            "Symptom descriptions": {
+                "total": 2,
+                "correct": 1
+            },
+            "Emergency wording": {
+                "total": 2,
+                "correct": 2
+            },
+            "Very short queries": {
+                "total": 2,
+                "correct": 2
+            },
+            "Ambiguous queries": {
+                "total": 2,
+                "correct": 2
+            },
+            "Misspellings": {
+                "total": 2,
+                "correct": 0
+            },
+            "Translation failures": {
+                "total": 2,
+                "correct": 1
+            },
+            "Irrelevant": {
+                "total": 2,
+                "correct": 0
+            },
+            "Answer does not exist": {
+                "total": 2,
+                "correct": 0
+            }
+        },
+        "failures": [
+            {
+                "query": "Tylenol limits for grown ups",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.19607843137254904
+            },
+            {
+                "query": "pera koto mg",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "predicted": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-001"
+                ]
+            },
+            {
+                "query": "parasetamol for adult",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "predicted": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ]
+            },
+            {
+                "query": "heet strok simtoms",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.0
+            },
+            {
+                "query": "matha betha bori",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "predicted": [
+                    "DOC-NHS-001"
+                ]
+            },
+            {
+                "query": "How to treat a broken leg",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "score": 0.49180327868852464
+            },
+            {
+                "query": "What are the symptoms of lung cancer",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "score": 0.5633802816901409
+            },
+            {
+                "query": "What is the dosage of paracetamol for a 2 year old?",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "score": 0.6306306306306306
+            },
+            {
+                "query": "Adult choking what to do",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "score": 0.7843137254901962
+            }
+        ]
+    },
+    "0.5": {
+        "metrics": {
+            "total": 32,
+            "recall_1": 16,
+            "recall_3": 16,
+            "mrr": 16.0,
+            "no_result_correct": 2,
+            "false_retrieval": 3,
+            "false_no_result": 11,
+            "translation_failures": 1,
+            "latencies_ms": [
+                15.55633544921875,
+                15.78521728515625,
+                15.381813049316406,
+                15.603303909301758,
+                16.057491302490234,
+                16.851425170898438,
+                16.15118980407715,
+                15.949010848999023,
+                14.56904411315918,
+                15.55323600769043,
+                17.806291580200195,
+                14.549016952514648,
+                15.163421630859375,
+                14.665603637695312,
+                15.876531600952148,
+                14.825105667114258,
+                17.630577087402344,
+                13.284444808959961,
+                16.415834426879883,
+                15.211105346679688,
+                14.884710311889648,
+                15.15817642211914,
+                15.164375305175781,
+                16.290664672851562,
+                16.086101531982422,
+                16.042709350585938,
+                15.830516815185547,
+                15.615701675415039,
+                15.802383422851562,
+                15.831708908081055,
+                15.51961898803711,
+                16.017913818359375
+            ]
+        },
+        "per_category": {
+            "English factual": {
+                "total": 2,
+                "correct": 2
+            },
+            "English paraphrase": {
+                "total": 2,
+                "correct": 1
+            },
+            "Native Bangla": {
+                "total": 2,
+                "correct": 1
+            },
+            "Standard Banglish": {
+                "total": 2,
+                "correct": 2
+            },
+            "Abbreviated Banglish": {
+                "total": 2,
+                "correct": 0
+            },
+            "Mixed Bangla-English": {
+                "total": 2,
+                "correct": 2
+            },
+            "Mixed Banglish-English": {
+                "total": 2,
+                "correct": 2
+            },
+            "Medication boundaries": {
+                "total": 2,
+                "correct": 2
+            },
+            "Symptom descriptions": {
+                "total": 2,
+                "correct": 1
+            },
+            "Emergency wording": {
+                "total": 2,
+                "correct": 1
+            },
+            "Very short queries": {
+                "total": 2,
+                "correct": 1
+            },
+            "Ambiguous queries": {
+                "total": 2,
+                "correct": 1
+            },
+            "Misspellings": {
+                "total": 2,
+                "correct": 0
+            },
+            "Translation failures": {
+                "total": 2,
+                "correct": 1
+            },
+            "Irrelevant": {
+                "total": 2,
+                "correct": 1
+            },
+            "Answer does not exist": {
+                "total": 2,
+                "correct": 0
+            }
+        },
+        "failures": [
+            {
+                "query": "Tylenol limits for grown ups",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.19607843137254904
+            },
+            {
+                "query": "\u09b9\u09bf\u099f \u09b8\u09cd\u099f\u09cd\u09b0\u09cb\u0995 \u09b9\u09b2\u09c7 \u0995\u09bf \u0995\u09b0\u09ac?",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.4938271604938272
+            },
+            {
+                "query": "pera koto mg",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.3921568627450981
+            },
+            {
+                "query": "mtha ghurse rod e",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.24390243902439027
+            },
+            {
+                "query": "I feel dizzy and have a headache in the sun",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.49504950495049505
+            },
+            {
+                "query": "My child is turning blue and cannot breathe help",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.43956043956043955
+            },
+            {
+                "query": "hot tired dizzy",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.3225806451612903
+            },
+            {
+                "query": "fever medication",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.47619047619047616
+            },
+            {
+                "query": "parasetamol for adult",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.3225806451612903
+            },
+            {
+                "query": "heet strok simtoms",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.0
+            },
+            {
+                "query": "matha betha bori",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.47619047619047616
+            },
+            {
+                "query": "What are the symptoms of lung cancer",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "score": 0.5633802816901409
+            },
+            {
+                "query": "What is the dosage of paracetamol for a 2 year old?",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "score": 0.6306306306306306
+            },
+            {
+                "query": "Adult choking what to do",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "score": 0.7843137254901962
+            }
+        ]
+    },
+    "0.65": {
+        "metrics": {
+            "total": 32,
+            "recall_1": 13,
+            "recall_3": 13,
+            "mrr": 13.0,
+            "no_result_correct": 4,
+            "false_retrieval": 1,
+            "false_no_result": 14,
+            "translation_failures": 1,
+            "latencies_ms": [
+                15.854120254516602,
+                15.198469161987305,
+                15.228986740112305,
+                15.993833541870117,
+                15.510797500610352,
+                15.9454345703125,
+                16.050100326538086,
+                15.754222869873047,
+                16.063928604125977,
+                15.815258026123047,
+                16.57867431640625,
+                16.129493713378906,
+                19.25802230834961,
+                13.087749481201172,
+                17.51542091369629,
+                14.415264129638672,
+                14.569282531738281,
+                15.743494033813477,
+                15.613079071044922,
+                15.312910079956055,
+                15.005350112915039,
+                15.686511993408203,
+                16.07489585876465,
+                15.391826629638672,
+                15.465021133422852,
+                19.88959312438965,
+                10.713338851928711,
+                15.339851379394531,
+                15.817880630493164,
+                16.038179397583008,
+                14.66512680053711,
+                15.159130096435547
+            ]
+        },
+        "per_category": {
+            "English factual": {
+                "total": 2,
+                "correct": 1
+            },
+            "English paraphrase": {
+                "total": 2,
+                "correct": 0
+            },
+            "Native Bangla": {
+                "total": 2,
+                "correct": 1
+            },
+            "Standard Banglish": {
+                "total": 2,
+                "correct": 1
+            },
+            "Abbreviated Banglish": {
+                "total": 2,
+                "correct": 0
+            },
+            "Mixed Bangla-English": {
+                "total": 2,
+                "correct": 2
+            },
+            "Mixed Banglish-English": {
+                "total": 2,
+                "correct": 2
+            },
+            "Medication boundaries": {
+                "total": 2,
+                "correct": 2
+            },
+            "Symptom descriptions": {
+                "total": 2,
+                "correct": 1
+            },
+            "Emergency wording": {
+                "total": 2,
+                "correct": 1
+            },
+            "Very short queries": {
+                "total": 2,
+                "correct": 1
+            },
+            "Ambiguous queries": {
+                "total": 2,
+                "correct": 1
+            },
+            "Misspellings": {
+                "total": 2,
+                "correct": 0
+            },
+            "Translation failures": {
+                "total": 2,
+                "correct": 1
+            },
+            "Irrelevant": {
+                "total": 2,
+                "correct": 2
+            },
+            "Answer does not exist": {
+                "total": 2,
+                "correct": 1
+            }
+        },
+        "failures": [
+            {
+                "query": "What is the maximum daily dose of paracetamol for an adult?",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.6306306306306306
+            },
+            {
+                "query": "Tylenol limits for grown ups",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.19607843137254904
+            },
+            {
+                "query": "What to do if baby cant breathe food stuck",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.5494505494505495
+            },
+            {
+                "query": "\u09b9\u09bf\u099f \u09b8\u09cd\u099f\u09cd\u09b0\u09cb\u0995 \u09b9\u09b2\u09c7 \u0995\u09bf \u0995\u09b0\u09ac?",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.4938271604938272
+            },
+            {
+                "query": "paracetamol koto mg khabo din e",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.594059405940594
+            },
+            {
+                "query": "pera koto mg",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.3921568627450981
+            },
+            {
+                "query": "mtha ghurse rod e",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.24390243902439027
+            },
+            {
+                "query": "I feel dizzy and have a headache in the sun",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.49504950495049505
+            },
+            {
+                "query": "My child is turning blue and cannot breathe help",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.43956043956043955
+            },
+            {
+                "query": "hot tired dizzy",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.3225806451612903
+            },
+            {
+                "query": "fever medication",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.47619047619047616
+            },
+            {
+                "query": "parasetamol for adult",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.3225806451612903
+            },
+            {
+                "query": "heet strok simtoms",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.0
+            },
+            {
+                "query": "matha betha bori",
+                "type": "NO_RELEVANT_SOURCE (False Negative)",
+                "score": 0.47619047619047616
+            },
+            {
+                "query": "Adult choking what to do",
+                "type": "IRRELEVANT_TOP_RESULT",
+                "score": 0.7843137254901962
+            }
+        ]
+    }
+}

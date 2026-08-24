@@ -1,0 +1,81 @@
+{
+  "query_id": "DEV-AST-10",
+  "raw_query": "kon kon karone asthma bere jete pare?",
+  "normalized_query": "kon kon karone asthma bere jete pare? (asthma attack inhaler spacer breathing difficulty)",
+  "language_category": "Standard_Banglish",
+  "expected_source_id": "DOC-NHS-004",
+  "gold_chunk_ids": [
+    "DOC-NHS-004-HYB-001",
+    "DOC-NHS-004-HYB-011"
+  ],
+  "gold_headings": [
+    "",
+    ""
+  ],
+  "gold_avg_length": 656.5,
+  "dense_rank": 6,
+  "dense_r15": true,
+  "rerank_rank": 2,
+  "in_top5": true,
+  "is_top1": false,
+  "gold_rerank_score": 0.02481110766530037,
+  "rank1_chunk_id": "DOC-NHS-004-HYB-003",
+  "rank1_source_id": "DOC-NHS-004",
+  "rank1_heading": "",
+  "rank1_length": 566,
+  "rank1_score": 0.027924174442887306,
+  "score_margin_vs_gold": 0.003113066777586937,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "SAME_DOC_SUBSTANTIVE_SECTION_COMPETITION",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-004-HYB-003",
+    "DOC-NHS-004-HYB-001",
+    "DOC-NHS-004-HYB-010",
+    "DOC-NHS-004-HYB-008",
+    "DOC-NHS-004-HYB-000"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-004-HYB-003",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.027924174442887306,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-004-HYB-001",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.02481110766530037,
+      "is_gold": true
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-004-HYB-010",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.024589629843831062,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-004-HYB-008",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.01847938261926174,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-004-HYB-000",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.011704105045646429,
+      "is_gold": false
+    }
+  ]
+}

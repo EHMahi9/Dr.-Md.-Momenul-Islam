@@ -1,0 +1,3286 @@
+{
+  "gate": "GATE_5.13",
+  "frozen_configuration_hash": "3318ae3bd1b671a99e98a07e46911d41c0fe8d872e4fa5a4b6d8bfaad8873f28",
+  "frozen_benchmark_hash": "7debd4b7d804938d4c7ecf8f414f51d936830b5a6d9d62ebfcaedde1874c8a81",
+  "sample_sizes": {
+    "total_holdout_queries": 40,
+    "supported_queries_n": 40,
+    "unsupported_queries_n": 20
+  },
+  "dense_candidate_recall": {
+    "top5_count": "17/40",
+    "top5_pct": 42.5,
+    "top10_count": "30/40",
+    "top10_pct": 75.0,
+    "top15_count": "34/40",
+    "top15_pct": 85.0,
+    "dense_mrr": 0.2922
+  },
+  "final_chunk_level_metrics": {
+    "r1_count": "10/40",
+    "r1_pct": 25.0,
+    "r3_count": "14/40",
+    "r3_pct": 35.0,
+    "r5_count": "21/40",
+    "r5_pct": 52.5,
+    "mrr": 0.3358
+  },
+  "source_level_metrics": {
+    "dense_r1": "31/40 (77.5%)",
+    "dense_r3": "36/40 (90.0%)",
+    "dense_r5": "39/40 (97.5%)",
+    "dense_mrr": 0.8435,
+    "rerank_r1": "33/40 (82.5%)",
+    "rerank_r3": "39/40 (97.5%)",
+    "rerank_r5": "39/40 (97.5%)",
+    "rerank_mrr": 0.8917
+  },
+  "evidence_availability": {
+    "TOP1_CORRECT": "10/40 (25.0%)",
+    "TOP1_WRONG_BUT_TOP3_HAS_GOLD": "4/40 (10.0%)",
+    "TOP3_WRONG_BUT_TOP5_HAS_GOLD": "7/40 (17.5%)",
+    "GOLD_ABSENT_FROM_TOP5": "19/40 (47.5%)"
+  },
+  "dense_vs_reranker_analysis": {
+    "GOLD_RETAINED_IN_TOP5": "21/40 (52.5%)",
+    "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK": "13/40 (32.5%)",
+    "GOLD_OUTSIDE_DENSE15": "6/40 (15.0%)"
+  },
+  "language_breakdown": {
+    "English": {
+      "n": 12,
+      "dense_top15_count": "11/12",
+      "dense_top15_pct": 91.67,
+      "final_r1_count": "4/12",
+      "final_r1_pct": 33.33,
+      "final_r3_count": "5/12",
+      "final_r3_pct": 41.67,
+      "final_r5_count": "6/12",
+      "final_r5_pct": 50.0,
+      "final_mrr": 0.3917
+    },
+    "Native_Bangla": {
+      "n": 11,
+      "dense_top15_count": "10/11",
+      "dense_top15_pct": 90.91,
+      "final_r1_count": "3/11",
+      "final_r1_pct": 27.27,
+      "final_r3_count": "5/11",
+      "final_r3_pct": 45.45,
+      "final_r5_count": "8/11",
+      "final_r5_pct": 72.73,
+      "final_mrr": 0.4121
+    },
+    "Standard_Banglish": {
+      "n": 9,
+      "dense_top15_count": "8/9",
+      "dense_top15_pct": 88.89,
+      "final_r1_count": "2/9",
+      "final_r1_pct": 22.22,
+      "final_r3_count": "3/9",
+      "final_r3_pct": 33.33,
+      "final_r5_count": "5/9",
+      "final_r5_pct": 55.56,
+      "final_mrr": 0.3333
+    },
+    "Abbreviated_Banglish": {
+      "n": 8,
+      "dense_top15_count": "5/8",
+      "dense_top15_pct": 62.5,
+      "final_r1_count": "1/8",
+      "final_r1_pct": 12.5,
+      "final_r3_count": "1/8",
+      "final_r3_pct": 12.5,
+      "final_r5_count": "2/8",
+      "final_r5_pct": 25.0,
+      "final_mrr": 0.15
+    }
+  },
+  "unsupported_queries_evaluation": {
+    "total_unsupported_queries": 20,
+    "hard_negatives_n": 12,
+    "out_of_corpus_n": 8,
+    "max_reranker_score": 0.5034931302070618,
+    "min_reranker_score": 4.546285708784126e-05,
+    "avg_reranker_score": 0.10268913947838883,
+    "unsupported_queries": [
+      {
+        "query_id": "HN-01",
+        "query_text": "How to apply a tactical tourniquet to stop arterial bleeding on thigh?",
+        "normalized_query_text": "How to apply a tactical tourniquet to stop arterial bleeding on thigh? (cuts grazes bleeding pressure clean dressing wound)",
+        "language_category": "English",
+        "query_type": "Hard_Negative",
+        "benchmark_split": "HARD_NEGATIVE",
+        "dense_top1_cid": "DOC-NHS-006-HYB-003",
+        "dense_top1_score": 0.8836721181869507,
+        "rerank_top1_cid": "DOC-NHS-006-HYB-003",
+        "rerank_top1_score": 0.45410650968551636,
+        "rerank_top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-002",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-006"
+        ],
+        "rerank_top5_scores": [
+          0.45410650968551636,
+          0.2581096291542053,
+          0.16423280537128448,
+          0.16280941665172577,
+          0.11466974020004272
+        ]
+      },
+      {
+        "query_id": "HN-02",
+        "query_text": "হাঁপানির টান কমাতে সালবুটামল নেবুলাইজারের ডোজ কত মিলিগ্রাম দেব?",
+        "normalized_query_text": "হাঁপানির টান কমাতে সালবুটামল নেবুলাইজারের ডোজ কত মিলিগ্রাম দেব? (asthma attack inhaler spacer breathing difficulty)",
+        "language_category": "Native_Bangla",
+        "query_type": "Hard_Negative",
+        "benchmark_split": "HARD_NEGATIVE",
+        "dense_top1_cid": "DOC-NHS-004-HYB-003",
+        "dense_top1_score": 0.8393747210502625,
+        "rerank_top1_cid": "DOC-NHS-004-HYB-003",
+        "rerank_top1_score": 0.08459837734699249,
+        "rerank_top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-008",
+          "DOC-NHS-004-HYB-002",
+          "DOC-NHS-004-HYB-000"
+        ],
+        "rerank_top5_scores": [
+          0.08459837734699249,
+          0.017731880769133568,
+          0.008792043663561344,
+          0.005917275790125132,
+          0.005529825575649738
+        ]
+      },
+      {
+        "query_id": "HN-03",
+        "query_text": "severe dehydration e saline IV injection kon vein e dibo?",
+        "normalized_query_text": "severe dehydration e saline IV injection kon vein e dibo? (dehydration fluid rehydration oral fluids)",
+        "language_category": "Standard_Banglish",
+        "query_type": "Hard_Negative",
+        "benchmark_split": "HARD_NEGATIVE",
+        "dense_top1_cid": "DOC-NHS-007-HYB-004",
+        "dense_top1_score": 0.8565812110900879,
+        "rerank_top1_cid": "DOC-NHS-007-HYB-004",
+        "rerank_top1_score": 0.054258063435554504,
+        "rerank_top5_cids": [
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-007-HYB-000",
+          "DOC-NHS-008-HYB-004",
+          "DOC-NHS-007-HYB-003",
+          "DOC-NHS-007-HYB-001"
+        ],
+        "rerank_top5_scores": [
+          0.054258063435554504,
+          0.04263964667916298,
+          0.04149743914604187,
+          0.039429839700460434,
+          0.03915897384285927
+        ]
+      },
+      {
+        "query_id": "HN-04",
+        "query_text": "chokhe chemical acid porle kon drop dibo",
+        "normalized_query_text": "chokhe chemical acid porle kon drop dibo",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Hard_Negative",
+        "benchmark_split": "HARD_NEGATIVE",
+        "dense_top1_cid": "DOC-NHS-008-HYB-005",
+        "dense_top1_score": 0.7932549715042114,
+        "rerank_top1_cid": "DOC-NHS-008-HYB-005",
+        "rerank_top1_score": 0.00019299259292893112,
+        "rerank_top5_cids": [
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-011-HYB-002",
+          "DOC-NHS-008-HYB-001"
+        ],
+        "rerank_top5_scores": [
+          0.00019299259292893112,
+          8.665097993798554e-05,
+          4.634945071302354e-05,
+          4.3378982809372246e-05,
+          4.295792678021826e-05
+        ]
+      },
+      {
+        "query_id": "HN-05",
+        "query_text": "Antibiotics dosage for severe infectious bacterial diarrhoea in adults",
+        "normalized_query_text": "Antibiotics dosage for severe infectious bacterial diarrhoea in adults (diarrhoea vomiting oral rehydration fluids)",
+        "language_category": "English",
+        "query_type": "Hard_Negative",
+        "benchmark_split": "HARD_NEGATIVE",
+        "dense_top1_cid": "DOC-NHS-008-HYB-003",
+        "dense_top1_score": 0.868500828742981,
+        "rerank_top1_cid": "DOC-NHS-008-HYB-003",
+        "rerank_top1_score": 0.07102692872285843,
+        "rerank_top5_cids": [
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-008-HYB-007",
+          "DOC-NHS-008-HYB-000",
+          "DOC-NHS-008-HYB-002",
+          "DOC-NHS-007-HYB-002"
+        ],
+        "rerank_top5_scores": [
+          0.07102692872285843,
+          0.0672801211476326,
+          0.049776606261730194,
+          0.034121572971343994,
+          0.016736265271902084
+        ]
+      },
+      {
+        "query_id": "HN-06",
+        "query_text": "বাচ্চার ডেঙ্গু জ্বরে প্লেটলেট কমে গেলে কী ওষুধ দিতে হয়?",
+        "normalized_query_text": "বাচ্চার ডেঙ্গু জ্বরে প্লেটলেট কমে গেলে কী ওষুধ দিতে হয়? (fever high temperature children fluids paracetamol)",
+        "language_category": "Native_Bangla",
+        "query_type": "Hard_Negative",
+        "benchmark_split": "HARD_NEGATIVE",
+        "dense_top1_cid": "DOC-NHS-010-HYB-003",
+        "dense_top1_score": 0.8690119385719299,
+        "rerank_top1_cid": "DOC-NHS-010-HYB-002",
+        "rerank_top1_score": 0.5034931302070618,
+        "rerank_top5_cids": [
+          "DOC-NHS-010-HYB-002",
+          "DOC-NHS-010-HYB-003",
+          "DOC-NHS-010-HYB-000",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-008-HYB-001"
+        ],
+        "rerank_top5_scores": [
+          0.5034931302070618,
+          0.40180644392967224,
+          0.08934905380010605,
+          0.03210898116230965,
+          0.028221823275089264
+        ]
+      },
+      {
+        "query_id": "HN-07",
+        "query_text": "migraine er specific triptan medicine dosage koto?",
+        "normalized_query_text": "migraine er specific triptan medicine dosage koto?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Hard_Negative",
+        "benchmark_split": "HARD_NEGATIVE",
+        "dense_top1_cid": "DOC-NHS-004-HYB-004",
+        "dense_top1_score": 0.8375903367996216,
+        "rerank_top1_cid": "DOC-NHS-004-HYB-003",
+        "rerank_top1_score": 0.000305165012832731,
+        "rerank_top5_cids": [
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-009-HYB-002",
+          "DOC-NHS-004-HYB-004"
+        ],
+        "rerank_top5_scores": [
+          0.000305165012832731,
+          0.0002224468917120248,
+          0.000217348278965801,
+          0.0001742415188346058,
+          0.00010289144847774878
+        ]
+      },
+      {
+        "query_id": "HN-08",
+        "query_text": "severe anaphylaxis e steroid injection hydrocortisone koto mg",
+        "normalized_query_text": "severe anaphylaxis e steroid injection hydrocortisone koto mg (anaphylaxis severe allergic reaction adrenaline 999)",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Hard_Negative",
+        "benchmark_split": "HARD_NEGATIVE",
+        "dense_top1_cid": "DOC-NHS-011-HYB-000",
+        "dense_top1_score": 0.8741669654846191,
+        "rerank_top1_cid": "DOC-NHS-011-HYB-000",
+        "rerank_top1_score": 0.18921922147274017,
+        "rerank_top5_cids": [
+          "DOC-NHS-011-HYB-000",
+          "DOC-NHS-004-HYB-004",
+          "DOC-NHS-011-HYB-004",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-011-HYB-005"
+        ],
+        "rerank_top5_scores": [
+          0.18921922147274017,
+          0.18260318040847778,
+          0.17483069002628326,
+          0.07427361607551575,
+          0.054159633815288544
+        ]
+      },
+      {
+        "query_id": "HN-09",
+        "query_text": "How to perform surgical stitches on a deep laceration cut?",
+        "normalized_query_text": "How to perform surgical stitches on a deep laceration cut? (cuts grazes bleeding pressure clean dressing wound)",
+        "language_category": "English",
+        "query_type": "Hard_Negative",
+        "benchmark_split": "HARD_NEGATIVE",
+        "dense_top1_cid": "DOC-NHS-006-HYB-003",
+        "dense_top1_score": 0.884353518486023,
+        "rerank_top1_cid": "DOC-NHS-006-HYB-003",
+        "rerank_top1_score": 0.35012340545654297,
+        "rerank_top5_cids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-006",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-006-HYB-002"
+        ],
+        "rerank_top5_scores": [
+          0.35012340545654297,
+          0.31978639960289,
+          0.11505547165870667,
+          0.07608652114868164,
+          0.05584124103188515
+        ]
+      },
+      {
+        "query_id": "HN-10",
+        "query_text": "বাচ্চাদের খিঁচুনি বা ফেব্রাইল কনভালশন হলে কী অ্যান্টি-কনভালস্যান্ট দেব?",
+        "normalized_query_text": "বাচ্চাদের খিঁচুনি বা ফেব্রাইল কনভালশন হলে কী অ্যান্টি-কনভালস্যান্ট দেব?",
+        "language_category": "Native_Bangla",
+        "query_type": "Hard_Negative",
+        "benchmark_split": "HARD_NEGATIVE",
+        "dense_top1_cid": "DOC-NHS-010-HYB-003",
+        "dense_top1_score": 0.8526153564453125,
+        "rerank_top1_cid": "DOC-NHS-010-HYB-003",
+        "rerank_top1_score": 0.09214848279953003,
+        "rerank_top5_cids": [
+          "DOC-NHS-010-HYB-003",
+          "DOC-NHS-010-HYB-002",
+          "DOC-NHS-008-HYB-001",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-008-HYB-003"
+        ],
+        "rerank_top5_scores": [
+          0.09214848279953003,
+          0.0669628158211708,
+          0.01138641033321619,
+          0.0023846521507948637,
+          0.0017681664321571589
+        ]
+      },
+      {
+        "query_id": "HN-11",
+        "query_text": "third degree electrical burn e dead skin debridement kivabe kore?",
+        "normalized_query_text": "third degree electrical burn e dead skin debridement kivabe kore? (burns scalds cold water cool running water blister first aid)",
+        "language_category": "Standard_Banglish",
+        "query_type": "Hard_Negative",
+        "benchmark_split": "HARD_NEGATIVE",
+        "dense_top1_cid": "DOC-NHS-005-HYB-001",
+        "dense_top1_score": 0.8615415096282959,
+        "rerank_top1_cid": "DOC-NHS-005-HYB-001",
+        "rerank_top1_score": 0.08215628564357758,
+        "rerank_top5_cids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-000",
+          "DOC-NHS-005-HYB-003"
+        ],
+        "rerank_top5_scores": [
+          0.08215628564357758,
+          0.013605290092527866,
+          0.013195840641856194,
+          0.007719637360423803,
+          0.004906173795461655
+        ]
+      },
+      {
+        "query_id": "HN-12",
+        "query_text": "chronic asthma r steroid biological injection injection kivabe dey",
+        "normalized_query_text": "chronic asthma r steroid biological injection injection kivabe dey (asthma attack inhaler spacer breathing difficulty)",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Hard_Negative",
+        "benchmark_split": "HARD_NEGATIVE",
+        "dense_top1_cid": "DOC-NHS-004-HYB-011",
+        "dense_top1_score": 0.8616906404495239,
+        "rerank_top1_cid": "DOC-NHS-004-HYB-010",
+        "rerank_top1_score": 0.16627569496631622,
+        "rerank_top5_cids": [
+          "DOC-NHS-004-HYB-010",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-004-HYB-000",
+          "DOC-NHS-004-HYB-003",
+          "DOC-NHS-004-HYB-008"
+        ],
+        "rerank_top5_scores": [
+          0.16627569496631622,
+          0.08693134039640427,
+          0.07877659052610397,
+          0.05682532489299774,
+          0.053925711661577225
+        ]
+      },
+      {
+        "query_id": "OOC-01",
+        "query_text": "What is the recommended prophylaxis medication for malaria traveling to Africa?",
+        "normalized_query_text": "What is the recommended prophylaxis medication for malaria traveling to Africa?",
+        "language_category": "English",
+        "query_type": "Out_Of_Corpus",
+        "benchmark_split": "OUT_OF_CORPUS",
+        "dense_top1_cid": "DOC-NHS-008-HYB-003",
+        "dense_top1_score": 0.8151189088821411,
+        "rerank_top1_cid": "DOC-NHS-010-HYB-003",
+        "rerank_top1_score": 0.0030666280072182417,
+        "rerank_top5_cids": [
+          "DOC-NHS-010-HYB-003",
+          "DOC-NHS-011-HYB-005",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-011-HYB-006",
+          "DOC-NHS-011-HYB-004"
+        ],
+        "rerank_top5_scores": [
+          0.0030666280072182417,
+          0.002619544044137001,
+          0.001074217725545168,
+          0.00029560376424342394,
+          0.0002852779580280185
+        ]
+      },
+      {
+        "query_id": "OOC-02",
+        "query_text": "কুকুর কামড়ালে জলাতঙ্ক বা রেবিস ভ্যাকসিন কত দিনের মধ্যে নিতে হয়?",
+        "normalized_query_text": "কুকুর কামড়ালে জলাতঙ্ক বা রেবিস ভ্যাকসিন কত দিনের মধ্যে নিতে হয়?",
+        "language_category": "Native_Bangla",
+        "query_type": "Out_Of_Corpus",
+        "benchmark_split": "OUT_OF_CORPUS",
+        "dense_top1_cid": "DOC-NHS-010-HYB-003",
+        "dense_top1_score": 0.8028367757797241,
+        "rerank_top1_cid": "DOC-NHS-008-HYB-002",
+        "rerank_top1_score": 0.0004095315816812217,
+        "rerank_top5_cids": [
+          "DOC-NHS-008-HYB-002",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-011-HYB-006",
+          "DOC-NHS-005-HYB-001"
+        ],
+        "rerank_top5_scores": [
+          0.0004095315816812217,
+          0.0002702417550608516,
+          0.0002355190517846495,
+          0.00022946251556277275,
+          0.00010996901255566627
+        ]
+      },
+      {
+        "query_id": "OOC-03",
+        "query_text": "dante puz hole root canal treatment keno dorkar?",
+        "normalized_query_text": "dante puz hole root canal treatment keno dorkar?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Out_Of_Corpus",
+        "benchmark_split": "OUT_OF_CORPUS",
+        "dense_top1_cid": "DOC-NHS-007-HYB-003",
+        "dense_top1_score": 0.8091880083084106,
+        "rerank_top1_cid": "DOC-NHS-005-HYB-004",
+        "rerank_top1_score": 5.147381671122275e-05,
+        "rerank_top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-011-HYB-005",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-000"
+        ],
+        "rerank_top5_scores": [
+          5.147381671122275e-05,
+          3.868828571285121e-05,
+          3.256331547163427e-05,
+          2.9447284759953618e-05,
+          2.8134572858107276e-05
+        ]
+      },
+      {
+        "query_id": "OOC-04",
+        "query_text": "kidney te pathor hole lithotripsy laser operation kivabe kore",
+        "normalized_query_text": "kidney te pathor hole lithotripsy laser operation kivabe kore",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Out_Of_Corpus",
+        "benchmark_split": "OUT_OF_CORPUS",
+        "dense_top1_cid": "DOC-NHS-008-HYB-005",
+        "dense_top1_score": 0.8127808570861816,
+        "rerank_top1_cid": "DOC-NHS-010-HYB-005",
+        "rerank_top1_score": 4.546285708784126e-05,
+        "rerank_top5_cids": [
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-006-HYB-005"
+        ],
+        "rerank_top5_scores": [
+          4.546285708784126e-05,
+          2.1663159714080393e-05,
+          2.1165420548641123e-05,
+          2.028816925303545e-05,
+          1.9987584892078303e-05
+        ]
+      },
+      {
+        "query_id": "OOC-05",
+        "query_text": "How is type 1 diabetes insulin pump therapy adjusted for exercise?",
+        "normalized_query_text": "How is type 1 diabetes insulin pump therapy adjusted for exercise?",
+        "language_category": "English",
+        "query_type": "Out_Of_Corpus",
+        "benchmark_split": "OUT_OF_CORPUS",
+        "dense_top1_cid": "DOC-NHS-004-HYB-011",
+        "dense_top1_score": 0.8176007270812988,
+        "rerank_top1_cid": "DOC-NHS-007-HYB-001",
+        "rerank_top1_score": 0.0003799294354394078,
+        "rerank_top5_cids": [
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-004-HYB-011",
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-011-HYB-002"
+        ],
+        "rerank_top5_scores": [
+          0.0003799294354394078,
+          0.0001556504430482164,
+          4.186217120150104e-05,
+          4.162380355410278e-05,
+          2.8723434297717176e-05
+        ]
+      },
+      {
+        "query_id": "OOC-06",
+        "query_text": "উচ্চ রক্তচাপ বা হাইপারটেনশনে অ্যামলোডিপিন ওষুধের পার্শ্বপ্রতিক্রিয়া কী?",
+        "normalized_query_text": "উচ্চ রক্তচাপ বা হাইপারটেনশনে অ্যামলোডিপিন ওষুধের পার্শ্বপ্রতিক্রিয়া কী?",
+        "language_category": "Native_Bangla",
+        "query_type": "Out_Of_Corpus",
+        "benchmark_split": "OUT_OF_CORPUS",
+        "dense_top1_cid": "DOC-NHS-010-HYB-003",
+        "dense_top1_score": 0.7960605621337891,
+        "rerank_top1_cid": "DOC-NHS-011-HYB-003",
+        "rerank_top1_score": 0.0017560523701831698,
+        "rerank_top5_cids": [
+          "DOC-NHS-011-HYB-003",
+          "DOC-NHS-009-HYB-003",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-011-HYB-005",
+          "DOC-NHS-008-HYB-006"
+        ],
+        "rerank_top5_scores": [
+          0.0017560523701831698,
+          0.0011259452439844608,
+          0.0010450308909639716,
+          0.0009442425216548145,
+          0.0006899514119140804
+        ]
+      },
+      {
+        "query_id": "OOC-07",
+        "query_text": "broken bone fracture hole plaster koto din rakhte hoy?",
+        "normalized_query_text": "broken bone fracture hole plaster koto din rakhte hoy?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Out_Of_Corpus",
+        "benchmark_split": "OUT_OF_CORPUS",
+        "dense_top1_cid": "DOC-NHS-006-HYB-005",
+        "dense_top1_score": 0.8054174184799194,
+        "rerank_top1_cid": "DOC-NHS-005-HYB-004",
+        "rerank_top1_score": 9.442542068427429e-05,
+        "rerank_top5_cids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-006-HYB-005",
+          "DOC-NHS-006-HYB-006"
+        ],
+        "rerank_top5_scores": [
+          9.442542068427429e-05,
+          7.403788913507015e-05,
+          3.602823198889382e-05,
+          3.1837083952268586e-05,
+          2.1999472664901987e-05
+        ]
+      },
+      {
+        "query_id": "OOC-08",
+        "query_text": "glaucoma eye drop pressure komano kivabe kaj kore",
+        "normalized_query_text": "glaucoma eye drop pressure komano kivabe kaj kore",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Out_Of_Corpus",
+        "benchmark_split": "OUT_OF_CORPUS",
+        "dense_top1_cid": "DOC-NHS-008-HYB-005",
+        "dense_top1_score": 0.8276326656341553,
+        "rerank_top1_cid": "DOC-NHS-010-HYB-005",
+        "rerank_top1_score": 7.502873631892726e-05,
+        "rerank_top5_cids": [
+          "DOC-NHS-010-HYB-005",
+          "DOC-NHS-009-HYB-002",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-007-HYB-001",
+          "DOC-NHS-010-HYB-004"
+        ],
+        "rerank_top5_scores": [
+          7.502873631892726e-05,
+          4.168712257524021e-05,
+          3.674132312880829e-05,
+          3.3033571526175365e-05,
+          2.99448765872512e-05
+        ]
+      }
+    ]
+  },
+  "latency_summary": {
+    "passage_encoding_time_s": 5.03,
+    "total_query_eval_time_s": 668.54,
+    "avg_query_encoding_ms": 51.64,
+    "avg_dense_search_ms": 0.11,
+    "avg_top15_rerank_ms": 16661.68,
+    "avg_end_to_end_per_query_ms": 16713.44,
+    "hardware_environment": "Intel/AMD CPU, torch multi-threading"
+  },
+  "query_evaluations": [
+    {
+      "query_id": "TEST-DIA-01",
+      "query_text": "How to treat diarrhoea and vomiting at home?",
+      "normalized_query_text": "How to treat diarrhoea and vomiting at home? (diarrhoea vomiting oral rehydration fluids)",
+      "target_topic": "Diarrhoea home care fluids",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-007",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-002"
+      ],
+      "final_top5_scores": [
+        0.9816826581954956,
+        0.8235027194023132,
+        0.6003470420837402,
+        0.5771076083183289,
+        0.5063446760177612
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 2,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP1_CORRECT",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-02",
+      "query_text": "ডায়রিয়া ও বমি হলে বাড়িতে কী চিকিৎসা নেওয়া উচিত?",
+      "normalized_query_text": "ডায়রিয়া ও বমি হলে বাড়িতে কী চিকিৎসা নেওয়া উচিত?",
+      "target_topic": "Diarrhoea home care fluids",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-002"
+      ],
+      "final_top5_scores": [
+        0.5841363668441772,
+        0.08420689404010773,
+        0.03910500928759575,
+        0.023883482441306114,
+        0.01974370703101158
+      ],
+      "chunk_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP1_CORRECT",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-03",
+      "query_text": "diarrhoea ar bomi hole bashay ki korbo?",
+      "normalized_query_text": "diarrhoea ar bomi hole bashay ki korbo? (diarrhoea vomiting oral rehydration fluids)",
+      "target_topic": "Diarrhoea home care fluids",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-008-HYB-007",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-010-HYB-002"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-007",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "final_top5_scores": [
+        0.16928455233573914,
+        0.10978510975837708,
+        0.10346069186925888,
+        0.08393562585115433,
+        0.05355380102992058
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 2,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": true,
+        "rerank_rank": 4
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP3_WRONG_BUT_TOP5_HAS_GOLD",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-04",
+      "query_text": "patla paykhana ar bomi hosse onk fluid khabo?",
+      "normalized_query_text": "patla paykhana ar bomi hosse onk fluid khabo? (diarrhoea vomiting oral rehydration fluids)",
+      "target_topic": "Diarrhoea home care fluids",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-007",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-010-HYB-002"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-008-HYB-007",
+        "DOC-NHS-008-HYB-000"
+      ],
+      "final_top5_scores": [
+        0.010215932503342628,
+        0.009863738901913166,
+        0.008458614349365234,
+        0.005216081161051989,
+        0.005139125976711512
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 4,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": true,
+        "rerank_rank": 5
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP3_WRONG_BUT_TOP5_HAS_GOLD",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-05",
+      "query_text": "How long should you stay off work or school after diarrhoea stops?",
+      "normalized_query_text": "How long should you stay off work or school after diarrhoea stops? (diarrhoea vomiting oral rehydration fluids)",
+      "target_topic": "Stay home 48 hours",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-001"
+      ],
+      "final_top5_scores": [
+        0.9812806248664856,
+        0.5480824708938599,
+        0.304228812456131,
+        0.28379616141319275,
+        0.03570092096924782
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 6,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": true,
+        "rerank_rank": 5
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP3_WRONG_BUT_TOP5_HAS_GOLD",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-06",
+      "query_text": "ডায়রিয়া ভালো হওয়ার পর কত ঘণ্টা স্কুলে বা কাজে যাওয়া বন্ধ রাখা উচিত?",
+      "normalized_query_text": "ডায়রিয়া ভালো হওয়ার পর কত ঘণ্টা স্কুলে বা কাজে যাওয়া বন্ধ রাখা উচিত?",
+      "target_topic": "Stay home 48 hours",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-004-HYB-005",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.7142586708068848,
+        0.026740141212940216,
+        0.0014291914412751794,
+        0.0006434055976569653,
+        0.0005860226228833199
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 7,
+        "rerank_r1": false,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 3
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-07",
+      "query_text": "diarrhoea thamar por koto hour bashay thakte hoy?",
+      "normalized_query_text": "diarrhoea thamar por koto hour bashay thakte hoy? (diarrhoea vomiting oral rehydration fluids)",
+      "target_topic": "Stay home 48 hours",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-008-HYB-007",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-007",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "final_top5_scores": [
+        0.1533789485692978,
+        0.06309951096773148,
+        0.048032376915216446,
+        0.0340421125292778,
+        0.026067979633808136
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 7,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK"
+    },
+    {
+      "query_id": "TEST-DIA-08",
+      "query_text": "When to call 999 or go to A&E for diarrhoea with bloody vomit?",
+      "normalized_query_text": "When to call 999 or go to A&E for diarrhoea with bloody vomit? (diarrhoea vomiting oral rehydration fluids emergency call 999 go to A&E)",
+      "target_topic": "Diarrhoea bloody vomit A&E 999",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-011-HYB-003"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "final_top5_scores": [
+        0.9793404340744019,
+        0.9389682412147522,
+        0.9239833354949951,
+        0.8051131963729858,
+        0.6892291307449341
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 10,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": false,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 2,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK"
+    },
+    {
+      "query_id": "TEST-DIA-09",
+      "query_text": "বমির সাথে রক্ত আসলে কি দ্রুত হাসপাতালে যাওয়া দরকার?",
+      "normalized_query_text": "বমির সাথে রক্ত আসলে কি দ্রুত হাসপাতালে যাওয়া দরকার? (diarrhoea vomiting oral rehydration fluids emergency call 999 go to A&E)",
+      "target_topic": "Diarrhoea bloody vomit A&E 999",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-008-HYB-001"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-009-HYB-003"
+      ],
+      "final_top5_scores": [
+        0.9109243154525757,
+        0.5289899110794067,
+        0.3722572326660156,
+        0.25014808773994446,
+        0.22118934988975525
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 5,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK"
+    },
+    {
+      "query_id": "TEST-DIA-10",
+      "query_text": "bomir shathe rokto ase green bomi emergency hospital jabo?",
+      "normalized_query_text": "bomir shathe rokto ase green bomi emergency hospital jabo? (cuts grazes bleeding pressure clean dressing wound diarrhoea vomiting oral rehydration fluids emergency call 999 go to A&E)",
+      "target_topic": "Diarrhoea bloody vomit A&E 999",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-000"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "final_top5_scores": [
+        0.255327969789505,
+        0.19565843045711517,
+        0.07386858761310577,
+        0.06244271248579025,
+        0.03619367629289627
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 9,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": false,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 2,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK"
+    },
+    {
+      "query_id": "TEST-HEA-01",
+      "query_text": "What can you do at home to ease a common headache?",
+      "normalized_query_text": "What can you do at home to ease a common headache? (headache pain relief painkillers paracetamol)",
+      "target_topic": "Relieve headache water painkillers",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-009-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-009-HYB-001",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-008-HYB-006"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-009-HYB-004",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-009-HYB-001"
+      ],
+      "final_top5_scores": [
+        0.8944406509399414,
+        0.044115640223026276,
+        0.03269219025969505,
+        0.01301096472889185,
+        0.006516893394291401
+      ],
+      "chunk_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP1_CORRECT",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-02",
+      "query_text": "সাধারণ মাথা ব্যথায় ঘরে কী ধরনের যত্ন নেওয়া যায়?",
+      "normalized_query_text": "সাধারণ মাথা ব্যথায় ঘরে কী ধরনের যত্ন নেওয়া যায়?",
+      "target_topic": "Relieve headache water painkillers",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-009-HYB-001",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-004",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-009-HYB-001",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.04378711059689522,
+        0.00887361541390419,
+        0.0017201671143993735,
+        0.0016148015856742859,
+        0.001397901913151145
+      ],
+      "chunk_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP1_CORRECT",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-03",
+      "query_text": "matha betha hole bashay ki korle kombe?",
+      "normalized_query_text": "matha betha hole bashay ki korle kombe? (headache pain relief painkillers paracetamol)",
+      "target_topic": "Relieve headache water painkillers",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-009-HYB-001",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-004-HYB-000"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-009-HYB-003"
+      ],
+      "final_top5_scores": [
+        0.004434742033481598,
+        0.002315766178071499,
+        0.0007617275114171207,
+        0.0005293561262078583,
+        0.00035943734110333025
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": false,
+        "dense_r15": true,
+        "dense_rank": 14,
+        "rerank_r1": false,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 2
+      },
+      "source_level": {
+        "dense_r1": false,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 3,
+        "rerank_r1": false,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 2
+      },
+      "evidence_availability": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-04",
+      "query_text": "matha betha paracetamol khabo ar pani khabo kina",
+      "normalized_query_text": "matha betha paracetamol khabo ar pani khabo kina (headache pain relief painkillers paracetamol)",
+      "target_topic": "Relieve headache water painkillers",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-006"
+      ],
+      "final_top5_scores": [
+        0.007246249355375767,
+        0.0026469372678548098,
+        0.0023122753482311964,
+        0.0018115479033440351,
+        0.0012817193055525422
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": false,
+        "dense_r15": false,
+        "dense_rank": 0,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": true,
+        "dense_rank": 4,
+        "rerank_r1": false,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 3
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_OUTSIDE_DENSE15"
+    },
+    {
+      "query_id": "TEST-HEA-05",
+      "query_text": "When is a sudden severe headache an emergency requiring 999?",
+      "normalized_query_text": "When is a sudden severe headache an emergency requiring 999? (headache pain relief painkillers paracetamol emergency call 999 go to A&E)",
+      "target_topic": "Severe sudden headache 999",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "final_top5_scores": [
+        0.9670499563217163,
+        0.9401892423629761,
+        0.6933732032775879,
+        0.570404589176178,
+        0.38980913162231445
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 9,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK"
+    },
+    {
+      "query_id": "TEST-HEA-06",
+      "query_text": "হঠাৎ তীব্র মাথাব্যথা এবং ঘাড় শক্ত হয়ে গেলে কি ৯৯৯ কল দিতে হবে?",
+      "normalized_query_text": "হঠাৎ তীব্র মাথাব্যথা এবং ঘাড় শক্ত হয়ে গেলে কি ৯৯৯ কল দিতে হবে?",
+      "target_topic": "Severe sudden headache 999",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-000"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-004-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.9539563059806824,
+        0.8760610818862915,
+        0.8185523748397827,
+        0.46335211396217346,
+        0.32828304171562195
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 7,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": true,
+        "rerank_rank": 4
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP3_WRONG_BUT_TOP5_HAS_GOLD",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-07",
+      "query_text": "hotath extreme matha betha ar ghaar shokto 999 call dibo?",
+      "normalized_query_text": "hotath extreme matha betha ar ghaar shokto 999 call dibo? (headache pain relief painkillers paracetamol emergency call 999 go to A&E)",
+      "target_topic": "Severe sudden headache 999",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-004-HYB-005"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-004-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.31368833780288696,
+        0.22902031242847443,
+        0.07576249539852142,
+        0.07229453325271606,
+        0.06897369027137756
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 8,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK"
+    },
+    {
+      "query_id": "TEST-HEA-08",
+      "query_text": "blurry vision ar mathay prachondo betha emergency A&E jabo",
+      "normalized_query_text": "blurry vision ar mathay prachondo betha emergency A&E jabo (emergency call 999 go to A&E)",
+      "target_topic": "Severe sudden headache 999",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-000"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "final_top5_scores": [
+        0.42107588052749634,
+        0.20240701735019684,
+        0.05995410680770874,
+        0.03579198941588402,
+        0.03457585349678993
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 8,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK"
+    },
+    {
+      "query_id": "TEST-HEA-09",
+      "query_text": "Common causes of headaches such as dehydration and stress",
+      "normalized_query_text": "Common causes of headaches such as dehydration and stress (dehydration fluid rehydration oral fluids)",
+      "target_topic": "Causes of headaches",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-009-HYB-004"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-009-HYB-004",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-008-HYB-007"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-009-HYB-004",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.7246274352073669,
+        0.24019409716129303,
+        0.22982829809188843,
+        0.10018696635961533,
+        0.033017028123140335
+      ],
+      "chunk_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP1_CORRECT",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-10",
+      "query_text": "matha betha keno hoy causes ki ki?",
+      "normalized_query_text": "matha betha keno hoy causes ki ki? (headache pain relief painkillers paracetamol)",
+      "target_topic": "Causes of headaches",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-009-HYB-004"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-009-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-009-HYB-001",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-009-HYB-004",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "final_top5_scores": [
+        0.0025301736313849688,
+        0.002259413944557309,
+        0.001355870976112783,
+        0.0010771906236186624,
+        0.0007294393726624548
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 4,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": true,
+        "rerank_rank": 4
+      },
+      "source_level": {
+        "dense_r1": false,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 3,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP3_WRONG_BUT_TOP5_HAS_GOLD",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-01",
+      "query_text": "What temperature counts as a fever in children?",
+      "normalized_query_text": "What temperature counts as a fever in children? (fever high temperature children fluids paracetamol)",
+      "target_topic": "Fever threshold 38C",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-002"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "final_top5_scores": [
+        0.8966261148452759,
+        0.3461431562900543,
+        0.04656848683953285,
+        0.04308997467160225,
+        0.011180877685546875
+      ],
+      "chunk_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP1_CORRECT",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-02",
+      "query_text": "শিশুদের কত ডিগ্রি তাপমাত্রা হলে জ্বর হিসেবে গণ্য করা হয়?",
+      "normalized_query_text": "শিশুদের কত ডিগ্রি তাপমাত্রা হলে জ্বর হিসেবে গণ্য করা হয়? (fever high temperature children fluids paracetamol)",
+      "target_topic": "Fever threshold 38C",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-002"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "final_top5_scores": [
+        0.7323911786079407,
+        0.2169036865234375,
+        0.05328952893614769,
+        0.018232790753245354,
+        0.00687422277405858
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 2,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP1_CORRECT",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-03",
+      "query_text": "bachader koto degree temp hole jor dhora hoy?",
+      "normalized_query_text": "bachader koto degree temp hole jor dhora hoy? (fever high temperature children fluids paracetamol)",
+      "target_topic": "Fever threshold 38C",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-001"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-010-HYB-002"
+      ],
+      "final_top5_scores": [
+        0.0424954891204834,
+        0.015999317169189453,
+        0.0045678154565393925,
+        0.004523816984146833,
+        0.0023685835767537355
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 2,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP1_CORRECT",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-04",
+      "query_text": "baby r 38C jor thermometer diye maplam ekhon ki korbo",
+      "normalized_query_text": "baby r 38C jor thermometer diye maplam ekhon ki korbo (fever high temperature children fluids paracetamol)",
+      "target_topic": "Fever home care children",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-008-HYB-002"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-002"
+      ],
+      "final_top5_scores": [
+        0.3710983991622925,
+        0.16305455565452576,
+        0.07689934223890305,
+        0.07447826862335205,
+        0.048701200634241104
+      ],
+      "chunk_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP1_CORRECT",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-05",
+      "query_text": "How to help bring down a child's fever safely at home?",
+      "normalized_query_text": "How to help bring down a child's fever safely at home? (fever high temperature children fluids paracetamol)",
+      "target_topic": "Fever home care children",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-006"
+      ],
+      "final_top5_scores": [
+        0.4447833299636841,
+        0.4097435772418976,
+        0.3379172086715698,
+        0.3119004964828491,
+        0.27343928813934326
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 8,
+        "rerank_r1": false,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 2
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-06",
+      "query_text": "বাচ্চার জ্বর কমাতে বাড়িতে প্রচুর তরল ও প্যারাসিটামল কীভাবে দেব?",
+      "normalized_query_text": "বাচ্চার জ্বর কমাতে বাড়িতে প্রচুর তরল ও প্যারাসিটামল কীভাবে দেব? (headache pain relief painkillers paracetamol fever high temperature children fluids paracetamol)",
+      "target_topic": "Fever home care children",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-010-HYB-000"
+      ],
+      "final_top5_scores": [
+        0.902173638343811,
+        0.5635538697242737,
+        0.5625335574150085,
+        0.17473745346069336,
+        0.09163319319486618
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": false,
+        "dense_r15": true,
+        "dense_rank": 14,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": true,
+        "rerank_rank": 5
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP3_WRONG_BUT_TOP5_HAS_GOLD",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-07",
+      "query_text": "bachar jor komate fluid ar paracetamol dawa jabe?",
+      "normalized_query_text": "bachar jor komate fluid ar paracetamol dawa jabe? (headache pain relief painkillers paracetamol fever high temperature children fluids paracetamol)",
+      "target_topic": "Fever home care children",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-008-HYB-002"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.036399614065885544,
+        0.015796862542629242,
+        0.015424290671944618,
+        0.00792022980749607,
+        0.007523932959884405
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": false,
+        "dense_r15": true,
+        "dense_rank": 14,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP1_CORRECT",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-08",
+      "query_text": "When to call 999 for a child with high fever and rash or breathing trouble?",
+      "normalized_query_text": "When to call 999 for a child with high fever and rash or breathing trouble? (fever high temperature children fluids paracetamol emergency call 999 go to A&E)",
+      "target_topic": "Child fever emergency 999",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.9635778069496155,
+        0.9513333439826965,
+        0.8860377073287964,
+        0.8368982076644897,
+        0.7346038818359375
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 8,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": false,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 3,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK"
+    },
+    {
+      "query_id": "TEST-FEV-09",
+      "query_text": "বাচ্চার তীব্র জ্বর ও নীলচে ঠোঁট হলে অবিলম্বে কি ৯৯৯ কল করতে হবে?",
+      "normalized_query_text": "বাচ্চার তীব্র জ্বর ও নীলচে ঠোঁট হলে অবিলম্বে কি ৯৯৯ কল করতে হবে? (fever high temperature children fluids paracetamol)",
+      "target_topic": "Child fever emergency 999",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-004-HYB-004"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.9523500800132751,
+        0.8884366154670715,
+        0.6363545060157776,
+        0.5953110456466675,
+        0.582163393497467
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 3,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": false,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 2
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK"
+    },
+    {
+      "query_id": "TEST-FEV-10",
+      "query_text": "bacha ghum theke jagena ar thot neel 999 call korbo?",
+      "normalized_query_text": "bacha ghum theke jagena ar thot neel 999 call korbo? (emergency call 999 go to A&E)",
+      "target_topic": "Child fever emergency 999",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-004-HYB-016"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "final_top5_scores": [
+        0.1980520486831665,
+        0.19588930904865265,
+        0.19031569361686707,
+        0.17809143662452698,
+        0.0857357382774353
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": false,
+        "dense_r15": false,
+        "dense_rank": 0,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_rank": 11,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_OUTSIDE_DENSE15"
+    },
+    {
+      "query_id": "TEST-ANA-01",
+      "query_text": "What are the main symptoms of a severe anaphylaxis allergic reaction?",
+      "normalized_query_text": "What are the main symptoms of a severe anaphylaxis allergic reaction? (anaphylaxis severe allergic reaction adrenaline 999)",
+      "target_topic": "Anaphylaxis symptoms",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-002"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-002"
+      ],
+      "final_top5_scores": [
+        0.9744452238082886,
+        0.6022710204124451,
+        0.5683846473693848,
+        0.5082942843437195,
+        0.47498029470443726
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": false,
+        "dense_r15": false,
+        "dense_rank": 0,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_OUTSIDE_DENSE15"
+    },
+    {
+      "query_id": "TEST-ANA-02",
+      "query_text": "অ্যানাফাইলাক্সিস বা তীব্র অ্যালার্জিক রিঅ্যাকশনের লক্ষণগুলো কী?",
+      "normalized_query_text": "অ্যানাফাইলাক্সিস বা তীব্র অ্যালার্জিক রিঅ্যাকশনের লক্ষণগুলো কী? (anaphylaxis severe allergic reaction adrenaline 999)",
+      "target_topic": "Anaphylaxis symptoms",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-002"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.9903632998466492,
+        0.837421178817749,
+        0.7612576484680176,
+        0.6948965787887573,
+        0.6793069243431091
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": false,
+        "dense_r15": false,
+        "dense_rank": 0,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_OUTSIDE_DENSE15"
+    },
+    {
+      "query_id": "TEST-ANA-03",
+      "query_text": "anaphylaxis allergic reaction hole ki ki lokkhon dekha jay?",
+      "normalized_query_text": "anaphylaxis allergic reaction hole ki ki lokkhon dekha jay? (anaphylaxis severe allergic reaction adrenaline 999)",
+      "target_topic": "Anaphylaxis symptoms",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "final_top5_scores": [
+        0.2552374303340912,
+        0.08300427347421646,
+        0.03850382938981056,
+        0.03599619120359421,
+        0.02792811393737793
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": false,
+        "dense_r15": false,
+        "dense_rank": 0,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_OUTSIDE_DENSE15"
+    },
+    {
+      "query_id": "TEST-ANA-04",
+      "query_text": "muk fule geche shash nite parsenana allergy r jonno anaphylaxis naki",
+      "normalized_query_text": "muk fule geche shash nite parsenana allergy r jonno anaphylaxis naki (anaphylaxis severe allergic reaction adrenaline 999)",
+      "target_topic": "Anaphylaxis symptoms",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-008"
+      ],
+      "final_top5_scores": [
+        0.04916029050946236,
+        0.02842014469206333,
+        0.014971671625971794,
+        0.011432024650275707,
+        0.009982948191463947
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": false,
+        "dense_r15": false,
+        "dense_rank": 0,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_OUTSIDE_DENSE15"
+    },
+    {
+      "query_id": "TEST-ANA-05",
+      "query_text": "How to use an adrenaline auto-injector (EpiPen) in an emergency?",
+      "normalized_query_text": "How to use an adrenaline auto-injector (EpiPen) in an emergency? (emergency call 999 go to A&E)",
+      "target_topic": "Adrenaline auto-injector",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-004-HYB-003"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "final_top5_scores": [
+        0.9583876729011536,
+        0.4653334617614746,
+        0.4171440303325653,
+        0.36643680930137634,
+        0.33683836460113525
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 3,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK"
+    },
+    {
+      "query_id": "TEST-ANA-06",
+      "query_text": "অ্যানাফাইলাক্সিস হলে অ্যাড্রেনালিন অটো-ইনজেক্টর কীভাবে ব্যবহার করতে হয়?",
+      "normalized_query_text": "অ্যানাফাইলাক্সিস হলে অ্যাড্রেনালিন অটো-ইনজেক্টর কীভাবে ব্যবহার করতে হয়? (anaphylaxis severe allergic reaction adrenaline 999)",
+      "target_topic": "Adrenaline auto-injector",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-004-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.9881707429885864,
+        0.9024055600166321,
+        0.8627269268035889,
+        0.8063548803329468,
+        0.49293527007102966
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 5,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": true,
+        "rerank_rank": 4
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP3_WRONG_BUT_TOP5_HAS_GOLD",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-07",
+      "query_text": "adrenaline auto-injector kivabe use korbo emergency te?",
+      "normalized_query_text": "adrenaline auto-injector kivabe use korbo emergency te? (emergency call 999 go to A&E)",
+      "target_topic": "Adrenaline auto-injector",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-003"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "final_top5_scores": [
+        0.3708544671535492,
+        0.29696810245513916,
+        0.2522561252117157,
+        0.17052887380123138,
+        0.15364988148212433
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 10,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": false,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 2
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK"
+    },
+    {
+      "query_id": "TEST-ANA-08",
+      "query_text": "Should you call 999 immediately if someone has an anaphylactic shock?",
+      "normalized_query_text": "Should you call 999 immediately if someone has an anaphylactic shock? (emergency call 999 go to A&E)",
+      "target_topic": "Anaphylaxis 999 emergency",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "final_top5_scores": [
+        0.9820606708526611,
+        0.9748265743255615,
+        0.9648957848548889,
+        0.9537015557289124,
+        0.8842135071754456
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 10,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": true,
+        "dense_rank": 5,
+        "rerank_r1": false,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 2
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK"
+    },
+    {
+      "query_id": "TEST-ANA-09",
+      "query_text": "অ্যালার্জির কারণে গলা ফুলে শ্বাস বন্ধ হলে তাৎক্ষণিক ৯৯৯ ডাকব?",
+      "normalized_query_text": "অ্যালার্জির কারণে গলা ফুলে শ্বাস বন্ধ হলে তাৎক্ষণিক ৯৯৯ ডাকব? (anaphylaxis severe allergic reaction adrenaline 999)",
+      "target_topic": "Anaphylaxis 999 emergency",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "final_top5_scores": [
+        0.8832263350486755,
+        0.8254604339599609,
+        0.7305963635444641,
+        0.585967481136322,
+        0.44485077261924744
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": true,
+        "dense_r10": true,
+        "dense_r15": true,
+        "dense_rank": 5,
+        "rerank_r1": false,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 2
+      },
+      "source_level": {
+        "dense_r1": true,
+        "dense_r3": true,
+        "dense_r5": true,
+        "dense_rank": 1,
+        "rerank_r1": true,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 1
+      },
+      "evidence_availability": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+      "dense_vs_rerank_loss": "GOLD_RETAINED_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-10",
+      "query_text": "severe allergic reaction gola fule gese 999 daki",
+      "normalized_query_text": "severe allergic reaction gola fule gese 999 daki (emergency call 999 go to A&E)",
+      "target_topic": "Anaphylaxis 999 emergency",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-004-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.3158951699733734,
+        0.1739044487476349,
+        0.15495586395263672,
+        0.11738550662994385,
+        0.0906858742237091
+      ],
+      "chunk_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": false,
+        "dense_r10": false,
+        "dense_r15": true,
+        "dense_rank": 11,
+        "rerank_r1": false,
+        "rerank_r3": false,
+        "rerank_r5": false,
+        "rerank_rank": 0
+      },
+      "source_level": {
+        "dense_r1": false,
+        "dense_r3": false,
+        "dense_r5": true,
+        "dense_rank": 5,
+        "rerank_r1": false,
+        "rerank_r3": true,
+        "rerank_r5": true,
+        "rerank_rank": 3
+      },
+      "evidence_availability": "GOLD_ABSENT_FROM_TOP5",
+      "dense_vs_rerank_loss": "GOLD_IN_DENSE15_BUT_LOST_AFTER_RERANK"
+    }
+  ]
+}

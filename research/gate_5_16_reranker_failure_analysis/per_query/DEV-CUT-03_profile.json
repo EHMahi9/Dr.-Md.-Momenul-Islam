@@ -1,0 +1,83 @@
+{
+  "query_id": "DEV-CUT-03",
+  "raw_query": "kete gele rokto bondho korbo kivabe ar clean korbo?",
+  "normalized_query": "kete gele rokto bondho korbo kivabe ar clean korbo? (cuts grazes bleeding pressure clean dressing wound)",
+  "language_category": "Standard_Banglish",
+  "expected_source_id": "DOC-NHS-006",
+  "gold_chunk_ids": [
+    "DOC-NHS-006-HYB-000",
+    "DOC-NHS-006-HYB-001",
+    "DOC-NHS-006-HYB-003"
+  ],
+  "gold_headings": [
+    "",
+    "",
+    ""
+  ],
+  "gold_avg_length": 615.0,
+  "dense_rank": 1,
+  "dense_r15": true,
+  "rerank_rank": 1,
+  "in_top5": true,
+  "is_top1": true,
+  "gold_rerank_score": 0.04957055300474167,
+  "rank1_chunk_id": "DOC-NHS-006-HYB-003",
+  "rank1_source_id": "DOC-NHS-006",
+  "rank1_heading": "",
+  "rank1_length": 618,
+  "rank1_score": 0.04957055300474167,
+  "score_margin_vs_gold": 0.0,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "NONE_SUCCESS",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-006-HYB-003",
+    "DOC-NHS-006-HYB-006",
+    "DOC-NHS-006-HYB-004",
+    "DOC-NHS-006-HYB-002",
+    "DOC-NHS-006-HYB-000"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-006-HYB-003",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.04957055300474167,
+      "is_gold": true
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-006-HYB-006",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.022990144789218903,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-006-HYB-004",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.011548261158168316,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-006-HYB-002",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.003203051397576928,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-006-HYB-000",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.0031664536101743577,
+      "is_gold": true
+    }
+  ]
+}

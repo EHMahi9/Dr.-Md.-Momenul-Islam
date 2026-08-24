@@ -1,0 +1,128 @@
+[
+    {
+        "query": "What is the maximum daily dose of paracetamol for an adult?",
+        "lang": "en",
+        "intent": "factual",
+        "expected_doc": "DOC-NHS-002"
+    },
+    {
+        "query": "I feel dizzy and have a headache in the sun",
+        "lang": "en",
+        "intent": "symptom",
+        "expected_doc": "DOC-NHS-001"
+    },
+    {
+        "query": "My child is turning blue and cannot breathe",
+        "lang": "en",
+        "intent": "emergency",
+        "expected_doc": "DOC-NHS-003"
+    },
+    {
+        "query": "Can I take ibuprofen with paracetamol?",
+        "lang": "en",
+        "intent": "medication",
+        "expected_doc": "DOC-NHS-002"
+    },
+    {
+        "query": "Tylenol for adults",
+        "lang": "en",
+        "intent": "paraphrase",
+        "expected_doc": "DOC-NHS-002"
+    },
+    {
+        "query": "hot tired dizzy",
+        "lang": "en",
+        "intent": "short",
+        "expected_doc": "DOC-NHS-001"
+    },
+    {
+        "query": "How to treat a broken leg",
+        "lang": "en",
+        "intent": "irrelevant",
+        "expected_doc": null
+    },
+    {
+        "query": "প্যারাসিটামল খাওয়ার নিয়ম কি?",
+        "lang": "bn",
+        "intent": "factual",
+        "expected_doc": "DOC-NHS-002"
+    },
+    {
+        "query": "প্রচুর ঘাম হচ্ছে এবং মাথা ঘোরাচ্ছে",
+        "lang": "bn",
+        "intent": "symptom",
+        "expected_doc": "DOC-NHS-001"
+    },
+    {
+        "query": "আমার বাচ্চার গলায় কিছু আটকে গেছে এবং সে নিশ্বাস নিতে পারছে না",
+        "lang": "bn",
+        "intent": "emergency",
+        "expected_doc": "DOC-NHS-003"
+    },
+    {
+        "query": "জ্বরের জন্য কি খাব?",
+        "lang": "bn",
+        "intent": "medication",
+        "expected_doc": "DOC-NHS-002"
+    },
+    {
+        "query": "paracetamol koto mg khabo din e",
+        "lang": "banglish_std",
+        "intent": "factual",
+        "expected_doc": "DOC-NHS-002"
+    },
+    {
+        "query": "matha ghurtese ar betha roder moddhe",
+        "lang": "banglish_std",
+        "intent": "symptom",
+        "expected_doc": "DOC-NHS-001"
+    },
+    {
+        "query": "bachar golay kisu atke gese",
+        "lang": "banglish_std",
+        "intent": "emergency",
+        "expected_doc": "DOC-NHS-003"
+    },
+    {
+        "query": "pera koto mg",
+        "lang": "banglish_inf",
+        "intent": "short",
+        "expected_doc": "DOC-NHS-002"
+    },
+    {
+        "query": "mtha ghurse rod e",
+        "lang": "banglish_inf",
+        "intent": "symptom",
+        "expected_doc": "DOC-NHS-001"
+    },
+    {
+        "query": "child choking hocche ki korbo",
+        "lang": "mixed",
+        "intent": "emergency",
+        "expected_doc": "DOC-NHS-003"
+    },
+    {
+        "query": "paracetamol er maximum dose koto",
+        "lang": "mixed",
+        "intent": "factual",
+        "expected_doc": "DOC-NHS-002"
+    },
+    {
+        "query": "heatstroke er symptoms ki",
+        "lang": "mixed",
+        "intent": "symptom",
+        "expected_doc": "DOC-NHS-001"
+    },
+    {
+        "query": "side effects of paracetamol",
+        "lang": "en",
+        "intent": "multi_chunk",
+        "expected_doc": "DOC-NHS-002"
+    },
+    {
+        "query": "parasetamol for adult",
+        "lang": "en",
+        "intent": "spelling",
+        "expected_doc": "DOC-NHS-002"
+    }
+]

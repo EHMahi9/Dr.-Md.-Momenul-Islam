@@ -1,0 +1,81 @@
+{
+  "query_id": "DEV-DEH-06",
+  "raw_query": "বমি ভাব হলে পানিশূন্যতা দূর করতে কীভাবে পানি খাব?",
+  "normalized_query": "বমি ভাব হলে পানিশূন্যতা দূর করতে কীভাবে পানি খাব?",
+  "language_category": "Native_Bangla",
+  "expected_source_id": "DOC-NHS-007",
+  "gold_chunk_ids": [
+    "DOC-NHS-007-HYB-001",
+    "DOC-NHS-007-HYB-002"
+  ],
+  "gold_headings": [
+    "",
+    ""
+  ],
+  "gold_avg_length": 562.0,
+  "dense_rank": 9,
+  "dense_r15": true,
+  "rerank_rank": 1,
+  "in_top5": true,
+  "is_top1": true,
+  "gold_rerank_score": 0.03898963704705238,
+  "rank1_chunk_id": "DOC-NHS-007-HYB-001",
+  "rank1_source_id": "DOC-NHS-007",
+  "rank1_heading": "",
+  "rank1_length": 748,
+  "rank1_score": 0.03898963704705238,
+  "score_margin_vs_gold": 0.0,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "NONE_SUCCESS",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-007-HYB-001",
+    "DOC-NHS-007-HYB-006",
+    "DOC-NHS-007-HYB-002",
+    "DOC-NHS-007-HYB-007",
+    "DOC-NHS-007-HYB-005"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-007-HYB-001",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.03898963704705238,
+      "is_gold": true
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-007-HYB-006",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.03785677254199982,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-007-HYB-002",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.01562497392296791,
+      "is_gold": true
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-007-HYB-007",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.0045975325629115105,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-007-HYB-005",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.003868828760460019,
+      "is_gold": false
+    }
+  ]
+}

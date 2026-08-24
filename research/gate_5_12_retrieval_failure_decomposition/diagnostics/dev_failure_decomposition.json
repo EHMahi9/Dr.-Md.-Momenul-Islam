@@ -1,0 +1,1920 @@
+{
+  "n_dev_queries": 40,
+  "baseline_metrics": {
+    "r1": "18/40 (45.00%)",
+    "r3": "24/40 (60.00%)",
+    "r5": "30/40 (75.00%)",
+    "mrr": 0.545
+  },
+  "failure_decomposition_counts": {
+    "GOLD_OUTSIDE_DENSE15": 7,
+    "GOLD_IN_DENSE15_BUT_RERANK_DEMOTED": 3,
+    "GENERIC_OVERVIEW_BIAS": 7,
+    "HEADING_OR_CONTEXT_REPRESENTATION_FAILURE": 0,
+    "NATIVE_BANGLA_QUERY_MISMATCH": 1,
+    "STANDARD_BANGLISH_QUERY_MISMATCH": 4,
+    "ABBREVIATED_BANGLISH_QUERY_MISMATCH": 4,
+    "LEXICAL_OR_EXACT_TERM_FAILURE": 1
+  },
+  "failed_queries_count": 10,
+  "query_breakdown": [
+    {
+      "query_id": "DEV-AST-01",
+      "query_text": "What are the common symptoms of asthma?",
+      "language_category": "English",
+      "target_topic": "Asthma symptoms",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-014",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-008",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-007",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-016",
+        "DOC-NHS-004-HYB-004"
+      ],
+      "dense_rank": 1,
+      "final_top5_cids": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-014",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-004-HYB-002"
+      ],
+      "final_top5_scores": [
+        0.9955641031265259,
+        0.7306804656982422,
+        0.5083693861961365,
+        0.3227612376213074,
+        0.19660912454128265
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-AST-02",
+      "query_text": "হাঁপানির প্রধান লক্ষণগুলো কী কী?",
+      "language_category": "Native_Bangla",
+      "target_topic": "Asthma symptoms",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-004-HYB-014",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "dense_rank": 3,
+      "final_top5_cids": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-004-HYB-014"
+      ],
+      "final_top5_scores": [
+        0.7032453417778015,
+        0.027463557198643684,
+        0.0163517277687788,
+        0.00836905650794506,
+        0.007154140155762434
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-AST-03",
+      "query_text": "asthma hole ki ki shomossha hoy bujhte parbo kivabe?",
+      "language_category": "Standard_Banglish",
+      "target_topic": "Asthma symptoms",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-004-HYB-005",
+        "DOC-NHS-004-HYB-014",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-004-HYB-016",
+        "DOC-NHS-004-HYB-003"
+      ],
+      "dense_rank": 11,
+      "final_top5_cids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-001"
+      ],
+      "final_top5_scores": [
+        0.0023416245821863413,
+        0.0005275440053083003,
+        0.00043856928823515773,
+        0.0003515444986987859,
+        0.0003435039543546736
+      ],
+      "rerank_rank": 5,
+      "is_top5_success": true,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GENERIC_OVERVIEW_BIAS"
+      ]
+    },
+    {
+      "query_id": "DEV-AST-04",
+      "query_text": "buk chap lage ar shash nite koshto asthma naki",
+      "language_category": "Abbreviated_Banglish",
+      "target_topic": "Asthma symptoms",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-016",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-014",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-005",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "dense_rank": 4,
+      "final_top5_cids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-012"
+      ],
+      "final_top5_scores": [
+        0.0016570977168157697,
+        0.00043210387229919434,
+        0.0002876301878131926,
+        0.00025809399085119367,
+        0.0002530364436097443
+      ],
+      "rerank_rank": 3,
+      "is_top5_success": true,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GENERIC_OVERVIEW_BIAS"
+      ]
+    },
+    {
+      "query_id": "DEV-AST-05",
+      "query_text": "How to treat an asthma attack at home?",
+      "language_category": "English",
+      "target_topic": "Treat asthma attack",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-004-HYB-007",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-005",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-008",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "dense_rank": 4,
+      "final_top5_cids": [
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-004-HYB-011"
+      ],
+      "final_top5_scores": [
+        0.784210205078125,
+        0.7065312266349792,
+        0.4408093988895416,
+        0.19312535226345062,
+        0.1829809546470642
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-AST-06",
+      "query_text": "হাঁপানির টান উঠলে নীল ইনহেলার কীভাবে ব্যবহার করব?",
+      "language_category": "Native_Bangla",
+      "target_topic": "Inhaler use in asthma attack",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-009",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-011-HYB-002"
+      ],
+      "dense_rank": 2,
+      "final_top5_cids": [
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-004-HYB-009",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.07507403194904327,
+        0.002871589967980981,
+        0.002729797037318349,
+        0.0006521654431708157,
+        0.00035662742448039353
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-AST-07",
+      "query_text": "asthma attack uthle koto puff blue inhaler nite hoy?",
+      "language_category": "Standard_Banglish",
+      "target_topic": "Inhaler use in asthma attack",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-008",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-005",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "dense_rank": 1,
+      "final_top5_cids": [
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-008",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-010"
+      ],
+      "final_top5_scores": [
+        0.32463714480400085,
+        0.03969371318817139,
+        0.011124645359814167,
+        0.009740578010678291,
+        0.006526276469230652
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-AST-08",
+      "query_text": "shash bondho hoye jacche inhaler kaj kore na 999 call dibo?",
+      "language_category": "Abbreviated_Banglish",
+      "target_topic": "Asthma emergency 999",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-004"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-004-HYB-009",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-004-HYB-016",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-000"
+      ],
+      "dense_rank": 1,
+      "final_top5_cids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.011853874661028385,
+        0.011392000131309032,
+        0.0019631790928542614,
+        0.0011735226726159453,
+        0.0006250797305256128
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-AST-09",
+      "query_text": "What are the common triggers for asthma?",
+      "language_category": "English",
+      "target_topic": "Asthma triggers",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-011"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-014",
+        "DOC-NHS-004-HYB-008",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-007",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-003"
+      ],
+      "dense_rank": 1,
+      "final_top5_cids": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-014",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-012"
+      ],
+      "final_top5_scores": [
+        0.8334965109825134,
+        0.81910240650177,
+        0.7967389822006226,
+        0.7409809827804565,
+        0.5100377202033997
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-AST-10",
+      "query_text": "kon kon karone asthma bere jete pare?",
+      "language_category": "Standard_Banglish",
+      "target_topic": "Asthma triggers",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-011"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-007",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-004-HYB-008",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-014"
+      ],
+      "dense_rank": 4,
+      "final_top5_cids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-008",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-013"
+      ],
+      "final_top5_scores": [
+        0.0013227793388068676,
+        0.0005721194320358336,
+        0.0004848001117352396,
+        0.00036529646604321897,
+        0.0003139059990644455
+      ],
+      "rerank_rank": 4,
+      "is_top5_success": true,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GENERIC_OVERVIEW_BIAS"
+      ]
+    },
+    {
+      "query_id": "DEV-BUR-01",
+      "query_text": "How should you treat a burn immediately with water?",
+      "language_category": "English",
+      "target_topic": "Cool water for burns",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "dense_rank": 5,
+      "final_top5_cids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-000"
+      ],
+      "final_top5_scores": [
+        0.9691663980484009,
+        0.024687573313713074,
+        0.023511279374361038,
+        0.011691058985888958,
+        0.001760796527378261
+      ],
+      "rerank_rank": 5,
+      "is_top5_success": true,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GENERIC_OVERVIEW_BIAS"
+      ]
+    },
+    {
+      "query_id": "DEV-BUR-02",
+      "query_text": "হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানির নিচে রাখতে হবে?",
+      "language_category": "Native_Bangla",
+      "target_topic": "Cool water for burns",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-010-HYB-006"
+      ],
+      "dense_rank": 0,
+      "final_top5_cids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "final_top5_scores": [
+        0.8959190249443054,
+        0.00046172403381206095,
+        0.0004510428989306092,
+        0.00040920026367530227,
+        0.00015694255125708878
+      ],
+      "rerank_rank": 0,
+      "is_top5_success": false,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GOLD_OUTSIDE_DENSE15",
+        "GENERIC_OVERVIEW_BIAS",
+        "NATIVE_BANGLA_QUERY_MISMATCH"
+      ]
+    },
+    {
+      "query_id": "DEV-BUR-03",
+      "query_text": "pure gele thanda pani koto minute dhalbo?",
+      "language_category": "Standard_Banglish",
+      "target_topic": "Cool water for burns",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "dense_rank": 0,
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "final_top5_scores": [
+        1.803583472792525e-05,
+        1.7334486983600073e-05,
+        1.6768675777711906e-05,
+        1.6706328096915968e-05,
+        1.66657664522063e-05
+      ],
+      "rerank_rank": 0,
+      "is_top5_success": false,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GOLD_OUTSIDE_DENSE15",
+        "STANDARD_BANGLISH_QUERY_MISMATCH"
+      ]
+    },
+    {
+      "query_id": "DEV-BUR-04",
+      "query_text": "hat pure geche ekhon ki korbo pani dhalbo?",
+      "language_category": "Abbreviated_Banglish",
+      "target_topic": "Cool water for burns",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "dense_rank": 0,
+      "final_top5_cids": [
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-006"
+      ],
+      "final_top5_scores": [
+        1.8202093997388147e-05,
+        1.715673533908557e-05,
+        1.707391675154213e-05,
+        1.7034883057931438e-05,
+        1.6874100765562616e-05
+      ],
+      "rerank_rank": 0,
+      "is_top5_success": false,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GOLD_OUTSIDE_DENSE15",
+        "ABBREVIATED_BANGLISH_QUERY_MISMATCH"
+      ]
+    },
+    {
+      "query_id": "DEV-BUR-05",
+      "query_text": "Should you put butter or oil on a burn?",
+      "language_category": "English",
+      "target_topic": "Do not put butter/oil on burn",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-006-HYB-003"
+      ],
+      "dense_rank": 3,
+      "final_top5_cids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-000"
+      ],
+      "final_top5_scores": [
+        0.943816602230072,
+        0.004827137105166912,
+        0.003087064018473029,
+        0.0020135072991251945,
+        0.0007526062545366585
+      ],
+      "rerank_rank": 2,
+      "is_top5_success": true,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GENERIC_OVERVIEW_BIAS"
+      ]
+    },
+    {
+      "query_id": "DEV-BUR-06",
+      "query_text": "পোড়া জায়গায় কি মাখন বা তেল লাগানো যাবে?",
+      "language_category": "Native_Bangla",
+      "target_topic": "Do not put butter/oil on burn",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-005-HYB-003"
+      ],
+      "dense_rank": 2,
+      "final_top5_cids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "final_top5_scores": [
+        0.13770388066768646,
+        0.0017273114062845707,
+        0.0011339588090777397,
+        0.00038194312946870923,
+        0.0003637230256572366
+      ],
+      "rerank_rank": 2,
+      "is_top5_success": true,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GENERIC_OVERVIEW_BIAS"
+      ]
+    },
+    {
+      "query_id": "DEV-BUR-07",
+      "query_text": "pora jaygay butter ba tel lagano thik naki?",
+      "language_category": "Standard_Banglish",
+      "target_topic": "Do not put butter/oil on burn",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-004-HYB-005",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "dense_rank": 11,
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "final_top5_scores": [
+        1.6741303625167347e-05,
+        1.6572937965975143e-05,
+        1.6521777070011012e-05,
+        1.647900717216544e-05,
+        1.6430205505457707e-05
+      ],
+      "rerank_rank": 0,
+      "is_top5_success": false,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GOLD_IN_DENSE15_BUT_RERANK_DEMOTED",
+        "STANDARD_BANGLISH_QUERY_MISMATCH"
+      ]
+    },
+    {
+      "query_id": "DEV-BUR-08",
+      "query_text": "When is a burn serious enough to call 999 or go to A&E?",
+      "language_category": "English",
+      "target_topic": "Burns emergency 999",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-011-HYB-003"
+      ],
+      "dense_rank": 1,
+      "final_top5_cids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "final_top5_scores": [
+        0.9884971380233765,
+        0.8016400337219238,
+        0.7986286282539368,
+        0.7863079309463501,
+        0.6735710501670837
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-BUR-09",
+      "query_text": "pora khub boro ar deep hole kokhon hospital jabo?",
+      "language_category": "Standard_Banglish",
+      "target_topic": "Burns emergency 999",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-004-HYB-005",
+        "DOC-NHS-008-HYB-006"
+      ],
+      "dense_rank": 4,
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-000"
+      ],
+      "final_top5_scores": [
+        1.7422687960788608e-05,
+        1.7182868759846315e-05,
+        1.7013648175634444e-05,
+        1.6881200281204656e-05,
+        1.678731496213004e-05
+      ],
+      "rerank_rank": 0,
+      "is_top5_success": false,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GOLD_IN_DENSE15_BUT_RERANK_DEMOTED",
+        "STANDARD_BANGLISH_QUERY_MISMATCH"
+      ]
+    },
+    {
+      "query_id": "DEV-BUR-10",
+      "query_text": "chemical ba electricity te porle ki 999 call dibo",
+      "language_category": "Abbreviated_Banglish",
+      "target_topic": "Burns emergency 999",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "dense_rank": 1,
+      "final_top5_cids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "final_top5_scores": [
+        0.02527894452214241,
+        0.005723637528717518,
+        0.0008882093243300915,
+        0.0006348973838612437,
+        0.0006179437623359263
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-CUT-01",
+      "query_text": "How to stop bleeding and clean a cut at home?",
+      "language_category": "English",
+      "target_topic": "Clean cut and stop bleeding",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-006-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "dense_rank": 1,
+      "final_top5_cids": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.9502847194671631,
+        0.9258304238319397,
+        0.477088063955307,
+        0.17929522693157196,
+        0.09510324895381927
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-CUT-02",
+      "query_text": "কেটে গেলে রক্ত বন্ধ করার সঠিক নিয়ম কী?",
+      "language_category": "Native_Bangla",
+      "target_topic": "Clean cut and stop bleeding",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "dense_rank": 12,
+      "final_top5_cids": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-006-HYB-006"
+      ],
+      "final_top5_scores": [
+        0.044380925595760345,
+        0.03496449440717697,
+        0.014041554182767868,
+        0.01029552798718214,
+        0.0072073545306921005
+      ],
+      "rerank_rank": 4,
+      "is_top5_success": true,
+      "is_top1_success": false,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-CUT-03",
+      "query_text": "kete gele rokto bondho korbo kivabe ar clean korbo?",
+      "language_category": "Standard_Banglish",
+      "target_topic": "Clean cut and stop bleeding",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-006-HYB-003"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "dense_rank": 3,
+      "final_top5_cids": [
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "final_top5_scores": [
+        2.8654352718149312e-05,
+        2.0222858438501135e-05,
+        1.7153315639006905e-05,
+        1.7030804883688688e-05,
+        1.6644054994685575e-05
+      ],
+      "rerank_rank": 2,
+      "is_top5_success": true,
+      "is_top1_success": false,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-CUT-04",
+      "query_text": "angul kete rokt porche chap diye dhorbo kina",
+      "language_category": "Abbreviated_Banglish",
+      "target_topic": "Clean cut and stop bleeding",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "dense_rank": 0,
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "final_top5_scores": [
+        1.8342019757255912e-05,
+        1.6603707990725525e-05,
+        1.6323472664225847e-05,
+        1.6305362805724144e-05,
+        1.629325379326474e-05
+      ],
+      "rerank_rank": 0,
+      "is_top5_success": false,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GOLD_OUTSIDE_DENSE15",
+        "ABBREVIATED_BANGLISH_QUERY_MISMATCH"
+      ]
+    },
+    {
+      "query_id": "DEV-CUT-05",
+      "query_text": "Signs that a cut or wound is infected",
+      "language_category": "English",
+      "target_topic": "Infected cut signs",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-009-HYB-003"
+      ],
+      "dense_rank": 2,
+      "final_top5_cids": [
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-001"
+      ],
+      "final_top5_scores": [
+        0.32396307587623596,
+        0.181488499045372,
+        0.1761428266763687,
+        0.06659559160470963,
+        0.055600620806217194
+      ],
+      "rerank_rank": 3,
+      "is_top5_success": true,
+      "is_top1_success": false,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-CUT-06",
+      "query_text": "ক্ষতস্থানে ইনফেকশন হয়েছে কীভাবে বুঝব?",
+      "language_category": "Native_Bangla",
+      "target_topic": "Infected cut signs",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003"
+      ],
+      "dense_rank": 11,
+      "final_top5_cids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "final_top5_scores": [
+        0.0008421486127190292,
+        0.00043077056761831045,
+        0.0004300849395804107,
+        0.0004047082911711186,
+        0.00031212979229167104
+      ],
+      "rerank_rank": 5,
+      "is_top5_success": true,
+      "is_top1_success": false,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-CUT-07",
+      "query_text": "kete jawa jayga lal hoye puz porle ki infection?",
+      "language_category": "Standard_Banglish",
+      "target_topic": "Infected cut signs",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-006-HYB-004"
+      ],
+      "dense_rank": 15,
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-001"
+      ],
+      "final_top5_scores": [
+        7.668051694054157e-05,
+        2.8580123398569413e-05,
+        2.40517983911559e-05,
+        2.224081617896445e-05,
+        1.997359868255444e-05
+      ],
+      "rerank_rank": 3,
+      "is_top5_success": true,
+      "is_top1_success": false,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-CUT-08",
+      "query_text": "When to go to A&E for a cut with non-stop bleeding?",
+      "language_category": "English",
+      "target_topic": "Cut emergency A&E",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "dense_rank": 12,
+      "final_top5_cids": [
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.9839044809341431,
+        0.2359044849872589,
+        0.23345129191875458,
+        0.17560039460659027,
+        0.12513117492198944
+      ],
+      "rerank_rank": 0,
+      "is_top5_success": false,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GOLD_IN_DENSE15_BUT_RERANK_DEMOTED",
+        "LEXICAL_OR_EXACT_TERM_FAILURE"
+      ]
+    },
+    {
+      "query_id": "DEV-CUT-09",
+      "query_text": "১০ মিনিট চেপে রাখার পরও রক্ত বন্ধ না হলে কী করব?",
+      "language_category": "Native_Bangla",
+      "target_topic": "Cut emergency A&E",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "dense_rank": 1,
+      "final_top5_cids": [
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.5443082451820374,
+        0.3985292613506317,
+        0.0326041653752327,
+        0.022625910118222237,
+        0.017978176474571228
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-CUT-10",
+      "query_text": "rokto konovabei thamtasena 10 min hoise a&e jabo?",
+      "language_category": "Abbreviated_Banglish",
+      "target_topic": "Cut emergency A&E",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-009-HYB-002"
+      ],
+      "dense_rank": 0,
+      "final_top5_cids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.028310250490903854,
+        0.00040986432577483356,
+        0.0003375588566996157,
+        0.00022344662284012884,
+        0.0002145566832041368
+      ],
+      "rerank_rank": 0,
+      "is_top5_success": false,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GOLD_OUTSIDE_DENSE15",
+        "ABBREVIATED_BANGLISH_QUERY_MISMATCH"
+      ]
+    },
+    {
+      "query_id": "DEV-DEH-01",
+      "query_text": "What are the main symptoms of dehydration in adults?",
+      "language_category": "English",
+      "target_topic": "Dehydration symptoms",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "dense_rank": 1,
+      "final_top5_cids": [
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-006"
+      ],
+      "final_top5_scores": [
+        0.9959675073623657,
+        0.6036043167114258,
+        0.28409773111343384,
+        0.2486441433429718,
+        0.2105180323123932
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-DEH-02",
+      "query_text": "শরীরে পানিশূন্যতা বা ডিহাইড্রেশনের লক্ষণ কী কী?",
+      "language_category": "Native_Bangla",
+      "target_topic": "Dehydration symptoms",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-003"
+      ],
+      "dense_rank": 1,
+      "final_top5_cids": [
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-008-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.9770758152008057,
+        0.8342570066452026,
+        0.6319195628166199,
+        0.5700631737709045,
+        0.44667848944664
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-DEH-03",
+      "query_text": "dehydration hoile ki rokom shorir lage?",
+      "language_category": "Standard_Banglish",
+      "target_topic": "Dehydration symptoms",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-010-HYB-002"
+      ],
+      "dense_rank": 5,
+      "final_top5_cids": [
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "final_top5_scores": [
+        0.0017132326029241085,
+        0.0016791581874713302,
+        0.0016561710508540273,
+        0.0007625609287060797,
+        0.0006294762715697289
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-DEH-04",
+      "query_text": "muk shukay geche prosrab kom hoy pani shunnota naki",
+      "language_category": "Abbreviated_Banglish",
+      "target_topic": "Dehydration symptoms",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-000"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-011-HYB-001"
+      ],
+      "dense_rank": 0,
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "final_top5_scores": [
+        3.430373908486217e-05,
+        2.2807107598055154e-05,
+        1.705939939711243e-05,
+        1.6706120732123964e-05,
+        1.6700401829439215e-05
+      ],
+      "rerank_rank": 0,
+      "is_top5_success": false,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GOLD_OUTSIDE_DENSE15",
+        "ABBREVIATED_BANGLISH_QUERY_MISMATCH"
+      ]
+    },
+    {
+      "query_id": "DEV-DEH-05",
+      "query_text": "How to prevent and treat dehydration when feeling sick?",
+      "language_category": "English",
+      "target_topic": "Treat dehydration small sips",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-005-HYB-001"
+      ],
+      "dense_rank": 1,
+      "final_top5_cids": [
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "final_top5_scores": [
+        0.937606930732727,
+        0.8253740072250366,
+        0.6399726867675781,
+        0.24435587227344513,
+        0.1274697631597519
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-DEH-06",
+      "query_text": "বমি ভাব হলে পানিশূন্যতা দূর করতে কীভাবে পানি খাব?",
+      "language_category": "Native_Bangla",
+      "target_topic": "Treat dehydration small sips",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "dense_rank": 9,
+      "final_top5_cids": [
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-007-HYB-000"
+      ],
+      "final_top5_scores": [
+        0.03898963704705238,
+        0.03785677254199982,
+        0.01562497392296791,
+        0.0045975325629115105,
+        0.004104493651539087
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-DEH-07",
+      "query_text": "bomi thakle pani kivabe khawa uchit?",
+      "language_category": "Standard_Banglish",
+      "target_topic": "Treat dehydration small sips",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "dense_rank": 0,
+      "final_top5_cids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-003"
+      ],
+      "final_top5_scores": [
+        1.8931123122456484e-05,
+        1.7183869204018265e-05,
+        1.7063628547475673e-05,
+        1.6431615222245455e-05,
+        1.641910057514906e-05
+      ],
+      "rerank_rank": 0,
+      "is_top5_success": false,
+      "is_top1_success": false,
+      "failure_tags": [
+        "GOLD_OUTSIDE_DENSE15",
+        "STANDARD_BANGLISH_QUERY_MISMATCH"
+      ]
+    },
+    {
+      "query_id": "DEV-DEH-08",
+      "query_text": "Signs of severe dehydration requiring immediate 999 emergency call",
+      "language_category": "English",
+      "target_topic": "Dehydration emergency 999",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-004"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-004-HYB-004"
+      ],
+      "dense_rank": 1,
+      "final_top5_cids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.9905231595039368,
+        0.9094921350479126,
+        0.8941993117332458,
+        0.6993035078048706,
+        0.6593366265296936
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-DEH-09",
+      "query_text": "অজ্ঞান হয়ে যাওয়া বা কথা বলতে কষ্ট হলে কি ৯৯৯ কল করব?",
+      "language_category": "Native_Bangla",
+      "target_topic": "Dehydration emergency 999",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-004"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-011-HYB-000"
+      ],
+      "dense_rank": 4,
+      "final_top5_cids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "final_top5_scores": [
+        0.6367746591567993,
+        0.278613805770874,
+        0.16429992020130157,
+        0.16052314639091492,
+        0.12995758652687073
+      ],
+      "rerank_rank": 5,
+      "is_top5_success": true,
+      "is_top1_success": false,
+      "failure_tags": []
+    },
+    {
+      "query_id": "DEV-DEH-10",
+      "query_text": "extreme dehydration confused lage kotha bolte parena 999 daki?",
+      "language_category": "Abbreviated_Banglish",
+      "target_topic": "Dehydration emergency 999",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-004"
+      ],
+      "dense_top15_cids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-009-HYB-003"
+      ],
+      "dense_rank": 1,
+      "final_top5_cids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-000"
+      ],
+      "final_top5_scores": [
+        0.08797203749418259,
+        0.004600527696311474,
+        0.004263652488589287,
+        0.004166050348430872,
+        0.0026733328122645617
+      ],
+      "rerank_rank": 1,
+      "is_top5_success": true,
+      "is_top1_success": true,
+      "failure_tags": []
+    }
+  ]
+}

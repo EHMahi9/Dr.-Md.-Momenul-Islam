@@ -1,0 +1,530 @@
+{
+  "total_unsupported_queries": 20,
+  "hard_negatives_count": 12,
+  "out_of_corpus_count": 8,
+  "max_reranker_score": 0.5034931302070618,
+  "min_reranker_score": 4.546285708784126e-05,
+  "mean_reranker_score": 0.10235833742517571,
+  "queries": [
+    {
+      "query_id": "HN-01",
+      "raw_query": "How to apply a tactical tourniquet to stop arterial bleeding on thigh?",
+      "normalized_query": "How to apply a tactical tourniquet to stop arterial bleeding on thigh? (cuts grazes bleeding pressure clean dressing wound)",
+      "language_category": "English",
+      "query_type": "Hard_Negative",
+      "benchmark_split": "HARD_NEGATIVE",
+      "dense_top1_cid": "DOC-NHS-006-HYB-003",
+      "dense_top1_score": 0.8836721181869507,
+      "rerank_top1_cid": "DOC-NHS-006-HYB-003",
+      "rerank_top1_score": 0.45410650968551636,
+      "rerank_top5_cids": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-006"
+      ],
+      "rerank_top5_scores": [
+        0.45410650968551636,
+        0.2581096291542053,
+        0.16423280537128448,
+        0.1383880041539669,
+        0.11466974020004272
+      ]
+    },
+    {
+      "query_id": "HN-02",
+      "raw_query": "হাঁপানির টান কমাতে সালবুটামল নেবুলাইজারের ডোজ কত মিলিগ্রাম দেব?",
+      "normalized_query": "হাঁপানির টান কমাতে সালবুটামল নেবুলাইজারের ডোজ কত মিলিগ্রাম দেব? (asthma attack inhaler spacer breathing difficulty)",
+      "language_category": "Native_Bangla",
+      "query_type": "Hard_Negative",
+      "benchmark_split": "HARD_NEGATIVE",
+      "dense_top1_cid": "DOC-NHS-004-HYB-003",
+      "dense_top1_score": 0.8393747210502625,
+      "rerank_top1_cid": "DOC-NHS-004-HYB-003",
+      "rerank_top1_score": 0.08459837734699249,
+      "rerank_top5_cids": [
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-008",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-000"
+      ],
+      "rerank_top5_scores": [
+        0.08459837734699249,
+        0.017731880769133568,
+        0.008792043663561344,
+        0.005917275790125132,
+        0.0047003517393022776
+      ]
+    },
+    {
+      "query_id": "HN-03",
+      "raw_query": "severe dehydration e saline IV injection kon vein e dibo?",
+      "normalized_query": "severe dehydration e saline IV injection kon vein e dibo? (dehydration fluid rehydration oral fluids)",
+      "language_category": "Standard_Banglish",
+      "query_type": "Hard_Negative",
+      "benchmark_split": "HARD_NEGATIVE",
+      "dense_top1_cid": "DOC-NHS-007-HYB-004",
+      "dense_top1_score": 0.8565812110900879,
+      "rerank_top1_cid": "DOC-NHS-007-HYB-004",
+      "rerank_top1_score": 0.054258063435554504,
+      "rerank_top5_cids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-000"
+      ],
+      "rerank_top5_scores": [
+        0.054258063435554504,
+        0.04149743914604187,
+        0.039429839700460434,
+        0.03915897384285927,
+        0.03624369967728853
+      ]
+    },
+    {
+      "query_id": "HN-04",
+      "raw_query": "chokhe chemical acid porle kon drop dibo",
+      "normalized_query": "chokhe chemical acid porle kon drop dibo",
+      "language_category": "Abbreviated_Banglish",
+      "query_type": "Hard_Negative",
+      "benchmark_split": "HARD_NEGATIVE",
+      "dense_top1_cid": "DOC-NHS-008-HYB-005",
+      "dense_top1_score": 0.7932549715042114,
+      "rerank_top1_cid": "DOC-NHS-008-HYB-005",
+      "rerank_top1_score": 0.00019299259292893112,
+      "rerank_top5_cids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-001"
+      ],
+      "rerank_top5_scores": [
+        0.00019299259292893112,
+        8.665097993798554e-05,
+        4.634945071302354e-05,
+        4.3378982809372246e-05,
+        4.295792678021826e-05
+      ]
+    },
+    {
+      "query_id": "HN-05",
+      "raw_query": "Antibiotics dosage for severe infectious bacterial diarrhoea in adults",
+      "normalized_query": "Antibiotics dosage for severe infectious bacterial diarrhoea in adults (diarrhoea vomiting oral rehydration fluids)",
+      "language_category": "English",
+      "query_type": "Hard_Negative",
+      "benchmark_split": "HARD_NEGATIVE",
+      "dense_top1_cid": "DOC-NHS-008-HYB-003",
+      "dense_top1_score": 0.868500828742981,
+      "rerank_top1_cid": "DOC-NHS-008-HYB-003",
+      "rerank_top1_score": 0.07102692872285843,
+      "rerank_top5_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-007",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "rerank_top5_scores": [
+        0.07102692872285843,
+        0.0672801211476326,
+        0.042310115322470664,
+        0.034121572971343994,
+        0.016736265271902084
+      ]
+    },
+    {
+      "query_id": "HN-06",
+      "raw_query": "বাচ্চার ডেঙ্গু জ্বরে প্লেটলেট কমে গেলে কী ওষুধ দিতে হয়?",
+      "normalized_query": "বাচ্চার ডেঙ্গু জ্বরে প্লেটলেট কমে গেলে কী ওষুধ দিতে হয়? (fever high temperature children fluids paracetamol)",
+      "language_category": "Native_Bangla",
+      "query_type": "Hard_Negative",
+      "benchmark_split": "HARD_NEGATIVE",
+      "dense_top1_cid": "DOC-NHS-010-HYB-003",
+      "dense_top1_score": 0.8690119385719299,
+      "rerank_top1_cid": "DOC-NHS-010-HYB-002",
+      "rerank_top1_score": 0.5034931302070618,
+      "rerank_top5_cids": [
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-001"
+      ],
+      "rerank_top5_scores": [
+        0.5034931302070618,
+        0.40180644392967224,
+        0.07594669573009014,
+        0.03210898116230965,
+        0.028221823275089264
+      ]
+    },
+    {
+      "query_id": "HN-07",
+      "raw_query": "migraine er specific triptan medicine dosage koto?",
+      "normalized_query": "migraine er specific triptan medicine dosage koto?",
+      "language_category": "Standard_Banglish",
+      "query_type": "Hard_Negative",
+      "benchmark_split": "HARD_NEGATIVE",
+      "dense_top1_cid": "DOC-NHS-004-HYB-004",
+      "dense_top1_score": 0.8375903367996216,
+      "rerank_top1_cid": "DOC-NHS-004-HYB-003",
+      "rerank_top1_score": 0.000305165012832731,
+      "rerank_top5_cids": [
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-004-HYB-004"
+      ],
+      "rerank_top5_scores": [
+        0.000305165012832731,
+        0.0002224468917120248,
+        0.000217348278965801,
+        0.0001742415188346058,
+        0.00010289144847774878
+      ]
+    },
+    {
+      "query_id": "HN-08",
+      "raw_query": "severe anaphylaxis e steroid injection hydrocortisone koto mg",
+      "normalized_query": "severe anaphylaxis e steroid injection hydrocortisone koto mg (anaphylaxis severe allergic reaction adrenaline 999)",
+      "language_category": "Abbreviated_Banglish",
+      "query_type": "Hard_Negative",
+      "benchmark_split": "HARD_NEGATIVE",
+      "dense_top1_cid": "DOC-NHS-011-HYB-000",
+      "dense_top1_score": 0.8741669654846191,
+      "rerank_top1_cid": "DOC-NHS-004-HYB-004",
+      "rerank_top1_score": 0.18260318040847778,
+      "rerank_top5_cids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "rerank_top5_scores": [
+        0.18260318040847778,
+        0.17483069002628326,
+        0.16083633825182914,
+        0.07427361607551575,
+        0.054159633815288544
+      ]
+    },
+    {
+      "query_id": "HN-09",
+      "raw_query": "How to perform surgical stitches on a deep laceration cut?",
+      "normalized_query": "How to perform surgical stitches on a deep laceration cut? (cuts grazes bleeding pressure clean dressing wound)",
+      "language_category": "English",
+      "query_type": "Hard_Negative",
+      "benchmark_split": "HARD_NEGATIVE",
+      "dense_top1_cid": "DOC-NHS-006-HYB-003",
+      "dense_top1_score": 0.884353518486023,
+      "rerank_top1_cid": "DOC-NHS-006-HYB-003",
+      "rerank_top1_score": 0.35012340545654297,
+      "rerank_top5_cids": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-002"
+      ],
+      "rerank_top5_scores": [
+        0.35012340545654297,
+        0.31978639960289,
+        0.09779715090990067,
+        0.07608652114868164,
+        0.05584124103188515
+      ]
+    },
+    {
+      "query_id": "HN-10",
+      "raw_query": "বাচ্চাদের খিঁচুনি বা ফেব্রাইল কনভালশন হলে কী অ্যান্টি-কনভালস্যান্ট দেব?",
+      "normalized_query": "বাচ্চাদের খিঁচুনি বা ফেব্রাইল কনভালশন হলে কী অ্যান্টি-কনভালস্যান্ট দেব?",
+      "language_category": "Native_Bangla",
+      "query_type": "Hard_Negative",
+      "benchmark_split": "HARD_NEGATIVE",
+      "dense_top1_cid": "DOC-NHS-010-HYB-003",
+      "dense_top1_score": 0.8526153564453125,
+      "rerank_top1_cid": "DOC-NHS-010-HYB-003",
+      "rerank_top1_score": 0.09214848279953003,
+      "rerank_top5_cids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "rerank_top5_scores": [
+        0.09214848279953003,
+        0.0669628158211708,
+        0.01138641033321619,
+        0.0023846521507948637,
+        0.0017681664321571589
+      ]
+    },
+    {
+      "query_id": "HN-11",
+      "raw_query": "third degree electrical burn e dead skin debridement kivabe kore?",
+      "normalized_query": "third degree electrical burn e dead skin debridement kivabe kore? (burns scalds cold water cool running water blister first aid)",
+      "language_category": "Standard_Banglish",
+      "query_type": "Hard_Negative",
+      "benchmark_split": "HARD_NEGATIVE",
+      "dense_top1_cid": "DOC-NHS-005-HYB-001",
+      "dense_top1_score": 0.8615415096282959,
+      "rerank_top1_cid": "DOC-NHS-005-HYB-001",
+      "rerank_top1_score": 0.08215628564357758,
+      "rerank_top5_cids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-005-HYB-003"
+      ],
+      "rerank_top5_scores": [
+        0.08215628564357758,
+        0.013605290092527866,
+        0.013195840641856194,
+        0.006561691756360233,
+        0.004906173795461655
+      ]
+    },
+    {
+      "query_id": "HN-12",
+      "raw_query": "chronic asthma r steroid biological injection injection kivabe dey",
+      "normalized_query": "chronic asthma r steroid biological injection injection kivabe dey (asthma attack inhaler spacer breathing difficulty)",
+      "language_category": "Abbreviated_Banglish",
+      "query_type": "Hard_Negative",
+      "benchmark_split": "HARD_NEGATIVE",
+      "dense_top1_cid": "DOC-NHS-004-HYB-011",
+      "dense_top1_score": 0.8616906404495239,
+      "rerank_top1_cid": "DOC-NHS-004-HYB-010",
+      "rerank_top1_score": 0.16627569496631622,
+      "rerank_top5_cids": [
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-008"
+      ],
+      "rerank_top5_scores": [
+        0.16627569496631622,
+        0.08693134039640427,
+        0.06696010194718838,
+        0.05682532489299774,
+        0.053925711661577225
+      ]
+    },
+    {
+      "query_id": "OOC-01",
+      "raw_query": "What is the recommended prophylaxis medication for malaria traveling to Africa?",
+      "normalized_query": "What is the recommended prophylaxis medication for malaria traveling to Africa?",
+      "language_category": "English",
+      "query_type": "Out_Of_Corpus",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "dense_top1_cid": "DOC-NHS-008-HYB-003",
+      "dense_top1_score": 0.8151189088821411,
+      "rerank_top1_cid": "DOC-NHS-010-HYB-003",
+      "rerank_top1_score": 0.0030666280072182417,
+      "rerank_top5_cids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "rerank_top5_scores": [
+        0.0030666280072182417,
+        0.002619544044137001,
+        0.001074217725545168,
+        0.00029560376424342394,
+        0.0002852779580280185
+      ]
+    },
+    {
+      "query_id": "OOC-02",
+      "raw_query": "কুকুর কামড়ালে জলাতঙ্ক বা রেবিস ভ্যাকসিন কত দিনের মধ্যে নিতে হয়?",
+      "normalized_query": "কুকুর কামড়ালে জলাতঙ্ক বা রেবিস ভ্যাকসিন কত দিনের মধ্যে নিতে হয়?",
+      "language_category": "Native_Bangla",
+      "query_type": "Out_Of_Corpus",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "dense_top1_cid": "DOC-NHS-010-HYB-003",
+      "dense_top1_score": 0.8028367757797241,
+      "rerank_top1_cid": "DOC-NHS-008-HYB-002",
+      "rerank_top1_score": 0.0004095315816812217,
+      "rerank_top5_cids": [
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-005-HYB-001"
+      ],
+      "rerank_top5_scores": [
+        0.0004095315816812217,
+        0.0002702417550608516,
+        0.0002355190517846495,
+        0.00022946251556277275,
+        0.00010996901255566627
+      ]
+    },
+    {
+      "query_id": "OOC-03",
+      "raw_query": "dante puz hole root canal treatment keno dorkar?",
+      "normalized_query": "dante puz hole root canal treatment keno dorkar?",
+      "language_category": "Standard_Banglish",
+      "query_type": "Out_Of_Corpus",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "dense_top1_cid": "DOC-NHS-007-HYB-003",
+      "dense_top1_score": 0.8091880083084106,
+      "rerank_top1_cid": "DOC-NHS-005-HYB-004",
+      "rerank_top1_score": 5.147381671122275e-05,
+      "rerank_top5_cids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-003"
+      ],
+      "rerank_top5_scores": [
+        5.147381671122275e-05,
+        3.868828571285121e-05,
+        3.256331547163427e-05,
+        2.9447284759953618e-05,
+        2.8110760467825457e-05
+      ]
+    },
+    {
+      "query_id": "OOC-04",
+      "raw_query": "kidney te pathor hole lithotripsy laser operation kivabe kore",
+      "normalized_query": "kidney te pathor hole lithotripsy laser operation kivabe kore",
+      "language_category": "Abbreviated_Banglish",
+      "query_type": "Out_Of_Corpus",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "dense_top1_cid": "DOC-NHS-008-HYB-005",
+      "dense_top1_score": 0.8127808570861816,
+      "rerank_top1_cid": "DOC-NHS-010-HYB-005",
+      "rerank_top1_score": 4.546285708784126e-05,
+      "rerank_top5_cids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "rerank_top5_scores": [
+        4.546285708784126e-05,
+        2.1663159714080393e-05,
+        2.1165420548641123e-05,
+        2.028816925303545e-05,
+        1.9987584892078303e-05
+      ]
+    },
+    {
+      "query_id": "OOC-05",
+      "raw_query": "How is type 1 diabetes insulin pump therapy adjusted for exercise?",
+      "normalized_query": "How is type 1 diabetes insulin pump therapy adjusted for exercise?",
+      "language_category": "English",
+      "query_type": "Out_Of_Corpus",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "dense_top1_cid": "DOC-NHS-004-HYB-011",
+      "dense_top1_score": 0.8176007270812988,
+      "rerank_top1_cid": "DOC-NHS-007-HYB-001",
+      "rerank_top1_score": 0.0003799294354394078,
+      "rerank_top5_cids": [
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-011-HYB-002"
+      ],
+      "rerank_top5_scores": [
+        0.0003799294354394078,
+        0.0001556504430482164,
+        4.186217120150104e-05,
+        4.162380355410278e-05,
+        2.8723434297717176e-05
+      ]
+    },
+    {
+      "query_id": "OOC-06",
+      "raw_query": "উচ্চ রক্তচাপ বা হাইপারটেনশনে অ্যামলোডিপিন ওষুধের পার্শ্বপ্রতিক্রিয়া কী?",
+      "normalized_query": "উচ্চ রক্তচাপ বা হাইপারটেনশনে অ্যামলোডিপিন ওষুধের পার্শ্বপ্রতিক্রিয়া কী?",
+      "language_category": "Native_Bangla",
+      "query_type": "Out_Of_Corpus",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "dense_top1_cid": "DOC-NHS-010-HYB-003",
+      "dense_top1_score": 0.7960605621337891,
+      "rerank_top1_cid": "DOC-NHS-011-HYB-003",
+      "rerank_top1_score": 0.0017560523701831698,
+      "rerank_top5_cids": [
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-008-HYB-006"
+      ],
+      "rerank_top5_scores": [
+        0.0017560523701831698,
+        0.0011259452439844608,
+        0.0010450308909639716,
+        0.0009442425216548145,
+        0.0006899514119140804
+      ]
+    },
+    {
+      "query_id": "OOC-07",
+      "raw_query": "broken bone fracture hole plaster koto din rakhte hoy?",
+      "normalized_query": "broken bone fracture hole plaster koto din rakhte hoy?",
+      "language_category": "Standard_Banglish",
+      "query_type": "Out_Of_Corpus",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "dense_top1_cid": "DOC-NHS-006-HYB-005",
+      "dense_top1_score": 0.8054174184799194,
+      "rerank_top1_cid": "DOC-NHS-005-HYB-004",
+      "rerank_top1_score": 9.442542068427429e-05,
+      "rerank_top5_cids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-006"
+      ],
+      "rerank_top5_scores": [
+        9.442542068427429e-05,
+        6.293220576480962e-05,
+        3.602823198889382e-05,
+        3.1837083952268586e-05,
+        2.1999472664901987e-05
+      ]
+    },
+    {
+      "query_id": "OOC-08",
+      "raw_query": "glaucoma eye drop pressure komano kivabe kaj kore",
+      "normalized_query": "glaucoma eye drop pressure komano kivabe kaj kore",
+      "language_category": "Abbreviated_Banglish",
+      "query_type": "Out_Of_Corpus",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "dense_top1_cid": "DOC-NHS-008-HYB-005",
+      "dense_top1_score": 0.8276326656341553,
+      "rerank_top1_cid": "DOC-NHS-010-HYB-005",
+      "rerank_top1_score": 7.502873631892726e-05,
+      "rerank_top5_cids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "rerank_top5_scores": [
+        7.502873631892726e-05,
+        4.168712257524021e-05,
+        3.674132312880829e-05,
+        3.3033571526175365e-05,
+        2.99448765872512e-05
+      ]
+    }
+  ]
+}

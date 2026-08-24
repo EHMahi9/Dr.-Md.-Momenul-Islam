@@ -1,0 +1,43 @@
+{
+  "gate": "GATE_5.15",
+  "timestamp": "2026-08-22T12:40:30+06:00",
+  "checks": {
+    "frozen_configuration_hash": {
+      "expected": "a79e7a0eca3e7617d2e87ef920ef916edfa680011ae3e8bbc906f29dfcb4f79e",
+      "actual_stored": "a79e7a0eca3e7617d2e87ef920ef916edfa680011ae3e8bbc906f29dfcb4f79e",
+      "actual_computed": "a79e7a0eca3e7617d2e87ef920ef916edfa680011ae3e8bbc906f29dfcb4f79e",
+      "status": "PASS"
+    },
+    "frozen_benchmark_hash": {
+      "expected": "7debd4b7d804938d4c7ecf8f414f51d936830b5a6d9d62ebfcaedde1874c8a81",
+      "actual": "7debd4b7d804938d4c7ecf8f414f51d936830b5a6d9d62ebfcaedde1874c8a81",
+      "status": "PASS"
+    },
+    "parameter_checks": {
+      "details": {
+        "candidate_strategy_name": true,
+        "embedding_model": true,
+        "candidate_depth_k": true,
+        "reranker_model": true,
+        "overview_debiasing_enabled": true,
+        "overview_chunk_suffix": true,
+        "overview_score_multiplier": true,
+        "final_top_k_context": true,
+        "use_bm25_union": true
+      },
+      "status": "PASS"
+    },
+    "dataset_separation": {
+      "details": {
+        "dev_queries_count": true,
+        "test_queries_count": true,
+        "hard_negative_count": true,
+        "out_of_corpus_count": true,
+        "gate_5_14_dev_only_confirmed": true,
+        "locked_holdout_untouched_flag": true
+      },
+      "status": "PASS"
+    }
+  },
+  "overall_integrity_status": "PASS"
+}

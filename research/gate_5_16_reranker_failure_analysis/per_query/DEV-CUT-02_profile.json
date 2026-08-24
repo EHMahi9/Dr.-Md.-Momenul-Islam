@@ -1,0 +1,81 @@
+{
+  "query_id": "DEV-CUT-02",
+  "raw_query": "কেটে গেলে রক্ত বন্ধ করার সঠিক নিয়ম কী?",
+  "normalized_query": "কেটে গেলে রক্ত বন্ধ করার সঠিক নিয়ম কী?",
+  "language_category": "Native_Bangla",
+  "expected_source_id": "DOC-NHS-006",
+  "gold_chunk_ids": [
+    "DOC-NHS-006-HYB-000",
+    "DOC-NHS-006-HYB-001"
+  ],
+  "gold_headings": [
+    "",
+    ""
+  ],
+  "gold_avg_length": 613.5,
+  "dense_rank": 12,
+  "dense_r15": true,
+  "rerank_rank": 4,
+  "in_top5": true,
+  "is_top1": false,
+  "gold_rerank_score": 0.01029552798718214,
+  "rank1_chunk_id": "DOC-NHS-006-HYB-003",
+  "rank1_source_id": "DOC-NHS-006",
+  "rank1_heading": "",
+  "rank1_length": 618,
+  "rank1_score": 0.044380925595760345,
+  "score_margin_vs_gold": 0.034085397608578205,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "SAME_DOC_SUBSTANTIVE_SECTION_COMPETITION",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-006-HYB-003",
+    "DOC-NHS-006-HYB-005",
+    "DOC-NHS-006-HYB-002",
+    "DOC-NHS-006-HYB-001",
+    "DOC-NHS-006-HYB-006"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-006-HYB-003",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.044380925595760345,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-006-HYB-005",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.03496449440717697,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-006-HYB-002",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.014041554182767868,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-006-HYB-001",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.01029552798718214,
+      "is_gold": true
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-006-HYB-006",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.0072073545306921005,
+      "is_gold": false
+    }
+  ]
+}

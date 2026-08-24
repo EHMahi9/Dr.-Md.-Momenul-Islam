@@ -1,0 +1,85 @@
+{
+  "candidate_strategy_name": "STRATEGY_EXPANDED_DEPTH_K15",
+  "selection_rule_applied": "1. Chunk R@5 > 2. Chunk R@3 > 3. Chunk MRR > 4. Chunk R@1 > 5. Complexity",
+  "parameters": {
+    "embedding_model": "intfloat/multilingual-e5-small",
+    "reranker_model": "BAAI/bge-reranker-v2-m3",
+    "chunking_algorithm": "HYBRID_600",
+    "passage_representation": "standard",
+    "use_bm25_rrf": false,
+    "candidate_depth_k": 15,
+    "similarity_metric": "cosine_dot_product_normalized",
+    "reranker_scoring_input": "raw_clean_chunk_text"
+  },
+  "dev_benchmark_metrics": {
+    "n_queries": 40,
+    "candidate_pool": {
+      "r1_count": "13/40",
+      "r1_pct": 32.5,
+      "r3_count": "19/40",
+      "r3_pct": 47.5,
+      "r5_count": "26/40",
+      "r5_pct": 65.0,
+      "mrr": 0.4442
+    },
+    "post_rerank": {
+      "r1_count": "18/40",
+      "r1_pct": 45.0,
+      "r3_count": "24/40",
+      "r3_pct": 60.0,
+      "r5_count": "30/40",
+      "r5_pct": 75.0,
+      "mrr": 0.5524
+    },
+    "failure_movement": {
+      "failure_to_success": 1,
+      "success_to_failure": 1,
+      "unchanged": 38,
+      "net_improvement": 0
+    },
+    "language_breakdown": {
+      "English": {
+        "n": 12,
+        "r1_count": "8/12",
+        "r1_pct": 66.67,
+        "r3_count": "10/12",
+        "r3_pct": 83.33,
+        "r5_count": "11/12",
+        "r5_pct": 91.67,
+        "mrr": 0.762
+      },
+      "Native_Bangla": {
+        "n": 10,
+        "r1_count": "5/10",
+        "r1_pct": 50.0,
+        "r3_count": "6/10",
+        "r3_pct": 60.0,
+        "r5_count": "9/10",
+        "r5_pct": 90.0,
+        "mrr": 0.615
+      },
+      "Standard_Banglish": {
+        "n": 10,
+        "r1_count": "2/10",
+        "r1_pct": 20.0,
+        "r3_count": "4/10",
+        "r3_pct": 40.0,
+        "r5_count": "6/10",
+        "r5_pct": 60.0,
+        "mrr": 0.3467
+      },
+      "Abbreviated_Banglish": {
+        "n": 8,
+        "r1_count": "3/8",
+        "r1_pct": 37.5,
+        "r3_count": "4/8",
+        "r3_pct": 50.0,
+        "r5_count": "4/8",
+        "r5_pct": 50.0,
+        "mrr": 0.4167
+      }
+    }
+  },
+  "locked_holdout_status": "UNTOUCHED_AND_UNSEEN",
+  "configuration_hash": "a58194bf0fd52871a3bdd10945609c4132c09a88fb8f6a0771ac294b30edaa1f"
+}

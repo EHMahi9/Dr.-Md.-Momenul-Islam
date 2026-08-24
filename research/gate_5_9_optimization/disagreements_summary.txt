@@ -1,0 +1,413 @@
+=== CHUNK-LEVEL AUDIT SUMMARY ===
+Total Valid Queries: 80
+Source-Level R@1: 78.75%
+Chunk-Level R@1:  17.5%
+Disagreements:    49 (61.25%)
+
+=== LOCKED HOLDOUT LANGUAGE BREAKDOWN ===
+{
+  "English": {
+    "n": 12,
+    "source_level": {
+      "dense_R1": 91.67,
+      "r5_R1": 100.0
+    },
+    "chunk_level": {
+      "dense_R1": 41.67,
+      "r5_R1": 58.33
+    },
+    "disagreement_count": 5,
+    "disagreement_rate_pct": 41.67
+  },
+  "Native_Bangla": {
+    "n": 11,
+    "source_level": {
+      "dense_R1": 90.91,
+      "r5_R1": 90.91
+    },
+    "chunk_level": {
+      "dense_R1": 18.18,
+      "r5_R1": 9.09
+    },
+    "disagreement_count": 9,
+    "disagreement_rate_pct": 81.82
+  },
+  "Standard_Banglish": {
+    "n": 9,
+    "source_level": {
+      "dense_R1": 44.44,
+      "r5_R1": 66.67
+    },
+    "chunk_level": {
+      "dense_R1": 11.11,
+      "r5_R1": 22.22
+    },
+    "disagreement_count": 4,
+    "disagreement_rate_pct": 44.44
+  },
+  "Abbreviated_Banglish": {
+    "n": 8,
+    "source_level": {
+      "dense_R1": 75.0,
+      "r5_R1": 75.0
+    },
+    "chunk_level": {
+      "dense_R1": 25.0,
+      "r5_R1": 0.0
+    },
+    "disagreement_count": 6,
+    "disagreement_rate_pct": 75.0
+  }
+}
+
+=== FULL CORPUS LANGUAGE BREAKDOWN ===
+{
+  "English": {
+    "n": 24,
+    "source_level": {
+      "dense_R1": 95.83,
+      "r5_R1": 100.0
+    },
+    "chunk_level": {
+      "dense_R1": 29.17,
+      "r5_R1": 37.5
+    },
+    "disagreement_count": 15,
+    "disagreement_rate_pct": 62.5
+  },
+  "Native_Bangla": {
+    "n": 21,
+    "source_level": {
+      "dense_R1": 71.43,
+      "r5_R1": 85.71
+    },
+    "chunk_level": {
+      "dense_R1": 14.29,
+      "r5_R1": 14.29
+    },
+    "disagreement_count": 15,
+    "disagreement_rate_pct": 71.43
+  },
+  "Standard_Banglish": {
+    "n": 19,
+    "source_level": {
+      "dense_R1": 42.11,
+      "r5_R1": 57.89
+    },
+    "chunk_level": {
+      "dense_R1": 5.26,
+      "r5_R1": 10.53
+    },
+    "disagreement_count": 9,
+    "disagreement_rate_pct": 47.37
+  },
+  "Abbreviated_Banglish": {
+    "n": 16,
+    "source_level": {
+      "dense_R1": 68.75,
+      "r5_R1": 62.5
+    },
+    "chunk_level": {
+      "dense_R1": 18.75,
+      "r5_R1": 0.0
+    },
+    "disagreement_count": 10,
+    "disagreement_rate_pct": 62.5
+  }
+}
+
+=== DISAGREEMENT CASES (N=49) ===
+
+[DEV-AST-01] (DEV/English): 'What are the common symptoms of asthma?'
+  Source: DOC-NHS-004
+  Acceptable Gold Chunks: ['DOC-NHS-004-HYB-003']
+  Retrieved Top-1 Chunk:  DOC-NHS-004-HYB-001
+  Retrieved Chunk Text:   'Symptoms of asthma\n\nThe main symptoms of asthma are problems with breathing, such as:\n\nwheezing\n\ncoughing\n\nshortness of '
+
+[DEV-AST-02] (DEV/Native_Bangla): 'হাঁপানির প্রধান লক্ষণগুলো কী কী?'
+  Source: DOC-NHS-004
+  Acceptable Gold Chunks: ['DOC-NHS-004-HYB-004']
+  Retrieved Top-1 Chunk:  DOC-NHS-004-HYB-001
+  Retrieved Chunk Text:   'Symptoms of asthma\n\nThe main symptoms of asthma are problems with breathing, such as:\n\nwheezing\n\ncoughing\n\nshortness of '
+
+[DEV-AST-03] (DEV/Standard_Banglish): 'asthma hole ki ki shomossha hoy bujhte parbo kivabe?'
+  Source: DOC-NHS-004
+  Acceptable Gold Chunks: ['DOC-NHS-004-HYB-001']
+  Retrieved Top-1 Chunk:  DOC-NHS-004-HYB-000
+  Retrieved Chunk Text:   "Asthma\n\nAsthma is a common condition that affects your breathing. It cannot currently be cured, but if it's well treated"
+
+[DEV-AST-04] (DEV/Abbreviated_Banglish): 'buk chap lage ar shash nite koshto asthma naki'
+  Source: DOC-NHS-004
+  Acceptable Gold Chunks: ['DOC-NHS-004-HYB-002', 'DOC-NHS-004-HYB-003']
+  Retrieved Top-1 Chunk:  DOC-NHS-004-HYB-000
+  Retrieved Chunk Text:   "Asthma\n\nAsthma is a common condition that affects your breathing. It cannot currently be cured, but if it's well treated"
+
+[DEV-AST-05] (DEV/English): 'How to treat an asthma attack at home?'
+  Source: DOC-NHS-004
+  Acceptable Gold Chunks: ['DOC-NHS-004-HYB-001', 'DOC-NHS-004-HYB-011', 'DOC-NHS-004-HYB-017']
+  Retrieved Top-1 Chunk:  DOC-NHS-004-HYB-002
+  Retrieved Chunk Text:   'Non-urgent advice: See a GP if:\n\nyou or your child have asthma symptoms\n\nyou or your child have asthma and treatments ar'
+
+[DEV-AST-07] (DEV/Standard_Banglish): 'asthma attack uthle koto puff blue inhaler nite hoy?'
+  Source: DOC-NHS-004
+  Acceptable Gold Chunks: ['DOC-NHS-004-HYB-004']
+  Retrieved Top-1 Chunk:  DOC-NHS-004-HYB-003
+  Retrieved Chunk Text:   'Use your asthma reliever inhaler if you have one:\n\nIf you have a blue reliever inhaler, take 1 puff every 30 to 60 secon'
+
+[DEV-AST-08] (DEV/Abbreviated_Banglish): 'shash bondho hoye jacche inhaler kaj kore na 999 call dibo?'
+  Source: DOC-NHS-004
+  Acceptable Gold Chunks: ['DOC-NHS-004-HYB-008']
+  Retrieved Top-1 Chunk:  DOC-NHS-004-HYB-004
+  Retrieved Chunk Text:   'Immediate action required: Call 999 if:\n\nYou or someone else is having an asthma attack and:\n\nstart to feel worse at any'
+
+[DEV-AST-09] (DEV/English): 'What are the common triggers for asthma?'
+  Source: DOC-NHS-004
+  Acceptable Gold Chunks: ['DOC-NHS-004-HYB-006']
+  Retrieved Top-1 Chunk:  DOC-NHS-004-HYB-001
+  Retrieved Chunk Text:   'Symptoms of asthma\n\nThe main symptoms of asthma are problems with breathing, such as:\n\nwheezing\n\ncoughing\n\nshortness of '
+
+[DEV-AST-10] (DEV/Standard_Banglish): 'kon kon karone asthma bere jete pare?'
+  Source: DOC-NHS-004
+  Acceptable Gold Chunks: ['DOC-NHS-004-HYB-010']
+  Retrieved Top-1 Chunk:  DOC-NHS-004-HYB-000
+  Retrieved Chunk Text:   "Asthma\n\nAsthma is a common condition that affects your breathing. It cannot currently be cured, but if it's well treated"
+
+[DEV-BUR-01] (DEV/English): 'How should you treat a burn immediately with water?'
+  Source: DOC-NHS-005
+  Acceptable Gold Chunks: ['DOC-NHS-005-HYB-000']
+  Retrieved Top-1 Chunk:  DOC-NHS-005-HYB-001
+  Retrieved Chunk Text:   'Find out more about acid and chemical burns.\n\nWhat to do if you have a burn or scald\n\nYou should treat all burns and sca'
+
+[DEV-BUR-05] (DEV/English): 'Should you put butter or oil on a burn?'
+  Source: DOC-NHS-005
+  Acceptable Gold Chunks: ['DOC-NHS-005-HYB-000']
+  Retrieved Top-1 Chunk:  DOC-NHS-005-HYB-004
+  Retrieved Chunk Text:   'Do\n\ntake painkillers such as paracetamol or ibuprofen to help with pain\n\nuse an emollient ointment on the affected area '
+
+[DEV-BUR-06] (DEV/Native_Bangla): 'পোড়া জায়গায় কি মাখন বা তেল লাগানো যাবে?'
+  Source: DOC-NHS-005
+  Acceptable Gold Chunks: ['DOC-NHS-005-HYB-001']
+  Retrieved Top-1 Chunk:  DOC-NHS-005-HYB-004
+  Retrieved Chunk Text:   'Do\n\ntake painkillers such as paracetamol or ibuprofen to help with pain\n\nuse an emollient ointment on the affected area '
+
+[DEV-BUR-10] (DEV/Abbreviated_Banglish): 'chemical ba electricity te porle ki 999 call dibo'
+  Source: DOC-NHS-005
+  Acceptable Gold Chunks: ['DOC-NHS-005-HYB-004']
+  Retrieved Top-1 Chunk:  DOC-NHS-005-HYB-002
+  Retrieved Chunk Text:   'Immediate action required: Call 999 or go to A&E if:\n\nYou have a burn or scald that:\n\nis very large or deep\n\nis on your '
+
+[DEV-CUT-01] (DEV/English): 'How to stop bleeding and clean a cut at home?'
+  Source: DOC-NHS-006
+  Acceptable Gold Chunks: ['DOC-NHS-006-HYB-000']
+  Retrieved Top-1 Chunk:  DOC-NHS-006-HYB-003
+  Retrieved Chunk Text:   'How to clean and dress a cut or graze\n\nIf the bleeding has stopped, you can clean a small wound and then put a plaster o'
+
+[DEV-CUT-02] (DEV/Native_Bangla): 'কেটে গেলে রক্ত বন্ধ করার সঠিক নিয়ম কী?'
+  Source: DOC-NHS-006
+  Acceptable Gold Chunks: ['DOC-NHS-006-HYB-000']
+  Retrieved Top-1 Chunk:  DOC-NHS-006-HYB-003
+  Retrieved Chunk Text:   'How to clean and dress a cut or graze\n\nIf the bleeding has stopped, you can clean a small wound and then put a plaster o'
+
+[DEV-CUT-03] (DEV/Standard_Banglish): 'kete gele rokto bondho korbo kivabe ar clean korbo?'
+  Source: DOC-NHS-006
+  Acceptable Gold Chunks: ['DOC-NHS-006-HYB-002']
+  Retrieved Top-1 Chunk:  DOC-NHS-006-HYB-003
+  Retrieved Chunk Text:   'How to clean and dress a cut or graze\n\nIf the bleeding has stopped, you can clean a small wound and then put a plaster o'
+
+[DEV-CUT-05] (DEV/English): 'Signs that a cut or wound is infected'
+  Source: DOC-NHS-006
+  Acceptable Gold Chunks: ['DOC-NHS-006-HYB-003']
+  Retrieved Top-1 Chunk:  DOC-NHS-006-HYB-006
+  Retrieved Chunk Text:   "Treatments for cuts and grazes\n\nHow a cut or graze is treated will depend on how bad it is and if there's a risk of it b"
+
+[DEV-CUT-08] (DEV/English): 'When to go to A&E for a cut with non-stop bleeding?'
+  Source: DOC-NHS-006
+  Acceptable Gold Chunks: ['DOC-NHS-006-HYB-003']
+  Retrieved Top-1 Chunk:  DOC-NHS-006-HYB-005
+  Retrieved Chunk Text:   "a cut is larger than around 5cm (2 inches)\n\nyou've cut yourself and also feel generally unwell or have a high temperatur"
+
+[DEV-CUT-09] (DEV/Native_Bangla): '১০ মিনিট চেপে রাখার পরও রক্ত বন্ধ না হলে কী করব?'
+  Source: DOC-NHS-006
+  Acceptable Gold Chunks: ['DOC-NHS-006-HYB-004']
+  Retrieved Top-1 Chunk:  DOC-NHS-006-HYB-001
+  Retrieved Chunk Text:   'What to do if the wound is bleeding a lot\n\nWash your hands thoroughly and dry them. Put on disposable gloves if you have'
+
+[DEV-DEH-02] (DEV/Native_Bangla): 'শরীরে পানিশূন্যতা বা ডিহাইড্রেশনের লক্ষণ কী কী?'
+  Source: DOC-NHS-007
+  Acceptable Gold Chunks: ['DOC-NHS-007-HYB-001']
+  Retrieved Top-1 Chunk:  DOC-NHS-007-HYB-000
+  Retrieved Chunk Text:   "Dehydration\n\nDehydration means your body loses more fluids than you take in. If it's not treated, it can get worse and b"
+
+[DEV-DEH-03] (DEV/Standard_Banglish): 'dehydration hoile ki rokom shorir lage?'
+  Source: DOC-NHS-007
+  Acceptable Gold Chunks: ['DOC-NHS-007-HYB-002']
+  Retrieved Top-1 Chunk:  DOC-NHS-007-HYB-000
+  Retrieved Chunk Text:   "Dehydration\n\nDehydration means your body loses more fluids than you take in. If it's not treated, it can get worse and b"
+
+[DEV-DEH-05] (DEV/English): 'How to prevent and treat dehydration when feeling sick?'
+  Source: DOC-NHS-007
+  Acceptable Gold Chunks: ['DOC-NHS-007-HYB-006']
+  Retrieved Top-1 Chunk:  DOC-NHS-007-HYB-001
+  Retrieved Chunk Text:   'sunken eyes\n\nfew or no tears when they cry\n\nfewer wet nappies than usual\n\nbeing drowsy or irritable\n\nCauses of dehydrati'
+
+[DEV-DEH-06] (DEV/Native_Bangla): 'বমি ভাব হলে পানিশূন্যতা দূর করতে কীভাবে পানি খাব?'
+  Source: DOC-NHS-007
+  Acceptable Gold Chunks: ['DOC-NHS-007-HYB-005']
+  Retrieved Top-1 Chunk:  DOC-NHS-007-HYB-006
+  Retrieved Chunk Text:   'How to reduce the risk of dehydration\n\nDrinking fluids regularly can reduce the risk of dehydration. Water or diluted su'
+
+[DEV-DEH-08] (DEV/English): 'Signs of severe dehydration requiring immediate 999 emergency call'
+  Source: DOC-NHS-007
+  Acceptable Gold Chunks: ['DOC-NHS-007-HYB-004']
+  Retrieved Top-1 Chunk:  DOC-NHS-005-HYB-002
+  Retrieved Chunk Text:   'Immediate action required: Call 999 or go to A&E if:\n\nYou have a burn or scald that:\n\nis very large or deep\n\nis on your '
+
+[DEV-DEH-10] (DEV/Abbreviated_Banglish): 'extreme dehydration confused lage kotha bolte parena 999 daki?'
+  Source: DOC-NHS-007
+  Acceptable Gold Chunks: ['DOC-NHS-007-HYB-002']
+  Retrieved Top-1 Chunk:  DOC-NHS-005-HYB-002
+  Retrieved Chunk Text:   'Immediate action required: Call 999 or go to A&E if:\n\nYou have a burn or scald that:\n\nis very large or deep\n\nis on your '
+
+[TEST-DIA-02] (TEST_HOLDOUT/Native_Bangla): 'ডায়রিয়া ও বমি হলে বাড়িতে কী চিকিৎসা নেওয়া উচিত?'
+  Source: DOC-NHS-008
+  Acceptable Gold Chunks: ['DOC-NHS-008-HYB-001']
+  Retrieved Top-1 Chunk:  DOC-NHS-008-HYB-000
+  Retrieved Chunk Text:   "Diarrhoea and vomiting\n\nDiarrhoea and vomiting are common in adults, children and babies. They're often caused by a stom"
+
+[TEST-DIA-03] (TEST_HOLDOUT/Standard_Banglish): 'diarrhoea ar bomi hole bashay ki korbo?'
+  Source: DOC-NHS-008
+  Acceptable Gold Chunks: ['DOC-NHS-008-HYB-000']
+  Retrieved Top-1 Chunk:  DOC-NHS-008-HYB-003
+  Retrieved Chunk Text:   'do not prepare food for other people, if possible\n\ndo not share towels, flannels, cutlery or utensils\n\ndo not use a swim'
+
+[TEST-DIA-04] (TEST_HOLDOUT/Abbreviated_Banglish): 'patla paykhana ar bomi hosse onk fluid khabo?'
+  Source: DOC-NHS-008
+  Acceptable Gold Chunks: ['DOC-NHS-008-HYB-000', 'DOC-NHS-008-HYB-003']
+  Retrieved Top-1 Chunk:  DOC-NHS-005-HYB-002
+  Retrieved Chunk Text:   'Immediate action required: Call 999 or go to A&E if:\n\nYou have a burn or scald that:\n\nis very large or deep\n\nis on your '
+
+[TEST-DIA-08] (TEST_HOLDOUT/English): 'When to call 999 or go to A&E for diarrhoea with bloody vomit?'
+  Source: DOC-NHS-008
+  Acceptable Gold Chunks: ['DOC-NHS-008-HYB-004']
+  Retrieved Top-1 Chunk:  DOC-NHS-005-HYB-002
+  Retrieved Chunk Text:   'Immediate action required: Call 999 or go to A&E if:\n\nYou have a burn or scald that:\n\nis very large or deep\n\nis on your '
+
+[TEST-DIA-09] (TEST_HOLDOUT/Native_Bangla): 'বমির সাথে রক্ত আসলে কি দ্রুত হাসপাতালে যাওয়া দরকার?'
+  Source: DOC-NHS-008
+  Acceptable Gold Chunks: ['DOC-NHS-008-HYB-007']
+  Retrieved Top-1 Chunk:  DOC-NHS-005-HYB-002
+  Retrieved Chunk Text:   'Immediate action required: Call 999 or go to A&E if:\n\nYou have a burn or scald that:\n\nis very large or deep\n\nis on your '
+
+[TEST-DIA-10] (TEST_HOLDOUT/Abbreviated_Banglish): 'bomir shathe rokto ase green bomi emergency hospital jabo?'
+  Source: DOC-NHS-008
+  Acceptable Gold Chunks: ['DOC-NHS-008-HYB-004']
+  Retrieved Top-1 Chunk:  DOC-NHS-005-HYB-002
+  Retrieved Chunk Text:   'Immediate action required: Call 999 or go to A&E if:\n\nYou have a burn or scald that:\n\nis very large or deep\n\nis on your '
+
+[TEST-HEA-02] (TEST_HOLDOUT/Native_Bangla): 'সাধারণ মাথা ব্যথায় ঘরে কী ধরনের যত্ন নেওয়া যায়?'
+  Source: DOC-NHS-009
+  Acceptable Gold Chunks: ['DOC-NHS-009-HYB-001']
+  Retrieved Top-1 Chunk:  DOC-NHS-009-HYB-000
+  Retrieved Chunk Text:   'Headaches\n\nMost headaches go away on their own and are not a sign of something more serious.\n\nHow you can ease headaches'
+
+[TEST-HEA-05] (TEST_HOLDOUT/English): 'When is a sudden severe headache an emergency requiring 999?'
+  Source: DOC-NHS-009
+  Acceptable Gold Chunks: ['DOC-NHS-009-HYB-003']
+  Retrieved Top-1 Chunk:  DOC-NHS-005-HYB-002
+  Retrieved Chunk Text:   'Immediate action required: Call 999 or go to A&E if:\n\nYou have a burn or scald that:\n\nis very large or deep\n\nis on your '
+
+[TEST-HEA-06] (TEST_HOLDOUT/Native_Bangla): 'হঠাৎ তীব্র মাথাব্যথা এবং ঘাড় শক্ত হয়ে গেলে কি ৯৯৯ কল দিতে হবে?'
+  Source: DOC-NHS-009
+  Acceptable Gold Chunks: ['DOC-NHS-009-HYB-002']
+  Retrieved Top-1 Chunk:  DOC-NHS-005-HYB-002
+  Retrieved Chunk Text:   'Immediate action required: Call 999 or go to A&E if:\n\nYou have a burn or scald that:\n\nis very large or deep\n\nis on your '
+
+[TEST-HEA-08] (TEST_HOLDOUT/Abbreviated_Banglish): 'blurry vision ar mathay prachondo betha emergency A&E jabo'
+  Source: DOC-NHS-009
+  Acceptable Gold Chunks: ['DOC-NHS-009-HYB-001']
+  Retrieved Top-1 Chunk:  DOC-NHS-005-HYB-002
+  Retrieved Chunk Text:   'Immediate action required: Call 999 or go to A&E if:\n\nYou have a burn or scald that:\n\nis very large or deep\n\nis on your '
+
+[TEST-FEV-02] (TEST_HOLDOUT/Native_Bangla): 'শিশুদের কত ডিগ্রি তাপমাত্রা হলে জ্বর হিসেবে গণ্য করা হয়?'
+  Source: DOC-NHS-010
+  Acceptable Gold Chunks: ['DOC-NHS-010-HYB-001']
+  Retrieved Top-1 Chunk:  DOC-NHS-010-HYB-000
+  Retrieved Chunk Text:   'High temperature (fever) in children\n\nA high temperature (fever) is very common in young children. The temperature usual'
+
+[TEST-FEV-03] (TEST_HOLDOUT/Standard_Banglish): 'bachader koto degree temp hole jor dhora hoy?'
+  Source: DOC-NHS-010
+  Acceptable Gold Chunks: ['DOC-NHS-010-HYB-001']
+  Retrieved Top-1 Chunk:  DOC-NHS-010-HYB-004
+  Retrieved Chunk Text:   'Urgent advice: Call 111 if your child:\n\nis under 3 months old and has a temperature of 38C or higher, or you think they '
+
+[TEST-FEV-04] (TEST_HOLDOUT/Abbreviated_Banglish): 'baby r 38C jor thermometer diye maplam ekhon ki korbo'
+  Source: DOC-NHS-010
+  Acceptable Gold Chunks: ['DOC-NHS-010-HYB-001', 'DOC-NHS-010-HYB-002']
+  Retrieved Top-1 Chunk:  DOC-NHS-010-HYB-000
+  Retrieved Chunk Text:   'High temperature (fever) in children\n\nA high temperature (fever) is very common in young children. The temperature usual'
+
+[TEST-FEV-06] (TEST_HOLDOUT/Native_Bangla): 'বাচ্চার জ্বর কমাতে বাড়িতে প্রচুর তরল ও প্যারাসিটামল কীভাবে দেব?'
+  Source: DOC-NHS-010
+  Acceptable Gold Chunks: ['DOC-NHS-010-HYB-003']
+  Retrieved Top-1 Chunk:  DOC-NHS-010-HYB-002
+  Retrieved Chunk Text:   'Do\n\ngive them plenty of fluids – if your baby is breastfed, continue to breastfeed as normal\n\nlook out for signs of dehy'
+
+[TEST-FEV-07] (TEST_HOLDOUT/Standard_Banglish): 'bachar jor komate fluid ar paracetamol dawa jabe?'
+  Source: DOC-NHS-010
+  Acceptable Gold Chunks: ['DOC-NHS-010-HYB-004']
+  Retrieved Top-1 Chunk:  DOC-NHS-010-HYB-003
+  Retrieved Chunk Text:   'Don’t\n\ndo not undress your child or sponge them down to cool them – a high temperature is a natural and healthy response'
+
+[TEST-FEV-08] (TEST_HOLDOUT/English): 'When to call 999 for a child with high fever and rash or breathing trouble?'
+  Source: DOC-NHS-010
+  Acceptable Gold Chunks: ['DOC-NHS-010-HYB-005']
+  Retrieved Top-1 Chunk:  DOC-NHS-010-HYB-004
+  Retrieved Chunk Text:   'Urgent advice: Call 111 if your child:\n\nis under 3 months old and has a temperature of 38C or higher, or you think they '
+
+[TEST-ANA-01] (TEST_HOLDOUT/English): 'What are the main symptoms of a severe anaphylaxis allergic reaction?'
+  Source: DOC-NHS-011
+  Acceptable Gold Chunks: ['DOC-NHS-011-HYB-001']
+  Retrieved Top-1 Chunk:  DOC-NHS-011-HYB-000
+  Retrieved Chunk Text:   'Anaphylaxis\n\nAnaphylaxis is a life-threatening allergic reaction that happens very quickly. It can be caused by food, me'
+
+[TEST-ANA-02] (TEST_HOLDOUT/Native_Bangla): 'অ্যানাফাইলাক্সিস বা তীব্র অ্যালার্জিক রিঅ্যাকশনের লক্ষণগুলো কী?'
+  Source: DOC-NHS-011
+  Acceptable Gold Chunks: ['DOC-NHS-011-HYB-003']
+  Retrieved Top-1 Chunk:  DOC-NHS-011-HYB-000
+  Retrieved Chunk Text:   'Anaphylaxis\n\nAnaphylaxis is a life-threatening allergic reaction that happens very quickly. It can be caused by food, me'
+
+[TEST-ANA-03] (TEST_HOLDOUT/Standard_Banglish): 'anaphylaxis allergic reaction hole ki ki lokkhon dekha jay?'
+  Source: DOC-NHS-011
+  Acceptable Gold Chunks: ['DOC-NHS-011-HYB-002', 'DOC-NHS-011-HYB-003']
+  Retrieved Top-1 Chunk:  DOC-NHS-011-HYB-000
+  Retrieved Chunk Text:   'Anaphylaxis\n\nAnaphylaxis is a life-threatening allergic reaction that happens very quickly. It can be caused by food, me'
+
+[TEST-ANA-04] (TEST_HOLDOUT/Abbreviated_Banglish): 'muk fule geche shash nite parsenana allergy r jonno anaphylaxis naki'
+  Source: DOC-NHS-011
+  Acceptable Gold Chunks: ['DOC-NHS-011-HYB-003']
+  Retrieved Top-1 Chunk:  DOC-NHS-011-HYB-009
+  Retrieved Chunk Text:   "Allergies that can sometimes cause anaphylaxis include:\n\nfoods such as nuts, cows' milk, eggs, fish or sesame seeds\n\nmed"
+
+[TEST-ANA-06] (TEST_HOLDOUT/Native_Bangla): 'অ্যানাফাইলাক্সিস হলে অ্যাড্রেনালিন অটো-ইনজেক্টর কীভাবে ব্যবহার করতে হয়?'
+  Source: DOC-NHS-011
+  Acceptable Gold Chunks: ['DOC-NHS-011-HYB-003', 'DOC-NHS-011-HYB-005']
+  Retrieved Top-1 Chunk:  DOC-NHS-011-HYB-004
+  Retrieved Chunk Text:   "Call 999 for an ambulance and say that you think you're having an anaphylactic reaction.\n\nLie down – you can raise your "
+
+[TEST-ANA-08] (TEST_HOLDOUT/English): 'Should you call 999 immediately if someone has an anaphylactic shock?'
+  Source: DOC-NHS-011
+  Acceptable Gold Chunks: ['DOC-NHS-011-HYB-007']
+  Retrieved Top-1 Chunk:  DOC-NHS-011-HYB-000
+  Retrieved Chunk Text:   'Anaphylaxis\n\nAnaphylaxis is a life-threatening allergic reaction that happens very quickly. It can be caused by food, me'
+
+[TEST-ANA-09] (TEST_HOLDOUT/Native_Bangla): 'অ্যালার্জির কারণে গলা ফুলে শ্বাস বন্ধ হলে তাৎক্ষণিক ৯৯৯ ডাকব?'
+  Source: DOC-NHS-011
+  Acceptable Gold Chunks: ['DOC-NHS-011-HYB-008']
+  Retrieved Top-1 Chunk:  DOC-NHS-004-HYB-004
+  Retrieved Chunk Text:   'Immediate action required: Call 999 if:\n\nYou or someone else is having an asthma attack and:\n\nstart to feel worse at any'
+
+[TEST-ANA-10] (TEST_HOLDOUT/Abbreviated_Banglish): 'severe allergic reaction gola fule gese 999 daki'
+  Source: DOC-NHS-011
+  Acceptable Gold Chunks: ['DOC-NHS-011-HYB-002', 'DOC-NHS-011-HYB-003']
+  Retrieved Top-1 Chunk:  DOC-NHS-011-HYB-000
+  Retrieved Chunk Text:   'Anaphylaxis\n\nAnaphylaxis is a life-threatening allergic reaction that happens very quickly. It can be caused by food, me'

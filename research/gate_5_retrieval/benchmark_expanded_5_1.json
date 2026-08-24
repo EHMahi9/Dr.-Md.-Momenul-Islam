@@ -1,0 +1,826 @@
+[
+    {
+        "query": "What is the maximum daily dose of paracetamol?",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "How do you cool down someone with heatstroke?",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "What to do if a baby is choking?",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "emergency",
+        "expected": "DOC-NHS-003",
+        "drift_expected": false
+    },
+    {
+        "query": "How long should I wait between paracetamol doses?",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "What are the signs of heat exhaustion?",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "Tylenol limits for adults",
+        "lang": "en",
+        "cat": "paraphrase",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "Infant cannot breathe food stuck",
+        "lang": "en",
+        "cat": "paraphrase",
+        "intent": "emergency",
+        "expected": "DOC-NHS-003",
+        "drift_expected": false
+    },
+    {
+        "query": "Sun sickness what to do",
+        "lang": "en",
+        "cat": "paraphrase",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "Maximum painkiller pills per day",
+        "lang": "en",
+        "cat": "paraphrase",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "Toddler swallowed a toy and coughing",
+        "lang": "en",
+        "cat": "paraphrase",
+        "intent": "emergency",
+        "expected": "DOC-NHS-003",
+        "drift_expected": false
+    },
+    {
+        "query": "\u09aa\u09cd\u09af\u09be\u09b0\u09be\u09b8\u09bf\u099f\u09be\u09ae\u09b2 \u0996\u09be\u0993\u09af\u09bc\u09be\u09b0 \u09a8\u09bf\u09af\u09bc\u09ae \u0995\u09bf?",
+        "lang": "bn",
+        "cat": "native_bangla",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "\u09b9\u09bf\u099f \u09b8\u09cd\u099f\u09cd\u09b0\u09cb\u0995 \u09b9\u09b2\u09c7 \u0995\u09bf \u0995\u09b0\u09ac?",
+        "lang": "bn",
+        "cat": "native_bangla",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "\u0986\u09ae\u09be\u09b0 \u09ac\u09be\u099a\u09cd\u099a\u09be\u09b0 \u0997\u09b2\u09be\u09af\u09bc \u0995\u09bf\u099b\u09c1 \u0986\u099f\u0995\u09c7 \u0997\u09c7\u099b\u09c7",
+        "lang": "bn",
+        "cat": "native_bangla",
+        "intent": "emergency",
+        "expected": "DOC-NHS-003",
+        "drift_expected": false
+    },
+    {
+        "query": "\u099c\u09cd\u09ac\u09b0\u09c7\u09b0 \u099c\u09a8\u09cd\u09af \u0995\u09bf \u0994\u09b7\u09a7 \u0996\u09be\u09ac?",
+        "lang": "bn",
+        "cat": "native_bangla",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "\u09ac\u09be\u099a\u09cd\u099a\u09be \u09a8\u09bf\u09b6\u09cd\u09ac\u09be\u09b8 \u09a8\u09bf\u09a4\u09c7 \u09aa\u09be\u09b0\u099b\u09c7 \u09a8\u09be",
+        "lang": "bn",
+        "cat": "native_bangla",
+        "intent": "emergency",
+        "expected": "DOC-NHS-003",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol koto mg khabo",
+        "lang": "banglish",
+        "cat": "std_banglish",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "heat stroke er lokkhon ki",
+        "lang": "banglish",
+        "cat": "std_banglish",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "bachar golay kisu atke gese",
+        "lang": "banglish",
+        "cat": "std_banglish",
+        "intent": "emergency",
+        "expected": "DOC-NHS-003",
+        "drift_expected": false
+    },
+    {
+        "query": "paracitamol koto mg",
+        "lang": "banglish",
+        "cat": "inf_banglish",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "hit strok a ki korbo",
+        "lang": "banglish",
+        "cat": "inf_banglish",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "baccar golay khabar atke gese",
+        "lang": "banglish",
+        "cat": "inf_banglish",
+        "intent": "emergency",
+        "expected": "DOC-NHS-003",
+        "drift_expected": false
+    },
+    {
+        "query": "para koto khabo",
+        "lang": "banglish",
+        "cat": "abbr_banglish",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": true
+    },
+    {
+        "query": "rod e matha ghurse",
+        "lang": "banglish",
+        "cat": "abbr_banglish",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "bacha sas nite parche na",
+        "lang": "banglish",
+        "cat": "abbr_banglish",
+        "intent": "emergency",
+        "expected": "DOC-NHS-003",
+        "drift_expected": false
+    },
+    {
+        "query": "pera koto mg",
+        "lang": "banglish",
+        "cat": "slang_banglish",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": true
+    },
+    {
+        "query": "matha betha bori",
+        "lang": "banglish",
+        "cat": "slang_banglish",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": true
+    },
+    {
+        "query": "bacha chok kortese",
+        "lang": "banglish",
+        "cat": "slang_banglish",
+        "intent": "emergency",
+        "expected": "DOC-NHS-003",
+        "drift_expected": true
+    },
+    {
+        "query": "child choking hocche ki korbo",
+        "lang": "mixed",
+        "cat": "mixed_banglish",
+        "intent": "emergency",
+        "expected": "DOC-NHS-003",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol dose adult der jonno",
+        "lang": "mixed",
+        "cat": "mixed_banglish",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "\u0986\u09ae\u09be\u09b0 \u09ac\u09be\u099a\u09cd\u099a\u09be\u09b0 choking \u09b9\u099a\u09cd\u099b\u09c7",
+        "lang": "mixed",
+        "cat": "mixed_bangla",
+        "intent": "emergency",
+        "expected": "DOC-NHS-003",
+        "drift_expected": false
+    },
+    {
+        "query": "choking",
+        "lang": "en",
+        "cat": "short",
+        "intent": "emergency",
+        "expected": "DOC-NHS-003",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol dose",
+        "lang": "en",
+        "cat": "short",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "heatstroke",
+        "lang": "en",
+        "cat": "short",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "hot dizzy",
+        "lang": "en",
+        "cat": "short",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "para",
+        "lang": "banglish",
+        "cat": "short",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": true
+    },
+    {
+        "query": "My skin is pale clammy and sweating too much",
+        "lang": "en",
+        "cat": "symptom",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "Can I take ibuprofen with paracetamol?",
+        "lang": "en",
+        "cat": "medication",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "My child is turning blue and cannot breathe help",
+        "lang": "en",
+        "cat": "emergency",
+        "intent": "emergency",
+        "expected": "DOC-NHS-003",
+        "drift_expected": false
+    },
+    {
+        "query": "Is it safe to drink alcohol with paracetamol?",
+        "lang": "en",
+        "cat": "medication",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "Loss of consciousness and seizure in the sun",
+        "lang": "en",
+        "cat": "emergency",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "headache",
+        "lang": "en",
+        "cat": "ambiguous",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "fever medication",
+        "lang": "en",
+        "cat": "ambiguous",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "I have a headache from the sun and want to take paracetamol",
+        "lang": "en",
+        "cat": "mixed_intent",
+        "intent": "mixed",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "My child is choking and has a fever",
+        "lang": "en",
+        "cat": "mixed_intent",
+        "intent": "mixed",
+        "expected": "DOC-NHS-003",
+        "drift_expected": false
+    },
+    {
+        "query": "heatstroke paracetamol",
+        "lang": "en",
+        "cat": "mixed_intent",
+        "intent": "mixed",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "How do I treat a broken leg?",
+        "lang": "en",
+        "cat": "hard_negative",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "Can my dog take paracetamol?",
+        "lang": "en",
+        "cat": "hard_negative",
+        "intent": "medication",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "What to do if an adult is choking",
+        "lang": "en",
+        "cat": "hard_negative",
+        "intent": "emergency",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "Seizure from epilepsy",
+        "lang": "en",
+        "cat": "hard_negative",
+        "intent": "symptom",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "What is the ibuprofen dose for a baby?",
+        "lang": "en",
+        "cat": "hard_negative",
+        "intent": "medication",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "What is the capital of Bangladesh",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "how to cook pasta",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "iPhone 15 release date",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 0",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 1",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 2",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 3",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 4",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 5",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 6",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 7",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 8",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 9",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 10",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 11",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 12",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 13",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 14",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 15",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 16",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 17",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 18",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 19",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 20",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 21",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 22",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 23",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 24",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 25",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 26",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 27",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 28",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "paracetamol query variation 29",
+        "lang": "en",
+        "cat": "factual",
+        "intent": "medication",
+        "expected": "DOC-NHS-002",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 0 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 1 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 2 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 3 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 4 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 5 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 6 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 7 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 8 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 9 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 10 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 11 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 12 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 13 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "irrelevant padding query 14 about dogs and cats",
+        "lang": "en",
+        "cat": "irrelevant",
+        "intent": "irrelevant",
+        "expected": "NONE",
+        "drift_expected": false
+    },
+    {
+        "query": "banglish padding hit strok 0",
+        "lang": "banglish",
+        "cat": "std_banglish",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "banglish padding hit strok 1",
+        "lang": "banglish",
+        "cat": "std_banglish",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "banglish padding hit strok 2",
+        "lang": "banglish",
+        "cat": "std_banglish",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "banglish padding hit strok 3",
+        "lang": "banglish",
+        "cat": "std_banglish",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    },
+    {
+        "query": "banglish padding hit strok 4",
+        "lang": "banglish",
+        "cat": "std_banglish",
+        "intent": "symptom",
+        "expected": "DOC-NHS-001",
+        "drift_expected": false
+    }
+]

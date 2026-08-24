@@ -1,0 +1,10 @@
+{
+  "total_valid_benchmark_queries": 80,
+  "total_gold_labels_recorded": 80,
+  "valid_mappings_count": 80,
+  "invalid_mappings_count": 0,
+  "unresolved_mappings_count": 0,
+  "multiple_acceptable_chunks_count": 19,
+  "integrity_status": "GOLD_LABELS_100_PERCENT_VALID",
+  "issues": []
+}

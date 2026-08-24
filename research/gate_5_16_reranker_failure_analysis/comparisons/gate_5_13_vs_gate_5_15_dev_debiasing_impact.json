@@ -1,0 +1,962 @@
+[
+  {
+    "query_id": "DEV-AST-01",
+    "language": "English",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-004-HYB-002"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-004-HYB-002"
+    ]
+  },
+  {
+    "query_id": "DEV-AST-02",
+    "language": "Native_Bangla",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-002",
+      "DOC-NHS-011-HYB-001",
+      "DOC-NHS-004-HYB-010"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-002",
+      "DOC-NHS-011-HYB-001",
+      "DOC-NHS-004-HYB-010"
+    ]
+  },
+  {
+    "query_id": "DEV-AST-03",
+    "language": "Standard_Banglish",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-008"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-008"
+    ]
+  },
+  {
+    "query_id": "DEV-AST-04",
+    "language": "Abbreviated_Banglish",
+    "baseline_rank": 2,
+    "debiased_rank": 2,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": true,
+    "baseline_top5": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-010"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-004-HYB-000"
+    ]
+  },
+  {
+    "query_id": "DEV-AST-05",
+    "language": "English",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-002",
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-011"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-002",
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-011"
+    ]
+  },
+  {
+    "query_id": "DEV-AST-06",
+    "language": "Native_Bangla",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-002",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-011-HYB-004"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-002",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-011-HYB-004"
+    ]
+  },
+  {
+    "query_id": "DEV-AST-07",
+    "language": "Standard_Banglish",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-002",
+      "DOC-NHS-004-HYB-010"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-002",
+      "DOC-NHS-004-HYB-010"
+    ]
+  },
+  {
+    "query_id": "DEV-AST-08",
+    "language": "Abbreviated_Banglish",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-009-HYB-003"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-009-HYB-003"
+    ]
+  },
+  {
+    "query_id": "DEV-AST-09",
+    "language": "English",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-014",
+      "DOC-NHS-004-HYB-011",
+      "DOC-NHS-004-HYB-015",
+      "DOC-NHS-004-HYB-012"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-014",
+      "DOC-NHS-004-HYB-011",
+      "DOC-NHS-004-HYB-015",
+      "DOC-NHS-004-HYB-012"
+    ]
+  },
+  {
+    "query_id": "DEV-AST-10",
+    "language": "Standard_Banglish",
+    "baseline_rank": 2,
+    "debiased_rank": 2,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-000"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-000"
+    ]
+  },
+  {
+    "query_id": "DEV-BUR-01",
+    "language": "English",
+    "baseline_rank": 5,
+    "debiased_rank": 5,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-003",
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-000"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-003",
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-000"
+    ]
+  },
+  {
+    "query_id": "DEV-BUR-02",
+    "language": "Native_Bangla",
+    "baseline_rank": 0,
+    "debiased_rank": 0,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-010-HYB-001"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-010-HYB-001"
+    ]
+  },
+  {
+    "query_id": "DEV-BUR-03",
+    "language": "Standard_Banglish",
+    "baseline_rank": 0,
+    "debiased_rank": 0,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-010-HYB-005"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-010-HYB-005"
+    ]
+  },
+  {
+    "query_id": "DEV-BUR-04",
+    "language": "Abbreviated_Banglish",
+    "baseline_rank": 5,
+    "debiased_rank": 5,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-005-HYB-003",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-000"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-005-HYB-003",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-000"
+    ]
+  },
+  {
+    "query_id": "DEV-BUR-05",
+    "language": "English",
+    "baseline_rank": 2,
+    "debiased_rank": 2,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-003",
+      "DOC-NHS-005-HYB-000",
+      "DOC-NHS-005-HYB-002"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-003",
+      "DOC-NHS-005-HYB-000",
+      "DOC-NHS-005-HYB-002"
+    ]
+  },
+  {
+    "query_id": "DEV-BUR-06",
+    "language": "Native_Bangla",
+    "baseline_rank": 2,
+    "debiased_rank": 2,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": true,
+    "baseline_top5": [
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-003",
+      "DOC-NHS-005-HYB-000",
+      "DOC-NHS-005-HYB-002"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-003",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-000"
+    ]
+  },
+  {
+    "query_id": "DEV-BUR-07",
+    "language": "Standard_Banglish",
+    "baseline_rank": 12,
+    "debiased_rank": 12,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-005-HYB-004"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-005-HYB-004"
+    ]
+  },
+  {
+    "query_id": "DEV-BUR-08",
+    "language": "English",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-005"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-005"
+    ]
+  },
+  {
+    "query_id": "DEV-BUR-09",
+    "language": "Standard_Banglish",
+    "baseline_rank": 4,
+    "debiased_rank": 4,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-006-HYB-005"
+    ]
+  },
+  {
+    "query_id": "DEV-BUR-10",
+    "language": "Abbreviated_Banglish",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-008-HYB-005"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-008-HYB-005"
+    ]
+  },
+  {
+    "query_id": "DEV-CUT-01",
+    "language": "English",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-006",
+      "DOC-NHS-006-HYB-002"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-006",
+      "DOC-NHS-006-HYB-002"
+    ]
+  },
+  {
+    "query_id": "DEV-CUT-02",
+    "language": "Native_Bangla",
+    "baseline_rank": 4,
+    "debiased_rank": 4,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-006-HYB-001",
+      "DOC-NHS-006-HYB-006"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-006-HYB-001",
+      "DOC-NHS-006-HYB-006"
+    ]
+  },
+  {
+    "query_id": "DEV-CUT-03",
+    "language": "Standard_Banglish",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": true,
+    "baseline_top5": [
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-006",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-002"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-006",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-006-HYB-000"
+    ]
+  },
+  {
+    "query_id": "DEV-CUT-04",
+    "language": "Abbreviated_Banglish",
+    "baseline_rank": 0,
+    "debiased_rank": 0,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-011-HYB-006"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-011-HYB-006"
+    ]
+  },
+  {
+    "query_id": "DEV-CUT-05",
+    "language": "English",
+    "baseline_rank": 3,
+    "debiased_rank": 3,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-006-HYB-006",
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-002"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-006-HYB-006",
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-002"
+    ]
+  },
+  {
+    "query_id": "DEV-CUT-06",
+    "language": "Native_Bangla",
+    "baseline_rank": 5,
+    "debiased_rank": 5,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-006-HYB-001",
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-006-HYB-001",
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-006-HYB-005"
+    ]
+  },
+  {
+    "query_id": "DEV-CUT-07",
+    "language": "Standard_Banglish",
+    "baseline_rank": 3,
+    "debiased_rank": 3,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-011-HYB-001"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-011-HYB-001"
+    ]
+  },
+  {
+    "query_id": "DEV-CUT-08",
+    "language": "English",
+    "baseline_rank": 10,
+    "debiased_rank": 10,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": true,
+    "baseline_top5": [
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-006"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-006"
+    ]
+  },
+  {
+    "query_id": "DEV-CUT-09",
+    "language": "Native_Bangla",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-001",
+      "DOC-NHS-011-HYB-004"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-001",
+      "DOC-NHS-011-HYB-004"
+    ]
+  },
+  {
+    "query_id": "DEV-CUT-10",
+    "language": "Abbreviated_Banglish",
+    "baseline_rank": 4,
+    "debiased_rank": 4,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": true,
+    "baseline_top5": [
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-006",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-006-HYB-000"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-006",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-006-HYB-004"
+    ]
+  },
+  {
+    "query_id": "DEV-DEH-01",
+    "language": "English",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-008-HYB-003"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-008-HYB-003"
+    ]
+  },
+  {
+    "query_id": "DEV-DEH-02",
+    "language": "Native_Bangla",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-003"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-003"
+    ]
+  },
+  {
+    "query_id": "DEV-DEH-03",
+    "language": "Standard_Banglish",
+    "baseline_rank": 2,
+    "debiased_rank": 2,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-007-HYB-002",
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-008-HYB-003"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-007-HYB-002",
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-008-HYB-003"
+    ]
+  },
+  {
+    "query_id": "DEV-DEH-04",
+    "language": "Abbreviated_Banglish",
+    "baseline_rank": 2,
+    "debiased_rank": 2,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-007-HYB-002",
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-007-HYB-003"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-007-HYB-002",
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-007-HYB-003"
+    ]
+  },
+  {
+    "query_id": "DEV-DEH-05",
+    "language": "English",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-002",
+      "DOC-NHS-007-HYB-006",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-008-HYB-004"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-002",
+      "DOC-NHS-007-HYB-006",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-008-HYB-004"
+    ]
+  },
+  {
+    "query_id": "DEV-DEH-06",
+    "language": "Native_Bangla",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": true,
+    "baseline_top5": [
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-006",
+      "DOC-NHS-007-HYB-002",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-007-HYB-000"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-006",
+      "DOC-NHS-007-HYB-002",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-007-HYB-005"
+    ]
+  },
+  {
+    "query_id": "DEV-DEH-07",
+    "language": "Standard_Banglish",
+    "baseline_rank": 5,
+    "debiased_rank": 5,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-008-HYB-007",
+      "DOC-NHS-008-HYB-000",
+      "DOC-NHS-007-HYB-002"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-008-HYB-007",
+      "DOC-NHS-008-HYB-000",
+      "DOC-NHS-007-HYB-002"
+    ]
+  },
+  {
+    "query_id": "DEV-DEH-08",
+    "language": "English",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-009-HYB-003"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-009-HYB-003"
+    ]
+  },
+  {
+    "query_id": "DEV-DEH-09",
+    "language": "Native_Bangla",
+    "baseline_rank": 5,
+    "debiased_rank": 5,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": true,
+    "baseline_top5": [
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-008-HYB-006",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-008-HYB-006",
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-007-HYB-004"
+    ]
+  },
+  {
+    "query_id": "DEV-DEH-10",
+    "language": "Abbreviated_Banglish",
+    "baseline_rank": 1,
+    "debiased_rank": 1,
+    "rank_changed": false,
+    "gold_moved_up": false,
+    "gold_moved_down": false,
+    "context_changed": false,
+    "baseline_top5": [
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-008-HYB-006",
+      "DOC-NHS-011-HYB-002"
+    ],
+    "debiased_top5": [
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-008-HYB-006",
+      "DOC-NHS-011-HYB-002"
+    ]
+  }
+]

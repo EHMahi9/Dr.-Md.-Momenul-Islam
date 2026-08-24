@@ -1,0 +1,64 @@
+{
+  "candidate_strategy_name": "STRATEGY_3_SAME_DOC_OVERVIEW_DEBIASING",
+  "description": "Deterministic Query Normalization -> Dense multilingual-e5-small (Top-15) -> bge-reranker-v2-m3 with Same-Document Overview De-Biasing (0.85x factor on chunk 000) -> Top-5 Final Context",
+  "selection_rule_applied": "1. DEV Chunk Evidence Recall@5 > 2. DEV Chunk Evidence Recall@3 > 3. DEV Chunk MRR > 4. Overview Demotion Resistance > 5. Simplicity",
+  "parameters": {
+    "query_normalization": {
+      "enabled": true,
+      "type": "deterministic_rule_based_concept_dictionary",
+      "non_llm": true
+    },
+    "embedding_model": "intfloat/multilingual-e5-small",
+    "candidate_depth_k": 15,
+    "passage_representation": "standard_clean_chunk_text",
+    "use_bm25_union": false,
+    "similarity_metric": "cosine_dot_product_normalized",
+    "reranker_model": "BAAI/bge-reranker-v2-m3",
+    "reranker_post_processing": {
+      "overview_debiasing_enabled": true,
+      "overview_chunk_suffix": "-HYB-000",
+      "overview_score_multiplier": 0.85
+    },
+    "final_top_k_context": 5
+  },
+  "dev_benchmark_metrics": {
+    "n_queries": 40,
+    "candidate_pool_r15": "37/40 (92.50%)",
+    "chunk_recall_at_1": "19/40 (47.50%)",
+    "chunk_recall_at_3": "27/40 (67.50%)",
+    "chunk_recall_at_5": "35/40 (87.50%)",
+    "mrr": 0.615,
+    "language_breakdown": {
+      "English": {
+        "n": 12,
+        "r1": "8/12 (66.7%)",
+        "r3": "10/12 (83.3%)",
+        "r5": "11/12 (91.7%)",
+        "mrr": 0.7611
+      },
+      "Native_Bangla": {
+        "n": 10,
+        "r1": "5/10 (50.0%)",
+        "r3": "6/10 (60.0%)",
+        "r5": "9/10 (90.0%)",
+        "mrr": 0.615
+      },
+      "Standard_Banglish": {
+        "n": 10,
+        "r1": "3/10 (30.0%)",
+        "r3": "6/10 (60.0%)",
+        "r5": "8/10 (80.0%)",
+        "mrr": 0.4867
+      },
+      "Abbreviated_Banglish": {
+        "n": 8,
+        "r1": "3/8 (37.5%)",
+        "r3": "5/8 (62.5%)",
+        "r5": "7/8 (87.5%)",
+        "mrr": 0.5563
+      }
+    }
+  },
+  "locked_holdout_status": "UNTOUCHED_AND_UNSEEN",
+  "configuration_hash": "a79e7a0eca3e7617d2e87ef920ef916edfa680011ae3e8bbc906f29dfcb4f79e"
+}

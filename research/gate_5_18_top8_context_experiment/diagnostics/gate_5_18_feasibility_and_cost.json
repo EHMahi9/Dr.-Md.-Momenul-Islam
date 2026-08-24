@@ -1,0 +1,92 @@
+{
+  "precomputed_feasibility": {
+    "total_queries": 40,
+    "gold_in_top1_count": 19,
+    "gold_in_top1_pct": 47.5,
+    "gold_in_top3_count": 27,
+    "gold_in_top3_pct": 67.5,
+    "gold_in_top5_count": 35,
+    "gold_in_top5_pct": 87.5,
+    "gold_in_top8_count": 35,
+    "gold_in_top8_pct": 87.5,
+    "gold_rank_6_to_8_increment": 0,
+    "gold_in_top15_count": 37,
+    "gold_in_top15_pct": 92.5,
+    "gold_rank_9_to_15_count": 2,
+    "gold_outside_dense15_count": 3,
+    "gold_outside_dense15_pct": 7.5
+  },
+  "context_cost": {
+    "average_chunks_delivered_baseline": 5.0,
+    "average_chunks_delivered_experimental": 8.0,
+    "chunks_delivered_overhead_pct": 60.0,
+    "avg_top5_context_chars": 2971.9,
+    "avg_top8_context_chars": 4745.7,
+    "avg_top5_context_tokens": 781.7,
+    "avg_top8_context_tokens": 1248.3,
+    "avg_token_overhead_per_query": 466.7,
+    "token_overhead_pct": 59.7,
+    "reranker_latency": "Unchanged (candidate depth K=15 and reranker scoring are identical; reranker already scores all 15 candidates before truncation).",
+    "downstream_implication": "Every LLM prompt context increases by ~60% in tokens (+367 tokens/query) with exactly 0.0% evidence gain on DEV."
+  },
+  "remaining_failures_summary": {
+    "total_unsuccessful_top8": 5,
+    "failure_taxonomy_counts": {
+      "GOLD_OUTSIDE_DENSE15": 3,
+      "GOLD_RANK_9_TO_15": 2
+    },
+    "unsuccessful_queries": [
+      {
+        "query_id": "DEV-BUR-02",
+        "language": "Native_Bangla",
+        "raw_query": "হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানির নিচে রাখতে হবে?",
+        "gold_chunk_ids": [
+          "DOC-NHS-005-HYB-000"
+        ],
+        "rank": 0,
+        "failure_class": "GOLD_OUTSIDE_DENSE15"
+      },
+      {
+        "query_id": "DEV-BUR-03",
+        "language": "Standard_Banglish",
+        "raw_query": "pure gele thanda pani koto minute dhalbo?",
+        "gold_chunk_ids": [
+          "DOC-NHS-005-HYB-000"
+        ],
+        "rank": 0,
+        "failure_class": "GOLD_OUTSIDE_DENSE15"
+      },
+      {
+        "query_id": "DEV-BUR-07",
+        "language": "Standard_Banglish",
+        "raw_query": "pora jaygay butter ba tel lagano thik naki?",
+        "gold_chunk_ids": [
+          "DOC-NHS-005-HYB-001"
+        ],
+        "rank": 12,
+        "failure_class": "GOLD_RANK_9_TO_15"
+      },
+      {
+        "query_id": "DEV-CUT-04",
+        "language": "Abbreviated_Banglish",
+        "raw_query": "angul kete rokt porche chap diye dhorbo kina",
+        "gold_chunk_ids": [
+          "DOC-NHS-006-HYB-000",
+          "DOC-NHS-006-HYB-001"
+        ],
+        "rank": 0,
+        "failure_class": "GOLD_OUTSIDE_DENSE15"
+      },
+      {
+        "query_id": "DEV-CUT-08",
+        "language": "English",
+        "raw_query": "When to go to A&E for a cut with non-stop bleeding?",
+        "gold_chunk_ids": [
+          "DOC-NHS-006-HYB-002"
+        ],
+        "rank": 10,
+        "failure_class": "GOLD_RANK_9_TO_15"
+      }
+    ]
+  }
+}

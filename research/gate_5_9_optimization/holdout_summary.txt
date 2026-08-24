@@ -1,0 +1,224 @@
+=== SCORE DISTRIBUTIONS ===
+{
+  "valid_queries": {
+    "n": 80,
+    "dense_top1_mean": 0.8446,
+    "dense_top1_min": 0.7834,
+    "dense_top1_max": 0.9132,
+    "margin_mean": 0.0089,
+    "r5_top1_mean": 0.4127,
+    "r5_top1_min": 0.0,
+    "r5_top1_max": 0.9967
+  },
+  "dev_queries": {
+    "n": 40,
+    "dense_top1_mean": 0.8421,
+    "dense_top1_min": 0.7834,
+    "dense_top1_max": 0.9132,
+    "margin_mean": 0.0099,
+    "r5_top1_mean": 0.3789,
+    "r5_top1_min": 0.0,
+    "r5_top1_max": 0.996
+  },
+  "holdout_queries": {
+    "n": 40,
+    "dense_top1_mean": 0.8471,
+    "dense_top1_min": 0.7871,
+    "dense_top1_max": 0.9054,
+    "margin_mean": 0.008,
+    "r5_top1_mean": 0.4465,
+    "r5_top1_min": 0.0,
+    "r5_top1_max": 0.9967
+  },
+  "hard_negatives": {
+    "n": 12,
+    "dense_top1_mean": 0.8403,
+    "dense_top1_min": 0.7866,
+    "dense_top1_max": 0.8676,
+    "margin_mean": 0.0065,
+    "r5_top1_mean": 0.0304,
+    "r5_top1_min": 0.0002,
+    "r5_top1_max": 0.184
+  },
+  "out_of_corpus": {
+    "n": 8,
+    "dense_top1_mean": 0.8108,
+    "dense_top1_min": 0.7961,
+    "dense_top1_max": 0.8276,
+    "margin_mean": 0.0035,
+    "r5_top1_mean": 0.0006,
+    "r5_top1_min": 0.0,
+    "r5_top1_max": 0.0031
+  }
+}
+
+=== LATENCY STATS ===
+{
+  "passage_encoding_total_s": 5.658,
+  "passage_encoding_per_chunk_ms": 83.21,
+  "query_encoding_per_query_ms": 17.17,
+  "dense_search_per_query_ms": 0.02,
+  "rerank_top5_per_query_ms": 6074.43,
+  "total_e2e_config_a_ms": 17.18,
+  "total_e2e_config_c_ms": 6091.61
+}
+
+=== OVERALL VALID METRICS ===
+{
+  "n": 80,
+  "dense_R1": 71.25,
+  "dense_R3": 82.5,
+  "dense_R5": 92.5,
+  "dense_MRR": 0.7863,
+  "r3_R1": 77.5,
+  "r3_R3": 82.5,
+  "r3_MRR": 0.7979,
+  "r5_R1": 78.75,
+  "r5_R3": 90.0,
+  "r5_R5": 92.5,
+  "r5_MRR": 0.8431,
+  "r5_degradations": 2,
+  "r5_improvements": 8
+}
+
+=== DEV METRICS ===
+{
+  "n": 40,
+  "dense_R1": 65.0,
+  "dense_R3": 80.0,
+  "dense_R5": 92.5,
+  "dense_MRR": 0.7425,
+  "r3_R1": 75.0,
+  "r3_R3": 80.0,
+  "r3_MRR": 0.7708,
+  "r5_R1": 72.5,
+  "r5_R3": 87.5,
+  "r5_R5": 92.5,
+  "r5_MRR": 0.7987,
+  "r5_degradations": 1,
+  "r5_improvements": 4
+}
+
+=== LOCKED HOLDOUT METRICS ===
+{
+  "n": 40,
+  "dense_R1": 77.5,
+  "dense_R3": 85.0,
+  "dense_R5": 92.5,
+  "dense_MRR": 0.83,
+  "r3_R1": 80.0,
+  "r3_R3": 85.0,
+  "r3_MRR": 0.825,
+  "r5_R1": 85.0,
+  "r5_R3": 92.5,
+  "r5_R5": 92.5,
+  "r5_MRR": 0.8875,
+  "r5_degradations": 1,
+  "r5_improvements": 4
+}
+
+=== LOCKED HOLDOUT LANGUAGE BREAKDOWN ===
+{
+  "English": {
+    "n": 12,
+    "dense_R1": 91.67,
+    "dense_R3": 100.0,
+    "dense_R5": 100.0,
+    "dense_MRR": 0.9583,
+    "r3_R1": 100.0,
+    "r3_R3": 100.0,
+    "r3_MRR": 1.0,
+    "r5_R1": 100.0,
+    "r5_R3": 100.0,
+    "r5_R5": 100.0,
+    "r5_MRR": 1.0,
+    "r5_degradations": 0,
+    "r5_improvements": 1
+  },
+  "Native_Bangla": {
+    "n": 11,
+    "dense_R1": 90.91,
+    "dense_R3": 100.0,
+    "dense_R5": 100.0,
+    "dense_MRR": 0.9545,
+    "r3_R1": 81.82,
+    "r3_R3": 100.0,
+    "r3_MRR": 0.9091,
+    "r5_R1": 90.91,
+    "r5_R3": 100.0,
+    "r5_R5": 100.0,
+    "r5_MRR": 0.9545,
+    "r5_degradations": 1,
+    "r5_improvements": 1
+  },
+  "Standard_Banglish": {
+    "n": 9,
+    "dense_R1": 44.44,
+    "dense_R3": 55.56,
+    "dense_R5": 77.78,
+    "dense_MRR": 0.5556,
+    "r3_R1": 55.56,
+    "r3_R3": 55.56,
+    "r3_MRR": 0.5556,
+    "r5_R1": 66.67,
+    "r5_R3": 77.78,
+    "r5_R5": 77.78,
+    "r5_MRR": 0.7222,
+    "r5_degradations": 0,
+    "r5_improvements": 2
+  },
+  "Abbreviated_Banglish": {
+    "n": 8,
+    "dense_R1": 75.0,
+    "dense_R3": 75.0,
+    "dense_R5": 87.5,
+    "dense_MRR": 0.775,
+    "r3_R1": 75.0,
+    "r3_R3": 75.0,
+    "r3_MRR": 0.75,
+    "r5_R1": 75.0,
+    "r5_R3": 87.5,
+    "r5_R5": 87.5,
+    "r5_MRR": 0.8125,
+    "r5_degradations": 0,
+    "r5_improvements": 0
+  }
+}
+
+=== HARD NEGATIVES (N=12) ===
+  [HN-01] (English): 'How to apply a tactical tourniquet to stop arterial bleeding on thigh?' -> Dense Top1: 0.8480 (Src: DOC-NHS-006), R5 Top1: 0.0228
+  [HN-02] (Native_Bangla): 'হাঁপানির টান কমাতে সালবুটামল নেবুলাইজারের ডোজ কত মিলিগ্রাম দেব?' -> Dense Top1: 0.7866 (Src: DOC-NHS-010), R5 Top1: 0.0021
+  [HN-03] (Standard_Banglish): 'severe dehydration e saline IV injection kon vein e dibo?' -> Dense Top1: 0.8531 (Src: DOC-NHS-007), R5 Top1: 0.0136
+  [HN-04] (Abbreviated_Banglish): 'chokhe chemical acid porle kon drop dibo' -> Dense Top1: 0.7933 (Src: DOC-NHS-008), R5 Top1: 0.0002
+  [HN-05] (English): 'Antibiotics dosage for severe infectious bacterial diarrhoea in adults' -> Dense Top1: 0.8676 (Src: DOC-NHS-008), R5 Top1: 0.0113
+  [HN-06] (Native_Bangla): 'বাচ্চার ডেঙ্গু জ্বরে প্লেটলেট কমে গেলে কী ওষুধ দিতে হয়?' -> Dense Top1: 0.8421 (Src: DOC-NHS-008), R5 Top1: 0.1840
+  [HN-07] (Standard_Banglish): 'migraine er specific triptan medicine dosage koto?' -> Dense Top1: 0.8376 (Src: DOC-NHS-004), R5 Top1: 0.0003
+  [HN-08] (Abbreviated_Banglish): 'severe anaphylaxis e steroid injection hydrocortisone koto mg' -> Dense Top1: 0.8542 (Src: DOC-NHS-011), R5 Top1: 0.0145
+  [HN-09] (English): 'How to perform surgical stitches on a deep laceration cut?' -> Dense Top1: 0.8404 (Src: DOC-NHS-006), R5 Top1: 0.0092
+  [HN-10] (Native_Bangla): 'বাচ্চাদের খিঁচুনি বা ফেব্রাইল কনভালশন হলে কী অ্যান্টি-কনভালস্যান্ট দেব?' -> Dense Top1: 0.8526 (Src: DOC-NHS-010), R5 Top1: 0.0921
+  [HN-11] (Standard_Banglish): 'third degree electrical burn e dead skin debridement kivabe kore?' -> Dense Top1: 0.8524 (Src: DOC-NHS-005), R5 Top1: 0.0008
+  [HN-12] (Abbreviated_Banglish): 'chronic asthma r steroid biological injection injection kivabe dey' -> Dense Top1: 0.8553 (Src: DOC-NHS-004), R5 Top1: 0.0140
+
+=== OUT OF CORPUS (N=8) ===
+  [OOC-01] (English): 'What is the recommended prophylaxis medication for malaria traveling to Africa?' -> Dense Top1: 0.8151 (Src: DOC-NHS-008), R5 Top1: 0.0031
+  [OOC-02] (Native_Bangla): 'কুকুর কামড়ালে জলাতঙ্ক বা রেবিস ভ্যাকসিন কত দিনের মধ্যে নিতে হয়?' -> Dense Top1: 0.8028 (Src: DOC-NHS-010), R5 Top1: 0.0001
+  [OOC-03] (Standard_Banglish): 'dante puz hole root canal treatment keno dorkar?' -> Dense Top1: 0.8092 (Src: DOC-NHS-007), R5 Top1: 0.0001
+  [OOC-04] (Abbreviated_Banglish): 'kidney te pathor hole lithotripsy laser operation kivabe kore' -> Dense Top1: 0.8128 (Src: DOC-NHS-008), R5 Top1: 0.0000
+  [OOC-05] (English): 'How is type 1 diabetes insulin pump therapy adjusted for exercise?' -> Dense Top1: 0.8176 (Src: DOC-NHS-004), R5 Top1: 0.0002
+  [OOC-06] (Native_Bangla): 'উচ্চ রক্তচাপ বা হাইপারটেনশনে অ্যামলোডিপিন ওষুধের পার্শ্বপ্রতিক্রিয়া কী?' -> Dense Top1: 0.7961 (Src: DOC-NHS-010), R5 Top1: 0.0009
+  [OOC-07] (Standard_Banglish): 'broken bone fracture hole plaster koto din rakhte hoy?' -> Dense Top1: 0.8054 (Src: DOC-NHS-006), R5 Top1: 0.0000
+  [OOC-08] (Abbreviated_Banglish): 'glaucoma eye drop pressure komano kivabe kaj kore' -> Dense Top1: 0.8276 (Src: DOC-NHS-008), R5 Top1: 0.0001
+
+=== LOCKED HOLDOUT FAILURES (N=6) ===
+  [TEST-HEA-03] (Standard_Banglish): 'matha betha hole bashay ki korle kombe?' -> Expected: DOC-NHS-009, Dense Rank: 0, R5 Rank: 0
+    R5 Top1 Chunk: 'is bothered by light\n\nhas a fit (febrile seizure) for the first time ('
+  [TEST-HEA-04] (Abbreviated_Banglish): 'matha betha paracetamol khabo ar pani khabo kina' -> Expected: DOC-NHS-009, Dense Rank: 0, R5 Rank: 0
+    R5 Top1 Chunk: 'Do\n\ngive them plenty of fluids – if your baby is breastfed, continue t'
+  [TEST-HEA-07] (Standard_Banglish): 'hotath extreme matha betha ar ghaar shokto 999 call dibo?' -> Expected: DOC-NHS-009, Dense Rank: 4, R5 Rank: 2
+    R5 Top1 Chunk: 'Immediate action required: Call 999 if:\n\nYou or someone else is having'
+  [TEST-HEA-10] (Standard_Banglish): 'matha betha keno hoy causes ki ki?' -> Expected: DOC-NHS-009, Dense Rank: 0, R5 Rank: 0
+    R5 Top1 Chunk: 'is bothered by light\n\nhas a fit (febrile seizure) for the first time ('
+  [TEST-FEV-09] (Native_Bangla): 'বাচ্চার তীব্র জ্বর ও নীলচে ঠোঁট হলে অবিলম্বে কি ৯৯৯ কল করতে হবে?' -> Expected: DOC-NHS-010, Dense Rank: 1, R5 Rank: 2
+    R5 Top1 Chunk: 'Immediate action required: Call 999 or go to A&E if you or your child:'
+  [TEST-FEV-10] (Abbreviated_Banglish): 'bacha ghum theke jagena ar thot neel 999 call korbo?' -> Expected: DOC-NHS-010, Dense Rank: 5, R5 Rank: 2
+    R5 Top1 Chunk: 'Immediate action required: Call 999 if:\n\nyour lips, mouth, throat or t'

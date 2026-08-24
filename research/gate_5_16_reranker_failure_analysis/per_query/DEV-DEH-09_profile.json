@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-DEH-09",
+  "raw_query": "অজ্ঞান হয়ে যাওয়া বা কথা বলতে কষ্ট হলে কি ৯৯৯ কল করব?",
+  "normalized_query": "অজ্ঞান হয়ে যাওয়া বা কথা বলতে কষ্ট হলে কি ৯৯৯ কল করব?",
+  "language_category": "Native_Bangla",
+  "expected_source_id": "DOC-NHS-007",
+  "gold_chunk_ids": [
+    "DOC-NHS-007-HYB-004"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 636.0,
+  "dense_rank": 4,
+  "dense_r15": true,
+  "rerank_rank": 5,
+  "in_top5": true,
+  "is_top1": false,
+  "gold_rerank_score": 0.12995758652687073,
+  "rank1_chunk_id": "DOC-NHS-009-HYB-003",
+  "rank1_source_id": "DOC-NHS-009",
+  "rank1_heading": "",
+  "rank1_length": 708,
+  "rank1_score": 0.6367746591567993,
+  "score_margin_vs_gold": 0.5068170726299286,
+  "same_source_as_gold": false,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "CROSS_DOCUMENT_COMPETITION",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-009-HYB-003",
+    "DOC-NHS-011-HYB-002",
+    "DOC-NHS-008-HYB-006",
+    "DOC-NHS-011-HYB-000",
+    "DOC-NHS-007-HYB-004"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-009-HYB-003",
+      "source_id": "DOC-NHS-009",
+      "heading": "",
+      "score": 0.6367746591567993,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-011-HYB-002",
+      "source_id": "DOC-NHS-011",
+      "heading": "",
+      "score": 0.278613805770874,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-008-HYB-006",
+      "source_id": "DOC-NHS-008",
+      "heading": "",
+      "score": 0.16052314639091492,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-011-HYB-000",
+      "source_id": "DOC-NHS-011",
+      "heading": "",
+      "score": 0.13965493217110633,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-007-HYB-004",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.12995758652687073,
+      "is_gold": true
+    }
+  ]
+}

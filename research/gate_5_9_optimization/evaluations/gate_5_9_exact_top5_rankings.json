@@ -1,0 +1,3702 @@
+[
+  {
+    "query_id": "DEV-AST-01",
+    "query_text": "What are the common symptoms of asthma?",
+    "benchmark_split": "DEV",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-004",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-012",
+      "DOC-NHS-004-HYB-006",
+      "DOC-NHS-004-HYB-013"
+    ],
+    "dense_top5_scores": [
+      0.9089010953903198,
+      0.8894752264022827,
+      0.8798675537109375,
+      0.8797669410705566,
+      0.875327467918396
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-006",
+      "DOC-NHS-004-HYB-012",
+      "DOC-NHS-004-HYB-013"
+    ],
+    "r5_top5_scores": [
+      0.9955641031265259,
+      0.7306804060935974,
+      0.3227612376213074,
+      0.174540176987648,
+      0.1274092048406601
+    ],
+    "dense_top1_score": 0.9089010953903198,
+    "r5_top1_score": 0.9955641031265259
+  },
+  {
+    "query_id": "DEV-AST-02",
+    "query_text": "হাঁপানির প্রধান লক্ষণগুলো কী কী?",
+    "benchmark_split": "DEV",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-004",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-011-HYB-001",
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-011-HYB-000"
+    ],
+    "dense_top5_scores": [
+      0.789427638053894,
+      0.782370924949646,
+      0.7779712080955505,
+      0.7668899893760681,
+      0.7644380331039429
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-011-HYB-001",
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-007-HYB-000"
+    ],
+    "r5_top5_scores": [
+      0.7032455205917358,
+      0.027463532984256744,
+      0.016351643949747086,
+      0.007029220461845398,
+      0.0018795495852828026
+    ],
+    "dense_top1_score": 0.789427638053894,
+    "r5_top1_score": 0.7032455205917358
+  },
+  {
+    "query_id": "DEV-AST-03",
+    "query_text": "asthma hole ki ki shomossha hoy bujhte parbo kivabe?",
+    "benchmark_split": "DEV",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-004",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-015",
+      "DOC-NHS-004-HYB-012",
+      "DOC-NHS-004-HYB-017",
+      "DOC-NHS-004-HYB-013"
+    ],
+    "dense_top5_scores": [
+      0.8514317274093628,
+      0.8436946868896484,
+      0.8343420028686523,
+      0.8292943835258484,
+      0.8291494846343994
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-015",
+      "DOC-NHS-004-HYB-013",
+      "DOC-NHS-004-HYB-012",
+      "DOC-NHS-004-HYB-017"
+    ],
+    "r5_top5_scores": [
+      0.0023416257463395596,
+      0.0005275440053083003,
+      0.00043856928823515773,
+      0.00035154380020685494,
+      0.00023461561067961156
+    ],
+    "dense_top1_score": 0.8514317274093628,
+    "r5_top1_score": 0.0023416257463395596
+  },
+  {
+    "query_id": "DEV-AST-04",
+    "query_text": "buk chap lage ar shash nite koshto asthma naki",
+    "benchmark_split": "DEV",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-004",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-015",
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-017",
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.827880859375,
+      0.8277918696403503,
+      0.8250362873077393,
+      0.8177819848060608,
+      0.8165457248687744
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-015",
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-017"
+    ],
+    "r5_top5_scores": [
+      0.0016570985317230225,
+      0.00043210305739194155,
+      0.0002876301878131926,
+      0.0002493839419912547,
+      0.00015646977408323437
+    ],
+    "dense_top1_score": 0.827880859375,
+    "r5_top1_score": 0.0016570985317230225
+  },
+  {
+    "query_id": "DEV-AST-05",
+    "query_text": "How to treat an asthma attack at home?",
+    "benchmark_split": "DEV",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-004",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-007",
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-004-HYB-005",
+      "DOC-NHS-004-HYB-002",
+      "DOC-NHS-004-HYB-008"
+    ],
+    "dense_top5_scores": [
+      0.8957133889198303,
+      0.88826584815979,
+      0.8797134160995483,
+      0.8796108961105347,
+      0.8785703182220459
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-002",
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-004-HYB-008",
+      "DOC-NHS-004-HYB-007",
+      "DOC-NHS-004-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.7065311670303345,
+      0.4408092200756073,
+      0.16651315987110138,
+      0.08177784830331802,
+      0.059392284601926804
+    ],
+    "dense_top1_score": 0.8957133889198303,
+    "r5_top1_score": 0.7065311670303345
+  },
+  {
+    "query_id": "DEV-AST-06",
+    "query_text": "হাঁপানির টান উঠলে নীল ইনহেলার কীভাবে ব্যবহার করব?",
+    "benchmark_split": "DEV",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-004",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-009",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-007-HYB-007"
+    ],
+    "dense_top5_scores": [
+      0.8106173276901245,
+      0.8003792762756348,
+      0.7968147993087769,
+      0.7964840531349182,
+      0.7932316064834595
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-004-HYB-009",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-007-HYB-007"
+    ],
+    "r5_top5_scores": [
+      0.07507409155368805,
+      0.002871596720069647,
+      0.0027297930791974068,
+      1.815648101910483e-05,
+      1.6356103515136056e-05
+    ],
+    "dense_top1_score": 0.8106173276901245,
+    "r5_top1_score": 0.07507409155368805
+  },
+  {
+    "query_id": "DEV-AST-07",
+    "query_text": "asthma attack uthle koto puff blue inhaler nite hoy?",
+    "benchmark_split": "DEV",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-004",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-017",
+      "DOC-NHS-004-HYB-002"
+    ],
+    "dense_top5_scores": [
+      0.8640745878219604,
+      0.8507981300354004,
+      0.844916582107544,
+      0.8446482419967651,
+      0.8418856859207153
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-004-HYB-002",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-017"
+    ],
+    "r5_top5_scores": [
+      0.3246370255947113,
+      0.011124645359814167,
+      0.009740574285387993,
+      0.004263223614543676,
+      0.0005227263318374753
+    ],
+    "dense_top1_score": 0.8640745878219604,
+    "r5_top1_score": 0.3246370255947113
+  },
+  {
+    "query_id": "DEV-AST-08",
+    "query_text": "shash bondho hoye jacche inhaler kaj kore na 999 call dibo?",
+    "benchmark_split": "DEV",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-004",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-004-HYB-017"
+    ],
+    "dense_top5_scores": [
+      0.8238645792007446,
+      0.8113704919815063,
+      0.802932858467102,
+      0.802354097366333,
+      0.8022319078445435
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-004-HYB-017"
+    ],
+    "r5_top5_scores": [
+      0.011853884905576706,
+      0.011391984298825264,
+      0.0006250830483622849,
+      0.000173701235326007,
+      6.746596045559272e-05
+    ],
+    "dense_top1_score": 0.8238645792007446,
+    "r5_top1_score": 0.011853884905576706
+  },
+  {
+    "query_id": "DEV-AST-09",
+    "query_text": "What are the common triggers for asthma?",
+    "benchmark_split": "DEV",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-004",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-012",
+      "DOC-NHS-004-HYB-013",
+      "DOC-NHS-004-HYB-014"
+    ],
+    "dense_top5_scores": [
+      0.8754109144210815,
+      0.8704480528831482,
+      0.8652946352958679,
+      0.8624056577682495,
+      0.858955979347229
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-014",
+      "DOC-NHS-004-HYB-012",
+      "DOC-NHS-004-HYB-013",
+      "DOC-NHS-004-HYB-000"
+    ],
+    "r5_top5_scores": [
+      0.8334963917732239,
+      0.8191025853157043,
+      0.5100377798080444,
+      0.25530561804771423,
+      0.21443192660808563
+    ],
+    "dense_top1_score": 0.8754109144210815,
+    "r5_top1_score": 0.8334963917732239
+  },
+  {
+    "query_id": "DEV-AST-10",
+    "query_text": "kon kon karone asthma bere jete pare?",
+    "benchmark_split": "DEV",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-004",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-004-HYB-007",
+      "DOC-NHS-004-HYB-011",
+      "DOC-NHS-004-HYB-010"
+    ],
+    "dense_top5_scores": [
+      0.8474732041358948,
+      0.8323609828948975,
+      0.8294999599456787,
+      0.8287861347198486,
+      0.8278982043266296
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-004-HYB-011",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-004-HYB-007"
+    ],
+    "r5_top5_scores": [
+      0.0013227780582383275,
+      0.0004848008102271706,
+      0.00036529646604321897,
+      0.00020449560543056577,
+      0.00017499628302175552
+    ],
+    "dense_top1_score": 0.8474732041358948,
+    "r5_top1_score": 0.0013227780582383275
+  },
+  {
+    "query_id": "DEV-BUR-01",
+    "query_text": "How should you treat a burn immediately with water?",
+    "benchmark_split": "DEV",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-005",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-005-HYB-003",
+      "DOC-NHS-005-HYB-000"
+    ],
+    "dense_top5_scores": [
+      0.8904054164886475,
+      0.8579851388931274,
+      0.8521982431411743,
+      0.8512346744537354,
+      0.8510333299636841
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-003",
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-005-HYB-000"
+    ],
+    "r5_top5_scores": [
+      0.9691663980484009,
+      0.02468753792345524,
+      0.023511357605457306,
+      0.011691058985888958,
+      0.0017607981571927667
+    ],
+    "dense_top1_score": 0.8904054164886475,
+    "r5_top1_score": 0.9691663980484009
+  },
+  {
+    "query_id": "DEV-BUR-02",
+    "query_text": "হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানির নিচে রাখতে হবে?",
+    "benchmark_split": "DEV",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-005",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-001",
+      "DOC-NHS-010-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.8276675939559937,
+      0.8235654830932617,
+      0.8167406320571899,
+      0.8121511340141296,
+      0.810936450958252
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-001",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-010-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.8959189057350159,
+      0.00046172444126568735,
+      0.00015694285684730858,
+      0.00011623701720964164,
+      2.8265083528822288e-05
+    ],
+    "dense_top1_score": 0.8276675939559937,
+    "r5_top1_score": 0.8959189057350159
+  },
+  {
+    "query_id": "DEV-BUR-03",
+    "query_text": "pure gele thanda pani koto minute dhalbo?",
+    "benchmark_split": "DEV",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-005",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.8082301616668701,
+      0.8067225813865662,
+      0.7968838214874268,
+      0.7957954406738281,
+      0.7933089137077332
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-007-HYB-003"
+    ],
+    "r5_top5_scores": [
+      1.803583472792525e-05,
+      1.6706328096915968e-05,
+      1.66657664522063e-05,
+      1.6432133634225465e-05,
+      1.6394473277614452e-05
+    ],
+    "dense_top1_score": 0.8082301616668701,
+    "r5_top1_score": 1.803583472792525e-05
+  },
+  {
+    "query_id": "DEV-BUR-04",
+    "query_text": "hat pure geche ekhon ki korbo pani dhalbo?",
+    "benchmark_split": "DEV",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-005",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-009-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.7934889793395996,
+      0.7924524545669556,
+      0.7921783924102783,
+      0.787647008895874,
+      0.7855462431907654
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-007-HYB-003"
+    ],
+    "r5_top5_scores": [
+      1.715673533908557e-05,
+      1.7034883057931438e-05,
+      1.636304659768939e-05,
+      1.6271003914880566e-05,
+      1.6227892047027126e-05
+    ],
+    "dense_top1_score": 0.7934889793395996,
+    "r5_top1_score": 1.715673533908557e-05
+  },
+  {
+    "query_id": "DEV-BUR-05",
+    "query_text": "Should you put butter or oil on a burn?",
+    "benchmark_split": "DEV",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-005",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-000",
+      "DOC-NHS-005-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.8781795501708984,
+      0.8593047857284546,
+      0.8586103320121765,
+      0.8327069282531738,
+      0.8318772315979004
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-003",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-000"
+    ],
+    "r5_top5_scores": [
+      0.943816602230072,
+      0.004827137105166912,
+      0.0030870612245053053,
+      0.0020135045051574707,
+      0.0007526054978370667
+    ],
+    "dense_top1_score": 0.8781795501708984,
+    "r5_top1_score": 0.943816602230072
+  },
+  {
+    "query_id": "DEV-BUR-06",
+    "query_text": "পোড়া জায়গায় কি মাখন বা তেল লাগানো যাবে?",
+    "benchmark_split": "DEV",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-005",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-005-HYB-000"
+    ],
+    "dense_top5_scores": [
+      0.8088381886482239,
+      0.7989012002944946,
+      0.7970998287200928,
+      0.7960368394851685,
+      0.7864381074905396
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-000",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-008-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.13770417869091034,
+      0.001727313152514398,
+      0.00038194385706447065,
+      0.0003637235495261848,
+      1.6193078408832662e-05
+    ],
+    "dense_top1_score": 0.8088381886482239,
+    "r5_top1_score": 0.13770417869091034
+  },
+  {
+    "query_id": "DEV-BUR-07",
+    "query_text": "pora jaygay butter ba tel lagano thik naki?",
+    "benchmark_split": "DEV",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-005",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-015",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-005-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.7949141263961792,
+      0.7942489385604858,
+      0.7904541492462158,
+      0.7894543409347534,
+      0.7890620231628418
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-004-HYB-015"
+    ],
+    "r5_top5_scores": [
+      1.674131999607198e-05,
+      1.6572937965975143e-05,
+      1.643022187636234e-05,
+      1.631670238566585e-05,
+      1.6276637325063348e-05
+    ],
+    "dense_top1_score": 0.7949141263961792,
+    "r5_top1_score": 1.674131999607198e-05
+  },
+  {
+    "query_id": "DEV-BUR-08",
+    "query_text": "When is a burn serious enough to call 999 or go to A&E?",
+    "benchmark_split": "DEV",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-005",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.9094091653823853,
+      0.890944242477417,
+      0.8861546516418457,
+      0.8730024099349976,
+      0.8716980218887329
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-004-HYB-004"
+    ],
+    "r5_top5_scores": [
+      0.9884971380233765,
+      0.8016403317451477,
+      0.7986286282539368,
+      0.7863077521324158,
+      0.2612364590167999
+    ],
+    "dense_top1_score": 0.9094091653823853,
+    "r5_top1_score": 0.9884971380233765
+  },
+  {
+    "query_id": "DEV-BUR-09",
+    "query_text": "pora khub boro ar deep hole kokhon hospital jabo?",
+    "benchmark_split": "DEV",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-005",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.8001423478126526,
+      0.799818217754364,
+      0.7986001968383789,
+      0.79599928855896,
+      0.7955538034439087
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-007-HYB-003"
+    ],
+    "r5_top5_scores": [
+      1.6881183910300024e-05,
+      1.6672012861818075e-05,
+      1.6439140381407924e-05,
+      1.643064388190396e-05,
+      1.6395613783970475e-05
+    ],
+    "dense_top1_score": 0.8001423478126526,
+    "r5_top1_score": 1.6881183910300024e-05
+  },
+  {
+    "query_id": "DEV-BUR-10",
+    "query_text": "chemical ba electricity te porle ki 999 call dibo",
+    "benchmark_split": "DEV",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-005",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-010-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.8183717727661133,
+      0.8012733459472656,
+      0.795854389667511,
+      0.7903582453727722,
+      0.7877160310745239
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.02527889795601368,
+      0.0008882101974450052,
+      0.0006348973838612437,
+      0.0003426159964874387,
+      0.0003068343212362379
+    ],
+    "dense_top1_score": 0.8183717727661133,
+    "r5_top1_score": 0.02527889795601368
+  },
+  {
+    "query_id": "DEV-CUT-01",
+    "query_text": "How to stop bleeding and clean a cut at home?",
+    "benchmark_split": "DEV",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-006",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-006"
+    ],
+    "dense_top5_scores": [
+      0.9003078937530518,
+      0.8917971253395081,
+      0.8853592276573181,
+      0.8796519041061401,
+      0.8713636994361877
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-006"
+    ],
+    "r5_top5_scores": [
+      0.9502847194671631,
+      0.9258305430412292,
+      0.09510324895381927,
+      0.09336421638727188,
+      0.051490750163793564
+    ],
+    "dense_top1_score": 0.9003078937530518,
+    "r5_top1_score": 0.9502847194671631
+  },
+  {
+    "query_id": "DEV-CUT-02",
+    "query_text": "কেটে গেলে রক্ত বন্ধ করার সঠিক নিয়ম কী?",
+    "benchmark_split": "DEV",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-006",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-011-HYB-006"
+    ],
+    "dense_top5_scores": [
+      0.8210463523864746,
+      0.8180874586105347,
+      0.8098555207252502,
+      0.8073437213897705,
+      0.8070098161697388
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-011-HYB-006"
+    ],
+    "r5_top5_scores": [
+      0.044380784034729004,
+      0.034964486956596375,
+      0.014041573740541935,
+      0.00011158880079165101,
+      9.180643974104896e-05
+    ],
+    "dense_top1_score": 0.8210463523864746,
+    "r5_top1_score": 0.044380784034729004
+  },
+  {
+    "query_id": "DEV-CUT-03",
+    "query_text": "kete gele rokto bondho korbo kivabe ar clean korbo?",
+    "benchmark_split": "DEV",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-006",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.7904675006866455,
+      0.7889251112937927,
+      0.7887870669364929,
+      0.7885209321975708,
+      0.7884496450424194
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "r5_top5_scores": [
+      2.0222858438501135e-05,
+      1.7153332009911537e-05,
+      1.6644054994685575e-05,
+      1.6511350622749887e-05,
+      1.6346746633644216e-05
+    ],
+    "dense_top1_score": 0.7904675006866455,
+    "r5_top1_score": 2.0222858438501135e-05
+  },
+  {
+    "query_id": "DEV-CUT-04",
+    "query_text": "angul kete rokt porche chap diye dhorbo kina",
+    "benchmark_split": "DEV",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-006",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-005-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.7833812236785889,
+      0.7828497886657715,
+      0.7779235243797302,
+      0.7745460271835327,
+      0.7724521160125732
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-010-HYB-003"
+    ],
+    "r5_top5_scores": [
+      1.6305362805724144e-05,
+      1.628882637305651e-05,
+      1.628270729270298e-05,
+      1.6259493349934928e-05,
+      1.6202902770601213e-05
+    ],
+    "dense_top1_score": 0.7833812236785889,
+    "r5_top1_score": 1.6305362805724144e-05
+  },
+  {
+    "query_id": "DEV-CUT-05",
+    "query_text": "Signs that a cut or wound is infected",
+    "benchmark_split": "DEV",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-006",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-006",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.8918309807777405,
+      0.8844900131225586,
+      0.8794903755187988,
+      0.8788689374923706,
+      0.8771201372146606
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-006",
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.3239630162715912,
+      0.18148860335350037,
+      0.17614273726940155,
+      0.05325572192668915,
+      0.004094339441508055
+    ],
+    "dense_top1_score": 0.8918309807777405,
+    "r5_top1_score": 0.3239630162715912
+  },
+  {
+    "query_id": "DEV-CUT-06",
+    "query_text": "ক্ষতস্থানে ইনফেকশন হয়েছে কীভাবে বুঝব?",
+    "benchmark_split": "DEV",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-006",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-008-HYB-006",
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-010-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.8189216256141663,
+      0.8143219351768494,
+      0.8091837763786316,
+      0.8054511547088623,
+      0.8049427270889282
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-008-HYB-006",
+      "DOC-NHS-010-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.00043077016016468406,
+      0.000404708698624745,
+      0.00026260435697622597,
+      0.00017430749721825123,
+      0.0001567270519444719
+    ],
+    "dense_top1_score": 0.8189216256141663,
+    "r5_top1_score": 0.00043077016016468406
+  },
+  {
+    "query_id": "DEV-CUT-07",
+    "query_text": "kete jawa jayga lal hoye puz porle ki infection?",
+    "benchmark_split": "DEV",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-006",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-011-HYB-001",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-008-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.8191866874694824,
+      0.8178170323371887,
+      0.8097310066223145,
+      0.808943510055542,
+      0.808807909488678
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-011-HYB-001",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-008-HYB-003"
+    ],
+    "r5_top5_scores": [
+      2.2240838006837294e-05,
+      1.997359868255444e-05,
+      1.9612160031101666e-05,
+      1.9447054000920616e-05,
+      1.6345156836905517e-05
+    ],
+    "dense_top1_score": 0.8191866874694824,
+    "r5_top1_score": 2.2240838006837294e-05
+  },
+  {
+    "query_id": "DEV-CUT-08",
+    "query_text": "When to go to A&E for a cut with non-stop bleeding?",
+    "benchmark_split": "DEV",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-006",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-008-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.9085935950279236,
+      0.8707183599472046,
+      0.8629204034805298,
+      0.8584407567977905,
+      0.8558786511421204
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-006-HYB-000"
+    ],
+    "r5_top5_scores": [
+      0.9839044809341431,
+      0.23590460419654846,
+      0.23345153033733368,
+      0.17560015618801117,
+      0.010317240841686726
+    ],
+    "dense_top1_score": 0.9085935950279236,
+    "r5_top1_score": 0.9839044809341431
+  },
+  {
+    "query_id": "DEV-CUT-09",
+    "query_text": "১০ মিনিট চেপে রাখার পরও রক্ত বন্ধ না হলে কী করব?",
+    "benchmark_split": "DEV",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-006",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-011-HYB-006"
+    ],
+    "dense_top5_scores": [
+      0.8420403003692627,
+      0.836030125617981,
+      0.8299177885055542,
+      0.8293066024780273,
+      0.825217604637146
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-011-HYB-006"
+    ],
+    "r5_top5_scores": [
+      0.5443085432052612,
+      0.03260410577058792,
+      0.0008408853318542242,
+      0.00035697745624929667,
+      0.0001898113259812817
+    ],
+    "dense_top1_score": 0.8420403003692627,
+    "r5_top1_score": 0.5443085432052612
+  },
+  {
+    "query_id": "DEV-CUT-10",
+    "query_text": "rokto konovabei thamtasena 10 min hoise a&e jabo?",
+    "benchmark_split": "DEV",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-006",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-008-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.8056816458702087,
+      0.8018455505371094,
+      0.7998851537704468,
+      0.7986125946044922,
+      0.7984448671340942
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-008-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.028310297057032585,
+      0.0004098649078514427,
+      0.00033755856566131115,
+      0.00021455709065776318,
+      2.1700005163438618e-05
+    ],
+    "dense_top1_score": 0.8056816458702087,
+    "r5_top1_score": 0.028310297057032585
+  },
+  {
+    "query_id": "DEV-DEH-01",
+    "query_text": "What are the main symptoms of dehydration in adults?",
+    "benchmark_split": "DEV",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-007",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-007-HYB-006"
+    ],
+    "dense_top5_scores": [
+      0.8949654698371887,
+      0.8718228936195374,
+      0.8696553707122803,
+      0.8588531017303467,
+      0.8523696660995483
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-007-HYB-006",
+      "DOC-NHS-007-HYB-001"
+    ],
+    "r5_top5_scores": [
+      0.9959675073623657,
+      0.6036043763160706,
+      0.24864429235458374,
+      0.21051807701587677,
+      0.19967150688171387
+    ],
+    "dense_top1_score": 0.8949654698371887,
+    "r5_top1_score": 0.9959675073623657
+  },
+  {
+    "query_id": "DEV-DEH-02",
+    "query_text": "শরীরে পানিশূন্যতা বা ডিহাইড্রেশনের লক্ষণ কী কী?",
+    "benchmark_split": "DEV",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-007",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-007-HYB-006",
+      "DOC-NHS-008-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.8433215618133545,
+      0.8158183097839355,
+      0.8156675100326538,
+      0.8111210465431213,
+      0.8029290437698364
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-007-HYB-006"
+    ],
+    "r5_top5_scores": [
+      0.9770758152008057,
+      0.8342570066452026,
+      0.5700631141662598,
+      0.365692675113678,
+      0.10740698128938675
+    ],
+    "dense_top1_score": 0.8433215618133545,
+    "r5_top1_score": 0.9770758152008057
+  },
+  {
+    "query_id": "DEV-DEH-03",
+    "query_text": "dehydration hoile ki rokom shorir lage?",
+    "benchmark_split": "DEV",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-007",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-006",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-007-HYB-000"
+    ],
+    "dense_top5_scores": [
+      0.8486549854278564,
+      0.8455947637557983,
+      0.8392534255981445,
+      0.8385454416275024,
+      0.8370792865753174
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-007-HYB-006"
+    ],
+    "r5_top5_scores": [
+      0.001713234232738614,
+      0.0016791566740721464,
+      0.0016561750089749694,
+      0.0004883586661890149,
+      0.0002744892262853682
+    ],
+    "dense_top1_score": 0.8486549854278564,
+    "r5_top1_score": 0.001713234232738614
+  },
+  {
+    "query_id": "DEV-DEH-04",
+    "query_text": "muk shukay geche prosrab kom hoy pani shunnota naki",
+    "benchmark_split": "DEV",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-007",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-004-HYB-017"
+    ],
+    "dense_top5_scores": [
+      0.7840752601623535,
+      0.7834495902061462,
+      0.77921062707901,
+      0.7790427207946777,
+      0.7783153057098389
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-004-HYB-017"
+    ],
+    "r5_top5_scores": [
+      1.705939939711243e-05,
+      1.6405405403929763e-05,
+      1.6312642401317134e-05,
+      1.629151483939495e-05,
+      1.6231793779297732e-05
+    ],
+    "dense_top1_score": 0.7840752601623535,
+    "r5_top1_score": 1.705939939711243e-05
+  },
+  {
+    "query_id": "DEV-DEH-05",
+    "query_text": "How to prevent and treat dehydration when feeling sick?",
+    "benchmark_split": "DEV",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-007",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-002",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.8951965570449829,
+      0.8936049342155457,
+      0.8878868222236633,
+      0.884719967842102,
+      0.8847150802612305
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-002",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "r5_top5_scores": [
+      0.9376070499420166,
+      0.6399726867675781,
+      0.24435575306415558,
+      0.12746980786323547,
+      0.12638229131698608
+    ],
+    "dense_top1_score": 0.8951965570449829,
+    "r5_top1_score": 0.9376070499420166
+  },
+  {
+    "query_id": "DEV-DEH-06",
+    "query_text": "বমি ভাব হলে পানিশূন্যতা দূর করতে কীভাবে পানি খাব?",
+    "benchmark_split": "DEV",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-007",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-007-HYB-006",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-007-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.8251854777336121,
+      0.8235794305801392,
+      0.8103327751159668,
+      0.8066456317901611,
+      0.8028662204742432
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-006",
+      "DOC-NHS-007-HYB-007",
+      "DOC-NHS-007-HYB-005",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-001"
+    ],
+    "r5_top5_scores": [
+      0.037856824696063995,
+      0.004597521852701902,
+      0.0038688250351697206,
+      0.0030531047377735376,
+      0.0013527857372537255
+    ],
+    "dense_top1_score": 0.8251854777336121,
+    "r5_top1_score": 0.037856824696063995
+  },
+  {
+    "query_id": "DEV-DEH-07",
+    "query_text": "bomi thakle pani kivabe khawa uchit?",
+    "benchmark_split": "DEV",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-007",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-011-HYB-002"
+    ],
+    "dense_top5_scores": [
+      0.7865623235702515,
+      0.7843422889709473,
+      0.7823261022567749,
+      0.7811651825904846,
+      0.7806665897369385
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-007-HYB-003"
+    ],
+    "r5_top5_scores": [
+      1.8931123122456484e-05,
+      1.7183885574922897e-05,
+      1.7063644918380305e-05,
+      1.6431615222245455e-05,
+      1.6339343346771784e-05
+    ],
+    "dense_top1_score": 0.7865623235702515,
+    "r5_top1_score": 1.8931123122456484e-05
+  },
+  {
+    "query_id": "DEV-DEH-08",
+    "query_text": "Signs of severe dehydration requiring immediate 999 emergency call",
+    "benchmark_split": "DEV",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-007",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-011-HYB-002"
+    ],
+    "dense_top5_scores": [
+      0.9131666421890259,
+      0.8858225345611572,
+      0.8827844858169556,
+      0.8777776956558228,
+      0.8768818378448486
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-009-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.9905231595039368,
+      0.8941994309425354,
+      0.6993035078048706,
+      0.47463682293891907,
+      0.22296683490276337
+    ],
+    "dense_top1_score": 0.9131666421890259,
+    "r5_top1_score": 0.9905231595039368
+  },
+  {
+    "query_id": "DEV-DEH-09",
+    "query_text": "অজ্ঞান হয়ে যাওয়া বা কথা বলতে কষ্ট হলে কি ৯৯৯ কল করব?",
+    "benchmark_split": "DEV",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-007",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.8265843391418457,
+      0.8255255222320557,
+      0.8248260021209717,
+      0.8207043409347534,
+      0.8171660900115967
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-005-HYB-002"
+    ],
+    "r5_top5_scores": [
+      0.6367747187614441,
+      0.2786140739917755,
+      0.12995745241641998,
+      0.043263424187898636,
+      0.021584220230579376
+    ],
+    "dense_top1_score": 0.8265843391418457,
+    "r5_top1_score": 0.6367747187614441
+  },
+  {
+    "query_id": "DEV-DEH-10",
+    "query_text": "extreme dehydration confused lage kotha bolte parena 999 daki?",
+    "benchmark_split": "DEV",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-007",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-007-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.8586572408676147,
+      0.8290327787399292,
+      0.8266008496284485,
+      0.8250439167022705,
+      0.8241268396377563
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-008-HYB-004"
+    ],
+    "r5_top5_scores": [
+      0.08797203749418259,
+      0.00460053188726306,
+      0.004263650625944138,
+      0.00416605407372117,
+      0.0009388510370627046
+    ],
+    "dense_top1_score": 0.8586572408676147,
+    "r5_top1_score": 0.08797203749418259
+  },
+  {
+    "query_id": "TEST-DIA-01",
+    "query_text": "How to treat diarrhoea and vomiting at home?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-008",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-000",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-008-HYB-007"
+    ],
+    "dense_top5_scores": [
+      0.9054328203201294,
+      0.8929947018623352,
+      0.8861325979232788,
+      0.8809754848480225,
+      0.8758321404457092
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-000",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-008-HYB-007"
+    ],
+    "r5_top5_scores": [
+      0.996727466583252,
+      0.807237982749939,
+      0.6985907554626465,
+      0.5297383069992065,
+      0.26807060837745667
+    ],
+    "dense_top1_score": 0.9054328203201294,
+    "r5_top1_score": 0.996727466583252
+  },
+  {
+    "query_id": "TEST-DIA-02",
+    "query_text": "ডায়রিয়া ও বমি হলে বাড়িতে কী চিকিৎসা নেওয়া উচিত?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-008",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-000",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-002"
+    ],
+    "dense_top5_scores": [
+      0.8341641426086426,
+      0.8304300308227539,
+      0.830253005027771,
+      0.8190983533859253,
+      0.8183621168136597
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-000",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-010-HYB-002",
+      "DOC-NHS-010-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.5841360092163086,
+      0.0842069461941719,
+      0.03910497948527336,
+      0.023883499205112457,
+      0.0005536265089176595
+    ],
+    "dense_top1_score": 0.8341641426086426,
+    "r5_top1_score": 0.5841360092163086
+  },
+  {
+    "query_id": "TEST-DIA-03",
+    "query_text": "diarrhoea ar bomi hole bashay ki korbo?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-008",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-004-HYB-015",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-007-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.7916101217269897,
+      0.7901453375816345,
+      0.7883920669555664,
+      0.7870811820030212,
+      0.7840344905853271
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-004-HYB-015"
+    ],
+    "r5_top5_scores": [
+      0.001165617723017931,
+      0.0003992424171883613,
+      2.6685627744882368e-05,
+      2.1437323084683158e-05,
+      1.6282179785775952e-05
+    ],
+    "dense_top1_score": 0.7916101217269897,
+    "r5_top1_score": 0.001165617723017931
+  },
+  {
+    "query_id": "TEST-DIA-04",
+    "query_text": "patla paykhana ar bomi hosse onk fluid khabo?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-008",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-011-HYB-001"
+    ],
+    "dense_top5_scores": [
+      0.8103228807449341,
+      0.8079828023910522,
+      0.8055452108383179,
+      0.8047865629196167,
+      0.8010114431381226
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-011-HYB-001"
+    ],
+    "r5_top5_scores": [
+      1.747478927427437e-05,
+      1.740817242534831e-05,
+      1.684500057308469e-05,
+      1.6361469533876516e-05,
+      1.634088584978599e-05
+    ],
+    "dense_top1_score": 0.8103228807449341,
+    "r5_top1_score": 1.747478927427437e-05
+  },
+  {
+    "query_id": "TEST-DIA-05",
+    "query_text": "How long should you stay off work or school after diarrhoea stops?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-008",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-008-HYB-000"
+    ],
+    "dense_top5_scores": [
+      0.8890398144721985,
+      0.8855857253074646,
+      0.8616921901702881,
+      0.8567278385162354,
+      0.8515263795852661
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-008-HYB-000"
+    ],
+    "r5_top5_scores": [
+      0.9892347455024719,
+      0.31418734788894653,
+      0.023363551124930382,
+      0.0209602490067482,
+      0.019969584420323372
+    ],
+    "dense_top1_score": 0.8890398144721985,
+    "r5_top1_score": 0.9892347455024719
+  },
+  {
+    "query_id": "TEST-DIA-06",
+    "query_text": "ডায়রিয়া ভালো হওয়ার পর কত ঘণ্টা স্কুলে বা কাজে যাওয়া বন্ধ রাখা উচিত?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-008",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-010-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.8431072235107422,
+      0.8377923965454102,
+      0.8212730884552002,
+      0.8209311962127686,
+      0.8121037483215332
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-010-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.7142587304115295,
+      0.026740165427327156,
+      0.000643403735011816,
+      0.0005860223318450153,
+      6.958438461879268e-05
+    ],
+    "dense_top1_score": 0.8431072235107422,
+    "r5_top1_score": 0.7142587304115295
+  },
+  {
+    "query_id": "TEST-DIA-07",
+    "query_text": "diarrhoea thamar por koto hour bashay thakte hoy?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-008",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-008-HYB-000",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-008-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.7952494025230408,
+      0.7909132242202759,
+      0.7892283201217651,
+      0.7882387638092041,
+      0.7845631837844849
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-000",
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-007-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.0009618757176212966,
+      0.0001762597676133737,
+      0.0001633322681300342,
+      9.23955740290694e-05,
+      1.7003072571242228e-05
+    ],
+    "dense_top1_score": 0.7952494025230408,
+    "r5_top1_score": 0.0009618757176212966
+  },
+  {
+    "query_id": "TEST-DIA-08",
+    "query_text": "When to call 999 or go to A&E for diarrhoea with bloody vomit?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-008",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-005-HYB-002"
+    ],
+    "dense_top5_scores": [
+      0.8977020382881165,
+      0.8912392854690552,
+      0.8908174633979797,
+      0.8902743458747864,
+      0.8880895376205444
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-005-HYB-002"
+    ],
+    "r5_top5_scores": [
+      0.9406732320785522,
+      0.8061814308166504,
+      0.7657232880592346,
+      0.5958409905433655,
+      0.4404217004776001
+    ],
+    "dense_top1_score": 0.8977020382881165,
+    "r5_top1_score": 0.9406732320785522
+  },
+  {
+    "query_id": "TEST-DIA-09",
+    "query_text": "বমির সাথে রক্ত আসলে কি দ্রুত হাসপাতালে যাওয়া দরকার?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-008",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-011-HYB-002"
+    ],
+    "dense_top5_scores": [
+      0.8232755064964294,
+      0.819324254989624,
+      0.8114534020423889,
+      0.8097060918807983,
+      0.8088133335113525
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-010-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.2930591404438019,
+      0.014147484675049782,
+      0.00214559817686677,
+      0.0010257922112941742,
+      1.796262586140074e-05
+    ],
+    "dense_top1_score": 0.8232755064964294,
+    "r5_top1_score": 0.2930591404438019
+  },
+  {
+    "query_id": "TEST-DIA-10",
+    "query_text": "bomir shathe rokto ase green bomi emergency hospital jabo?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-008",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-005-HYB-002"
+    ],
+    "dense_top5_scores": [
+      0.8181819915771484,
+      0.8063676953315735,
+      0.803444504737854,
+      0.8019083738327026,
+      0.8018603324890137
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-007-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.0005150673096068203,
+      0.0001138341540354304,
+      9.027100895764306e-05,
+      8.542646537534893e-05,
+      3.2822681532707065e-05
+    ],
+    "dense_top1_score": 0.8181819915771484,
+    "r5_top1_score": 0.0005150673096068203
+  },
+  {
+    "query_id": "TEST-HEA-01",
+    "query_text": "What can you do at home to ease a common headache?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-009",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-009-HYB-000",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-009-HYB-002",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-009-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.875157356262207,
+      0.8446251153945923,
+      0.8425956964492798,
+      0.8403205275535583,
+      0.8363617658615112
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-009-HYB-000",
+      "DOC-NHS-009-HYB-004",
+      "DOC-NHS-009-HYB-002",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-001"
+    ],
+    "r5_top5_scores": [
+      0.8646165132522583,
+      0.04362233728170395,
+      0.014225561171770096,
+      0.00448995316401124,
+      0.0014097904786467552
+    ],
+    "dense_top1_score": 0.875157356262207,
+    "r5_top1_score": 0.8646165132522583
+  },
+  {
+    "query_id": "TEST-HEA-02",
+    "query_text": "সাধারণ মাথা ব্যথায় ঘরে কী ধরনের যত্ন নেওয়া যায়?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-009",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-009-HYB-000",
+      "DOC-NHS-009-HYB-001",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-009-HYB-002",
+      "DOC-NHS-009-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.8130719661712646,
+      0.8056648969650269,
+      0.8013575673103333,
+      0.8006212711334229,
+      0.7954081296920776
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-009-HYB-000",
+      "DOC-NHS-009-HYB-002",
+      "DOC-NHS-009-HYB-001",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-010-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.04378712177276611,
+      0.008873602375388145,
+      0.0017201605951413512,
+      0.0016147992573678493,
+      2.3765313017065637e-05
+    ],
+    "dense_top1_score": 0.8130719661712646,
+    "r5_top1_score": 0.04378712177276611
+  },
+  {
+    "query_id": "TEST-HEA-03",
+    "query_text": "matha betha hole bashay ki korle kombe?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-009",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-011-HYB-001",
+      "DOC-NHS-004-HYB-017"
+    ],
+    "dense_top5_scores": [
+      0.7987490296363831,
+      0.7887471318244934,
+      0.786035418510437,
+      0.7857213020324707,
+      0.7847821116447449
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-011-HYB-001",
+      "DOC-NHS-004-HYB-017"
+    ],
+    "r5_top5_scores": [
+      1.78133777808398e-05,
+      1.646794771659188e-05,
+      1.634922591620125e-05,
+      1.6337395209120587e-05,
+      1.623507523618173e-05
+    ],
+    "dense_top1_score": 0.7987490296363831,
+    "r5_top1_score": 1.78133777808398e-05
+  },
+  {
+    "query_id": "TEST-HEA-04",
+    "query_text": "matha betha paracetamol khabo ar pani khabo kina",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-009",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-002",
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-010-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.8137941956520081,
+      0.8046437501907349,
+      0.8033732771873474,
+      0.8010883331298828,
+      0.7981064319610596
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-002",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-008-HYB-003"
+    ],
+    "r5_top5_scores": [
+      9.104404307436198e-05,
+      8.599516149843112e-05,
+      7.458083564415574e-05,
+      4.939578866469674e-05,
+      3.652762097772211e-05
+    ],
+    "dense_top1_score": 0.8137941956520081,
+    "r5_top1_score": 9.104404307436198e-05
+  },
+  {
+    "query_id": "TEST-HEA-05",
+    "query_text": "When is a sudden severe headache an emergency requiring 999?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-009",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-009-HYB-002",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.882360577583313,
+      0.8514834046363831,
+      0.8454140424728394,
+      0.8426563739776611,
+      0.8414074182510376
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-009-HYB-002",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.828409731388092,
+      0.743333101272583,
+      0.17686891555786133,
+      0.07846714556217194,
+      0.019391890615224838
+    ],
+    "dense_top1_score": 0.882360577583313,
+    "r5_top1_score": 0.828409731388092
+  },
+  {
+    "query_id": "TEST-HEA-06",
+    "query_text": "হঠাৎ তীব্র মাথাব্যথা এবং ঘাড় শক্ত হয়ে গেলে কি ৯৯৯ কল দিতে হবে?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-009",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.8586961627006531,
+      0.848564088344574,
+      0.8484560251235962,
+      0.8445593118667603,
+      0.8437888026237488
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.9539564251899719,
+      0.8185526132583618,
+      0.2063419222831726,
+      0.13978710770606995,
+      0.06726980209350586
+    ],
+    "dense_top1_score": 0.8586961627006531,
+    "r5_top1_score": 0.9539564251899719
+  },
+  {
+    "query_id": "TEST-HEA-07",
+    "query_text": "hotath extreme matha betha ar ghaar shokto 999 call dibo?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-009",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.8207952380180359,
+      0.8167733550071716,
+      0.8148453235626221,
+      0.8130706548690796,
+      0.8116607666015625
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-005-HYB-002"
+    ],
+    "r5_top5_scores": [
+      0.005290460307151079,
+      0.0011035091010853648,
+      0.0010081845102831721,
+      0.0007852078997530043,
+      0.0004281219153199345
+    ],
+    "dense_top1_score": 0.8207952380180359,
+    "r5_top1_score": 0.005290460307151079
+  },
+  {
+    "query_id": "TEST-HEA-08",
+    "query_text": "blurry vision ar mathay prachondo betha emergency A&E jabo",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-009",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-005-HYB-002"
+    ],
+    "dense_top5_scores": [
+      0.8404502272605896,
+      0.8387694358825684,
+      0.8368630409240723,
+      0.8251535892486572,
+      0.8227623701095581
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-005-HYB-002"
+    ],
+    "r5_top5_scores": [
+      0.0034462003968656063,
+      0.000753333093598485,
+      0.0006057603750377893,
+      0.0003539401513990015,
+      0.0002271609555464238
+    ],
+    "dense_top1_score": 0.8404502272605896,
+    "r5_top1_score": 0.0034462003968656063
+  },
+  {
+    "query_id": "TEST-HEA-09",
+    "query_text": "Common causes of headaches such as dehydration and stress",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-009",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-009-HYB-004",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-009-HYB-000",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.9025586247444153,
+      0.8842517137527466,
+      0.8799871206283569,
+      0.8786357641220093,
+      0.8588987588882446
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-009-HYB-004",
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-009-HYB-000",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "r5_top5_scores": [
+      0.8888639211654663,
+      0.273052453994751,
+      0.22328978776931763,
+      0.22005140781402588,
+      0.028966475278139114
+    ],
+    "dense_top1_score": 0.9025586247444153,
+    "r5_top1_score": 0.8888639211654663
+  },
+  {
+    "query_id": "TEST-HEA-10",
+    "query_text": "matha betha keno hoy causes ki ki?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-009",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-008-HYB-006",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.7965348958969116,
+      0.7935540676116943,
+      0.7921100854873657,
+      0.7895073294639587,
+      0.7887847423553467
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-008-HYB-006",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "r5_top5_scores": [
+      0.00019039389735553414,
+      6.672027666354552e-05,
+      3.850913708447479e-05,
+      2.3520118702435866e-05,
+      1.8349192032474093e-05
+    ],
+    "dense_top1_score": 0.7965348958969116,
+    "r5_top1_score": 0.00019039389735553414
+  },
+  {
+    "query_id": "TEST-FEV-01",
+    "query_text": "What temperature counts as a fever in children?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-010",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-000",
+      "DOC-NHS-010-HYB-006",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-001"
+    ],
+    "dense_top5_scores": [
+      0.8926892876625061,
+      0.8687678575515747,
+      0.863079309463501,
+      0.8454880714416504,
+      0.8338194489479065
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-000",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-010-HYB-006",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-001"
+    ],
+    "r5_top5_scores": [
+      0.9627397060394287,
+      0.4300260841846466,
+      0.06443051248788834,
+      0.010324190370738506,
+      0.010134725831449032
+    ],
+    "dense_top1_score": 0.8926892876625061,
+    "r5_top1_score": 0.9627397060394287
+  },
+  {
+    "query_id": "TEST-FEV-02",
+    "query_text": "শিশুদের কত ডিগ্রি তাপমাত্রা হলে জ্বর হিসেবে গণ্য করা হয়?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-010",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-000",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-010-HYB-006",
+      "DOC-NHS-010-HYB-001"
+    ],
+    "dense_top5_scores": [
+      0.8196032047271729,
+      0.7976095676422119,
+      0.7965927720069885,
+      0.7923784255981445,
+      0.7900009155273438
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-000",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-006",
+      "DOC-NHS-010-HYB-001"
+    ],
+    "r5_top5_scores": [
+      0.5181371569633484,
+      0.12718427181243896,
+      0.00881105475127697,
+      0.006204769480973482,
+      0.003124812850728631
+    ],
+    "dense_top1_score": 0.8196032047271729,
+    "r5_top1_score": 0.5181371569633484
+  },
+  {
+    "query_id": "TEST-FEV-03",
+    "query_text": "bachader koto degree temp hole jor dhora hoy?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-010",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-008-HYB-002"
+    ],
+    "dense_top5_scores": [
+      0.7871309518814087,
+      0.7868933081626892,
+      0.784529447555542,
+      0.7818758487701416,
+      0.781819224357605
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-008-HYB-003"
+    ],
+    "r5_top5_scores": [
+      9.555158612783998e-05,
+      1.966983290913049e-05,
+      1.839625292632263e-05,
+      1.6460347978863865e-05,
+      1.637992318137549e-05
+    ],
+    "dense_top1_score": 0.7871309518814087,
+    "r5_top1_score": 9.555158612783998e-05
+  },
+  {
+    "query_id": "TEST-FEV-04",
+    "query_text": "baby r 38C jor thermometer diye maplam ekhon ki korbo",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-010",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-001",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-010-HYB-000",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.8399056792259216,
+      0.8337339162826538,
+      0.8317216634750366,
+      0.8249887228012085,
+      0.8097103834152222
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-000",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-010-HYB-001",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.03184095397591591,
+      0.00987189169973135,
+      0.0039650509133934975,
+      0.001229947549290955,
+      0.00013817119179293513
+    ],
+    "dense_top1_score": 0.8399056792259216,
+    "r5_top1_score": 0.03184095397591591
+  },
+  {
+    "query_id": "TEST-FEV-05",
+    "query_text": "How to help bring down a child's fever safely at home?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-010",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-002",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-007-HYB-007"
+    ],
+    "dense_top5_scores": [
+      0.8813446760177612,
+      0.8780266642570496,
+      0.8757181763648987,
+      0.8719944953918457,
+      0.8651688098907471
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-002",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-007-HYB-007"
+    ],
+    "r5_top5_scores": [
+      0.08898314833641052,
+      0.03369481861591339,
+      0.027000606060028076,
+      0.0211330633610487,
+      0.0023180069401860237
+    ],
+    "dense_top1_score": 0.8813446760177612,
+    "r5_top1_score": 0.08898314833641052
+  },
+  {
+    "query_id": "TEST-FEV-06",
+    "query_text": "বাচ্চার জ্বর কমাতে বাড়িতে প্রচুর তরল ও প্যারাসিটামল কীভাবে দেব?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-010",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-002",
+      "DOC-NHS-010-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.8476563692092896,
+      0.8410347700119019,
+      0.8394901156425476,
+      0.8361368179321289,
+      0.8296308517456055
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-002",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-004"
+    ],
+    "r5_top5_scores": [
+      0.8244865536689758,
+      0.3004782199859619,
+      0.27276962995529175,
+      0.003473093966022134,
+      0.0021988898515701294
+    ],
+    "dense_top1_score": 0.8476563692092896,
+    "r5_top1_score": 0.8244865536689758
+  },
+  {
+    "query_id": "TEST-FEV-07",
+    "query_text": "bachar jor komate fluid ar paracetamol dawa jabe?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-010",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-011-HYB-006"
+    ],
+    "dense_top5_scores": [
+      0.8162224888801575,
+      0.8123820424079895,
+      0.8120104074478149,
+      0.810859203338623,
+      0.8054583668708801
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "r5_top5_scores": [
+      0.00020112264610361308,
+      5.9092064475407824e-05,
+      5.0590751925483346e-05,
+      4.519260619417764e-05,
+      3.583870056900196e-05
+    ],
+    "dense_top1_score": 0.8162224888801575,
+    "r5_top1_score": 0.00020112264610361308
+  },
+  {
+    "query_id": "TEST-FEV-08",
+    "query_text": "When to call 999 for a child with high fever and rash or breathing trouble?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-010",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.8935214877128601,
+      0.8797897100448608,
+      0.8795770406723022,
+      0.8720798492431641,
+      0.8631113767623901
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "r5_top5_scores": [
+      0.9852482080459595,
+      0.7234432101249695,
+      0.6691064834594727,
+      0.3919304311275482,
+      0.12748251855373383
+    ],
+    "dense_top1_score": 0.8935214877128601,
+    "r5_top1_score": 0.9852482080459595
+  },
+  {
+    "query_id": "TEST-FEV-09",
+    "query_text": "বাচ্চার তীব্র জ্বর ও নীলচে ঠোঁট হলে অবিলম্বে কি ৯৯৯ কল করতে হবে?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-010",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-011-HYB-002"
+    ],
+    "dense_top5_scores": [
+      0.8599540591239929,
+      0.8595556020736694,
+      0.8543155789375305,
+      0.8479673266410828,
+      0.841469407081604
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-009-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.960217297077179,
+      0.8553798794746399,
+      0.34149667620658875,
+      0.3053189516067505,
+      0.2695472240447998
+    ],
+    "dense_top1_score": 0.8599540591239929,
+    "r5_top1_score": 0.960217297077179
+  },
+  {
+    "query_id": "TEST-FEV-10",
+    "query_text": "bacha ghum theke jagena ar thot neel 999 call korbo?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-010",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-010-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.8047382235527039,
+      0.7941537499427795,
+      0.7931942939758301,
+      0.7923431396484375,
+      0.7873497009277344
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-005-HYB-002"
+    ],
+    "r5_top5_scores": [
+      0.00915775541216135,
+      0.0028700761031359434,
+      0.0005081158597022295,
+      0.0003896581183653325,
+      0.0002817166969180107
+    ],
+    "dense_top1_score": 0.8047382235527039,
+    "r5_top1_score": 0.00915775541216135
+  },
+  {
+    "query_id": "TEST-ANA-01",
+    "query_text": "What are the main symptoms of a severe anaphylaxis allergic reaction?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-011",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-009",
+      "DOC-NHS-011-HYB-008",
+      "DOC-NHS-011-HYB-006"
+    ],
+    "dense_top5_scores": [
+      0.8971850275993347,
+      0.8928408622741699,
+      0.8856549263000488,
+      0.8651200532913208,
+      0.8566482067108154
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-009",
+      "DOC-NHS-011-HYB-008",
+      "DOC-NHS-011-HYB-006"
+    ],
+    "r5_top5_scores": [
+      0.9779755473136902,
+      0.7907724380493164,
+      0.06564114987850189,
+      0.02360837161540985,
+      0.01346465852111578
+    ],
+    "dense_top1_score": 0.8971850275993347,
+    "r5_top1_score": 0.9779755473136902
+  },
+  {
+    "query_id": "TEST-ANA-02",
+    "query_text": "অ্যানাফাইলাক্সিস বা তীব্র অ্যালার্জিক রিঅ্যাকশনের লক্ষণগুলো কী?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-011",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-011-HYB-009",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-008",
+      "DOC-NHS-010-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.8434279561042786,
+      0.8321725130081177,
+      0.8304474353790283,
+      0.8146573305130005,
+      0.8129329085350037
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-009",
+      "DOC-NHS-011-HYB-008",
+      "DOC-NHS-010-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.9945588707923889,
+      0.9299243092536926,
+      0.22610671818256378,
+      0.08494814485311508,
+      0.020060358569025993
+    ],
+    "dense_top1_score": 0.8434279561042786,
+    "r5_top1_score": 0.9945588707923889
+  },
+  {
+    "query_id": "TEST-ANA-03",
+    "query_text": "anaphylaxis allergic reaction hole ki ki lokkhon dekha jay?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-011",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-011-HYB-009",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-008",
+      "DOC-NHS-011-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.880458652973175,
+      0.8802079558372498,
+      0.8721867203712463,
+      0.8681011199951172,
+      0.8623682260513306
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-011-HYB-009",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-008",
+      "DOC-NHS-011-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.024457475170493126,
+      0.004692743066698313,
+      0.002780772978439927,
+      0.0006186641403473914,
+      0.0004689246416091919
+    ],
+    "dense_top1_score": 0.880458652973175,
+    "r5_top1_score": 0.024457475170493126
+  },
+  {
+    "query_id": "TEST-ANA-04",
+    "query_text": "muk fule geche shash nite parsenana allergy r jonno anaphylaxis naki",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-011",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-009",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-004-HYB-017",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-011-HYB-006"
+    ],
+    "dense_top5_scores": [
+      0.8415253162384033,
+      0.8368610739707947,
+      0.8279484510421753,
+      0.8252776265144348,
+      0.8248518109321594
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-009",
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-004-HYB-017"
+    ],
+    "r5_top5_scores": [
+      0.0069097974337637424,
+      0.0011327005922794342,
+      0.0011168810306116939,
+      0.0009321833495050669,
+      0.00029256255947984755
+    ],
+    "dense_top1_score": 0.8415253162384033,
+    "r5_top1_score": 0.0069097974337637424
+  },
+  {
+    "query_id": "TEST-ANA-05",
+    "query_text": "How to use an adrenaline auto-injector (EpiPen) in an emergency?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-011",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-007",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-011-HYB-005",
+      "DOC-NHS-011-HYB-006"
+    ],
+    "dense_top5_scores": [
+      0.8870471715927124,
+      0.8865197896957397,
+      0.8833262920379639,
+      0.8798307180404663,
+      0.8768806457519531
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-011-HYB-007",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-011-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.7164366245269775,
+      0.3289394676685333,
+      0.3157429099082947,
+      0.16393907368183136,
+      0.07818255573511124
+    ],
+    "dense_top1_score": 0.8870471715927124,
+    "r5_top1_score": 0.7164366245269775
+  },
+  {
+    "query_id": "TEST-ANA-06",
+    "query_text": "অ্যানাফাইলাক্সিস হলে অ্যাড্রেনালিন অটো-ইনজেক্টর কীভাবে ব্যবহার করতে হয়?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-011",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-011-HYB-007",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-011-HYB-005",
+      "DOC-NHS-011-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.8422093987464905,
+      0.834405779838562,
+      0.8328291773796082,
+      0.8303740620613098,
+      0.8237503170967102
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-011-HYB-007",
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.9800173044204712,
+      0.9447646737098694,
+      0.9209332466125488,
+      0.879002034664154,
+      0.1769152283668518
+    ],
+    "dense_top1_score": 0.8422093987464905,
+    "r5_top1_score": 0.9800173044204712
+  },
+  {
+    "query_id": "TEST-ANA-07",
+    "query_text": "adrenaline auto-injector kivabe use korbo emergency te?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "DOC-NHS-011",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-007",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-008"
+    ],
+    "dense_top5_scores": [
+      0.8412736654281616,
+      0.8328685164451599,
+      0.8224998116493225,
+      0.8141751289367676,
+      0.8130695223808289
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-011-HYB-008",
+      "DOC-NHS-011-HYB-007"
+    ],
+    "r5_top5_scores": [
+      0.015405329875648022,
+      0.0066400435753166676,
+      0.005185977555811405,
+      0.004584105685353279,
+      0.004427055828273296
+    ],
+    "dense_top1_score": 0.8412736654281616,
+    "r5_top1_score": 0.015405329875648022
+  },
+  {
+    "query_id": "TEST-ANA-08",
+    "query_text": "Should you call 999 immediately if someone has an anaphylactic shock?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "English",
+    "expected_source_id": "DOC-NHS-011",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-011-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.8874343633651733,
+      0.8859193325042725,
+      0.8835957646369934,
+      0.8817115426063538,
+      0.8807733058929443
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-011-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.9661017060279846,
+      0.8728489279747009,
+      0.867512047290802,
+      0.6497192978858948,
+      0.14179860055446625
+    ],
+    "dense_top1_score": 0.8874343633651733,
+    "r5_top1_score": 0.9661017060279846
+  },
+  {
+    "query_id": "TEST-ANA-09",
+    "query_text": "অ্যালার্জির কারণে গলা ফুলে শ্বাস বন্ধ হলে তাৎক্ষণিক ৯৯৯ ডাকব?",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "DOC-NHS-011",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-011-HYB-000"
+    ],
+    "dense_top5_scores": [
+      0.8456893563270569,
+      0.8409034609794617,
+      0.8396515846252441,
+      0.8363957405090332,
+      0.8327691555023193
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-005-HYB-002"
+    ],
+    "r5_top5_scores": [
+      0.6350332498550415,
+      0.5991936326026917,
+      0.5938532948493958,
+      0.06364982575178146,
+      0.024791955947875977
+    ],
+    "dense_top1_score": 0.8456893563270569,
+    "r5_top1_score": 0.6350332498550415
+  },
+  {
+    "query_id": "TEST-ANA-10",
+    "query_text": "severe allergic reaction gola fule gese 999 daki",
+    "benchmark_split": "TEST_HOLDOUT",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "DOC-NHS-011",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-011-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.8641611337661743,
+      0.860741138458252,
+      0.8554185032844543,
+      0.8538767099380493,
+      0.851649284362793
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-009-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.052185505628585815,
+      0.006037252489477396,
+      0.0038282896857708693,
+      0.0012091887183487415,
+      0.0003512752882670611
+    ],
+    "dense_top1_score": 0.8641611337661743,
+    "r5_top1_score": 0.052185505628585815
+  },
+  {
+    "query_id": "HN-01",
+    "query_text": "How to apply a tactical tourniquet to stop arterial bleeding on thigh?",
+    "benchmark_split": "HARD_NEGATIVE",
+    "language_category": "English",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-006-HYB-001"
+    ],
+    "dense_top5_scores": [
+      0.848045825958252,
+      0.8475149869918823,
+      0.8461135625839233,
+      0.8457200527191162,
+      0.8402242660522461
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-006-HYB-001",
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-011-HYB-004"
+    ],
+    "r5_top5_scores": [
+      0.02278454788029194,
+      0.006446868181228638,
+      0.001086025615222752,
+      0.0006668224232271314,
+      0.00015684770187363029
+    ],
+    "dense_top1_score": 0.848045825958252,
+    "r5_top1_score": 0.02278454788029194
+  },
+  {
+    "query_id": "HN-02",
+    "query_text": "হাঁপানির টান কমাতে সালবুটামল নেবুলাইজারের ডোজ কত মিলিগ্রাম দেব?",
+    "benchmark_split": "HARD_NEGATIVE",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-005-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.7866214513778687,
+      0.7818928956985474,
+      0.7764977216720581,
+      0.7751281261444092,
+      0.7726061344146729
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-008-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.0020826030522584915,
+      0.0004487656115088612,
+      6.76599593134597e-05,
+      5.436298670247197e-05,
+      2.6124685973627493e-05
+    ],
+    "dense_top1_score": 0.7866214513778687,
+    "r5_top1_score": 0.0020826030522584915
+  },
+  {
+    "query_id": "HN-03",
+    "query_text": "severe dehydration e saline IV injection kon vein e dibo?",
+    "benchmark_split": "HARD_NEGATIVE",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-007-HYB-002"
+    ],
+    "dense_top5_scores": [
+      0.8530829548835754,
+      0.8411571383476257,
+      0.8406438827514648,
+      0.8397853374481201,
+      0.8360505700111389
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-007-HYB-002"
+    ],
+    "r5_top5_scores": [
+      0.013551780954003334,
+      0.011472268030047417,
+      0.0064920238219201565,
+      0.003432262921705842,
+      0.0005288568208925426
+    ],
+    "dense_top1_score": 0.8530829548835754,
+    "r5_top1_score": 0.013551780954003334
+  },
+  {
+    "query_id": "HN-04",
+    "query_text": "chokhe chemical acid porle kon drop dibo",
+    "benchmark_split": "HARD_NEGATIVE",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-008-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.7932549715042114,
+      0.7921205163002014,
+      0.7871013283729553,
+      0.7846927642822266,
+      0.7840663194656372
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-010-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.0001929918653331697,
+      8.665097993798554e-05,
+      2.3089723981684074e-05,
+      2.2188001821632497e-05,
+      2.1136514988029376e-05
+    ],
+    "dense_top1_score": 0.7932549715042114,
+    "r5_top1_score": 0.0001929918653331697
+  },
+  {
+    "query_id": "HN-05",
+    "query_text": "Antibiotics dosage for severe infectious bacterial diarrhoea in adults",
+    "benchmark_split": "HARD_NEGATIVE",
+    "language_category": "English",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-008-HYB-000",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-007",
+      "DOC-NHS-008-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.867619514465332,
+      0.8606553673744202,
+      0.8598010540008545,
+      0.8514572978019714,
+      0.8372116684913635
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-002",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-007",
+      "DOC-NHS-008-HYB-000",
+      "DOC-NHS-008-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.011336787603795528,
+      0.0070320069789886475,
+      0.004303202498704195,
+      0.0040886290371418,
+      0.001020708936266601
+    ],
+    "dense_top1_score": 0.867619514465332,
+    "r5_top1_score": 0.011336787603795528
+  },
+  {
+    "query_id": "HN-06",
+    "query_text": "বাচ্চার ডেঙ্গু জ্বরে প্লেটলেট কমে গেলে কী ওষুধ দিতে হয়?",
+    "benchmark_split": "HARD_NEGATIVE",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-002",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-010-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.8421081304550171,
+      0.8409268260002136,
+      0.8406975269317627,
+      0.8306134939193726,
+      0.8290796875953674
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-002",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-008-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.18402493000030518,
+      0.08954642713069916,
+      0.0009411563514731824,
+      0.00041447332478128374,
+      0.0003330662730149925
+    ],
+    "dense_top1_score": 0.8421081304550171,
+    "r5_top1_score": 0.18402493000030518
+  },
+  {
+    "query_id": "HN-07",
+    "query_text": "migraine er specific triptan medicine dosage koto?",
+    "benchmark_split": "HARD_NEGATIVE",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-004-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.837590217590332,
+      0.8313552141189575,
+      0.8271366357803345,
+      0.8191020488739014,
+      0.8181753158569336
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.000305165012832731,
+      0.00022244667343329638,
+      0.00010289144847774878,
+      9.994480933528394e-05,
+      1.934572537720669e-05
+    ],
+    "dense_top1_score": 0.837590217590332,
+    "r5_top1_score": 0.000305165012832731
+  },
+  {
+    "query_id": "HN-08",
+    "query_text": "severe anaphylaxis e steroid injection hydrocortisone koto mg",
+    "benchmark_split": "HARD_NEGATIVE",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-011-HYB-005",
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-011-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.8542201519012451,
+      0.8482595086097717,
+      0.8465968370437622,
+      0.8455063104629517,
+      0.8436827659606934
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-005",
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-011-HYB-004",
+      "DOC-NHS-011-HYB-006"
+    ],
+    "r5_top5_scores": [
+      0.014516794122755527,
+      0.009041915647685528,
+      0.006132811773568392,
+      0.0038499103393405676,
+      0.0028509993571788073
+    ],
+    "dense_top1_score": 0.8542201519012451,
+    "r5_top1_score": 0.014516794122755527
+  },
+  {
+    "query_id": "HN-09",
+    "query_text": "How to perform surgical stitches on a deep laceration cut?",
+    "benchmark_split": "HARD_NEGATIVE",
+    "language_category": "English",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-006",
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-000"
+    ],
+    "dense_top5_scores": [
+      0.8403766751289368,
+      0.8302643299102783,
+      0.8272560238838196,
+      0.8238525986671448,
+      0.8228361010551453
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-006",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-000"
+    ],
+    "r5_top5_scores": [
+      0.009201228618621826,
+      0.003056408604606986,
+      0.0019229925237596035,
+      0.001745364861562848,
+      0.0014353017322719097
+    ],
+    "dense_top1_score": 0.8403766751289368,
+    "r5_top1_score": 0.009201228618621826
+  },
+  {
+    "query_id": "HN-10",
+    "query_text": "বাচ্চাদের খিঁচুনি বা ফেব্রাইল কনভালশন হলে কী অ্যান্টি-কনভালস্যান্ট দেব?",
+    "benchmark_split": "HARD_NEGATIVE",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-002",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-010-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.8526152968406677,
+      0.8491373062133789,
+      0.8464969396591187,
+      0.8455204367637634,
+      0.8433888554573059
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-002",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-011-HYB-003",
+      "DOC-NHS-010-HYB-004"
+    ],
+    "r5_top5_scores": [
+      0.09214843809604645,
+      0.06696276366710663,
+      0.0017681657336652279,
+      0.0017049862071871758,
+      0.0013908174587413669
+    ],
+    "dense_top1_score": 0.8526152968406677,
+    "r5_top1_score": 0.09214843809604645
+  },
+  {
+    "query_id": "HN-11",
+    "query_text": "third degree electrical burn e dead skin debridement kivabe kore?",
+    "benchmark_split": "HARD_NEGATIVE",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-005-HYB-000"
+    ],
+    "dense_top5_scores": [
+      0.8523606061935425,
+      0.8356603980064392,
+      0.8346399664878845,
+      0.8340578079223633,
+      0.8325088620185852
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-000",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-010-HYB-004"
+    ],
+    "r5_top5_scores": [
+      0.0007857531309127808,
+      0.00013325967302080244,
+      8.943040302256122e-05,
+      5.0278129492653534e-05,
+      1.7187408957397565e-05
+    ],
+    "dense_top1_score": 0.8523606061935425,
+    "r5_top1_score": 0.0007857531309127808
+  },
+  {
+    "query_id": "HN-12",
+    "query_text": "chronic asthma r steroid biological injection injection kivabe dey",
+    "benchmark_split": "HARD_NEGATIVE",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-011",
+      "DOC-NHS-004-HYB-017",
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-010-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.8553324937820435,
+      0.8463539481163025,
+      0.8371680974960327,
+      0.8366687297821045,
+      0.8363842964172363
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-010",
+      "DOC-NHS-004-HYB-011",
+      "DOC-NHS-004-HYB-004",
+      "DOC-NHS-004-HYB-017",
+      "DOC-NHS-010-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.01399947889149189,
+      0.010237744078040123,
+      0.002424577483907342,
+      0.001181690488010645,
+      0.0004789129307027906
+    ],
+    "dense_top1_score": 0.8553324937820435,
+    "r5_top1_score": 0.01399947889149189
+  },
+  {
+    "query_id": "OOC-01",
+    "query_text": "What is the recommended prophylaxis medication for malaria traveling to Africa?",
+    "benchmark_split": "OUT_OF_CORPUS",
+    "language_category": "English",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-002",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-011-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.815118670463562,
+      0.814016580581665,
+      0.8130325078964233,
+      0.810112714767456,
+      0.8080015182495117
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-011-HYB-005",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-001",
+      "DOC-NHS-010-HYB-002"
+    ],
+    "r5_top5_scores": [
+      0.003066631266847253,
+      0.0026195466052740812,
+      0.0010742192389443517,
+      0.00020063806732650846,
+      0.0001651770726311952
+    ],
+    "dense_top1_score": 0.815118670463562,
+    "r5_top1_score": 0.003066631266847253
+  },
+  {
+    "query_id": "OOC-02",
+    "query_text": "কুকুর কামড়ালে জলাতঙ্ক বা রেবিস ভ্যাকসিন কত দিনের মধ্যে নিতে হয়?",
+    "benchmark_split": "OUT_OF_CORPUS",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-010-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.8028368353843689,
+      0.8015729188919067,
+      0.8003564476966858,
+      0.7994051575660706,
+      0.79820716381073
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-008-HYB-004",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.00010006362572312355,
+      8.876726496964693e-05,
+      8.18188491393812e-05,
+      4.450981577974744e-05,
+      2.2979318600846455e-05
+    ],
+    "dense_top1_score": 0.8028368353843689,
+    "r5_top1_score": 0.00010006362572312355
+  },
+  {
+    "query_id": "OOC-03",
+    "query_text": "dante puz hole root canal treatment keno dorkar?",
+    "benchmark_split": "OUT_OF_CORPUS",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-006-HYB-000"
+    ],
+    "dense_top5_scores": [
+      0.8091880083084106,
+      0.8038836717605591,
+      0.794365406036377,
+      0.7870497703552246,
+      0.7851864695549011
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-005-HYB-004",
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-005-HYB-002"
+    ],
+    "r5_top5_scores": [
+      5.147381671122275e-05,
+      2.8134572858107276e-05,
+      2.2197229554876685e-05,
+      1.949072247953154e-05,
+      1.849476211646106e-05
+    ],
+    "dense_top1_score": 0.8091880083084106,
+    "r5_top1_score": 5.147381671122275e-05
+  },
+  {
+    "query_id": "OOC-04",
+    "query_text": "kidney te pathor hole lithotripsy laser operation kivabe kore",
+    "benchmark_split": "OUT_OF_CORPUS",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-008-HYB-003",
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.8127807974815369,
+      0.8097168207168579,
+      0.8064600825309753,
+      0.8055812120437622,
+      0.8014435172080994
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-008-HYB-003"
+    ],
+    "r5_top5_scores": [
+      4.546285708784126e-05,
+      2.1663159714080393e-05,
+      1.9987564883194864e-05,
+      1.6577079804847017e-05,
+      1.6118354324134998e-05
+    ],
+    "dense_top1_score": 0.8127807974815369,
+    "r5_top1_score": 4.546285708784126e-05
+  },
+  {
+    "query_id": "OOC-05",
+    "query_text": "How is type 1 diabetes insulin pump therapy adjusted for exercise?",
+    "benchmark_split": "OUT_OF_CORPUS",
+    "language_category": "English",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-011",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-004-HYB-003",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "dense_top5_scores": [
+      0.8176007270812988,
+      0.8127532005310059,
+      0.8112537860870361,
+      0.8099236488342285,
+      0.8092900514602661
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-004-HYB-011",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-004-HYB-003"
+    ],
+    "r5_top5_scores": [
+      0.0001556504430482164,
+      4.186220758128911e-05,
+      1.9374860130483285e-05,
+      1.8048394849756733e-05,
+      1.7176364053739235e-05
+    ],
+    "dense_top1_score": 0.8176007270812988,
+    "r5_top1_score": 0.0001556504430482164
+  },
+  {
+    "query_id": "OOC-06",
+    "query_text": "উচ্চ রক্তচাপ বা হাইপারটেনশনে অ্যামলোডিপিন ওষুধের পার্শ্বপ্রতিক্রিয়া কী?",
+    "benchmark_split": "OUT_OF_CORPUS",
+    "language_category": "Native_Bangla",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-008-HYB-006",
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-011-HYB-005"
+    ],
+    "dense_top5_scores": [
+      0.7960605025291443,
+      0.7893868684768677,
+      0.7879173159599304,
+      0.787905752658844,
+      0.7849552631378174
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-011-HYB-005",
+      "DOC-NHS-008-HYB-006",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-011-HYB-006",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "r5_top5_scores": [
+      0.0009442433947697282,
+      0.0006899510626681149,
+      0.00045320342178456485,
+      0.00028407477657310665,
+      0.00022699576220475137
+    ],
+    "dense_top1_score": 0.7960605025291443,
+    "r5_top1_score": 0.0009442433947697282
+  },
+  {
+    "query_id": "OOC-07",
+    "query_text": "broken bone fracture hole plaster koto din rakhte hoy?",
+    "benchmark_split": "OUT_OF_CORPUS",
+    "language_category": "Standard_Banglish",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-011-HYB-002"
+    ],
+    "dense_top5_scores": [
+      0.8054175972938538,
+      0.8011686205863953,
+      0.7982027530670166,
+      0.7958182096481323,
+      0.794800877571106
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-011-HYB-002",
+      "DOC-NHS-007-HYB-004"
+    ],
+    "r5_top5_scores": [
+      3.602826836868189e-05,
+      3.183711305609904e-05,
+      1.639336369407829e-05,
+      1.639114270801656e-05,
+      1.6301772120641544e-05
+    ],
+    "dense_top1_score": 0.8054175972938538,
+    "r5_top1_score": 3.602826836868189e-05
+  },
+  {
+    "query_id": "OOC-08",
+    "query_text": "glaucoma eye drop pressure komano kivabe kaj kore",
+    "benchmark_split": "OUT_OF_CORPUS",
+    "language_category": "Abbreviated_Banglish",
+    "expected_source_id": "NONE",
+    "dense_top5_chunk_ids": [
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-009-HYB-002",
+      "DOC-NHS-007-HYB-003"
+    ],
+    "dense_top5_scores": [
+      0.8276325464248657,
+      0.8264986872673035,
+      0.8235272765159607,
+      0.8225970268249512,
+      0.8210145235061646
+    ],
+    "r5_top5_chunk_ids": [
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-009-HYB-002",
+      "DOC-NHS-008-HYB-005",
+      "DOC-NHS-007-HYB-004",
+      "DOC-NHS-007-HYB-003"
+    ],
+    "r5_top5_scores": [
+      7.502888183807954e-05,
+      4.168716259300709e-05,
+      2.103623228322249e-05,
+      1.8400693079456687e-05,
+      1.6341322407242842e-05
+    ],
+    "dense_top1_score": 0.8276325464248657,
+    "r5_top1_score": 7.502888183807954e-05
+  }
+]

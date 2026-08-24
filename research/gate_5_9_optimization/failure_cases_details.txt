@@ -1,0 +1,118 @@
+=== CRITICAL FAILURE BREAKDOWN (N=36) ===
+1. GOLD_IN_TOP5 (Reranker chose wrong chunk from Top-5 pool): 11 (30.56%)
+2. GOLD_OUTSIDE_TOP5 (Dense pool missed gold chunk entirely): 25 (69.44%)
+
+--- REPRESENTATIVE CASES: GOLD_IN_TOP5 ---
+[DEV-AST-04] (DEV/Abbreviated_Banglish): 'buk chap lage ar shash nite koshto asthma naki'
+  Topic: Asthma symptoms
+  Gold Chunks: ['DOC-NHS-004-HYB-001']
+  Top-1 Chunk:  DOC-NHS-004-HYB-000
+  Dense Top-5:  ['DOC-NHS-004-HYB-015', 'DOC-NHS-004-HYB-000', 'DOC-NHS-004-HYB-017', 'DOC-NHS-004-HYB-001', 'DOC-NHS-004-HYB-003']
+  Rerank Top-5: ['DOC-NHS-004-HYB-000', 'DOC-NHS-004-HYB-015', 'DOC-NHS-004-HYB-001', 'DOC-NHS-004-HYB-003', 'DOC-NHS-004-HYB-017']
+
+[DEV-AST-10] (DEV/Standard_Banglish): 'kon kon karone asthma bere jete pare?'
+  Topic: Asthma triggers
+  Gold Chunks: ['DOC-NHS-004-HYB-001', 'DOC-NHS-004-HYB-011']
+  Top-1 Chunk:  DOC-NHS-004-HYB-000
+  Dense Top-5:  ['DOC-NHS-004-HYB-000', 'DOC-NHS-004-HYB-004', 'DOC-NHS-004-HYB-007', 'DOC-NHS-004-HYB-011', 'DOC-NHS-004-HYB-010']
+  Rerank Top-5: ['DOC-NHS-004-HYB-000', 'DOC-NHS-004-HYB-010', 'DOC-NHS-004-HYB-011', 'DOC-NHS-004-HYB-004', 'DOC-NHS-004-HYB-007']
+
+[DEV-BUR-01] (DEV/English): 'How should you treat a burn immediately with water?'
+  Topic: Cool water for burns
+  Gold Chunks: ['DOC-NHS-005-HYB-000']
+  Top-1 Chunk:  DOC-NHS-005-HYB-001
+  Dense Top-5:  ['DOC-NHS-005-HYB-001', 'DOC-NHS-005-HYB-002', 'DOC-NHS-005-HYB-004', 'DOC-NHS-005-HYB-003', 'DOC-NHS-005-HYB-000']
+  Rerank Top-5: ['DOC-NHS-005-HYB-001', 'DOC-NHS-005-HYB-002', 'DOC-NHS-005-HYB-003', 'DOC-NHS-005-HYB-004', 'DOC-NHS-005-HYB-000']
+
+[DEV-BUR-05] (DEV/English): 'Should you put butter or oil on a burn?'
+  Topic: Do not put butter/oil on burn
+  Gold Chunks: ['DOC-NHS-005-HYB-001']
+  Top-1 Chunk:  DOC-NHS-005-HYB-004
+  Dense Top-5:  ['DOC-NHS-005-HYB-004', 'DOC-NHS-005-HYB-002', 'DOC-NHS-005-HYB-001', 'DOC-NHS-005-HYB-000', 'DOC-NHS-005-HYB-003']
+  Rerank Top-5: ['DOC-NHS-005-HYB-004', 'DOC-NHS-005-HYB-001', 'DOC-NHS-005-HYB-003', 'DOC-NHS-005-HYB-002', 'DOC-NHS-005-HYB-000']
+
+[DEV-BUR-06] (DEV/Native_Bangla): 'পোড়া জায়গায় কি মাখন বা তেল লাগানো যাবে?'
+  Topic: Do not put butter/oil on burn
+  Gold Chunks: ['DOC-NHS-005-HYB-001']
+  Top-1 Chunk:  DOC-NHS-005-HYB-004
+  Dense Top-5:  ['DOC-NHS-005-HYB-002', 'DOC-NHS-005-HYB-001', 'DOC-NHS-005-HYB-004', 'DOC-NHS-008-HYB-005', 'DOC-NHS-005-HYB-000']
+  Rerank Top-5: ['DOC-NHS-005-HYB-004', 'DOC-NHS-005-HYB-001', 'DOC-NHS-005-HYB-000', 'DOC-NHS-005-HYB-002', 'DOC-NHS-008-HYB-005']
+
+[DEV-CUT-05] (DEV/English): 'Signs that a cut or wound is infected'
+  Topic: Infected cut signs
+  Gold Chunks: ['DOC-NHS-006-HYB-004', 'DOC-NHS-006-HYB-005']
+  Top-1 Chunk:  DOC-NHS-006-HYB-006
+  Dense Top-5:  ['DOC-NHS-006-HYB-006', 'DOC-NHS-006-HYB-005', 'DOC-NHS-006-HYB-003', 'DOC-NHS-006-HYB-000', 'DOC-NHS-006-HYB-004']
+  Rerank Top-5: ['DOC-NHS-006-HYB-006', 'DOC-NHS-006-HYB-000', 'DOC-NHS-006-HYB-005', 'DOC-NHS-006-HYB-004', 'DOC-NHS-006-HYB-003']
+
+[TEST-DIA-05] (TEST_HOLDOUT/English): 'How long should you stay off work or school after diarrhoea stops?'
+  Topic: Stay home 48 hours
+  Gold Chunks: ['DOC-NHS-008-HYB-001']
+  Top-1 Chunk:  DOC-NHS-008-HYB-002
+  Dense Top-5:  ['DOC-NHS-008-HYB-002', 'DOC-NHS-008-HYB-003', 'DOC-NHS-008-HYB-004', 'DOC-NHS-008-HYB-001', 'DOC-NHS-008-HYB-000']
+  Rerank Top-5: ['DOC-NHS-008-HYB-002', 'DOC-NHS-008-HYB-003', 'DOC-NHS-008-HYB-001', 'DOC-NHS-008-HYB-004', 'DOC-NHS-008-HYB-000']
+
+[TEST-HEA-05] (TEST_HOLDOUT/English): 'When is a sudden severe headache an emergency requiring 999?'
+  Topic: Severe sudden headache 999
+  Gold Chunks: ['DOC-NHS-009-HYB-002']
+  Top-1 Chunk:  DOC-NHS-009-HYB-003
+  Dense Top-5:  ['DOC-NHS-009-HYB-003', 'DOC-NHS-008-HYB-005', 'DOC-NHS-004-HYB-004', 'DOC-NHS-009-HYB-002', 'DOC-NHS-006-HYB-005']
+  Rerank Top-5: ['DOC-NHS-009-HYB-003', 'DOC-NHS-008-HYB-005', 'DOC-NHS-004-HYB-004', 'DOC-NHS-009-HYB-002', 'DOC-NHS-006-HYB-005']
+
+
+--- REPRESENTATIVE CASES: GOLD_OUTSIDE_TOP5 ---
+[DEV-AST-03] (DEV/Standard_Banglish): 'asthma hole ki ki shomossha hoy bujhte parbo kivabe?'
+  Topic: Asthma symptoms
+  Gold Chunks: ['DOC-NHS-004-HYB-001']
+  Top-1 Chunk:  DOC-NHS-004-HYB-000
+  Dense Top-5:  ['DOC-NHS-004-HYB-000', 'DOC-NHS-004-HYB-015', 'DOC-NHS-004-HYB-012', 'DOC-NHS-004-HYB-017', 'DOC-NHS-004-HYB-013']
+  Rerank Top-5: ['DOC-NHS-004-HYB-000', 'DOC-NHS-004-HYB-015', 'DOC-NHS-004-HYB-013', 'DOC-NHS-004-HYB-012', 'DOC-NHS-004-HYB-017']
+
+[DEV-BUR-02] (DEV/Native_Bangla): 'হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানির নিচে রাখতে হবে?'
+  Topic: Cool water for burns
+  Gold Chunks: ['DOC-NHS-005-HYB-000']
+  Top-1 Chunk:  DOC-NHS-005-HYB-001
+  Dense Top-5:  ['DOC-NHS-005-HYB-001', 'DOC-NHS-010-HYB-004', 'DOC-NHS-008-HYB-003', 'DOC-NHS-010-HYB-001', 'DOC-NHS-010-HYB-003']
+  Rerank Top-5: ['DOC-NHS-005-HYB-001', 'DOC-NHS-008-HYB-003', 'DOC-NHS-010-HYB-001', 'DOC-NHS-010-HYB-004', 'DOC-NHS-010-HYB-003']
+
+[DEV-CUT-02] (DEV/Native_Bangla): 'কেটে গেলে রক্ত বন্ধ করার সঠিক নিয়ম কী?'
+  Topic: Clean cut and stop bleeding
+  Gold Chunks: ['DOC-NHS-006-HYB-000', 'DOC-NHS-006-HYB-001']
+  Top-1 Chunk:  DOC-NHS-006-HYB-003
+  Dense Top-5:  ['DOC-NHS-006-HYB-002', 'DOC-NHS-006-HYB-005', 'DOC-NHS-008-HYB-003', 'DOC-NHS-006-HYB-003', 'DOC-NHS-011-HYB-006']
+  Rerank Top-5: ['DOC-NHS-006-HYB-003', 'DOC-NHS-006-HYB-005', 'DOC-NHS-006-HYB-002', 'DOC-NHS-008-HYB-003', 'DOC-NHS-011-HYB-006']
+
+[DEV-CUT-08] (DEV/English): 'When to go to A&E for a cut with non-stop bleeding?'
+  Topic: Cut emergency A&E
+  Gold Chunks: ['DOC-NHS-006-HYB-002']
+  Top-1 Chunk:  DOC-NHS-006-HYB-005
+  Dense Top-5:  ['DOC-NHS-006-HYB-005', 'DOC-NHS-009-HYB-003', 'DOC-NHS-005-HYB-002', 'DOC-NHS-006-HYB-000', 'DOC-NHS-008-HYB-005']
+  Rerank Top-5: ['DOC-NHS-006-HYB-005', 'DOC-NHS-005-HYB-002', 'DOC-NHS-008-HYB-005', 'DOC-NHS-009-HYB-003', 'DOC-NHS-006-HYB-000']
+
+[DEV-DEH-06] (DEV/Native_Bangla): 'বমি ভাব হলে পানিশূন্যতা দূর করতে কীভাবে পানি খাব?'
+  Topic: Treat dehydration small sips
+  Gold Chunks: ['DOC-NHS-007-HYB-001', 'DOC-NHS-007-HYB-002']
+  Top-1 Chunk:  DOC-NHS-007-HYB-006
+  Dense Top-5:  ['DOC-NHS-008-HYB-003', 'DOC-NHS-007-HYB-007', 'DOC-NHS-007-HYB-006', 'DOC-NHS-008-HYB-001', 'DOC-NHS-007-HYB-005']
+  Rerank Top-5: ['DOC-NHS-007-HYB-006', 'DOC-NHS-007-HYB-007', 'DOC-NHS-007-HYB-005', 'DOC-NHS-008-HYB-003', 'DOC-NHS-008-HYB-001']
+
+[TEST-DIA-03] (TEST_HOLDOUT/Standard_Banglish): 'diarrhoea ar bomi hole bashay ki korbo?'
+  Topic: Diarrhoea home care fluids
+  Gold Chunks: ['DOC-NHS-008-HYB-000']
+  Top-1 Chunk:  DOC-NHS-008-HYB-003
+  Dense Top-5:  ['DOC-NHS-010-HYB-005', 'DOC-NHS-008-HYB-003', 'DOC-NHS-004-HYB-015', 'DOC-NHS-008-HYB-004', 'DOC-NHS-007-HYB-003']
+  Rerank Top-5: ['DOC-NHS-008-HYB-003', 'DOC-NHS-008-HYB-004', 'DOC-NHS-010-HYB-005', 'DOC-NHS-007-HYB-003', 'DOC-NHS-004-HYB-015']
+
+[TEST-DIA-04] (TEST_HOLDOUT/Abbreviated_Banglish): 'patla paykhana ar bomi hosse onk fluid khabo?'
+  Topic: Diarrhoea home care fluids
+  Gold Chunks: ['DOC-NHS-008-HYB-000']
+  Top-1 Chunk:  DOC-NHS-008-HYB-005
+  Dense Top-5:  ['DOC-NHS-008-HYB-005', 'DOC-NHS-007-HYB-004', 'DOC-NHS-011-HYB-002', 'DOC-NHS-010-HYB-005', 'DOC-NHS-011-HYB-001']
+  Rerank Top-5: ['DOC-NHS-008-HYB-005', 'DOC-NHS-010-HYB-005', 'DOC-NHS-011-HYB-002', 'DOC-NHS-007-HYB-004', 'DOC-NHS-011-HYB-001']
+
+[TEST-DIA-06] (TEST_HOLDOUT/Native_Bangla): 'ডায়রিয়া ভালো হওয়ার পর কত ঘণ্টা স্কুলে বা কাজে যাওয়া বন্ধ রাখা উচিত?'
+  Topic: Stay home 48 hours
+  Gold Chunks: ['DOC-NHS-008-HYB-001']
+  Top-1 Chunk:  DOC-NHS-008-HYB-002
+  Dense Top-5:  ['DOC-NHS-008-HYB-003', 'DOC-NHS-008-HYB-002', 'DOC-NHS-011-HYB-006', 'DOC-NHS-008-HYB-004', 'DOC-NHS-010-HYB-003']
+  Rerank Top-5: ['DOC-NHS-008-HYB-002', 'DOC-NHS-008-HYB-003', 'DOC-NHS-011-HYB-006', 'DOC-NHS-008-HYB-004', 'DOC-NHS-010-HYB-003']

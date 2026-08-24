@@ -1,0 +1,539 @@
+{
+  "BASELINE_FIXED": {
+    "strategy": "BASELINE_FIXED",
+    "total_chunks": 63,
+    "avg_chunk_length": 762.0,
+    "min_chunk_length": 289,
+    "max_chunk_length": 800,
+    "total_mid_word_splits": 77,
+    "total_mid_sentence_splits": 51,
+    "total_heading_separations": 31,
+    "total_orphaned_emergencies": 2,
+    "total_duplicates": 0,
+    "doc_breakdown": {
+      "DOC-NHS-004": {
+        "num_chunks": 15,
+        "mid_word_splits": 18,
+        "mid_sentence_splits": 14,
+        "heading_separations": 8,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-005": {
+        "num_chunks": 4,
+        "mid_word_splits": 5,
+        "mid_sentence_splits": 3,
+        "heading_separations": 2,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-006": {
+        "num_chunks": 7,
+        "mid_word_splits": 8,
+        "mid_sentence_splits": 5,
+        "heading_separations": 2,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-007": {
+        "num_chunks": 8,
+        "mid_word_splits": 12,
+        "mid_sentence_splits": 7,
+        "heading_separations": 4,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-008": {
+        "num_chunks": 8,
+        "mid_word_splits": 10,
+        "mid_sentence_splits": 6,
+        "heading_separations": 5,
+        "orphaned_emergencies": 1,
+        "duplicates": 0
+      },
+      "DOC-NHS-009": {
+        "num_chunks": 5,
+        "mid_word_splits": 6,
+        "mid_sentence_splits": 3,
+        "heading_separations": 3,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-010": {
+        "num_chunks": 7,
+        "mid_word_splits": 9,
+        "mid_sentence_splits": 6,
+        "heading_separations": 4,
+        "orphaned_emergencies": 1,
+        "duplicates": 0
+      },
+      "DOC-NHS-011": {
+        "num_chunks": 9,
+        "mid_word_splits": 9,
+        "mid_sentence_splits": 7,
+        "heading_separations": 3,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      }
+    },
+    "mid_word_examples": [
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 1,
+        "position": "start",
+        "context": "lution, cold air, or cont"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 2,
+        "position": "start",
+        "context": " to stay calm.\n\nUse your "
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 3,
+        "position": "start",
+        "context": "aving an asthma attack an"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 3,
+        "position": "end",
+        "context": "u some questions and list"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 5,
+        "position": "start",
+        "context": "mptoms.\n\nTreatment for as"
+      }
+    ],
+    "mid_sentence_examples": [
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 0,
+        "snippet": "ls.\n\nAsthma usually starts in children, but it can happen at"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 1,
+        "snippet": "er, take 1 puff every 30 to 60 seconds until you feel better"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 2,
+        "snippet": "aximum dose using an asthma reliever inhaler\n\ndo not have an"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 3,
+        "snippet": " symptoms of asthma a GP or nurse will ask you some question"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 4,
+        "snippet": " or nurse, and sometimes a specialist hospital doctor.\n\nYour"
+      }
+    ],
+    "heading_sep_examples": [
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 2,
+        "heading": "do not have an"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 4,
+        "heading": "Your"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 6,
+        "heading": "It's important"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 7,
+        "heading": "montelukast"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 8,
+        "heading": "Asthma a"
+      }
+    ]
+  },
+  "CANDIDATE_A_HEADING": {
+    "strategy": "CANDIDATE_A_HEADING",
+    "total_chunks": 97,
+    "avg_chunk_length": 408.5,
+    "min_chunk_length": 63,
+    "max_chunk_length": 897,
+    "total_mid_word_splits": 0,
+    "total_mid_sentence_splits": 38,
+    "total_heading_separations": 0,
+    "total_orphaned_emergencies": 0,
+    "total_duplicates": 0,
+    "doc_breakdown": {
+      "DOC-NHS-004": {
+        "num_chunks": 22,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 6,
+        "heading_separations": 0,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-005": {
+        "num_chunks": 7,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 2,
+        "heading_separations": 0,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-006": {
+        "num_chunks": 10,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 2,
+        "heading_separations": 0,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-007": {
+        "num_chunks": 11,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 5,
+        "heading_separations": 0,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-008": {
+        "num_chunks": 14,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 10,
+        "heading_separations": 0,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-009": {
+        "num_chunks": 8,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 5,
+        "heading_separations": 0,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-010": {
+        "num_chunks": 12,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 7,
+        "heading_separations": 0,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-011": {
+        "num_chunks": 13,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 1,
+        "heading_separations": 0,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      }
+    },
+    "mid_word_examples": [],
+    "mid_sentence_examples": [
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 1,
+        "snippet": "ng you doing your usual activities or waking you up at night"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 9,
+        "snippet": "onger inhaler or tablets that make breathing easier, such as"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 11,
+        "snippet": "mask\n\nusing a nebuliser to breathe in high doses of medicine"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 13,
+        "snippet": " exercising safely if exercise triggers your asthma symptoms"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 14,
+        "snippet": "and beta blockers can trigger asthma symptoms in some people"
+      }
+    ],
+    "heading_sep_examples": []
+  },
+  "CANDIDATE_B_SENTENCE": {
+    "strategy": "CANDIDATE_B_SENTENCE",
+    "total_chunks": 56,
+    "avg_chunk_length": 708.2,
+    "min_chunk_length": 192,
+    "max_chunk_length": 800,
+    "total_mid_word_splits": 0,
+    "total_mid_sentence_splits": 29,
+    "total_heading_separations": 22,
+    "total_orphaned_emergencies": 0,
+    "total_duplicates": 0,
+    "doc_breakdown": {
+      "DOC-NHS-004": {
+        "num_chunks": 14,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 5,
+        "heading_separations": 6,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-005": {
+        "num_chunks": 4,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 2,
+        "heading_separations": 1,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-006": {
+        "num_chunks": 6,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 1,
+        "heading_separations": 0,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-007": {
+        "num_chunks": 7,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 4,
+        "heading_separations": 4,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-008": {
+        "num_chunks": 7,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 5,
+        "heading_separations": 1,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-009": {
+        "num_chunks": 4,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 2,
+        "heading_separations": 2,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-010": {
+        "num_chunks": 6,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 4,
+        "heading_separations": 2,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-011": {
+        "num_chunks": 8,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 6,
+        "heading_separations": 6,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      }
+    },
+    "mid_word_examples": [],
+    "mid_sentence_examples": [
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 2,
+        "snippet": "ng an asthma reliever inhaler\n\ndo not have an asthma inhaler"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 5,
+        "snippet": "\u2013 this is called an anti-inflammatory reliever (AIR) inhaler"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 8,
+        "snippet": "ise triggers your asthma symptoms\n\nkeep to a\n\nhealthy weight"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 11,
+        "snippet": "h as certain chemicals at work.\n\nHelp and support for asthma"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 12,
+        "snippet": "ma.co.uk\n\nBeat Asthma: information for families and children"
+      }
+    ],
+    "heading_sep_examples": [
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 1,
+        "heading": "Use your asthma reliever inhaler if you have one:"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 2,
+        "heading": "do not have an asthma inhaler"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 7,
+        "heading": "If you have a severe asthma attack that does not get better, you may need to be treated in hospital. Hospital treatments may include:"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 8,
+        "heading": "healthy weight"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 11,
+        "heading": "Help and support for asthma"
+      }
+    ]
+  },
+  "CANDIDATE_C_COMBINED": {
+    "strategy": "CANDIDATE_C_COMBINED",
+    "total_chunks": 60,
+    "avg_chunk_length": 660.9,
+    "min_chunk_length": 106,
+    "max_chunk_length": 800,
+    "total_mid_word_splits": 0,
+    "total_mid_sentence_splits": 28,
+    "total_heading_separations": 22,
+    "total_orphaned_emergencies": 0,
+    "total_duplicates": 0,
+    "doc_breakdown": {
+      "DOC-NHS-004": {
+        "num_chunks": 15,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 5,
+        "heading_separations": 5,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-005": {
+        "num_chunks": 4,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 1,
+        "heading_separations": 1,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-006": {
+        "num_chunks": 7,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 2,
+        "heading_separations": 2,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-007": {
+        "num_chunks": 7,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 4,
+        "heading_separations": 3,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-008": {
+        "num_chunks": 8,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 7,
+        "heading_separations": 3,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-009": {
+        "num_chunks": 4,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 2,
+        "heading_separations": 2,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-010": {
+        "num_chunks": 7,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 4,
+        "heading_separations": 2,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      },
+      "DOC-NHS-011": {
+        "num_chunks": 8,
+        "mid_word_splits": 0,
+        "mid_sentence_splits": 3,
+        "heading_separations": 4,
+        "orphaned_emergencies": 0,
+        "duplicates": 0
+      }
+    },
+    "mid_word_examples": [],
+    "mid_sentence_examples": [
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 1,
+        "snippet": "ng you doing your usual activities or waking you up at night"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 7,
+        "snippet": "onger inhaler or tablets that make breathing easier, such as"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 8,
+        "snippet": "o use your inhaler\n\nNHS medicines A to Z: find your medicine"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 9,
+        "snippet": "ptoms worse\n\nDon\u2019t\n\ndo not smoke \u2013 get help to\n\nquit smoking"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 13,
+        "snippet": "nd young people with asthma.\n\nWebsite:\n\nwww.beatasthma.co.uk"
+      }
+    ],
+    "heading_sep_examples": [
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 2,
+        "heading": "You or someone else is having an asthma attack and:"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 6,
+        "heading": "Important:"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 8,
+        "heading": "NHS medicines A to Z: find your medicine"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 9,
+        "heading": "quit smoking"
+      },
+      {
+        "source_id": "DOC-NHS-004",
+        "chunk_index": 13,
+        "heading": "www.beatasthma.co.uk"
+      }
+    ]
+  }
+}

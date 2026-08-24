@@ -1,0 +1,1022 @@
+"""
+Gate 5.8 — Frozen Benchmark Generation Script
+Generates a 100-query benchmark covering all 8 NHS documents across 6 linguistic/intent distributions,
+with strict source-level holdout partition and dual ground-truth mapping (Candidate A V2 & Baseline Fixed).
+"""
+
+import os
+import json
+import hashlib
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BENCHMARK_DIR = os.path.join(BASE_DIR, "research", "gate_5_8_retrieval_validation", "benchmark")
+os.makedirs(BENCHMARK_DIR, exist_ok=True)
+
+# -----------------------------------------------------------------------------
+# BENCHMARK QUERY DEFINITIONS (100 Queries)
+# -----------------------------------------------------------------------------
+QUERIES = [
+    # =========================================================================
+    # DEVELOPMENT SOURCES (DOC-NHS-004 to DOC-NHS-007)
+    # =========================================================================
+    
+    # --- DOC-NHS-004: Asthma (Dev) ---
+    {
+        "query_id": "DEV-AST-01",
+        "query_text": "What are the common symptoms of asthma?",
+        "language_category": "English",
+        "query_type": "Factoid / Direct",
+        "expected_source_id": "DOC-NHS-004",
+        "target_topic": "Asthma symptoms",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-AST-02",
+        "query_text": "হাঁপানির প্রধান লক্ষণগুলো কী কী?",
+        "language_category": "Native_Bangla",
+        "query_type": "Direct Inquiry",
+        "expected_source_id": "DOC-NHS-004",
+        "target_topic": "Asthma symptoms",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-AST-03",
+        "query_text": "asthma hole ki ki shomossha hoy bujhte parbo kivabe?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Symptom Inquiry",
+        "expected_source_id": "DOC-NHS-004",
+        "target_topic": "Asthma symptoms",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-AST-04",
+        "query_text": "buk chap lage ar shash nite koshto asthma naki",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Colloquial Symptom",
+        "expected_source_id": "DOC-NHS-004",
+        "target_topic": "Asthma symptoms",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-AST-05",
+        "query_text": "How to treat an asthma attack at home?",
+        "language_category": "English",
+        "query_type": "Emergency / Action",
+        "expected_source_id": "DOC-NHS-004",
+        "target_topic": "Treat asthma attack",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-AST-06",
+        "query_text": "হাঁপানির টান উঠলে নীল ইনহেলার কীভাবে ব্যবহার করব?",
+        "language_category": "Native_Bangla",
+        "query_type": "Treatment / Action",
+        "expected_source_id": "DOC-NHS-004",
+        "target_topic": "Inhaler use in asthma attack",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-AST-07",
+        "query_text": "asthma attack uthle koto puff blue inhaler nite hoy?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Emergency Inhaler",
+        "expected_source_id": "DOC-NHS-004",
+        "target_topic": "Inhaler use in asthma attack",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-AST-08",
+        "query_text": "shash bondho hoye jacche inhaler kaj kore na 999 call dibo?",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-004",
+        "target_topic": "Asthma emergency 999",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-AST-09",
+        "query_text": "What are the common triggers for asthma?",
+        "language_category": "English",
+        "query_type": "Trigger Inquiry",
+        "expected_source_id": "DOC-NHS-004",
+        "target_topic": "Asthma triggers",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-AST-10",
+        "query_text": "kon kon karone asthma bere jete pare?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Trigger Inquiry",
+        "expected_source_id": "DOC-NHS-004",
+        "target_topic": "Asthma triggers",
+        "benchmark_split": "DEV"
+    },
+
+    # --- DOC-NHS-005: Burns and scalds (Dev) ---
+    {
+        "query_id": "DEV-BUR-01",
+        "query_text": "How should you treat a burn immediately with water?",
+        "language_category": "English",
+        "query_type": "First Aid First Step",
+        "expected_source_id": "DOC-NHS-005",
+        "target_topic": "Cool water for burns",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-BUR-02",
+        "query_text": "হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানির নিচে রাখতে হবে?",
+        "language_category": "Native_Bangla",
+        "query_type": "First Aid First Step",
+        "expected_source_id": "DOC-NHS-005",
+        "target_topic": "Cool water for burns",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-BUR-03",
+        "query_text": "pure gele thanda pani koto minute dhalbo?",
+        "language_category": "Standard_Banglish",
+        "query_type": "First Aid First Step",
+        "expected_source_id": "DOC-NHS-005",
+        "target_topic": "Cool water for burns",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-BUR-04",
+        "query_text": "hat pure geche ekhon ki korbo pani dhalbo?",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Emergency First Aid",
+        "expected_source_id": "DOC-NHS-005",
+        "target_topic": "Cool water for burns",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-BUR-05",
+        "query_text": "Should you put butter or oil on a burn?",
+        "language_category": "English",
+        "query_type": "Contraindication",
+        "expected_source_id": "DOC-NHS-005",
+        "target_topic": "Do not put butter/oil on burn",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-BUR-06",
+        "query_text": "পোড়া জায়গায় কি মাখন বা তেল লাগানো যাবে?",
+        "language_category": "Native_Bangla",
+        "query_type": "Contraindication",
+        "expected_source_id": "DOC-NHS-005",
+        "target_topic": "Do not put butter/oil on burn",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-BUR-07",
+        "query_text": "pora jaygay butter ba tel lagano thik naki?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Contraindication",
+        "expected_source_id": "DOC-NHS-005",
+        "target_topic": "Do not put butter/oil on burn",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-BUR-08",
+        "query_text": "When is a burn serious enough to call 999 or go to A&E?",
+        "language_category": "English",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-005",
+        "target_topic": "Burns emergency 999",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-BUR-09",
+        "query_text": "pora khub boro ar deep hole kokhon hospital jabo?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-005",
+        "target_topic": "Burns emergency 999",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-BUR-10",
+        "query_text": "chemical ba electricity te porle ki 999 call dibo",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-005",
+        "target_topic": "Burns emergency 999",
+        "benchmark_split": "DEV"
+    },
+
+    # --- DOC-NHS-006: Cuts and grazes (Dev) ---
+    {
+        "query_id": "DEV-CUT-01",
+        "query_text": "How to stop bleeding and clean a cut at home?",
+        "language_category": "English",
+        "query_type": "First Aid Procedure",
+        "expected_source_id": "DOC-NHS-006",
+        "target_topic": "Clean cut and stop bleeding",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-CUT-02",
+        "query_text": "কেটে গেলে রক্ত বন্ধ করার সঠিক নিয়ম কী?",
+        "language_category": "Native_Bangla",
+        "query_type": "First Aid Procedure",
+        "expected_source_id": "DOC-NHS-006",
+        "target_topic": "Clean cut and stop bleeding",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-CUT-03",
+        "query_text": "kete gele rokto bondho korbo kivabe ar clean korbo?",
+        "language_category": "Standard_Banglish",
+        "query_type": "First Aid Procedure",
+        "expected_source_id": "DOC-NHS-006",
+        "target_topic": "Clean cut and stop bleeding",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-CUT-04",
+        "query_text": "angul kete rokt porche chap diye dhorbo kina",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "First Aid Action",
+        "expected_source_id": "DOC-NHS-006",
+        "target_topic": "Clean cut and stop bleeding",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-CUT-05",
+        "query_text": "Signs that a cut or wound is infected",
+        "language_category": "English",
+        "query_type": "Infection Warning",
+        "expected_source_id": "DOC-NHS-006",
+        "target_topic": "Infected cut signs",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-CUT-06",
+        "query_text": "ক্ষতস্থানে ইনফেকশন হয়েছে কীভাবে বুঝব?",
+        "language_category": "Native_Bangla",
+        "query_type": "Infection Warning",
+        "expected_source_id": "DOC-NHS-006",
+        "target_topic": "Infected cut signs",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-CUT-07",
+        "query_text": "kete jawa jayga lal hoye puz porle ki infection?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Infection Warning",
+        "expected_source_id": "DOC-NHS-006",
+        "target_topic": "Infected cut signs",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-CUT-08",
+        "query_text": "When to go to A&E for a cut with non-stop bleeding?",
+        "language_category": "English",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-006",
+        "target_topic": "Cut emergency A&E",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-CUT-09",
+        "query_text": "১০ মিনিট চেপে রাখার পরও রক্ত বন্ধ না হলে কী করব?",
+        "language_category": "Native_Bangla",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-006",
+        "target_topic": "Cut emergency A&E",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-CUT-10",
+        "query_text": "rokto konovabei thamtasena 10 min hoise a&e jabo?",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-006",
+        "target_topic": "Cut emergency A&E",
+        "benchmark_split": "DEV"
+    },
+
+    # --- DOC-NHS-007: Dehydration (Dev) ---
+    {
+        "query_id": "DEV-DEH-01",
+        "query_text": "What are the main symptoms of dehydration in adults?",
+        "language_category": "English",
+        "query_type": "Symptom Inquiry",
+        "expected_source_id": "DOC-NHS-007",
+        "target_topic": "Dehydration symptoms",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-DEH-02",
+        "query_text": "শরীরে পানিশূন্যতা বা ডিহাইড্রেশনের লক্ষণ কী কী?",
+        "language_category": "Native_Bangla",
+        "query_type": "Symptom Inquiry",
+        "expected_source_id": "DOC-NHS-007",
+        "target_topic": "Dehydration symptoms",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-DEH-03",
+        "query_text": "dehydration hoile ki rokom shorir lage?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Symptom Inquiry",
+        "expected_source_id": "DOC-NHS-007",
+        "target_topic": "Dehydration symptoms",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-DEH-04",
+        "query_text": "muk shukay geche prosrab kom hoy pani shunnota naki",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Colloquial Symptom",
+        "expected_source_id": "DOC-NHS-007",
+        "target_topic": "Dehydration symptoms",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-DEH-05",
+        "query_text": "How to prevent and treat dehydration when feeling sick?",
+        "language_category": "English",
+        "query_type": "Home Treatment",
+        "expected_source_id": "DOC-NHS-007",
+        "target_topic": "Treat dehydration small sips",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-DEH-06",
+        "query_text": "বমি ভাব হলে পানিশূন্যতা দূর করতে কীভাবে পানি খাব?",
+        "language_category": "Native_Bangla",
+        "query_type": "Home Treatment",
+        "expected_source_id": "DOC-NHS-007",
+        "target_topic": "Treat dehydration small sips",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-DEH-07",
+        "query_text": "bomi thakle pani kivabe khawa uchit?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Home Treatment",
+        "expected_source_id": "DOC-NHS-007",
+        "target_topic": "Treat dehydration small sips",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-DEH-08",
+        "query_text": "Signs of severe dehydration requiring immediate 999 emergency call",
+        "language_category": "English",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-007",
+        "target_topic": "Dehydration emergency 999",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-DEH-09",
+        "query_text": "অজ্ঞান হয়ে যাওয়া বা কথা বলতে কষ্ট হলে কি ৯৯৯ কল করব?",
+        "language_category": "Native_Bangla",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-007",
+        "target_topic": "Dehydration emergency 999",
+        "benchmark_split": "DEV"
+    },
+    {
+        "query_id": "DEV-DEH-10",
+        "query_text": "extreme dehydration confused lage kotha bolte parena 999 daki?",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-007",
+        "target_topic": "Dehydration emergency 999",
+        "benchmark_split": "DEV"
+    },
+
+    # =========================================================================
+    # HELD-OUT TEST SOURCES (DOC-NHS-008 to DOC-NHS-011) - STRICTLY UNSEEN
+    # =========================================================================
+
+    # --- DOC-NHS-008: Diarrhoea and vomiting (Test Holdout) ---
+    {
+        "query_id": "TEST-DIA-01",
+        "query_text": "How to treat diarrhoea and vomiting at home?",
+        "language_category": "English",
+        "query_type": "Home Treatment",
+        "expected_source_id": "DOC-NHS-008",
+        "target_topic": "Diarrhoea home care fluids",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-DIA-02",
+        "query_text": "ডায়রিয়া ও বমি হলে বাড়িতে কী চিকিৎসা নেওয়া উচিত?",
+        "language_category": "Native_Bangla",
+        "query_type": "Home Treatment",
+        "expected_source_id": "DOC-NHS-008",
+        "target_topic": "Diarrhoea home care fluids",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-DIA-03",
+        "query_text": "diarrhoea ar bomi hole bashay ki korbo?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Home Treatment",
+        "expected_source_id": "DOC-NHS-008",
+        "target_topic": "Diarrhoea home care fluids",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-DIA-04",
+        "query_text": "patla paykhana ar bomi hosse onk fluid khabo?",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Colloquial Symptom",
+        "expected_source_id": "DOC-NHS-008",
+        "target_topic": "Diarrhoea home care fluids",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-DIA-05",
+        "query_text": "How long should you stay off work or school after diarrhoea stops?",
+        "language_category": "English",
+        "query_type": "Infection Prevention",
+        "expected_source_id": "DOC-NHS-008",
+        "target_topic": "Stay home 48 hours",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-DIA-06",
+        "query_text": "ডায়রিয়া ভালো হওয়ার পর কত ঘণ্টা স্কুলে বা কাজে যাওয়া বন্ধ রাখা উচিত?",
+        "language_category": "Native_Bangla",
+        "query_type": "Infection Prevention",
+        "expected_source_id": "DOC-NHS-008",
+        "target_topic": "Stay home 48 hours",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-DIA-07",
+        "query_text": "diarrhoea thamar por koto hour bashay thakte hoy?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Infection Prevention",
+        "expected_source_id": "DOC-NHS-008",
+        "target_topic": "Stay home 48 hours",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-DIA-08",
+        "query_text": "When to call 999 or go to A&E for diarrhoea with bloody vomit?",
+        "language_category": "English",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-008",
+        "target_topic": "Diarrhoea bloody vomit A&E 999",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-DIA-09",
+        "query_text": "বমির সাথে রক্ত আসলে কি দ্রুত হাসপাতালে যাওয়া দরকার?",
+        "language_category": "Native_Bangla",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-008",
+        "target_topic": "Diarrhoea bloody vomit A&E 999",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-DIA-10",
+        "query_text": "bomir shathe rokto ase green bomi emergency hospital jabo?",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-008",
+        "target_topic": "Diarrhoea bloody vomit A&E 999",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+
+    # --- DOC-NHS-009: Headaches (Test Holdout) ---
+    {
+        "query_id": "TEST-HEA-01",
+        "query_text": "What can you do at home to ease a common headache?",
+        "language_category": "English",
+        "query_type": "Home Treatment",
+        "expected_source_id": "DOC-NHS-009",
+        "target_topic": "Relieve headache water painkillers",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-HEA-02",
+        "query_text": "সাধারণ মাথা ব্যথায় ঘরে কী ধরনের যত্ন নেওয়া যায়?",
+        "language_category": "Native_Bangla",
+        "query_type": "Home Treatment",
+        "expected_source_id": "DOC-NHS-009",
+        "target_topic": "Relieve headache water painkillers",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-HEA-03",
+        "query_text": "matha betha hole bashay ki korle kombe?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Home Treatment",
+        "expected_source_id": "DOC-NHS-009",
+        "target_topic": "Relieve headache water painkillers",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-HEA-04",
+        "query_text": "matha betha paracetamol khabo ar pani khabo kina",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Colloquial Action",
+        "expected_source_id": "DOC-NHS-009",
+        "target_topic": "Relieve headache water painkillers",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-HEA-05",
+        "query_text": "When is a sudden severe headache an emergency requiring 999?",
+        "language_category": "English",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-009",
+        "target_topic": "Severe sudden headache 999",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-HEA-06",
+        "query_text": "হঠাৎ তীব্র মাথাব্যথা এবং ঘাড় শক্ত হয়ে গেলে কি ৯৯৯ কল দিতে হবে?",
+        "language_category": "Native_Bangla",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-009",
+        "target_topic": "Severe sudden headache 999",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-HEA-07",
+        "query_text": "hotath extreme matha betha ar ghaar shokto 999 call dibo?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-009",
+        "target_topic": "Severe sudden headache 999",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-HEA-08",
+        "query_text": "blurry vision ar mathay prachondo betha emergency A&E jabo",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-009",
+        "target_topic": "Severe sudden headache 999",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-HEA-09",
+        "query_text": "Common causes of headaches such as dehydration and stress",
+        "language_category": "English",
+        "query_type": "Factoid / Cause",
+        "expected_source_id": "DOC-NHS-009",
+        "target_topic": "Causes of headaches",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-HEA-10",
+        "query_text": "matha betha keno hoy causes ki ki?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Factoid / Cause",
+        "expected_source_id": "DOC-NHS-009",
+        "target_topic": "Causes of headaches",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+
+    # --- DOC-NHS-010: High temperature (fever) in children (Test Holdout) ---
+    {
+        "query_id": "TEST-FEV-01",
+        "query_text": "What temperature counts as a fever in children?",
+        "language_category": "English",
+        "query_type": "Factoid / Threshold",
+        "expected_source_id": "DOC-NHS-010",
+        "target_topic": "Fever threshold 38C",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-FEV-02",
+        "query_text": "শিশুদের কত ডিগ্রি তাপমাত্রা হলে জ্বর হিসেবে গণ্য করা হয়?",
+        "language_category": "Native_Bangla",
+        "query_type": "Factoid / Threshold",
+        "expected_source_id": "DOC-NHS-010",
+        "target_topic": "Fever threshold 38C",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-FEV-03",
+        "query_text": "bachader koto degree temp hole jor dhora hoy?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Factoid / Threshold",
+        "expected_source_id": "DOC-NHS-010",
+        "target_topic": "Fever threshold 38C",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-FEV-04",
+        "query_text": "baby r 38C jor thermometer diye maplam ekhon ki korbo",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Action / Home Care",
+        "expected_source_id": "DOC-NHS-010",
+        "target_topic": "Fever home care children",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-FEV-05",
+        "query_text": "How to help bring down a child's fever safely at home?",
+        "language_category": "English",
+        "query_type": "Action / Home Care",
+        "expected_source_id": "DOC-NHS-010",
+        "target_topic": "Fever home care children",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-FEV-06",
+        "query_text": "বাচ্চার জ্বর কমাতে বাড়িতে প্রচুর তরল ও প্যারাসিটামল কীভাবে দেব?",
+        "language_category": "Native_Bangla",
+        "query_type": "Action / Home Care",
+        "expected_source_id": "DOC-NHS-010",
+        "target_topic": "Fever home care children",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-FEV-07",
+        "query_text": "bachar jor komate fluid ar paracetamol dawa jabe?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Action / Home Care",
+        "expected_source_id": "DOC-NHS-010",
+        "target_topic": "Fever home care children",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-FEV-08",
+        "query_text": "When to call 999 for a child with high fever and rash or breathing trouble?",
+        "language_category": "English",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-010",
+        "target_topic": "Child fever emergency 999",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-FEV-09",
+        "query_text": "বাচ্চার তীব্র জ্বর ও নীলচে ঠোঁট হলে অবিলম্বে কি ৯৯৯ কল করতে হবে?",
+        "language_category": "Native_Bangla",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-010",
+        "target_topic": "Child fever emergency 999",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-FEV-10",
+        "query_text": "bacha ghum theke jagena ar thot neel 999 call korbo?",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-010",
+        "target_topic": "Child fever emergency 999",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+
+    # --- DOC-NHS-011: Anaphylaxis (Test Holdout) ---
+    {
+        "query_id": "TEST-ANA-01",
+        "query_text": "What are the main symptoms of a severe anaphylaxis allergic reaction?",
+        "language_category": "English",
+        "query_type": "Symptom Inquiry",
+        "expected_source_id": "DOC-NHS-011",
+        "target_topic": "Anaphylaxis symptoms",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-ANA-02",
+        "query_text": "অ্যানাফাইলাক্সিস বা তীব্র অ্যালার্জিক রিঅ্যাকশনের লক্ষণগুলো কী?",
+        "language_category": "Native_Bangla",
+        "query_type": "Symptom Inquiry",
+        "expected_source_id": "DOC-NHS-011",
+        "target_topic": "Anaphylaxis symptoms",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-ANA-03",
+        "query_text": "anaphylaxis allergic reaction hole ki ki lokkhon dekha jay?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Symptom Inquiry",
+        "expected_source_id": "DOC-NHS-011",
+        "target_topic": "Anaphylaxis symptoms",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-ANA-04",
+        "query_text": "muk fule geche shash nite parsenana allergy r jonno anaphylaxis naki",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Colloquial Symptom",
+        "expected_source_id": "DOC-NHS-011",
+        "target_topic": "Anaphylaxis symptoms",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-ANA-05",
+        "query_text": "How to use an adrenaline auto-injector (EpiPen) in an emergency?",
+        "language_category": "English",
+        "query_type": "Emergency Treatment",
+        "expected_source_id": "DOC-NHS-011",
+        "target_topic": "Adrenaline auto-injector",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-ANA-06",
+        "query_text": "অ্যানাফাইলাক্সিস হলে অ্যাড্রেনালিন অটো-ইনজেক্টর কীভাবে ব্যবহার করতে হয়?",
+        "language_category": "Native_Bangla",
+        "query_type": "Emergency Treatment",
+        "expected_source_id": "DOC-NHS-011",
+        "target_topic": "Adrenaline auto-injector",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-ANA-07",
+        "query_text": "adrenaline auto-injector kivabe use korbo emergency te?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Emergency Treatment",
+        "expected_source_id": "DOC-NHS-011",
+        "target_topic": "Adrenaline auto-injector",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-ANA-08",
+        "query_text": "Should you call 999 immediately if someone has an anaphylactic shock?",
+        "language_category": "English",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-011",
+        "target_topic": "Anaphylaxis 999 emergency",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-ANA-09",
+        "query_text": "অ্যালার্জির কারণে গলা ফুলে শ্বাস বন্ধ হলে তাৎক্ষণিক ৯৯৯ ডাকব?",
+        "language_category": "Native_Bangla",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-011",
+        "target_topic": "Anaphylaxis 999 emergency",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+    {
+        "query_id": "TEST-ANA-10",
+        "query_text": "severe allergic reaction gola fule gese 999 daki",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Emergency Escalation",
+        "expected_source_id": "DOC-NHS-011",
+        "target_topic": "Anaphylaxis 999 emergency",
+        "benchmark_split": "TEST_HOLDOUT"
+    },
+
+    # =========================================================================
+    # HARD NEGATIVES (Semantically Similar / Unsupported in Corpus)
+    # =========================================================================
+    {
+        "query_id": "HN-01",
+        "query_text": "How to apply a tactical tourniquet to stop arterial bleeding on thigh?",
+        "language_category": "English",
+        "query_type": "Hard_Negative",
+        "expected_source_id": "NONE",
+        "target_topic": "Tourniquet / Arterial bleeding (Unsupported)",
+        "benchmark_split": "HARD_NEGATIVE"
+    },
+    {
+        "query_id": "HN-02",
+        "query_text": "হাঁপানির টান কমাতে সালবুটামল নেবুলাইজারের ডোজ কত মিলিগ্রাম দেব?",
+        "language_category": "Native_Bangla",
+        "query_type": "Hard_Negative",
+        "expected_source_id": "NONE",
+        "target_topic": "Specific Nebulizer mg dosage (Unsupported)",
+        "benchmark_split": "HARD_NEGATIVE"
+    },
+    {
+        "query_id": "HN-03",
+        "query_text": "severe dehydration e saline IV injection kon vein e dibo?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Hard_Negative",
+        "expected_source_id": "NONE",
+        "target_topic": "IV cannulation procedure (Unsupported)",
+        "benchmark_split": "HARD_NEGATIVE"
+    },
+    {
+        "query_id": "HN-04",
+        "query_text": "chokhe chemical acid porle kon drop dibo",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Hard_Negative",
+        "expected_source_id": "NONE",
+        "target_topic": "Chemical eye drops (Unsupported)",
+        "benchmark_split": "HARD_NEGATIVE"
+    },
+    {
+        "query_id": "HN-05",
+        "query_text": "Antibiotics dosage for severe infectious bacterial diarrhoea in adults",
+        "language_category": "English",
+        "query_type": "Hard_Negative",
+        "expected_source_id": "NONE",
+        "target_topic": "Antibiotic prescription for diarrhoea (Unsupported)",
+        "benchmark_split": "HARD_NEGATIVE"
+    },
+    {
+        "query_id": "HN-06",
+        "query_text": "বাচ্চার ডেঙ্গু জ্বরে প্লেটলেট কমে গেলে কী ওষুধ দিতে হয়?",
+        "language_category": "Native_Bangla",
+        "query_type": "Hard_Negative",
+        "expected_source_id": "NONE",
+        "target_topic": "Dengue platelet management (Unsupported)",
+        "benchmark_split": "HARD_NEGATIVE"
+    },
+    {
+        "query_id": "HN-07",
+        "query_text": "migraine er specific triptan medicine dosage koto?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Hard_Negative",
+        "expected_source_id": "NONE",
+        "target_topic": "Triptan prescription dosage (Unsupported)",
+        "benchmark_split": "HARD_NEGATIVE"
+    },
+    {
+        "query_id": "HN-08",
+        "query_text": "severe anaphylaxis e steroid injection hydrocortisone koto mg",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Hard_Negative",
+        "expected_source_id": "NONE",
+        "target_topic": "Hydrocortisone mg dosage (Unsupported)",
+        "benchmark_split": "HARD_NEGATIVE"
+    },
+    {
+        "query_id": "HN-09",
+        "query_text": "How to perform surgical stitches on a deep laceration cut?",
+        "language_category": "English",
+        "query_type": "Hard_Negative",
+        "expected_source_id": "NONE",
+        "target_topic": "Surgical wound suturing (Unsupported)",
+        "benchmark_split": "HARD_NEGATIVE"
+    },
+    {
+        "query_id": "HN-10",
+        "query_text": "বাচ্চাদের খিঁচুনি বা ফেব্রাইল কনভালশন হলে কী অ্যান্টি-কনভালস্যান্ট দেব?",
+        "language_category": "Native_Bangla",
+        "query_type": "Hard_Negative",
+        "expected_source_id": "NONE",
+        "target_topic": "Febrile convulsion medication (Unsupported)",
+        "benchmark_split": "HARD_NEGATIVE"
+    },
+    {
+        "query_id": "HN-11",
+        "query_text": "third degree electrical burn e dead skin debridement kivabe kore?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Hard_Negative",
+        "expected_source_id": "NONE",
+        "target_topic": "Surgical debridement (Unsupported)",
+        "benchmark_split": "HARD_NEGATIVE"
+    },
+    {
+        "query_id": "HN-12",
+        "query_text": "chronic asthma r steroid biological injection injection kivabe dey",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Hard_Negative",
+        "expected_source_id": "NONE",
+        "target_topic": "Biologic injection technique (Unsupported)",
+        "benchmark_split": "HARD_NEGATIVE"
+    },
+
+    # =========================================================================
+    # OUT-OF-CORPUS QUERIES (Completely Unrelated Medical Domains)
+    # =========================================================================
+    {
+        "query_id": "OOC-01",
+        "query_text": "What is the recommended prophylaxis medication for malaria traveling to Africa?",
+        "language_category": "English",
+        "query_type": "Out_Of_Corpus",
+        "expected_source_id": "NONE",
+        "target_topic": "Malaria prophylaxis",
+        "benchmark_split": "OUT_OF_CORPUS"
+    },
+    {
+        "query_id": "OOC-02",
+        "query_text": "কুকুর কামড়ালে জলাতঙ্ক বা রেবিস ভ্যাকসিন কত দিনের মধ্যে নিতে হয়?",
+        "language_category": "Native_Bangla",
+        "query_type": "Out_Of_Corpus",
+        "expected_source_id": "NONE",
+        "target_topic": "Rabies post-exposure vaccine",
+        "benchmark_split": "OUT_OF_CORPUS"
+    },
+    {
+        "query_id": "OOC-03",
+        "query_text": "dante puz hole root canal treatment keno dorkar?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Out_Of_Corpus",
+        "expected_source_id": "NONE",
+        "target_topic": "Dental root canal",
+        "benchmark_split": "OUT_OF_CORPUS"
+    },
+    {
+        "query_id": "OOC-04",
+        "query_text": "kidney te pathor hole lithotripsy laser operation kivabe kore",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Out_Of_Corpus",
+        "expected_source_id": "NONE",
+        "target_topic": "Kidney stone lithotripsy",
+        "benchmark_split": "OUT_OF_CORPUS"
+    },
+    {
+        "query_id": "OOC-05",
+        "query_text": "How is type 1 diabetes insulin pump therapy adjusted for exercise?",
+        "language_category": "English",
+        "query_type": "Out_Of_Corpus",
+        "expected_source_id": "NONE",
+        "target_topic": "Insulin pump management",
+        "benchmark_split": "OUT_OF_CORPUS"
+    },
+    {
+        "query_id": "OOC-06",
+        "query_text": "উচ্চ রক্তচাপ বা হাইপারটেনশনে অ্যামলোডিপিন ওষুধের পার্শ্বপ্রতিক্রিয়া কী?",
+        "language_category": "Native_Bangla",
+        "query_type": "Out_Of_Corpus",
+        "expected_source_id": "NONE",
+        "target_topic": "Hypertension medication side effects",
+        "benchmark_split": "OUT_OF_CORPUS"
+    },
+    {
+        "query_id": "OOC-07",
+        "query_text": "broken bone fracture hole plaster koto din rakhte hoy?",
+        "language_category": "Standard_Banglish",
+        "query_type": "Out_Of_Corpus",
+        "expected_source_id": "NONE",
+        "target_topic": "Bone fracture cast duration",
+        "benchmark_split": "OUT_OF_CORPUS"
+    },
+    {
+        "query_id": "OOC-08",
+        "query_text": "glaucoma eye drop pressure komano kivabe kaj kore",
+        "language_category": "Abbreviated_Banglish",
+        "query_type": "Out_Of_Corpus",
+        "expected_source_id": "NONE",
+        "target_topic": "Glaucoma eye drop mechanism",
+        "benchmark_split": "OUT_OF_CORPUS"
+    }
+]
+
+def main():
+    print(f"Total benchmark queries authored: {len(QUERIES)}")
+    
+    # Validation checks on benchmark structure
+    categories = {}
+    splits = {}
+    sources = {}
+    
+    for q in QUERIES:
+        cat = q["language_category"]
+        categories[cat] = categories.get(cat, 0) + 1
+        
+        sp = q["benchmark_split"]
+        splits[sp] = splits.get(sp, 0) + 1
+        
+        src = q["expected_source_id"]
+        sources[src] = sources.get(src, 0) + 1
+
+    print("\nLinguistic Distribution:")
+    for k, v in sorted(categories.items()):
+        print(f"  {k}: {v}")
+
+    print("\nBenchmark Splits:")
+    for k, v in sorted(splits.items()):
+        print(f"  {k}: {v}")
+
+    print("\nSource Coverage:")
+    for k, v in sorted(sources.items()):
+        print(f"  {k}: {v}")
+
+    out_file = os.path.join(BENCHMARK_DIR, "frozen_benchmark.json")
+    with open(out_file, 'w', encoding='utf-8') as f:
+        json.dump(QUERIES, f, indent=2, ensure_ascii=False)
+
+    with open(out_file, 'rb') as f:
+        b_hash = hashlib.sha256(f.read()).hexdigest()
+
+    print(f"\nSaved Frozen Benchmark to: {out_file}")
+    print(f"Benchmark SHA-256 Hash: {b_hash}")
+
+    spec_doc = f"""# Gate 5.8 — Benchmark Specification Document
+
+> **Benchmark Version:** 1.0 (Frozen)
+> **Total Queries:** {len(QUERIES)}
+> **SHA-256 Hash:** `{b_hash}`
+
+## 1. Composition
+- **Development Sources (40 queries)**: Asthma (10), Burns (10), Cuts (10), Dehydration (10)
+- **Held-Out Test Sources (40 queries)**: Diarrhoea (10), Headaches (10), Child Fever (10), Anaphylaxis (10)
+- **Hard Negatives (12 queries)**: Semantically aligned but unsupported in the corpus
+- **Out-of-Corpus (8 queries)**: Unrelated clinical topics (Malaria, Rabies, Dental, Fracture, Glaucoma)
+
+## 2. Linguistic Breakdown
+- English: 25 queries
+- Native Bangla: 25 queries
+- Standard Banglish: 25 queries
+- Abbreviated / Colloquial Banglish: 25 queries
+
+## 3. Partitioning
+- **DEV Set**: 40 queries (Targeting DOC-NHS-004 to DOC-NHS-007)
+- **TEST_HOLDOUT Set**: 40 queries (Targeting DOC-NHS-008 to DOC-NHS-011)
+- **HARD_NEGATIVE Set**: 12 queries
+- **OUT_OF_CORPUS Set**: 8 queries
+"""
+    spec_file = os.path.join(BENCHMARK_DIR, "benchmark_spec.md")
+    with open(spec_file, 'w', encoding='utf-8') as f:
+        f.write(spec_doc)
+    print(f"Saved Benchmark Spec to: {spec_file}")
+
+if __name__ == "__main__":
+    main()

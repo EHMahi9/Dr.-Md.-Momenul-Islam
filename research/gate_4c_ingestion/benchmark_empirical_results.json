@@ -1,0 +1,22 @@
+{
+    "Approach A (Multilingual Embedding - intfloat/multilingual-e5-small)": {
+        "Recall@1": 0.7,
+        "MRR": 0.75,
+        "Latency": "~120ms/query (CPU)",
+        "Storage": "471 MB",
+        "Failure_Cases": [
+            "matha betha jor koto mg paracetamol khabo (Banglish - Not recognized by tokenizer)",
+            "baccha choking what to do (Mixed - Semantic gap)",
+            "hot tired dizzy (Short - Ranked lower than verbose matches)"
+        ]
+    },
+    "Approach B (Pre-Translation + English Embedding - bge-small-en-v1.5)": {
+        "Recall@1": 0.9,
+        "MRR": 0.95,
+        "Latency": "~400ms/query (Translation + Embedding CPU)",
+        "Storage": "133 MB (Embedding) + Translation API",
+        "Failure_Cases": [
+            "Tylenol for grown ups (Paraphrase - Tylenol not mapped perfectly to Paracetamol without LLM context)"
+        ]
+    }
+}

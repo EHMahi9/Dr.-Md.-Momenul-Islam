@@ -1,0 +1,30 @@
+[
+    {
+        "input": "প্যারাসিটামল",
+        "type": "standard_bn"
+    },
+    {
+        "input": "প্যারা খা",
+        "type": "colloquial_bn"
+    },
+    {
+        "input": "paracetamol khabo",
+        "type": "standard_banglish"
+    },
+    {
+        "input": "pera koto mg",
+        "type": "abbreviated_banglish"
+    },
+    {
+        "input": "child choking hocche",
+        "type": "mixed"
+    },
+    {
+        "input": "heat exhaustion",
+        "type": "medical_en"
+    },
+    {
+        "input": "matha betha",
+        "type": "ambiguous_short"
+    }
+]

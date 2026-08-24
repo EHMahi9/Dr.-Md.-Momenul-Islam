@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-DEH-10",
+  "raw_query": "extreme dehydration confused lage kotha bolte parena 999 daki?",
+  "normalized_query": "extreme dehydration confused lage kotha bolte parena 999 daki? (dehydration fluid rehydration oral fluids emergency call 999 go to A&E)",
+  "language_category": "Abbreviated_Banglish",
+  "expected_source_id": "DOC-NHS-007",
+  "gold_chunk_ids": [
+    "DOC-NHS-007-HYB-004"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 636.0,
+  "dense_rank": 1,
+  "dense_r15": true,
+  "rerank_rank": 1,
+  "in_top5": true,
+  "is_top1": true,
+  "gold_rerank_score": 0.8562369346618652,
+  "rank1_chunk_id": "DOC-NHS-007-HYB-004",
+  "rank1_source_id": "DOC-NHS-007",
+  "rank1_heading": "",
+  "rank1_length": 636,
+  "rank1_score": 0.8562369346618652,
+  "score_margin_vs_gold": 0.0,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "NONE_SUCCESS",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-007-HYB-004",
+    "DOC-NHS-009-HYB-003",
+    "DOC-NHS-008-HYB-005",
+    "DOC-NHS-008-HYB-006",
+    "DOC-NHS-011-HYB-002"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-007-HYB-004",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.8562369346618652,
+      "is_gold": true
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-009-HYB-003",
+      "source_id": "DOC-NHS-009",
+      "heading": "",
+      "score": 0.31556499004364014,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-008-HYB-005",
+      "source_id": "DOC-NHS-008",
+      "heading": "",
+      "score": 0.23356956243515015,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-008-HYB-006",
+      "source_id": "DOC-NHS-008",
+      "heading": "",
+      "score": 0.20271186530590057,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-011-HYB-002",
+      "source_id": "DOC-NHS-011",
+      "heading": "",
+      "score": 0.07798825204372406,
+      "is_gold": false
+    }
+  ]
+}

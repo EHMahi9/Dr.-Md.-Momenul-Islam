@@ -1,0 +1,51 @@
+class TranslationAdapter:
+    def __init__(self):
+        self.provider = "Simulated Translation Service (Gate 5 Prototype)"
+        self.mock_dict = {
+            'প্যারাসিটামল খাওয়ার নিয়ম কি?': 'What are the rules for taking paracetamol?',
+            'হিট স্ট্রোক হলে কি করব?': 'What should I do for a heat stroke?',
+            'আমার বাচ্চার গলায় কিছু আটকে গেছে এবং সে নিশ্বাস নিতে পারছে না': 'Something is stuck in my child throat and cannot breathe',
+            'জ্বরের জন্য কি খাব?': 'What should I eat for fever?',
+            'paracetamol koto mg khabo din e': 'how many mg of paracetamol should I take a day',
+            'bachar golay kisu atke gese': 'something is stuck in child throat',
+            'matha ghurtese ar betha roder moddhe': 'feeling dizzy and headache in the sun',
+            'pera koto mg': 'how many mg of para',
+            'mtha ghurse rod e': 'head spinning in sun',
+            'আমার বাচ্চার choking হচ্ছে': 'my child is choking',
+            'adult দের জন্য paracetamol dose': 'paracetamol dose for adults',
+            'child choking hocche ki korbo': 'child is choking what to do',
+            'heatstroke er symptoms ki': 'what are symptoms of heatstroke',
+            'dim parbi naki': 'will you lay an egg',
+            'matha betha bori': 'headache pill'
+        }
+
+    def translate(self, query_obj):
+        start = time.time()
+        time.sleep(0.01)
+        if not query_obj["translation_required"]:
+
+class EmbeddingModule:
+    def __init__(self, model_name="BAAI/bge-small-en-v1.5"):
+        self.model_name = model_name
+        self.use_mock = True
+        self.dim = "Mock Keywords"
+
+    def encode(self, texts):
+        # Very simple pure-python keyword overlap mock for pipeline validation
+        # Returns list of sets of lowercase words
+        return [set(re.findall(r'\w+', t.lower())) for t in texts]
+
+# ---------------------------------------------------------
+# MODULE: Retrieval Module
+# ---------------------------------------------------------
+class RetrievalModule:
+    def __init__(self, chunks, embedding_module):
+        self.chunks = chunks
+        self.embedding_module = embedding_module
+        
+        start = time.time()
+        self.chunk_texts = [c['text'] for c in self.chunks]
+        self.chunk_embeddings = self.embedding_module.encode(self.chunk_texts)
+        self.index_latency_ms = (time.time() - start) * 1000
+        
+    def search(self, query_obj, top_k=3, threshold=0.1):

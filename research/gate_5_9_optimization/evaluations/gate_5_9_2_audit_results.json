@@ -1,0 +1,4939 @@
+{
+  "reproducibility_hashes": {
+    "frozen_benchmark_hash": "7debd4b7d804938d4c7ecf8f414f51d936830b5a6d9d62ebfcaedde1874c8a81",
+    "frozen_config_hash": "0069f0dd2d948989173ae9531b4d8a57b37918c6b50fac5dcfaeb807e233a129",
+    "hybrid_600_chunks_hash": "71dca400059f624042fd5a1cc8be94010ce9553e3bde1428e73ad236ed79da3f",
+    "frozen_gate_5_9_eval_hash": "aa0af09f153cecf2a0775aec2e6eeed7689621eb32047c7db9d989ba326b678c",
+    "gold_labels_hash": "df881fa676d38d46c78e6ade1e9e69c0b2cf676b33c6b655981f673f123844ae",
+    "top5_rankings_hash": "af8ad8074a1df61aa53f095bbc996a27fa9a314f907dad927276994475382193"
+  },
+  "overall_metrics": {
+    "n": 80,
+    "source_level": {
+      "dense_r1_count": "57/80",
+      "dense_r1_pct": 71.25,
+      "r5_r1_count": "63/80",
+      "r5_r1_pct": 78.75
+    },
+    "chunk_level_dense": {
+      "r1_count": "23/80",
+      "r1_pct": 28.75,
+      "r3_count": "29/80",
+      "r3_pct": 36.25,
+      "r5_count": "40/80",
+      "r5_pct": 50.0,
+      "mrr": 0.3512
+    },
+    "chunk_level_r5": {
+      "r1_count": "27/80",
+      "r1_pct": 33.75,
+      "r3_count": "37/80",
+      "r3_pct": 46.25,
+      "r5_count": "40/80",
+      "r5_pct": 50.0,
+      "mrr": 0.3942
+    }
+  },
+  "dev_split_metrics": {
+    "n": 40,
+    "source_level": {
+      "dense_r1_count": "26/40",
+      "dense_r1_pct": 65.0,
+      "r5_r1_count": "29/40",
+      "r5_r1_pct": 72.5
+    },
+    "chunk_level_dense": {
+      "r1_count": "13/40",
+      "r1_pct": 32.5,
+      "r3_count": "19/40",
+      "r3_pct": 47.5,
+      "r5_count": "26/40",
+      "r5_pct": 65.0,
+      "mrr": 0.4287
+    },
+    "chunk_level_r5": {
+      "r1_count": "18/40",
+      "r1_pct": 45.0,
+      "r3_count": "25/40",
+      "r3_pct": 62.5,
+      "r5_count": "26/40",
+      "r5_pct": 65.0,
+      "mrr": 0.5217
+    }
+  },
+  "locked_holdout_metrics": {
+    "n": 40,
+    "source_level": {
+      "dense_r1_count": "31/40",
+      "dense_r1_pct": 77.5,
+      "r5_r1_count": "34/40",
+      "r5_r1_pct": 85.0
+    },
+    "chunk_level_dense": {
+      "r1_count": "10/40",
+      "r1_pct": 25.0,
+      "r3_count": "10/40",
+      "r3_pct": 25.0,
+      "r5_count": "14/40",
+      "r5_pct": 35.0,
+      "mrr": 0.2737
+    },
+    "chunk_level_r5": {
+      "r1_count": "9/40",
+      "r1_pct": 22.5,
+      "r3_count": "12/40",
+      "r3_pct": 30.0,
+      "r5_count": "14/40",
+      "r5_pct": 35.0,
+      "mrr": 0.2667
+    }
+  },
+  "dev_language_breakdown": {
+    "English": {
+      "n": 12,
+      "source_level": {
+        "dense_r1_count": "12/12",
+        "dense_r1_pct": 100.0,
+        "r5_r1_count": "12/12",
+        "r5_r1_pct": 100.0
+      },
+      "chunk_level_dense": {
+        "r1_count": "7/12",
+        "r1_pct": 58.33,
+        "r3_count": "9/12",
+        "r3_pct": 75.0,
+        "r5_count": "11/12",
+        "r5_pct": 91.67,
+        "mrr": 0.6903
+      },
+      "chunk_level_r5": {
+        "r1_count": "8/12",
+        "r1_pct": 66.67,
+        "r3_count": "10/12",
+        "r3_pct": 83.33,
+        "r5_count": "11/12",
+        "r5_pct": 91.67,
+        "mrr": 0.7528
+      }
+    },
+    "Native_Bangla": {
+      "n": 10,
+      "source_level": {
+        "dense_r1_count": "5/10",
+        "dense_r1_pct": 50.0,
+        "r5_r1_count": "8/10",
+        "r5_r1_pct": 80.0
+      },
+      "chunk_level_dense": {
+        "r1_count": "2/10",
+        "r1_pct": 20.0,
+        "r3_count": "5/10",
+        "r3_pct": 50.0,
+        "r5_count": "6/10",
+        "r5_pct": 60.0,
+        "mrr": 0.3583
+      },
+      "chunk_level_r5": {
+        "r1_count": "4/10",
+        "r1_pct": 40.0,
+        "r3_count": "6/10",
+        "r3_pct": 60.0,
+        "r5_count": "6/10",
+        "r5_pct": 60.0,
+        "mrr": 0.4833
+      }
+    },
+    "Standard_Banglish": {
+      "n": 10,
+      "source_level": {
+        "dense_r1_count": "4/10",
+        "dense_r1_pct": 40.0,
+        "r5_r1_count": "5/10",
+        "r5_r1_pct": 50.0
+      },
+      "chunk_level_dense": {
+        "r1_count": "1/10",
+        "r1_pct": 10.0,
+        "r3_count": "2/10",
+        "r3_pct": 20.0,
+        "r5_count": "5/10",
+        "r5_pct": 50.0,
+        "mrr": 0.2033
+      },
+      "chunk_level_r5": {
+        "r1_count": "3/10",
+        "r1_pct": 30.0,
+        "r3_count": "5/10",
+        "r3_pct": 50.0,
+        "r5_count": "5/10",
+        "r5_pct": 50.0,
+        "mrr": 0.3667
+      }
+    },
+    "Abbreviated_Banglish": {
+      "n": 8,
+      "source_level": {
+        "dense_r1_count": "5/8",
+        "dense_r1_pct": 62.5,
+        "r5_r1_count": "4/8",
+        "r5_r1_pct": 50.0
+      },
+      "chunk_level_dense": {
+        "r1_count": "3/8",
+        "r1_pct": 37.5,
+        "r3_count": "3/8",
+        "r3_pct": 37.5,
+        "r5_count": "4/8",
+        "r5_pct": 50.0,
+        "mrr": 0.4062
+      },
+      "chunk_level_r5": {
+        "r1_count": "3/8",
+        "r1_pct": 37.5,
+        "r3_count": "4/8",
+        "r3_pct": 50.0,
+        "r5_count": "4/8",
+        "r5_pct": 50.0,
+        "mrr": 0.4167
+      }
+    }
+  },
+  "locked_holdout_language_breakdown": {
+    "English": {
+      "n": 12,
+      "source_level": {
+        "dense_r1_count": "11/12",
+        "dense_r1_pct": 91.67,
+        "r5_r1_count": "12/12",
+        "r5_r1_pct": 100.0
+      },
+      "chunk_level_dense": {
+        "r1_count": "5/12",
+        "r1_pct": 41.67,
+        "r3_count": "5/12",
+        "r3_pct": 41.67,
+        "r5_count": "7/12",
+        "r5_pct": 58.33,
+        "mrr": 0.4583
+      },
+      "chunk_level_r5": {
+        "r1_count": "4/12",
+        "r1_pct": 33.33,
+        "r3_count": "6/12",
+        "r3_pct": 50.0,
+        "r5_count": "7/12",
+        "r5_pct": 58.33,
+        "mrr": 0.4097
+      }
+    },
+    "Native_Bangla": {
+      "n": 11,
+      "source_level": {
+        "dense_r1_count": "10/11",
+        "dense_r1_pct": 90.91,
+        "r5_r1_count": "10/11",
+        "r5_r1_pct": 90.91
+      },
+      "chunk_level_dense": {
+        "r1_count": "4/11",
+        "r1_pct": 36.36,
+        "r3_count": "4/11",
+        "r3_pct": 36.36,
+        "r5_count": "5/11",
+        "r5_pct": 45.45,
+        "mrr": 0.3818
+      },
+      "chunk_level_r5": {
+        "r1_count": "4/11",
+        "r1_pct": 36.36,
+        "r3_count": "4/11",
+        "r3_pct": 36.36,
+        "r5_count": "5/11",
+        "r5_pct": 45.45,
+        "mrr": 0.3864
+      }
+    },
+    "Standard_Banglish": {
+      "n": 9,
+      "source_level": {
+        "dense_r1_count": "4/9",
+        "dense_r1_pct": 44.44,
+        "r5_r1_count": "6/9",
+        "r5_r1_pct": 66.67
+      },
+      "chunk_level_dense": {
+        "r1_count": "0/9",
+        "r1_pct": 0.0,
+        "r3_count": "0/9",
+        "r3_pct": 0.0,
+        "r5_count": "1/9",
+        "r5_pct": 11.11,
+        "mrr": 0.0278
+      },
+      "chunk_level_r5": {
+        "r1_count": "0/9",
+        "r1_pct": 0.0,
+        "r3_count": "1/9",
+        "r3_pct": 11.11,
+        "r5_count": "1/9",
+        "r5_pct": 11.11,
+        "mrr": 0.0556
+      }
+    },
+    "Abbreviated_Banglish": {
+      "n": 8,
+      "source_level": {
+        "dense_r1_count": "6/8",
+        "dense_r1_pct": 75.0,
+        "r5_r1_count": "6/8",
+        "r5_r1_pct": 75.0
+      },
+      "chunk_level_dense": {
+        "r1_count": "1/8",
+        "r1_pct": 12.5,
+        "r3_count": "1/8",
+        "r3_pct": 12.5,
+        "r5_count": "1/8",
+        "r5_pct": 12.5,
+        "mrr": 0.125
+      },
+      "chunk_level_r5": {
+        "r1_count": "1/8",
+        "r1_pct": 12.5,
+        "r3_count": "1/8",
+        "r3_pct": 12.5,
+        "r5_count": "1/8",
+        "r5_pct": 12.5,
+        "mrr": 0.125
+      }
+    }
+  },
+  "evidence_availability": {
+    "overall": {
+      "TOP1_CORRECT": 27,
+      "TOP1_WRONG_BUT_TOP3_CONTAINS_GOLD": 10,
+      "TOP3_WRONG_BUT_TOP5_CONTAINS_GOLD": 3,
+      "GOLD_ABSENT_FROM_TOP5": 40
+    },
+    "dev": {
+      "TOP1_CORRECT": 18,
+      "TOP1_WRONG_BUT_TOP3_CONTAINS_GOLD": 7,
+      "TOP3_WRONG_BUT_TOP5_CONTAINS_GOLD": 1,
+      "GOLD_ABSENT_FROM_TOP5": 14
+    },
+    "holdout": {
+      "TOP1_CORRECT": 9,
+      "TOP1_WRONG_BUT_TOP3_CONTAINS_GOLD": 3,
+      "TOP3_WRONG_BUT_TOP5_CONTAINS_GOLD": 2,
+      "GOLD_ABSENT_FROM_TOP5": 26
+    }
+  },
+  "reranker_chunk_effects": {
+    "dense_correct__rerank_correct": 22,
+    "dense_wrong__rerank_correct": 5,
+    "dense_correct__rerank_wrong": 1,
+    "dense_wrong__rerank_wrong": 52,
+    "source_improvement_but_chunk_regression": 5
+  },
+  "disagreement_cases_count": 36,
+  "disagreements": [
+    {
+      "query_id": "DEV-AST-03",
+      "query_text": "asthma hole ki ki shomossha hoy bujhte parbo kivabe?",
+      "target_topic": "Asthma symptoms",
+      "benchmark_split": "DEV",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-004",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-004-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-004-HYB-000",
+      "retrieved_top1_chunk_text": "Asthma\n\nAsthma is a common condition that affects your breathing. It cannot currently be cured, but if it's well treated you should not have problems ",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-013"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "DEV-AST-04",
+      "query_text": "buk chap lage ar shash nite koshto asthma naki",
+      "target_topic": "Asthma symptoms",
+      "benchmark_split": "DEV",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-004",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-004-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-004-HYB-000",
+      "retrieved_top1_chunk_text": "Asthma\n\nAsthma is a common condition that affects your breathing. It cannot currently be cured, but if it's well treated you should not have problems ",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "failure_classification": "GOLD_IN_TOP5"
+    },
+    {
+      "query_id": "DEV-AST-10",
+      "query_text": "kon kon karone asthma bere jete pare?",
+      "target_topic": "Asthma triggers",
+      "benchmark_split": "DEV",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-004",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-011"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-004-HYB-000",
+      "retrieved_top1_chunk_text": "Asthma\n\nAsthma is a common condition that affects your breathing. It cannot currently be cured, but if it's well treated you should not have problems ",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-007",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-010"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-007"
+      ],
+      "failure_classification": "GOLD_IN_TOP5"
+    },
+    {
+      "query_id": "DEV-BUR-01",
+      "query_text": "How should you treat a burn immediately with water?",
+      "target_topic": "Cool water for burns",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-000"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-005-HYB-001",
+      "retrieved_top1_chunk_text": "Find out more about acid and chemical burns.\n\nWhat to do if you have a burn or scald\n\nYou should treat all burns and scalds straight away.\n\nHold the b",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-000"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-000"
+      ],
+      "failure_classification": "GOLD_IN_TOP5"
+    },
+    {
+      "query_id": "DEV-BUR-02",
+      "query_text": "হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানির নিচে রাখতে হবে?",
+      "target_topic": "Cool water for burns",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-000"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-005-HYB-001",
+      "retrieved_top1_chunk_text": "Find out more about acid and chemical burns.\n\nWhat to do if you have a burn or scald\n\nYou should treat all burns and scalds straight away.\n\nHold the b",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "DEV-BUR-05",
+      "query_text": "Should you put butter or oil on a burn?",
+      "target_topic": "Do not put butter/oil on burn",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-005-HYB-004",
+      "retrieved_top1_chunk_text": "Do\n\ntake painkillers such as paracetamol or ibuprofen to help with pain\n\nuse an emollient ointment on the affected area if it becomes itchy and dry as",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-005-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-000"
+      ],
+      "failure_classification": "GOLD_IN_TOP5"
+    },
+    {
+      "query_id": "DEV-BUR-06",
+      "query_text": "পোড়া জায়গায় কি মাখন বা তেল লাগানো যাবে?",
+      "target_topic": "Do not put butter/oil on burn",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-005-HYB-004",
+      "retrieved_top1_chunk_text": "Do\n\ntake painkillers such as paracetamol or ibuprofen to help with pain\n\nuse an emollient ointment on the affected area if it becomes itchy and dry as",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-000"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "failure_classification": "GOLD_IN_TOP5"
+    },
+    {
+      "query_id": "DEV-CUT-02",
+      "query_text": "কেটে গেলে রক্ত বন্ধ করার সঠিক নিয়ম কী?",
+      "target_topic": "Clean cut and stop bleeding",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-006",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-006-HYB-003",
+      "retrieved_top1_chunk_text": "How to clean and dress a cut or graze\n\nIf the bleeding has stopped, you can clean a small wound and then put a plaster or dressing over it.\n\nWash your",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "DEV-CUT-05",
+      "query_text": "Signs that a cut or wound is infected",
+      "target_topic": "Infected cut signs",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-006",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-006-HYB-006",
+      "retrieved_top1_chunk_text": "Treatments for cuts and grazes\n\nHow a cut or graze is treated will depend on how bad it is and if there's a risk of it becoming infected.\n\nThe cut wil",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-003"
+      ],
+      "failure_classification": "GOLD_IN_TOP5"
+    },
+    {
+      "query_id": "DEV-CUT-08",
+      "query_text": "When to go to A&E for a cut with non-stop bleeding?",
+      "target_topic": "Cut emergency A&E",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-006",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-006-HYB-002"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-006-HYB-005",
+      "retrieved_top1_chunk_text": "a cut is larger than around 5cm (2 inches)\n\nyou've cut yourself and also feel generally unwell or have a high temperature\n\nYou can call 111 or get hel",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-006-HYB-000"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "DEV-DEH-06",
+      "query_text": "বমি ভাব হলে পানিশূন্যতা দূর করতে কীভাবে পানি খাব?",
+      "target_topic": "Treat dehydration small sips",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-007",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-007-HYB-006",
+      "retrieved_top1_chunk_text": "How to reduce the risk of dehydration\n\nDrinking fluids regularly can reduce the risk of dehydration. Water or diluted sugar-free squash are good choic",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-007-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-001"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-03",
+      "query_text": "diarrhoea ar bomi hole bashay ki korbo?",
+      "target_topic": "Diarrhoea home care fluids",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-000"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-008-HYB-003",
+      "retrieved_top1_chunk_text": "do not prepare food for other people, if possible\n\ndo not share towels, flannels, cutlery or utensils\n\ndo not use a swimming pool until at least 48 ho",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-004-HYB-015"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-04",
+      "query_text": "patla paykhana ar bomi hosse onk fluid khabo?",
+      "target_topic": "Diarrhoea home care fluids",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-000"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-008-HYB-005",
+      "retrieved_top1_chunk_text": "Immediate action required: Call 999 or go to A&E if you or your child:\n\nvomit blood or have vomit that looks like ground coffee\n\nhave green vomit (adu",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-001"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-001"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-05",
+      "query_text": "How long should you stay off work or school after diarrhoea stops?",
+      "target_topic": "Stay home 48 hours",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-008-HYB-002",
+      "retrieved_top1_chunk_text": "do not give aspirin to children under 16\n\nHow long diarrhoea and vomiting last\n\nIn adults and children:\n\ndiarrhoea usually stops within 5 to 7 days\n\nv",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-000"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-000"
+      ],
+      "failure_classification": "GOLD_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-06",
+      "query_text": "ডায়রিয়া ভালো হওয়ার পর কত ঘণ্টা স্কুলে বা কাজে যাওয়া বন্ধ রাখা উচিত?",
+      "target_topic": "Stay home 48 hours",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-008-HYB-002",
+      "retrieved_top1_chunk_text": "do not give aspirin to children under 16\n\nHow long diarrhoea and vomiting last\n\nIn adults and children:\n\ndiarrhoea usually stops within 5 to 7 days\n\nv",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-07",
+      "query_text": "diarrhoea thamar por koto hour bashay thakte hoy?",
+      "target_topic": "Stay home 48 hours",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-008-HYB-003",
+      "retrieved_top1_chunk_text": "do not prepare food for other people, if possible\n\ndo not share towels, flannels, cutlery or utensils\n\ndo not use a swimming pool until at least 48 ho",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-08",
+      "query_text": "When to call 999 or go to A&E for diarrhoea with bloody vomit?",
+      "target_topic": "Diarrhoea bloody vomit A&E 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-003"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-008-HYB-005",
+      "retrieved_top1_chunk_text": "Immediate action required: Call 999 or go to A&E if you or your child:\n\nvomit blood or have vomit that looks like ground coffee\n\nhave green vomit (adu",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-09",
+      "query_text": "বমির সাথে রক্ত আসলে কি দ্রুত হাসপাতালে যাওয়া দরকার?",
+      "target_topic": "Diarrhoea bloody vomit A&E 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-003"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-008-HYB-005",
+      "retrieved_top1_chunk_text": "Immediate action required: Call 999 or go to A&E if you or your child:\n\nvomit blood or have vomit that looks like ground coffee\n\nhave green vomit (adu",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-011-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-10",
+      "query_text": "bomir shathe rokto ase green bomi emergency hospital jabo?",
+      "target_topic": "Diarrhoea bloody vomit A&E 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-003"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-008-HYB-005",
+      "retrieved_top1_chunk_text": "Immediate action required: Call 999 or go to A&E if you or your child:\n\nvomit blood or have vomit that looks like ground coffee\n\nhave green vomit (adu",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-05",
+      "query_text": "When is a sudden severe headache an emergency requiring 999?",
+      "target_topic": "Severe sudden headache 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-009-HYB-003",
+      "retrieved_top1_chunk_text": "Immediate action required: Call 999 or go to A&E if:\n\nYou or a child has a headache and:\n\nhas had a seizure (fit)\n\nhas numbness or weakness in the bod",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "failure_classification": "GOLD_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-06",
+      "query_text": "হঠাৎ তীব্র মাথাব্যথা এবং ঘাড় শক্ত হয়ে গেলে কি ৯৯৯ কল দিতে হবে?",
+      "target_topic": "Severe sudden headache 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-009-HYB-003",
+      "retrieved_top1_chunk_text": "Immediate action required: Call 999 or go to A&E if:\n\nYou or a child has a headache and:\n\nhas had a seizure (fit)\n\nhas numbness or weakness in the bod",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-08",
+      "query_text": "blurry vision ar mathay prachondo betha emergency A&E jabo",
+      "target_topic": "Severe sudden headache 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-009-HYB-003",
+      "retrieved_top1_chunk_text": "Immediate action required: Call 999 or go to A&E if:\n\nYou or a child has a headache and:\n\nhas had a seizure (fit)\n\nhas numbness or weakness in the bod",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-03",
+      "query_text": "bachader koto degree temp hole jor dhora hoy?",
+      "target_topic": "Fever threshold 38C",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-010-HYB-004",
+      "retrieved_top1_chunk_text": "Urgent advice: Call 111 if your child:\n\nis under 3 months old and has a temperature of 38C or higher, or you think they have a high temperature\n\nis 3 ",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-05",
+      "query_text": "How to help bring down a child's fever safely at home?",
+      "target_topic": "Fever home care children",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-010-HYB-002",
+      "retrieved_top1_chunk_text": "Do\n\ngive them plenty of fluids – if your baby is breastfed, continue to breastfeed as normal\n\nlook out for signs of dehydration\n\ngive them food if the",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-007"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-007"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-06",
+      "query_text": "বাচ্চার জ্বর কমাতে বাড়িতে প্রচুর তরল ও প্যারাসিটামল কীভাবে দেব?",
+      "target_topic": "Fever home care children",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-010-HYB-002",
+      "retrieved_top1_chunk_text": "Do\n\ngive them plenty of fluids – if your baby is breastfed, continue to breastfeed as normal\n\nlook out for signs of dehydration\n\ngive them food if the",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-07",
+      "query_text": "bachar jor komate fluid ar paracetamol dawa jabe?",
+      "target_topic": "Fever home care children",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-010-HYB-003",
+      "retrieved_top1_chunk_text": "Don’t\n\ndo not undress your child or sponge them down to cool them – a high temperature is a natural and healthy response to infection\n\ndo not cover th",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-08",
+      "query_text": "When to call 999 for a child with high fever and rash or breathing trouble?",
+      "target_topic": "Child fever emergency 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-003"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-010-HYB-004",
+      "retrieved_top1_chunk_text": "Urgent advice: Call 111 if your child:\n\nis under 3 months old and has a temperature of 38C or higher, or you think they have a high temperature\n\nis 3 ",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-01",
+      "query_text": "What are the main symptoms of a severe anaphylaxis allergic reaction?",
+      "target_topic": "Anaphylaxis symptoms",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-011-HYB-000",
+      "retrieved_top1_chunk_text": "Anaphylaxis\n\nAnaphylaxis is a life-threatening allergic reaction that happens very quickly. It can be caused by food, medicine or insect stings. Call ",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-02",
+      "query_text": "অ্যানাফাইলাক্সিস বা তীব্র অ্যালার্জিক রিঅ্যাকশনের লক্ষণগুলো কী?",
+      "target_topic": "Anaphylaxis symptoms",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-011-HYB-000",
+      "retrieved_top1_chunk_text": "Anaphylaxis\n\nAnaphylaxis is a life-threatening allergic reaction that happens very quickly. It can be caused by food, medicine or insect stings. Call ",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-03",
+      "query_text": "anaphylaxis allergic reaction hole ki ki lokkhon dekha jay?",
+      "target_topic": "Anaphylaxis symptoms",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-011-HYB-000",
+      "retrieved_top1_chunk_text": "Anaphylaxis\n\nAnaphylaxis is a life-threatening allergic reaction that happens very quickly. It can be caused by food, medicine or insect stings. Call ",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-04",
+      "query_text": "muk fule geche shash nite parsenana allergy r jonno anaphylaxis naki",
+      "target_topic": "Anaphylaxis symptoms",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-011-HYB-009",
+      "retrieved_top1_chunk_text": "Allergies that can sometimes cause anaphylaxis include:\n\nfoods such as nuts, cows' milk, eggs, fish or sesame seeds\n\nmedicines such as antibiotics or ",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-05",
+      "query_text": "How to use an adrenaline auto-injector (EpiPen) in an emergency?",
+      "target_topic": "Adrenaline auto-injector",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-003"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-011-HYB-004",
+      "retrieved_top1_chunk_text": "Call 999 for an ambulance and say that you think you're having an anaphylactic reaction.\n\nLie down – you can raise your legs, and if you're struggling",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "failure_classification": "GOLD_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-06",
+      "query_text": "অ্যানাফাইলাক্সিস হলে অ্যাড্রেনালিন অটো-ইনজেক্টর কীভাবে ব্যবহার করতে হয়?",
+      "target_topic": "Adrenaline auto-injector",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-003"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-011-HYB-004",
+      "retrieved_top1_chunk_text": "Call 999 for an ambulance and say that you think you're having an anaphylactic reaction.\n\nLie down – you can raise your legs, and if you're struggling",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "failure_classification": "GOLD_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-07",
+      "query_text": "adrenaline auto-injector kivabe use korbo emergency te?",
+      "target_topic": "Adrenaline auto-injector",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-003"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-011-HYB-006",
+      "retrieved_top1_chunk_text": "oxygen\n\nfluids given by a drip in your vein\n\nYou'll usually stay in hospital for around 2 to 12 hours, but you may need to stay longer.\n\nBefore you le",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-008"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-007"
+      ],
+      "failure_classification": "GOLD_IN_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-08",
+      "query_text": "Should you call 999 immediately if someone has an anaphylactic shock?",
+      "target_topic": "Anaphylaxis 999 emergency",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-002"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-011-HYB-000",
+      "retrieved_top1_chunk_text": "Anaphylaxis\n\nAnaphylaxis is a life-threatening allergic reaction that happens very quickly. It can be caused by food, medicine or insect stings. Call ",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-003"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-10",
+      "query_text": "severe allergic reaction gola fule gese 999 daki",
+      "target_topic": "Anaphylaxis 999 emergency",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-002"
+      ],
+      "retrieved_top1_chunk_id": "DOC-NHS-011-HYB-000",
+      "retrieved_top1_chunk_text": "Anaphylaxis\n\nAnaphylaxis is a life-threatening allergic reaction that happens very quickly. It can be caused by food, medicine or insect stings. Call ",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-009-HYB-003"
+      ],
+      "failure_classification": "GOLD_OUTSIDE_TOP5"
+    }
+  ],
+  "query_evaluations": [
+    {
+      "query_id": "DEV-AST-01",
+      "query_text": "What are the common symptoms of asthma?",
+      "target_topic": "Asthma symptoms",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-004",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-004-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks for common asthma symptoms; Chunk 001 defines wheezing, coughing, shortness of breath, and chest tightness.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-004-HYB-013"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-013"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-AST-02",
+      "query_text": "হাঁপানির প্রধান লক্ষণগুলো কী কী?",
+      "target_topic": "Asthma symptoms",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-004",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-004-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla for asthma symptoms; Chunk 001 defines wheezing, coughing, shortness of breath, and chest tightness.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-011-HYB-000"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-007-HYB-000"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 3,
+      "dense_chunk_rr": 0.3333333333333333,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-AST-03",
+      "query_text": "asthma hole ki ki shomossha hoy bujhte parbo kivabe?",
+      "target_topic": "Asthma symptoms",
+      "benchmark_split": "DEV",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-004",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-004-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Standard Banglish for asthma symptoms; Chunk 001 defines breathing difficulties, cough, chest tightness.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-013"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-AST-04",
+      "query_text": "buk chap lage ar shash nite koshto asthma naki",
+      "target_topic": "Asthma symptoms",
+      "benchmark_split": "DEV",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-004",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-004-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Abbreviated Banglish about tight chest and breathlessness; Chunk 001 describes chest tightness and shortness of breath.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 4,
+      "dense_chunk_rr": 0.25,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 3,
+      "r5_chunk_rr": 0.3333333333333333,
+      "evidence_availability_category": "TOP1_WRONG_BUT_TOP3_CONTAINS_GOLD"
+    },
+    {
+      "query_id": "DEV-AST-05",
+      "query_text": "How to treat an asthma attack at home?",
+      "target_topic": "Treat asthma attack",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-004",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks how to treat an asthma attack at home; Chunk 002 advises sitting up straight and calm, Chunk 003 details taking reliever inhaler.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-007",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-005",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-008"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-008",
+        "DOC-NHS-004-HYB-007",
+        "DOC-NHS-004-HYB-005"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 4,
+      "dense_chunk_rr": 0.25,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-AST-06",
+      "query_text": "হাঁপানির টান উঠলে নীল ইনহেলার কীভাবে ব্যবহার করব?",
+      "target_topic": "Inhaler use in asthma attack",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-004",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-004-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla how to use blue reliever inhaler during an attack; Chunk 003 specifies 1 puff every 30-60s up to 10 puffs.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-009",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-007"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-004-HYB-009",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-007"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 2,
+      "dense_chunk_rr": 0.5,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-AST-07",
+      "query_text": "asthma attack uthle koto puff blue inhaler nite hoy?",
+      "target_topic": "Inhaler use in asthma attack",
+      "benchmark_split": "DEV",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-004",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-004-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish puff count for blue inhaler; Chunk 003 specifies 1 puff every 30 to 60 seconds up to maximum 10 puffs.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-AST-08",
+      "query_text": "shash bondho hoye jacche inhaler kaj kore na 999 call dibo?",
+      "target_topic": "Asthma emergency 999",
+      "benchmark_split": "DEV",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-004",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-004-HYB-004"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if 999 should be called when inhaler fails; Chunk 004 is the emergency callout for attack not relieved by maximum inhaler dose.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-AST-09",
+      "query_text": "What are the common triggers for asthma?",
+      "target_topic": "Asthma triggers",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-004",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-011"
+      ],
+      "gold_mapping_rationale": "Query asks common triggers for asthma; Chunks 001 and 011 specify cold air, exercise, air pollution, pollen, dust, mould, and animals.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-014"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-014",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-000"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-AST-10",
+      "query_text": "kon kon karone asthma bere jete pare?",
+      "target_topic": "Asthma triggers",
+      "benchmark_split": "DEV",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-004",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-011"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish why asthma worsens (triggers); Chunks 001 and 011 describe allergens and environmental triggers.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-007",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-010"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-007"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 4,
+      "dense_chunk_rr": 0.25,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 3,
+      "r5_chunk_rr": 0.3333333333333333,
+      "evidence_availability_category": "TOP1_WRONG_BUT_TOP3_CONTAINS_GOLD"
+    },
+    {
+      "query_id": "DEV-BUR-01",
+      "query_text": "How should you treat a burn immediately with water?",
+      "target_topic": "Cool water for burns",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks how to treat a burn with water; Chunk 000 specifies cooling under cool or lukewarm running water for 20 minutes.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-000"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-000"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 5,
+      "dense_chunk_rr": 0.2,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 5,
+      "r5_chunk_rr": 0.2,
+      "evidence_availability_category": "TOP3_WRONG_BUT_TOP5_CONTAINS_GOLD"
+    },
+    {
+      "query_id": "DEV-BUR-02",
+      "query_text": "হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানির নিচে রাখতে হবে?",
+      "target_topic": "Cool water for burns",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla how many minutes to cool a burn with water; Chunk 000 specifies 20 minutes under running water.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-BUR-03",
+      "query_text": "pure gele thanda pani koto minute dhalbo?",
+      "target_topic": "Cool water for burns",
+      "benchmark_split": "DEV",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish how long to pour cool water on a burn; Chunk 000 specifies 20 minutes.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-BUR-04",
+      "query_text": "hat pure geche ekhon ki korbo pani dhalbo?",
+      "target_topic": "Cool water for burns",
+      "benchmark_split": "DEV",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish first aid for hand burn; Chunk 000 details running cool water for 20 minutes and removing jewellery/clothing.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-009-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-BUR-05",
+      "query_text": "Should you put butter or oil on a burn?",
+      "target_topic": "Do not put butter/oil on burn",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks whether to put butter or oil on a burn; Chunk 001 explicitly states 'Don't use ice, iced water, creams or greasy substances like butter'.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-005-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-000"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 3,
+      "dense_chunk_rr": 0.3333333333333333,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 2,
+      "r5_chunk_rr": 0.5,
+      "evidence_availability_category": "TOP1_WRONG_BUT_TOP3_CONTAINS_GOLD"
+    },
+    {
+      "query_id": "DEV-BUR-06",
+      "query_text": "পোড়া জায়গায় কি মাখন বা তেল লাগানো যাবে?",
+      "target_topic": "Do not put butter/oil on burn",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla if butter or oil should be applied; Chunk 001 explicitly warns against greasy substances and butter.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-000"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 2,
+      "dense_chunk_rr": 0.5,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 2,
+      "r5_chunk_rr": 0.5,
+      "evidence_availability_category": "TOP1_WRONG_BUT_TOP3_CONTAINS_GOLD"
+    },
+    {
+      "query_id": "DEV-BUR-07",
+      "query_text": "pora jaygay butter ba tel lagano thik naki?",
+      "target_topic": "Do not put butter/oil on burn",
+      "benchmark_split": "DEV",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if butter/oil is appropriate; Chunk 001 warns against applying butter, oils, or ice.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-004-HYB-015"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-BUR-08",
+      "query_text": "When is a burn serious enough to call 999 or go to A&E?",
+      "target_topic": "Burns emergency 999",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks when a burn requires calling 999 or going to A&E; Chunk 002 is the 999/A&E callout for large, deep, chemical, or electrical burns.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-004-HYB-004"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-BUR-09",
+      "query_text": "pora khub boro ar deep hole kokhon hospital jabo?",
+      "target_topic": "Burns emergency 999",
+      "benchmark_split": "DEV",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish when a large/deep burn needs emergency hospital care; Chunk 002 specifies A&E/999 for large/deep burns.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 4,
+      "dense_chunk_rr": 0.25,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 3,
+      "r5_chunk_rr": 0.3333333333333333,
+      "evidence_availability_category": "TOP1_WRONG_BUT_TOP3_CONTAINS_GOLD"
+    },
+    {
+      "query_id": "DEV-BUR-10",
+      "query_text": "chemical ba electricity te porle ki 999 call dibo",
+      "target_topic": "Burns emergency 999",
+      "benchmark_split": "DEV",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-005",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-005-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if chemical/electrical burns require 999; Chunk 002 mandates 999/A&E for chemical and electrical burns.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-CUT-01",
+      "query_text": "How to stop bleeding and clean a cut at home?",
+      "target_topic": "Clean cut and stop bleeding",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-006",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-006-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks how to stop bleeding and clean a cut at home; Chunk 000/001 covers direct pressure and Chunk 003 covers washing under tap water.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-006"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-006"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-CUT-02",
+      "query_text": "কেটে গেলে রক্ত বন্ধ করার সঠিক নিয়ম কী?",
+      "target_topic": "Clean cut and stop bleeding",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-006",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla how to stop bleeding from a cut; Chunks 000 and 001 instruct applying direct pressure with a clean cloth.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-CUT-03",
+      "query_text": "kete gele rokto bondho korbo kivabe ar clean korbo?",
+      "target_topic": "Clean cut and stop bleeding",
+      "benchmark_split": "DEV",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-006",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-006-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish how to stop bleeding and clean cut; Chunks 000/001 cover pressure and Chunk 003 covers cleaning.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 3,
+      "dense_chunk_rr": 0.3333333333333333,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-CUT-04",
+      "query_text": "angul kete rokt porche chap diye dhorbo kina",
+      "target_topic": "Clean cut and stop bleeding",
+      "benchmark_split": "DEV",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-006",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if cut finger bleeding should be held with direct pressure; Chunks 000 and 001 instruct applying direct pressure.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-CUT-05",
+      "query_text": "Signs that a cut or wound is infected",
+      "target_topic": "Infected cut signs",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-006",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "gold_mapping_rationale": "Query asks signs of infected cut; Chunks 004 and 005 list swelling, pus, redness, heat, and fever requiring urgent consultation.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-003"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 2,
+      "dense_chunk_rr": 0.5,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 3,
+      "r5_chunk_rr": 0.3333333333333333,
+      "evidence_availability_category": "TOP1_WRONG_BUT_TOP3_CONTAINS_GOLD"
+    },
+    {
+      "query_id": "DEV-CUT-06",
+      "query_text": "ক্ষতস্থানে ইনফেকশন হয়েছে কীভাবে বুঝব?",
+      "target_topic": "Infected cut signs",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-006",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla signs of wound infection; Chunks 004 and 005 specify pus, spreading redness, and fever.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-CUT-07",
+      "query_text": "kete jawa jayga lal hoye puz porle ki infection?",
+      "target_topic": "Infected cut signs",
+      "benchmark_split": "DEV",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-006",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if redness and pus mean infection; Chunks 004 and 005 confirm pus and redness indicate wound infection.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-CUT-08",
+      "query_text": "When to go to A&E for a cut with non-stop bleeding?",
+      "target_topic": "Cut emergency A&E",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-006",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-006-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks when continuous bleeding requires A&E; Chunk 002 mandates A&E/999 if bleeding does not stop after 10-20 minutes of pressure.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-006-HYB-000"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-CUT-09",
+      "query_text": "১০ মিনিট চেপে রাখার পরও রক্ত বন্ধ না হলে কী করব?",
+      "target_topic": "Cut emergency A&E",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-006",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-006-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla what to do if bleeding does not stop after 10 minutes of pressure; Chunk 002 mandates going to A&E or calling 999.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-CUT-10",
+      "query_text": "rokto konovabei thamtasena 10 min hoise a&e jabo?",
+      "target_topic": "Cut emergency A&E",
+      "benchmark_split": "DEV",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-006",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-006-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if bleeding continuing after 10 min requires A&E; Chunk 002 specifies going to A&E.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-DEH-01",
+      "query_text": "What are the main symptoms of dehydration in adults?",
+      "target_topic": "Dehydration symptoms",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-007",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-007-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks symptoms of dehydration in adults; Chunk 000 lists thirst, dark yellow strong-smelling pee, peeing less, dry mouth, dizziness.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-006"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-007-HYB-001"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-DEH-02",
+      "query_text": "শরীরে পানিশূন্যতা বা ডিহাইড্রেশনের লক্ষণ কী কী?",
+      "target_topic": "Dehydration symptoms",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-007",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-007-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla symptoms of dehydration; Chunk 000 lists thirst, dark urine, dry mouth, and fatigue.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-006"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-DEH-03",
+      "query_text": "dehydration hoile ki rokom shorir lage?",
+      "target_topic": "Dehydration symptoms",
+      "benchmark_split": "DEV",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-007",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-007-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish how dehydration feels; Chunk 000 describes dry mouth, dark urine, dizziness, and tiredness.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-000"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-006"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 5,
+      "dense_chunk_rr": 0.2,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-DEH-04",
+      "query_text": "muk shukay geche prosrab kom hoy pani shunnota naki",
+      "target_topic": "Dehydration symptoms",
+      "benchmark_split": "DEV",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-007",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-007-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if dry mouth and low urine mean dehydration; Chunk 000 explicitly defines dry mouth and reduced urination as key signs.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-DEH-05",
+      "query_text": "How to prevent and treat dehydration when feeling sick?",
+      "target_topic": "Treat dehydration small sips",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-007",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks how to rehydrate when feeling sick; Chunks 001 and 002 recommend drinking small frequent sips of water or diluted squash.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-DEH-06",
+      "query_text": "বমি ভাব হলে পানিশূন্যতা দূর করতে কীভাবে পানি খাব?",
+      "target_topic": "Treat dehydration small sips",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-007",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla how to drink fluids during nausea/vomiting; Chunks 001 and 002 advise small frequent sips.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-007-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-001"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-DEH-07",
+      "query_text": "bomi thakle pani kivabe khawa uchit?",
+      "target_topic": "Treat dehydration small sips",
+      "benchmark_split": "DEV",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-007",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish how to drink fluids when vomiting; Chunks 001 and 002 advise small sips of water or rehydration solution.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-011-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "DEV-DEH-08",
+      "query_text": "Signs of severe dehydration requiring immediate 999 emergency call",
+      "target_topic": "Dehydration emergency 999",
+      "benchmark_split": "DEV",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-007",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-007-HYB-004"
+      ],
+      "gold_mapping_rationale": "Query asks signs of severe dehydration requiring 999; Chunk 004 specifies calling 999 for confusion, dizziness on standing, or no urination all day.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-003"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "DEV-DEH-09",
+      "query_text": "অজ্ঞান হয়ে যাওয়া বা কথা বলতে কষ্ট হলে কি ৯৯৯ কল করব?",
+      "target_topic": "Dehydration emergency 999",
+      "benchmark_split": "DEV",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-007",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-007-HYB-004"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla if confusion/unconsciousness requires 999; Chunk 004 mandates 999/A&E for disorientation and confusion.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 4,
+      "dense_chunk_rr": 0.25,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 3,
+      "r5_chunk_rr": 0.3333333333333333,
+      "evidence_availability_category": "TOP1_WRONG_BUT_TOP3_CONTAINS_GOLD"
+    },
+    {
+      "query_id": "DEV-DEH-10",
+      "query_text": "extreme dehydration confused lage kotha bolte parena 999 daki?",
+      "target_topic": "Dehydration emergency 999",
+      "benchmark_split": "DEV",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-007",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-007-HYB-004"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if confusion and speech difficulty in dehydration needs 999; Chunk 004 specifies calling 999/A&E.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-004"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "TEST-DIA-01",
+      "query_text": "How to treat diarrhoea and vomiting at home?",
+      "target_topic": "Diarrhoea home care fluids",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks how to treat diarrhoea and vomiting at home; Chunk 000 specifies resting at home, drinking small sips of fluids, eating small light meals.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-007"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-007"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "TEST-DIA-02",
+      "query_text": "ডায়রিয়া ও বমি হলে বাড়িতে কী চিকিৎসা নেওয়া উচিত?",
+      "target_topic": "Diarrhoea home care fluids",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla how to manage diarrhoea at home; Chunk 000 details self-care, fluid replacement with small sips, and rest.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "TEST-DIA-03",
+      "query_text": "diarrhoea ar bomi hole bashay ki korbo?",
+      "target_topic": "Diarrhoea home care fluids",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish home care for loose motion and vomiting; Chunk 000 details self-care and staying hydrated.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-004-HYB-015"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-04",
+      "query_text": "patla paykhana ar bomi hosse onk fluid khabo?",
+      "target_topic": "Diarrhoea home care fluids",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish about drinking fluids during diarrhoea; Chunk 000 instructs taking small frequent sips of water or rehydration solution.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-001"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-001"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-05",
+      "query_text": "How long should you stay off work or school after diarrhoea stops?",
+      "target_topic": "Stay home 48 hours",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks how long to stay off work/school after diarrhoea stops; Chunk 001 explicitly states stay home for at least 48 hours (2 days) after symptoms stop.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-000"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-000"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 4,
+      "dense_chunk_rr": 0.25,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 3,
+      "r5_chunk_rr": 0.3333333333333333,
+      "evidence_availability_category": "TOP1_WRONG_BUT_TOP3_CONTAINS_GOLD"
+    },
+    {
+      "query_id": "TEST-DIA-06",
+      "query_text": "ডায়রিয়া ভালো হওয়ার পর কত ঘণ্টা স্কুলে বা কাজে যাওয়া বন্ধ রাখা উচিত?",
+      "target_topic": "Stay home 48 hours",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla how many hours to stay home after diarrhoea recovery; Chunk 001 specifies 48 hours after last loose stool/vomit.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-07",
+      "query_text": "diarrhoea thamar por koto hour bashay thakte hoy?",
+      "target_topic": "Stay home 48 hours",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish hours to stay off after diarrhoea stops; Chunk 001 specifies 48 hours.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-08",
+      "query_text": "When to call 999 or go to A&E for diarrhoea with bloody vomit?",
+      "target_topic": "Diarrhoea bloody vomit A&E 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks when diarrhoea with bloody vomit requires 999/A&E; Chunk 003 specifies calling 999/A&E for vomiting blood, ground coffee vomit, green vomit.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-09",
+      "query_text": "বমির সাথে রক্ত আসলে কি দ্রুত হাসপাতালে যাওয়া দরকার?",
+      "target_topic": "Diarrhoea bloody vomit A&E 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla if vomiting blood requires urgent hospital care; Chunk 003 specifies 999/A&E for bloody or green vomit.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-011-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-DIA-10",
+      "query_text": "bomir shathe rokto ase green bomi emergency hospital jabo?",
+      "target_topic": "Diarrhoea bloody vomit A&E 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-008-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if bloody or green vomit is an emergency; Chunk 003 mandates calling 999 or going to A&E.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-01",
+      "query_text": "What can you do at home to ease a common headache?",
+      "target_topic": "Relieve headache water painkillers",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks what to do at home to ease a common headache; Chunk 000 recommends drinking plenty of water, rest, and paracetamol or ibuprofen.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-009-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-009-HYB-004",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-001"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "TEST-HEA-02",
+      "query_text": "সাধারণ মাথা ব্যথায় ঘরে কী ধরনের যত্ন নেওয়া যায়?",
+      "target_topic": "Relieve headache water painkillers",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla home remedies for headache; Chunk 000 covers hydration with water, resting in quiet room, and paracetamol/ibuprofen.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-009-HYB-001",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-009-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-009-HYB-001",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "TEST-HEA-03",
+      "query_text": "matha betha hole bashay ki korle kombe?",
+      "target_topic": "Relieve headache water painkillers",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish how to relieve headache at home; Chunk 000 covers drinking water, rest, and OTC analgesics.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-04",
+      "query_text": "matha betha paracetamol khabo ar pani khabo kina",
+      "target_topic": "Relieve headache water painkillers",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if paracetamol and water help headache; Chunk 000 explicitly advises drinking plenty of water and taking paracetamol.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-05",
+      "query_text": "When is a sudden severe headache an emergency requiring 999?",
+      "target_topic": "Severe sudden headache 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks when sudden severe headache requires 999; Chunk 002 is the emergency callout for sudden severe thunderclap headache, stiff neck, rash.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 4,
+      "dense_chunk_rr": 0.25,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 4,
+      "r5_chunk_rr": 0.25,
+      "evidence_availability_category": "TOP3_WRONG_BUT_TOP5_CONTAINS_GOLD"
+    },
+    {
+      "query_id": "TEST-HEA-06",
+      "query_text": "হঠাৎ তীব্র মাথাব্যথা এবং ঘাড় শক্ত হয়ে গেলে কি ৯৯৯ কল দিতে হবে?",
+      "target_topic": "Severe sudden headache 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla if sudden severe headache with stiff neck needs 999; Chunk 002 mandates 999/A&E for severe sudden headache with stiff neck.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-07",
+      "query_text": "hotath extreme matha betha ar ghaar shokto 999 call dibo?",
+      "target_topic": "Severe sudden headache 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if sudden extreme headache and stiff neck requires 999; Chunk 002 mandates calling 999 or going to A&E.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-08",
+      "query_text": "blurry vision ar mathay prachondo betha emergency A&E jabo",
+      "target_topic": "Severe sudden headache 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if blurry vision and extreme head pain is an emergency; Chunk 002 specifies 999/A&E for vision problems, slurred speech, confusion.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-HEA-09",
+      "query_text": "Common causes of headaches such as dehydration and stress",
+      "target_topic": "Causes of headaches",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-009-HYB-004"
+      ],
+      "gold_mapping_rationale": "Query asks common causes of headaches (dehydration, stress, headache types); Chunks 003 and 004 detail causes and types (tension, migraine, cluster).",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-004",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-009-HYB-004",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "TEST-HEA-10",
+      "query_text": "matha betha keno hoy causes ki ki?",
+      "target_topic": "Causes of headaches",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-009",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-009-HYB-004"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish why headaches happen; Chunks 003 and 004 explain causes including stress, dehydration, and specific headache disorders.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-01",
+      "query_text": "What temperature counts as a fever in children?",
+      "target_topic": "Fever threshold 38C",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks what temperature counts as a fever in children; Chunk 000 states 'A high temperature is 38C or more'.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "TEST-FEV-02",
+      "query_text": "শিশুদের কত ডিগ্রি তাপমাত্রা হলে জ্বর হিসেবে গণ্য করা হয়?",
+      "target_topic": "Fever threshold 38C",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla what degree of temperature is a child fever; Chunk 000 defines 38C or higher as high temperature.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-006",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "TEST-FEV-03",
+      "query_text": "bachader koto degree temp hole jor dhora hoy?",
+      "target_topic": "Fever threshold 38C",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish what temperature threshold counts as fever; Chunk 000 specifies 38C or more.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-04",
+      "query_text": "baby r 38C jor thermometer diye maplam ekhon ki korbo",
+      "target_topic": "Fever home care children",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish first aid for child with 38C fever; Chunks 000 and 001 recommend giving plenty of fluids and infant paracetamol/ibuprofen.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "TEST-FEV-05",
+      "query_text": "How to help bring down a child's fever safely at home?",
+      "target_topic": "Fever home care children",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks how to bring down child fever at home; Chunks 000 and 001 cover giving fluids, appropriate clothing, and paracetamol/ibuprofen.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-007"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-007"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-06",
+      "query_text": "বাচ্চার জ্বর কমাতে বাড়িতে প্রচুর তরল ও প্যারাসিটামল কীভাবে দেব?",
+      "target_topic": "Fever home care children",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla how to give fluids and paracetamol for child fever; Chunks 000 and 001 cover fluid hydration and antipyretics.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-07",
+      "query_text": "bachar jor komate fluid ar paracetamol dawa jabe?",
+      "target_topic": "Fever home care children",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if fluids and paracetamol can be given for child fever; Chunks 000 and 001 confirm giving fluids and paracetamol.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-08",
+      "query_text": "When to call 999 for a child with high fever and rash or breathing trouble?",
+      "target_topic": "Child fever emergency 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks when child fever with rash/breathing trouble requires 999; Chunk 003 specifies calling 999 for non-blanching rash, breathing difficulty, blue lips, fits.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-09",
+      "query_text": "বাচ্চার তীব্র জ্বর ও নীলচে ঠোঁট হলে অবিলম্বে কি ৯৯৯ কল করতে হবে?",
+      "target_topic": "Child fever emergency 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla if fever with blue lips requires 999; Chunk 003 mandates calling 999/A&E if child has blue lips or pale/blotchy skin.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-009-HYB-003"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-FEV-10",
+      "query_text": "bacha ghum theke jagena ar thot neel 999 call korbo?",
+      "target_topic": "Child fever emergency 999",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-010",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-010-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if hard-to-wake child with blue lips needs 999; Chunk 003 mandates calling 999 if child is drowsy/difficult to wake or lips turn blue.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": false,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-01",
+      "query_text": "What are the main symptoms of a severe anaphylaxis allergic reaction?",
+      "target_topic": "Anaphylaxis symptoms",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks symptoms of severe anaphylaxis; Chunk 001 details swelling of throat/mouth, breathing difficulty, wheezing, lightheadedness, blue lips.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-02",
+      "query_text": "অ্যানাফাইলাক্সিস বা তীব্র অ্যালার্জিক রিঅ্যাকশনের লক্ষণগুলো কী?",
+      "target_topic": "Anaphylaxis symptoms",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla symptoms of anaphylaxis; Chunk 001 specifies throat swelling, breathing trouble, dizziness, hives.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-03",
+      "query_text": "anaphylaxis allergic reaction hole ki ki lokkhon dekha jay?",
+      "target_topic": "Anaphylaxis symptoms",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish symptoms of anaphylaxis reaction; Chunk 001 details breathing problems, swelling, and rash.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-04",
+      "query_text": "muk fule geche shash nite parsenana allergy r jonno anaphylaxis naki",
+      "target_topic": "Anaphylaxis symptoms",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if facial swelling and breathlessness from allergy is anaphylaxis; Chunk 001 explicitly lists facial swelling and breathing difficulty.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-05",
+      "query_text": "How to use an adrenaline auto-injector (EpiPen) in an emergency?",
+      "target_topic": "Adrenaline auto-injector",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks how to use an adrenaline auto-injector (EpiPen); Chunk 003 details injecting into outer middle thigh and holding in place.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 3,
+      "r5_chunk_rr": 0.3333333333333333,
+      "evidence_availability_category": "TOP1_WRONG_BUT_TOP3_CONTAINS_GOLD"
+    },
+    {
+      "query_id": "TEST-ANA-06",
+      "query_text": "অ্যানাফাইলাক্সিস হলে অ্যাড্রেনালিন অটো-ইনজেক্টর কীভাবে ব্যবহার করতে হয়?",
+      "target_topic": "Adrenaline auto-injector",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla how to administer auto-injector; Chunk 003 instructs injecting into the outer middle thigh.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 5,
+      "dense_chunk_rr": 0.2,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 4,
+      "r5_chunk_rr": 0.25,
+      "evidence_availability_category": "TOP3_WRONG_BUT_TOP5_CONTAINS_GOLD"
+    },
+    {
+      "query_id": "TEST-ANA-07",
+      "query_text": "adrenaline auto-injector kivabe use korbo emergency te?",
+      "target_topic": "Adrenaline auto-injector",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-003"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish how to use adrenaline auto-injector; Chunk 003 describes thigh injection technique.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-008"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-007"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 4,
+      "dense_chunk_rr": 0.25,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 2,
+      "r5_chunk_rr": 0.5,
+      "evidence_availability_category": "TOP1_WRONG_BUT_TOP3_CONTAINS_GOLD"
+    },
+    {
+      "query_id": "TEST-ANA-08",
+      "query_text": "Should you call 999 immediately if someone has an anaphylactic shock?",
+      "target_topic": "Anaphylaxis 999 emergency",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "English",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks if 999 should be called immediately for anaphylactic shock; Chunk 002 mandates calling 999 immediately if someone has severe allergic reaction.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-003"
+      ],
+      "source_dense_r1": false,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "TEST-ANA-09",
+      "query_text": "অ্যালার্জির কারণে গলা ফুলে শ্বাস বন্ধ হলে তাৎক্ষণিক ৯৯৯ ডাকব?",
+      "target_topic": "Anaphylaxis 999 emergency",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks in Bangla if throat swelling and breathlessness from allergy requires 999; Chunk 002 specifies calling 999 immediately.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-011-HYB-000"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": true,
+      "dense_chunk_r3": true,
+      "dense_chunk_r5": true,
+      "dense_chunk_rank": 1,
+      "dense_chunk_rr": 1.0,
+      "r5_chunk_r1": true,
+      "r5_chunk_r3": true,
+      "r5_chunk_r5": true,
+      "r5_chunk_rank": 1,
+      "r5_chunk_rr": 1.0,
+      "evidence_availability_category": "TOP1_CORRECT"
+    },
+    {
+      "query_id": "TEST-ANA-10",
+      "query_text": "severe allergic reaction gola fule gese 999 daki",
+      "target_topic": "Anaphylaxis 999 emergency",
+      "benchmark_split": "TEST_HOLDOUT",
+      "language_category": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "acceptable_gold_chunks": [
+        "DOC-NHS-011-HYB-002"
+      ],
+      "gold_mapping_rationale": "Query asks in Banglish if severe allergic reaction with swollen throat requires 999; Chunk 002 mandates calling 999.",
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-009-HYB-003"
+      ],
+      "source_dense_r1": true,
+      "source_r5_r1": true,
+      "dense_chunk_r1": false,
+      "dense_chunk_r3": false,
+      "dense_chunk_r5": false,
+      "dense_chunk_rank": 0,
+      "dense_chunk_rr": 0.0,
+      "r5_chunk_r1": false,
+      "r5_chunk_r3": false,
+      "r5_chunk_r5": false,
+      "r5_chunk_rank": 0,
+      "r5_chunk_rr": 0.0,
+      "evidence_availability_category": "GOLD_ABSENT_FROM_TOP5"
+    },
+    {
+      "query_id": "HN-01",
+      "query_text": "How to apply a tactical tourniquet to stop arterial bleeding on thigh?",
+      "benchmark_split": "HARD_NEGATIVE",
+      "language_category": "English",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-006-HYB-001"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "r5_top1_score": 0.02278454788029194
+    },
+    {
+      "query_id": "HN-02",
+      "query_text": "হাঁপানির টান কমাতে সালবুটামল নেবুলাইজারের ডোজ কত মিলিগ্রাম দেব?",
+      "benchmark_split": "HARD_NEGATIVE",
+      "language_category": "Native_Bangla",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "r5_top1_score": 0.0020826030522584915
+    },
+    {
+      "query_id": "HN-03",
+      "query_text": "severe dehydration e saline IV injection kon vein e dibo?",
+      "benchmark_split": "HARD_NEGATIVE",
+      "language_category": "Standard_Banglish",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "r5_top1_score": 0.013551780954003334
+    },
+    {
+      "query_id": "HN-04",
+      "query_text": "chokhe chemical acid porle kon drop dibo",
+      "benchmark_split": "HARD_NEGATIVE",
+      "language_category": "Abbreviated_Banglish",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "r5_top1_score": 0.0001929918653331697
+    },
+    {
+      "query_id": "HN-05",
+      "query_text": "Antibiotics dosage for severe infectious bacterial diarrhoea in adults",
+      "benchmark_split": "HARD_NEGATIVE",
+      "language_category": "English",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-007",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-007",
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-005"
+      ],
+      "r5_top1_score": 0.011336787603795528
+    },
+    {
+      "query_id": "HN-06",
+      "query_text": "বাচ্চার ডেঙ্গু জ্বরে প্লেটলেট কমে গেলে কী ওষুধ দিতে হয়?",
+      "benchmark_split": "HARD_NEGATIVE",
+      "language_category": "Native_Bangla",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "r5_top1_score": 0.18402493000030518
+    },
+    {
+      "query_id": "HN-07",
+      "query_text": "migraine er specific triptan medicine dosage koto?",
+      "benchmark_split": "HARD_NEGATIVE",
+      "language_category": "Standard_Banglish",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-004-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "r5_top1_score": 0.000305165012832731
+    },
+    {
+      "query_id": "HN-08",
+      "query_text": "severe anaphylaxis e steroid injection hydrocortisone koto mg",
+      "benchmark_split": "HARD_NEGATIVE",
+      "language_category": "Abbreviated_Banglish",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "r5_top1_score": 0.014516794122755527
+    },
+    {
+      "query_id": "HN-09",
+      "query_text": "How to perform surgical stitches on a deep laceration cut?",
+      "benchmark_split": "HARD_NEGATIVE",
+      "language_category": "English",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-000"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-000"
+      ],
+      "r5_top1_score": 0.009201228618621826
+    },
+    {
+      "query_id": "HN-10",
+      "query_text": "বাচ্চাদের খিঁচুনি বা ফেব্রাইল কনভালশন হলে কী অ্যান্টি-কনভালস্যান্ট দেব?",
+      "benchmark_split": "HARD_NEGATIVE",
+      "language_category": "Native_Bangla",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "r5_top1_score": 0.09214843809604645
+    },
+    {
+      "query_id": "HN-11",
+      "query_text": "third degree electrical burn e dead skin debridement kivabe kore?",
+      "benchmark_split": "HARD_NEGATIVE",
+      "language_category": "Standard_Banglish",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-005-HYB-000"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "r5_top1_score": 0.0007857531309127808
+    },
+    {
+      "query_id": "HN-12",
+      "query_text": "chronic asthma r steroid biological injection injection kivabe dey",
+      "benchmark_split": "HARD_NEGATIVE",
+      "language_category": "Abbreviated_Banglish",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-017",
+        "DOC-NHS-010-HYB-003"
+      ],
+      "r5_top1_score": 0.01399947889149189
+    },
+    {
+      "query_id": "OOC-01",
+      "query_text": "What is the recommended prophylaxis medication for malaria traveling to Africa?",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "language_category": "English",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-010-HYB-002"
+      ],
+      "r5_top1_score": 0.003066631266847253
+    },
+    {
+      "query_id": "OOC-02",
+      "query_text": "কুকুর কামড়ালে জলাতঙ্ক বা রেবিস ভ্যাকসিন কত দিনের মধ্যে নিতে হয়?",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "language_category": "Native_Bangla",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "r5_top1_score": 0.00010006362572312355
+    },
+    {
+      "query_id": "OOC-03",
+      "query_text": "dante puz hole root canal treatment keno dorkar?",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "language_category": "Standard_Banglish",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-006-HYB-000"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "r5_top1_score": 5.147381671122275e-05
+    },
+    {
+      "query_id": "OOC-04",
+      "query_text": "kidney te pathor hole lithotripsy laser operation kivabe kore",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "language_category": "Abbreviated_Banglish",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "r5_top1_score": 4.546285708784126e-05
+    },
+    {
+      "query_id": "OOC-05",
+      "query_text": "How is type 1 diabetes insulin pump therapy adjusted for exercise?",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "language_category": "English",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-004-HYB-003"
+      ],
+      "r5_top1_score": 0.0001556504430482164
+    },
+    {
+      "query_id": "OOC-06",
+      "query_text": "উচ্চ রক্তচাপ বা হাইপারটেনশনে অ্যামলোডিপিন ওষুধের পার্শ্বপ্রতিক্রিয়া কী?",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "language_category": "Native_Bangla",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "r5_top1_score": 0.0009442433947697282
+    },
+    {
+      "query_id": "OOC-07",
+      "query_text": "broken bone fracture hole plaster koto din rakhte hoy?",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "language_category": "Standard_Banglish",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-011-HYB-002"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-007-HYB-004"
+      ],
+      "r5_top1_score": 3.602826836868189e-05
+    },
+    {
+      "query_id": "OOC-08",
+      "query_text": "glaucoma eye drop pressure komano kivabe kaj kore",
+      "benchmark_split": "OUT_OF_CORPUS",
+      "language_category": "Abbreviated_Banglish",
+      "is_valid_query": false,
+      "dense_top5_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "r5_top5_chunk_ids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-003"
+      ],
+      "r5_top1_score": 7.502888183807954e-05
+    }
+  ]
+}

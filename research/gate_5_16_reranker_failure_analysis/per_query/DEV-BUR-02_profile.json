@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-BUR-02",
+  "raw_query": "হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানির নিচে রাখতে হবে?",
+  "normalized_query": "হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানির নিচে রাখতে হবে?",
+  "language_category": "Native_Bangla",
+  "expected_source_id": "DOC-NHS-005",
+  "gold_chunk_ids": [
+    "DOC-NHS-005-HYB-000"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 379.0,
+  "dense_rank": 0,
+  "dense_r15": false,
+  "rerank_rank": 0,
+  "in_top5": false,
+  "is_top1": false,
+  "gold_rerank_score": 0.0,
+  "rank1_chunk_id": "DOC-NHS-005-HYB-001",
+  "rank1_source_id": "DOC-NHS-005",
+  "rank1_heading": "",
+  "rank1_length": 550,
+  "rank1_score": 0.8959190249443054,
+  "score_margin_vs_gold": 1.0,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "GOLD_OUTSIDE_DENSE15",
+  "secondary_failure_cause": "QUERY_REPRESENTATION_FAILURE",
+  "top5_cids": [
+    "DOC-NHS-005-HYB-001",
+    "DOC-NHS-008-HYB-003",
+    "DOC-NHS-008-HYB-002",
+    "DOC-NHS-006-HYB-005",
+    "DOC-NHS-010-HYB-001"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-005-HYB-001",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.8959190249443054,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-008-HYB-003",
+      "source_id": "DOC-NHS-008",
+      "heading": "",
+      "score": 0.00046172403381206095,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-008-HYB-002",
+      "source_id": "DOC-NHS-008",
+      "heading": "",
+      "score": 0.0004510428989306092,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-006-HYB-005",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.00040920026367530227,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-010-HYB-001",
+      "source_id": "DOC-NHS-010",
+      "heading": "",
+      "score": 0.00015694255125708878,
+      "is_gold": false
+    }
+  ]
+}

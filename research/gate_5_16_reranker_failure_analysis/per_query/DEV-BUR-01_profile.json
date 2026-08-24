@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-BUR-01",
+  "raw_query": "How should you treat a burn immediately with water?",
+  "normalized_query": "How should you treat a burn immediately with water? (burns scalds cold water cool running water blister first aid)",
+  "language_category": "English",
+  "expected_source_id": "DOC-NHS-005",
+  "gold_chunk_ids": [
+    "DOC-NHS-005-HYB-000"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 379.0,
+  "dense_rank": 5,
+  "dense_r15": true,
+  "rerank_rank": 5,
+  "in_top5": true,
+  "is_top1": false,
+  "gold_rerank_score": 0.02077889209613204,
+  "rank1_chunk_id": "DOC-NHS-005-HYB-001",
+  "rank1_source_id": "DOC-NHS-005",
+  "rank1_heading": "",
+  "rank1_length": 550,
+  "rank1_score": 0.9724250435829163,
+  "score_margin_vs_gold": 0.9516461514867842,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "SAME_DOC_SUBSTANTIVE_SECTION_COMPETITION",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-005-HYB-001",
+    "DOC-NHS-005-HYB-003",
+    "DOC-NHS-005-HYB-004",
+    "DOC-NHS-005-HYB-002",
+    "DOC-NHS-005-HYB-000"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-005-HYB-001",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.9724250435829163,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-005-HYB-003",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.12376873195171356,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-005-HYB-004",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.0679074227809906,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-005-HYB-002",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.04671572148799896,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-005-HYB-000",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.02077889209613204,
+      "is_gold": true
+    }
+  ]
+}

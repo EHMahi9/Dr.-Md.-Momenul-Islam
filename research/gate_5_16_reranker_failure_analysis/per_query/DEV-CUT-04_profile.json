@@ -1,0 +1,81 @@
+{
+  "query_id": "DEV-CUT-04",
+  "raw_query": "angul kete rokt porche chap diye dhorbo kina",
+  "normalized_query": "angul kete rokt porche chap diye dhorbo kina",
+  "language_category": "Abbreviated_Banglish",
+  "expected_source_id": "DOC-NHS-006",
+  "gold_chunk_ids": [
+    "DOC-NHS-006-HYB-000",
+    "DOC-NHS-006-HYB-001"
+  ],
+  "gold_headings": [
+    "",
+    ""
+  ],
+  "gold_avg_length": 613.5,
+  "dense_rank": 0,
+  "dense_r15": false,
+  "rerank_rank": 0,
+  "in_top5": false,
+  "is_top1": false,
+  "gold_rerank_score": 0.0,
+  "rank1_chunk_id": "DOC-NHS-010-HYB-005",
+  "rank1_source_id": "DOC-NHS-010",
+  "rank1_heading": "",
+  "rank1_length": 645,
+  "rank1_score": 1.8342019757255912e-05,
+  "score_margin_vs_gold": 1.0,
+  "same_source_as_gold": false,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "GOLD_OUTSIDE_DENSE15",
+  "secondary_failure_cause": "BANGLISH_OR_TRANSLITERATION_FAILURE",
+  "top5_cids": [
+    "DOC-NHS-010-HYB-005",
+    "DOC-NHS-010-HYB-004",
+    "DOC-NHS-005-HYB-001",
+    "DOC-NHS-008-HYB-003",
+    "DOC-NHS-011-HYB-006"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-010-HYB-005",
+      "source_id": "DOC-NHS-010",
+      "heading": "",
+      "score": 1.8342019757255912e-05,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-010-HYB-004",
+      "source_id": "DOC-NHS-010",
+      "heading": "",
+      "score": 1.6603707990725525e-05,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-005-HYB-001",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 1.6323472664225847e-05,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-008-HYB-003",
+      "source_id": "DOC-NHS-008",
+      "heading": "",
+      "score": 1.6305362805724144e-05,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-011-HYB-006",
+      "source_id": "DOC-NHS-011",
+      "heading": "",
+      "score": 1.629325379326474e-05,
+      "is_gold": false
+    }
+  ]
+}

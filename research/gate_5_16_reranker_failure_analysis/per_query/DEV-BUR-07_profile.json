@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-BUR-07",
+  "raw_query": "pora jaygay butter ba tel lagano thik naki?",
+  "normalized_query": "pora jaygay butter ba tel lagano thik naki?",
+  "language_category": "Standard_Banglish",
+  "expected_source_id": "DOC-NHS-005",
+  "gold_chunk_ids": [
+    "DOC-NHS-005-HYB-001"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 550.0,
+  "dense_rank": 11,
+  "dense_r15": true,
+  "rerank_rank": 12,
+  "in_top5": false,
+  "is_top1": false,
+  "gold_rerank_score": 1.6279540432151407e-05,
+  "rank1_chunk_id": "DOC-NHS-010-HYB-005",
+  "rank1_source_id": "DOC-NHS-010",
+  "rank1_heading": "",
+  "rank1_length": 645,
+  "rank1_score": 1.6741303625167347e-05,
+  "score_margin_vs_gold": 4.617631930159405e-07,
+  "same_source_as_gold": false,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+  "secondary_failure_cause": "CROSS_DOCUMENT_CONFUSION",
+  "top5_cids": [
+    "DOC-NHS-010-HYB-005",
+    "DOC-NHS-011-HYB-002",
+    "DOC-NHS-010-HYB-004",
+    "DOC-NHS-007-HYB-003",
+    "DOC-NHS-005-HYB-004"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-010-HYB-005",
+      "source_id": "DOC-NHS-010",
+      "heading": "",
+      "score": 1.6741303625167347e-05,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-011-HYB-002",
+      "source_id": "DOC-NHS-011",
+      "heading": "",
+      "score": 1.6572937965975143e-05,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-010-HYB-004",
+      "source_id": "DOC-NHS-010",
+      "heading": "",
+      "score": 1.6521777070011012e-05,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-007-HYB-003",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 1.647900717216544e-05,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-005-HYB-004",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 1.6430205505457707e-05,
+      "is_gold": false
+    }
+  ]
+}

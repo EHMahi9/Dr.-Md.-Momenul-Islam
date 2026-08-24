@@ -1,0 +1,52 @@
+[
+    {
+        "query": "What is the maximum daily dose of paracetamol?",
+        "category": "factual",
+        "expected_doc": "DOC-NHS-002"
+    },
+    {
+        "query": "Why is my skin pale and clammy?",
+        "category": "symptom",
+        "expected_doc": "DOC-NHS-001"
+    },
+    {
+        "query": "My child is silent and turning blue after eating",
+        "category": "emergency",
+        "expected_doc": "DOC-NHS-003"
+    },
+    {
+        "query": "Can I take ibuprofen with paracetamol?",
+        "category": "medication",
+        "expected_doc": "DOC-NHS-002"
+    },
+    {
+        "query": "Tylenol for grown ups",
+        "category": "paraphrase",
+        "expected_doc": "DOC-NHS-002"
+    },
+    {
+        "query": "hot tired dizzy",
+        "category": "short",
+        "expected_doc": "DOC-NHS-001"
+    },
+    {
+        "query": "আমার বাচ্চার গলায় কিছু আটকে গেছে",
+        "category": "bangla",
+        "expected_doc": "DOC-NHS-003"
+    },
+    {
+        "query": "matha betha jor koto mg paracetamol khabo",
+        "category": "banglish",
+        "expected_doc": "DOC-NHS-002"
+    },
+    {
+        "query": "baccha choking what to do",
+        "category": "mixed",
+        "expected_doc": "DOC-NHS-003"
+    },
+    {
+        "query": "How to treat a broken leg?",
+        "category": "no_result",
+        "expected_doc": null
+    }
+]

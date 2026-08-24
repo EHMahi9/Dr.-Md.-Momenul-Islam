@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-BUR-10",
+  "raw_query": "chemical ba electricity te porle ki 999 call dibo",
+  "normalized_query": "chemical ba electricity te porle ki 999 call dibo (emergency call 999 go to A&E)",
+  "language_category": "Abbreviated_Banglish",
+  "expected_source_id": "DOC-NHS-005",
+  "gold_chunk_ids": [
+    "DOC-NHS-005-HYB-002"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 583.0,
+  "dense_rank": 1,
+  "dense_r15": true,
+  "rerank_rank": 1,
+  "in_top5": true,
+  "is_top1": true,
+  "gold_rerank_score": 0.38860848546028137,
+  "rank1_chunk_id": "DOC-NHS-005-HYB-002",
+  "rank1_source_id": "DOC-NHS-005",
+  "rank1_heading": "",
+  "rank1_length": 583,
+  "rank1_score": 0.38860848546028137,
+  "score_margin_vs_gold": 0.0,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "NONE_SUCCESS",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-005-HYB-002",
+    "DOC-NHS-007-HYB-004",
+    "DOC-NHS-009-HYB-003",
+    "DOC-NHS-006-HYB-005",
+    "DOC-NHS-008-HYB-005"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-005-HYB-002",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.38860848546028137,
+      "is_gold": true
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-007-HYB-004",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.030660303309559822,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-009-HYB-003",
+      "source_id": "DOC-NHS-009",
+      "heading": "",
+      "score": 0.027723919600248337,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-006-HYB-005",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.0202470850199461,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-008-HYB-005",
+      "source_id": "DOC-NHS-008",
+      "heading": "",
+      "score": 0.015564551576972008,
+      "is_gold": false
+    }
+  ]
+}

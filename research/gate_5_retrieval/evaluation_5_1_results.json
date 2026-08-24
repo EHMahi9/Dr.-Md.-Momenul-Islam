@@ -1,0 +1,1591 @@
+{
+    "Metrics": {
+        "Candidate A": {
+            "thresholds": {
+                "0.4": {
+                    "Recall_1": 57,
+                    "Recall_3": 57,
+                    "False_Retrieval": 5,
+                    "False_No_Result": 23,
+                    "No_Result_Accuracy": 18,
+                    "MRR": 57.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 0,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 0,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 0,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    }
+                },
+                "0.45": {
+                    "Recall_1": 57,
+                    "Recall_3": 57,
+                    "False_Retrieval": 5,
+                    "False_No_Result": 23,
+                    "No_Result_Accuracy": 18,
+                    "MRR": 57.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 0,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 0,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 0,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    }
+                },
+                "0.5": {
+                    "Recall_1": 57,
+                    "Recall_3": 57,
+                    "False_Retrieval": 5,
+                    "False_No_Result": 23,
+                    "No_Result_Accuracy": 18,
+                    "MRR": 57.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 0,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 0,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 0,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    }
+                },
+                "0.55": {
+                    "Recall_1": 57,
+                    "Recall_3": 57,
+                    "False_Retrieval": 5,
+                    "False_No_Result": 23,
+                    "No_Result_Accuracy": 18,
+                    "MRR": 57.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 0,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 0,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 0,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    }
+                },
+                "0.6": {
+                    "Recall_1": 52,
+                    "Recall_3": 52,
+                    "False_Retrieval": 0,
+                    "False_No_Result": 28,
+                    "No_Result_Accuracy": 23,
+                    "MRR": 52.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 0,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 0,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 0,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    }
+                },
+                "0.65": {
+                    "Recall_1": 52,
+                    "Recall_3": 52,
+                    "False_Retrieval": 0,
+                    "False_No_Result": 28,
+                    "No_Result_Accuracy": 23,
+                    "MRR": 52.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 0,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 0,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 0,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    }
+                },
+                "0.7": {
+                    "Recall_1": 52,
+                    "Recall_3": 52,
+                    "False_Retrieval": 0,
+                    "False_No_Result": 28,
+                    "No_Result_Accuracy": 23,
+                    "MRR": 52.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 0,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 0,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 0,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    }
+                },
+                "0.75": {
+                    "Recall_1": 52,
+                    "Recall_3": 52,
+                    "False_Retrieval": 0,
+                    "False_No_Result": 28,
+                    "No_Result_Accuracy": 23,
+                    "MRR": 52.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 0,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 0,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 0,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    }
+                },
+                "0.8": {
+                    "Recall_1": 52,
+                    "Recall_3": 52,
+                    "False_Retrieval": 0,
+                    "False_No_Result": 28,
+                    "No_Result_Accuracy": 23,
+                    "MRR": 52.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 0,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 0,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 0,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    }
+                }
+            }
+        },
+        "Candidate B": {
+            "thresholds": {
+                "0.4": {
+                    "Recall_1": 75,
+                    "Recall_3": 75,
+                    "False_Retrieval": 5,
+                    "False_No_Result": 5,
+                    "No_Result_Accuracy": 18,
+                    "MRR": 75.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 8,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 4,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 3,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 2,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 3,
+                        "total": 3
+                    }
+                },
+                "0.45": {
+                    "Recall_1": 75,
+                    "Recall_3": 75,
+                    "False_Retrieval": 5,
+                    "False_No_Result": 5,
+                    "No_Result_Accuracy": 18,
+                    "MRR": 75.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 8,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 4,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 3,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 2,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 3,
+                        "total": 3
+                    }
+                },
+                "0.5": {
+                    "Recall_1": 75,
+                    "Recall_3": 75,
+                    "False_Retrieval": 5,
+                    "False_No_Result": 5,
+                    "No_Result_Accuracy": 18,
+                    "MRR": 75.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 8,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 4,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 3,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 2,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 3,
+                        "total": 3
+                    }
+                },
+                "0.55": {
+                    "Recall_1": 75,
+                    "Recall_3": 75,
+                    "False_Retrieval": 5,
+                    "False_No_Result": 5,
+                    "No_Result_Accuracy": 18,
+                    "MRR": 75.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 8,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 4,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 3,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 2,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 3,
+                        "total": 3
+                    }
+                },
+                "0.6": {
+                    "Recall_1": 75,
+                    "Recall_3": 75,
+                    "False_Retrieval": 0,
+                    "False_No_Result": 5,
+                    "No_Result_Accuracy": 23,
+                    "MRR": 75.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 8,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 4,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 3,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 2,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 3,
+                        "total": 3
+                    }
+                },
+                "0.65": {
+                    "Recall_1": 75,
+                    "Recall_3": 75,
+                    "False_Retrieval": 0,
+                    "False_No_Result": 5,
+                    "No_Result_Accuracy": 23,
+                    "MRR": 75.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 8,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 4,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 3,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 2,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 3,
+                        "total": 3
+                    }
+                },
+                "0.7": {
+                    "Recall_1": 75,
+                    "Recall_3": 75,
+                    "False_Retrieval": 0,
+                    "False_No_Result": 5,
+                    "No_Result_Accuracy": 23,
+                    "MRR": 75.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 8,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 4,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 3,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 2,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 3,
+                        "total": 3
+                    }
+                },
+                "0.75": {
+                    "Recall_1": 75,
+                    "Recall_3": 75,
+                    "False_Retrieval": 0,
+                    "False_No_Result": 5,
+                    "No_Result_Accuracy": 23,
+                    "MRR": 75.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 8,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 4,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 3,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 2,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 3,
+                        "total": 3
+                    }
+                },
+                "0.8": {
+                    "Recall_1": 75,
+                    "Recall_3": 75,
+                    "False_Retrieval": 0,
+                    "False_No_Result": 5,
+                    "No_Result_Accuracy": 23,
+                    "MRR": 75.0,
+                    "total": 103,
+                    "no_result_total": 23,
+                    "std_banglish": {
+                        "Recall_1": 8,
+                        "total": 8
+                    },
+                    "hard_negative": {
+                        "Recall_1": 0,
+                        "total": 5
+                    },
+                    "mixed_bangla": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "short": {
+                        "Recall_1": 4,
+                        "total": 5
+                    },
+                    "irrelevant": {
+                        "Recall_1": 0,
+                        "total": 18
+                    },
+                    "mixed_intent": {
+                        "Recall_1": 3,
+                        "total": 3
+                    },
+                    "symptom": {
+                        "Recall_1": 1,
+                        "total": 1
+                    },
+                    "factual": {
+                        "Recall_1": 35,
+                        "total": 35
+                    },
+                    "abbr_banglish": {
+                        "Recall_1": 2,
+                        "total": 3
+                    },
+                    "mixed_banglish": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "slang_banglish": {
+                        "Recall_1": 0,
+                        "total": 3
+                    },
+                    "medication": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "emergency": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "paraphrase": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "ambiguous": {
+                        "Recall_1": 2,
+                        "total": 2
+                    },
+                    "native_bangla": {
+                        "Recall_1": 5,
+                        "total": 5
+                    },
+                    "inf_banglish": {
+                        "Recall_1": 3,
+                        "total": 3
+                    }
+                }
+            }
+        }
+    },
+    "Translation_Stats": {
+        "total_non_english": 26,
+        "TRANSLATION_CORRECT": 16,
+        "TRANSLATION_PARTIALLY_CORRECT": 5,
+        "TRANSLATION_AMBIGUOUS": 0,
+        "TRANSLATION_SUSPECTED_MEANING_DRIFT": 5,
+        "TRANSLATION_FAILED": 0
+    },
+    "Failures_at_0.65": [
+        {
+            "query": "paracetamol koto mg khabo",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "heat stroke er lokkhon ki",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "bachar golay kisu atke gese",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "paracitamol koto mg",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "hit strok a ki korbo",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "baccar golay khabar atke gese",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "para koto khabo",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "para koto khabo",
+            "cand": "Candidate B",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "rod e matha ghurse",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "bacha sas nite parche na",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "pera koto mg",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "pera koto mg",
+            "cand": "Candidate B",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "matha betha bori",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "matha betha bori",
+            "cand": "Candidate B",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "bacha chok kortese",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "bacha chok kortese",
+            "cand": "Candidate B",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "child choking hocche ki korbo",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "paracetamol dose adult der jonno",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "\u0986\u09ae\u09be\u09b0 \u09ac\u09be\u099a\u09cd\u099a\u09be\u09b0 choking \u09b9\u099a\u09cd\u099b\u09c7",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "choking",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "paracetamol dose",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "heatstroke",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "hot dizzy",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "para",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "para",
+            "cand": "Candidate B",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "I have a headache from the sun and want to take paracetamol",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "My child is choking and has a fever",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "heatstroke paracetamol",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "banglish padding hit strok 0",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "banglish padding hit strok 1",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "banglish padding hit strok 2",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "banglish padding hit strok 3",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        },
+        {
+            "query": "banglish padding hit strok 4",
+            "cand": "Candidate A",
+            "type": "FALSE_NO_RESULT"
+        }
+    ]
+}

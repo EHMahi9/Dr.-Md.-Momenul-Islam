@@ -1,0 +1,322 @@
+{
+  "BASELINE_FIXED": {
+    "strategy": "BASELINE_FIXED",
+    "total_docs": 8,
+    "lossless_docs": 8,
+    "lossless_rate": "8/8",
+    "doc_details": {
+      "DOC-NHS-004": {
+        "num_chunks": 15,
+        "original_char_count": 9782,
+        "original_para_count": 143,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-005": {
+        "num_chunks": 4,
+        "original_char_count": 2565,
+        "original_para_count": 48,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-006": {
+        "num_chunks": 7,
+        "original_char_count": 4343,
+        "original_para_count": 64,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-007": {
+        "num_chunks": 8,
+        "original_char_count": 4839,
+        "original_para_count": 94,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-008": {
+        "num_chunks": 8,
+        "original_char_count": 5248,
+        "original_para_count": 118,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-009": {
+        "num_chunks": 5,
+        "original_char_count": 2969,
+        "original_para_count": 74,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-010": {
+        "num_chunks": 7,
+        "original_char_count": 4476,
+        "original_para_count": 81,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-011": {
+        "num_chunks": 9,
+        "original_char_count": 5536,
+        "original_para_count": 84,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      }
+    }
+  },
+  "CANDIDATE_A_HEADING": {
+    "strategy": "CANDIDATE_A_HEADING",
+    "total_docs": 8,
+    "lossless_docs": 8,
+    "lossless_rate": "8/8",
+    "doc_details": {
+      "DOC-NHS-004": {
+        "num_chunks": 22,
+        "original_char_count": 9782,
+        "original_para_count": 143,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-005": {
+        "num_chunks": 7,
+        "original_char_count": 2565,
+        "original_para_count": 48,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-006": {
+        "num_chunks": 10,
+        "original_char_count": 4343,
+        "original_para_count": 64,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-007": {
+        "num_chunks": 11,
+        "original_char_count": 4839,
+        "original_para_count": 94,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-008": {
+        "num_chunks": 14,
+        "original_char_count": 5248,
+        "original_para_count": 118,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-009": {
+        "num_chunks": 8,
+        "original_char_count": 2969,
+        "original_para_count": 74,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-010": {
+        "num_chunks": 12,
+        "original_char_count": 4476,
+        "original_para_count": 81,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-011": {
+        "num_chunks": 13,
+        "original_char_count": 5536,
+        "original_para_count": 84,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      }
+    }
+  },
+  "CANDIDATE_B_SENTENCE": {
+    "strategy": "CANDIDATE_B_SENTENCE",
+    "total_docs": 8,
+    "lossless_docs": 8,
+    "lossless_rate": "8/8",
+    "doc_details": {
+      "DOC-NHS-004": {
+        "num_chunks": 14,
+        "original_char_count": 9782,
+        "original_para_count": 143,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-005": {
+        "num_chunks": 4,
+        "original_char_count": 2565,
+        "original_para_count": 48,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-006": {
+        "num_chunks": 6,
+        "original_char_count": 4343,
+        "original_para_count": 64,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-007": {
+        "num_chunks": 7,
+        "original_char_count": 4839,
+        "original_para_count": 94,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-008": {
+        "num_chunks": 7,
+        "original_char_count": 5248,
+        "original_para_count": 118,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-009": {
+        "num_chunks": 4,
+        "original_char_count": 2969,
+        "original_para_count": 74,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-010": {
+        "num_chunks": 6,
+        "original_char_count": 4476,
+        "original_para_count": 81,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-011": {
+        "num_chunks": 8,
+        "original_char_count": 5536,
+        "original_para_count": 84,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      }
+    }
+  },
+  "CANDIDATE_C_COMBINED": {
+    "strategy": "CANDIDATE_C_COMBINED",
+    "total_docs": 8,
+    "lossless_docs": 8,
+    "lossless_rate": "8/8",
+    "doc_details": {
+      "DOC-NHS-004": {
+        "num_chunks": 15,
+        "original_char_count": 9782,
+        "original_para_count": 143,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-005": {
+        "num_chunks": 4,
+        "original_char_count": 2565,
+        "original_para_count": 48,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-006": {
+        "num_chunks": 7,
+        "original_char_count": 4343,
+        "original_para_count": 64,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-007": {
+        "num_chunks": 7,
+        "original_char_count": 4839,
+        "original_para_count": 94,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-008": {
+        "num_chunks": 8,
+        "original_char_count": 5248,
+        "original_para_count": 118,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-009": {
+        "num_chunks": 4,
+        "original_char_count": 2969,
+        "original_para_count": 74,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-010": {
+        "num_chunks": 7,
+        "original_char_count": 4476,
+        "original_para_count": 81,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      },
+      "DOC-NHS-011": {
+        "num_chunks": 8,
+        "original_char_count": 5536,
+        "original_para_count": 84,
+        "missing_paras_count": 0,
+        "missing_words_count": 0,
+        "is_lossless": true,
+        "missing_para_examples": []
+      }
+    }
+  }
+}

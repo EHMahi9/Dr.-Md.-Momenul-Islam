@@ -1,0 +1,143 @@
+[
+  {
+    "original": "https://www.nhs.uk/conditions/asthma/",
+    "status": 200,
+    "chain": [],
+    "final": "https://www.nhs.uk/conditions/asthma/",
+    "domain": "www.nhs.uk",
+    "canonical": "https://www.nhs.uk/conditions/asthma/",
+    "title": "Asthma\n - NHS",
+    "h1": "Asthma",
+    "imgs": 0,
+    "iframes": 0,
+    "videos": 1,
+    "has_st_john": false,
+    "has_red_cross": false
+  },
+  {
+    "original": "https://www.nhs.uk/conditions/burns-and-scalds/",
+    "status": 200,
+    "chain": [],
+    "final": "https://www.nhs.uk/conditions/burns-and-scalds/",
+    "domain": "www.nhs.uk",
+    "canonical": "https://www.nhs.uk/conditions/burns-and-scalds/",
+    "title": "Burns and scalds\n - NHS",
+    "h1": "Burns and scalds",
+    "imgs": 0,
+    "iframes": 0,
+    "videos": 0,
+    "has_st_john": false,
+    "has_red_cross": false
+  },
+  {
+    "original": "https://www.nhs.uk/conditions/cuts-and-grazes/",
+    "status": 200,
+    "chain": [],
+    "final": "https://www.nhs.uk/conditions/cuts-and-grazes/",
+    "domain": "www.nhs.uk",
+    "canonical": "https://www.nhs.uk/conditions/cuts-and-grazes/",
+    "title": "Cuts and grazes\n - NHS",
+    "h1": "Cuts and grazes",
+    "imgs": 0,
+    "iframes": 0,
+    "videos": 0,
+    "has_st_john": true,
+    "has_red_cross": false
+  },
+  {
+    "original": "https://www.nhs.uk/conditions/dehydration/",
+    "status": 200,
+    "chain": [],
+    "final": "https://www.nhs.uk/conditions/dehydration/",
+    "domain": "www.nhs.uk",
+    "canonical": "https://www.nhs.uk/conditions/dehydration/",
+    "title": "Dehydration\n - NHS",
+    "h1": "Dehydration",
+    "imgs": 0,
+    "iframes": 0,
+    "videos": 1,
+    "has_st_john": false,
+    "has_red_cross": false
+  },
+  {
+    "original": "https://www.nhs.uk/conditions/diarrhoea-and-vomiting/",
+    "status": 200,
+    "chain": [
+      "https://www.nhs.uk/conditions/diarrhoea-and-vomiting/"
+    ],
+    "final": "https://www.nhs.uk/symptoms/diarrhoea-and-vomiting/",
+    "domain": "www.nhs.uk",
+    "canonical": "https://www.nhs.uk/symptoms/diarrhoea-and-vomiting/",
+    "title": "Diarrhoea and vomiting\n - NHS",
+    "h1": "Diarrhoea and vomiting",
+    "imgs": 0,
+    "iframes": 0,
+    "videos": 0,
+    "has_st_john": false,
+    "has_red_cross": false
+  },
+  {
+    "original": "https://www.nhs.uk/conditions/headaches/",
+    "status": 200,
+    "chain": [
+      "https://www.nhs.uk/conditions/headaches/"
+    ],
+    "final": "https://www.nhs.uk/symptoms/headaches/",
+    "domain": "www.nhs.uk",
+    "canonical": "https://www.nhs.uk/symptoms/headaches/",
+    "title": "Headaches\n - NHS",
+    "h1": "Headaches",
+    "imgs": 0,
+    "iframes": 0,
+    "videos": 0,
+    "has_st_john": false,
+    "has_red_cross": false
+  },
+  {
+    "original": "https://www.nhs.uk/conditions/fever-in-children/",
+    "status": 200,
+    "chain": [
+      "https://www.nhs.uk/conditions/fever-in-children/"
+    ],
+    "final": "https://www.nhs.uk/symptoms/fever-in-children/",
+    "domain": "www.nhs.uk",
+    "canonical": "https://www.nhs.uk/symptoms/fever-in-children/",
+    "title": "High temperature (fever) in children\n - NHS",
+    "h1": "High temperature (fever) in children",
+    "imgs": 0,
+    "iframes": 0,
+    "videos": 1,
+    "has_st_john": false,
+    "has_red_cross": false
+  },
+  {
+    "original": "https://www.nhs.uk/conditions/anaphylaxis/",
+    "status": 200,
+    "chain": [],
+    "final": "https://www.nhs.uk/conditions/anaphylaxis/",
+    "domain": "www.nhs.uk",
+    "canonical": "https://www.nhs.uk/conditions/anaphylaxis/",
+    "title": "Anaphylaxis\n - NHS",
+    "h1": "Anaphylaxis",
+    "imgs": 0,
+    "iframes": 0,
+    "videos": 0,
+    "has_st_john": false,
+    "has_red_cross": false
+  },
+  {
+    "original": "https://www.nhs.uk/conditions/bleeding/",
+    "status": 404,
+    "chain": [],
+    "final": "https://www.nhs.uk/conditions/bleeding/",
+    "domain": "www.nhs.uk",
+    "canonical": "NONE",
+    "title": "Page not found - NHS",
+    "h1": "Page not found",
+    "imgs": 1,
+    "iframes": 0,
+    "videos": 0,
+    "has_st_john": false,
+    "has_red_cross": false
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "candidate_strategy_name": "CANDIDATE_2_DETERMINISTIC_QUERY_NORM_K15",
+  "description": "Deterministic Clinical Concept Normalization -> Dense multilingual-e5-small (Top-15) -> bge-reranker-v2-m3 (Top-5 Context)",
+  "selection_rule_applied": "1. DEV Chunk Evidence Recall@5 > 2. DEV Chunk Evidence Recall@3 > 3. DEV Chunk MRR > 4. Bangla/Banglish Robustness > 5. Simplicity",
+  "parameters": {
+    "query_normalization": {
+      "enabled": true,
+      "type": "deterministic_rule_based_concept_dictionary",
+      "non_llm": true
+    },
+    "embedding_model": "intfloat/multilingual-e5-small",
+    "candidate_depth_k": 15,
+    "passage_representation": "standard_clean_chunk_text",
+    "use_bm25_union": false,
+    "similarity_metric": "cosine_dot_product_normalized",
+    "reranker_model": "BAAI/bge-reranker-v2-m3",
+    "final_top_k_context": 5,
+    "reranker_input_format": "raw_clean_chunk_text"
+  },
+  "dev_benchmark_metrics": {
+    "n_queries": 40,
+    "candidate_pool": {
+      "r1": "19/40 (47.50%)",
+      "r5": "29/40 (72.50%)",
+      "r15": "37/40 (92.50%)",
+      "r20": "37/40 (92.50%)",
+      "mrr": 0.5857
+    },
+    "final_chunk_metrics": {
+      "r1": "19/40 (47.50%)",
+      "r3": "27/40 (67.50%)",
+      "r5": "35/40 (87.50%)",
+      "mrr": 0.6104
+    },
+    "language_breakdown": {
+      "English": {
+        "n": 12,
+        "r1": "8/12 (66.67%)",
+        "r3": "10/12 (83.33%)",
+        "r5": "11/12 (91.67%)",
+        "mrr": 0.7528
+      },
+      "Native_Bangla": {
+        "n": 10,
+        "r1": "5/10 (50.00%)",
+        "r3": "6/10 (60.00%)",
+        "r5": "9/10 (90.00%)",
+        "mrr": 0.615
+      },
+      "Standard_Banglish": {
+        "n": 10,
+        "r1": "3/10 (30.00%)",
+        "r3": "6/10 (60.00%)",
+        "r5": "8/10 (80.00%)",
+        "mrr": 0.4783
+      },
+      "Abbreviated_Banglish": {
+        "n": 8,
+        "r1": "3/8 (37.50%)",
+        "r3": "5/8 (62.50%)",
+        "r5": "7/8 (87.50%)",
+        "mrr": 0.5563
+      }
+    }
+  },
+  "locked_holdout_status": "UNTOUCHED_AND_UNSEEN",
+  "configuration_hash": "3318ae3bd1b671a99e98a07e46911d41c0fe8d872e4fa5a4b6d8bfaad8873f28"
+}

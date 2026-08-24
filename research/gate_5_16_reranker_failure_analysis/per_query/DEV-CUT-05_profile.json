@@ -1,0 +1,81 @@
+{
+  "query_id": "DEV-CUT-05",
+  "raw_query": "Signs that a cut or wound is infected",
+  "normalized_query": "Signs that a cut or wound is infected (cuts grazes bleeding pressure clean dressing wound)",
+  "language_category": "English",
+  "expected_source_id": "DOC-NHS-006",
+  "gold_chunk_ids": [
+    "DOC-NHS-006-HYB-004",
+    "DOC-NHS-006-HYB-005"
+  ],
+  "gold_headings": [
+    "",
+    ""
+  ],
+  "gold_avg_length": 695.5,
+  "dense_rank": 1,
+  "dense_r15": true,
+  "rerank_rank": 3,
+  "in_top5": true,
+  "is_top1": false,
+  "gold_rerank_score": 0.3929104506969452,
+  "rank1_chunk_id": "DOC-NHS-006-HYB-006",
+  "rank1_source_id": "DOC-NHS-006",
+  "rank1_heading": "",
+  "rank1_length": 477,
+  "rank1_score": 0.6417829990386963,
+  "score_margin_vs_gold": 0.2488725483417511,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "SAME_DOC_SUBSTANTIVE_SECTION_COMPETITION",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-006-HYB-006",
+    "DOC-NHS-006-HYB-000",
+    "DOC-NHS-006-HYB-004",
+    "DOC-NHS-006-HYB-003",
+    "DOC-NHS-006-HYB-002"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-006-HYB-006",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.6417829990386963,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-006-HYB-000",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.48360151946544644,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-006-HYB-004",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.3929104506969452,
+      "is_gold": true
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-006-HYB-003",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.38837024569511414,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-006-HYB-002",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.10438693314790726,
+      "is_gold": false
+    }
+  ]
+}

@@ -1,0 +1,583 @@
+{
+  "DEV-AST-01": {
+    "gold_chunk_ids": [
+      "DOC-NHS-004-HYB-001"
+    ],
+    "target_topic": "Asthma symptoms",
+    "gold_mapping_rationale": "Query asks for common asthma symptoms; Chunk 001 defines wheezing, coughing, shortness of breath, and chest tightness."
+  },
+  "DEV-AST-02": {
+    "gold_chunk_ids": [
+      "DOC-NHS-004-HYB-001"
+    ],
+    "target_topic": "Asthma symptoms",
+    "gold_mapping_rationale": "Query asks in Bangla for asthma symptoms; Chunk 001 defines wheezing, coughing, shortness of breath, and chest tightness."
+  },
+  "DEV-AST-03": {
+    "gold_chunk_ids": [
+      "DOC-NHS-004-HYB-001"
+    ],
+    "target_topic": "Asthma symptoms",
+    "gold_mapping_rationale": "Query asks in Standard Banglish for asthma symptoms; Chunk 001 defines breathing difficulties, cough, chest tightness."
+  },
+  "DEV-AST-04": {
+    "gold_chunk_ids": [
+      "DOC-NHS-004-HYB-001"
+    ],
+    "target_topic": "Asthma symptoms",
+    "gold_mapping_rationale": "Query asks in Abbreviated Banglish about tight chest and breathlessness; Chunk 001 describes chest tightness and shortness of breath."
+  },
+  "DEV-AST-05": {
+    "gold_chunk_ids": [
+      "DOC-NHS-004-HYB-002",
+      "DOC-NHS-004-HYB-003"
+    ],
+    "target_topic": "Treat asthma attack",
+    "gold_mapping_rationale": "Query asks how to treat an asthma attack at home; Chunk 002 advises sitting up straight and calm, Chunk 003 details taking reliever inhaler."
+  },
+  "DEV-AST-06": {
+    "gold_chunk_ids": [
+      "DOC-NHS-004-HYB-003"
+    ],
+    "target_topic": "Inhaler use in asthma attack",
+    "gold_mapping_rationale": "Query asks in Bangla how to use blue reliever inhaler during an attack; Chunk 003 specifies 1 puff every 30-60s up to 10 puffs."
+  },
+  "DEV-AST-07": {
+    "gold_chunk_ids": [
+      "DOC-NHS-004-HYB-003"
+    ],
+    "target_topic": "Inhaler use in asthma attack",
+    "gold_mapping_rationale": "Query asks in Banglish puff count for blue inhaler; Chunk 003 specifies 1 puff every 30 to 60 seconds up to maximum 10 puffs."
+  },
+  "DEV-AST-08": {
+    "gold_chunk_ids": [
+      "DOC-NHS-004-HYB-004"
+    ],
+    "target_topic": "Asthma emergency 999",
+    "gold_mapping_rationale": "Query asks in Banglish if 999 should be called when inhaler fails; Chunk 004 is the emergency callout for attack not relieved by maximum inhaler dose."
+  },
+  "DEV-AST-09": {
+    "gold_chunk_ids": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-011"
+    ],
+    "target_topic": "Asthma triggers",
+    "gold_mapping_rationale": "Query asks common triggers for asthma; Chunks 001 and 011 specify cold air, exercise, air pollution, pollen, dust, mould, and animals."
+  },
+  "DEV-AST-10": {
+    "gold_chunk_ids": [
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-011"
+    ],
+    "target_topic": "Asthma triggers",
+    "gold_mapping_rationale": "Query asks in Banglish why asthma worsens (triggers); Chunks 001 and 011 describe allergens and environmental triggers."
+  },
+  "DEV-BUR-01": {
+    "gold_chunk_ids": [
+      "DOC-NHS-005-HYB-000"
+    ],
+    "target_topic": "Cool water for burns",
+    "gold_mapping_rationale": "Query asks how to treat a burn with water; Chunk 000 specifies cooling under cool or lukewarm running water for 20 minutes."
+  },
+  "DEV-BUR-02": {
+    "gold_chunk_ids": [
+      "DOC-NHS-005-HYB-000"
+    ],
+    "target_topic": "Cool water for burns",
+    "gold_mapping_rationale": "Query asks in Bangla how many minutes to cool a burn with water; Chunk 000 specifies 20 minutes under running water."
+  },
+  "DEV-BUR-03": {
+    "gold_chunk_ids": [
+      "DOC-NHS-005-HYB-000"
+    ],
+    "target_topic": "Cool water for burns",
+    "gold_mapping_rationale": "Query asks in Banglish how long to pour cool water on a burn; Chunk 000 specifies 20 minutes."
+  },
+  "DEV-BUR-04": {
+    "gold_chunk_ids": [
+      "DOC-NHS-005-HYB-000"
+    ],
+    "target_topic": "Cool water for burns",
+    "gold_mapping_rationale": "Query asks in Banglish first aid for hand burn; Chunk 000 details running cool water for 20 minutes and removing jewellery/clothing."
+  },
+  "DEV-BUR-05": {
+    "gold_chunk_ids": [
+      "DOC-NHS-005-HYB-001"
+    ],
+    "target_topic": "Do not put butter/oil on burn",
+    "gold_mapping_rationale": "Query asks whether to put butter or oil on a burn; Chunk 001 explicitly states 'Don't use ice, iced water, creams or greasy substances like butter'."
+  },
+  "DEV-BUR-06": {
+    "gold_chunk_ids": [
+      "DOC-NHS-005-HYB-001"
+    ],
+    "target_topic": "Do not put butter/oil on burn",
+    "gold_mapping_rationale": "Query asks in Bangla if butter or oil should be applied; Chunk 001 explicitly warns against greasy substances and butter."
+  },
+  "DEV-BUR-07": {
+    "gold_chunk_ids": [
+      "DOC-NHS-005-HYB-001"
+    ],
+    "target_topic": "Do not put butter/oil on burn",
+    "gold_mapping_rationale": "Query asks in Banglish if butter/oil is appropriate; Chunk 001 warns against applying butter, oils, or ice."
+  },
+  "DEV-BUR-08": {
+    "gold_chunk_ids": [
+      "DOC-NHS-005-HYB-002"
+    ],
+    "target_topic": "Burns emergency 999",
+    "gold_mapping_rationale": "Query asks when a burn requires calling 999 or going to A&E; Chunk 002 is the 999/A&E callout for large, deep, chemical, or electrical burns."
+  },
+  "DEV-BUR-09": {
+    "gold_chunk_ids": [
+      "DOC-NHS-005-HYB-002"
+    ],
+    "target_topic": "Burns emergency 999",
+    "gold_mapping_rationale": "Query asks in Banglish when a large/deep burn needs emergency hospital care; Chunk 002 specifies A&E/999 for large/deep burns."
+  },
+  "DEV-BUR-10": {
+    "gold_chunk_ids": [
+      "DOC-NHS-005-HYB-002"
+    ],
+    "target_topic": "Burns emergency 999",
+    "gold_mapping_rationale": "Query asks in Banglish if chemical/electrical burns require 999; Chunk 002 mandates 999/A&E for chemical and electrical burns."
+  },
+  "DEV-CUT-01": {
+    "gold_chunk_ids": [
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-001",
+      "DOC-NHS-006-HYB-003"
+    ],
+    "target_topic": "Clean cut and stop bleeding",
+    "gold_mapping_rationale": "Query asks how to stop bleeding and clean a cut at home; Chunk 000/001 covers direct pressure and Chunk 003 covers washing under tap water."
+  },
+  "DEV-CUT-02": {
+    "gold_chunk_ids": [
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-001"
+    ],
+    "target_topic": "Clean cut and stop bleeding",
+    "gold_mapping_rationale": "Query asks in Bangla how to stop bleeding from a cut; Chunks 000 and 001 instruct applying direct pressure with a clean cloth."
+  },
+  "DEV-CUT-03": {
+    "gold_chunk_ids": [
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-001",
+      "DOC-NHS-006-HYB-003"
+    ],
+    "target_topic": "Clean cut and stop bleeding",
+    "gold_mapping_rationale": "Query asks in Banglish how to stop bleeding and clean cut; Chunks 000/001 cover pressure and Chunk 003 covers cleaning."
+  },
+  "DEV-CUT-04": {
+    "gold_chunk_ids": [
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-001"
+    ],
+    "target_topic": "Clean cut and stop bleeding",
+    "gold_mapping_rationale": "Query asks in Banglish if cut finger bleeding should be held with direct pressure; Chunks 000 and 001 instruct applying direct pressure."
+  },
+  "DEV-CUT-05": {
+    "gold_chunk_ids": [
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "target_topic": "Infected cut signs",
+    "gold_mapping_rationale": "Query asks signs of infected cut; Chunks 004 and 005 list swelling, pus, redness, heat, and fever requiring urgent consultation."
+  },
+  "DEV-CUT-06": {
+    "gold_chunk_ids": [
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "target_topic": "Infected cut signs",
+    "gold_mapping_rationale": "Query asks in Bangla signs of wound infection; Chunks 004 and 005 specify pus, spreading redness, and fever."
+  },
+  "DEV-CUT-07": {
+    "gold_chunk_ids": [
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-005"
+    ],
+    "target_topic": "Infected cut signs",
+    "gold_mapping_rationale": "Query asks in Banglish if redness and pus mean infection; Chunks 004 and 005 confirm pus and redness indicate wound infection."
+  },
+  "DEV-CUT-08": {
+    "gold_chunk_ids": [
+      "DOC-NHS-006-HYB-002"
+    ],
+    "target_topic": "Cut emergency A&E",
+    "gold_mapping_rationale": "Query asks when continuous bleeding requires A&E; Chunk 002 mandates A&E/999 if bleeding does not stop after 10-20 minutes of pressure."
+  },
+  "DEV-CUT-09": {
+    "gold_chunk_ids": [
+      "DOC-NHS-006-HYB-002"
+    ],
+    "target_topic": "Cut emergency A&E",
+    "gold_mapping_rationale": "Query asks in Bangla what to do if bleeding does not stop after 10 minutes of pressure; Chunk 002 mandates going to A&E or calling 999."
+  },
+  "DEV-CUT-10": {
+    "gold_chunk_ids": [
+      "DOC-NHS-006-HYB-002"
+    ],
+    "target_topic": "Cut emergency A&E",
+    "gold_mapping_rationale": "Query asks in Banglish if bleeding continuing after 10 min requires A&E; Chunk 002 specifies going to A&E."
+  },
+  "DEV-DEH-01": {
+    "gold_chunk_ids": [
+      "DOC-NHS-007-HYB-000"
+    ],
+    "target_topic": "Dehydration symptoms",
+    "gold_mapping_rationale": "Query asks symptoms of dehydration in adults; Chunk 000 lists thirst, dark yellow strong-smelling pee, peeing less, dry mouth, dizziness."
+  },
+  "DEV-DEH-02": {
+    "gold_chunk_ids": [
+      "DOC-NHS-007-HYB-000"
+    ],
+    "target_topic": "Dehydration symptoms",
+    "gold_mapping_rationale": "Query asks in Bangla symptoms of dehydration; Chunk 000 lists thirst, dark urine, dry mouth, and fatigue."
+  },
+  "DEV-DEH-03": {
+    "gold_chunk_ids": [
+      "DOC-NHS-007-HYB-000"
+    ],
+    "target_topic": "Dehydration symptoms",
+    "gold_mapping_rationale": "Query asks in Banglish how dehydration feels; Chunk 000 describes dry mouth, dark urine, dizziness, and tiredness."
+  },
+  "DEV-DEH-04": {
+    "gold_chunk_ids": [
+      "DOC-NHS-007-HYB-000"
+    ],
+    "target_topic": "Dehydration symptoms",
+    "gold_mapping_rationale": "Query asks in Banglish if dry mouth and low urine mean dehydration; Chunk 000 explicitly defines dry mouth and reduced urination as key signs."
+  },
+  "DEV-DEH-05": {
+    "gold_chunk_ids": [
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-002"
+    ],
+    "target_topic": "Treat dehydration small sips",
+    "gold_mapping_rationale": "Query asks how to rehydrate when feeling sick; Chunks 001 and 002 recommend drinking small frequent sips of water or diluted squash."
+  },
+  "DEV-DEH-06": {
+    "gold_chunk_ids": [
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-002"
+    ],
+    "target_topic": "Treat dehydration small sips",
+    "gold_mapping_rationale": "Query asks in Bangla how to drink fluids during nausea/vomiting; Chunks 001 and 002 advise small frequent sips."
+  },
+  "DEV-DEH-07": {
+    "gold_chunk_ids": [
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-002"
+    ],
+    "target_topic": "Treat dehydration small sips",
+    "gold_mapping_rationale": "Query asks in Banglish how to drink fluids when vomiting; Chunks 001 and 002 advise small sips of water or rehydration solution."
+  },
+  "DEV-DEH-08": {
+    "gold_chunk_ids": [
+      "DOC-NHS-007-HYB-004"
+    ],
+    "target_topic": "Dehydration emergency 999",
+    "gold_mapping_rationale": "Query asks signs of severe dehydration requiring 999; Chunk 004 specifies calling 999 for confusion, dizziness on standing, or no urination all day."
+  },
+  "DEV-DEH-09": {
+    "gold_chunk_ids": [
+      "DOC-NHS-007-HYB-004"
+    ],
+    "target_topic": "Dehydration emergency 999",
+    "gold_mapping_rationale": "Query asks in Bangla if confusion/unconsciousness requires 999; Chunk 004 mandates 999/A&E for disorientation and confusion."
+  },
+  "DEV-DEH-10": {
+    "gold_chunk_ids": [
+      "DOC-NHS-007-HYB-004"
+    ],
+    "target_topic": "Dehydration emergency 999",
+    "gold_mapping_rationale": "Query asks in Banglish if confusion and speech difficulty in dehydration needs 999; Chunk 004 specifies calling 999/A&E."
+  },
+  "TEST-DIA-01": {
+    "gold_chunk_ids": [
+      "DOC-NHS-008-HYB-000"
+    ],
+    "target_topic": "Diarrhoea home care fluids",
+    "gold_mapping_rationale": "Query asks how to treat diarrhoea and vomiting at home; Chunk 000 specifies resting at home, drinking small sips of fluids, eating small light meals."
+  },
+  "TEST-DIA-02": {
+    "gold_chunk_ids": [
+      "DOC-NHS-008-HYB-000"
+    ],
+    "target_topic": "Diarrhoea home care fluids",
+    "gold_mapping_rationale": "Query asks in Bangla how to manage diarrhoea at home; Chunk 000 details self-care, fluid replacement with small sips, and rest."
+  },
+  "TEST-DIA-03": {
+    "gold_chunk_ids": [
+      "DOC-NHS-008-HYB-000"
+    ],
+    "target_topic": "Diarrhoea home care fluids",
+    "gold_mapping_rationale": "Query asks in Banglish home care for loose motion and vomiting; Chunk 000 details self-care and staying hydrated."
+  },
+  "TEST-DIA-04": {
+    "gold_chunk_ids": [
+      "DOC-NHS-008-HYB-000"
+    ],
+    "target_topic": "Diarrhoea home care fluids",
+    "gold_mapping_rationale": "Query asks in Banglish about drinking fluids during diarrhoea; Chunk 000 instructs taking small frequent sips of water or rehydration solution."
+  },
+  "TEST-DIA-05": {
+    "gold_chunk_ids": [
+      "DOC-NHS-008-HYB-001"
+    ],
+    "target_topic": "Stay home 48 hours",
+    "gold_mapping_rationale": "Query asks how long to stay off work/school after diarrhoea stops; Chunk 001 explicitly states stay home for at least 48 hours (2 days) after symptoms stop."
+  },
+  "TEST-DIA-06": {
+    "gold_chunk_ids": [
+      "DOC-NHS-008-HYB-001"
+    ],
+    "target_topic": "Stay home 48 hours",
+    "gold_mapping_rationale": "Query asks in Bangla how many hours to stay home after diarrhoea recovery; Chunk 001 specifies 48 hours after last loose stool/vomit."
+  },
+  "TEST-DIA-07": {
+    "gold_chunk_ids": [
+      "DOC-NHS-008-HYB-001"
+    ],
+    "target_topic": "Stay home 48 hours",
+    "gold_mapping_rationale": "Query asks in Banglish hours to stay off after diarrhoea stops; Chunk 001 specifies 48 hours."
+  },
+  "TEST-DIA-08": {
+    "gold_chunk_ids": [
+      "DOC-NHS-008-HYB-003"
+    ],
+    "target_topic": "Diarrhoea bloody vomit A&E 999",
+    "gold_mapping_rationale": "Query asks when diarrhoea with bloody vomit requires 999/A&E; Chunk 003 specifies calling 999/A&E for vomiting blood, ground coffee vomit, green vomit."
+  },
+  "TEST-DIA-09": {
+    "gold_chunk_ids": [
+      "DOC-NHS-008-HYB-003"
+    ],
+    "target_topic": "Diarrhoea bloody vomit A&E 999",
+    "gold_mapping_rationale": "Query asks in Bangla if vomiting blood requires urgent hospital care; Chunk 003 specifies 999/A&E for bloody or green vomit."
+  },
+  "TEST-DIA-10": {
+    "gold_chunk_ids": [
+      "DOC-NHS-008-HYB-003"
+    ],
+    "target_topic": "Diarrhoea bloody vomit A&E 999",
+    "gold_mapping_rationale": "Query asks in Banglish if bloody or green vomit is an emergency; Chunk 003 mandates calling 999 or going to A&E."
+  },
+  "TEST-HEA-01": {
+    "gold_chunk_ids": [
+      "DOC-NHS-009-HYB-000"
+    ],
+    "target_topic": "Relieve headache water painkillers",
+    "gold_mapping_rationale": "Query asks what to do at home to ease a common headache; Chunk 000 recommends drinking plenty of water, rest, and paracetamol or ibuprofen."
+  },
+  "TEST-HEA-02": {
+    "gold_chunk_ids": [
+      "DOC-NHS-009-HYB-000"
+    ],
+    "target_topic": "Relieve headache water painkillers",
+    "gold_mapping_rationale": "Query asks in Bangla home remedies for headache; Chunk 000 covers hydration with water, resting in quiet room, and paracetamol/ibuprofen."
+  },
+  "TEST-HEA-03": {
+    "gold_chunk_ids": [
+      "DOC-NHS-009-HYB-000"
+    ],
+    "target_topic": "Relieve headache water painkillers",
+    "gold_mapping_rationale": "Query asks in Banglish how to relieve headache at home; Chunk 000 covers drinking water, rest, and OTC analgesics."
+  },
+  "TEST-HEA-04": {
+    "gold_chunk_ids": [
+      "DOC-NHS-009-HYB-000"
+    ],
+    "target_topic": "Relieve headache water painkillers",
+    "gold_mapping_rationale": "Query asks in Banglish if paracetamol and water help headache; Chunk 000 explicitly advises drinking plenty of water and taking paracetamol."
+  },
+  "TEST-HEA-05": {
+    "gold_chunk_ids": [
+      "DOC-NHS-009-HYB-002"
+    ],
+    "target_topic": "Severe sudden headache 999",
+    "gold_mapping_rationale": "Query asks when sudden severe headache requires 999; Chunk 002 is the emergency callout for sudden severe thunderclap headache, stiff neck, rash."
+  },
+  "TEST-HEA-06": {
+    "gold_chunk_ids": [
+      "DOC-NHS-009-HYB-002"
+    ],
+    "target_topic": "Severe sudden headache 999",
+    "gold_mapping_rationale": "Query asks in Bangla if sudden severe headache with stiff neck needs 999; Chunk 002 mandates 999/A&E for severe sudden headache with stiff neck."
+  },
+  "TEST-HEA-07": {
+    "gold_chunk_ids": [
+      "DOC-NHS-009-HYB-002"
+    ],
+    "target_topic": "Severe sudden headache 999",
+    "gold_mapping_rationale": "Query asks in Banglish if sudden extreme headache and stiff neck requires 999; Chunk 002 mandates calling 999 or going to A&E."
+  },
+  "TEST-HEA-08": {
+    "gold_chunk_ids": [
+      "DOC-NHS-009-HYB-002"
+    ],
+    "target_topic": "Severe sudden headache 999",
+    "gold_mapping_rationale": "Query asks in Banglish if blurry vision and extreme head pain is an emergency; Chunk 002 specifies 999/A&E for vision problems, slurred speech, confusion."
+  },
+  "TEST-HEA-09": {
+    "gold_chunk_ids": [
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-009-HYB-004"
+    ],
+    "target_topic": "Causes of headaches",
+    "gold_mapping_rationale": "Query asks common causes of headaches (dehydration, stress, headache types); Chunks 003 and 004 detail causes and types (tension, migraine, cluster)."
+  },
+  "TEST-HEA-10": {
+    "gold_chunk_ids": [
+      "DOC-NHS-009-HYB-003",
+      "DOC-NHS-009-HYB-004"
+    ],
+    "target_topic": "Causes of headaches",
+    "gold_mapping_rationale": "Query asks in Banglish why headaches happen; Chunks 003 and 004 explain causes including stress, dehydration, and specific headache disorders."
+  },
+  "TEST-FEV-01": {
+    "gold_chunk_ids": [
+      "DOC-NHS-010-HYB-000"
+    ],
+    "target_topic": "Fever threshold 38C",
+    "gold_mapping_rationale": "Query asks what temperature counts as a fever in children; Chunk 000 states 'A high temperature is 38C or more'."
+  },
+  "TEST-FEV-02": {
+    "gold_chunk_ids": [
+      "DOC-NHS-010-HYB-000"
+    ],
+    "target_topic": "Fever threshold 38C",
+    "gold_mapping_rationale": "Query asks in Bangla what degree of temperature is a child fever; Chunk 000 defines 38C or higher as high temperature."
+  },
+  "TEST-FEV-03": {
+    "gold_chunk_ids": [
+      "DOC-NHS-010-HYB-000"
+    ],
+    "target_topic": "Fever threshold 38C",
+    "gold_mapping_rationale": "Query asks in Banglish what temperature threshold counts as fever; Chunk 000 specifies 38C or more."
+  },
+  "TEST-FEV-04": {
+    "gold_chunk_ids": [
+      "DOC-NHS-010-HYB-000",
+      "DOC-NHS-010-HYB-001"
+    ],
+    "target_topic": "Fever home care children",
+    "gold_mapping_rationale": "Query asks in Banglish first aid for child with 38C fever; Chunks 000 and 001 recommend giving plenty of fluids and infant paracetamol/ibuprofen."
+  },
+  "TEST-FEV-05": {
+    "gold_chunk_ids": [
+      "DOC-NHS-010-HYB-000",
+      "DOC-NHS-010-HYB-001"
+    ],
+    "target_topic": "Fever home care children",
+    "gold_mapping_rationale": "Query asks how to bring down child fever at home; Chunks 000 and 001 cover giving fluids, appropriate clothing, and paracetamol/ibuprofen."
+  },
+  "TEST-FEV-06": {
+    "gold_chunk_ids": [
+      "DOC-NHS-010-HYB-000",
+      "DOC-NHS-010-HYB-001"
+    ],
+    "target_topic": "Fever home care children",
+    "gold_mapping_rationale": "Query asks in Bangla how to give fluids and paracetamol for child fever; Chunks 000 and 001 cover fluid hydration and antipyretics."
+  },
+  "TEST-FEV-07": {
+    "gold_chunk_ids": [
+      "DOC-NHS-010-HYB-000",
+      "DOC-NHS-010-HYB-001"
+    ],
+    "target_topic": "Fever home care children",
+    "gold_mapping_rationale": "Query asks in Banglish if fluids and paracetamol can be given for child fever; Chunks 000 and 001 confirm giving fluids and paracetamol."
+  },
+  "TEST-FEV-08": {
+    "gold_chunk_ids": [
+      "DOC-NHS-010-HYB-003"
+    ],
+    "target_topic": "Child fever emergency 999",
+    "gold_mapping_rationale": "Query asks when child fever with rash/breathing trouble requires 999; Chunk 003 specifies calling 999 for non-blanching rash, breathing difficulty, blue lips, fits."
+  },
+  "TEST-FEV-09": {
+    "gold_chunk_ids": [
+      "DOC-NHS-010-HYB-003"
+    ],
+    "target_topic": "Child fever emergency 999",
+    "gold_mapping_rationale": "Query asks in Bangla if fever with blue lips requires 999; Chunk 003 mandates calling 999/A&E if child has blue lips or pale/blotchy skin."
+  },
+  "TEST-FEV-10": {
+    "gold_chunk_ids": [
+      "DOC-NHS-010-HYB-003"
+    ],
+    "target_topic": "Child fever emergency 999",
+    "gold_mapping_rationale": "Query asks in Banglish if hard-to-wake child with blue lips needs 999; Chunk 003 mandates calling 999 if child is drowsy/difficult to wake or lips turn blue."
+  },
+  "TEST-ANA-01": {
+    "gold_chunk_ids": [
+      "DOC-NHS-011-HYB-001"
+    ],
+    "target_topic": "Anaphylaxis symptoms",
+    "gold_mapping_rationale": "Query asks symptoms of severe anaphylaxis; Chunk 001 details swelling of throat/mouth, breathing difficulty, wheezing, lightheadedness, blue lips."
+  },
+  "TEST-ANA-02": {
+    "gold_chunk_ids": [
+      "DOC-NHS-011-HYB-001"
+    ],
+    "target_topic": "Anaphylaxis symptoms",
+    "gold_mapping_rationale": "Query asks in Bangla symptoms of anaphylaxis; Chunk 001 specifies throat swelling, breathing trouble, dizziness, hives."
+  },
+  "TEST-ANA-03": {
+    "gold_chunk_ids": [
+      "DOC-NHS-011-HYB-001"
+    ],
+    "target_topic": "Anaphylaxis symptoms",
+    "gold_mapping_rationale": "Query asks in Banglish symptoms of anaphylaxis reaction; Chunk 001 details breathing problems, swelling, and rash."
+  },
+  "TEST-ANA-04": {
+    "gold_chunk_ids": [
+      "DOC-NHS-011-HYB-001"
+    ],
+    "target_topic": "Anaphylaxis symptoms",
+    "gold_mapping_rationale": "Query asks in Banglish if facial swelling and breathlessness from allergy is anaphylaxis; Chunk 001 explicitly lists facial swelling and breathing difficulty."
+  },
+  "TEST-ANA-05": {
+    "gold_chunk_ids": [
+      "DOC-NHS-011-HYB-003"
+    ],
+    "target_topic": "Adrenaline auto-injector",
+    "gold_mapping_rationale": "Query asks how to use an adrenaline auto-injector (EpiPen); Chunk 003 details injecting into outer middle thigh and holding in place."
+  },
+  "TEST-ANA-06": {
+    "gold_chunk_ids": [
+      "DOC-NHS-011-HYB-003"
+    ],
+    "target_topic": "Adrenaline auto-injector",
+    "gold_mapping_rationale": "Query asks in Bangla how to administer auto-injector; Chunk 003 instructs injecting into the outer middle thigh."
+  },
+  "TEST-ANA-07": {
+    "gold_chunk_ids": [
+      "DOC-NHS-011-HYB-003"
+    ],
+    "target_topic": "Adrenaline auto-injector",
+    "gold_mapping_rationale": "Query asks in Banglish how to use adrenaline auto-injector; Chunk 003 describes thigh injection technique."
+  },
+  "TEST-ANA-08": {
+    "gold_chunk_ids": [
+      "DOC-NHS-011-HYB-002"
+    ],
+    "target_topic": "Anaphylaxis 999 emergency",
+    "gold_mapping_rationale": "Query asks if 999 should be called immediately for anaphylactic shock; Chunk 002 mandates calling 999 immediately if someone has severe allergic reaction."
+  },
+  "TEST-ANA-09": {
+    "gold_chunk_ids": [
+      "DOC-NHS-011-HYB-002"
+    ],
+    "target_topic": "Anaphylaxis 999 emergency",
+    "gold_mapping_rationale": "Query asks in Bangla if throat swelling and breathlessness from allergy requires 999; Chunk 002 specifies calling 999 immediately."
+  },
+  "TEST-ANA-10": {
+    "gold_chunk_ids": [
+      "DOC-NHS-011-HYB-002"
+    ],
+    "target_topic": "Anaphylaxis 999 emergency",
+    "gold_mapping_rationale": "Query asks in Banglish if severe allergic reaction with swollen throat requires 999; Chunk 002 mandates calling 999."
+  }
+}

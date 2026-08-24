@@ -1,0 +1,81 @@
+{
+  "query_id": "DEV-AST-09",
+  "raw_query": "What are the common triggers for asthma?",
+  "normalized_query": "What are the common triggers for asthma? (asthma attack inhaler spacer breathing difficulty)",
+  "language_category": "English",
+  "expected_source_id": "DOC-NHS-004",
+  "gold_chunk_ids": [
+    "DOC-NHS-004-HYB-001",
+    "DOC-NHS-004-HYB-011"
+  ],
+  "gold_headings": [
+    "",
+    ""
+  ],
+  "gold_avg_length": 656.5,
+  "dense_rank": 1,
+  "dense_r15": true,
+  "rerank_rank": 1,
+  "in_top5": true,
+  "is_top1": true,
+  "gold_rerank_score": 0.7523431181907654,
+  "rank1_chunk_id": "DOC-NHS-004-HYB-001",
+  "rank1_source_id": "DOC-NHS-004",
+  "rank1_heading": "",
+  "rank1_length": 643,
+  "rank1_score": 0.7523431181907654,
+  "score_margin_vs_gold": 0.0,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "NONE_SUCCESS",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-004-HYB-001",
+    "DOC-NHS-004-HYB-014",
+    "DOC-NHS-004-HYB-011",
+    "DOC-NHS-004-HYB-015",
+    "DOC-NHS-004-HYB-012"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-004-HYB-001",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.7523431181907654,
+      "is_gold": true
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-004-HYB-014",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.538509726524353,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-004-HYB-011",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.534641444683075,
+      "is_gold": true
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-004-HYB-015",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.46812698245048523,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-004-HYB-012",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.3067028224468231,
+      "is_gold": false
+    }
+  ]
+}

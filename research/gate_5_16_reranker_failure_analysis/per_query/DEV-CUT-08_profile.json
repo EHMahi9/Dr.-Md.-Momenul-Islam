@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-CUT-08",
+  "raw_query": "When to go to A&E for a cut with non-stop bleeding?",
+  "normalized_query": "When to go to A&E for a cut with non-stop bleeding? (cuts grazes bleeding pressure clean dressing wound)",
+  "language_category": "English",
+  "expected_source_id": "DOC-NHS-006",
+  "gold_chunk_ids": [
+    "DOC-NHS-006-HYB-002"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 620.0,
+  "dense_rank": 7,
+  "dense_r15": true,
+  "rerank_rank": 10,
+  "in_top5": false,
+  "is_top1": false,
+  "gold_rerank_score": 0.05451042950153351,
+  "rank1_chunk_id": "DOC-NHS-006-HYB-005",
+  "rank1_source_id": "DOC-NHS-006",
+  "rank1_heading": "",
+  "rank1_length": 747,
+  "rank1_score": 0.9460975527763367,
+  "score_margin_vs_gold": 0.8915871232748032,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+  "secondary_failure_cause": "SUBSTANTIVE_CHUNK_COMPETITION",
+  "top5_cids": [
+    "DOC-NHS-006-HYB-005",
+    "DOC-NHS-006-HYB-003",
+    "DOC-NHS-006-HYB-004",
+    "DOC-NHS-006-HYB-000",
+    "DOC-NHS-006-HYB-006"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-006-HYB-005",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.9460975527763367,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-006-HYB-003",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.3601885437965393,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-006-HYB-004",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.27628615498542786,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-006-HYB-000",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.25904876887798306,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-006-HYB-006",
+      "source_id": "DOC-NHS-006",
+      "heading": "",
+      "score": 0.18253503739833832,
+      "is_gold": false
+    }
+  ]
+}

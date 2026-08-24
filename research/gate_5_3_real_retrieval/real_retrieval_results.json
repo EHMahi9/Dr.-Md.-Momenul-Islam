@@ -1,0 +1,3721 @@
+{
+    "metadata": {
+        "translator_load_time_s": 181.7930018901825,
+        "bge_load_time_s": 7.195277214050293,
+        "e5_load_time_s": 16.314049243927002,
+        "bge_model_id": "BAAI/bge-small-en-v1.5",
+        "e5_model_id": "intfloat/multilingual-e5-small",
+        "translator_model_id": "facebook/nllb-200-distilled-600M",
+        "device": "cpu"
+    },
+    "queries": [
+        {
+            "query": "What is the maximum daily dose of paracetamol?",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "What is the maximum daily dose of paracetamol?",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8238512873649597,
+                    0.7316970825195312,
+                    0.7162595391273499
+                ],
+                "latency_s": 0.07403302192687988
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8568997383117676,
+                    0.8494685292243958,
+                    0.8430971503257751
+                ],
+                "latency_s": 0.05721473693847656
+            },
+            "preprocessing_latency_s": 0.13374924659729004
+        },
+        {
+            "query": "How do you cool down someone with heatstroke?",
+            "expected": "DOC-NHS-001",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "How do you cool down someone with heatstroke?",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.7909864187240601,
+                    0.7401400804519653,
+                    0.7042190432548523
+                ],
+                "latency_s": 0.056069135665893555
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.8921838402748108,
+                    0.8865483999252319,
+                    0.8843264579772949
+                ],
+                "latency_s": 0.058750152587890625
+            },
+            "preprocessing_latency_s": 0.11481928825378418
+        },
+        {
+            "query": "What to do if a baby is choking?",
+            "expected": "DOC-NHS-003",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "What to do if a baby is choking?",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.8534294366836548,
+                    0.8180847764015198,
+                    0.7938454747200012
+                ],
+                "latency_s": 0.05385947227478027
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.8924540281295776,
+                    0.8912197351455688,
+                    0.8903216123580933
+                ],
+                "latency_s": 0.05314445495605469
+            },
+            "preprocessing_latency_s": 0.10700392723083496
+        },
+        {
+            "query": "How long should I wait between paracetamol doses?",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "How long should I wait between paracetamol doses?",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7953256368637085,
+                    0.7320151925086975,
+                    0.7029156684875488
+                ],
+                "latency_s": 0.05620765686035156
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8875666856765747,
+                    0.8697205781936646,
+                    0.8586609363555908
+                ],
+                "latency_s": 0.053069114685058594
+            },
+            "preprocessing_latency_s": 0.10927677154541016
+        },
+        {
+            "query": "What are the signs of heat exhaustion?",
+            "expected": "DOC-NHS-001",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "What are the signs of heat exhaustion?",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.8824243545532227,
+                    0.7335997223854065,
+                    0.7133557200431824
+                ],
+                "latency_s": 0.05421876907348633
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.8856760263442993,
+                    0.8572494983673096,
+                    0.8532242178916931
+                ],
+                "latency_s": 0.05079817771911621
+            },
+            "preprocessing_latency_s": 0.10501694679260254
+        },
+        {
+            "query": "Tylenol limits for adults",
+            "expected": "DOC-NHS-002",
+            "category": "paraphrase",
+            "detected_language": "ENGLISH",
+            "translated_text": "Tylenol limits for adults",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7350586652755737,
+                    0.7309994101524353,
+                    0.7197153568267822
+                ],
+                "latency_s": 0.050040483474731445
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8580124378204346,
+                    0.8301025032997131,
+                    0.8282078504562378
+                ],
+                "latency_s": 0.05328774452209473
+            },
+            "preprocessing_latency_s": 0.10332822799682617
+        },
+        {
+            "query": "Infant cannot breathe food stuck",
+            "expected": "DOC-NHS-003",
+            "category": "paraphrase",
+            "detected_language": "ENGLISH",
+            "translated_text": "Infant cannot breathe food stuck",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.7140328884124756,
+                    0.6512064337730408,
+                    0.6146122217178345
+                ],
+                "latency_s": 0.05683588981628418
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.8484274744987488,
+                    0.8323972225189209,
+                    0.8280239105224609
+                ],
+                "latency_s": 0.05301094055175781
+            },
+            "preprocessing_latency_s": 0.1103520393371582
+        },
+        {
+            "query": "Sun sickness what to do",
+            "expected": "DOC-NHS-001",
+            "category": "paraphrase",
+            "detected_language": "ENGLISH",
+            "translated_text": "Sun sickness what to do",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.663804292678833,
+                    0.6545514464378357,
+                    0.6317952275276184
+                ],
+                "latency_s": 0.04963207244873047
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.853367030620575,
+                    0.8439728021621704,
+                    0.8422357439994812
+                ],
+                "latency_s": 0.05554318428039551
+            },
+            "preprocessing_latency_s": 0.10517525672912598
+        },
+        {
+            "query": "Maximum painkiller pills per day",
+            "expected": "DOC-NHS-002",
+            "category": "paraphrase",
+            "detected_language": "ENGLISH",
+            "translated_text": "Maximum painkiller pills per day",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.6890164017677307,
+                    0.6620516180992126,
+                    0.6118370294570923
+                ],
+                "latency_s": 0.04922366142272949
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.854873776435852,
+                    0.8399931788444519,
+                    0.8347095251083374
+                ],
+                "latency_s": 0.05625152587890625
+            },
+            "preprocessing_latency_s": 0.1064760684967041
+        },
+        {
+            "query": "Toddler swallowed a toy and coughing",
+            "expected": "DOC-NHS-003",
+            "category": "paraphrase",
+            "detected_language": "ENGLISH",
+            "translated_text": "Toddler swallowed a toy and coughing",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.7049969434738159,
+                    0.693755567073822,
+                    0.6265565156936646
+                ],
+                "latency_s": 0.05513644218444824
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.8449611663818359,
+                    0.8444490432739258,
+                    0.8155503869056702
+                ],
+                "latency_s": 0.05414748191833496
+            },
+            "preprocessing_latency_s": 0.1092839241027832
+        },
+        {
+            "query": "\u09aa\u09cd\u09af\u09be\u09b0\u09be\u09b8\u09bf\u099f\u09be\u09ae\u09b2 \u0996\u09be\u0993\u09af\u09bc\u09be\u09b0 \u09a8\u09bf\u09af\u09bc\u09ae \u0995\u09bf?",
+            "expected": "DOC-NHS-002",
+            "category": "native_bangla",
+            "detected_language": "BANGLA_NATIVE_SCRIPT",
+            "translated_text": "\u09aa\u09cd\u09af\u09be\u09b0\u09be\u09b8\u09bf\u099f\u09be\u09ae\u09b2 \u0996\u09be\u0993\u09af\u09bc\u09be\u09b0 \u09a8\u09bf\u09af\u09bc\u09ae \u0995\u09bf?",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0005965232849121094,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.548082709312439,
+                    0.4988923668861389,
+                    0.49116164445877075
+                ],
+                "latency_s": 0.06297826766967773
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8321593999862671,
+                    0.8292148113250732,
+                    0.8272373080253601
+                ],
+                "latency_s": 0.0893239974975586
+            },
+            "preprocessing_latency_s": 0.15289878845214844
+        },
+        {
+            "query": "\u09b9\u09bf\u099f \u09b8\u09cd\u099f\u09cd\u09b0\u09cb\u0995 \u09b9\u09b2\u09c7 \u0995\u09bf \u0995\u09b0\u09ac?",
+            "expected": "DOC-NHS-001",
+            "category": "native_bangla",
+            "detected_language": "BANGLA_NATIVE_SCRIPT",
+            "translated_text": "\u09b9\u09bf\u099f \u09b8\u09cd\u099f\u09cd\u09b0\u09cb\u0995 \u09b9\u09b2\u09c7 \u0995\u09bf \u0995\u09b0\u09ac?",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0005137920379638672,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.5002641081809998,
+                    0.4917079210281372,
+                    0.4848341643810272
+                ],
+                "latency_s": 0.1430518627166748
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.8154535293579102,
+                    0.7967941761016846,
+                    0.7911466956138611
+                ],
+                "latency_s": 0.059027910232543945
+            },
+            "preprocessing_latency_s": 0.20259356498718262
+        },
+        {
+            "query": "\u0986\u09ae\u09be\u09b0 \u09ac\u09be\u099a\u09cd\u099a\u09be\u09b0 \u0997\u09b2\u09be\u09af\u09bc \u0995\u09bf\u099b\u09c1 \u0986\u099f\u0995\u09c7 \u0997\u09c7\u099b\u09c7",
+            "expected": "DOC-NHS-003",
+            "category": "native_bangla",
+            "detected_language": "BANGLA_NATIVE_SCRIPT",
+            "translated_text": "\u0986\u09ae\u09be\u09b0 \u09ac\u09be\u099a\u09cd\u099a\u09be\u09b0 \u0997\u09b2\u09be\u09af\u09bc \u0995\u09bf\u099b\u09c1 \u0986\u099f\u0995\u09c7 \u0997\u09c7\u099b\u09c7",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-003",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.5301088094711304,
+                    0.4977182447910309,
+                    0.4956475496292114
+                ],
+                "latency_s": 0.07586145401000977
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.8047636151313782,
+                    0.8004710674285889,
+                    0.7930313348770142
+                ],
+                "latency_s": 0.08321332931518555
+            },
+            "preprocessing_latency_s": 0.1590747833251953
+        },
+        {
+            "query": "\u099c\u09cd\u09ac\u09b0\u09c7\u09b0 \u099c\u09a8\u09cd\u09af \u0995\u09bf \u0994\u09b7\u09a7 \u0996\u09be\u09ac?",
+            "expected": "DOC-NHS-002",
+            "category": "native_bangla",
+            "detected_language": "BANGLA_NATIVE_SCRIPT",
+            "translated_text": "\u099c\u09cd\u09ac\u09b0\u09c7\u09b0 \u099c\u09a8\u09cd\u09af \u0995\u09bf \u0994\u09b7\u09a7 \u0996\u09be\u09ac?",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0005044937133789062,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-001",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.5127533674240112,
+                    0.4664565324783325,
+                    0.46168604493141174
+                ],
+                "latency_s": 0.14574313163757324
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8085817694664001,
+                    0.8072190880775452,
+                    0.7904938459396362
+                ],
+                "latency_s": 0.06804180145263672
+            },
+            "preprocessing_latency_s": 0.21428942680358887
+        },
+        {
+            "query": "\u09ac\u09be\u099a\u09cd\u099a\u09be \u09a8\u09bf\u09b6\u09cd\u09ac\u09be\u09b8 \u09a8\u09bf\u09a4\u09c7 \u09aa\u09be\u09b0\u099b\u09c7 \u09a8\u09be",
+            "expected": "DOC-NHS-003",
+            "category": "native_bangla",
+            "detected_language": "BANGLA_NATIVE_SCRIPT",
+            "translated_text": "\u09ac\u09be\u099a\u09cd\u099a\u09be \u09a8\u09bf\u09b6\u09cd\u09ac\u09be\u09b8 \u09a8\u09bf\u09a4\u09c7 \u09aa\u09be\u09b0\u099b\u09c7 \u09a8\u09be",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.5440890789031982,
+                    0.5329088568687439,
+                    0.5198463201522827
+                ],
+                "latency_s": 0.057984352111816406
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.81485515832901,
+                    0.8030373454093933,
+                    0.7965114116668701
+                ],
+                "latency_s": 0.05185341835021973
+            },
+            "preprocessing_latency_s": 0.10983777046203613
+        },
+        {
+            "query": "paracetamol koto mg khabo",
+            "expected": "DOC-NHS-002",
+            "category": "std_banglish",
+            "detected_language": "BANGLISH_LATIN_SCRIPT",
+            "translated_text": "paracetamol koto mg khabo",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0010006427764892578,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7120279669761658,
+                    0.6920225024223328,
+                    0.6897745728492737
+                ],
+                "latency_s": 0.051650047302246094
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8392397165298462,
+                    0.8390633463859558,
+                    0.8364032506942749
+                ],
+                "latency_s": 0.055280447006225586
+            },
+            "preprocessing_latency_s": 0.10793113708496094
+        },
+        {
+            "query": "heat stroke er lokkhon ki",
+            "expected": "DOC-NHS-001",
+            "category": "std_banglish",
+            "detected_language": "BANGLISH_LATIN_SCRIPT",
+            "translated_text": "heat stroke er lokkhon ki",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0011413097381591797,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.6504473686218262,
+                    0.6501567363739014,
+                    0.6366055011749268
+                ],
+                "latency_s": 0.044133663177490234
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.8526492118835449,
+                    0.8475710153579712,
+                    0.8441511392593384
+                ],
+                "latency_s": 0.03785514831542969
+            },
+            "preprocessing_latency_s": 0.0831301212310791
+        },
+        {
+            "query": "bachar golay kisu atke gese",
+            "expected": "DOC-NHS-003",
+            "category": "std_banglish",
+            "detected_language": "BANGLISH_LATIN_SCRIPT",
+            "translated_text": "bachar golay kisu atke gese",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0015082359313964844,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.5260977745056152,
+                    0.5141565203666687,
+                    0.4713097810745239
+                ],
+                "latency_s": 0.03648781776428223
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7599842548370361,
+                    0.7591437101364136,
+                    0.7445724010467529
+                ],
+                "latency_s": 0.043372392654418945
+            },
+            "preprocessing_latency_s": 0.08136844635009766
+        },
+        {
+            "query": "paracitamol koto mg",
+            "expected": "DOC-NHS-002",
+            "category": "inf_banglish",
+            "detected_language": "BANGLISH_LATIN_SCRIPT",
+            "translated_text": "paracitamol koto mg",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.6162880063056946,
+                    0.6096309423446655,
+                    0.5906689167022705
+                ],
+                "latency_s": 0.036144256591796875
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8481004238128662,
+                    0.8456749320030212,
+                    0.8454138040542603
+                ],
+                "latency_s": 0.036713361740112305
+            },
+            "preprocessing_latency_s": 0.07436394691467285
+        },
+        {
+            "query": "hit strok a ki korbo",
+            "expected": "DOC-NHS-001",
+            "category": "inf_banglish",
+            "detected_language": "BANGLISH_LATIN_SCRIPT",
+            "translated_text": "hit strok a ki korbo",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0006494522094726562,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-003",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.5373779535293579,
+                    0.5305485725402832,
+                    0.5163077712059021
+                ],
+                "latency_s": 0.03912758827209473
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.7937050461769104,
+                    0.7874141931533813,
+                    0.7860801219940186
+                ],
+                "latency_s": 0.04048323631286621
+            },
+            "preprocessing_latency_s": 0.0802602767944336
+        },
+        {
+            "query": "baccar golay khabar atke gese",
+            "expected": "DOC-NHS-003",
+            "category": "inf_banglish",
+            "detected_language": "BANGLISH_LATIN_SCRIPT",
+            "translated_text": "baccar golay khabar atke gese",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5252511501312256,
+                    0.49952632188796997,
+                    0.4747798442840576
+                ],
+                "latency_s": 0.04266500473022461
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.760796070098877,
+                    0.7531874179840088,
+                    0.7496315836906433
+                ],
+                "latency_s": 0.04066038131713867
+            },
+            "preprocessing_latency_s": 0.08332538604736328
+        },
+        {
+            "query": "para koto khabo",
+            "expected": "DOC-NHS-002",
+            "category": "abbr_banglish",
+            "detected_language": "BANGLISH_LATIN_SCRIPT",
+            "translated_text": "para koto khabo",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0009961128234863281,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5469136834144592,
+                    0.5186911225318909,
+                    0.5151552557945251
+                ],
+                "latency_s": 0.040999412536621094
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.7901427745819092,
+                    0.7795379161834717,
+                    0.7791028022766113
+                ],
+                "latency_s": 0.03902435302734375
+            },
+            "preprocessing_latency_s": 0.08101987838745117
+        },
+        {
+            "query": "rod e matha ghurse",
+            "expected": "DOC-NHS-001",
+            "category": "abbr_banglish",
+            "detected_language": "BANGLISH_LATIN_SCRIPT",
+            "translated_text": "rod e matha ghurse",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.001010894775390625,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.486439973115921,
+                    0.4716426432132721,
+                    0.46523475646972656
+                ],
+                "latency_s": 0.0423741340637207
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-002",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.7731945514678955,
+                    0.763337254524231,
+                    0.7585538625717163
+                ],
+                "latency_s": 0.040140628814697266
+            },
+            "preprocessing_latency_s": 0.0835256576538086
+        },
+        {
+            "query": "bacha sas nite parche na",
+            "expected": "DOC-NHS-003",
+            "category": "abbr_banglish",
+            "detected_language": "BANGLISH_LATIN_SCRIPT",
+            "translated_text": "bacha sas nite parche na",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-001",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.4843263030052185,
+                    0.48107486963272095,
+                    0.47927290201187134
+                ],
+                "latency_s": 0.03677773475646973
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-001",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.7777566909790039,
+                    0.7710170149803162,
+                    0.7669845819473267
+                ],
+                "latency_s": 0.045180559158325195
+            },
+            "preprocessing_latency_s": 0.08246183395385742
+        },
+        {
+            "query": "pera koto mg",
+            "expected": "DOC-NHS-002",
+            "category": "slang_banglish",
+            "detected_language": "BANGLISH_LATIN_SCRIPT",
+            "translated_text": "pera koto mg",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5245338082313538,
+                    0.5242277383804321,
+                    0.5122514367103577
+                ],
+                "latency_s": 0.03911161422729492
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7952675819396973,
+                    0.7936186194419861,
+                    0.7914309501647949
+                ],
+                "latency_s": 0.03989362716674805
+            },
+            "preprocessing_latency_s": 0.07978200912475586
+        },
+        {
+            "query": "matha betha bori",
+            "expected": "DOC-NHS-002",
+            "category": "slang_banglish",
+            "detected_language": "BANGLISH_LATIN_SCRIPT",
+            "translated_text": "matha betha bori",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0005040168762207031,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.45443597435951233,
+                    0.43634721636772156,
+                    0.433580219745636
+                ],
+                "latency_s": 0.035927772521972656
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.7782960534095764,
+                    0.7744618654251099,
+                    0.7710266709327698
+                ],
+                "latency_s": 0.041257619857788086
+            },
+            "preprocessing_latency_s": 0.07768940925598145
+        },
+        {
+            "query": "bacha chok kortese",
+            "expected": "DOC-NHS-003",
+            "category": "slang_banglish",
+            "detected_language": "BANGLISH_LATIN_SCRIPT",
+            "translated_text": "bacha chok kortese",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0005183219909667969,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5091487765312195,
+                    0.49559199810028076,
+                    0.471485435962677
+                ],
+                "latency_s": 0.03982377052307129
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.7889922261238098,
+                    0.7870097756385803,
+                    0.7765024304389954
+                ],
+                "latency_s": 0.03539252281188965
+            },
+            "preprocessing_latency_s": 0.0773017406463623
+        },
+        {
+            "query": "child choking hocche ki korbo",
+            "expected": "DOC-NHS-003",
+            "category": "mixed_banglish",
+            "detected_language": "BANGLISH_LATIN_SCRIPT",
+            "translated_text": "child choking hocche ki korbo",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.712388277053833,
+                    0.7070403099060059,
+                    0.7043207883834839
+                ],
+                "latency_s": 0.03811502456665039
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.8341637849807739,
+                    0.8303623199462891,
+                    0.81490159034729
+                ],
+                "latency_s": 0.04060864448547363
+            },
+            "preprocessing_latency_s": 0.07972359657287598
+        },
+        {
+            "query": "paracetamol dose adult der jonno",
+            "expected": "DOC-NHS-002",
+            "category": "mixed_banglish",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol dose adult der jonno",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7800360918045044,
+                    0.7600294351577759,
+                    0.7391349077224731
+                ],
+                "latency_s": 0.03744864463806152
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8470224142074585,
+                    0.8349682092666626,
+                    0.8331848382949829
+                ],
+                "latency_s": 0.04312419891357422
+            },
+            "preprocessing_latency_s": 0.08057284355163574
+        },
+        {
+            "query": "\u0986\u09ae\u09be\u09b0 \u09ac\u09be\u099a\u09cd\u099a\u09be\u09b0 choking \u09b9\u099a\u09cd\u099b\u09c7",
+            "expected": "DOC-NHS-003",
+            "category": "mixed_bangla",
+            "detected_language": "MIXED",
+            "translated_text": "\u0986\u09ae\u09be\u09b0 \u09ac\u09be\u099a\u09cd\u099a\u09be\u09b0 choking \u09b9\u099a\u09cd\u099b\u09c7",
+            "translation_status": "TRANSLATION_FAILED",
+            "translation_latency_s": 0.001508951187133789,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.6423883438110352,
+                    0.638214111328125,
+                    0.6309891939163208
+                ],
+                "latency_s": 0.04106760025024414
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.8385434150695801,
+                    0.8283964991569519,
+                    0.8120498657226562
+                ],
+                "latency_s": 0.04255366325378418
+            },
+            "preprocessing_latency_s": 0.08513021469116211
+        },
+        {
+            "query": "choking",
+            "expected": "DOC-NHS-003",
+            "category": "short",
+            "detected_language": "ENGLISH",
+            "translated_text": "choking",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.7746006846427917,
+                    0.7735375165939331,
+                    0.7539705634117126
+                ],
+                "latency_s": 0.04227399826049805
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.8583751916885376,
+                    0.8554114103317261,
+                    0.8503812551498413
+                ],
+                "latency_s": 0.039751291275024414
+            },
+            "preprocessing_latency_s": 0.08202528953552246
+        },
+        {
+            "query": "paracetamol dose",
+            "expected": "DOC-NHS-002",
+            "category": "short",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol dose",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8239822387695312,
+                    0.7542033791542053,
+                    0.7470188736915588
+                ],
+                "latency_s": 0.03752398490905762
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8886551856994629,
+                    0.8765742778778076,
+                    0.8762381076812744
+                ],
+                "latency_s": 0.03533792495727539
+            },
+            "preprocessing_latency_s": 0.07286190986633301
+        },
+        {
+            "query": "heatstroke",
+            "expected": "DOC-NHS-001",
+            "category": "short",
+            "detected_language": "ENGLISH",
+            "translated_text": "heatstroke",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.7140426635742188,
+                    0.693558931350708,
+                    0.6772196292877197
+                ],
+                "latency_s": 0.0413661003112793
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.8690639734268188,
+                    0.8629459738731384,
+                    0.8618735074996948
+                ],
+                "latency_s": 0.03695249557495117
+            },
+            "preprocessing_latency_s": 0.07831859588623047
+        },
+        {
+            "query": "hot dizzy",
+            "expected": "DOC-NHS-001",
+            "category": "short",
+            "detected_language": "ENGLISH",
+            "translated_text": "hot dizzy",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.698513388633728,
+                    0.6590057611465454,
+                    0.6573457717895508
+                ],
+                "latency_s": 0.036644697189331055
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.8087626695632935,
+                    0.8029314279556274,
+                    0.7937989234924316
+                ],
+                "latency_s": 0.0360107421875
+            },
+            "preprocessing_latency_s": 0.07265543937683105
+        },
+        {
+            "query": "para",
+            "expected": "DOC-NHS-002",
+            "category": "short",
+            "detected_language": "ENGLISH",
+            "translated_text": "para",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5811547040939331,
+                    0.5754857063293457,
+                    0.5673426389694214
+                ],
+                "latency_s": 0.03545403480529785
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8019235134124756,
+                    0.7963660955429077,
+                    0.7853187918663025
+                ],
+                "latency_s": 0.037860870361328125
+            },
+            "preprocessing_latency_s": 0.07431578636169434
+        },
+        {
+            "query": "My skin is pale clammy and sweating too much",
+            "expected": "DOC-NHS-001",
+            "category": "symptom",
+            "detected_language": "ENGLISH",
+            "translated_text": "My skin is pale clammy and sweating too much",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.6661335229873657,
+                    0.6173621416091919,
+                    0.5935853719711304
+                ],
+                "latency_s": 0.039176225662231445
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8569090366363525,
+                    0.8296612501144409,
+                    0.8262516856193542
+                ],
+                "latency_s": 0.04101300239562988
+            },
+            "preprocessing_latency_s": 0.08018922805786133
+        },
+        {
+            "query": "Can I take ibuprofen with paracetamol?",
+            "expected": "DOC-NHS-002",
+            "category": "medication",
+            "detected_language": "ENGLISH",
+            "translated_text": "Can I take ibuprofen with paracetamol?",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8295653462409973,
+                    0.7577450275421143,
+                    0.7359036803245544
+                ],
+                "latency_s": 0.04183387756347656
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.9050382375717163,
+                    0.8875409364700317,
+                    0.8753156661987305
+                ],
+                "latency_s": 0.04313373565673828
+            },
+            "preprocessing_latency_s": 0.08496761322021484
+        },
+        {
+            "query": "My child is turning blue and cannot breathe help",
+            "expected": "DOC-NHS-003",
+            "category": "emergency",
+            "detected_language": "ENGLISH",
+            "translated_text": "My child is turning blue and cannot breathe help",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.6597393155097961,
+                    0.6525975465774536,
+                    0.6444183588027954
+                ],
+                "latency_s": 0.039108991622924805
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.8483753204345703,
+                    0.8393826484680176,
+                    0.8386952877044678
+                ],
+                "latency_s": 0.03836798667907715
+            },
+            "preprocessing_latency_s": 0.07847404479980469
+        },
+        {
+            "query": "Is it safe to drink alcohol with paracetamol?",
+            "expected": "DOC-NHS-002",
+            "category": "medication",
+            "detected_language": "ENGLISH",
+            "translated_text": "Is it safe to drink alcohol with paracetamol?",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7904080152511597,
+                    0.7688570022583008,
+                    0.7266987562179565
+                ],
+                "latency_s": 0.04008078575134277
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.88329017162323,
+                    0.880323052406311,
+                    0.868930995464325
+                ],
+                "latency_s": 0.04144906997680664
+            },
+            "preprocessing_latency_s": 0.08152985572814941
+        },
+        {
+            "query": "Loss of consciousness and seizure in the sun",
+            "expected": "DOC-NHS-001",
+            "category": "emergency",
+            "detected_language": "ENGLISH",
+            "translated_text": "Loss of consciousness and seizure in the sun",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.6436445116996765,
+                    0.6396284103393555,
+                    0.5991979837417603
+                ],
+                "latency_s": 0.035857200622558594
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.8298718333244324,
+                    0.8164426684379578,
+                    0.8092939853668213
+                ],
+                "latency_s": 0.0408024787902832
+            },
+            "preprocessing_latency_s": 0.0766596794128418
+        },
+        {
+            "query": "headache",
+            "expected": "DOC-NHS-001",
+            "category": "ambiguous",
+            "detected_language": "ENGLISH",
+            "translated_text": "headache",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-001",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.625068187713623,
+                    0.5954514741897583,
+                    0.5835408568382263
+                ],
+                "latency_s": 0.03465151786804199
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-001",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.845858633518219,
+                    0.8203718066215515,
+                    0.8129532337188721
+                ],
+                "latency_s": 0.03914642333984375
+            },
+            "preprocessing_latency_s": 0.07379794120788574
+        },
+        {
+            "query": "fever medication",
+            "expected": "DOC-NHS-002",
+            "category": "ambiguous",
+            "detected_language": "ENGLISH",
+            "translated_text": "fever medication",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.6801896095275879,
+                    0.6742687821388245,
+                    0.6598901748657227
+                ],
+                "latency_s": 0.03229641914367676
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8562605381011963,
+                    0.8556418418884277,
+                    0.8478507995605469
+                ],
+                "latency_s": 0.03584623336791992
+            },
+            "preprocessing_latency_s": 0.06814265251159668
+        },
+        {
+            "query": "I have a headache from the sun and want to take paracetamol",
+            "expected": "DOC-NHS-001",
+            "category": "mixed_intent",
+            "detected_language": "ENGLISH",
+            "translated_text": "I have a headache from the sun and want to take paracetamol",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7513285875320435,
+                    0.7365916967391968,
+                    0.724174439907074
+                ],
+                "latency_s": 0.04016923904418945
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.871576189994812,
+                    0.8630954623222351,
+                    0.8566677570343018
+                ],
+                "latency_s": 0.040328264236450195
+            },
+            "preprocessing_latency_s": 0.08100032806396484
+        },
+        {
+            "query": "My child is choking and has a fever",
+            "expected": "DOC-NHS-003",
+            "category": "mixed_intent",
+            "detected_language": "ENGLISH",
+            "translated_text": "My child is choking and has a fever",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.7464529871940613,
+                    0.7434263229370117,
+                    0.7417595386505127
+                ],
+                "latency_s": 0.04450392723083496
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.8685450553894043,
+                    0.8651124238967896,
+                    0.8624822497367859
+                ],
+                "latency_s": 0.04079914093017578
+            },
+            "preprocessing_latency_s": 0.08530306816101074
+        },
+        {
+            "query": "heatstroke paracetamol",
+            "expected": "DOC-NHS-001",
+            "category": "mixed_intent",
+            "detected_language": "ENGLISH",
+            "translated_text": "heatstroke paracetamol",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.7290327548980713,
+                    0.7118781805038452,
+                    0.6911823153495789
+                ],
+                "latency_s": 0.03712916374206543
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8751715421676636,
+                    0.8746402263641357,
+                    0.8551208972930908
+                ],
+                "latency_s": 0.03850817680358887
+            },
+            "preprocessing_latency_s": 0.0756373405456543
+        },
+        {
+            "query": "How do I treat a broken leg?",
+            "expected": "NONE",
+            "category": "hard_negative",
+            "detected_language": "ENGLISH",
+            "translated_text": "How do I treat a broken leg?",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.6004668474197388,
+                    0.5639407634735107,
+                    0.542977511882782
+                ],
+                "latency_s": 0.03612709045410156
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-001",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.8327549695968628,
+                    0.8312973976135254,
+                    0.8305087089538574
+                ],
+                "latency_s": 0.03786778450012207
+            },
+            "preprocessing_latency_s": 0.07550311088562012
+        },
+        {
+            "query": "Can my dog take paracetamol?",
+            "expected": "NONE",
+            "category": "hard_negative",
+            "detected_language": "ENGLISH",
+            "translated_text": "Can my dog take paracetamol?",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7410576343536377,
+                    0.7375144958496094,
+                    0.720403790473938
+                ],
+                "latency_s": 0.039964914321899414
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8659285306930542,
+                    0.8612715005874634,
+                    0.8596537113189697
+                ],
+                "latency_s": 0.04109692573547363
+            },
+            "preprocessing_latency_s": 0.08106184005737305
+        },
+        {
+            "query": "What to do if an adult is choking",
+            "expected": "NONE",
+            "category": "hard_negative",
+            "detected_language": "ENGLISH",
+            "translated_text": "What to do if an adult is choking",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.7987782955169678,
+                    0.7948510646820068,
+                    0.741770327091217
+                ],
+                "latency_s": 0.04164934158325195
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.8770629167556763,
+                    0.8672377467155457,
+                    0.8617984056472778
+                ],
+                "latency_s": 0.039470672607421875
+            },
+            "preprocessing_latency_s": 0.08311724662780762
+        },
+        {
+            "query": "Seizure from epilepsy",
+            "expected": "NONE",
+            "category": "hard_negative",
+            "detected_language": "ENGLISH",
+            "translated_text": "Seizure from epilepsy",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.5828715562820435,
+                    0.5774409770965576,
+                    0.5635511875152588
+                ],
+                "latency_s": 0.03754234313964844
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8243284225463867,
+                    0.818443775177002,
+                    0.8036764860153198
+                ],
+                "latency_s": 0.03750896453857422
+            },
+            "preprocessing_latency_s": 0.07505130767822266
+        },
+        {
+            "query": "What is the ibuprofen dose for a baby?",
+            "expected": "NONE",
+            "category": "hard_negative",
+            "detected_language": "ENGLISH",
+            "translated_text": "What is the ibuprofen dose for a baby?",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.6504974961280823,
+                    0.6475491523742676,
+                    0.6473740339279175
+                ],
+                "latency_s": 0.040427207946777344
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8319942951202393,
+                    0.8271406888961792,
+                    0.8194730281829834
+                ],
+                "latency_s": 0.04192495346069336
+            },
+            "preprocessing_latency_s": 0.0823521614074707
+        },
+        {
+            "query": "What is the capital of Bangladesh",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "What is the capital of Bangladesh",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.43478190898895264,
+                    0.4302782118320465,
+                    0.40986984968185425
+                ],
+                "latency_s": 0.0354313850402832
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-001",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7181631326675415,
+                    0.7121057510375977,
+                    0.7104642391204834
+                ],
+                "latency_s": 0.035573482513427734
+            },
+            "preprocessing_latency_s": 0.07100486755371094
+        },
+        {
+            "query": "how to cook pasta",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "how to cook pasta",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.59842848777771,
+                    0.568278431892395,
+                    0.5645664930343628
+                ],
+                "latency_s": 0.03451824188232422
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-001",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8130570650100708,
+                    0.8127248287200928,
+                    0.8099204301834106
+                ],
+                "latency_s": 0.03704953193664551
+            },
+            "preprocessing_latency_s": 0.07156777381896973
+        },
+        {
+            "query": "iPhone 15 release date",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "iPhone 15 release date",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-001",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.48906248807907104,
+                    0.407338410615921,
+                    0.3940804898738861
+                ],
+                "latency_s": 0.03455519676208496
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.7594296336174011,
+                    0.7227551341056824,
+                    0.7227157354354858
+                ],
+                "latency_s": 0.03824138641357422
+            },
+            "preprocessing_latency_s": 0.07279658317565918
+        },
+        {
+            "query": "paracetamol query variation 0",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 0",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.6944237947463989,
+                    0.6780644059181213,
+                    0.6499211192131042
+                ],
+                "latency_s": 0.037709951400756836
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8643330335617065,
+                    0.857431948184967,
+                    0.8468905091285706
+                ],
+                "latency_s": 0.03740406036376953
+            },
+            "preprocessing_latency_s": 0.07662224769592285
+        },
+        {
+            "query": "paracetamol query variation 1",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 1",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7364776134490967,
+                    0.7069915533065796,
+                    0.6716926097869873
+                ],
+                "latency_s": 0.03787946701049805
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8691656589508057,
+                    0.8596899509429932,
+                    0.8510546684265137
+                ],
+                "latency_s": 0.036823272705078125
+            },
+            "preprocessing_latency_s": 0.07470273971557617
+        },
+        {
+            "query": "paracetamol query variation 2",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 2",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7222558259963989,
+                    0.6887822151184082,
+                    0.6665397882461548
+                ],
+                "latency_s": 0.03440976142883301
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8556374311447144,
+                    0.8551323413848877,
+                    0.8452714681625366
+                ],
+                "latency_s": 0.037383317947387695
+            },
+            "preprocessing_latency_s": 0.0717930793762207
+        },
+        {
+            "query": "paracetamol query variation 3",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 3",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7232504487037659,
+                    0.698869526386261,
+                    0.6713106632232666
+                ],
+                "latency_s": 0.03502798080444336
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8533799052238464,
+                    0.8526442646980286,
+                    0.8479644060134888
+                ],
+                "latency_s": 0.04035353660583496
+            },
+            "preprocessing_latency_s": 0.0773932933807373
+        },
+        {
+            "query": "paracetamol query variation 4",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 4",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7226006984710693,
+                    0.6810449957847595,
+                    0.651305079460144
+                ],
+                "latency_s": 0.1522054672241211
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.865833044052124,
+                    0.8521581888198853,
+                    0.8447874784469604
+                ],
+                "latency_s": 0.04465198516845703
+            },
+            "preprocessing_latency_s": 0.19795894622802734
+        },
+        {
+            "query": "paracetamol query variation 5",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 5",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.71790611743927,
+                    0.6918735504150391,
+                    0.655697762966156
+                ],
+                "latency_s": 0.04177379608154297
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8679121136665344,
+                    0.8508625626564026,
+                    0.8444042801856995
+                ],
+                "latency_s": 0.04610562324523926
+            },
+            "preprocessing_latency_s": 0.08787941932678223
+        },
+        {
+            "query": "paracetamol query variation 6",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 6",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7133899927139282,
+                    0.6851913928985596,
+                    0.6598042845726013
+                ],
+                "latency_s": 0.043548583984375
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8552155494689941,
+                    0.848402738571167,
+                    0.8468447327613831
+                ],
+                "latency_s": 0.05109405517578125
+            },
+            "preprocessing_latency_s": 0.09464263916015625
+        },
+        {
+            "query": "paracetamol query variation 7",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 7",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7266684770584106,
+                    0.7045886516571045,
+                    0.6694662570953369
+                ],
+                "latency_s": 0.1531975269317627
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8536958694458008,
+                    0.8479113578796387,
+                    0.8419406414031982
+                ],
+                "latency_s": 0.05358719825744629
+            },
+            "preprocessing_latency_s": 0.20678472518920898
+        },
+        {
+            "query": "paracetamol query variation 8",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 8",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7110537886619568,
+                    0.6927392482757568,
+                    0.6545293927192688
+                ],
+                "latency_s": 0.04326629638671875
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8542690873146057,
+                    0.8496612310409546,
+                    0.8463777899742126
+                ],
+                "latency_s": 0.05701851844787598
+            },
+            "preprocessing_latency_s": 0.10028481483459473
+        },
+        {
+            "query": "paracetamol query variation 9",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 9",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7076818346977234,
+                    0.6968432664871216,
+                    0.6663933992385864
+                ],
+                "latency_s": 0.04555869102478027
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8594658374786377,
+                    0.8506689667701721,
+                    0.8457729816436768
+                ],
+                "latency_s": 0.05862712860107422
+            },
+            "preprocessing_latency_s": 0.10518360137939453
+        },
+        {
+            "query": "paracetamol query variation 10",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 10",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7131655216217041,
+                    0.6882461309432983,
+                    0.6595331430435181
+                ],
+                "latency_s": 0.03979301452636719
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8594847917556763,
+                    0.8548423051834106,
+                    0.8483287692070007
+                ],
+                "latency_s": 0.04381227493286133
+            },
+            "preprocessing_latency_s": 0.08360528945922852
+        },
+        {
+            "query": "paracetamol query variation 11",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 11",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7204321622848511,
+                    0.6895480155944824,
+                    0.6634297966957092
+                ],
+                "latency_s": 0.04232215881347656
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8552665710449219,
+                    0.8543134331703186,
+                    0.8482377529144287
+                ],
+                "latency_s": 0.049874305725097656
+            },
+            "preprocessing_latency_s": 0.09219646453857422
+        },
+        {
+            "query": "paracetamol query variation 12",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 12",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.73291015625,
+                    0.6802017092704773,
+                    0.667797327041626
+                ],
+                "latency_s": 0.04113912582397461
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8568340539932251,
+                    0.8530316948890686,
+                    0.8471657037734985
+                ],
+                "latency_s": 0.05131936073303223
+            },
+            "preprocessing_latency_s": 0.09245848655700684
+        },
+        {
+            "query": "paracetamol query variation 13",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 13",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7254308462142944,
+                    0.690597414970398,
+                    0.6757082343101501
+                ],
+                "latency_s": 0.04192781448364258
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8531678318977356,
+                    0.8479470014572144,
+                    0.8453335762023926
+                ],
+                "latency_s": 0.04831552505493164
+            },
+            "preprocessing_latency_s": 0.09124326705932617
+        },
+        {
+            "query": "paracetamol query variation 14",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 14",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7207459211349487,
+                    0.6918832063674927,
+                    0.662245512008667
+                ],
+                "latency_s": 0.04574990272521973
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8558244705200195,
+                    0.8512206673622131,
+                    0.8432407379150391
+                ],
+                "latency_s": 0.04540562629699707
+            },
+            "preprocessing_latency_s": 0.0911555290222168
+        },
+        {
+            "query": "paracetamol query variation 15",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 15",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7227445840835571,
+                    0.6989734172821045,
+                    0.6647267937660217
+                ],
+                "latency_s": 0.047196149826049805
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8612775802612305,
+                    0.8536348342895508,
+                    0.8488101363182068
+                ],
+                "latency_s": 0.03966069221496582
+            },
+            "preprocessing_latency_s": 0.08785367012023926
+        },
+        {
+            "query": "paracetamol query variation 16",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 16",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.6974831819534302,
+                    0.6934714317321777,
+                    0.6653771996498108
+                ],
+                "latency_s": 0.04152870178222656
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8575581312179565,
+                    0.8492107391357422,
+                    0.8483405113220215
+                ],
+                "latency_s": 0.03966808319091797
+            },
+            "preprocessing_latency_s": 0.08119678497314453
+        },
+        {
+            "query": "paracetamol query variation 17",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 17",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7218738794326782,
+                    0.6802092790603638,
+                    0.6563456058502197
+                ],
+                "latency_s": 0.03914761543273926
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8566135168075562,
+                    0.8520726561546326,
+                    0.8500914573669434
+                ],
+                "latency_s": 0.0376129150390625
+            },
+            "preprocessing_latency_s": 0.0772700309753418
+        },
+        {
+            "query": "paracetamol query variation 18",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 18",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7267826795578003,
+                    0.6900030970573425,
+                    0.6839041709899902
+                ],
+                "latency_s": 0.0393528938293457
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8588286638259888,
+                    0.8584532737731934,
+                    0.8578779101371765
+                ],
+                "latency_s": 0.0404200553894043
+            },
+            "preprocessing_latency_s": 0.07977294921875
+        },
+        {
+            "query": "paracetamol query variation 19",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 19",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7121429443359375,
+                    0.6817346215248108,
+                    0.6746530532836914
+                ],
+                "latency_s": 0.03288698196411133
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8619417548179626,
+                    0.8535264730453491,
+                    0.8520265817642212
+                ],
+                "latency_s": 0.03996634483337402
+            },
+            "preprocessing_latency_s": 0.07285332679748535
+        },
+        {
+            "query": "paracetamol query variation 20",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 20",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7379732131958008,
+                    0.6988612413406372,
+                    0.6743324995040894
+                ],
+                "latency_s": 0.03560233116149902
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8611525893211365,
+                    0.8497085571289062,
+                    0.8477507829666138
+                ],
+                "latency_s": 0.041661977767944336
+            },
+            "preprocessing_latency_s": 0.07726430892944336
+        },
+        {
+            "query": "paracetamol query variation 21",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 21",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7284730672836304,
+                    0.6939940452575684,
+                    0.6758989095687866
+                ],
+                "latency_s": 0.03730320930480957
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8584259152412415,
+                    0.8512048721313477,
+                    0.8506054878234863
+                ],
+                "latency_s": 0.0455474853515625
+            },
+            "preprocessing_latency_s": 0.08285069465637207
+        },
+        {
+            "query": "paracetamol query variation 22",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 22",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7246156334877014,
+                    0.6996517181396484,
+                    0.6769729852676392
+                ],
+                "latency_s": 0.03645634651184082
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8536516427993774,
+                    0.846891462802887,
+                    0.8463385105133057
+                ],
+                "latency_s": 0.038548946380615234
+            },
+            "preprocessing_latency_s": 0.07500529289245605
+        },
+        {
+            "query": "paracetamol query variation 23",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 23",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7143236994743347,
+                    0.6877255439758301,
+                    0.6641139984130859
+                ],
+                "latency_s": 0.06691455841064453
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8551914691925049,
+                    0.8534933924674988,
+                    0.8517820239067078
+                ],
+                "latency_s": 0.04180192947387695
+            },
+            "preprocessing_latency_s": 0.10871648788452148
+        },
+        {
+            "query": "paracetamol query variation 24",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 24",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7346565127372742,
+                    0.6974760293960571,
+                    0.6864436864852905
+                ],
+                "latency_s": 0.03506112098693848
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8566113710403442,
+                    0.8526239991188049,
+                    0.8415087461471558
+                ],
+                "latency_s": 0.03362751007080078
+            },
+            "preprocessing_latency_s": 0.06868863105773926
+        },
+        {
+            "query": "paracetamol query variation 25",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 25",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7463134527206421,
+                    0.7019282579421997,
+                    0.6914645433425903
+                ],
+                "latency_s": 0.0349884033203125
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8579901456832886,
+                    0.8505595326423645,
+                    0.8430856466293335
+                ],
+                "latency_s": 0.03582906723022461
+            },
+            "preprocessing_latency_s": 0.07081747055053711
+        },
+        {
+            "query": "paracetamol query variation 26",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 26",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7296450734138489,
+                    0.6913248300552368,
+                    0.6699066758155823
+                ],
+                "latency_s": 0.0337824821472168
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8486491441726685,
+                    0.8485131859779358,
+                    0.848353922367096
+                ],
+                "latency_s": 0.040325164794921875
+            },
+            "preprocessing_latency_s": 0.07410764694213867
+        },
+        {
+            "query": "paracetamol query variation 27",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 27",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7255392670631409,
+                    0.6975750923156738,
+                    0.677521288394928
+                ],
+                "latency_s": 0.031325340270996094
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8506599068641663,
+                    0.8492106795310974,
+                    0.845511794090271
+                ],
+                "latency_s": 0.03846025466918945
+            },
+            "preprocessing_latency_s": 0.06978559494018555
+        },
+        {
+            "query": "paracetamol query variation 28",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 28",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.728950023651123,
+                    0.7039201259613037,
+                    0.6739733815193176
+                ],
+                "latency_s": 0.03927755355834961
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8509944677352905,
+                    0.8413862586021423,
+                    0.8404214382171631
+                ],
+                "latency_s": 0.037349700927734375
+            },
+            "preprocessing_latency_s": 0.07662725448608398
+        },
+        {
+            "query": "paracetamol query variation 29",
+            "expected": "DOC-NHS-002",
+            "category": "factual",
+            "detected_language": "ENGLISH",
+            "translated_text": "paracetamol query variation 29",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7332821488380432,
+                    0.6844890713691711,
+                    0.681806206703186
+                ],
+                "latency_s": 0.03441667556762695
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.8449372053146362,
+                    0.8436547517776489,
+                    0.8393720984458923
+                ],
+                "latency_s": 0.041908979415893555
+            },
+            "preprocessing_latency_s": 0.07632565498352051
+        },
+        {
+            "query": "irrelevant padding query 0 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 0 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.525578498840332,
+                    0.5166372060775757,
+                    0.4876367449760437
+                ],
+                "latency_s": 0.037857770919799805
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7837950587272644,
+                    0.7817319631576538,
+                    0.781649112701416
+                ],
+                "latency_s": 0.04322052001953125
+            },
+            "preprocessing_latency_s": 0.08107829093933105
+        },
+        {
+            "query": "irrelevant padding query 1 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 1 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.5489431023597717,
+                    0.5444450378417969,
+                    0.512234091758728
+                ],
+                "latency_s": 0.037773847579956055
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7968130707740784,
+                    0.7860864400863647,
+                    0.7843121886253357
+                ],
+                "latency_s": 0.04359912872314453
+            },
+            "preprocessing_latency_s": 0.08137297630310059
+        },
+        {
+            "query": "irrelevant padding query 2 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 2 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.550304651260376,
+                    0.5270345211029053,
+                    0.5038594007492065
+                ],
+                "latency_s": 0.04098629951477051
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7890024185180664,
+                    0.7850550413131714,
+                    0.7795576453208923
+                ],
+                "latency_s": 0.04100203514099121
+            },
+            "preprocessing_latency_s": 0.08198833465576172
+        },
+        {
+            "query": "irrelevant padding query 3 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 3 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5381710529327393,
+                    0.5244425535202026,
+                    0.49729496240615845
+                ],
+                "latency_s": 0.03907442092895508
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7878382205963135,
+                    0.7842042446136475,
+                    0.7803470492362976
+                ],
+                "latency_s": 0.03936934471130371
+            },
+            "preprocessing_latency_s": 0.07974529266357422
+        },
+        {
+            "query": "irrelevant padding query 4 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 4 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.5410446524620056,
+                    0.5250301361083984,
+                    0.497428297996521
+                ],
+                "latency_s": 0.04454398155212402
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7888966798782349,
+                    0.7885525822639465,
+                    0.7871993780136108
+                ],
+                "latency_s": 0.04195237159729004
+            },
+            "preprocessing_latency_s": 0.08649635314941406
+        },
+        {
+            "query": "irrelevant padding query 5 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 5 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.540412187576294,
+                    0.526874303817749,
+                    0.4991852343082428
+                ],
+                "latency_s": 0.03489279747009277
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7955604195594788,
+                    0.7917313575744629,
+                    0.7873563766479492
+                ],
+                "latency_s": 0.041878700256347656
+            },
+            "preprocessing_latency_s": 0.07677149772644043
+        },
+        {
+            "query": "irrelevant padding query 6 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 6 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5330278873443604,
+                    0.5143324732780457,
+                    0.5026026368141174
+                ],
+                "latency_s": 0.0356297492980957
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7923451066017151,
+                    0.7873611450195312,
+                    0.7814736366271973
+                ],
+                "latency_s": 0.04239654541015625
+            },
+            "preprocessing_latency_s": 0.07802629470825195
+        },
+        {
+            "query": "irrelevant padding query 7 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 7 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5449122190475464,
+                    0.5274635553359985,
+                    0.5053200721740723
+                ],
+                "latency_s": 0.036766767501831055
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7916093468666077,
+                    0.7861400842666626,
+                    0.7825286984443665
+                ],
+                "latency_s": 0.04339957237243652
+            },
+            "preprocessing_latency_s": 0.08016633987426758
+        },
+        {
+            "query": "irrelevant padding query 8 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 8 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5349398255348206,
+                    0.5200914144515991,
+                    0.5167127251625061
+                ],
+                "latency_s": 0.03857231140136719
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7903275489807129,
+                    0.7893424034118652,
+                    0.7850749492645264
+                ],
+                "latency_s": 0.03792405128479004
+            },
+            "preprocessing_latency_s": 0.07649636268615723
+        },
+        {
+            "query": "irrelevant padding query 9 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 9 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5413772463798523,
+                    0.5288891792297363,
+                    0.5167790651321411
+                ],
+                "latency_s": 0.03424572944641113
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7889140248298645,
+                    0.7858545184135437,
+                    0.7785996794700623
+                ],
+                "latency_s": 0.040909528732299805
+            },
+            "preprocessing_latency_s": 0.07515525817871094
+        },
+        {
+            "query": "irrelevant padding query 10 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 10 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5474181175231934,
+                    0.533889889717102,
+                    0.519395112991333
+                ],
+                "latency_s": 0.03532123565673828
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7939356565475464,
+                    0.7893482446670532,
+                    0.7854305505752563
+                ],
+                "latency_s": 0.042687177658081055
+            },
+            "preprocessing_latency_s": 0.07800841331481934
+        },
+        {
+            "query": "irrelevant padding query 11 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 11 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5336488485336304,
+                    0.5268933773040771,
+                    0.5105684995651245
+                ],
+                "latency_s": 0.03574061393737793
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.792816162109375,
+                    0.7887634038925171,
+                    0.7835414409637451
+                ],
+                "latency_s": 0.03885912895202637
+            },
+            "preprocessing_latency_s": 0.07560038566589355
+        },
+        {
+            "query": "irrelevant padding query 12 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 12 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5321572422981262,
+                    0.5275014042854309,
+                    0.5078086256980896
+                ],
+                "latency_s": 0.038686513900756836
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7878013849258423,
+                    0.7873070240020752,
+                    0.7816792726516724
+                ],
+                "latency_s": 0.0443270206451416
+            },
+            "preprocessing_latency_s": 0.08301353454589844
+        },
+        {
+            "query": "irrelevant padding query 13 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 13 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.534461259841919,
+                    0.5260776877403259,
+                    0.5141345858573914
+                ],
+                "latency_s": 0.038091182708740234
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7889875173568726,
+                    0.7880560159683228,
+                    0.7833129167556763
+                ],
+                "latency_s": 0.041271209716796875
+            },
+            "preprocessing_latency_s": 0.07936239242553711
+        },
+        {
+            "query": "irrelevant padding query 14 about dogs and cats",
+            "expected": "NONE",
+            "category": "irrelevant",
+            "detected_language": "ENGLISH",
+            "translated_text": "irrelevant padding query 14 about dogs and cats",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.5436310768127441,
+                    0.5279589295387268,
+                    0.5136537551879883
+                ],
+                "latency_s": 0.03780865669250488
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-003",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7917416095733643,
+                    0.7879469394683838,
+                    0.783935546875
+                ],
+                "latency_s": 0.046407222747802734
+            },
+            "preprocessing_latency_s": 0.08535981178283691
+        },
+        {
+            "query": "banglish padding hit strok 0",
+            "expected": "DOC-NHS-001",
+            "category": "std_banglish",
+            "detected_language": "ENGLISH",
+            "translated_text": "banglish padding hit strok 0",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.5272393226623535,
+                    0.5125452280044556,
+                    0.500024676322937
+                ],
+                "latency_s": 0.03699946403503418
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-003",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.7892472743988037,
+                    0.7804247140884399,
+                    0.7773705720901489
+                ],
+                "latency_s": 0.03743100166320801
+            },
+            "preprocessing_latency_s": 0.07597827911376953
+        },
+        {
+            "query": "banglish padding hit strok 1",
+            "expected": "DOC-NHS-001",
+            "category": "std_banglish",
+            "detected_language": "ENGLISH",
+            "translated_text": "banglish padding hit strok 1",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-003",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.5540130138397217,
+                    0.5446169972419739,
+                    0.5416160821914673
+                ],
+                "latency_s": 0.04023313522338867
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-001",
+                    "DOC-NHS-002"
+                ],
+                "top_scores": [
+                    0.7865136861801147,
+                    0.7726939916610718,
+                    0.7696987390518188
+                ],
+                "latency_s": 0.03823995590209961
+            },
+            "preprocessing_latency_s": 0.07847309112548828
+        },
+        {
+            "query": "banglish padding hit strok 2",
+            "expected": "DOC-NHS-001",
+            "category": "std_banglish",
+            "detected_language": "ENGLISH",
+            "translated_text": "banglish padding hit strok 2",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-001",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.5320829749107361,
+                    0.5241236090660095,
+                    0.49237677454948425
+                ],
+                "latency_s": 0.041388511657714844
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.7671573162078857,
+                    0.7666201591491699,
+                    0.7634889483451843
+                ],
+                "latency_s": 0.04033303260803223
+            },
+            "preprocessing_latency_s": 0.08172154426574707
+        },
+        {
+            "query": "banglish padding hit strok 3",
+            "expected": "DOC-NHS-001",
+            "category": "std_banglish",
+            "detected_language": "ENGLISH",
+            "translated_text": "banglish padding hit strok 3",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-001",
+                    "DOC-NHS-003",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.5390373468399048,
+                    0.5312048196792603,
+                    0.506288468837738
+                ],
+                "latency_s": 0.03756546974182129
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-002",
+                    "DOC-NHS-001"
+                ],
+                "top_scores": [
+                    0.7632737159729004,
+                    0.7626161575317383,
+                    0.7622004747390747
+                ],
+                "latency_s": 0.044730186462402344
+            },
+            "preprocessing_latency_s": 0.08229565620422363
+        },
+        {
+            "query": "banglish padding hit strok 4",
+            "expected": "DOC-NHS-001",
+            "category": "std_banglish",
+            "detected_language": "ENGLISH",
+            "translated_text": "banglish padding hit strok 4",
+            "translation_status": "NOT_REQUIRED",
+            "translation_latency_s": 0.0,
+            "bge": {
+                "top_docs": [
+                    "DOC-NHS-003",
+                    "DOC-NHS-001",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.5492290258407593,
+                    0.5437685251235962,
+                    0.5217310190200806
+                ],
+                "latency_s": 0.03812360763549805
+            },
+            "e5": {
+                "top_docs": [
+                    "DOC-NHS-002",
+                    "DOC-NHS-001",
+                    "DOC-NHS-003"
+                ],
+                "top_scores": [
+                    0.7669720649719238,
+                    0.7651307582855225,
+                    0.7640134692192078
+                ],
+                "latency_s": 0.04634904861450195
+            },
+            "preprocessing_latency_s": 0.08447265625
+        }
+    ]
+}

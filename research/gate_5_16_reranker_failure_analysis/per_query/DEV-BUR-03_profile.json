@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-BUR-03",
+  "raw_query": "pure gele thanda pani koto minute dhalbo?",
+  "normalized_query": "pure gele thanda pani koto minute dhalbo?",
+  "language_category": "Standard_Banglish",
+  "expected_source_id": "DOC-NHS-005",
+  "gold_chunk_ids": [
+    "DOC-NHS-005-HYB-000"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 379.0,
+  "dense_rank": 0,
+  "dense_r15": false,
+  "rerank_rank": 0,
+  "in_top5": false,
+  "is_top1": false,
+  "gold_rerank_score": 0.0,
+  "rank1_chunk_id": "DOC-NHS-010-HYB-004",
+  "rank1_source_id": "DOC-NHS-010",
+  "rank1_heading": "",
+  "rank1_length": 685,
+  "rank1_score": 1.803583472792525e-05,
+  "score_margin_vs_gold": 1.0,
+  "same_source_as_gold": false,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "GOLD_OUTSIDE_DENSE15",
+  "secondary_failure_cause": "BANGLISH_OR_TRANSLITERATION_FAILURE",
+  "top5_cids": [
+    "DOC-NHS-010-HYB-004",
+    "DOC-NHS-008-HYB-005",
+    "DOC-NHS-011-HYB-002",
+    "DOC-NHS-007-HYB-007",
+    "DOC-NHS-010-HYB-005"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-010-HYB-004",
+      "source_id": "DOC-NHS-010",
+      "heading": "",
+      "score": 1.803583472792525e-05,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-008-HYB-005",
+      "source_id": "DOC-NHS-008",
+      "heading": "",
+      "score": 1.7334486983600073e-05,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-011-HYB-002",
+      "source_id": "DOC-NHS-011",
+      "heading": "",
+      "score": 1.6768675777711906e-05,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-007-HYB-007",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 1.6706328096915968e-05,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-010-HYB-005",
+      "source_id": "DOC-NHS-010",
+      "heading": "",
+      "score": 1.66657664522063e-05,
+      "is_gold": false
+    }
+  ]
+}

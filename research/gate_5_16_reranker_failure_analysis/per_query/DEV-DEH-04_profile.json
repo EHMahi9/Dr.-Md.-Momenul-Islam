@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-DEH-04",
+  "raw_query": "muk shukay geche prosrab kom hoy pani shunnota naki",
+  "normalized_query": "muk shukay geche prosrab kom hoy pani shunnota naki (dehydration fluid rehydration oral fluids)",
+  "language_category": "Abbreviated_Banglish",
+  "expected_source_id": "DOC-NHS-007",
+  "gold_chunk_ids": [
+    "DOC-NHS-007-HYB-000"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 608.0,
+  "dense_rank": 4,
+  "dense_r15": true,
+  "rerank_rank": 2,
+  "in_top5": true,
+  "is_top1": false,
+  "gold_rerank_score": 0.004634720156900585,
+  "rank1_chunk_id": "DOC-NHS-007-HYB-002",
+  "rank1_source_id": "DOC-NHS-007",
+  "rank1_heading": "",
+  "rank1_length": 376,
+  "rank1_score": 0.00783433299511671,
+  "score_margin_vs_gold": 0.003199612838216126,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "SAME_DOC_SUBSTANTIVE_SECTION_COMPETITION",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-007-HYB-002",
+    "DOC-NHS-007-HYB-000",
+    "DOC-NHS-007-HYB-001",
+    "DOC-NHS-008-HYB-004",
+    "DOC-NHS-007-HYB-003"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-007-HYB-002",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.00783433299511671,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-007-HYB-000",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.004634720156900585,
+      "is_gold": true
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-007-HYB-001",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.00462494557723403,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-008-HYB-004",
+      "source_id": "DOC-NHS-008",
+      "heading": "",
+      "score": 0.0027390746399760246,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-007-HYB-003",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.00195600395090878,
+      "is_gold": false
+    }
+  ]
+}

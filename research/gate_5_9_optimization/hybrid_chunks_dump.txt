@@ -1,0 +1,1225 @@
+Total HYBRID_600 chunks: 68
+
+=======================================================
+SOURCE: DOC-NHS-004 (18 chunks) - Asthma
+ - NHS
+=======================================================
+
+--- CHUNK: DOC-NHS-004-HYB-000 (164 chars) ---
+Asthma
+
+Asthma is a common condition that affects your breathing. It cannot currently be cured, but if it's well treated you should not have problems with symptoms.
+
+--- CHUNK: DOC-NHS-004-HYB-001 (643 chars) ---
+Symptoms of asthma
+
+The main symptoms of asthma are problems with breathing, such as:
+
+wheezing
+
+coughing
+
+shortness of breath
+
+your chest feeling tight
+
+Asthma symptoms can be mild or severe. They usually come and go. They may be worse at night and early in the morning.
+
+An asthma attack is when you have severe symptoms and it's difficult to breathe, which can be life-threatening.
+
+Symptoms can be triggered by different things including exercise, high levels of air pollution, cold air, or contact with something you're allergic to, such as pollen, dust, mould or animals.
+
+Asthma usually starts in children, but it can happen at any age.
+
+--- CHUNK: DOC-NHS-004-HYB-002 (492 chars) ---
+Non-urgent advice: See a GP if:
+
+you or your child have asthma symptoms
+
+you or your child have asthma and treatments are not helping, you're needing to use your inhaler more often, or you need advice about using your inhaler
+
+you or your child have asthma and your symptoms are not improving or are stopping you doing your usual activities or waking you up at night
+
+How to treat an asthma attack
+
+If you're having an asthma attack, sit up straight, to help your breathing. Try to stay calm.
+
+--- CHUNK: DOC-NHS-004-HYB-003 (566 chars) ---
+Use your asthma reliever inhaler if you have one:
+
+If you have a blue reliever inhaler, take 1 puff every 30 to 60 seconds until you feel better, up to a maximum of 10 puffs. Shake the inhaler between each puff and use a spacer with the inhaler if you have one.
+
+If you have an AIR or MART inhaler (used for both preventing and treating symptoms), take 1 puff every 1 to 3 minutes until you feel better, up to a maximum of 6 puffs.
+
+If your personal asthma action plan has a different maximum dose for treating an asthma attack, follow the instructions in your plan.
+
+--- CHUNK: DOC-NHS-004-HYB-004 (514 chars) ---
+Immediate action required: Call 999 if:
+
+You or someone else is having an asthma attack and:
+
+start to feel worse at any time
+
+do not feel better after taking the maximum dose using an asthma reliever inhaler
+
+do not have an asthma inhaler
+
+If symptoms are no better after 10 minutes and an ambulance has not arrived, use an asthma inhaler again if you have one, taking up to the same maximum dose.
+
+Information:
+
+Do not drive yourself to A&E.
+
+The person you speak to at 999 will give you advice about what to do.
+
+--- CHUNK: DOC-NHS-004-HYB-005 (246 chars) ---
+Urgent advice: Ask for an urgent GP appointment if:
+
+you've had an asthma attack and have recovered
+
+Even if you feel better, it's important to see a GP within 2 days to discuss your treatment and get advice to help prevent another asthma attack.
+
+--- CHUNK: DOC-NHS-004-HYB-006 (607 chars) ---
+How asthma is diagnosed
+
+If you or your child have symptoms of asthma a GP or nurse will ask you some questions and listen to your chest.
+
+You may need a simple breathing test to check for signs of asthma, and sometimes a blood test.
+
+You may also be given a handheld device called a peak flow meter to use at home for a few weeks, to check how well your lungs are working.
+
+Asthma can take some time to diagnose because the symptoms often vary over time and breathing problems can have different causes. If it's likely you have asthma, you may be offered asthma medicines to see if they help your symptoms.
+
+--- CHUNK: DOC-NHS-004-HYB-007 (695 chars) ---
+Treatment for asthma
+
+If you have asthma you'll be supported by a care team including a GP or nurse, and sometimes a specialist hospital doctor.
+
+Your care team will explain how and when to use your medicines, how to monitor your asthma, ways to avoid triggers and reduce your symptoms, and what to do if your symptoms get worse.
+
+This will be recorded in your asthma action plan, which you'll need to take to all your asthma appointments. You'll be given a printed or digital copy, or both.
+
+You should have check-ups at least once a year to see how well your treatment is working. These will include checking that you're using your inhalers correctly and your asthma action plan is up to date.
+
+--- CHUNK: DOC-NHS-004-HYB-008 (705 chars) ---
+Asthma inhalers
+
+The main treatment for asthma is medicines you breathe in using an inhaler. For most people they work well to reduce or prevent asthma symptoms.
+
+Depending on how severe your symptoms are, you may be offered either:
+
+an inhaler to use only when you get symptoms – this is called an anti-inflammatory reliever (AIR) inhaler
+
+an inhaler to use every day to help prevent symptoms, as well as when you get symptoms – this is called a maintenance and reliever therapy (MART) inhaler
+
+2 separate inhalers – a preventer inhaler to use every day to help prevent symptoms, and a blue reliever inhaler to use when you get symptoms (you should not be given a blue reliever inhaler to use on its own)
+
+--- CHUNK: DOC-NHS-004-HYB-009 (502 chars) ---
+Important: Using your inhaler
+
+It's important to use your inhaler correctly so that your medicine works properly. There are different types, including dry powder inhalers, pMDIs and soft mist inhalers. A doctor, nurse or pharmacist will show you how to use yours.
+
+Disposing of your inhalers
+
+Return your empty, unwanted or expired inhalers to your local pharmacy.
+
+When you put an inhaler in the bin, gases can leak out and contribute to climate change. Your local pharmacy can dispose of them safely.
+
+--- CHUNK: DOC-NHS-004-HYB-010 (730 chars) ---
+Other treatments for asthma
+
+If inhalers are not enough to stop your symptoms, your care team may also recommend a stronger inhaler or tablets that make breathing easier, such as montelukast.
+
+If you have severe asthma that's not controlled by inhalers and tablets, you may be offered other treatments, such as medicines that you inject, called biological therapies.
+
+Your care team will discuss with you which treatment is right for you, including any possible side effects.
+
+Hospital treatment for an asthma attack
+
+If you have a severe asthma attack that does not get better, you may need to be treated in hospital. Hospital treatments may include:
+
+oxygen through a mask
+
+using a nebuliser to breathe in high doses of medicine
+
+--- CHUNK: DOC-NHS-004-HYB-011 (670 chars) ---
+steroid tablets or injections
+
+Information:
+
+Find out more
+
+Asthma and Lung UK: asthma treatments
+
+Asthma and Lung UK: videos showing how to use your inhaler
+
+NHS medicines A to Z: find your medicine
+
+Things you can do to help with asthma
+
+If you have asthma there are things you can do to help prevent symptoms and reduce the risk of asthma attacks.
+
+Do
+
+always have your inhaler with you
+
+use your inhalers as recommended by your care team
+
+try to avoid things that trigger your asthma symptoms, such as air pollution, smoke, pollen or animals
+
+exercise regularly – get advice from your doctor or nurse about exercising safely if exercise triggers your asthma symptoms
+
+--- CHUNK: DOC-NHS-004-HYB-012 (377 chars) ---
+keep to a healthy weight
+
+have vaccinations such as the flu vaccine – viruses such as flu can make asthma symptoms worse
+
+Don’t
+
+do not smoke – get help to quit smoking if you need it
+
+do not take medicines for other conditions without checking with a pharmacist or doctor – some medicines such as aspirin, ibuprofen and beta blockers can trigger asthma symptoms in some people
+
+--- CHUNK: DOC-NHS-004-HYB-013 (725 chars) ---
+Information:
+
+Find out more
+
+Asthma and Lung UK: managing asthma
+
+How asthma affects your life
+
+Asthma is often a life-long condition, although asthma in young children sometimes goes away by the time they're teenagers or adults.
+
+Asthma affects everyone differently. How it affects you depends on your symptoms, what they're triggered by, and how well your treatment works.
+
+For most people, inhalers work well to prevent or reduce symptoms if they're used correctly, and asthma has only a small impact on their daily life. But some people have more severe symptoms that are harder to control, and they need other treatment.
+
+An asthma attack can be life-threatening. But getting the right asthma treatment reduces the risk.
+
+--- CHUNK: DOC-NHS-004-HYB-014 (486 chars) ---
+Information:
+
+Asthma and pregnancy
+
+If you're pregnant, tell your doctor or midwife about your asthma. It's important to manage asthma in pregnancy to keep you and your baby well.
+
+Find out more about asthma and pregnancy
+
+Causes of asthma
+
+Asthma symptoms happen when your airways become swollen. This makes them narrower, causing breathing problems.
+
+In people who have asthma, symptoms can be triggered by different things, such as allergies, exercise, smoke, cold air or infections.
+
+--- CHUNK: DOC-NHS-004-HYB-015 (567 chars) ---
+It's not fully understood what causes asthma. You may be more likely to get asthma if:
+
+you have allergies such as eczema, hay fever or food allergies
+
+other people in your family have asthma, hay fever, eczema or allergies
+
+you were born prematurely or had a low birth weight
+
+you were exposed to things like high levels of air pollution or cigarette smoke as a child
+
+you had illnesses as a child that affected your breathing, such as bronchiolitis or croup
+
+you're overweight
+
+Asthma can also be caused by breathing in substances such as certain chemicals at work.
+
+--- CHUNK: DOC-NHS-004-HYB-016 (600 chars) ---
+Help and support for asthma
+
+As well as support from your healthcare team, you may find it helpful to get support from other people with asthma, either at a local support group or online.
+
+There are also national charities that can offer support and information about asthma.
+
+Asthma and Lung UK
+
+Information and support for anyone affected by lung conditions including asthma.
+
+Website: www.asthmaandlung.org.uk
+
+Helpline: 0300 222 5800
+
+Asthma and Lung UK: support in your area
+
+Asthma and Lung UK: living with a lung condition
+
+Allergy UK
+
+Information and support for people living with allergies.
+
+--- CHUNK: DOC-NHS-004-HYB-017 (313 chars) ---
+Website: www.allergyuk.org
+
+Helpline: 01322 619898
+
+Allergy UK: asthma
+
+Beat Asthma
+
+Website for children and young people with asthma.
+
+Website: www.beatasthma.co.uk
+
+Beat Asthma: information for families and children
+
+Video: Asthma
+
+Animated video about asthma, which is a chronic condition affecting the lungs.
+
+=======================================================
+SOURCE: DOC-NHS-005 (5 chunks) - Burns and scalds
+ - NHS
+=======================================================
+
+--- CHUNK: DOC-NHS-005-HYB-000 (379 chars) ---
+Burns and scalds
+
+Burns and scalds can often be treated at home if they're small. But if they're severe, you may need treatment in hospital.
+
+How burns and scalds happen
+
+Burns usually happen when dry heat comes into contact with your skin, such as fire or a hot iron, for example. Burns can also be caused by electricity or chemicals.
+
+Scalds are caused by hot liquids or steam.
+
+--- CHUNK: DOC-NHS-005-HYB-001 (550 chars) ---
+Find out more about acid and chemical burns.
+
+What to do if you have a burn or scald
+
+You should treat all burns and scalds straight away.
+
+Hold the burn or scald under cool running water for 15 to 30 minutes, or until the pain feels better. If there's no running water available, you can use cool bottled water.
+
+Remove any clothing or jewellery that's near the affected area – but do not remove anything that is stuck to the affected area.
+
+When the burn or scald has cooled, lay cling film over it if you can. Do not wrap the cling film around it.
+
+--- CHUNK: DOC-NHS-005-HYB-002 (583 chars) ---
+Immediate action required: Call 999 or go to A&E if:
+
+You have a burn or scald that:
+
+is very large or deep
+
+is on your face, genitals or bottom
+
+has been caused by an acid or chemical, or by electricity
+
+Find your nearest A&E
+
+Information:
+
+Do not drive to A&E. Ask someone to drive you or call 999 and ask for an ambulance.
+
+Bring any medicines you take with you.
+
+Urgent advice: Get help from NHS 111 if:
+
+you or your child has a burn or scald and you're not sure what to do
+
+You can call 111 or get help from 111 online. Call 111 if you need advice for a child under 5 years old.
+
+--- CHUNK: DOC-NHS-005-HYB-003 (597 chars) ---
+Treatments for burns and scalds
+
+Small burns and scalds can often be treated at home and can take around 2 weeks to heal.
+
+Severe burns and scalds that are large or deep may need treatment in hospital.
+
+Treatment in hospital may include:
+
+medicines, such as antibiotics or painkillers
+
+having your burn or scald cleaned and dressed
+
+being given fluids, usually through a vein in your arm (IV)
+
+surgery, which may be done to repair the wound or to reconstruct damaged skin
+
+Things you can do to help while burns and scalds heal
+
+There are things you can do to help while a burn or scald is healing.
+
+--- CHUNK: DOC-NHS-005-HYB-004 (373 chars) ---
+Do
+
+take painkillers such as paracetamol or ibuprofen to help with pain
+
+use an emollient ointment on the affected area if it becomes itchy and dry as it heals – you can ask a pharmacist for advice about what to use
+
+Don't
+
+do not put any creams, oils or butter on burns or scalds
+
+do not use plasters or sticky dressings to cover a burn or scald
+
+do not burst any blisters
+
+=======================================================
+SOURCE: DOC-NHS-006 (7 chunks) - Cuts and grazes
+ - NHS
+=======================================================
+
+--- CHUNK: DOC-NHS-006-HYB-000 (549 chars) ---
+Cuts and grazes
+
+Most cuts and grazes can be treated at home and will start to heal in a few days. But some wounds may need to be treated by a medical professional if there's a risk of infection or the cut is serious.
+
+How to treat a cut or graze yourself
+
+You can treat a cut or graze yourself by stopping any bleeding, cleaning the wound, and covering it with a plaster or dressing. This will help stop it getting infected.
+
+If it's painful, you can take painkillers such as paracetamol or ibuprofen (but do not give aspirin to children under 16).
+
+--- CHUNK: DOC-NHS-006-HYB-001 (678 chars) ---
+What to do if the wound is bleeding a lot
+
+Wash your hands thoroughly and dry them. Put on disposable gloves if you have some.
+
+Check the wound and make sure there's nothing stuck in it.
+
+If there's nothing in the wound, put pressure on it using a bandage or a clean, folded cloth (such as a tea towel).
+
+If there's something stuck in the wound, do not try to take it out. Make sure not to press down on the object. Press firmly either side of it to push the edges of the wound together.
+
+If the wound is on your hand or arm, raise it above your head. If the wound is on your lower limb, lie down and raise it above the level of your heart. This will help reduce the blood flow.
+
+--- CHUNK: DOC-NHS-006-HYB-002 (620 chars) ---
+What to do if the wound is bleeding a lot
+
+If blood comes through the bandage or cloth, apply another bandage or cloth on top to put pressure on the wound.
+
+When the bleeding is under control, keep the dressing in place by tying a knot in a bandage over the wound. Support the injured part of your body with a sling or bandage.
+
+Check your circulation every 10 minutes to make sure the bandage is not too tight. Press on your skin beyond the bandage for 5 seconds until it turns pale, then check that the colour comes back within 2 seconds. If the colour does not come back within 2 seconds, loosen the bandage slightly.
+
+--- CHUNK: DOC-NHS-006-HYB-003 (618 chars) ---
+How to clean and dress a cut or graze
+
+If the bleeding has stopped, you can clean a small wound and then put a plaster or dressing over it.
+
+Wash your hands thoroughly and dry them. Put on disposable gloves if you have some.
+
+Clean the wound by rinsing it with bottled or tap water, or by using sterile wipes.
+
+Pat the area dry using a gauze swab or a clean tea towel.
+
+Cover the wound with sterile gauze or a clean cloth.
+
+Clean the skin around the wound using soap and water. Wipe away from the wound using a clean swab or cloth for each stroke.
+
+Remove the gauze or cloth and put on a sterile dressing or a plaster.
+
+--- CHUNK: DOC-NHS-006-HYB-004 (644 chars) ---
+How to clean and dress a cut or graze
+
+Keep the dressing clean and dry by using a waterproof dressing or keeping it away from water and changing it as often as you need. You can take it off after a few days, once the wound has closed.
+
+Information:
+
+Find out more
+
+How to apply a dressing (St John Ambulance)
+
+How to put on a bandage (St John Ambulance)
+
+Urgent advice: Ask for an urgent GP appointment or get help from NHS 111 if:
+
+a wound has soil, pus or body fluids in it, or it's still dirty after cleaning it
+
+you were bitten by a person or a wild or stray animal
+
+a cut is swollen, red and getting more painful or pus is coming out of it
+
+--- CHUNK: DOC-NHS-006-HYB-005 (747 chars) ---
+a cut is larger than around 5cm (2 inches)
+
+you've cut yourself and also feel generally unwell or have a high temperature
+
+You can call 111 or get help from 111 online.
+
+Immediate action required: Call 999 or go to A&E if:
+
+you have a cut and cannot stop the bleeding
+
+the blood comes out in spurts and is bright red and hard to control
+
+you lose feeling near the wound or have trouble moving it
+
+you have a bad cut on your face or the palm of your hand
+
+the wound is very large or deep
+
+there's something stuck in the cut, such as a shard of glass – do not try to take it out yourself
+
+Find your nearest A&E
+
+Information:
+
+Do not drive to A&E. Ask someone to drive you or call 999 and ask for an ambulance.
+
+Bring any medicines you take with you.
+
+--- CHUNK: DOC-NHS-006-HYB-006 (477 chars) ---
+Treatments for cuts and grazes
+
+How a cut or graze is treated will depend on how bad it is and if there's a risk of it becoming infected.
+
+The cut will be cleaned and closed with either stitches, staples, strips or special glue before a dressing is put over it.
+
+But the wound may not be closed straight away if it's infected or there's a risk it may get infected.
+
+You may also need to have an injection to prevent tetanus or be given antibiotics if the cut could be infected.
+
+=======================================================
+SOURCE: DOC-NHS-007 (8 chunks) - Dehydration
+ - NHS
+=======================================================
+
+--- CHUNK: DOC-NHS-007-HYB-000 (608 chars) ---
+Dehydration
+
+Dehydration means your body loses more fluids than you take in. If it's not treated, it can get worse and become a serious problem.
+
+Important
+
+Babies, children and older adults are more at risk of dehydration.
+
+Symptoms of dehydration
+
+Symptoms of dehydration in adults and children include:
+
+feeling thirsty
+
+headache and feeling light-headed
+
+dark yellow, strong-smelling pee
+
+peeing less often than usual
+
+feeling dizzy or lightheaded
+
+feeling tired
+
+a dry mouth, lips and tongue
+
+sunken eyes
+
+Signs of dehydration in a baby may include:
+
+a sunken soft spot (fontanelle) on top of their head
+
+--- CHUNK: DOC-NHS-007-HYB-001 (748 chars) ---
+sunken eyes
+
+few or no tears when they cry
+
+fewer wet nappies than usual
+
+being drowsy or irritable
+
+Causes of dehydration
+
+Dehydration can happen more easily if you:
+
+have diabetes
+
+have been sick or have diarrhoea
+
+have been in the sun, or a hot environment, too long (heatstroke)
+
+have drunk too much alcohol
+
+sweat a lot after exercising
+
+have a high temperature
+
+take medicines that make you pee more (diuretics)
+
+rely on other people to get you drinks
+
+Things you can do to treat dehydration
+
+You should drink fluids if you have symptoms of dehydration.
+
+If you feel sick or have been sick, you may find it hard to drink, so start with small sips and then gradually drink more. Avoid caffeinated drinks and alcohol as both will dehydrate you.
+
+--- CHUNK: DOC-NHS-007-HYB-002 (376 chars) ---
+A pharmacist can help with dehydration
+
+If you're being sick or have diarrhoea and are losing too much fluid, you need to put back the sugar, salts and minerals your body has lost.
+
+A pharmacist can recommend oral rehydration solutions. These are powders that you mix with water and then drink.
+
+Ask your pharmacist which rehydration solutions are right for you or your child.
+
+--- CHUNK: DOC-NHS-007-HYB-003 (688 chars) ---
+Find a pharmacy
+
+Urgent advice: Ask for an urgent GP appointment or get help from NHS 111 if:
+
+you're feeling unusually tired (or your child seems drowsy)
+
+you feel dizzy when you stand up and it does not go away
+
+you have dark yellow pee or you're peeing less than normal (or your baby has fewer wet nappies)
+
+you or your child are breathing quickly or have a fast heart rate
+
+your baby or child have few or no tears when they cry
+
+your baby has a soft spot on their head that sinks inwards (sunken fontanelle)
+
+These can be signs of serious dehydration that need urgent treatment.
+
+You can call 111 or get help from 111 online. Call 111 if you need advice for a child under 5 years old.
+
+--- CHUNK: DOC-NHS-007-HYB-004 (636 chars) ---
+Immediate action required: Call 999 or go to A&E if:
+
+You or somebody else has signs of dehydration and:
+
+blue, grey, pale or blotchy skin, lips or tongue – on brown or black skin, this may be easier to see on the palms of the hands or soles of the feet
+
+skin that feels cold
+
+difficulty breathing, or is taking lots of quick breaths
+
+are confused
+
+are sleepier than normal or difficult to wake
+
+These could be signs of shock, which is a serious complication of dehydration.
+
+Find your nearest A&E
+
+Information:
+
+Do not drive to A&E. Ask someone to drive you or call 999 and ask for an ambulance.
+
+Bring any medicines you take with you.
+
+--- CHUNK: DOC-NHS-007-HYB-005 (674 chars) ---
+Keeping your child hydrated
+
+Once dehydration has been treated, it's important that your child's fluid levels are maintained.
+
+Do
+
+carry on breastfeeding your baby or using formula – try to give small amounts more often than usual
+
+give your baby small sips of extra water if they're on formula or solid foods (if your baby is under 6 months, then boil the water first before letting it cool)
+
+give regular small sips of rehydration solution to replace lost fluids – ask your pharmacist to recommend one
+
+give small children their usual diet
+
+Don't
+
+do not make formula weaker
+
+do not give young children fruit juice or fizzy drinks – it can make diarrhoea or vomiting worse
+
+--- CHUNK: DOC-NHS-007-HYB-006 (607 chars) ---
+How to reduce the risk of dehydration
+
+Drinking fluids regularly can reduce the risk of dehydration. Water or diluted sugar-free squash are good choices.
+
+You should drink enough during the day so that your pee is a pale colour.
+
+Drink more when there's a higher risk of dehydrating. For example, if you're being sick, sweating due to hot weather or exercise, or you have diarrhoea.
+
+Children under the age of 5 and older adults should get plenty of fluids as they have an increased risk of dehydration.
+
+Helping someone you care for
+
+A person you care for may not have a sense of how much they're drinking.
+
+--- CHUNK: DOC-NHS-007-HYB-007 (350 chars) ---
+You can help them by:
+
+making sure they drink at mealtimes
+
+making drinking a social thing
+
+offering them food with a high water content – for example, soup, ice cream, jelly and fruits like melon
+
+making sure they have access to fluids at all times
+
+Video: How to prevent dehydration
+
+This video shows you how you can reduce the risk of dehydration.
+
+=======================================================
+SOURCE: DOC-NHS-008 (8 chunks) - Diarrhoea and vomiting
+ - NHS
+=======================================================
+
+--- CHUNK: DOC-NHS-008-HYB-000 (416 chars) ---
+Diarrhoea and vomiting
+
+Diarrhoea and vomiting are common in adults, children and babies. They're often caused by a stomach bug and should stop in a few days.
+
+The advice is the same if you have diarrhoea and vomiting together or separately.
+
+How to treat diarrhoea and vomiting yourself
+
+Diarrhoea and vomiting can usually be treated at home. The most important thing is to have lots of fluids to avoid dehydration.
+
+--- CHUNK: DOC-NHS-008-HYB-001 (684 chars) ---
+Do
+
+stay at home and get plenty of rest
+
+drink lots of fluids, such as water or squash – take small sips if you feel sick
+
+carry on breast or bottle feeding your baby – if they're being sick, try giving small feeds more often than usual
+
+give babies on formula or solid foods small sips of water between feeds
+
+eat when you feel able to – it may help to avoid foods that are fatty or spicy
+
+take paracetamol if you're in discomfort – check the leaflet before giving it to your child
+
+Don’t
+
+do not have fruit juice or fizzy drinks – they can make diarrhoea worse
+
+do not make baby formula weaker – use it at its usual strength
+
+do not give children under 12 medicine to stop diarrhoea
+
+--- CHUNK: DOC-NHS-008-HYB-002 (734 chars) ---
+do not give aspirin to children under 16
+
+How long diarrhoea and vomiting last
+
+In adults and children:
+
+diarrhoea usually stops within 5 to 7 days
+
+vomiting usually stops in 1 or 2 days
+
+Diarrhoea and vomiting can spread easily
+
+Stay off school or work until you've not been sick or had diarrhoea for at least 2 days.
+
+If you have a high temperature or do not feel well enough to do your normal activities, try to stay at home and avoid contact with other people until you feel better.
+
+To help avoid spreading an infection:
+
+wash your hands with soap and water frequently
+
+wash any clothing or bedding that has poo or vomit on it separately on a hot wash
+
+clean toilet seats, flush handles, taps, surfaces and door handles every day
+
+--- CHUNK: DOC-NHS-008-HYB-003 (723 chars) ---
+do not prepare food for other people, if possible
+
+do not share towels, flannels, cutlery or utensils
+
+do not use a swimming pool until at least 48 hours after your symptoms stop
+
+A pharmacist can help with diarrhoea and vomiting
+
+Speak to a pharmacist if:
+
+you or your child (over 5 years) have signs of dehydration, such as dark, smelly pee or peeing less than usual
+
+you're an older person, have a weakened immune system, or have other health conditions that increase your risk of dehydration
+
+you need to stop diarrhoea for a few hours
+
+They may recommend:
+
+oral rehydration powder that you mix with water to make a drink
+
+medicine to stop diarrhoea for a few hours, like loperamide (not suitable for children under 12)
+
+--- CHUNK: DOC-NHS-008-HYB-004 (660 chars) ---
+Find a pharmacy
+
+Urgent advice: Call 111 now if:
+
+you're worried about a baby under 12 months
+
+your child stops breast or bottle feeding while they're ill
+
+a child under 5 years has signs of dehydration, such as fewer wet nappies
+
+you or your child (aged 5 years or over) still have signs of dehydration after using oral rehydration sachets
+
+you or your child keep being sick and cannot keep fluid down
+
+you or your child have bloody diarrhoea or bleeding from the bottom
+
+you or your child have diarrhoea for more than 7 days or vomiting for more than 2 days
+
+111 will tell you what to do. They can arrange a phone call from a nurse or doctor if you need one.
+
+--- CHUNK: DOC-NHS-008-HYB-005 (596 chars) ---
+Immediate action required: Call 999 or go to A&E if you or your child:
+
+vomit blood or have vomit that looks like ground coffee
+
+have green vomit (adults)
+
+have yellow-green or green vomit (children)
+
+may have swallowed something poisonous
+
+have a stiff neck and pain when looking at bright lights
+
+have a sudden, severe headache
+
+have a sudden, severe tummy ache
+
+have blue, grey, pale or blotchy skin, lips or tongue - on brown or black skin this may be easier to see on the palms of the hands or soles of the feet
+
+are having severe difficulty breathing, or taking lots of quick, short breaths
+
+--- CHUNK: DOC-NHS-008-HYB-006 (574 chars) ---
+are confused or not responding as usual
+
+What we mean by severe pain Severe pain: always there and so bad it's hard to think or talk you cannot sleep it's very hard to move, get out of bed, go to the bathroom, wash or dress Moderate pain: always there makes it hard to concentrate or sleep you can manage to get up, wash or dress Mild pain: comes and goes is annoying but does not stop you doing daily activities
+
+Find your nearest A&E
+
+Information:
+
+Do not drive to A&E. Ask someone to drive you or call 999 and ask for an ambulance.
+
+Bring any medicines you take with you.
+
+--- CHUNK: DOC-NHS-008-HYB-007 (726 chars) ---
+Causes of diarrhoea and vomiting
+
+The most common causes of diarrhoea and vomiting are:
+
+a stomach bug
+
+food poisoning
+
+Other causes of diarrhoea or vomiting Diarrhoea can also be caused by: medicines – check the leaflet to see if it's a side effect a food intolerance or food allergy irritable bowel syndrome (IBS) anxiety appendicitis inflammatory bowel disease coeliac disease diverticular disease radiation treatment in the pelvic area Vomiting can also be caused by: pregnancy migraine motion sickness inner ear infections, such as labyrinthitis medicines – check the leaflet to see if it's a side effect reflux – where a baby brings feeds back up ("spitting up") other infections, such as a urinary tract infection (UTI)
+
+=======================================================
+SOURCE: DOC-NHS-009 (5 chunks) - Headaches
+ - NHS
+=======================================================
+
+--- CHUNK: DOC-NHS-009-HYB-000 (747 chars) ---
+Headaches
+
+Most headaches go away on their own and are not a sign of something more serious.
+
+How you can ease headaches yourself
+
+Headaches can last 30 minutes, several hours, or sometimes several days.
+
+Do
+
+drink plenty of water
+
+get plenty of rest if you also have a cold or the flu
+
+try to relax – stress can make headaches worse
+
+take paracetamol or ibuprofen
+
+try to stay at home and avoid contact with other people if you also have a high temperature or you do not feel well enough to do your normal activities
+
+Don’t
+
+do not skip meals (even if you might not feel like eating anything)
+
+do not sleep more than you usually would – it can make the headache worse
+
+do not strain your eyes for a long time – for example, by looking at a screen
+
+--- CHUNK: DOC-NHS-009-HYB-001 (253 chars) ---
+do not drink alcohol
+
+When and where to get medical help
+
+Most headaches are not serious but sometimes you may need medical help.
+
+Non-urgent advice: See a GP if:
+
+you've tried treating a headache yourself and it's not getting better or is getting worse
+
+--- CHUNK: DOC-NHS-009-HYB-002 (634 chars) ---
+you regularly get headaches
+
+Urgent advice: Ask for an urgent GP appointment or get help from NHS 111 if:
+
+you or a child has a headache and vision or eye problems
+
+you or a child has a headache triggered or made worse by coughing, sneezing, bending down or exercising
+
+you or a child has a headache and is being sick (vomiting)
+
+a child has a headache that's getting worse or wakes them at night
+
+you have a headache and jaw pain when eating or a sore or tender scalp
+
+you or a child has any other symptoms you're worried about
+
+You can call 111 or get help from 111 online. Call 111 if you need advice for a child under 5 years old.
+
+--- CHUNK: DOC-NHS-009-HYB-003 (708 chars) ---
+Immediate action required: Call 999 or go to A&E if:
+
+You or a child has a headache and:
+
+has had a seizure (fit)
+
+has numbness or weakness in the body or face
+
+it started suddenly and is extremely painful
+
+has had a head injury within the last 3 months – for example, from a fall or accident
+
+are finding it difficult to speak, balance, walk or remember things
+
+are drowsy or confused
+
+has loss of vision
+
+has a rash that does not fade when a glass is rolled over it
+
+has a very high temperature, a stiff neck, or bright lights are bothering you
+
+Find your nearest A&E
+
+Information:
+
+Do not drive to A&E. Ask someone to drive you or call 999 and ask for an ambulance.
+
+Bring any medicines you take with you.
+
+--- CHUNK: DOC-NHS-009-HYB-004 (535 chars) ---
+What can cause headaches
+
+Common causes of headaches include:
+
+having a cold or flu
+
+stress
+
+drinking too much alcohol
+
+bad posture
+
+eyesight problems
+
+not eating regular meals
+
+not drinking enough fluids (dehydration)
+
+taking too many painkillers
+
+having your period or during menopause (hormone headache)
+
+Keeping a headache diary might help you work out what triggers your headaches.
+
+Severe headaches can sometimes be caused by a migraine or cluster headache.
+
+The Migraine Trust has advice about what to record in a headache diary
+
+=======================================================
+SOURCE: DOC-NHS-010 (7 chunks) - High temperature (fever) in children
+ - NHS
+=======================================================
+
+--- CHUNK: DOC-NHS-010-HYB-000 (616 chars) ---
+High temperature (fever) in children
+
+A high temperature (fever) is very common in young children. The temperature usually returns to normal within 1 to 4 days.
+
+Checking a high temperature
+
+A normal temperature in babies and children can vary slightly from child to child.
+
+A high temperature is 38C or more.
+
+If your child has a high temperature, they might:
+
+feel hotter than usual when you touch their back or chest
+
+feel sweaty
+
+look or feel unwell
+
+have a seizure or fit, called a febrile seizure
+
+Use a digital thermometer, which you can buy from pharmacies and supermarkets, to take your child's temperature.
+
+--- CHUNK: DOC-NHS-010-HYB-001 (715 chars) ---
+How to take your child's temperature Place the thermometer inside the top of the armpit. Gently close the arm over the thermometer and keep it pressed to the side of the body. Leave the thermometer in place for as long as it says in the instruction leaflet. Some digital thermometers beep when they're ready. Remove the thermometer. The display will show your child's temperature. If your child has just had a bath or been wrapped in a blanket, their temperature may be higher for a short time. Wait a few minutes then try again.
+
+What to do if your child has a high temperature
+
+If your child or baby has a high temperature, you can usually look after them at home. The temperature should go down over 1 to 4 days.
+
+--- CHUNK: DOC-NHS-010-HYB-002 (562 chars) ---
+Do
+
+give them plenty of fluids – if your baby is breastfed, continue to breastfeed as normal
+
+look out for signs of dehydration
+
+give them food if they want it
+
+check on your child regularly, including during the night
+
+keep them at home
+
+give them either paracetamol or ibuprofen if they're distressed or uncomfortable – check the packaging or leaflet to make sure the medicine is suitable for your child, or speak to a pharmacist or GP if you're not sure
+
+get medical advice if you're worried about your child, or if the paracetamol or ibuprofen is not helping
+
+--- CHUNK: DOC-NHS-010-HYB-003 (661 chars) ---
+Don’t
+
+do not undress your child or sponge them down to cool them – a high temperature is a natural and healthy response to infection
+
+do not cover them up in too many clothes or bedclothes
+
+do not give aspirin to children under 16 years of age
+
+do not alternate ibuprofen and paracetamol, unless a health professional such as a doctor or nurse tells you to
+
+do not give paracetamol to a child under 2 months
+
+do not give ibuprofen to a child who is under 3 months, weighs under 5kg, has chickenpox, or is dehydrated
+
+do not give ibuprofen to children with asthma unless it's been recommended by a doctor
+
+Read more about giving medicines to babies and children
+
+--- CHUNK: DOC-NHS-010-HYB-004 (685 chars) ---
+Urgent advice: Call 111 if your child:
+
+is under 3 months old and has a temperature of 38C or higher, or you think they have a high temperature
+
+is 3 to 6 months old and has a temperature of 39C or higher, or you think they have a high temperature
+
+has other signs of illness, such as a rash, as well as a high temperature
+
+has a high temperature that's lasted for 5 days or more
+
+does not want to eat, or is not their usual self and you're worried
+
+is dehydrated – such as nappies that are not very wet, sunken eyes, and no tears when they're crying
+
+Immediate action required: Call 999 if your child:
+
+has a stiff neck
+
+has a rash that does not fade when you press a glass against it
+
+--- CHUNK: DOC-NHS-010-HYB-005 (645 chars) ---
+is bothered by light
+
+has a fit (febrile seizure) for the first time (they cannot stop shaking)
+
+has unusually cold hands and feet
+
+has changes to their skin colour such as blue, grey, paler than usual or blotchy skin (this may be harder to see on brown or black skin), or blue, grey or paler than usual lips or tongue
+
+is drowsy and hard to wake
+
+is extremely agitated (does not stop crying) or is confused
+
+has difficulty breathing (you may notice grunting noises or their stomach sucking under their ribcage), breathlessness or breathing very fast
+
+is not responding like they normally do, or is not interested in feeding or normal activities
+
+--- CHUNK: DOC-NHS-010-HYB-006 (405 chars) ---
+Causes of a high temperature in children
+
+A high temperature is the body's natural response to fighting infections like coughs and colds.
+
+Many things can cause a high temperature in children, from common childhood illnesses like chickenpox and tonsillitis, to vaccinations.
+
+Video: Caring for children with fever at home
+
+Watch this video on how to help a child with fever recover as quickly as possible.
+
+=======================================================
+SOURCE: DOC-NHS-011 (10 chunks) - Anaphylaxis
+ - NHS
+=======================================================
+
+--- CHUNK: DOC-NHS-011-HYB-000 (595 chars) ---
+Anaphylaxis
+
+Anaphylaxis is a life-threatening allergic reaction that happens very quickly. It can be caused by food, medicine or insect stings. Call 999 if you think you or someone else is having an anaphylactic reaction.
+
+Symptoms of anaphylaxis
+
+Symptoms of anaphylaxis happen very quickly.
+
+They usually start within minutes of coming into contact with something you're allergic to, such as a food, medicine or insect sting.
+
+Symptoms include:
+
+swelling of your throat and tongue
+
+difficulty breathing or breathing very fast
+
+difficulty swallowing, tightness in your throat or a hoarse voice
+
+--- CHUNK: DOC-NHS-011-HYB-001 (343 chars) ---
+wheezing, coughing or noisy breathing
+
+feeling tired or confused
+
+feeling faint, dizzy or fainting
+
+skin that feels cold to the touch
+
+blue, grey or pale skin, lips or tongue – if you have brown or black skin, this may be easier to see on the palms of your hands or soles of your feet
+
+You may also have a rash that's swollen, raised or itchy.
+
+--- CHUNK: DOC-NHS-011-HYB-002 (446 chars) ---
+Immediate action required: Call 999 if:
+
+your lips, mouth, throat or tongue suddenly become swollen
+
+you're breathing very fast or struggling to breathe (you may become very wheezy or feel like you're choking or gasping for air)
+
+your throat feels tight or you're struggling to swallow
+
+your skin, tongue or lips turn blue, grey or pale (if you have black or brown skin, this may be easier to see on the palms of your hands or soles of your feet)
+
+--- CHUNK: DOC-NHS-011-HYB-003 (724 chars) ---
+you suddenly become very confused, drowsy or dizzy
+
+someone faints and cannot be woken up
+
+a child is limp, floppy or not responding like they normally do (their head may fall to the side, backwards or forwards, or they may find it difficult to lift their head or focus on your face)
+
+You or the person who's unwell may also have a rash that's swollen, raised or itchy.
+
+These can be signs of a serious allergic reaction and may need immediate treatment in hospital.
+
+What to do if you have anaphylaxis
+
+Follow these steps if you think you or someone you're with is having an anaphylactic reaction:
+
+Use an adrenaline auto-injector (such as an EpiPen) if you have one – instructions are included on the side of the injector.
+
+--- CHUNK: DOC-NHS-011-HYB-004 (628 chars) ---
+Call 999 for an ambulance and say that you think you're having an anaphylactic reaction.
+
+Lie down – you can raise your legs, and if you're struggling to breathe, raise your shoulders or sit up slowly (if you're pregnant, lie on your left side).
+
+If you have been stung by an insect, try to remove the sting if it's still in the skin.
+
+If your symptoms have not improved after 5 minutes, use a 2nd adrenaline auto-injector.
+
+Do not stand or walk at any time, even if you feel better.
+
+Information:
+
+How to use an adrenaline auto-injector
+
+There are different types of adrenaline auto-injectors and each one is given differently.
+
+--- CHUNK: DOC-NHS-011-HYB-005 (235 chars) ---
+EpiPen instructions (EpiPen website)
+
+Jext instructions (Jext website)
+
+Treatment for anaphylaxis
+
+Anaphylaxis needs to be treated in hospital immediately.
+
+Treatments can include:
+
+adrenaline given by an injection or drip in your vein
+
+--- CHUNK: DOC-NHS-011-HYB-006 (725 chars) ---
+oxygen
+
+fluids given by a drip in your vein
+
+You'll usually stay in hospital for around 2 to 12 hours, but you may need to stay longer.
+
+Before you leave hospital, you should be given 2 adrenaline auto-injectors, or a prescription for them, to keep in case you have another anaphylactic reaction.
+
+An adrenaline auto-injector is a special device for injecting adrenaline yourself. You'll be told how and when to use it.
+
+You should be shown how to use your adrenaline auto-injector each time you're prescribed it.
+
+You may also be referred to an allergy specialist for tests and advice.
+
+Things you can do to help prevent anaphylaxis
+
+There are some things you can do to help prevent anaphylaxis or prepare for if it happens.
+
+--- CHUNK: DOC-NHS-011-HYB-007 (743 chars) ---
+Do
+
+avoid the food, medicine or thing that you're allergic to – for example, if you have a food allergy, check food labels carefully and tell staff at restaurants and cafes about your allergy
+
+carry 2 adrenaline auto-injectors with you at all times
+
+check your adrenaline auto-injector expiry dates regularly and get new ones before they expire
+
+practise how to use your adrenaline auto-injector by using a trainer injector (an injector that has no needle or medicine in it) – you can order one online from the company that makes your injector
+
+teach friends, family, colleagues or carers how and when to use your adrenaline auto-injector
+
+use your adrenaline auto-injector if you think you may have anaphylaxis, even if your symptoms are mild
+
+--- CHUNK: DOC-NHS-011-HYB-008 (629 chars) ---
+Do
+
+wear medical alert jewellery such as a bracelet with information about your allergy – this tells other people about your allergy in case of an emergency
+
+Don’t
+
+do not leave your adrenaline auto-injectors anywhere too hot or cold such as in the fridge or outside in the sun
+
+Information:
+
+More information
+
+There's more advice about what you can do to avoid common allergies. Find out more about:
+
+food allergy
+
+insect bites and stings
+
+medicine allergy (Allergy UK website)
+
+latex allergy (Allergy UK website)
+
+Causes of anaphylaxis
+
+Anaphylaxis happens when your body has a serious reaction to something you're allergic to.
+
+--- CHUNK: DOC-NHS-011-HYB-009 (384 chars) ---
+Allergies that can sometimes cause anaphylaxis include:
+
+foods such as nuts, cows' milk, eggs, fish or sesame seeds
+
+medicines such as antibiotics or non-steroidal anti-inflammatory drugs (NSAIDs)
+
+insect stings, such as wasp and bee stings
+
+anaesthetics
+
+latex (a type of rubber found in some rubber gloves and condoms)
+
+Sometimes it's not known what caused an anaphylactic reaction.

@@ -1,0 +1,26 @@
+{
+  "BASELINE_FIXED": {
+    "gate_4e_midword_failure_reproduced": true,
+    "gate_4e_midsentence_failure_reproduced": true,
+    "total_word_fractures": 18,
+    "passed_regression_test": false
+  },
+  "CANDIDATE_A_HEADING": {
+    "gate_4e_midword_failure_reproduced": false,
+    "gate_4e_midsentence_failure_reproduced": false,
+    "total_word_fractures": 0,
+    "passed_regression_test": true
+  },
+  "CANDIDATE_B_SENTENCE": {
+    "gate_4e_midword_failure_reproduced": false,
+    "gate_4e_midsentence_failure_reproduced": false,
+    "total_word_fractures": 0,
+    "passed_regression_test": true
+  },
+  "CANDIDATE_C_COMBINED": {
+    "gate_4e_midword_failure_reproduced": false,
+    "gate_4e_midsentence_failure_reproduced": false,
+    "total_word_fractures": 0,
+    "passed_regression_test": true
+  }
+}

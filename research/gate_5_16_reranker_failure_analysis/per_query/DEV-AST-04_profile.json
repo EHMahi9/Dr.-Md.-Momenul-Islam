@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-AST-04",
+  "raw_query": "buk chap lage ar shash nite koshto asthma naki",
+  "normalized_query": "buk chap lage ar shash nite koshto asthma naki (asthma attack inhaler spacer breathing difficulty)",
+  "language_category": "Abbreviated_Banglish",
+  "expected_source_id": "DOC-NHS-004",
+  "gold_chunk_ids": [
+    "DOC-NHS-004-HYB-001"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 643.0,
+  "dense_rank": 2,
+  "dense_r15": true,
+  "rerank_rank": 2,
+  "in_top5": true,
+  "is_top1": false,
+  "gold_rerank_score": 0.01875593140721321,
+  "rank1_chunk_id": "DOC-NHS-004-HYB-003",
+  "rank1_source_id": "DOC-NHS-004",
+  "rank1_heading": "",
+  "rank1_length": 566,
+  "rank1_score": 0.019836707040667534,
+  "score_margin_vs_gold": 0.0010807756334543228,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "SAME_DOC_SUBSTANTIVE_SECTION_COMPETITION",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-004-HYB-003",
+    "DOC-NHS-004-HYB-001",
+    "DOC-NHS-004-HYB-008",
+    "DOC-NHS-004-HYB-010",
+    "DOC-NHS-004-HYB-000"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-004-HYB-003",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.019836707040667534,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-004-HYB-001",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.01875593140721321,
+      "is_gold": true
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-004-HYB-008",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.015471192076802254,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-004-HYB-010",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.015336806885898113,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-004-HYB-000",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.014011827297508717,
+      "is_gold": false
+    }
+  ]
+}

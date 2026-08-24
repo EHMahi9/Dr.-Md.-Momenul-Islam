@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-AST-06",
+  "raw_query": "হাঁপানির টান উঠলে নীল ইনহেলার কীভাবে ব্যবহার করব?",
+  "normalized_query": "হাঁপানির টান উঠলে নীল ইনহেলার কীভাবে ব্যবহার করব? (asthma attack inhaler spacer breathing difficulty)",
+  "language_category": "Native_Bangla",
+  "expected_source_id": "DOC-NHS-004",
+  "gold_chunk_ids": [
+    "DOC-NHS-004-HYB-003"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 566.0,
+  "dense_rank": 1,
+  "dense_r15": true,
+  "rerank_rank": 1,
+  "in_top5": true,
+  "is_top1": true,
+  "gold_rerank_score": 0.37662574648857117,
+  "rank1_chunk_id": "DOC-NHS-004-HYB-003",
+  "rank1_source_id": "DOC-NHS-004",
+  "rank1_heading": "",
+  "rank1_length": 566,
+  "rank1_score": 0.37662574648857117,
+  "score_margin_vs_gold": 0.0,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "NONE_SUCCESS",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-004-HYB-003",
+    "DOC-NHS-004-HYB-002",
+    "DOC-NHS-004-HYB-008",
+    "DOC-NHS-004-HYB-010",
+    "DOC-NHS-011-HYB-004"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-004-HYB-003",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.37662574648857117,
+      "is_gold": true
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-004-HYB-002",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.05604547634720802,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-004-HYB-008",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.048226453363895416,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-004-HYB-010",
+      "source_id": "DOC-NHS-004",
+      "heading": "",
+      "score": 0.03308578208088875,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-011-HYB-004",
+      "source_id": "DOC-NHS-011",
+      "heading": "",
+      "score": 0.018510447815060616,
+      "is_gold": false
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "gate": "GATE_5.16",
+  "timestamp": "2026-08-22T21:05:00+06:00",
+  "sample_size": 40,
+  "total_top5_failures": 5,
+  "top5_failures_list": [
+    {
+      "query_id": "DEV-BUR-02",
+      "language": "Native_Bangla",
+      "raw_query": "হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানির নিচে রাখতে হবে?",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-000"
+      ],
+      "dense_rank": 0,
+      "rerank_rank": 0,
+      "primary_cause": "GOLD_OUTSIDE_DENSE15",
+      "secondary_cause": "QUERY_REPRESENTATION_FAILURE"
+    },
+    {
+      "query_id": "DEV-BUR-03",
+      "language": "Standard_Banglish",
+      "raw_query": "pure gele thanda pani koto minute dhalbo?",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-000"
+      ],
+      "dense_rank": 0,
+      "rerank_rank": 0,
+      "primary_cause": "GOLD_OUTSIDE_DENSE15",
+      "secondary_cause": "BANGLISH_OR_TRANSLITERATION_FAILURE"
+    },
+    {
+      "query_id": "DEV-BUR-07",
+      "language": "Standard_Banglish",
+      "raw_query": "pora jaygay butter ba tel lagano thik naki?",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-001"
+      ],
+      "dense_rank": 11,
+      "rerank_rank": 12,
+      "primary_cause": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "secondary_cause": "CROSS_DOCUMENT_CONFUSION"
+    },
+    {
+      "query_id": "DEV-CUT-04",
+      "language": "Abbreviated_Banglish",
+      "raw_query": "angul kete rokt porche chap diye dhorbo kina",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001"
+      ],
+      "dense_rank": 0,
+      "rerank_rank": 0,
+      "primary_cause": "GOLD_OUTSIDE_DENSE15",
+      "secondary_cause": "BANGLISH_OR_TRANSLITERATION_FAILURE"
+    },
+    {
+      "query_id": "DEV-CUT-08",
+      "language": "English",
+      "raw_query": "When to go to A&E for a cut with non-stop bleeding?",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-002"
+      ],
+      "dense_rank": 7,
+      "rerank_rank": 10,
+      "primary_cause": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "secondary_cause": "SUBSTANTIVE_CHUNK_COMPETITION"
+    }
+  ],
+  "failure_taxonomy_summary": {
+    "GOLD_OUTSIDE_DENSE15": 3,
+    "GOLD_IN_DENSE15_BUT_RERANKED_OUT": 2,
+    "MULTIPLE_COMPETING_SUBSTANTIVE_CHUNKS": 0,
+    "SAME_DOCUMENT_SECTION_CONFUSION": 12,
+    "CROSS_DOCUMENT_CONFUSION": 6,
+    "BANGLISH_OR_TRANSLITERATION_FAILURE": 2,
+    "SUBSTANTIVE_CHUNK_COMPETITION": 12,
+    "OVERVIEW_BIAS": 0
+  },
+  "debiasing_085_effect_summary": {
+    "total_queries_with_rank_change": 0,
+    "total_queries_with_context_change": 7,
+    "queries_with_gold_moved_up": [],
+    "queries_with_gold_moved_down": []
+  },
+  "substantive_chunk_competition": {
+    "count": 13,
+    "query_ids": [
+      "DEV-AST-04",
+      "DEV-AST-10",
+      "DEV-BUR-01",
+      "DEV-BUR-02",
+      "DEV-BUR-04",
+      "DEV-BUR-05",
+      "DEV-BUR-06",
+      "DEV-CUT-02",
+      "DEV-CUT-05",
+      "DEV-CUT-08",
+      "DEV-CUT-10",
+      "DEV-DEH-03",
+      "DEV-DEH-04"
+    ],
+    "case_studies": [
+      {
+        "query_id": "DEV-AST-04",
+        "query": "buk chap lage ar shash nite koshto asthma naki",
+        "gold_heading": [
+          ""
+        ],
+        "rank1_heading": "",
+        "gold_score": 0.01875593140721321,
+        "rank1_score": 0.019836707040667534,
+        "score_margin": 0.0010807756334543228
+      },
+      {
+        "query_id": "DEV-AST-10",
+        "query": "kon kon karone asthma bere jete pare?",
+        "gold_heading": [
+          "",
+          ""
+        ],
+        "rank1_heading": "",
+        "gold_score": 0.02481110766530037,
+        "rank1_score": 0.027924174442887306,
+        "score_margin": 0.003113066777586937
+      },
+      {
+        "query_id": "DEV-BUR-01",
+        "query": "How should you treat a burn immediately with water?",
+        "gold_heading": [
+          ""
+        ],
+        "rank1_heading": "",
+        "gold_score": 0.02077889209613204,
+        "rank1_score": 0.9724250435829163,
+        "score_margin": 0.9516461514867842
+      },
+      {
+        "query_id": "DEV-BUR-02",
+        "query": "হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানির নিচে রাখতে হবে?",
+        "gold_heading": [
+          ""
+        ],
+        "rank1_heading": "",
+        "gold_score": 0.0,
+        "rank1_score": 0.8959190249443054,
+        "score_margin": 1.0
+      },
+      {
+        "query_id": "DEV-BUR-04",
+        "query": "hat pure geche ekhon ki korbo pani dhalbo?",
+        "gold_heading": [
+          ""
+        ],
+        "rank1_heading": "",
+        "gold_score": 0.0008702585939317941,
+        "rank1_score": 0.05815144255757332,
+        "score_margin": 0.05728118396364153
+      }
+    ]
+  },
+  "language_failure_breakdown": {
+    "English": {
+      "n_total": 12,
+      "top5_failures_count": 1,
+      "top5_failures_qids": [
+        "DEV-CUT-08"
+      ],
+      "top1_failures_count": 4,
+      "primary_causes": {
+        "NONE_SUCCESS": 8,
+        "SAME_DOC_SUBSTANTIVE_SECTION_COMPETITION": 3,
+        "GOLD_IN_DENSE15_BUT_RERANKED_OUT": 1
+      }
+    },
+    "Native_Bangla": {
+      "n_total": 10,
+      "top5_failures_count": 1,
+      "top5_failures_qids": [
+        "DEV-BUR-02"
+      ],
+      "top1_failures_count": 5,
+      "primary_causes": {
+        "NONE_SUCCESS": 5,
+        "SAME_DOC_SUBSTANTIVE_SECTION_COMPETITION": 2,
+        "GOLD_OUTSIDE_DENSE15": 1,
+        "CROSS_DOCUMENT_COMPETITION": 2
+      }
+    },
+    "Standard_Banglish": {
+      "n_total": 10,
+      "top5_failures_count": 2,
+      "top5_failures_qids": [
+        "DEV-BUR-03",
+        "DEV-BUR-07"
+      ],
+      "top1_failures_count": 7,
+      "primary_causes": {
+        "SAME_DOC_SUBSTANTIVE_SECTION_COMPETITION": 2,
+        "GOLD_OUTSIDE_DENSE15": 1,
+        "NONE_SUCCESS": 3,
+        "GOLD_IN_DENSE15_BUT_RERANKED_OUT": 1,
+        "CROSS_DOCUMENT_COMPETITION": 3
+      }
+    },
+    "Abbreviated_Banglish": {
+      "n_total": 8,
+      "top5_failures_count": 1,
+      "top5_failures_qids": [
+        "DEV-CUT-04"
+      ],
+      "top1_failures_count": 5,
+      "primary_causes": {
+        "NONE_SUCCESS": 3,
+        "SAME_DOC_SUBSTANTIVE_SECTION_COMPETITION": 4,
+        "GOLD_OUTSIDE_DENSE15": 1
+      }
+    }
+  }
+}

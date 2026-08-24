@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-BUR-06",
+  "raw_query": "পোড়া জায়গায় কি মাখন বা তেল লাগানো যাবে?",
+  "normalized_query": "পোড়া জায়গায় কি মাখন বা তেল লাগানো যাবে?",
+  "language_category": "Native_Bangla",
+  "expected_source_id": "DOC-NHS-005",
+  "gold_chunk_ids": [
+    "DOC-NHS-005-HYB-001"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 550.0,
+  "dense_rank": 2,
+  "dense_r15": true,
+  "rerank_rank": 2,
+  "in_top5": true,
+  "is_top1": false,
+  "gold_rerank_score": 0.0017273114062845707,
+  "rank1_chunk_id": "DOC-NHS-005-HYB-004",
+  "rank1_source_id": "DOC-NHS-005",
+  "rank1_heading": "",
+  "rank1_length": 373,
+  "rank1_score": 0.13770388066768646,
+  "score_margin_vs_gold": 0.1359765692614019,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "SAME_DOC_SUBSTANTIVE_SECTION_COMPETITION",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-005-HYB-004",
+    "DOC-NHS-005-HYB-001",
+    "DOC-NHS-005-HYB-003",
+    "DOC-NHS-005-HYB-002",
+    "DOC-NHS-005-HYB-000"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-005-HYB-004",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.13770388066768646,
+      "is_gold": false
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-005-HYB-001",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.0017273114062845707,
+      "is_gold": true
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-005-HYB-003",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.0011339588090777397,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-005-HYB-002",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.0003637230256572366,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-005-HYB-000",
+      "source_id": "DOC-NHS-005",
+      "heading": "",
+      "score": 0.00032465166004840284,
+      "is_gold": false
+    }
+  ]
+}

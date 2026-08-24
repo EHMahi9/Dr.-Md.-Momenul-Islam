@@ -1,0 +1,7 @@
+{
+  "inline_anchor_sentence_intact": true,
+  "false_heading_eliminated": true,
+  "chunk_sentence_unbroken": true,
+  "missing_words_across_corpus": 0,
+  "all_regression_tests_passed": true
+}

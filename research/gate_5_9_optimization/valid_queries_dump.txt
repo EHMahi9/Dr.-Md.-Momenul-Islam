@@ -1,0 +1,193 @@
+Total valid queries: 80
+
+=======================================================
+SOURCE: DOC-NHS-004 (10 queries)
+=======================================================
+[DEV-AST-01] (DEV/English): 'What are the common symptoms of asthma?'
+  Target Topic: Asthma symptoms
+[DEV-AST-02] (DEV/Native_Bangla): 'হাঁপানির প্রধান লক্ষণগুলো কী কী?'
+  Target Topic: Asthma symptoms
+[DEV-AST-03] (DEV/Standard_Banglish): 'asthma hole ki ki shomossha hoy bujhte parbo kivabe?'
+  Target Topic: Asthma symptoms
+[DEV-AST-04] (DEV/Abbreviated_Banglish): 'buk chap lage ar shash nite koshto asthma naki'
+  Target Topic: Asthma symptoms
+[DEV-AST-05] (DEV/English): 'How to treat an asthma attack at home?'
+  Target Topic: Treat asthma attack
+[DEV-AST-06] (DEV/Native_Bangla): 'হাঁপানির টান উঠলে নীল ইনহেলার কীভাবে ব্যবহার করব?'
+  Target Topic: Inhaler use in asthma attack
+[DEV-AST-07] (DEV/Standard_Banglish): 'asthma attack uthle koto puff blue inhaler nite hoy?'
+  Target Topic: Inhaler use in asthma attack
+[DEV-AST-08] (DEV/Abbreviated_Banglish): 'shash bondho hoye jacche inhaler kaj kore na 999 call dibo?'
+  Target Topic: Asthma emergency 999
+[DEV-AST-09] (DEV/English): 'What are the common triggers for asthma?'
+  Target Topic: Asthma triggers
+[DEV-AST-10] (DEV/Standard_Banglish): 'kon kon karone asthma bere jete pare?'
+  Target Topic: Asthma triggers
+
+=======================================================
+SOURCE: DOC-NHS-005 (10 queries)
+=======================================================
+[DEV-BUR-01] (DEV/English): 'How should you treat a burn immediately with water?'
+  Target Topic: Cool water for burns
+[DEV-BUR-02] (DEV/Native_Bangla): 'হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানির নিচে রাখতে হবে?'
+  Target Topic: Cool water for burns
+[DEV-BUR-03] (DEV/Standard_Banglish): 'pure gele thanda pani koto minute dhalbo?'
+  Target Topic: Cool water for burns
+[DEV-BUR-04] (DEV/Abbreviated_Banglish): 'hat pure geche ekhon ki korbo pani dhalbo?'
+  Target Topic: Cool water for burns
+[DEV-BUR-05] (DEV/English): 'Should you put butter or oil on a burn?'
+  Target Topic: Do not put butter/oil on burn
+[DEV-BUR-06] (DEV/Native_Bangla): 'পোড়া জায়গায় কি মাখন বা তেল লাগানো যাবে?'
+  Target Topic: Do not put butter/oil on burn
+[DEV-BUR-07] (DEV/Standard_Banglish): 'pora jaygay butter ba tel lagano thik naki?'
+  Target Topic: Do not put butter/oil on burn
+[DEV-BUR-08] (DEV/English): 'When is a burn serious enough to call 999 or go to A&E?'
+  Target Topic: Burns emergency 999
+[DEV-BUR-09] (DEV/Standard_Banglish): 'pora khub boro ar deep hole kokhon hospital jabo?'
+  Target Topic: Burns emergency 999
+[DEV-BUR-10] (DEV/Abbreviated_Banglish): 'chemical ba electricity te porle ki 999 call dibo'
+  Target Topic: Burns emergency 999
+
+=======================================================
+SOURCE: DOC-NHS-006 (10 queries)
+=======================================================
+[DEV-CUT-01] (DEV/English): 'How to stop bleeding and clean a cut at home?'
+  Target Topic: Clean cut and stop bleeding
+[DEV-CUT-02] (DEV/Native_Bangla): 'কেটে গেলে রক্ত বন্ধ করার সঠিক নিয়ম কী?'
+  Target Topic: Clean cut and stop bleeding
+[DEV-CUT-03] (DEV/Standard_Banglish): 'kete gele rokto bondho korbo kivabe ar clean korbo?'
+  Target Topic: Clean cut and stop bleeding
+[DEV-CUT-04] (DEV/Abbreviated_Banglish): 'angul kete rokt porche chap diye dhorbo kina'
+  Target Topic: Clean cut and stop bleeding
+[DEV-CUT-05] (DEV/English): 'Signs that a cut or wound is infected'
+  Target Topic: Infected cut signs
+[DEV-CUT-06] (DEV/Native_Bangla): 'ক্ষতস্থানে ইনফেকশন হয়েছে কীভাবে বুঝব?'
+  Target Topic: Infected cut signs
+[DEV-CUT-07] (DEV/Standard_Banglish): 'kete jawa jayga lal hoye puz porle ki infection?'
+  Target Topic: Infected cut signs
+[DEV-CUT-08] (DEV/English): 'When to go to A&E for a cut with non-stop bleeding?'
+  Target Topic: Cut emergency A&E
+[DEV-CUT-09] (DEV/Native_Bangla): '১০ মিনিট চেপে রাখার পরও রক্ত বন্ধ না হলে কী করব?'
+  Target Topic: Cut emergency A&E
+[DEV-CUT-10] (DEV/Abbreviated_Banglish): 'rokto konovabei thamtasena 10 min hoise a&e jabo?'
+  Target Topic: Cut emergency A&E
+
+=======================================================
+SOURCE: DOC-NHS-007 (10 queries)
+=======================================================
+[DEV-DEH-01] (DEV/English): 'What are the main symptoms of dehydration in adults?'
+  Target Topic: Dehydration symptoms
+[DEV-DEH-02] (DEV/Native_Bangla): 'শরীরে পানিশূন্যতা বা ডিহাইড্রেশনের লক্ষণ কী কী?'
+  Target Topic: Dehydration symptoms
+[DEV-DEH-03] (DEV/Standard_Banglish): 'dehydration hoile ki rokom shorir lage?'
+  Target Topic: Dehydration symptoms
+[DEV-DEH-04] (DEV/Abbreviated_Banglish): 'muk shukay geche prosrab kom hoy pani shunnota naki'
+  Target Topic: Dehydration symptoms
+[DEV-DEH-05] (DEV/English): 'How to prevent and treat dehydration when feeling sick?'
+  Target Topic: Treat dehydration small sips
+[DEV-DEH-06] (DEV/Native_Bangla): 'বমি ভাব হলে পানিশূন্যতা দূর করতে কীভাবে পানি খাব?'
+  Target Topic: Treat dehydration small sips
+[DEV-DEH-07] (DEV/Standard_Banglish): 'bomi thakle pani kivabe khawa uchit?'
+  Target Topic: Treat dehydration small sips
+[DEV-DEH-08] (DEV/English): 'Signs of severe dehydration requiring immediate 999 emergency call'
+  Target Topic: Dehydration emergency 999
+[DEV-DEH-09] (DEV/Native_Bangla): 'অজ্ঞান হয়ে যাওয়া বা কথা বলতে কষ্ট হলে কি ৯৯৯ কল করব?'
+  Target Topic: Dehydration emergency 999
+[DEV-DEH-10] (DEV/Abbreviated_Banglish): 'extreme dehydration confused lage kotha bolte parena 999 daki?'
+  Target Topic: Dehydration emergency 999
+
+=======================================================
+SOURCE: DOC-NHS-008 (10 queries)
+=======================================================
+[TEST-DIA-01] (TEST_HOLDOUT/English): 'How to treat diarrhoea and vomiting at home?'
+  Target Topic: Diarrhoea home care fluids
+[TEST-DIA-02] (TEST_HOLDOUT/Native_Bangla): 'ডায়রিয়া ও বমি হলে বাড়িতে কী চিকিৎসা নেওয়া উচিত?'
+  Target Topic: Diarrhoea home care fluids
+[TEST-DIA-03] (TEST_HOLDOUT/Standard_Banglish): 'diarrhoea ar bomi hole bashay ki korbo?'
+  Target Topic: Diarrhoea home care fluids
+[TEST-DIA-04] (TEST_HOLDOUT/Abbreviated_Banglish): 'patla paykhana ar bomi hosse onk fluid khabo?'
+  Target Topic: Diarrhoea home care fluids
+[TEST-DIA-05] (TEST_HOLDOUT/English): 'How long should you stay off work or school after diarrhoea stops?'
+  Target Topic: Stay home 48 hours
+[TEST-DIA-06] (TEST_HOLDOUT/Native_Bangla): 'ডায়রিয়া ভালো হওয়ার পর কত ঘণ্টা স্কুলে বা কাজে যাওয়া বন্ধ রাখা উচিত?'
+  Target Topic: Stay home 48 hours
+[TEST-DIA-07] (TEST_HOLDOUT/Standard_Banglish): 'diarrhoea thamar por koto hour bashay thakte hoy?'
+  Target Topic: Stay home 48 hours
+[TEST-DIA-08] (TEST_HOLDOUT/English): 'When to call 999 or go to A&E for diarrhoea with bloody vomit?'
+  Target Topic: Diarrhoea bloody vomit A&E 999
+[TEST-DIA-09] (TEST_HOLDOUT/Native_Bangla): 'বমির সাথে রক্ত আসলে কি দ্রুত হাসপাতালে যাওয়া দরকার?'
+  Target Topic: Diarrhoea bloody vomit A&E 999
+[TEST-DIA-10] (TEST_HOLDOUT/Abbreviated_Banglish): 'bomir shathe rokto ase green bomi emergency hospital jabo?'
+  Target Topic: Diarrhoea bloody vomit A&E 999
+
+=======================================================
+SOURCE: DOC-NHS-009 (10 queries)
+=======================================================
+[TEST-HEA-01] (TEST_HOLDOUT/English): 'What can you do at home to ease a common headache?'
+  Target Topic: Relieve headache water painkillers
+[TEST-HEA-02] (TEST_HOLDOUT/Native_Bangla): 'সাধারণ মাথা ব্যথায় ঘরে কী ধরনের যত্ন নেওয়া যায়?'
+  Target Topic: Relieve headache water painkillers
+[TEST-HEA-03] (TEST_HOLDOUT/Standard_Banglish): 'matha betha hole bashay ki korle kombe?'
+  Target Topic: Relieve headache water painkillers
+[TEST-HEA-04] (TEST_HOLDOUT/Abbreviated_Banglish): 'matha betha paracetamol khabo ar pani khabo kina'
+  Target Topic: Relieve headache water painkillers
+[TEST-HEA-05] (TEST_HOLDOUT/English): 'When is a sudden severe headache an emergency requiring 999?'
+  Target Topic: Severe sudden headache 999
+[TEST-HEA-06] (TEST_HOLDOUT/Native_Bangla): 'হঠাৎ তীব্র মাথাব্যথা এবং ঘাড় শক্ত হয়ে গেলে কি ৯৯৯ কল দিতে হবে?'
+  Target Topic: Severe sudden headache 999
+[TEST-HEA-07] (TEST_HOLDOUT/Standard_Banglish): 'hotath extreme matha betha ar ghaar shokto 999 call dibo?'
+  Target Topic: Severe sudden headache 999
+[TEST-HEA-08] (TEST_HOLDOUT/Abbreviated_Banglish): 'blurry vision ar mathay prachondo betha emergency A&E jabo'
+  Target Topic: Severe sudden headache 999
+[TEST-HEA-09] (TEST_HOLDOUT/English): 'Common causes of headaches such as dehydration and stress'
+  Target Topic: Causes of headaches
+[TEST-HEA-10] (TEST_HOLDOUT/Standard_Banglish): 'matha betha keno hoy causes ki ki?'
+  Target Topic: Causes of headaches
+
+=======================================================
+SOURCE: DOC-NHS-010 (10 queries)
+=======================================================
+[TEST-FEV-01] (TEST_HOLDOUT/English): 'What temperature counts as a fever in children?'
+  Target Topic: Fever threshold 38C
+[TEST-FEV-02] (TEST_HOLDOUT/Native_Bangla): 'শিশুদের কত ডিগ্রি তাপমাত্রা হলে জ্বর হিসেবে গণ্য করা হয়?'
+  Target Topic: Fever threshold 38C
+[TEST-FEV-03] (TEST_HOLDOUT/Standard_Banglish): 'bachader koto degree temp hole jor dhora hoy?'
+  Target Topic: Fever threshold 38C
+[TEST-FEV-04] (TEST_HOLDOUT/Abbreviated_Banglish): 'baby r 38C jor thermometer diye maplam ekhon ki korbo'
+  Target Topic: Fever home care children
+[TEST-FEV-05] (TEST_HOLDOUT/English): 'How to help bring down a child's fever safely at home?'
+  Target Topic: Fever home care children
+[TEST-FEV-06] (TEST_HOLDOUT/Native_Bangla): 'বাচ্চার জ্বর কমাতে বাড়িতে প্রচুর তরল ও প্যারাসিটামল কীভাবে দেব?'
+  Target Topic: Fever home care children
+[TEST-FEV-07] (TEST_HOLDOUT/Standard_Banglish): 'bachar jor komate fluid ar paracetamol dawa jabe?'
+  Target Topic: Fever home care children
+[TEST-FEV-08] (TEST_HOLDOUT/English): 'When to call 999 for a child with high fever and rash or breathing trouble?'
+  Target Topic: Child fever emergency 999
+[TEST-FEV-09] (TEST_HOLDOUT/Native_Bangla): 'বাচ্চার তীব্র জ্বর ও নীলচে ঠোঁট হলে অবিলম্বে কি ৯৯৯ কল করতে হবে?'
+  Target Topic: Child fever emergency 999
+[TEST-FEV-10] (TEST_HOLDOUT/Abbreviated_Banglish): 'bacha ghum theke jagena ar thot neel 999 call korbo?'
+  Target Topic: Child fever emergency 999
+
+=======================================================
+SOURCE: DOC-NHS-011 (10 queries)
+=======================================================
+[TEST-ANA-01] (TEST_HOLDOUT/English): 'What are the main symptoms of a severe anaphylaxis allergic reaction?'
+  Target Topic: Anaphylaxis symptoms
+[TEST-ANA-02] (TEST_HOLDOUT/Native_Bangla): 'অ্যানাফাইলাক্সিস বা তীব্র অ্যালার্জিক রিঅ্যাকশনের লক্ষণগুলো কী?'
+  Target Topic: Anaphylaxis symptoms
+[TEST-ANA-03] (TEST_HOLDOUT/Standard_Banglish): 'anaphylaxis allergic reaction hole ki ki lokkhon dekha jay?'
+  Target Topic: Anaphylaxis symptoms
+[TEST-ANA-04] (TEST_HOLDOUT/Abbreviated_Banglish): 'muk fule geche shash nite parsenana allergy r jonno anaphylaxis naki'
+  Target Topic: Anaphylaxis symptoms
+[TEST-ANA-05] (TEST_HOLDOUT/English): 'How to use an adrenaline auto-injector (EpiPen) in an emergency?'
+  Target Topic: Adrenaline auto-injector
+[TEST-ANA-06] (TEST_HOLDOUT/Native_Bangla): 'অ্যানাফাইলাক্সিস হলে অ্যাড্রেনালিন অটো-ইনজেক্টর কীভাবে ব্যবহার করতে হয়?'
+  Target Topic: Adrenaline auto-injector
+[TEST-ANA-07] (TEST_HOLDOUT/Standard_Banglish): 'adrenaline auto-injector kivabe use korbo emergency te?'
+  Target Topic: Adrenaline auto-injector
+[TEST-ANA-08] (TEST_HOLDOUT/English): 'Should you call 999 immediately if someone has an anaphylactic shock?'
+  Target Topic: Anaphylaxis 999 emergency
+[TEST-ANA-09] (TEST_HOLDOUT/Native_Bangla): 'অ্যালার্জির কারণে গলা ফুলে শ্বাস বন্ধ হলে তাৎক্ষণিক ৯৯৯ ডাকব?'
+  Target Topic: Anaphylaxis 999 emergency
+[TEST-ANA-10] (TEST_HOLDOUT/Abbreviated_Banglish): 'severe allergic reaction gola fule gese 999 daki'
+  Target Topic: Anaphylaxis 999 emergency

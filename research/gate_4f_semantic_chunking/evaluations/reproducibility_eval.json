@@ -1,0 +1,38 @@
+{
+  "BASELINE_FIXED": {
+    "runs": 3,
+    "run_hashes": [
+      "2fc5e227647ba3a497bd40ae0bda8283b370c6571a76e477043bb175a11faffe",
+      "2fc5e227647ba3a497bd40ae0bda8283b370c6571a76e477043bb175a11faffe",
+      "2fc5e227647ba3a497bd40ae0bda8283b370c6571a76e477043bb175a11faffe"
+    ],
+    "is_deterministic": true
+  },
+  "CANDIDATE_A_HEADING": {
+    "runs": 3,
+    "run_hashes": [
+      "3f798305fa1768e538f49e955f156a75ffec2e660a954ec57e6ee3b82b9da0fa",
+      "3f798305fa1768e538f49e955f156a75ffec2e660a954ec57e6ee3b82b9da0fa",
+      "3f798305fa1768e538f49e955f156a75ffec2e660a954ec57e6ee3b82b9da0fa"
+    ],
+    "is_deterministic": true
+  },
+  "CANDIDATE_B_SENTENCE": {
+    "runs": 3,
+    "run_hashes": [
+      "725ecd78543deb18ea56e29feaf9afd0b882b89e74ea36250895da9a3e381825",
+      "725ecd78543deb18ea56e29feaf9afd0b882b89e74ea36250895da9a3e381825",
+      "725ecd78543deb18ea56e29feaf9afd0b882b89e74ea36250895da9a3e381825"
+    ],
+    "is_deterministic": true
+  },
+  "CANDIDATE_C_COMBINED": {
+    "runs": 3,
+    "run_hashes": [
+      "2bd3c0243f76d70c4c393219e765b24a9a5e16de8bba5f5531f6b9d47263be88",
+      "2bd3c0243f76d70c4c393219e765b24a9a5e16de8bba5f5531f6b9d47263be88",
+      "2bd3c0243f76d70c4c393219e765b24a9a5e16de8bba5f5531f6b9d47263be88"
+    ],
+    "is_deterministic": true
+  }
+}

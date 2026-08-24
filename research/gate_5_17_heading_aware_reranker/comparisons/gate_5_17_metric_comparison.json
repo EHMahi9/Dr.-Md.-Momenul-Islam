@@ -1,0 +1,60 @@
+{
+  "gate": "GATE_5.17",
+  "timestamp": "2026-08-22T21:10:00+06:00",
+  "hypothesis": "Adding the exact structural section heading to the reranker passage representation may reduce same-document section confusion.",
+  "final_classification": "HEADING_AWARE_RERANKER_REJECTED",
+  "sample_size": 40,
+  "metrics_comparison": {
+    "chunk_recall_at_1": {
+      "baseline": "19/40 (47.5%)",
+      "experimental": "18/40 (45.0%)",
+      "delta": "-2.50%"
+    },
+    "chunk_recall_at_3": {
+      "baseline": "27/40 (67.5%)",
+      "experimental": "26/40 (65.0%)",
+      "delta": "-2.50%"
+    },
+    "chunk_recall_at_5 (PRIMARY)": {
+      "baseline": "35/40 (87.5%)",
+      "experimental": "34/40 (85.0%)",
+      "delta": "-2.50%"
+    },
+    "chunk_mrr": {
+      "baseline": 0.615,
+      "experimental": 0.5839,
+      "delta": -0.0311
+    }
+  },
+  "language_comparison": {
+    "English": {
+      "baseline_r5": "11/12 (91.67%)",
+      "experimental_r5": "11/12 (91.67%)",
+      "baseline_mrr": 0.7611,
+      "experimental_mrr": 0.7542
+    },
+    "Native_Bangla": {
+      "baseline_r5": "9/10 (90.0%)",
+      "experimental_r5": "9/10 (90.0%)",
+      "baseline_mrr": 0.615,
+      "experimental_mrr": 0.5833
+    },
+    "Standard_Banglish": {
+      "baseline_r5": "8/10 (80.0%)",
+      "experimental_r5": "8/10 (80.0%)",
+      "baseline_mrr": 0.4867,
+      "experimental_mrr": 0.3855
+    },
+    "Abbreviated_Banglish": {
+      "baseline_r5": "7/8 (87.5%)",
+      "experimental_r5": "6/8 (75.0%)",
+      "baseline_mrr": 0.5563,
+      "experimental_mrr": 0.5771
+    }
+  },
+  "latency": {
+    "baseline_seconds": 514.03,
+    "experimental_seconds": 562.87,
+    "relative_overhead_pct": 9.5
+  }
+}

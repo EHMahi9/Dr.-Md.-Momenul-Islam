@@ -1,0 +1,679 @@
+{
+  "summary": {
+    "total_chunks": 91,
+    "total_transitions": 83,
+    "true_mid_sentence_splits": 9,
+    "inline_anchor_splits": 0,
+    "list_boundaries": 22,
+    "section_heading_boundaries": 46,
+    "paragraph_boundaries": 6,
+    "heading_separations": 0,
+    "orphaned_emergencies": 0
+  },
+  "transitions": [
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-000",
+      "chunk_2_id": "DOC-NHS-004-CAN2-001",
+      "last_snippet": "ma usually starts in children, but it can happen at any age.",
+      "first_snippet_next": "Non-urgent advice: See a GP if:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-001",
+      "chunk_2_id": "DOC-NHS-004-CAN2-002",
+      "last_snippet": "ng you doing your usual activities or waking you up at night",
+      "first_snippet_next": "How to treat an asthma attack",
+      "classification": "TRUE_MID_SENTENCE_SPLIT"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-002",
+      "chunk_2_id": "DOC-NHS-004-CAN2-003",
+      "last_snippet": "ting an asthma attack, follow the instructions in your plan.",
+      "first_snippet_next": "Immediate action required: Call 999 if:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-003",
+      "chunk_2_id": "DOC-NHS-004-CAN2-004",
+      "last_snippet": "r again if you have one, taking up to the same maximum dose.",
+      "first_snippet_next": "Information:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-004",
+      "chunk_2_id": "DOC-NHS-004-CAN2-005",
+      "last_snippet": "atment and get advice to help prevent another asthma attack.",
+      "first_snippet_next": "How asthma is diagnosed",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-005",
+      "chunk_2_id": "DOC-NHS-004-CAN2-006",
+      "last_snippet": " offered asthma medicines to see if they help your symptoms.",
+      "first_snippet_next": "Treatment for asthma",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-006",
+      "chunk_2_id": "DOC-NHS-004-CAN2-007",
+      "last_snippet": "nhalers correctly and your asthma action plan is up to date.",
+      "first_snippet_next": "Asthma inhalers",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-007",
+      "chunk_2_id": "DOC-NHS-004-CAN2-008",
+      "last_snippet": "ould not be given a blue reliever inhaler to use on its own)",
+      "first_snippet_next": "Important: Using your inhaler",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-008",
+      "chunk_2_id": "DOC-NHS-004-CAN2-009",
+      "last_snippet": " doctor, nurse or pharmacist will show you how to use yours.",
+      "first_snippet_next": "Disposing of your inhalers",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-009",
+      "chunk_2_id": "DOC-NHS-004-CAN2-010",
+      "last_snippet": "tment is right for you, including any possible side effects.",
+      "first_snippet_next": "Hospital treatment for an asthma attack",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-010",
+      "chunk_2_id": "DOC-NHS-004-CAN2-011",
+      "last_snippet": "using a nebuliser to breathe in high doses of medicine",
+      "first_snippet_next": "steroid tablets or injections",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-011",
+      "chunk_2_id": "DOC-NHS-004-CAN2-012",
+      "last_snippet": "help prevent symptoms and reduce the risk of asthma attacks.",
+      "first_snippet_next": "Do",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-012",
+      "chunk_2_id": "DOC-NHS-004-CAN2-013",
+      "last_snippet": " exercising safely if exercise triggers your asthma symptoms",
+      "first_snippet_next": "keep to a healthy weight",
+      "classification": "TRUE_MID_SENTENCE_SPLIT"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-013",
+      "chunk_2_id": "DOC-NHS-004-CAN2-014",
+      "last_snippet": "and beta blockers can trigger asthma symptoms in some people",
+      "first_snippet_next": "Information:",
+      "classification": "TRUE_MID_SENTENCE_SPLIT"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-014",
+      "chunk_2_id": "DOC-NHS-004-CAN2-015",
+      "last_snippet": "ng. But getting the right asthma treatment reduces the risk.",
+      "first_snippet_next": "Information:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-015",
+      "chunk_2_id": "DOC-NHS-004-CAN2-016",
+      "last_snippet": " such as allergies, exercise, smoke, cold air or infections.",
+      "first_snippet_next": "It's not fully understood what causes asthma. You may be mor",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-016",
+      "chunk_2_id": "DOC-NHS-004-CAN2-017",
+      "last_snippet": "that affected your breathing, such as bronchiolitis or croup",
+      "first_snippet_next": "you're overweight",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-017",
+      "chunk_2_id": "DOC-NHS-004-CAN2-018",
+      "last_snippet": "arities that can offer support and information about asthma.",
+      "first_snippet_next": "Asthma and Lung UK",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-018",
+      "chunk_2_id": "DOC-NHS-004-CAN2-019",
+      "last_snippet": "Information and support for people living with allergies.",
+      "first_snippet_next": "Website: www.allergyuk.org",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-004",
+      "chunk_1_id": "DOC-NHS-004-CAN2-019",
+      "chunk_2_id": "DOC-NHS-004-CAN2-020",
+      "last_snippet": "ut asthma, which is a chronic condition affecting the lungs.",
+      "first_snippet_next": "Media last reviewed: 1 May 2024",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-005",
+      "chunk_1_id": "DOC-NHS-005-CAN2-000",
+      "chunk_2_id": "DOC-NHS-005-CAN2-001",
+      "last_snippet": "Scalds are caused by hot liquids or steam.",
+      "first_snippet_next": "Find out more about acid and chemical burns.",
+      "classification": "PARAGRAPH_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-005",
+      "chunk_1_id": "DOC-NHS-005-CAN2-001",
+      "chunk_2_id": "DOC-NHS-005-CAN2-002",
+      "last_snippet": "lm over it if you can. Do not wrap the cling film around it.",
+      "first_snippet_next": "Immediate action required: Call 999 or go to A&E if:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-005",
+      "chunk_1_id": "DOC-NHS-005-CAN2-002",
+      "chunk_2_id": "DOC-NHS-005-CAN2-003",
+      "last_snippet": "Bring any medicines you take with you.",
+      "first_snippet_next": "Urgent advice: Get help from NHS 111 if:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-005",
+      "chunk_1_id": "DOC-NHS-005-CAN2-003",
+      "chunk_2_id": "DOC-NHS-005-CAN2-004",
+      "last_snippet": "calds that are large or deep may need treatment in hospital.",
+      "first_snippet_next": "Treatment in hospital may include:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-005",
+      "chunk_1_id": "DOC-NHS-005-CAN2-004",
+      "chunk_2_id": "DOC-NHS-005-CAN2-005",
+      "last_snippet": "y be done to repair the wound or to reconstruct damaged skin",
+      "first_snippet_next": "Things you can do to help while burns and scalds heal",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-005",
+      "chunk_1_id": "DOC-NHS-005-CAN2-005",
+      "chunk_2_id": "DOC-NHS-005-CAN2-006",
+      "last_snippet": "eals \u2013 you can ask a pharmacist for advice about what to use",
+      "first_snippet_next": "Don't",
+      "classification": "TRUE_MID_SENTENCE_SPLIT"
+    },
+    {
+      "source_id": "DOC-NHS-006",
+      "chunk_1_id": "DOC-NHS-006-CAN2-000",
+      "chunk_2_id": "DOC-NHS-006-CAN2-001",
+      "last_snippet": "or ibuprofen (but do not give aspirin to children under 16).",
+      "first_snippet_next": "What to do if the wound is bleeding a lot",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-006",
+      "chunk_1_id": "DOC-NHS-006-CAN2-001",
+      "chunk_2_id": "DOC-NHS-006-CAN2-002",
+      "last_snippet": "nother bandage or cloth on top to put pressure on the wound.",
+      "first_snippet_next": "What to do if the wound is bleeding a lot",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-006",
+      "chunk_1_id": "DOC-NHS-006-CAN2-002",
+      "chunk_2_id": "DOC-NHS-006-CAN2-003",
+      "last_snippet": "not come back within 2 seconds, loosen the bandage slightly.",
+      "first_snippet_next": "How to clean and dress a cut or graze",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-006",
+      "chunk_1_id": "DOC-NHS-006-CAN2-003",
+      "chunk_2_id": "DOC-NHS-006-CAN2-004",
+      "last_snippet": "can take it off after a few days, once the wound has closed.",
+      "first_snippet_next": "Information:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-006",
+      "chunk_1_id": "DOC-NHS-006-CAN2-004",
+      "chunk_2_id": "DOC-NHS-006-CAN2-005",
+      "last_snippet": "len, red and getting more painful or pus is coming out of it",
+      "first_snippet_next": "a cut is larger than around 5cm (2 inches)",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-006",
+      "chunk_1_id": "DOC-NHS-006-CAN2-005",
+      "chunk_2_id": "DOC-NHS-006-CAN2-006",
+      "last_snippet": "you have a bad cut on your face or the palm of your hand",
+      "first_snippet_next": "the wound is very large or deep",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-006",
+      "chunk_1_id": "DOC-NHS-006-CAN2-006",
+      "chunk_2_id": "DOC-NHS-006-CAN2-007",
+      "last_snippet": "Bring any medicines you take with you.",
+      "first_snippet_next": "Treatments for cuts and grazes",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-006",
+      "chunk_1_id": "DOC-NHS-006-CAN2-007",
+      "chunk_2_id": "DOC-NHS-006-CAN2-008",
+      "last_snippet": "etanus or be given antibiotics if the cut could be infected.",
+      "first_snippet_next": "Page last reviewed: 02 April 2026 Next review due: 02 April ",
+      "classification": "PARAGRAPH_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-007",
+      "chunk_1_id": "DOC-NHS-007-CAN2-000",
+      "chunk_2_id": "DOC-NHS-007-CAN2-001",
+      "last_snippet": "a sunken soft spot (fontanelle) on top of their head",
+      "first_snippet_next": "sunken eyes",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-007",
+      "chunk_1_id": "DOC-NHS-007-CAN2-001",
+      "chunk_2_id": "DOC-NHS-007-CAN2-002",
+      "last_snippet": "been in the sun, or a hot environment, too long (heatstroke)",
+      "first_snippet_next": "have drunk too much alcohol",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-007",
+      "chunk_1_id": "DOC-NHS-007-CAN2-002",
+      "chunk_2_id": "DOC-NHS-007-CAN2-003",
+      "last_snippet": "d caffeinated drinks and alcohol as both will dehydrate you.",
+      "first_snippet_next": "A pharmacist can help with dehydration",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-007",
+      "chunk_1_id": "DOC-NHS-007-CAN2-003",
+      "chunk_2_id": "DOC-NHS-007-CAN2-004",
+      "last_snippet": "which rehydration solutions are right for you or your child.",
+      "first_snippet_next": "Find a pharmacy",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-007",
+      "chunk_1_id": "DOC-NHS-007-CAN2-004",
+      "chunk_2_id": "DOC-NHS-007-CAN2-005",
+      "last_snippet": ". Call 111 if you need advice for a child under 5 years old.",
+      "first_snippet_next": "Immediate action required: Call 999 or go to A&E if:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-007",
+      "chunk_1_id": "DOC-NHS-007-CAN2-005",
+      "chunk_2_id": "DOC-NHS-007-CAN2-006",
+      "last_snippet": "easier to see on the palms of the hands or soles of the feet",
+      "first_snippet_next": "skin that feels cold",
+      "classification": "TRUE_MID_SENTENCE_SPLIT"
+    },
+    {
+      "source_id": "DOC-NHS-007",
+      "chunk_1_id": "DOC-NHS-007-CAN2-006",
+      "chunk_2_id": "DOC-NHS-007-CAN2-007",
+      "last_snippet": "Bring any medicines you take with you.",
+      "first_snippet_next": "Keeping your child hydrated",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-007",
+      "chunk_1_id": "DOC-NHS-007-CAN2-007",
+      "chunk_2_id": "DOC-NHS-007-CAN2-008",
+      "last_snippet": "o replace lost fluids \u2013 ask your pharmacist to recommend one",
+      "first_snippet_next": "give small children their usual diet",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-007",
+      "chunk_1_id": "DOC-NHS-007-CAN2-008",
+      "chunk_2_id": "DOC-NHS-007-CAN2-009",
+      "last_snippet": "nty of fluids as they have an increased risk of dehydration.",
+      "first_snippet_next": "Helping someone you care for",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-007",
+      "chunk_1_id": "DOC-NHS-007-CAN2-009",
+      "chunk_2_id": "DOC-NHS-007-CAN2-010",
+      "last_snippet": "making sure they have access to fluids at all times",
+      "first_snippet_next": "Video: How to prevent dehydration",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-008",
+      "chunk_1_id": "DOC-NHS-008-CAN2-000",
+      "chunk_2_id": "DOC-NHS-008-CAN2-001",
+      "last_snippet": "ortant thing is to have lots of fluids to avoid dehydration.",
+      "first_snippet_next": "Do",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-008",
+      "chunk_1_id": "DOC-NHS-008-CAN2-001",
+      "chunk_2_id": "DOC-NHS-008-CAN2-002",
+      "last_snippet": "iscomfort \u2013 check the leaflet before giving it to your child",
+      "first_snippet_next": "Don\u2019t",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-008",
+      "chunk_1_id": "DOC-NHS-008-CAN2-002",
+      "chunk_2_id": "DOC-NHS-008-CAN2-003",
+      "last_snippet": "e and avoid contact with other people until you feel better.",
+      "first_snippet_next": "To help avoid spreading an infection:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-008",
+      "chunk_1_id": "DOC-NHS-008-CAN2-003",
+      "chunk_2_id": "DOC-NHS-008-CAN2-004",
+      "last_snippet": "imming pool until at least 48 hours after your symptoms stop",
+      "first_snippet_next": "A pharmacist can help with diarrhoea and vomiting",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-008",
+      "chunk_1_id": "DOC-NHS-008-CAN2-004",
+      "chunk_2_id": "DOC-NHS-008-CAN2-005",
+      "last_snippet": "her health conditions that increase your risk of dehydration",
+      "first_snippet_next": "you need to stop diarrhoea for a few hours",
+      "classification": "TRUE_MID_SENTENCE_SPLIT"
+    },
+    {
+      "source_id": "DOC-NHS-008",
+      "chunk_1_id": "DOC-NHS-008-CAN2-005",
+      "chunk_2_id": "DOC-NHS-008-CAN2-006",
+      "last_snippet": "arrange a phone call from a nurse or doctor if you need one.",
+      "first_snippet_next": "Immediate action required: Call 999 or go to A&E if you or y",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-008",
+      "chunk_1_id": "DOC-NHS-008-CAN2-006",
+      "chunk_2_id": "DOC-NHS-008-CAN2-007",
+      "last_snippet": "have a stiff neck and pain when looking at bright lights",
+      "first_snippet_next": "have a sudden, severe headache",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-008",
+      "chunk_1_id": "DOC-NHS-008-CAN2-007",
+      "chunk_2_id": "DOC-NHS-008-CAN2-008",
+      "last_snippet": "difficulty breathing, or taking lots of quick, short breaths",
+      "first_snippet_next": "are confused or not responding as usual",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-008",
+      "chunk_1_id": "DOC-NHS-008-CAN2-008",
+      "chunk_2_id": "DOC-NHS-008-CAN2-009",
+      "last_snippet": "oes is annoying but does not stop you doing daily activities",
+      "first_snippet_next": "Find your nearest A&E",
+      "classification": "TRUE_MID_SENTENCE_SPLIT"
+    },
+    {
+      "source_id": "DOC-NHS-008",
+      "chunk_1_id": "DOC-NHS-008-CAN2-009",
+      "chunk_2_id": "DOC-NHS-008-CAN2-010",
+      "last_snippet": "\") other infections, such as a urinary tract infection (UTI)",
+      "first_snippet_next": "Page last reviewed: 21 December 2023 Next review due: 21 Dec",
+      "classification": "PARAGRAPH_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-009",
+      "chunk_1_id": "DOC-NHS-009-CAN2-000",
+      "chunk_2_id": "DOC-NHS-009-CAN2-001",
+      "last_snippet": "get plenty of rest if you also have a cold or the flu",
+      "first_snippet_next": "try to relax \u2013 stress can make headaches worse",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-009",
+      "chunk_1_id": "DOC-NHS-009-CAN2-001",
+      "chunk_2_id": "DOC-NHS-009-CAN2-002",
+      "last_snippet": "r eyes for a long time \u2013 for example, by looking at a screen",
+      "first_snippet_next": "do not drink alcohol",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-009",
+      "chunk_1_id": "DOC-NHS-009-CAN2-002",
+      "chunk_2_id": "DOC-NHS-009-CAN2-003",
+      "last_snippet": "che yourself and it's not getting better or is getting worse",
+      "first_snippet_next": "you regularly get headaches",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-009",
+      "chunk_1_id": "DOC-NHS-009-CAN2-003",
+      "chunk_2_id": "DOC-NHS-009-CAN2-004",
+      "last_snippet": ". Call 111 if you need advice for a child under 5 years old.",
+      "first_snippet_next": "Immediate action required: Call 999 or go to A&E if:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-009",
+      "chunk_1_id": "DOC-NHS-009-CAN2-004",
+      "chunk_2_id": "DOC-NHS-009-CAN2-005",
+      "last_snippet": "ding it difficult to speak, balance, walk or remember things",
+      "first_snippet_next": "are drowsy or confused",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-009",
+      "chunk_1_id": "DOC-NHS-009-CAN2-005",
+      "chunk_2_id": "DOC-NHS-009-CAN2-006",
+      "last_snippet": "Bring any medicines you take with you.",
+      "first_snippet_next": "What can cause headaches",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-009",
+      "chunk_1_id": "DOC-NHS-009-CAN2-006",
+      "chunk_2_id": "DOC-NHS-009-CAN2-007",
+      "last_snippet": "ne Trust has advice about what to record in a headache diary",
+      "first_snippet_next": "Page last reviewed: 17 April 2024 Next review due: 17 April ",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-010",
+      "chunk_1_id": "DOC-NHS-010-CAN2-000",
+      "chunk_2_id": "DOC-NHS-010-CAN2-001",
+      "last_snippet": "A high temperature is 38C or more.",
+      "first_snippet_next": "If your child has a high temperature, they might:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-010",
+      "chunk_1_id": "DOC-NHS-010-CAN2-001",
+      "chunk_2_id": "DOC-NHS-010-CAN2-002",
+      "last_snippet": "armacies and supermarkets, to take your child's temperature.",
+      "first_snippet_next": "How to take your child's temperature Place the thermometer i",
+      "classification": "PARAGRAPH_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-010",
+      "chunk_1_id": "DOC-NHS-010-CAN2-002",
+      "chunk_2_id": "DOC-NHS-010-CAN2-003",
+      "last_snippet": "em at home. The temperature should go down over 1 to 4 days.",
+      "first_snippet_next": "Do",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-010",
+      "chunk_1_id": "DOC-NHS-010-CAN2-003",
+      "chunk_2_id": "DOC-NHS-010-CAN2-004",
+      "last_snippet": "our child, or if the paracetamol or ibuprofen is not helping",
+      "first_snippet_next": "Don\u2019t",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-010",
+      "chunk_1_id": "DOC-NHS-010-CAN2-004",
+      "chunk_2_id": "DOC-NHS-010-CAN2-005",
+      "last_snippet": "a health professional such as a doctor or nurse tells you to",
+      "first_snippet_next": "do not give paracetamol to a child under 2 months",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-010",
+      "chunk_1_id": "DOC-NHS-010-CAN2-005",
+      "chunk_2_id": "DOC-NHS-010-CAN2-006",
+      "last_snippet": "Read more about giving medicines to babies and children",
+      "first_snippet_next": "Urgent advice: Call 111 if your child:",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-010",
+      "chunk_1_id": "DOC-NHS-010-CAN2-006",
+      "chunk_2_id": "DOC-NHS-010-CAN2-007",
+      "last_snippet": " not very wet, sunken eyes, and no tears when they're crying",
+      "first_snippet_next": "Immediate action required: Call 999 if your child:",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-010",
+      "chunk_1_id": "DOC-NHS-010-CAN2-007",
+      "chunk_2_id": "DOC-NHS-010-CAN2-008",
+      "last_snippet": "lack skin), or blue, grey or paler than usual lips or tongue",
+      "first_snippet_next": "is drowsy and hard to wake",
+      "classification": "TRUE_MID_SENTENCE_SPLIT"
+    },
+    {
+      "source_id": "DOC-NHS-010",
+      "chunk_1_id": "DOC-NHS-010-CAN2-008",
+      "chunk_2_id": "DOC-NHS-010-CAN2-009",
+      "last_snippet": "lly do, or is not interested in feeding or normal activities",
+      "first_snippet_next": "Causes of a high temperature in children",
+      "classification": "LIST_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-010",
+      "chunk_1_id": "DOC-NHS-010-CAN2-009",
+      "chunk_2_id": "DOC-NHS-010-CAN2-010",
+      "last_snippet": " illnesses like chickenpox and tonsillitis, to vaccinations.",
+      "first_snippet_next": "Video: Caring for children with fever at home",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-011",
+      "chunk_1_id": "DOC-NHS-011-CAN2-000",
+      "chunk_2_id": "DOC-NHS-011-CAN2-001",
+      "last_snippet": "ou're allergic to, such as a food, medicine or insect sting.",
+      "first_snippet_next": "Symptoms include:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-011",
+      "chunk_1_id": "DOC-NHS-011-CAN2-001",
+      "chunk_2_id": "DOC-NHS-011-CAN2-002",
+      "last_snippet": "You may also have a rash that's swollen, raised or itchy.",
+      "first_snippet_next": "Immediate action required: Call 999 if:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-011",
+      "chunk_1_id": "DOC-NHS-011-CAN2-002",
+      "chunk_2_id": "DOC-NHS-011-CAN2-003",
+      "last_snippet": "ier to see on the palms of your hands or soles of your feet)",
+      "first_snippet_next": "you suddenly become very confused, drowsy or dizzy",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-011",
+      "chunk_1_id": "DOC-NHS-011-CAN2-003",
+      "chunk_2_id": "DOC-NHS-011-CAN2-004",
+      "last_snippet": "ergic reaction and may need immediate treatment in hospital.",
+      "first_snippet_next": "What to do if you have anaphylaxis",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-011",
+      "chunk_1_id": "DOC-NHS-011-CAN2-004",
+      "chunk_2_id": "DOC-NHS-011-CAN2-005",
+      "last_snippet": "one \u2013 instructions are included on the side of the injector.",
+      "first_snippet_next": "Call 999 for an ambulance and say that you think you're havi",
+      "classification": "PARAGRAPH_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-011",
+      "chunk_1_id": "DOC-NHS-011-CAN2-005",
+      "chunk_2_id": "DOC-NHS-011-CAN2-006",
+      "last_snippet": "Do not stand or walk at any time, even if you feel better.",
+      "first_snippet_next": "Information:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-011",
+      "chunk_1_id": "DOC-NHS-011-CAN2-006",
+      "chunk_2_id": "DOC-NHS-011-CAN2-007",
+      "last_snippet": "Anaphylaxis needs to be treated in hospital immediately.",
+      "first_snippet_next": "Treatments can include:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-011",
+      "chunk_1_id": "DOC-NHS-011-CAN2-007",
+      "chunk_2_id": "DOC-NHS-011-CAN2-008",
+      "last_snippet": "o be referred to an allergy specialist for tests and advice.",
+      "first_snippet_next": "Things you can do to help prevent anaphylaxis",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-011",
+      "chunk_1_id": "DOC-NHS-011-CAN2-008",
+      "chunk_2_id": "DOC-NHS-011-CAN2-009",
+      "last_snippet": "do to help prevent anaphylaxis or prepare for if it happens.",
+      "first_snippet_next": "Do",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-011",
+      "chunk_1_id": "DOC-NHS-011-CAN2-009",
+      "chunk_2_id": "DOC-NHS-011-CAN2-010",
+      "last_snippet": "ells other people about your allergy in case of an emergency",
+      "first_snippet_next": "Don\u2019t",
+      "classification": "TRUE_MID_SENTENCE_SPLIT"
+    },
+    {
+      "source_id": "DOC-NHS-011",
+      "chunk_1_id": "DOC-NHS-011-CAN2-010",
+      "chunk_2_id": "DOC-NHS-011-CAN2-011",
+      "last_snippet": "body has a serious reaction to something you're allergic to.",
+      "first_snippet_next": "Allergies that can sometimes cause anaphylaxis include:",
+      "classification": "SECTION_HEADING_BOUNDARY"
+    },
+    {
+      "source_id": "DOC-NHS-011",
+      "chunk_1_id": "DOC-NHS-011-CAN2-011",
+      "chunk_2_id": "DOC-NHS-011-CAN2-012",
+      "last_snippet": "metimes it's not known what caused an anaphylactic reaction.",
+      "first_snippet_next": "Page last reviewed: 21 June 2023 Next review due: 21 June 20",
+      "classification": "PARAGRAPH_BOUNDARY"
+    }
+  ]
+}

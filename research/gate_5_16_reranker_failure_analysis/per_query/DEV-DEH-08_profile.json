@@ -1,0 +1,79 @@
+{
+  "query_id": "DEV-DEH-08",
+  "raw_query": "Signs of severe dehydration requiring immediate 999 emergency call",
+  "normalized_query": "Signs of severe dehydration requiring immediate 999 emergency call (dehydration fluid rehydration oral fluids emergency call 999 go to A&E)",
+  "language_category": "English",
+  "expected_source_id": "DOC-NHS-007",
+  "gold_chunk_ids": [
+    "DOC-NHS-007-HYB-004"
+  ],
+  "gold_headings": [
+    ""
+  ],
+  "gold_avg_length": 636.0,
+  "dense_rank": 1,
+  "dense_r15": true,
+  "rerank_rank": 1,
+  "in_top5": true,
+  "is_top1": true,
+  "gold_rerank_score": 0.995389461517334,
+  "rank1_chunk_id": "DOC-NHS-007-HYB-004",
+  "rank1_source_id": "DOC-NHS-007",
+  "rank1_heading": "",
+  "rank1_length": 636,
+  "rank1_score": 0.995389461517334,
+  "score_margin_vs_gold": 0.0,
+  "same_source_as_gold": true,
+  "is_rank1_overview": false,
+  "primary_failure_cause": "NONE_SUCCESS",
+  "secondary_failure_cause": "NONE",
+  "top5_cids": [
+    "DOC-NHS-007-HYB-004",
+    "DOC-NHS-007-HYB-003",
+    "DOC-NHS-008-HYB-005",
+    "DOC-NHS-011-HYB-002",
+    "DOC-NHS-009-HYB-003"
+  ],
+  "top5_details": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-007-HYB-004",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.995389461517334,
+      "is_gold": true
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-007-HYB-003",
+      "source_id": "DOC-NHS-007",
+      "heading": "",
+      "score": 0.9532436728477478,
+      "is_gold": false
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-008-HYB-005",
+      "source_id": "DOC-NHS-008",
+      "heading": "",
+      "score": 0.8766701817512512,
+      "is_gold": false
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-011-HYB-002",
+      "source_id": "DOC-NHS-011",
+      "heading": "",
+      "score": 0.8216881155967712,
+      "is_gold": false
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-009-HYB-003",
+      "source_id": "DOC-NHS-009",
+      "heading": "",
+      "score": 0.8109034299850464,
+      "is_gold": false
+    }
+  ]
+}
