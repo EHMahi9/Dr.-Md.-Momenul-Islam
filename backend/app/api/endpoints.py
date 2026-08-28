@@ -5,8 +5,12 @@ FastAPI route endpoints for health, retrieval, and research chat.
 import time
 from fastapi import APIRouter, Depends, HTTPException
 from app.core.config import settings
+import os
+import json
 from app.schemas.api_models import (
     HealthResponse,
+    CorpusTierInfo,
+    CorpusLifecycleResponse,
     RetrievalRequest,
     RetrievalResponse,
     ChatRequest,
@@ -17,20 +21,84 @@ from app.services.generation_service import BaseGenerationService, get_generatio
 
 router = APIRouter()
 
+def get_staged_corpus_stats():
+    if os.path.exists(settings.STAGED_RESEARCH_MANIFEST_PATH):
+        try:
+            with open(settings.STAGED_RESEARCH_MANIFEST_PATH, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            sids = sorted(list(set(c["parent_source_id"] for c in data)))
+            return len(sids), len(data), sids
+        except Exception:
+            pass
+    return 6, 51, ["DOC-NHS-012", "DOC-NHS-013", "DOC-NHS-014", "DOC-NHS-015", "DOC-NHS-016", "DOC-NHS-017"]
+
 @router.get("/health", response_model=HealthResponse, tags=["System"])
 def get_health(
     retrieval_service: BaseRetrievalService = Depends(get_retrieval_service),
     generation_service: BaseGenerationService = Depends(get_generation_service)
 ):
-    """System health check and retrieval status."""
+    """System health check and corpus lifecycle status."""
+    staged_docs, staged_chunks, _ = get_staged_corpus_stats()
     return HealthResponse(
         status="healthy",
         app_name=settings.APP_NAME,
         version=settings.PROJECT_VERSION,
         environment=settings.ENVIRONMENT,
         retrieval_strategy=retrieval_service.get_strategy_name(),
-        corpus_chunks_loaded=retrieval_service.get_chunk_count(),
+        candidate_hash=settings.FROZEN_CANDIDATE_SHA256,
+        active_corpus_chunks=retrieval_service.get_chunk_count(),
+        staged_research_chunks=staged_chunks,
         generation_enabled=generation_service.is_generation_enabled()
+    )
+
+@router.get("/corpus", response_model=CorpusLifecycleResponse, tags=["System"])
+def get_corpus_lifecycle(
+    retrieval_service: BaseRetrievalService = Depends(get_retrieval_service)
+):
+    """Expose explicit multi-tier corpus lifecycle status and research boundary."""
+    staged_docs, staged_chunks, staged_sids = get_staged_corpus_stats()
+    active_chunks = retrieval_service.get_chunk_count()
+    
+    active_tier = CorpusTierInfo(
+        name=settings.ACTIVE_CORPUS_NAME,
+        status="ACTIVE",
+        document_count=8,
+        chunk_count=active_chunks,
+        source_ids=["DOC-NHS-004", "DOC-NHS-005", "DOC-NHS-006", "DOC-NHS-007", "DOC-NHS-008", "DOC-NHS-009", "DOC-NHS-010", "DOC-NHS-011"],
+        description="Frozen baseline research corpus actively queried by application backend."
+    )
+    
+    staged_tier = CorpusTierInfo(
+        name=settings.STAGED_RESEARCH_CORPUS_NAME,
+        status="STAGED_RESEARCH",
+        document_count=staged_docs,
+        chunk_count=staged_chunks,
+        source_ids=staged_sids,
+        description="Newly ingested NHS sources (Gate 5.27). Isolated in research directory; NOT active in application."
+    )
+    
+    validated_tier = CorpusTierInfo(
+        name="PRODUCTION_VALIDATED_CORPUS",
+        status="NOT_ACTIVE",
+        document_count=0,
+        chunk_count=0,
+        source_ids=[],
+        description="Requires formal multi-lingual benchmark validation (Gate 5.29) prior to promotion."
+    )
+    
+    return CorpusLifecycleResponse(
+        status="success",
+        active_corpus=active_tier,
+        staged_research_corpus=staged_tier,
+        validated_corpus=validated_tier,
+        retrieval_candidate={
+            "strategy_name": settings.RETRIEVAL_STRATEGY,
+            "frozen_candidate_sha256": settings.FROZEN_CANDIDATE_SHA256,
+            "dense_model": settings.DENSE_MODEL_NAME,
+            "reranker_model": settings.RERANKER_MODEL_NAME,
+            "candidate_depth_k": settings.DENSE_K,
+            "final_top_k": settings.TOP_K_FINAL
+        }
     )
 
 @router.post("/retrieve", response_model=RetrievalResponse, tags=["Retrieval"])

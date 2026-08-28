@@ -49,11 +49,28 @@ class ChatResponse(BaseModel):
         "The authoritative NHS evidence passages retrieved below represent the grounding context for this query.]"
     )
 
+class CorpusTierInfo(BaseModel):
+    name: str
+    status: str  # "ACTIVE", "STAGED_RESEARCH", "NOT_ACTIVE"
+    document_count: int
+    chunk_count: int
+    source_ids: List[str]
+    description: str
+
+class CorpusLifecycleResponse(BaseModel):
+    status: str = "success"
+    active_corpus: CorpusTierInfo
+    staged_research_corpus: CorpusTierInfo
+    validated_corpus: CorpusTierInfo
+    retrieval_candidate: dict
+
 class HealthResponse(BaseModel):
     status: str = "healthy"
     app_name: str
     version: str
     environment: str
     retrieval_strategy: str
-    corpus_chunks_loaded: int
+    candidate_hash: str
+    active_corpus_chunks: int
+    staged_research_chunks: int
     generation_enabled: bool

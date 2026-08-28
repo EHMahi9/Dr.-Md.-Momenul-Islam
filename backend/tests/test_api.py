@@ -3,8 +3,13 @@ Automated unit and integration tests for FastAPI backend prototype.
 Uses FastAPI dependency overrides for fast, deterministic unit test execution.
 """
 
+import os
+import sys
 import pytest
 from typing import List, Tuple
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from fastapi.testclient import TestClient
 from app.main import app
 from app.schemas.api_models import RetrievedEvidenceChunk
@@ -96,8 +101,55 @@ def test_health_endpoint():
     data = resp.json()
     assert data["status"] == "healthy"
     assert data["retrieval_strategy"] == "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR"
-    assert data["corpus_chunks_loaded"] == 68
+    assert data["candidate_hash"] == "07f031da533d47666fb5abd242f8db47b90dc584a92c0b3f399abaaf51c02736"
+    assert data["active_corpus_chunks"] == 68
+    assert data["staged_research_chunks"] == 51
     assert data["generation_enabled"] is False
+
+def test_corpus_lifecycle_endpoint():
+    resp = client.get("/api/v1/corpus")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["status"] == "success"
+    
+    # Check Active Tier
+    active = data["active_corpus"]
+    assert active["name"] == "BASELINE_NHS_8_CONDITIONS"
+    assert active["status"] == "ACTIVE"
+    assert active["document_count"] == 8
+    assert active["chunk_count"] == 68
+    assert len(active["source_ids"]) == 8
+    assert "DOC-NHS-004" in active["source_ids"]
+    assert "DOC-NHS-011" in active["source_ids"]
+    
+    # Check Staged Tier
+    staged = data["staged_research_corpus"]
+    assert staged["name"] == "EXPANDED_NHS_6_CONDITIONS"
+    assert staged["status"] == "STAGED_RESEARCH"
+    assert staged["document_count"] == 6
+    assert staged["chunk_count"] == 51
+    assert "DOC-NHS-012" in staged["source_ids"]
+    assert "DOC-NHS-017" in staged["source_ids"]
+    
+    # Check Validated Tier
+    validated = data["validated_corpus"]
+    assert validated["status"] == "NOT_ACTIVE"
+    assert validated["chunk_count"] == 0
+    
+    # Check Retrieval Candidate
+    cand = data["retrieval_candidate"]
+    assert cand["strategy_name"] == "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR"
+    assert cand["frozen_candidate_sha256"] == "07f031da533d47666fb5abd242f8db47b90dc584a92c0b3f399abaaf51c02736"
+
+def test_staged_corpus_isolation_in_retrieval():
+    """Verify that staged research sources (DOC-NHS-012..017) are never returned in active retrieval."""
+    resp = client.post("/api/v1/retrieve", json={"query": "chest pain stroke sepsis meningitis", "top_k": 5})
+    assert resp.status_code == 200
+    data = resp.json()
+    staged_sids = {"DOC-NHS-012", "DOC-NHS-013", "DOC-NHS-014", "DOC-NHS-015", "DOC-NHS-016", "DOC-NHS-017"}
+    retrieved_sids = set(e["parent_source_id"] for e in data["evidence"])
+    # Staged documents must have zero intersection with active retrieval output
+    assert retrieved_sids.isdisjoint(staged_sids)
 
 def test_retrieve_english_query():
     resp = client.post("/api/v1/retrieve", json={"query": "how to treat a minor burn with water", "top_k": 5})

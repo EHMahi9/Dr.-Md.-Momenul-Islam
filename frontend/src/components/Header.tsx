@@ -36,13 +36,18 @@ export const Header: React.FC<HeaderProps> = ({ health }) => {
         {/* System & Retrieval Status Badges */}
         <div className="flex items-center flex-wrap gap-2 text-xs">
           <div className="flex items-center gap-1.5 bg-slate-100 text-slate-700 px-2.5 py-1 rounded-lg border border-slate-200">
-            <Database className="w-3.5 h-3.5 text-sky-600" />
-            <span>Corpus: <strong>{health?.corpus_chunks_loaded ?? 68} Chunks</strong> (NHS)</span>
+            <Database className="w-3.5 h-3.5 text-emerald-600" />
+            <span>Active Corpus: <strong>{health?.active_corpus_chunks ?? 68} Chunks</strong> (NHS)</span>
+          </div>
+
+          <div className="flex items-center gap-1.5 bg-amber-50 text-amber-800 px-2.5 py-1 rounded-lg border border-amber-200">
+            <Database className="w-3.5 h-3.5 text-amber-600" />
+            <span>Staged Research: <strong>{health?.staged_research_chunks ?? 51} Chunks</strong> (Locked)</span>
           </div>
 
           <div className="flex items-center gap-1.5 bg-sky-50 text-sky-800 px-2.5 py-1 rounded-lg border border-sky-200 font-mono text-[11px]">
             <BookOpen className="w-3.5 h-3.5 text-sky-600" />
-            <span>Strategy: <strong>Dual-Anchor Fusion</strong></span>
+            <span>Candidate: <strong>Strategy 5 (Dev)</strong></span>
           </div>
 
           <div className="flex items-center gap-1.5 bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg border border-slate-200">

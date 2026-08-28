@@ -11,13 +11,22 @@ class AppSettings(BaseModel):
     PROJECT_VERSION: str = "0.6.0-prototype"
     ENVIRONMENT: str = "research_development"
     
-    # Path to corpus manifest
-    CORPUS_MANIFEST_PATH: str = os.path.abspath(
+    # Corpus Lifecycle Configuration
+    ACTIVE_CORPUS_NAME: str = "BASELINE_NHS_8_CONDITIONS"
+    ACTIVE_CORPUS_MANIFEST_PATH: str = os.path.abspath(
         os.path.join(os.path.dirname(__file__), "..", "..", "..", "research", "gate_5_9_optimization", "chunks", "hybrid_600", "provenance_manifest.json")
+    )
+    # Legacy alias
+    CORPUS_MANIFEST_PATH: str = ACTIVE_CORPUS_MANIFEST_PATH
+    
+    STAGED_RESEARCH_CORPUS_NAME: str = "EXPANDED_NHS_6_CONDITIONS"
+    STAGED_RESEARCH_MANIFEST_PATH: str = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "..", "..", "..", "research", "gate_5_27_ingestion", "provenance_manifest.json")
     )
     
     # Retrieval Configuration (Frozen Strategy 5 from Gate 5.24.1)
     RETRIEVAL_STRATEGY: str = "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR"
+    FROZEN_CANDIDATE_SHA256: str = "07f031da533d47666fb5abd242f8db47b90dc584a92c0b3f399abaaf51c02736"
     DENSE_MODEL_NAME: str = "intfloat/multilingual-e5-small"
     RERANKER_MODEL_NAME: str = "BAAI/bge-reranker-v2-m3"
     DENSE_K: int = 15

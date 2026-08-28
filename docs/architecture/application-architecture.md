@@ -9,39 +9,42 @@ In **Phase 6A**, the application is structured as a **strictly decoupled local p
 - **LLM generation is strictly disabled** by protocol. Responses return verbatim retrieved passages and structured provenance metadata to guarantee zero hallucination risk during retrieval validation.
 
 ```text
-                    Dr. Md. Momenul Islam Architecture
-                                    │
-    ┌───────────────────────────────┴───────────────────────────────┐
-    ▼                                                               ▼
-[Frontend: React 18 + TS + Tailwind]               [Backend: Python + FastAPI]
-  • Multi-lingual Chat Input                         • CORS Middleware
-  • Research Mode Disclaimer                         • REST API Routes (/api/v1)
-  • Top-5 Evidence Viewer                            • Service Layer (Abstracted)
-  • Provenance & Score Badges                        • SQLAlchemy Schema / PostgreSQL
-    │                                                               │
-    └─────────────────────── HTTP REST API ─────────────────────────┘
-                                    │
-                                    ▼
-                     [Abstracted Retrieval Service]
-                                    │
-     ┌──────────────────────────────┴──────────────────────────────┐
-     │                                                             │
-     ▼                                                             ▼
-[Deterministic Unicode Normalizer]               [Neural Bi-Encoder: E5-Small]
-  • 9 Concept Expansion Dictionaries                • Dense Top-15 Candidate Depth
-     │                                                             │
-     └──────────────────────────────┬──────────────────────────────┘
-                                    │
-                                    ▼
-                   [Cross-Encoder: BGE-Reranker-v2-m3]
-                                    │
-                                    ▼
-                [Dual-Anchor Topical-Lexical Fusion Reranker]
-                • 0.85x Overview Debiasing (-HYB-000)
-                • Score = Rerank + 0.10*Dense + 0.03*Overlap
-                                    │
-                                    ▼
-                   [Final Top-5 Grounding Evidence Context]
+   +-------------------------------------------------------------------------+
+   |                       REACT + TYPESCRIPT FRONTEND                       |
+   |   (Header with Active/Staged Badges, ChatInput, EvidenceCards, Alerts)  |
+   +-------------------------------------------------------------------------+
+                                      │  HTTP / REST
+                                      ▼
+   +-------------------------------------------------------------------------+
+   |                             FASTAPI BACKEND                             |
+   |                                                                         |
+   |  [/api/v1/health]      [/api/v1/corpus]          [/api/v1/retrieve]      |
+   |  Status & Hashes       Lifecycle Tiers           Evidence Retrieval     |
+   |                                                                         |
+   |  [/api/v1/chat]                                                         |
+   |  Chat Endpoint (Retrieval-Only Research Mode)                           |
+   +-------------------------------------------------------------------------+
+                                      │
+               ┌──────────────────────┴──────────────────────┐
+               ▼                                             ▼
+   +---------------------------------------+   +-----------------------------+
+   |         BASE RETRIEVAL SERVICE        |   |   BASE GENERATION SERVICE   |
+   |  [FrozenDualAnchorRetrievalService]   |   | [DisabledGenerationService] |
+   |  - Normalization (Track A Regex)      |   |  - generation_enabled: false|
+   |  - Bi-Encoder (multilingual-e5-small) |   |  - Static Disclaimer Banner |
+   |  - Dense Top-15 Candidates            |   +-----------------------------+
+   |  - Cross-Encoder (bge-reranker-v2-m3) |
+   |  - 0.85x Overview Debiasing           |
+   |  - Dual-Anchor Semantic Fusion        |
+   +---------------------------------------+
+                       │
+                       ▼
+   +-------------------------------------------------------------------------+
+   |                       THREE-TIER CORPUS LIFECYCLE                       |
+   |  1. ACTIVE CORPUS:          68 chunks (DOC-NHS-004..011) [LIVE]         |
+   |  2. STAGED RESEARCH CORPUS: 51 chunks (DOC-NHS-012..017) [ISOLATED]     |
+   |  3. VALIDATED CORPUS:       0 chunks (Pending Gate 5.29) [NOT ACTIVE]   |
+   +-------------------------------------------------------------------------+
 ```
 
 ---

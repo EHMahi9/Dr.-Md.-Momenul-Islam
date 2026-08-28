@@ -1,0 +1,27 @@
+{
+  "gate": "GATE_5.28",
+  "benchmark_file": "benchmark/new_locked_benchmark.json",
+  "locked_sha256": "464612e733aeb1496c1dcdc5674e01d9504bd4ccd1244190e487c6e957dcc722",
+  "total_queries": 50,
+  "supported_count": 40,
+  "hard_negatives_count": 5,
+  "out_of_corpus_count": 5,
+  "gold_mapping_valid": true,
+  "zero_duplicate_overlap": true,
+  "historical_pool_size": 40,
+  "language_distribution": {
+    "English": 14,
+    "Native_Bangla": 12,
+    "Standard_Banglish": 12,
+    "Abbreviated_Banglish": 12
+  },
+  "source_coverage": {
+    "DOC-NHS-012": 6,
+    "DOC-NHS-013": 4,
+    "DOC-NHS-014": 5,
+    "DOC-NHS-015": 7,
+    "DOC-NHS-016": 10,
+    "DOC-NHS-017": 8
+  },
+  "verdict": "BENCHMARK_LOCKED"
+}

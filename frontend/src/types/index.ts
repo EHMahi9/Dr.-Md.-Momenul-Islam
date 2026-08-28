@@ -27,8 +27,34 @@ export interface HealthResponse {
   version: string;
   environment: string;
   retrieval_strategy: string;
-  corpus_chunks_loaded: number;
+  candidate_hash: string;
+  active_corpus_chunks: number;
+  staged_research_chunks: number;
   generation_enabled: boolean;
+}
+
+export interface CorpusTierInfo {
+  name: string;
+  status: 'ACTIVE' | 'STAGED_RESEARCH' | 'NOT_ACTIVE';
+  document_count: number;
+  chunk_count: number;
+  source_ids: string[];
+  description: string;
+}
+
+export interface CorpusLifecycleResponse {
+  status: string;
+  active_corpus: CorpusTierInfo;
+  staged_research_corpus: CorpusTierInfo;
+  validated_corpus: CorpusTierInfo;
+  retrieval_candidate: {
+    strategy_name: string;
+    frozen_candidate_sha256: string;
+    dense_model: string;
+    reranker_model: string;
+    candidate_depth_k: number;
+    final_top_k: number;
+  };
 }
 
 export interface Message {
@@ -39,3 +65,4 @@ export interface Message {
   evidence?: RetrievedEvidenceChunk[];
   generationEnabled?: boolean;
 }
+
