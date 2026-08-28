@@ -1,0 +1,182 @@
+{
+  "gate": "5.22",
+  "phase": "corpus_independence_audit",
+  "timestamp": "2026-08-28T15:13:02.733080Z",
+  "total_corpus_chunks": 68,
+  "total_documents": 8,
+  "documents": [
+    {
+      "source_id": "DOC-NHS-004",
+      "title": "Asthma\n - NHS",
+      "url": "https://www.nhs.uk/conditions/asthma/",
+      "chunk_count": 18,
+      "chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-005",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-004-HYB-007",
+        "DOC-NHS-004-HYB-008",
+        "DOC-NHS-004-HYB-009",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-014",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-016",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "original_split": "DEV",
+      "original_query_prefix": "DEV-AST",
+      "medical_topic": "Asthma"
+    },
+    {
+      "source_id": "DOC-NHS-005",
+      "title": "Burns and scalds\n - NHS",
+      "url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+      "chunk_count": 5,
+      "chunk_ids": [
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "original_split": "DEV",
+      "original_query_prefix": "DEV-BUR",
+      "medical_topic": "Burns and Scalds"
+    },
+    {
+      "source_id": "DOC-NHS-006",
+      "title": "Cuts and grazes\n - NHS",
+      "url": "https://www.nhs.uk/conditions/cuts-and-grazes/",
+      "chunk_count": 7,
+      "chunk_ids": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-006"
+      ],
+      "original_split": "DEV",
+      "original_query_prefix": "DEV-CUT",
+      "medical_topic": "Cuts and Grazes"
+    },
+    {
+      "source_id": "DOC-NHS-007",
+      "title": "Dehydration\n - NHS",
+      "url": "https://www.nhs.uk/conditions/dehydration/",
+      "chunk_count": 8,
+      "chunk_ids": [
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-007-HYB-007"
+      ],
+      "original_split": "DEV",
+      "original_query_prefix": "DEV-DEH",
+      "medical_topic": "Dehydration"
+    },
+    {
+      "source_id": "DOC-NHS-008",
+      "title": "Diarrhoea and vomiting\n - NHS",
+      "url": "https://www.nhs.uk/conditions/diarrhoea-and-vomiting/",
+      "chunk_count": 8,
+      "chunk_ids": [
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-008-HYB-007"
+      ],
+      "original_split": "TEST",
+      "original_query_prefix": "TEST-DIA",
+      "medical_topic": "Diarrhoea and Vomiting"
+    },
+    {
+      "source_id": "DOC-NHS-009",
+      "title": "Headaches\n - NHS",
+      "url": "https://www.nhs.uk/conditions/headaches/",
+      "chunk_count": 5,
+      "chunk_ids": [
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-009-HYB-001",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-009-HYB-004"
+      ],
+      "original_split": "TEST",
+      "original_query_prefix": "TEST-HEA",
+      "medical_topic": "Headaches"
+    },
+    {
+      "source_id": "DOC-NHS-010",
+      "title": "High temperature (fever) in children\n - NHS",
+      "url": "https://www.nhs.uk/conditions/fever-in-children/",
+      "chunk_count": 7,
+      "chunk_ids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-010-HYB-006"
+      ],
+      "original_split": "TEST",
+      "original_query_prefix": "TEST-FEV",
+      "medical_topic": "Fever in Children"
+    },
+    {
+      "source_id": "DOC-NHS-011",
+      "title": "Anaphylaxis\n - NHS",
+      "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+      "chunk_count": 10,
+      "chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-009"
+      ],
+      "original_split": "TEST",
+      "original_query_prefix": "TEST-ANA",
+      "medical_topic": "Anaphylaxis"
+    }
+  ],
+  "independence_assessment": {
+    "topic_independence": "FULLY_INDEPENDENT",
+    "document_independence": "FULLY_INDEPENDENT",
+    "language_distribution": "BALANCED_4_LANGUAGES",
+    "query_template_similarity": "MODERATE_TEMPLATED_PATTERNS",
+    "note": "All 8 documents cover distinct medical conditions with zero content overlap. DEV docs (004-007) and TEST docs (008-011) are cleanly partitioned."
+  },
+  "fresh_benchmark_design": {
+    "strategy": "NEW_QUERIES_ACROSS_ALL_8_DOCUMENTS",
+    "rationale": "Fresh queries target all 8 documents to test generalization beyond the original DEV/TEST split boundaries. This ensures the frozen pipeline is tested on both familiar (DEV-optimized) and unfamiliar topics.",
+    "key_improvements_over_old_test": [
+      "Zero overview-only gold annotations (old TEST had 14/40)",
+      "Deeper average gold chunk index (~4.2 vs old ~1.8)",
+      "19 previously-untested chunks now covered",
+      "No duplicate/paraphrase overlap with existing 80 queries"
+    ]
+  }
+}

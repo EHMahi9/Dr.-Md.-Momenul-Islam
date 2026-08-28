@@ -1,0 +1,46 @@
+{
+  "gate": "GATE_5.24.1",
+  "candidate_name": "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR",
+  "selection_status": "SELECTED_DEVELOPMENT_CANDIDATE",
+  "validation_status": "REQUIRES_FUTURE_LOCKED_HOLDOUT_VALIDATION",
+  "benchmark_evaluated": "DEV_24 (N=40)",
+  "metrics_on_dev24": {
+    "chunk_recall_at_1": "27/40 (67.5%)",
+    "chunk_recall_at_3": "33/40 (82.5%)",
+    "chunk_recall_at_5": "36/40 (90.0%)",
+    "chunk_mrr": 0.7698,
+    "dense_candidate_recall_at_15": "40/40 (100.0%)"
+  },
+  "architecture": {
+    "query_normalization": {
+      "type": "unicode_aware_procedural_normalization",
+      "strategy": "Track_A_explicit_boundary_or_whitespace_non_ascii_safe",
+      "concept_dictionaries": 9
+    },
+    "dense_retrieval": {
+      "model": "intfloat/multilingual-e5-small",
+      "candidate_depth_k": 15,
+      "query_prefix": "query: ",
+      "passage_prefix": "passage: ",
+      "similarity": "cosine"
+    },
+    "cross_encoder_reranking": {
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_format": "raw_chunk_text"
+    },
+    "overview_debiasing": {
+      "multiplier": 0.85,
+      "target_chunks": "ending_in_-HYB-000"
+    },
+    "score_fusion": {
+      "formula": "final_score = reranker_score + (0.10 * dense_cosine_score) + (0.03 * lexical_token_overlap)",
+      "lambda_dense": 0.10,
+      "alpha_lexical": 0.03
+    },
+    "context_assembly": {
+      "final_top_k": 5,
+      "diversification_cap": "none"
+    }
+  },
+  "rationale": "Selected as the winning candidate on DEV-24 under pre-registered tie-breaking rules: ties baseline on primary Chunk R@5 (90.0%), leads baseline on Chunk R@3 (82.5% vs 80.0%) and MRR (0.7698 vs 0.7581), with +0.0551 MRR gain in Standard Banglish. Gate 5.23 and Gate 5.20 holdouts remain permanently locked."
+}

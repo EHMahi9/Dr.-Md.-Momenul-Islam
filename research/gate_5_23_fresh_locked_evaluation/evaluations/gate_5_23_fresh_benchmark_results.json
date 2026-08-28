@@ -1,0 +1,221 @@
+{
+  "gate": "GATE_5.23",
+  "timestamp": "2026-08-28T15:31:18.635399Z",
+  "benchmark_file": "D:\\my-ai-project\\Dr. Md. Momenul Islam\\research\\gate_5_22_fresh_benchmark\\benchmark\\fresh_locked_benchmark.json",
+  "benchmark_sha256": "a0267355615d9094fd9698ff0bbb5d9aa69311a9c822e1cd47ac12fc08573ef6",
+  "configuration_sha256": "07f031da533d47666fb5abd242f8db47b90dc584a92c0b3f399abaaf51c02736",
+  "sample_sizes": {
+    "total_queries": 50,
+    "supported_queries": 40,
+    "hard_negatives": 5,
+    "out_of_corpus": 5
+  },
+  "primary_metrics": {
+    "final_chunk_recall_at_1_count": 28,
+    "final_chunk_recall_at_1_pct": 70.0,
+    "final_chunk_recall_at_3_count": 34,
+    "final_chunk_recall_at_3_pct": 85.0,
+    "final_chunk_recall_at_5_count": 34,
+    "final_chunk_recall_at_5_pct": 85.0,
+    "final_chunk_mrr": 0.7933
+  },
+  "candidate_stage_metrics": {
+    "dense_candidate_recall_at_5_count": 38,
+    "dense_candidate_recall_at_5_pct": 95.0,
+    "dense_candidate_recall_at_10_count": 39,
+    "dense_candidate_recall_at_10_pct": 97.5,
+    "dense_candidate_recall_at_15_count": 40,
+    "dense_candidate_recall_at_15_pct": 100.0
+  },
+  "secondary_source_metrics": {
+    "source_recall_at_1_count": 36,
+    "source_recall_at_1_pct": 90.0,
+    "source_recall_at_5_count": 40,
+    "source_recall_at_5_pct": 100.0
+  },
+  "evidence_availability_categories": {
+    "TOP1_CORRECT": {
+      "count": 28,
+      "pct": 70.0
+    },
+    "TOP1_WRONG_BUT_TOP3_HAS_GOLD": {
+      "count": 6,
+      "pct": 15.0
+    },
+    "TOP3_WRONG_BUT_TOP5_HAS_GOLD": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "GOLD_ABSENT_FROM_TOP5": {
+      "count": 6,
+      "pct": 15.0
+    }
+  },
+  "failure_decomposition": {
+    "GOLD_IN_DENSE_TOP15": {
+      "count": 40,
+      "pct": 100.0
+    },
+    "GOLD_OUTSIDE_DENSE15": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "GOLD_IN_DENSE15_BUT_RERANKED_OUT": {
+      "count": 6,
+      "pct": 15.0
+    }
+  },
+  "language_breakdown": {
+    "English": {
+      "n": 16,
+      "dense_r15_count": 16,
+      "dense_r15_pct": 100.0,
+      "chunk_r1_count": 12,
+      "chunk_r1_pct": 75.0,
+      "chunk_r3_count": 15,
+      "chunk_r3_pct": 93.8,
+      "chunk_r5_count": 15,
+      "chunk_r5_pct": 93.8,
+      "mrr": 0.8494
+    },
+    "Native_Bangla": {
+      "n": 8,
+      "dense_r15_count": 8,
+      "dense_r15_pct": 100.0,
+      "chunk_r1_count": 7,
+      "chunk_r1_pct": 87.5,
+      "chunk_r3_count": 7,
+      "chunk_r3_pct": 87.5,
+      "chunk_r5_count": 7,
+      "chunk_r5_pct": 87.5,
+      "mrr": 0.8958
+    },
+    "Standard_Banglish": {
+      "n": 8,
+      "dense_r15_count": 8,
+      "dense_r15_pct": 100.0,
+      "chunk_r1_count": 5,
+      "chunk_r1_pct": 62.5,
+      "chunk_r3_count": 7,
+      "chunk_r3_pct": 87.5,
+      "chunk_r5_count": 7,
+      "chunk_r5_pct": 87.5,
+      "mrr": 0.7656
+    },
+    "Abbreviated_Banglish": {
+      "n": 8,
+      "dense_r15_count": 8,
+      "dense_r15_pct": 100.0,
+      "chunk_r1_count": 4,
+      "chunk_r1_pct": 50.0,
+      "chunk_r3_count": 5,
+      "chunk_r3_pct": 62.5,
+      "chunk_r5_count": 5,
+      "chunk_r5_pct": 62.5,
+      "mrr": 0.6062
+    }
+  },
+  "document_breakdown": {
+    "DOC-NHS-004": {
+      "n": 5,
+      "dense_r15_count": 5,
+      "dense_r15_pct": 100.0,
+      "chunk_r5_count": 5,
+      "chunk_r5_pct": 100.0,
+      "mrr": 1.0
+    },
+    "DOC-NHS-005": {
+      "n": 5,
+      "dense_r15_count": 5,
+      "dense_r15_pct": 100.0,
+      "chunk_r5_count": 4,
+      "chunk_r5_pct": 80.0,
+      "mrr": 0.725
+    },
+    "DOC-NHS-006": {
+      "n": 5,
+      "dense_r15_count": 5,
+      "dense_r15_pct": 100.0,
+      "chunk_r5_count": 3,
+      "chunk_r5_pct": 60.0,
+      "mrr": 0.6583
+    },
+    "DOC-NHS-007": {
+      "n": 5,
+      "dense_r15_count": 5,
+      "dense_r15_pct": 100.0,
+      "chunk_r5_count": 4,
+      "chunk_r5_pct": 80.0,
+      "mrr": 0.5182
+    },
+    "DOC-NHS-008": {
+      "n": 5,
+      "dense_r15_count": 5,
+      "dense_r15_pct": 100.0,
+      "chunk_r5_count": 5,
+      "chunk_r5_pct": 100.0,
+      "mrr": 0.9
+    },
+    "DOC-NHS-009": {
+      "n": 5,
+      "dense_r15_count": 5,
+      "dense_r15_pct": 100.0,
+      "chunk_r5_count": 5,
+      "chunk_r5_pct": 100.0,
+      "mrr": 0.9
+    },
+    "DOC-NHS-010": {
+      "n": 5,
+      "dense_r15_count": 5,
+      "dense_r15_pct": 100.0,
+      "chunk_r5_count": 4,
+      "chunk_r5_pct": 80.0,
+      "mrr": 0.82
+    },
+    "DOC-NHS-011": {
+      "n": 5,
+      "dense_r15_count": 5,
+      "dense_r15_pct": 100.0,
+      "chunk_r5_count": 4,
+      "chunk_r5_pct": 80.0,
+      "mrr": 0.825
+    }
+  },
+  "unsupported_query_summary": {
+    "hard_negatives": {
+      "n": 5,
+      "top1_scores": [
+        0.011596284806728363,
+        0.002899357583373785,
+        0.0010537725174799562,
+        4.675333548220806e-05,
+        0.1000358983874321
+      ],
+      "max_score": 0.1000358983874321,
+      "min_score": 4.675333548220806e-05,
+      "mean_top1_score": 0.02312641332609928,
+      "mean_top5_score": 0.00835424915071053
+    },
+    "out_of_corpus": {
+      "n": 5,
+      "top1_scores": [
+        0.014543627388775349,
+        0.0014434452168643475,
+        0.00035461143124848604,
+        1.733499811962247e-05,
+        0.007728152442723513
+      ],
+      "max_score": 0.014543627388775349,
+      "min_score": 1.733499811962247e-05,
+      "mean_top1_score": 0.0048174342955462635,
+      "mean_top5_score": 0.0022352517286344667
+    },
+    "all_unsupported": {
+      "n": 10,
+      "max_score": 0.1000358983874321,
+      "min_score": 1.733499811962247e-05,
+      "mean_top1_score": 0.013971923810822772
+    }
+  },
+  "generalization_classification": "FRESH_BENCHMARK_GENERALIZATION_SUPPORTED"
+}

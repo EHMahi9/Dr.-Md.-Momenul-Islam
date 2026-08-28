@@ -1,0 +1,63 @@
+{
+  "gate": "GATE_5.26",
+  "timestamp": "2026-08-28T16:05:57.617496Z",
+  "licensing_framework": "Open Government Licence v3.0 (OGL v3.0)",
+  "official_nhs_policy_url": "https://www.nhs.uk/our-policies/terms-and-conditions/",
+  "copyright_holder": "Crown Copyright / NHS England",
+  "permitted_reuse": {
+    "textual_health_content_extraction": true,
+    "academic_and_research_use": true,
+    "informational_public_benefit": true,
+    "derivative_indexing_and_chunking": true
+  },
+  "mandatory_conditions": [
+    "Include attribution: 'Contains information from NHS England, licensed under the current version of the Open Government Licence.'",
+    "Exclude NHS official logos, crests, and trademarks",
+    "Exclude third-party copyright imagery and media assets"
+  ],
+  "evaluated_sources": [
+    {
+      "source_id": "DOC-NHS-012",
+      "title": "Chest pain",
+      "canonical_url": "https://www.nhs.uk/symptoms/chest-pain/",
+      "rights_verdict": "APPROVED_FOR_PLANNED_TEXT_REUSE",
+      "notes": "Verified NHS.UK official public clinical advice page."
+    },
+    {
+      "source_id": "DOC-NHS-013",
+      "title": "Stroke",
+      "canonical_url": "https://www.nhs.uk/conditions/stroke/",
+      "rights_verdict": "APPROVED_FOR_PLANNED_TEXT_REUSE",
+      "notes": "Verified NHS.UK official public clinical advice page."
+    },
+    {
+      "source_id": "DOC-NHS-014",
+      "title": "Sepsis",
+      "canonical_url": "https://www.nhs.uk/conditions/sepsis/",
+      "rights_verdict": "APPROVED_FOR_PLANNED_TEXT_REUSE",
+      "notes": "Verified NHS.UK official public clinical advice page."
+    },
+    {
+      "source_id": "DOC-NHS-015",
+      "title": "Meningitis",
+      "canonical_url": "https://www.nhs.uk/conditions/meningitis/",
+      "rights_verdict": "APPROVED_FOR_PLANNED_TEXT_REUSE",
+      "notes": "Verified NHS.UK official public clinical advice page."
+    },
+    {
+      "source_id": "DOC-NHS-016",
+      "title": "Nosebleed",
+      "canonical_url": "https://www.nhs.uk/conditions/nosebleed/",
+      "rights_verdict": "APPROVED_FOR_PLANNED_TEXT_REUSE",
+      "notes": "Verified NHS.UK official public clinical advice page."
+    },
+    {
+      "source_id": "DOC-NHS-017",
+      "title": "Allergic rhinitis",
+      "canonical_url": "https://www.nhs.uk/conditions/allergic-rhinitis/",
+      "rights_verdict": "APPROVED_FOR_PLANNED_TEXT_REUSE",
+      "notes": "Verified NHS.UK official public clinical advice page."
+    }
+  ],
+  "overall_verdict": "SOURCE_EXPANSION_APPROVED"
+}

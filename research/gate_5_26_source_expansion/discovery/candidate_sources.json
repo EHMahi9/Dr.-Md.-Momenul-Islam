@@ -1,0 +1,107 @@
+{
+  "gate": "GATE_5.26",
+  "timestamp": "2026-08-28T16:05:57.616480Z",
+  "primary_candidates_count": 6,
+  "primary_candidates": [
+    {
+      "proposed_source_id": "DOC-NHS-012",
+      "source_title": "Chest pain",
+      "requested_url": "https://www.nhs.uk/conditions/chest-pain/",
+      "canonical_url": "https://www.nhs.uk/symptoms/chest-pain/",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "clinical_topic": "Cardiovascular Emergency & Triage",
+      "clinical_category": "Emergency / Cardiovascular",
+      "domain": "www.nhs.uk",
+      "hosting_infrastructure": "National Health Service (NHS.UK Official)",
+      "rights_status": "APPROVED_FOR_PLANNED_TEXT_REUSE",
+      "verification_status": "VERIFIED_ACTIVE"
+    },
+    {
+      "proposed_source_id": "DOC-NHS-013",
+      "source_title": "Stroke",
+      "requested_url": "https://www.nhs.uk/conditions/stroke/",
+      "canonical_url": "https://www.nhs.uk/conditions/stroke/",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "clinical_topic": "Neurological Emergency (FAST symptoms)",
+      "clinical_category": "Emergency / Neurological",
+      "domain": "www.nhs.uk",
+      "hosting_infrastructure": "National Health Service (NHS.UK Official)",
+      "rights_status": "APPROVED_FOR_PLANNED_TEXT_REUSE",
+      "verification_status": "VERIFIED_ACTIVE"
+    },
+    {
+      "proposed_source_id": "DOC-NHS-014",
+      "source_title": "Sepsis",
+      "requested_url": "https://www.nhs.uk/conditions/sepsis/",
+      "canonical_url": "https://www.nhs.uk/conditions/sepsis/",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "clinical_topic": "Systemic Infection Emergency",
+      "clinical_category": "Emergency / Infectious",
+      "domain": "www.nhs.uk",
+      "hosting_infrastructure": "National Health Service (NHS.UK Official)",
+      "rights_status": "APPROVED_FOR_PLANNED_TEXT_REUSE",
+      "verification_status": "VERIFIED_ACTIVE"
+    },
+    {
+      "proposed_source_id": "DOC-NHS-015",
+      "source_title": "Meningitis",
+      "requested_url": "https://www.nhs.uk/conditions/meningitis/",
+      "canonical_url": "https://www.nhs.uk/conditions/meningitis/",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "clinical_topic": "Infectious & Neurological Emergency (Tumbler test / Non-blanching rash)",
+      "clinical_category": "Emergency / Infectious",
+      "domain": "www.nhs.uk",
+      "hosting_infrastructure": "National Health Service (NHS.UK Official)",
+      "rights_status": "APPROVED_FOR_PLANNED_TEXT_REUSE",
+      "verification_status": "VERIFIED_ACTIVE"
+    },
+    {
+      "proposed_source_id": "DOC-NHS-016",
+      "source_title": "Nosebleed",
+      "requested_url": "https://www.nhs.uk/conditions/nosebleed/",
+      "canonical_url": "https://www.nhs.uk/conditions/nosebleed/",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "clinical_topic": "ENT First Aid & Nasal Pinching Protocol",
+      "clinical_category": "First Aid / ENT",
+      "domain": "www.nhs.uk",
+      "hosting_infrastructure": "National Health Service (NHS.UK Official)",
+      "rights_status": "APPROVED_FOR_PLANNED_TEXT_REUSE",
+      "verification_status": "VERIFIED_ACTIVE"
+    },
+    {
+      "proposed_source_id": "DOC-NHS-017",
+      "source_title": "Allergic rhinitis",
+      "requested_url": "https://www.nhs.uk/conditions/allergic-rhinitis/",
+      "canonical_url": "https://www.nhs.uk/conditions/allergic-rhinitis/",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "clinical_topic": "Non-emergency Respiratory & Antihistamines",
+      "clinical_category": "Chronic / Immunology",
+      "domain": "www.nhs.uk",
+      "hosting_infrastructure": "National Health Service (NHS.UK Official)",
+      "rights_status": "APPROVED_FOR_PLANNED_TEXT_REUSE",
+      "verification_status": "VERIFIED_ACTIVE"
+    }
+  ],
+  "reserve_candidates": [
+    {
+      "proposed_id": "DOC-NHS-018",
+      "title": "Head injury and concussion",
+      "canonical_url": "https://www.nhs.uk/conditions/head-injury-and-concussion/",
+      "topic": "Trauma / Neurological Triage"
+    },
+    {
+      "proposed_id": "DOC-NHS-019",
+      "title": "Insect bites and stings",
+      "canonical_url": "https://www.nhs.uk/conditions/insect-bites-and-stings/",
+      "topic": "Environmental / Local Reaction Triage"
+    }
+  ],
+  "licensing_terms": "Open Government Licence v3.0 (OGL v3.0)",
+  "rights_summary": "All 6 selected primary sources are official NHS public health guidance pages under Crown Copyright / OGL v3.0, approved for text extraction with branding/image exclusion and attribution."
+}

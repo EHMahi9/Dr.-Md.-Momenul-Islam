@@ -1,0 +1,46 @@
+{
+  "gate": "5.22",
+  "phase": "benchmark_integrity",
+  "timestamp": "2026-08-28T15:13:02.739886Z",
+  "benchmark_file": "research/gate_5_22_fresh_benchmark/benchmark/fresh_locked_benchmark.json",
+  "benchmark_sha256": "a0267355615d9094fd9698ff0bbb5d9aa69311a9c822e1cd47ac12fc08573ef6",
+  "total_queries": 50,
+  "supported_queries": 40,
+  "hard_negative_queries": 5,
+  "out_of_corpus_queries": 5,
+  "overlap_with_existing_benchmark": {
+    "overlapping_query_ids": [],
+    "overlap_count": 0,
+    "status": "NO_OVERLAP"
+  },
+  "gold_annotation_quality": {
+    "single_gold_chunk_queries": 36,
+    "multi_gold_chunk_queries": 4,
+    "overview_only_gold_count": 0,
+    "unique_gold_chunks_targeted": 34,
+    "total_corpus_chunks": 68,
+    "corpus_coverage_ratio": 0.5,
+    "average_gold_chunk_depth_index": 4.55
+  },
+  "language_distribution": {
+    "English": 20,
+    "Native_Bangla": 10,
+    "Standard_Banglish": 10,
+    "Abbreviated_Banglish": 10
+  },
+  "intent_distribution": {
+    "Professional_Referral": 9,
+    "Causal": 2,
+    "Medication": 2,
+    "Prevention": 4,
+    "Specific_Life_Stage": 2,
+    "Emergency_Escalation": 8,
+    "Home_Treatment": 5,
+    "Factoid": 4,
+    "Contraindication": 4,
+    "Unsupported": 10
+  },
+  "all_gold_chunk_ids_in_corpus": true,
+  "no_duplicate_query_texts": true,
+  "final_status": "FRESH_BENCHMARK_LOCKED"
+}

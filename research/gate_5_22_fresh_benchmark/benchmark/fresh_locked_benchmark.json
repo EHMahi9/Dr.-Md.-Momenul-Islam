@@ -1,0 +1,713 @@
+{
+  "gate": "5.22",
+  "benchmark_name": "FRESH_INDEPENDENT_HOLDOUT",
+  "created_timestamp": "2026-08-28T15:13:02.734694Z",
+  "total_queries": 50,
+  "supported_queries": 40,
+  "hard_negative_queries": 5,
+  "out_of_corpus_queries": 5,
+  "language_distribution": {
+    "English": 20,
+    "Native_Bangla": 10,
+    "Standard_Banglish": 10,
+    "Abbreviated_Banglish": 10
+  },
+  "pre_registered_evaluation_rules": {
+    "primary_metric": "final_chunk_recall_at_5",
+    "secondary_metrics": [
+      "final_chunk_recall_at_1",
+      "final_chunk_recall_at_3",
+      "final_chunk_mrr",
+      "dense_candidate_recall_at_15"
+    ],
+    "evaluation_count": "EXACTLY_ONCE",
+    "configuration_hash_required": "07f031da533d47666fb5abd242f8db47b90dc584a92c0b3f399abaaf51c02736",
+    "unsupported_scoring": "record_max_reranker_score_top5_no_rejection_threshold"
+  },
+  "queries": [
+    {
+      "query_id": "FRESH-AST-01",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "What is an asthma action plan and why should I have one?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-007"
+      ],
+      "query_type": "Care_Plan",
+      "intent_category": "Professional_Referral",
+      "target_topic": "Asthma treatment and action plan",
+      "annotation_rationale": "HYB-007 discusses treatment for asthma including the care team and asthma action plan. This is the only chunk that mentions the action plan concept."
+    },
+    {
+      "query_id": "FRESH-AST-02",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "Can asthma be inherited or is it caused by environmental factors?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-015"
+      ],
+      "query_type": "Causal_Inquiry",
+      "intent_category": "Causal",
+      "target_topic": "Asthma causes and inheritance",
+      "annotation_rationale": "HYB-015 discusses what causes asthma, including genetic and environmental factors. Deep chunk (index 15) testing retrieval of non-prominent information."
+    },
+    {
+      "query_id": "FRESH-AST-03",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "হাঁপানিতে কোন ধরনের ইনহেলার ব্যবহার করা হয়?",
+      "language": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-008"
+      ],
+      "query_type": "Treatment_Factoid",
+      "intent_category": "Medication",
+      "target_topic": "Asthma inhaler types",
+      "annotation_rationale": "HYB-008 covers asthma inhalers as main treatment with types of inhalers. This is the specific chunk about inhaler varieties."
+    },
+    {
+      "query_id": "FRESH-AST-04",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "asthma theke protect korte flu vaccine newa dorkar?",
+      "language": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-012"
+      ],
+      "query_type": "Prevention",
+      "intent_category": "Prevention",
+      "target_topic": "Asthma prevention including flu vaccine",
+      "annotation_rationale": "HYB-012 mentions keeping healthy weight, having vaccinations like flu vaccine. Only chunk with flu vaccine prevention advice."
+    },
+    {
+      "query_id": "FRESH-AST-05",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "pregnancy te asthma medicine bndo korbo naki cholabe?",
+      "language": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-004",
+      "gold_chunk_ids": [
+        "DOC-NHS-004-HYB-014"
+      ],
+      "query_type": "Life_Stage_Specific",
+      "intent_category": "Specific_Life_Stage",
+      "target_topic": "Asthma and pregnancy medication",
+      "annotation_rationale": "HYB-014 covers asthma and pregnancy, advising to tell doctor/midwife and continue treatment. Deep chunk testing pregnancy-specific retrieval."
+    },
+    {
+      "query_id": "FRESH-BUR-01",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "What types of burns like chemical or electrical burns need emergency treatment?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-002"
+      ],
+      "query_type": "Emergency_Types",
+      "intent_category": "Emergency_Escalation",
+      "target_topic": "Burns requiring emergency treatment by type",
+      "annotation_rationale": "HYB-002 lists emergency criteria including chemical/electrical burns. Tests emergency chunk from a type-of-burn angle rather than severity."
+    },
+    {
+      "query_id": "FRESH-BUR-02",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "How are minor burns treated after running under water?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "query_type": "Post_First_Aid",
+      "intent_category": "Home_Treatment",
+      "target_topic": "Burns treatment continuation after first aid",
+      "annotation_rationale": "HYB-003 covers treatments for burns/scalds (small burns treated at home). HYB-004 has Do list (painkillers, aloe vera). Both needed for complete aftercare answer."
+    },
+    {
+      "query_id": "FRESH-BUR-03",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "পোড়া ক্ষতে ব্যথা কমাতে কোন ওষুধ খাওয়া যায়?",
+      "language": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-004"
+      ],
+      "query_type": "Medication",
+      "intent_category": "Medication",
+      "target_topic": "Pain relief medication for burns",
+      "annotation_rationale": "HYB-004 explicitly says 'take painkillers such as paracetamol or ibuprofen to help with pain'. Only chunk with burn pain medication advice."
+    },
+    {
+      "query_id": "FRESH-BUR-04",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "pora jaygay cling film diye cover korte hoy keno?",
+      "language": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-001"
+      ],
+      "query_type": "First_Aid_Material",
+      "intent_category": "Home_Treatment",
+      "target_topic": "Cling film use for burn covering",
+      "annotation_rationale": "HYB-001 contains the first-aid steps including covering with cling film. Tests specific dressing material detail."
+    },
+    {
+      "query_id": "FRESH-BUR-05",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "bacchadr pora hole koto boro hole hospital nibo?",
+      "language": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-002"
+      ],
+      "query_type": "Size_Escalation",
+      "intent_category": "Emergency_Escalation",
+      "target_topic": "When to take children to hospital for burns",
+      "annotation_rationale": "HYB-002 lists emergency criteria including burns on children. Tests child-specific escalation detail."
+    },
+    {
+      "query_id": "FRESH-CUT-01",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "How to keep a wound dressing clean and dry while it heals?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-004"
+      ],
+      "query_type": "Aftercare",
+      "intent_category": "Home_Treatment",
+      "target_topic": "Wound dressing aftercare and maintenance",
+      "annotation_rationale": "HYB-004 specifically covers keeping dressing clean and dry, using waterproof dressing, changing as needed. Aftercare chunk, not initial first-aid."
+    },
+    {
+      "query_id": "FRESH-CUT-02",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "What medical treatments like stitches or glue are used for cuts?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-006"
+      ],
+      "query_type": "Professional_Treatment",
+      "intent_category": "Professional_Referral",
+      "target_topic": "Medical treatments for cuts including stitches and glue",
+      "annotation_rationale": "HYB-006 covers treatments for cuts and grazes including professional options. The only chunk discussing clinical treatment modalities."
+    },
+    {
+      "query_id": "FRESH-CUT-03",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "কাটা জায়গায় কোন অ্যান্টিসেপ্টিক ক্রিম লাগানো উচিত?",
+      "language": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-003"
+      ],
+      "query_type": "Antiseptic_Use",
+      "intent_category": "Home_Treatment",
+      "target_topic": "Antiseptic cream application on cuts",
+      "annotation_rationale": "HYB-003 covers how to clean and dress a cut including applying antiseptic cream. Tests specific cleaning/dressing procedure detail."
+    },
+    {
+      "query_id": "FRESH-CUT-04",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "kata jayga 5cm er beshi hole ki GP dekhate hobe?",
+      "language": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-005"
+      ],
+      "query_type": "Size_Based_Escalation",
+      "intent_category": "Professional_Referral",
+      "target_topic": "Large cut requiring GP visit",
+      "annotation_rationale": "HYB-005 explicitly mentions 'a cut is larger than around 5cm (2 inches)' as criterion for seeking help. Tests size-based GP referral."
+    },
+    {
+      "query_id": "FRESH-CUT-05",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "tetanus injection kobe lagbe kata hole?",
+      "language": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-005"
+      ],
+      "query_type": "Tetanus_Followup",
+      "intent_category": "Professional_Referral",
+      "target_topic": "Tetanus risk from cuts",
+      "annotation_rationale": "HYB-005 mentions conditions requiring medical attention that could include tetanus risk scenarios. Tests GP/111 referral chunk."
+    },
+    {
+      "query_id": "FRESH-DEH-01",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "How do you check for signs of dehydration in a baby?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-001"
+      ],
+      "query_type": "Baby_Symptoms",
+      "intent_category": "Factoid",
+      "target_topic": "Baby dehydration signs — sunken eyes, nappies",
+      "annotation_rationale": "HYB-001 lists baby-specific dehydration signs: sunken eyes, few/no tears, fewer wet nappies. The only chunk with infant-specific signs."
+    },
+    {
+      "query_id": "FRESH-DEH-02",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "What can a pharmacist give you for dehydration from vomiting?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-002"
+      ],
+      "query_type": "Pharmacist_Role",
+      "intent_category": "Professional_Referral",
+      "target_topic": "Pharmacist help for dehydration — oral rehydration",
+      "annotation_rationale": "HYB-002 covers pharmacist help with dehydration including oral rehydration sachets. The only chunk mentioning pharmacist role."
+    },
+    {
+      "query_id": "FRESH-DEH-03",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "বাচ্চার পানিশূন্যতা সারানোর পর কীভাবে তরল ধরে রাখব?",
+      "language": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-005"
+      ],
+      "query_type": "Post_Treatment_Maintenance",
+      "intent_category": "Home_Treatment",
+      "target_topic": "Keeping child hydrated after dehydration treatment",
+      "annotation_rationale": "HYB-005 covers maintaining hydration after treatment — carry on breastfeeding, offer fluids. Only chunk on post-treatment child hydration."
+    },
+    {
+      "query_id": "FRESH-DEH-04",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "dehydration er risk komano te ki ki korbo daily?",
+      "language": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-006"
+      ],
+      "query_type": "Prevention_Daily",
+      "intent_category": "Prevention",
+      "target_topic": "Daily dehydration prevention habits",
+      "annotation_rationale": "HYB-006 covers reducing risk of dehydration through regular fluid intake. Tests prevention-focused chunk."
+    },
+    {
+      "query_id": "FRESH-DEH-05",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "briddo manush ke pani khaoanor tips ki?",
+      "language": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-007"
+      ],
+      "query_type": "Elderly_Care",
+      "intent_category": "Specific_Life_Stage",
+      "target_topic": "Elderly hydration tips",
+      "annotation_rationale": "HYB-007 covers helping elderly drink — meals, social, high-water foods. Tests the deepest chunk in dehydration document."
+    },
+    {
+      "query_id": "FRESH-DIA-01",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "How long does diarrhoea normally last before seeing a doctor?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-008",
+      "gold_chunk_ids": [
+        "DOC-NHS-008-HYB-002"
+      ],
+      "query_type": "Duration",
+      "intent_category": "Factoid",
+      "target_topic": "Diarrhoea duration — 5 to 7 days",
+      "annotation_rationale": "HYB-002 states 'diarrhoea usually stops within 5 to 7 days'. NOT the overview chunk. Tests specific duration information retrieval."
+    },
+    {
+      "query_id": "FRESH-DIA-02",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "Should you avoid preparing food for others when you have diarrhoea?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-008",
+      "gold_chunk_ids": [
+        "DOC-NHS-008-HYB-003"
+      ],
+      "query_type": "Hygiene_Prevention",
+      "intent_category": "Prevention",
+      "target_topic": "Food preparation avoidance during diarrhoea",
+      "annotation_rationale": "HYB-003 explicitly says 'do not prepare food for other people, if possible'. Tests infection prevention chunk."
+    },
+    {
+      "query_id": "FRESH-DIA-03",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "ছোট বাচ্চার বমি ও ডায়রিয়ায় কখন ১১১ কল করতে হবে?",
+      "language": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-008",
+      "gold_chunk_ids": [
+        "DOC-NHS-008-HYB-004"
+      ],
+      "query_type": "Paediatric_Escalation",
+      "intent_category": "Professional_Referral",
+      "target_topic": "When to call 111 for child diarrhoea and vomiting",
+      "annotation_rationale": "HYB-004 has 'Call 111 now if: you're worried about a baby under 12 months'. Tests 111 advice chunk specifically for babies."
+    },
+    {
+      "query_id": "FRESH-DIA-04",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "diarrhoea ar bomi hole ki aspirin dewa jabe bacchader?",
+      "language": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "gold_chunk_ids": [
+        "DOC-NHS-008-HYB-002"
+      ],
+      "query_type": "Contraindication",
+      "intent_category": "Contraindication",
+      "target_topic": "Aspirin contraindication for children under 16",
+      "annotation_rationale": "HYB-002 explicitly states 'do not give aspirin to children under 16'. Tests medication warning retrieval."
+    },
+    {
+      "query_id": "FRESH-DIA-05",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "pet e onk betha hocche bomi ase rokto ase A&E jabo?",
+      "language": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-008",
+      "gold_chunk_ids": [
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-006"
+      ],
+      "query_type": "Emergency_Symptom_Mix",
+      "intent_category": "Emergency_Escalation",
+      "target_topic": "Emergency symptoms — severe pain and bloody vomit",
+      "annotation_rationale": "HYB-005 covers 'vomit blood' and emergency signs. HYB-006 covers 'severe pain' definition. Both chunks needed for complete answer about combined emergency symptoms."
+    },
+    {
+      "query_id": "FRESH-HEA-01",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "When should you see a GP non-urgently for recurring headaches?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-009",
+      "gold_chunk_ids": [
+        "DOC-NHS-009-HYB-001",
+        "DOC-NHS-009-HYB-002"
+      ],
+      "query_type": "Non_Urgent_GP",
+      "intent_category": "Professional_Referral",
+      "target_topic": "Non-urgent GP visit for recurring headaches",
+      "annotation_rationale": "HYB-001 covers when to get medical help for non-serious headaches. HYB-002 covers 'you regularly get headaches' as GP appointment criterion. Both needed for full answer."
+    },
+    {
+      "query_id": "FRESH-HEA-02",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "Should you avoid alcohol when you have a headache?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-009",
+      "gold_chunk_ids": [
+        "DOC-NHS-009-HYB-001"
+      ],
+      "query_type": "Lifestyle_Avoidance",
+      "intent_category": "Contraindication",
+      "target_topic": "Alcohol avoidance during headache",
+      "annotation_rationale": "HYB-001 explicitly says 'do not drink alcohol'. Very specific detail testing retrieval of short 'don't' advice."
+    },
+    {
+      "query_id": "FRESH-HEA-03",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "মাথাব্যথায় চোখের সমস্যা ও ঝাপসা দেখা থাকলে কী করব?",
+      "language": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-009",
+      "gold_chunk_ids": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "query_type": "Urgent_Symptom_Combo",
+      "intent_category": "Emergency_Escalation",
+      "target_topic": "Headache with vision problems — urgent GP",
+      "annotation_rationale": "HYB-002 lists 'vision or hearing changes' as part of urgent GP appointment criteria. Tests urgent advice chunk with vision symptom."
+    },
+    {
+      "query_id": "FRESH-HEA-04",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "headache er shathe fit ba seizure hole 999 call korbo?",
+      "language": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-009",
+      "gold_chunk_ids": [
+        "DOC-NHS-009-HYB-003"
+      ],
+      "query_type": "Emergency_Complication",
+      "intent_category": "Emergency_Escalation",
+      "target_topic": "Headache with seizure — 999 emergency",
+      "annotation_rationale": "HYB-003 explicitly lists 'has had a seizure (fit)' as 999 emergency criterion with headache. Tests specific emergency detail."
+    },
+    {
+      "query_id": "FRESH-HEA-05",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "eyesight problem r matha betha hocche GP lage?",
+      "language": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-009",
+      "gold_chunk_ids": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "query_type": "GP_Referral",
+      "intent_category": "Professional_Referral",
+      "target_topic": "Headache with eyesight problems — urgent GP",
+      "annotation_rationale": "HYB-002 mentions vision changes in urgent advice section. Tests abbreviated Banglish retrieval of urgent GP advice."
+    },
+    {
+      "query_id": "FRESH-FEV-01",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "How should you take a child's temperature using a thermometer?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-010",
+      "gold_chunk_ids": [
+        "DOC-NHS-010-HYB-001"
+      ],
+      "query_type": "Measurement_Technique",
+      "intent_category": "Factoid",
+      "target_topic": "How to take child temperature — thermometer in armpit",
+      "annotation_rationale": "HYB-001 has detailed thermometer instructions: armpit placement, holding for time shown. NOT the overview chunk."
+    },
+    {
+      "query_id": "FRESH-FEV-02",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "Should you undress a child or sponge them to cool a fever?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-010",
+      "gold_chunk_ids": [
+        "DOC-NHS-010-HYB-003"
+      ],
+      "query_type": "Contraindication",
+      "intent_category": "Contraindication",
+      "target_topic": "Do not undress or sponge child with fever",
+      "annotation_rationale": "HYB-003 explicitly says 'do not undress your child or sponge them down to cool them'. Tests contraindication retrieval."
+    },
+    {
+      "query_id": "FRESH-FEV-03",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "বাচ্চার জ্বরের সাথে র‌্যাশ বা ফুসকুড়ি দেখা গেলে কী করব?",
+      "language": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-010",
+      "gold_chunk_ids": [
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-005"
+      ],
+      "query_type": "Rash_Fever_Combo",
+      "intent_category": "Emergency_Escalation",
+      "target_topic": "Fever with rash — 999 emergency for children",
+      "annotation_rationale": "HYB-004 mentions rash with high temperature as 999 criterion. HYB-005 continues the emergency symptoms list. Both needed for complete answer."
+    },
+    {
+      "query_id": "FRESH-FEV-04",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "3 month er nicher baby r jor 38C hole 111 call korbo?",
+      "language": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-010",
+      "gold_chunk_ids": [
+        "DOC-NHS-010-HYB-004"
+      ],
+      "query_type": "Age_Threshold",
+      "intent_category": "Professional_Referral",
+      "target_topic": "Under 3 months baby with 38C fever — call 111",
+      "annotation_rationale": "HYB-004 explicitly states 'is under 3 months old and has a temperature of 38C or higher' as 111 call criterion. Tests age-specific threshold."
+    },
+    {
+      "query_id": "FRESH-FEV-05",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "bachar jor hole eto kapor poray na oi ta thik naki?",
+      "language": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-010",
+      "gold_chunk_ids": [
+        "DOC-NHS-010-HYB-003"
+      ],
+      "query_type": "Clothing_Misconception",
+      "intent_category": "Contraindication",
+      "target_topic": "Do not over-dress child with fever",
+      "annotation_rationale": "HYB-003 says 'do not cover them in too many clothes or bedcovers'. Tests Don't chunk from clothing/wrapping angle."
+    },
+    {
+      "query_id": "FRESH-ANA-01",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "How long do you stay in hospital after treatment for anaphylaxis?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-011",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-006"
+      ],
+      "query_type": "Hospital_Duration",
+      "intent_category": "Factoid",
+      "target_topic": "Hospital stay duration for anaphylaxis — 2 to 12 hours",
+      "annotation_rationale": "HYB-006 states 'You'll usually stay in hospital for around 2 to 12 hours'. Deep chunk (index 6) testing factoid retrieval."
+    },
+    {
+      "query_id": "FRESH-ANA-02",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "What foods and substances commonly trigger anaphylaxis reactions?",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-011",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-009"
+      ],
+      "query_type": "Trigger_Foods",
+      "intent_category": "Causal",
+      "target_topic": "Anaphylaxis triggers — nuts, milk, eggs",
+      "annotation_rationale": "HYB-009 lists 'foods such as nuts, cows' milk, eggs, fish or sesame seeds' and other triggers. Tests deepest chunk in anaphylaxis document."
+    },
+    {
+      "query_id": "FRESH-ANA-03",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "অ্যানাফাইল্যাক্সিসের পর দ্বিতীয় ইনজেক্টর কখন ব্যবহার করব?",
+      "language": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-011",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-004"
+      ],
+      "query_type": "Second_Dose_Timing",
+      "intent_category": "Emergency_Escalation",
+      "target_topic": "When to use second adrenaline auto-injector",
+      "annotation_rationale": "HYB-004 states 'If your symptoms have not improved after 5 minutes, use a 2nd adrenaline auto-injector'. Tests specific re-dosing instruction."
+    },
+    {
+      "query_id": "FRESH-ANA-04",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "anaphylaxis hole shue thakbo naki boshe thakbo?",
+      "language": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-004"
+      ],
+      "query_type": "Body_Position",
+      "intent_category": "Emergency_Escalation",
+      "target_topic": "Lie down during anaphylaxis — do not stand or walk",
+      "annotation_rationale": "HYB-004 says 'Lie down – you can raise your legs' and 'Do not stand or walk at any time'. Tests positioning instruction retrieval."
+    },
+    {
+      "query_id": "FRESH-ANA-05",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "allergy ache bracelet porbo keno dorkar?",
+      "language": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-008"
+      ],
+      "query_type": "Medical_Alert_ID",
+      "intent_category": "Prevention",
+      "target_topic": "Medical alert bracelet for allergy identification",
+      "annotation_rationale": "HYB-008 covers 'wear medical alert jewellery such as a bracelet with information about your allergy'. Tests prevention chunk."
+    },
+    {
+      "query_id": "FRESH-HN-01",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "What is the correct dosage of oral rehydration salts for infants?",
+      "language": "English",
+      "expected_source_id": "NONE",
+      "gold_chunk_ids": [],
+      "query_type": "Hard_Negative",
+      "intent_category": "Unsupported",
+      "target_topic": "ORS dosage — mentioned but not specified in corpus",
+      "annotation_rationale": "Corpus mentions oral rehydration sachets exist (HYB-002) but NEVER specifies dosage. Near-miss hard negative."
+    },
+    {
+      "query_id": "FRESH-HN-02",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "nebulizer machine kivabe use korbo bacchar asthma te?",
+      "language": "Standard_Banglish",
+      "expected_source_id": "NONE",
+      "gold_chunk_ids": [],
+      "query_type": "Hard_Negative",
+      "intent_category": "Unsupported",
+      "target_topic": "Nebulizer use — corpus covers inhalers only, not nebulizers",
+      "annotation_rationale": "Corpus covers inhalers extensively (HYB-008, HYB-009) but nebulizers are never mentioned. Tests inhaler/nebulizer confusion."
+    },
+    {
+      "query_id": "FRESH-HN-03",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "মাথায় আঘাত পেলে কি সিটি স্ক্যান করতে হয়?",
+      "language": "Native_Bangla",
+      "expected_source_id": "NONE",
+      "gold_chunk_ids": [],
+      "query_type": "Hard_Negative",
+      "intent_category": "Unsupported",
+      "target_topic": "Head injury CT scan — corpus covers headaches, not head injury",
+      "annotation_rationale": "Corpus covers headaches (DOC-NHS-009) but NOT head injuries or CT scans. Tests headache/head-injury confusion."
+    },
+    {
+      "query_id": "FRESH-HN-04",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "bachar pora te aloe vera gel lagabo naki?",
+      "language": "Abbreviated_Banglish",
+      "expected_source_id": "NONE",
+      "gold_chunk_ids": [],
+      "query_type": "Hard_Negative",
+      "intent_category": "Unsupported",
+      "target_topic": "Aloe vera on burns — corpus says don't apply creams but doesn't name aloe vera specifically",
+      "annotation_rationale": "Corpus says use aloe vera-based after sun spray (HYB-004) but question is about applying gel to burn wound directly. Tests near-miss on burn treatment advice."
+    },
+    {
+      "query_id": "FRESH-HN-05",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "How to treat a second-degree burn with blisters at home?",
+      "language": "English",
+      "expected_source_id": "NONE",
+      "gold_chunk_ids": [],
+      "query_type": "Hard_Negative",
+      "intent_category": "Unsupported",
+      "target_topic": "Second-degree burn with blisters — corpus covers general burns but not degree-specific treatment",
+      "annotation_rationale": "Corpus covers general burn treatment but never uses burn degree classification or blister-specific treatment. Tests medical terminology gap."
+    },
+    {
+      "query_id": "FRESH-OOC-01",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "What are the symptoms of appendicitis and when is surgery needed?",
+      "language": "English",
+      "expected_source_id": "NONE",
+      "gold_chunk_ids": [],
+      "query_type": "Out_Of_Corpus",
+      "intent_category": "Unsupported",
+      "target_topic": "Appendicitis — completely unrelated to corpus",
+      "annotation_rationale": "Appendicitis is not covered in any corpus document."
+    },
+    {
+      "query_id": "FRESH-OOC-02",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "হাড় ভাঙলে কতদিন প্লাস্টার রাখতে হয়?",
+      "language": "Native_Bangla",
+      "expected_source_id": "NONE",
+      "gold_chunk_ids": [],
+      "query_type": "Out_Of_Corpus",
+      "intent_category": "Unsupported",
+      "target_topic": "Bone fracture plaster — not in corpus",
+      "annotation_rationale": "Bone fractures are not covered in any corpus document."
+    },
+    {
+      "query_id": "FRESH-OOC-03",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "diabetes type 2 te metformin koto dose khabo?",
+      "language": "Standard_Banglish",
+      "expected_source_id": "NONE",
+      "gold_chunk_ids": [],
+      "query_type": "Out_Of_Corpus",
+      "intent_category": "Unsupported",
+      "target_topic": "Diabetes medication — not in corpus",
+      "annotation_rationale": "Diabetes and metformin are not covered in any corpus document."
+    },
+    {
+      "query_id": "FRESH-OOC-04",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "kaner vetore poka dhuklam kivabe berabo?",
+      "language": "Abbreviated_Banglish",
+      "expected_source_id": "NONE",
+      "gold_chunk_ids": [],
+      "query_type": "Out_Of_Corpus",
+      "intent_category": "Unsupported",
+      "target_topic": "Insect in ear — not in corpus",
+      "annotation_rationale": "Ear foreign body removal is not covered in any corpus document."
+    },
+    {
+      "query_id": "FRESH-OOC-05",
+      "benchmark_split": "FRESH_HOLDOUT",
+      "query_text": "How to perform CPR on an unconscious adult?",
+      "language": "English",
+      "expected_source_id": "NONE",
+      "gold_chunk_ids": [],
+      "query_type": "Out_Of_Corpus",
+      "intent_category": "Unsupported",
+      "target_topic": "CPR — not in corpus",
+      "annotation_rationale": "CPR procedures are not covered in any corpus document."
+    }
+  ]
+}

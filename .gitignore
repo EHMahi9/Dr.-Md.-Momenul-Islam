@@ -1,3 +1,14 @@
 .env
 __pycache__/
 *.pyc
+.pytest_cache/
+**/.pytest_cache/
+*.db
+prototype_app.db
+
+# Node / Frontend
+node_modules/
+**/node_modules/
+frontend/dist/
+dist/
+.vite/

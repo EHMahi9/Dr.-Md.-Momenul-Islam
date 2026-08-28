@@ -1,0 +1,236 @@
+{
+  "gate": "GATE_5.23",
+  "timestamp": "2026-08-28T15:31:18.652211Z",
+  "total_supported": 40,
+  "total_failures": 6,
+  "failure_rate_pct": 15.0,
+  "failure_decomposition": {
+    "GOLD_IN_DENSE_TOP15": 40,
+    "GOLD_OUTSIDE_DENSE15": 0,
+    "GOLD_IN_DENSE15_BUT_RERANKED_OUT": 6
+  },
+  "failure_details": [
+    {
+      "query_id": "FRESH-BUR-05",
+      "query_text": "bacchadr pora hole koto boro hole hospital nibo?",
+      "normalized_query": "bacchadr pora hole koto boro hole hospital nibo? (burns scalds cool running water first aid emergency call 999 go to A&E)",
+      "language": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-005",
+      "gold_chunk_ids": [
+        "DOC-NHS-005-HYB-002"
+      ],
+      "query_type": "Size_Escalation",
+      "intent_category": "Emergency_Escalation",
+      "best_dense_rank": 1,
+      "best_final_rank": 8,
+      "failure_mechanism": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "retrieved_top5_cids": [
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-006-HYB-005"
+      ],
+      "retrieved_top5_scores": [
+        2.444625715725124e-05,
+        1.8502416423871182e-05,
+        1.7559050320414826e-05,
+        1.730226540530566e-05,
+        1.7024683984345756e-05
+      ],
+      "retrieved_top5_sids": [
+        "DOC-NHS-011",
+        "DOC-NHS-008",
+        "DOC-NHS-005",
+        "DOC-NHS-011",
+        "DOC-NHS-006"
+      ],
+      "competition_type": "CROSS_DOCUMENT_CONFUSION"
+    },
+    {
+      "query_id": "FRESH-CUT-03",
+      "query_text": "কাটা জায়গায় কোন অ্যান্টিসেপ্টিক ক্রিম লাগানো উচিত?",
+      "normalized_query": "কাটা জায়গায় কোন অ্যান্টিসেপ্টিক ক্রিম লাগানো উচিত? (cuts grazes bleeding pressure clean dressing wound)",
+      "language": "Native_Bangla",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-003"
+      ],
+      "query_type": "Antiseptic_Use",
+      "intent_category": "Home_Treatment",
+      "best_dense_rank": 5,
+      "best_final_rank": 6,
+      "failure_mechanism": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "retrieved_top5_cids": [
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-004"
+      ],
+      "retrieved_top5_scores": [
+        0.004912659525871277,
+        0.004546748544089496,
+        0.0035644613672047853,
+        0.0009216830367222428,
+        0.0006928050424903631
+      ],
+      "retrieved_top5_sids": [
+        "DOC-NHS-006",
+        "DOC-NHS-006",
+        "DOC-NHS-005",
+        "DOC-NHS-006",
+        "DOC-NHS-006"
+      ],
+      "competition_type": "CROSS_DOCUMENT_CONFUSION"
+    },
+    {
+      "query_id": "FRESH-CUT-05",
+      "query_text": "tetanus injection kobe lagbe kata hole?",
+      "normalized_query": "tetanus injection kobe lagbe kata hole? (cuts grazes bleeding pressure clean dressing wound)",
+      "language": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-006",
+      "gold_chunk_ids": [
+        "DOC-NHS-006-HYB-005"
+      ],
+      "query_type": "Tetanus_Followup",
+      "intent_category": "Professional_Referral",
+      "best_dense_rank": 4,
+      "best_final_rank": 8,
+      "failure_mechanism": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "retrieved_top5_cids": [
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-011-HYB-005"
+      ],
+      "retrieved_top5_scores": [
+        0.0006270287558436394,
+        0.0001839290198404342,
+        0.00010305758769391105,
+        9.71207773545757e-05,
+        6.253486935747787e-05
+      ],
+      "retrieved_top5_sids": [
+        "DOC-NHS-006",
+        "DOC-NHS-011",
+        "DOC-NHS-011",
+        "DOC-NHS-008",
+        "DOC-NHS-011"
+      ],
+      "competition_type": "CROSS_DOCUMENT_CONFUSION"
+    },
+    {
+      "query_id": "FRESH-DEH-01",
+      "query_text": "How do you check for signs of dehydration in a baby?",
+      "normalized_query": "How do you check for signs of dehydration in a baby? (dehydration fluid rehydration oral fluids)",
+      "language": "English",
+      "expected_source_id": "DOC-NHS-007",
+      "gold_chunk_ids": [
+        "DOC-NHS-007-HYB-001"
+      ],
+      "query_type": "Baby_Symptoms",
+      "intent_category": "Factoid",
+      "best_dense_rank": 12,
+      "best_final_rank": 11,
+      "failure_mechanism": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "retrieved_top5_cids": [
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-010-HYB-004"
+      ],
+      "retrieved_top5_scores": [
+        0.9478819966316223,
+        0.877723753452301,
+        0.7842452883720398,
+        0.7254996299743652,
+        0.5184550285339355
+      ],
+      "retrieved_top5_sids": [
+        "DOC-NHS-010",
+        "DOC-NHS-007",
+        "DOC-NHS-007",
+        "DOC-NHS-008",
+        "DOC-NHS-010"
+      ],
+      "competition_type": "CROSS_DOCUMENT_CONFUSION"
+    },
+    {
+      "query_id": "FRESH-FEV-05",
+      "query_text": "bachar jor hole eto kapor poray na oi ta thik naki?",
+      "normalized_query": "bachar jor hole eto kapor poray na oi ta thik naki? (fever high temperature children fluids paracetamol)",
+      "language": "Abbreviated_Banglish",
+      "expected_source_id": "DOC-NHS-010",
+      "gold_chunk_ids": [
+        "DOC-NHS-010-HYB-003"
+      ],
+      "query_type": "Clothing_Misconception",
+      "intent_category": "Contraindication",
+      "best_dense_rank": 1,
+      "best_final_rank": 10,
+      "failure_mechanism": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "retrieved_top5_cids": [
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-007-HYB-007",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "retrieved_top5_scores": [
+        2.5386580091435462e-05,
+        2.0614690583897755e-05,
+        1.7504960851510987e-05,
+        1.706602233753074e-05,
+        1.6432744814665057e-05
+      ],
+      "retrieved_top5_sids": [
+        "DOC-NHS-010",
+        "DOC-NHS-008",
+        "DOC-NHS-010",
+        "DOC-NHS-007",
+        "DOC-NHS-008"
+      ],
+      "competition_type": "CROSS_DOCUMENT_CONFUSION"
+    },
+    {
+      "query_id": "FRESH-ANA-04",
+      "query_text": "anaphylaxis hole shue thakbo naki boshe thakbo?",
+      "normalized_query": "anaphylaxis hole shue thakbo naki boshe thakbo? (anaphylaxis severe allergic reaction adrenaline 999)",
+      "language": "Standard_Banglish",
+      "expected_source_id": "DOC-NHS-011",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-004"
+      ],
+      "query_type": "Body_Position",
+      "intent_category": "Emergency_Escalation",
+      "best_dense_rank": 4,
+      "best_final_rank": 8,
+      "failure_mechanism": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "retrieved_top5_cids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-009",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-006"
+      ],
+      "retrieved_top5_scores": [
+        0.002898881665896624,
+        0.0009351541521027684,
+        0.0003774719953071326,
+        0.0003683600516524166,
+        0.00035175704397261143
+      ],
+      "retrieved_top5_sids": [
+        "DOC-NHS-011",
+        "DOC-NHS-011",
+        "DOC-NHS-011",
+        "DOC-NHS-011",
+        "DOC-NHS-011"
+      ],
+      "competition_type": "SAME_DOCUMENT_COMPETITION"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "query_id": "DEV-BUR-07",
+    "language_category": "Standard_Banglish",
+    "raw_query": "pora jaygay butter ba tel lagano thik naki?",
+    "normalized_query": "pora jaygay butter ba tel lagano thik naki?",
+    "expected_source_id": "DOC-NHS-005",
+    "gold_chunk_ids": [
+      "DOC-NHS-005-HYB-001"
+    ],
+    "dense_rank": 11,
+    "final_rerank_rank": 12,
+    "gold_score": 0.0,
+    "rank1_score": 0.0,
+    "rank5_score": 0.0,
+    "score_margin_vs_rank5": 0.0,
+    "top5_competitors": [
+      {
+        "chunk_id": "DOC-NHS-010-HYB-005",
+        "parent_source_id": "DOC-NHS-010",
+        "section_heading": "Unknown",
+        "score": 0.0,
+        "is_same_document": false,
+        "is_overview": false,
+        "is_substantive": true
+      },
+      {
+        "chunk_id": "DOC-NHS-011-HYB-002",
+        "parent_source_id": "DOC-NHS-011",
+        "section_heading": "Unknown",
+        "score": 0.0,
+        "is_same_document": false,
+        "is_overview": false,
+        "is_substantive": true
+      },
+      {
+        "chunk_id": "DOC-NHS-010-HYB-004",
+        "parent_source_id": "DOC-NHS-010",
+        "section_heading": "Unknown",
+        "score": 0.0,
+        "is_same_document": false,
+        "is_overview": false,
+        "is_substantive": true
+      },
+      {
+        "chunk_id": "DOC-NHS-007-HYB-003",
+        "parent_source_id": "DOC-NHS-007",
+        "section_heading": "Unknown",
+        "score": 0.0,
+        "is_same_document": false,
+        "is_overview": false,
+        "is_substantive": true
+      },
+      {
+        "chunk_id": "DOC-NHS-005-HYB-004",
+        "parent_source_id": "DOC-NHS-005",
+        "section_heading": "Unknown",
+        "score": 0.0,
+        "is_same_document": true,
+        "is_overview": false,
+        "is_substantive": true
+      }
+    ]
+  },
+  {
+    "query_id": "DEV-CUT-08",
+    "language_category": "English",
+    "raw_query": "When to go to A&E for a cut with non-stop bleeding?",
+    "normalized_query": "When to go to A&E for a cut with non-stop bleeding? (cuts grazes bleeding pressure clean dressing wound)",
+    "expected_source_id": "DOC-NHS-006",
+    "gold_chunk_ids": [
+      "DOC-NHS-006-HYB-002"
+    ],
+    "dense_rank": 7,
+    "final_rerank_rank": 10,
+    "gold_score": 0.0545,
+    "rank1_score": 0.9461,
+    "rank5_score": 0.1825,
+    "score_margin_vs_rank5": 0.128,
+    "top5_competitors": [
+      {
+        "chunk_id": "DOC-NHS-006-HYB-005",
+        "parent_source_id": "DOC-NHS-006",
+        "section_heading": "Unknown",
+        "score": 0.9461,
+        "is_same_document": true,
+        "is_overview": false,
+        "is_substantive": true
+      },
+      {
+        "chunk_id": "DOC-NHS-006-HYB-003",
+        "parent_source_id": "DOC-NHS-006",
+        "section_heading": "Unknown",
+        "score": 0.3602,
+        "is_same_document": true,
+        "is_overview": false,
+        "is_substantive": true
+      },
+      {
+        "chunk_id": "DOC-NHS-006-HYB-004",
+        "parent_source_id": "DOC-NHS-006",
+        "section_heading": "Unknown",
+        "score": 0.2763,
+        "is_same_document": true,
+        "is_overview": false,
+        "is_substantive": true
+      },
+      {
+        "chunk_id": "DOC-NHS-006-HYB-000",
+        "parent_source_id": "DOC-NHS-006",
+        "section_heading": "Unknown",
+        "score": 0.259,
+        "is_same_document": true,
+        "is_overview": true,
+        "is_substantive": false
+      },
+      {
+        "chunk_id": "DOC-NHS-006-HYB-006",
+        "parent_source_id": "DOC-NHS-006",
+        "section_heading": "Unknown",
+        "score": 0.1825,
+        "is_same_document": true,
+        "is_overview": false,
+        "is_substantive": true
+      }
+    ]
+  }
+]

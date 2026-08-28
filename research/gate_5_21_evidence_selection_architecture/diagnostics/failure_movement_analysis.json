@@ -1,0 +1,107 @@
+{
+  "strategy_2_vs_strategy_1_movement": {
+    "total_changed": 8,
+    "promotions": 7,
+    "demotions": 1,
+    "movements": [
+      {
+        "query_id": "DEV-BUR-02",
+        "category": "GOLD_PROMOTED_INTO_TOP5",
+        "strat1_rank": 0,
+        "strat2_rank": 3,
+        "raw_query": "হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানির নিচে রাখতে হবে?"
+      },
+      {
+        "query_id": "DEV-BUR-03",
+        "category": "GOLD_PROMOTED_INTO_TOP5",
+        "strat1_rank": 0,
+        "strat2_rank": 5,
+        "raw_query": "pure gele thanda pani koto minute dhalbo?"
+      },
+      {
+        "query_id": "DEV-BUR-06",
+        "category": "GOLD_RANK_IMPROVED",
+        "strat1_rank": 2,
+        "strat2_rank": 1,
+        "raw_query": "পোড়া জায়গায় কি মাখন বা তেল লাগানো যাবে?"
+      },
+      {
+        "query_id": "DEV-BUR-07",
+        "category": "GOLD_PROMOTED_INTO_TOP5",
+        "strat1_rank": 12,
+        "strat2_rank": 1,
+        "raw_query": "pora jaygay butter ba tel lagano thik naki?"
+      },
+      {
+        "query_id": "DEV-BUR-09",
+        "category": "GOLD_RANK_IMPROVED",
+        "strat1_rank": 4,
+        "strat2_rank": 1,
+        "raw_query": "pora khub boro ar deep hole kokhon hospital jabo?"
+      },
+      {
+        "query_id": "DEV-CUT-02",
+        "category": "GOLD_RANK_IMPROVED",
+        "strat1_rank": 4,
+        "strat2_rank": 3,
+        "raw_query": "কেটে গেলে রক্ত বন্ধ করার সঠিক নিয়ম কী?"
+      },
+      {
+        "query_id": "DEV-CUT-04",
+        "category": "GOLD_PROMOTED_INTO_TOP5",
+        "strat1_rank": 0,
+        "strat2_rank": 3,
+        "raw_query": "angul kete rokt porche chap diye dhorbo kina"
+      },
+      {
+        "query_id": "DEV-CUT-07",
+        "category": "GOLD_RANK_DROPPED",
+        "strat1_rank": 3,
+        "strat2_rank": 4,
+        "raw_query": "kete jawa jayga lal hoye puz porle ki infection?"
+      }
+    ]
+  },
+  "strategy_3_vs_strategy_2_movement": {
+    "total_changed": 5,
+    "promotions": 1,
+    "demotions": 4,
+    "movements": [
+      {
+        "query_id": "DEV-BUR-01",
+        "category": "GOLD_DEMOTED_OUT_OF_TOP5",
+        "strat2_rank": 5,
+        "strat3_rank": 5,
+        "raw_query": "How should you treat a burn immediately with water?"
+      },
+      {
+        "query_id": "DEV-BUR-03",
+        "category": "GOLD_DEMOTED_OUT_OF_TOP5",
+        "strat2_rank": 5,
+        "strat3_rank": 5,
+        "raw_query": "pure gele thanda pani koto minute dhalbo?"
+      },
+      {
+        "query_id": "DEV-BUR-04",
+        "category": "GOLD_DEMOTED_OUT_OF_TOP5",
+        "strat2_rank": 5,
+        "strat3_rank": 5,
+        "raw_query": "hat pure geche ekhon ki korbo pani dhalbo?"
+      },
+      {
+        "query_id": "DEV-CUT-07",
+        "category": "GOLD_DEMOTED_OUT_OF_TOP5",
+        "strat2_rank": 4,
+        "strat3_rank": 4,
+        "raw_query": "kete jawa jayga lal hoye puz porle ki infection?"
+      },
+      {
+        "query_id": "DEV-DEH-07",
+        "category": "GOLD_RANK_IMPROVED",
+        "strat2_rank": 5,
+        "strat3_rank": 4,
+        "raw_query": "bomi thakle pani kivabe khawa uchit?"
+      }
+    ]
+  }
+}

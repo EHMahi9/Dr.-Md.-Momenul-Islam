@@ -1,0 +1,20 @@
+{
+  "gate": "GATE_5.20",
+  "timestamp": "2026-08-28T19:02:00+06:00",
+  "integrity_status": "PASS",
+  "expected_configuration_sha256": "5a6840ff9a4d1956a913ab85f3972c4d7481c01bfe0c7a8fe7b2d9110017621e",
+  "actual_configuration_sha256": "5a6840ff9a4d1956a913ab85f3972c4d7481c01bfe0c7a8fe7b2d9110017621e",
+  "configuration_file_sha256": "92a83a68e3554decd417d5399bf9aca1b9ccb5935db6af659debbef3ead52aa4",
+  "benchmark_file_sha256": "7debd4b7d804938d4c7ecf8f414f51d936830b5a6d9d62ebfcaedde1874c8a81",
+  "chunks_manifest_sha256": "71dca400059f624042fd5a1cc8be94010ce9553e3bde1428e73ad236ed79da3f",
+  "gold_labels_sha256": "df881fa676d38d46c78e6ade1e9e69c0b2cf676b33c6b655981f673f123844ae",
+  "benchmark_query_counts": {
+    "total": 100,
+    "dev": 40,
+    "test_holdout": 40,
+    "hard_negative": 12,
+    "out_of_corpus": 8
+  },
+  "total_corpus_chunks": 68,
+  "total_gold_labels": 80
+}

@@ -1,0 +1,371 @@
+{
+  "gate": "GATE_5.20",
+  "total_failures_count": 20,
+  "failures_percentage": 50.0,
+  "failure_taxonomy_counts": {
+    "GOLD_OUTSIDE_DENSE15": 6,
+    "GOLD_IN_DENSE15_BUT_RERANKED_OUT": 14
+  },
+  "failure_decomposition": [
+    {
+      "query_id": "TEST-DIA-06",
+      "language_category": "Native_Bangla",
+      "raw_query": "ডায়রিয়া ভালো হওয়ার পর কত ঘণ্টা স্কুলে বা কাজে যাওয়া বন্ধ রাখা উচিত?",
+      "gold_chunk_ids": [
+        "DOC-NHS-008-HYB-001"
+      ],
+      "expected_source_id": "DOC-NHS-008",
+      "dense_rank": 7,
+      "final_rerank_rank": 7,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-008-HYB-002",
+      "competing_top1_source_id": "DOC-NHS-008",
+      "competing_top1_score": 0.7885635495185852,
+      "competitor_is_same_document": true,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-DIA-07",
+      "language_category": "Standard_Banglish",
+      "raw_query": "diarrhoea thamar por koto hour bashay thakte hoy?",
+      "gold_chunk_ids": [
+        "DOC-NHS-008-HYB-001"
+      ],
+      "expected_source_id": "DOC-NHS-008",
+      "dense_rank": 7,
+      "final_rerank_rank": 6,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-008-HYB-003",
+      "competing_top1_source_id": "DOC-NHS-008",
+      "competing_top1_score": 0.15337912738323212,
+      "competitor_is_same_document": true,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-DIA-08",
+      "language_category": "English",
+      "raw_query": "When to call 999 or go to A&E for diarrhoea with bloody vomit?",
+      "gold_chunk_ids": [
+        "DOC-NHS-008-HYB-003"
+      ],
+      "expected_source_id": "DOC-NHS-008",
+      "dense_rank": 10,
+      "final_rerank_rank": 8,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-008-HYB-005",
+      "competing_top1_source_id": "DOC-NHS-008",
+      "competing_top1_score": 0.9793404340744019,
+      "competitor_is_same_document": true,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-DIA-09",
+      "language_category": "Native_Bangla",
+      "raw_query": "বমির সাথে রক্ত আসলে কি দ্রুত হাসপাতালে যাওয়া দরকার?",
+      "gold_chunk_ids": [
+        "DOC-NHS-008-HYB-003"
+      ],
+      "expected_source_id": "DOC-NHS-008",
+      "dense_rank": 6,
+      "final_rerank_rank": 11,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-008-HYB-005",
+      "competing_top1_source_id": "DOC-NHS-008",
+      "competing_top1_score": 0.8665157556533813,
+      "competitor_is_same_document": true,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-DIA-10",
+      "language_category": "Abbreviated_Banglish",
+      "raw_query": "bomir shathe rokto ase green bomi emergency hospital jabo?",
+      "gold_chunk_ids": [
+        "DOC-NHS-008-HYB-003"
+      ],
+      "expected_source_id": "DOC-NHS-008",
+      "dense_rank": 9,
+      "final_rerank_rank": 11,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-008-HYB-005",
+      "competing_top1_source_id": "DOC-NHS-008",
+      "competing_top1_score": 0.25532829761505127,
+      "competitor_is_same_document": true,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-HEA-04",
+      "language_category": "Abbreviated_Banglish",
+      "raw_query": "matha betha paracetamol khabo ar pani khabo kina",
+      "gold_chunk_ids": [
+        "DOC-NHS-009-HYB-000"
+      ],
+      "expected_source_id": "DOC-NHS-009",
+      "dense_rank": 18,
+      "final_rerank_rank": 0,
+      "failure_type": "GOLD_OUTSIDE_DENSE15",
+      "competing_top1_chunk_id": "DOC-NHS-005-HYB-004",
+      "competing_top1_source_id": "DOC-NHS-005",
+      "competing_top1_score": 0.007246262859553099,
+      "competitor_is_same_document": false,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-HEA-05",
+      "language_category": "English",
+      "raw_query": "When is a sudden severe headache an emergency requiring 999?",
+      "gold_chunk_ids": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "expected_source_id": "DOC-NHS-009",
+      "dense_rank": 9,
+      "final_rerank_rank": 9,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-009-HYB-003",
+      "competing_top1_source_id": "DOC-NHS-009",
+      "competing_top1_score": 0.9670499563217163,
+      "competitor_is_same_document": true,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-HEA-07",
+      "language_category": "Standard_Banglish",
+      "raw_query": "hotath extreme matha betha ar ghaar shokto 999 call dibo?",
+      "gold_chunk_ids": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "expected_source_id": "DOC-NHS-009",
+      "dense_rank": 8,
+      "final_rerank_rank": 10,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-009-HYB-003",
+      "competing_top1_source_id": "DOC-NHS-009",
+      "competing_top1_score": 0.3136886954307556,
+      "competitor_is_same_document": true,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-HEA-08",
+      "language_category": "Abbreviated_Banglish",
+      "raw_query": "blurry vision ar mathay prachondo betha emergency A&E jabo",
+      "gold_chunk_ids": [
+        "DOC-NHS-009-HYB-002"
+      ],
+      "expected_source_id": "DOC-NHS-009",
+      "dense_rank": 8,
+      "final_rerank_rank": 11,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-009-HYB-003",
+      "competing_top1_source_id": "DOC-NHS-009",
+      "competing_top1_score": 0.4210761785507202,
+      "competitor_is_same_document": true,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-FEV-08",
+      "language_category": "English",
+      "raw_query": "When to call 999 for a child with high fever and rash or breathing trouble?",
+      "gold_chunk_ids": [
+        "DOC-NHS-010-HYB-003"
+      ],
+      "expected_source_id": "DOC-NHS-010",
+      "dense_rank": 8,
+      "final_rerank_rank": 11,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-010-HYB-004",
+      "competing_top1_source_id": "DOC-NHS-010",
+      "competing_top1_score": 0.9635778069496155,
+      "competitor_is_same_document": true,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-FEV-09",
+      "language_category": "Native_Bangla",
+      "raw_query": "বাচ্চার তীব্র জ্বর ও নীলচে ঠোঁট হলে অবিলম্বে কি ৯৯৯ কল করতে হবে?",
+      "gold_chunk_ids": [
+        "DOC-NHS-010-HYB-003"
+      ],
+      "expected_source_id": "DOC-NHS-010",
+      "dense_rank": 3,
+      "final_rerank_rank": 13,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-008-HYB-005",
+      "competing_top1_source_id": "DOC-NHS-008",
+      "competing_top1_score": 0.9523500800132751,
+      "competitor_is_same_document": false,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-FEV-10",
+      "language_category": "Abbreviated_Banglish",
+      "raw_query": "bacha ghum theke jagena ar thot neel 999 call korbo?",
+      "gold_chunk_ids": [
+        "DOC-NHS-010-HYB-003"
+      ],
+      "expected_source_id": "DOC-NHS-010",
+      "dense_rank": 20,
+      "final_rerank_rank": 0,
+      "failure_type": "GOLD_OUTSIDE_DENSE15",
+      "competing_top1_chunk_id": "DOC-NHS-009-HYB-003",
+      "competing_top1_source_id": "DOC-NHS-009",
+      "competing_top1_score": 0.1980518251657486,
+      "competitor_is_same_document": false,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-ANA-01",
+      "language_category": "English",
+      "raw_query": "What are the main symptoms of a severe anaphylaxis allergic reaction?",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "expected_source_id": "DOC-NHS-011",
+      "dense_rank": 18,
+      "final_rerank_rank": 0,
+      "failure_type": "GOLD_OUTSIDE_DENSE15",
+      "competing_top1_chunk_id": "DOC-NHS-011-HYB-000",
+      "competing_top1_source_id": "DOC-NHS-011",
+      "competing_top1_score": 0.8282784402370452,
+      "competitor_is_same_document": true,
+      "competitor_is_overview": true,
+      "competitor_is_substantive_section": false
+    },
+    {
+      "query_id": "TEST-ANA-02",
+      "language_category": "Native_Bangla",
+      "raw_query": "অ্যানাফাইলাক্সিস বা তীব্র অ্যালার্জিক রিঅ্যাকশনের লক্ষণগুলো কী?",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "expected_source_id": "DOC-NHS-011",
+      "dense_rank": 16,
+      "final_rerank_rank": 0,
+      "failure_type": "GOLD_OUTSIDE_DENSE15",
+      "competing_top1_chunk_id": "DOC-NHS-011-HYB-000",
+      "competing_top1_source_id": "DOC-NHS-011",
+      "competing_top1_score": 0.8418088048696518,
+      "competitor_is_same_document": true,
+      "competitor_is_overview": true,
+      "competitor_is_substantive_section": false
+    },
+    {
+      "query_id": "TEST-ANA-03",
+      "language_category": "Standard_Banglish",
+      "raw_query": "anaphylaxis allergic reaction hole ki ki lokkhon dekha jay?",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "expected_source_id": "DOC-NHS-011",
+      "dense_rank": 23,
+      "final_rerank_rank": 0,
+      "failure_type": "GOLD_OUTSIDE_DENSE15",
+      "competing_top1_chunk_id": "DOC-NHS-011-HYB-000",
+      "competing_top1_source_id": "DOC-NHS-011",
+      "competing_top1_score": 0.2169516384601593,
+      "competitor_is_same_document": true,
+      "competitor_is_overview": true,
+      "competitor_is_substantive_section": false
+    },
+    {
+      "query_id": "TEST-ANA-04",
+      "language_category": "Abbreviated_Banglish",
+      "raw_query": "muk fule geche shash nite parsenana allergy r jonno anaphylaxis naki",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-001"
+      ],
+      "expected_source_id": "DOC-NHS-011",
+      "dense_rank": 31,
+      "final_rerank_rank": 0,
+      "failure_type": "GOLD_OUTSIDE_DENSE15",
+      "competing_top1_chunk_id": "DOC-NHS-004-HYB-004",
+      "competing_top1_source_id": "DOC-NHS-004",
+      "competing_top1_score": 0.06784845888614655,
+      "competitor_is_same_document": false,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-ANA-05",
+      "language_category": "English",
+      "raw_query": "How to use an adrenaline auto-injector (EpiPen) in an emergency?",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-003"
+      ],
+      "expected_source_id": "DOC-NHS-011",
+      "dense_rank": 3,
+      "final_rerank_rank": 6,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-011-HYB-004",
+      "competing_top1_source_id": "DOC-NHS-011",
+      "competing_top1_score": 0.9583877325057983,
+      "competitor_is_same_document": true,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-ANA-07",
+      "language_category": "Standard_Banglish",
+      "raw_query": "adrenaline auto-injector kivabe use korbo emergency te?",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-003"
+      ],
+      "expected_source_id": "DOC-NHS-011",
+      "dense_rank": 10,
+      "final_rerank_rank": 10,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-009-HYB-003",
+      "competing_top1_source_id": "DOC-NHS-009",
+      "competing_top1_score": 0.3708551526069641,
+      "competitor_is_same_document": false,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-ANA-08",
+      "language_category": "English",
+      "raw_query": "Should you call 999 immediately if someone has an anaphylactic shock?",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-002"
+      ],
+      "expected_source_id": "DOC-NHS-011",
+      "dense_rank": 10,
+      "final_rerank_rank": 9,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-007-HYB-004",
+      "competing_top1_source_id": "DOC-NHS-007",
+      "competing_top1_score": 0.9820606708526611,
+      "competitor_is_same_document": false,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    },
+    {
+      "query_id": "TEST-ANA-10",
+      "language_category": "Abbreviated_Banglish",
+      "raw_query": "severe allergic reaction gola fule gese 999 daki",
+      "gold_chunk_ids": [
+        "DOC-NHS-011-HYB-002"
+      ],
+      "expected_source_id": "DOC-NHS-011",
+      "dense_rank": 11,
+      "final_rerank_rank": 8,
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "competing_top1_chunk_id": "DOC-NHS-008-HYB-005",
+      "competing_top1_source_id": "DOC-NHS-008",
+      "competing_top1_score": 0.3158952295780182,
+      "competitor_is_same_document": false,
+      "competitor_is_overview": false,
+      "competitor_is_substantive_section": true
+    }
+  ]
+}

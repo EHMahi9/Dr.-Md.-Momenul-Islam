@@ -1,0 +1,85 @@
+{
+  "gate": "GATE_5.26",
+  "timestamp": "2026-08-28T16:05:57.618998Z",
+  "baseline_corpus_summary": [
+    {
+      "id": "DOC-NHS-004",
+      "title": "Asthma",
+      "domain": "Respiratory (Chronic)"
+    },
+    {
+      "id": "DOC-NHS-005",
+      "title": "Burns and scalds",
+      "domain": "Trauma (Thermal)"
+    },
+    {
+      "id": "DOC-NHS-006",
+      "title": "Cuts and grazes",
+      "domain": "Trauma (Mechanical)"
+    },
+    {
+      "id": "DOC-NHS-007",
+      "title": "Dehydration",
+      "domain": "Metabolic / Fluid"
+    },
+    {
+      "id": "DOC-NHS-008",
+      "title": "Diarrhoea and vomiting",
+      "domain": "Gastrointestinal"
+    },
+    {
+      "id": "DOC-NHS-009",
+      "title": "Headaches",
+      "domain": "Neurological / Pain"
+    },
+    {
+      "id": "DOC-NHS-010",
+      "title": "High temperature in children",
+      "domain": "Paediatric / Infectious"
+    },
+    {
+      "id": "DOC-NHS-011",
+      "title": "Anaphylaxis",
+      "domain": "Immunological / Emergency"
+    }
+  ],
+  "expansion_candidates_diversity": [
+    {
+      "id": "DOC-NHS-012",
+      "title": "Chest pain",
+      "domain": "Cardiovascular",
+      "novelty": "High — introduces acute coronary symptoms, pressure/crushing sensations, heart attack differentiation."
+    },
+    {
+      "id": "DOC-NHS-013",
+      "title": "Stroke",
+      "domain": "Cerebrovascular / Emergency",
+      "novelty": "High — introduces FAST protocol (Face, Arms, Speech, Time), unilateral paralysis."
+    },
+    {
+      "id": "DOC-NHS-014",
+      "title": "Sepsis",
+      "domain": "Systemic Infection / Critical Care",
+      "novelty": "High — introduces systemic organ distress, mottled skin, extreme shivering."
+    },
+    {
+      "id": "DOC-NHS-015",
+      "title": "Meningitis",
+      "domain": "Infectious / CNS",
+      "novelty": "High — introduces stiff neck, non-blanching purpuric rash, glass tumbler test."
+    },
+    {
+      "id": "DOC-NHS-016",
+      "title": "Nosebleed",
+      "domain": "ENT / First Aid",
+      "novelty": "High — introduces forward-leaning and nasal pinching first aid."
+    },
+    {
+      "id": "DOC-NHS-017",
+      "title": "Allergic rhinitis",
+      "domain": "Immunology (Mild / Chronic)",
+      "novelty": "High — introduces non-emergency allergic rhinitis / hay fever symptoms (antihistamines, nasal sprays)."
+    }
+  ],
+  "diversity_verdict": "STRONG_CLINICAL_DISPERSION_AND_TOPIC_DISJOINTNESS"
+}

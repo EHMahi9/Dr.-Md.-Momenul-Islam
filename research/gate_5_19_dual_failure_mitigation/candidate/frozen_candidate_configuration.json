@@ -1,0 +1,52 @@
+{
+  "gate": "GATE_5.19",
+  "configuration_name": "ROBUST_UNICODE_PROCEDURAL_NORMALIZATION_WITH_085_OVERVIEW_DEBIASING",
+  "dense_embedding_model": "intfloat/multilingual-e5-small",
+  "dense_candidate_depth_k": 15,
+  "similarity_metric": "normalized_cosine_dot_product",
+  "reranker_model": "BAAI/bge-reranker-v2-m3",
+  "reranker_passage_representation": "raw_chunk_text",
+  "overview_debiasing_multiplier": 0.85,
+  "delivered_context_window": "Top-5",
+  "bm25_enabled": false,
+  "rrf_enabled": false,
+  "normalization_rules": [
+    {
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(pura|pure|pora|pore|burn|burns|scald|scalds|blister)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(পুড়ে|পোড়া|ফোস্কা)",
+      "expansion": "burns scalds cool running water first aid"
+    },
+    {
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(kete|kata|katse|rokt|rokto|bleeding|bleed|cut|cuts|graze|grazes|antiseptic)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(কাটা|রক্ত|রক্তপাত|জীবাণুনাশক)",
+      "expansion": "cuts grazes bleeding pressure clean dressing wound"
+    },
+    {
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(shash|shash\\s*kosto|shash\\s*nite\\s*kosto|inhaler|inhalers|asthma)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(হাঁপানি|শ্বাসকষ্ট|ইনহেলার)",
+      "expansion": "asthma attack inhaler spacer breathing difficulty"
+    },
+    {
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(pani\\s*shunnota|pani\\s*kom|shukay|dehydration|dehydrated)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(ডিহাইড্রেশন|পানিশূন্যতা)",
+      "expansion": "dehydration fluid rehydration oral fluids"
+    },
+    {
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(bomi|patla\\s*paykhana|diarrhoea|vomiting)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(বমি|ডায়রিয়া|পাতলা\\s*পায়খানা)",
+      "expansion": "diarrhoea vomiting oral rehydration fluids"
+    },
+    {
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(matha\\s*betha|headache|painkiller|paracetamol)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(মাথাব্যথা|প্যারাসিটামল)",
+      "expansion": "headache pain relief painkillers paracetamol"
+    },
+    {
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(jor|fever|temperature)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(বাচ্চার\\s*জ্বর|জ্বর)",
+      "expansion": "fever high temperature children fluids paracetamol"
+    },
+    {
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(allergy|anaphylaxis|shash\\s*bondho)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(অ্যালার্জি|অ্যানাফাইলাক্সিস)",
+      "expansion": "anaphylaxis severe allergic reaction adrenaline 999"
+    },
+    {
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(emergency|999|hospital|duto)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(জরুরি|হাসপাতাল)",
+      "expansion": "emergency call 999 go to A&E"
+    }
+  ],
+  "configuration_sha256": "5a6840ff9a4d1956a913ab85f3972c4d7481c01bfe0c7a8fe7b2d9110017621e"
+}

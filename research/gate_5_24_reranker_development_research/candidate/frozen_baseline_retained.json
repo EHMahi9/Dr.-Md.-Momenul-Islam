@@ -1,0 +1,30 @@
+{
+  "gate": "GATE_5.24",
+  "decision": "NO_SUFFICIENT_RERANKER_IMPROVEMENT_BASELINE_RETAINED",
+  "retained_candidate": "STRATEGY_1_CONTROL_BASELINE",
+  "configuration_sha256": "07f031da533d47666fb5abd242f8db47b90dc584a92c0b3f399abaaf51c02736",
+  "architecture": {
+    "query_normalization": "Deterministic Unicode-Aware Procedural Normalization (Track A, 9 concept dictionaries)",
+    "dense_retrieval": {
+      "model": "intfloat/multilingual-e5-small",
+      "candidate_depth_k": 15,
+      "query_prefix": "query: ",
+      "passage_prefix": "passage: ",
+      "similarity": "cosine"
+    },
+    "cross_encoder_reranking": {
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_format": "raw_chunk_text",
+      "scoring": "raw_logits"
+    },
+    "overview_debiasing": {
+      "rule": "0.85x score multiplier for introductory overview chunks ending in -HYB-000",
+      "multiplier": 0.85
+    },
+    "context_assembly": {
+      "final_top_k": 5,
+      "diversification_cap": "none"
+    }
+  },
+  "justification": "On DEV-24 (N=40), Strategy 1 achieved 90.0% Chunk Recall@5 (36/40) and 0.7581 MRR. Experimental strategies (dense fusion, dominant source gating, lexical entity anchoring) failed to achieve Pareto superiority: Dense Fusion caused severe regression on DEV24-CUT-05 (Rank 1 -> 8), Lexical Overlap degraded R@5 from 90.0% to 85.0%, and Dominant-Source Gating showed 0 net movement. In accordance with pre-registered protocol, no candidate was forced, and the frozen Gate 5.21 configuration remains unmodified."
+}
