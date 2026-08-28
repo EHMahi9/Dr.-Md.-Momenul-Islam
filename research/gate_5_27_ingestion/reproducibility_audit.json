@@ -1,0 +1,22 @@
+{
+  "gate": "GATE_5.27",
+  "timestamp": "2026-08-28T17:52:40.676321Z",
+  "total_documents": 6,
+  "total_chunks": 51,
+  "deterministic_manifest_sha256": "b053169aa67ef45abe54ba32c38cb73104185ff85cf56be737605957f40f384c",
+  "reproducible_across_runs": true,
+  "runs": [
+    {
+      "run": 1,
+      "manifest_sha256": "b053169aa67ef45abe54ba32c38cb73104185ff85cf56be737605957f40f384c"
+    },
+    {
+      "run": 2,
+      "manifest_sha256": "b053169aa67ef45abe54ba32c38cb73104185ff85cf56be737605957f40f384c"
+    },
+    {
+      "run": 3,
+      "manifest_sha256": "b053169aa67ef45abe54ba32c38cb73104185ff85cf56be737605957f40f384c"
+    }
+  ]
+}

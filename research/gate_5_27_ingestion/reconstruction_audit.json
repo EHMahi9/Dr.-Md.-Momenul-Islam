@@ -1,0 +1,56 @@
+{
+  "DOC-NHS-012": {
+    "total_orig_words": 431,
+    "total_chunk_words": 419,
+    "unique_orig_words": 211,
+    "unique_chunk_words": 201,
+    "missing_words_count": 10,
+    "word_preservation_rate": "95.26%",
+    "lossless_status": "CONTROLLED_METADATA_STRIPPED"
+  },
+  "DOC-NHS-013": {
+    "total_orig_words": 287,
+    "total_chunk_words": 275,
+    "unique_orig_words": 149,
+    "unique_chunk_words": 140,
+    "missing_words_count": 9,
+    "word_preservation_rate": "93.96%",
+    "lossless_status": "CONTROLLED_METADATA_STRIPPED"
+  },
+  "DOC-NHS-014": {
+    "total_orig_words": 1474,
+    "total_chunk_words": 1519,
+    "unique_orig_words": 452,
+    "unique_chunk_words": 440,
+    "missing_words_count": 12,
+    "word_preservation_rate": "97.35%",
+    "lossless_status": "CONTROLLED_METADATA_STRIPPED"
+  },
+  "DOC-NHS-015": {
+    "total_orig_words": 1521,
+    "total_chunk_words": 1511,
+    "unique_orig_words": 573,
+    "unique_chunk_words": 564,
+    "missing_words_count": 9,
+    "word_preservation_rate": "98.43%",
+    "lossless_status": "CONTROLLED_METADATA_STRIPPED"
+  },
+  "DOC-NHS-016": {
+    "total_orig_words": 606,
+    "total_chunk_words": 582,
+    "unique_orig_words": 276,
+    "unique_chunk_words": 262,
+    "missing_words_count": 14,
+    "word_preservation_rate": "94.93%",
+    "lossless_status": "CONTROLLED_METADATA_STRIPPED"
+  },
+  "DOC-NHS-017": {
+    "total_orig_words": 748,
+    "total_chunk_words": 750,
+    "unique_orig_words": 300,
+    "unique_chunk_words": 290,
+    "missing_words_count": 10,
+    "word_preservation_rate": "96.67%",
+    "lossless_status": "CONTROLLED_METADATA_STRIPPED"
+  }
+}

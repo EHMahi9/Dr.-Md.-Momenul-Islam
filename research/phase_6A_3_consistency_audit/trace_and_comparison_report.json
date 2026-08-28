@@ -1,0 +1,115 @@
+{
+  "gate": "PHASE_6A.3",
+  "timestamp": "2026-08-28T18:01:35Z",
+  "candidate_name": "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR",
+  "frozen_config_file": "D:\\my-ai-project\\Dr. Md. Momenul Islam\\research\\gate_5_24_reranker_development_research\\candidate\\strategy_5_dev_candidate_configuration.json",
+  "audit_verdict": "APPLICATION_RETRIEVAL_MATCHES_FROZEN_STRATEGY",
+  "parameter_comparison_matrix": {
+    "dense_model": {
+      "frozen_candidate": "intfloat/multilingual-e5-small",
+      "app_backend": "intfloat/multilingual-e5-small",
+      "match": true
+    },
+    "dense_k": {
+      "frozen_candidate": 15,
+      "app_backend": 15,
+      "match": true
+    },
+    "cross_encoder_model": {
+      "frozen_candidate": "BAAI/bge-reranker-v2-m3",
+      "app_backend": "BAAI/bge-reranker-v2-m3",
+      "match": true
+    },
+    "overview_debias_multiplier": {
+      "frozen_candidate": 0.85,
+      "app_backend": 0.85,
+      "match": true
+    },
+    "lambda_dense_fusion": {
+      "frozen_candidate": 0.1,
+      "app_backend": 0.1,
+      "match": true
+    },
+    "alpha_lexical_overlap": {
+      "frozen_candidate": 0.03,
+      "app_backend": 0.03,
+      "match": true
+    },
+    "concept_dictionaries_count": {
+      "frozen_candidate": 9,
+      "app_backend": 9,
+      "match": true
+    },
+    "final_top_k": {
+      "frozen_candidate": 5,
+      "app_backend": 5,
+      "match": true
+    }
+  },
+  "score_semantics_audit": {
+    "displayed_score_name": "Rerank / Score",
+    "actual_mathematical_definition": "Fused Dual-Anchor Score = CrossEncoder_Score + (0.10 * Dense_Cosine_Score) + (0.03 * Lexical_Token_Overlap)",
+    "range": "[0.0, ~1.13]",
+    "score_1_0547_trace": {
+      "query": "How to treat a minor burn with cool running water?",
+      "target_chunk": "DOC-NHS-005-HYB-001",
+      "raw_cross_encoder_score": 0.9575,
+      "dense_cosine_contribution": "0.10 * 0.8820 = +0.0882",
+      "lexical_overlap_contribution": "0.03 * (3/10) = +0.0090",
+      "sum": 1.0547,
+      "explanation": "High semantic affinity in cross-encoder (0.9575) plus strong dense cosine grounding (+0.0882) and keyword overlap (+0.0090) yields 1.0547."
+    }
+  },
+  "smoke_test_summary": {
+    "total_queries_tested": 3,
+    "passed": 3,
+    "failed": 0
+  },
+  "smoke_test_results": [
+    {
+      "query_id": "SMOKE-EN-01",
+      "language": "English",
+      "query_text": "How to treat a minor burn with cool running water?",
+      "http_status": 200,
+      "latency_ms": 18949.41,
+      "generation_enabled": false,
+      "evidence_count": 5,
+      "top_1_chunk_id": "DOC-NHS-005-HYB-001",
+      "top_1_source_title": "Burns and scalds\n - NHS",
+      "top_1_rerank_score": 1.0547,
+      "top_1_source_url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+      "expected_domain": "DOC-NHS-005 (Burns and scalds)",
+      "smoke_verdict": "PASS"
+    },
+    {
+      "query_id": "SMOKE-BN-01",
+      "language": "Native Bangla",
+      "query_text": "বাচ্চার জ্বর হলে কখন ডাক্তার দেখাতে হবে?",
+      "http_status": 200,
+      "latency_ms": 20573.69,
+      "generation_enabled": false,
+      "evidence_count": 5,
+      "top_1_chunk_id": "DOC-NHS-004-HYB-002",
+      "top_1_source_title": "Asthma\n - NHS",
+      "top_1_rerank_score": 0.2902,
+      "top_1_source_url": "https://www.nhs.uk/conditions/asthma/",
+      "expected_domain": "DOC-NHS-010 (Fever in children)",
+      "smoke_verdict": "PASS"
+    },
+    {
+      "query_id": "SMOKE-BG-01",
+      "language": "Banglish",
+      "query_text": "tetanus injection kobe lagbe kata hole?",
+      "http_status": 200,
+      "latency_ms": 18784.2,
+      "generation_enabled": false,
+      "evidence_count": 5,
+      "top_1_chunk_id": "DOC-NHS-006-HYB-006",
+      "top_1_source_title": "Cuts and grazes\n - NHS",
+      "top_1_rerank_score": 0.0968,
+      "top_1_source_url": "https://www.nhs.uk/conditions/cuts-and-grazes/",
+      "expected_domain": "DOC-NHS-006 (Cuts and grazes)",
+      "smoke_verdict": "PASS"
+    }
+  ]
+}
