@@ -1,0 +1,3187 @@
+[
+  {
+    "query_id": "EXP-EN-01",
+    "language": "English",
+    "query_type": "emergency_warning_signs",
+    "query_text": "What are the immediate red flag symptoms of a heart attack requiring a 999 call?",
+    "normalized_query": "What are the immediate red flag symptoms of a heart attack requiring a 999 call? (emergency call 999 go to A&E)",
+    "expected_source_id": "DOC-NHS-012",
+    "gold_chunk_ids": [
+      "DOC-NHS-012-HYB-000"
+    ],
+    "best_dense_rank": 3,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-012-HYB-000",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.9007,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-013-HYB-002",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.2505,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-014-HYB-005",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.2469,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-006",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.1431,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.116,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-EN-02",
+    "language": "English",
+    "query_type": "procedural_instructions",
+    "query_text": "How should you correctly position someone and pinch their nose during a severe nosebleed?",
+    "normalized_query": "How should you correctly position someone and pinch their nose during a severe nosebleed?",
+    "expected_source_id": "DOC-NHS-016",
+    "gold_chunk_ids": [
+      "DOC-NHS-016-HYB-000",
+      "DOC-NHS-016-HYB-001"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 3,
+    "chunk_r1": false,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 0.3333333333333333,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-016-HYB-002",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.7491,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-016-HYB-005",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1393,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1155,
+        "is_gold": true
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-016-HYB-004",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1131,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-016-HYB-003",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1071,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-EN-03",
+    "language": "English",
+    "query_type": "emergency_warning_signs",
+    "query_text": "How do you perform the FAST test to check for signs of a stroke?",
+    "normalized_query": "How do you perform the FAST test to check for signs of a stroke?",
+    "expected_source_id": "DOC-NHS-013",
+    "gold_chunk_ids": [
+      "DOC-NHS-013-HYB-000"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-013-HYB-000",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.7687,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-013-HYB-001",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.3485,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-013-HYB-002",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.1509,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.104,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-014-HYB-005",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.1021,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-EN-04",
+    "language": "English",
+    "query_type": "emergency_warning_signs",
+    "query_text": "What are the danger signs of sepsis in young babies under 3 months?",
+    "normalized_query": "What are the danger signs of sepsis in young babies under 3 months?",
+    "expected_source_id": "DOC-NHS-014",
+    "gold_chunk_ids": [
+      "DOC-NHS-014-HYB-001",
+      "DOC-NHS-014-HYB-005",
+      "DOC-NHS-014-HYB-006"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-014-HYB-001",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.9382,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-014-HYB-002",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.6589,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-014-HYB-004",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.2427,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-014-HYB-010",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.2317,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.1932,
+        "is_gold": true
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-EN-05",
+    "language": "English",
+    "query_type": "specific_clinical_rules",
+    "query_text": "How does the glass tumbler test help identify a suspected meningitis rash?",
+    "normalized_query": "How does the glass tumbler test help identify a suspected meningitis rash?",
+    "expected_source_id": "DOC-NHS-015",
+    "gold_chunk_ids": [
+      "DOC-NHS-015-HYB-000",
+      "DOC-NHS-015-HYB-002"
+    ],
+    "best_dense_rank": 3,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 2,
+    "chunk_r1": false,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 0.5,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-005",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.1395,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-015-HYB-000",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.1326,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.1135,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-007",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.1005,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-001",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0998,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-EN-06",
+    "language": "English",
+    "query_type": "treatment_self_care",
+    "query_text": "What self-care steps reduce symptoms of allergic rhinitis caused by pollen and house dust mites?",
+    "normalized_query": "What self-care steps reduce symptoms of allergic rhinitis caused by pollen and house dust mites?",
+    "expected_source_id": "DOC-NHS-017",
+    "gold_chunk_ids": [
+      "DOC-NHS-017-HYB-000",
+      "DOC-NHS-017-HYB-006"
+    ],
+    "best_dense_rank": 2,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 2,
+    "chunk_r1": false,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 0.5,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-017-HYB-001",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.9529,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-017-HYB-000",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.6996,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-017-HYB-005",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.6209,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-017-HYB-004",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.3647,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-017-HYB-006",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.2295,
+        "is_gold": true
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-EN-07",
+    "language": "English",
+    "query_type": "numerical_duration",
+    "query_text": "After how many minutes of continuous bleeding from the nose should you go straight to A&E?",
+    "normalized_query": "After how many minutes of continuous bleeding from the nose should you go straight to A&E? (cuts grazes bleeding pressure clean dressing wound)",
+    "expected_source_id": "DOC-NHS-016",
+    "gold_chunk_ids": [
+      "DOC-NHS-016-HYB-001"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 1.0589,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-016-HYB-004",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.2283,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-016-HYB-002",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1947,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-016-HYB-005",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1444,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-013-HYB-002",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.1247,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-EN-08",
+    "language": "English",
+    "query_type": "contraindications",
+    "query_text": "What activities should be avoided for 24 hours after a nosebleed stops to prevent rebleeding?",
+    "normalized_query": "What activities should be avoided for 24 hours after a nosebleed stops to prevent rebleeding?",
+    "expected_source_id": "DOC-NHS-016",
+    "gold_chunk_ids": [
+      "DOC-NHS-016-HYB-005"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-016-HYB-005",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 1.1001,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-016-HYB-004",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.3081,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1322,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-016-HYB-002",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1265,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-016-HYB-000",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1125,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-EN-09",
+    "language": "English",
+    "query_type": "when_to_seek_help",
+    "query_text": "When is burning chest pain likely caused by acid reflux or heartburn rather than a cardiac event?",
+    "normalized_query": "When is burning chest pain likely caused by acid reflux or heartburn rather than a cardiac event?",
+    "expected_source_id": "DOC-NHS-012",
+    "gold_chunk_ids": [
+      "DOC-NHS-012-HYB-002"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 2,
+    "chunk_r1": false,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 0.5,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-012-HYB-000",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.2018,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-012-HYB-002",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.1486,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-012-HYB-001",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.1382,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-012-HYB-003",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.1302,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0946,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-EN-10",
+    "language": "English",
+    "query_type": "treatment_self_care",
+    "query_text": "Which pharmacy medicines including antihistamines and steroid nasal sprays help manage hay fever rhinitis?",
+    "normalized_query": "Which pharmacy medicines including antihistamines and steroid nasal sprays help manage hay fever rhinitis? (fever high temperature children fluids paracetamol)",
+    "expected_source_id": "DOC-NHS-017",
+    "gold_chunk_ids": [
+      "DOC-NHS-017-HYB-002",
+      "DOC-NHS-017-HYB-005"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-017-HYB-002",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.3528,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-017-HYB-005",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1685,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-017-HYB-004",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1249,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-017-HYB-001",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1228,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-017-HYB-000",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.095,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-BN-01",
+    "language": "Native_Bangla",
+    "query_type": "emergency_warning_signs",
+    "query_text": "হঠাৎ বুকের মাঝে তীব্র চাপ এবং বাম বাহু বা চোয়ালে ব্যথা ছড়ালে কী জরুরি পদক্ষেপ নিতে হবে?",
+    "normalized_query": "হঠাৎ বুকের মাঝে তীব্র চাপ এবং বাম বাহু বা চোয়ালে ব্যথা ছড়ালে কী জরুরি পদক্ষেপ নিতে হবে? (emergency call 999 go to A&E)",
+    "expected_source_id": "DOC-NHS-012",
+    "gold_chunk_ids": [
+      "DOC-NHS-012-HYB-000"
+    ],
+    "best_dense_rank": 4,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-012-HYB-000",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.466,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-014-HYB-005",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0937,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0893,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0882,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0875,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-BN-02",
+    "language": "Native_Bangla",
+    "query_type": "emergency_warning_signs",
+    "query_text": "স্ট্রোকের লক্ষণ হিসেবে মুখ বেঁকে যাওয়া এবং হাত তুলতে না পারলে তাৎক্ষণিক করণীয় কী?",
+    "normalized_query": "স্ট্রোকের লক্ষণ হিসেবে মুখ বেঁকে যাওয়া এবং হাত তুলতে না পারলে তাৎক্ষণিক করণীয় কী?",
+    "expected_source_id": "DOC-NHS-013",
+    "gold_chunk_ids": [
+      "DOC-NHS-013-HYB-000"
+    ],
+    "best_dense_rank": 10,
+    "dense_r5": false,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-013-HYB-000",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.8086,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-013-HYB-002",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.4023,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-014-HYB-005",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.1227,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1074,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-006",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0894,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-BN-03",
+    "language": "Native_Bangla",
+    "query_type": "emergency_warning_signs",
+    "query_text": "ছোট শিশুর শরীরে সেপসিসের কারণে চামড়া নীল হওয়া বা ১২ ঘণ্টা প্রস্রাব না করার বিপদচিহ্ন কী?",
+    "normalized_query": "ছোট শিশুর শরীরে সেপসিসের কারণে চামড়া নীল হওয়া বা ১২ ঘণ্টা প্রস্রাব না করার বিপদচিহ্ন কী?",
+    "expected_source_id": "DOC-NHS-014",
+    "gold_chunk_ids": [
+      "DOC-NHS-014-HYB-001",
+      "DOC-NHS-014-HYB-005"
+    ],
+    "best_dense_rank": 4,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 3,
+    "chunk_r1": false,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 0.3333333333333333,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.3922,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-014-HYB-002",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.3651,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-014-HYB-001",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.1845,
+        "is_gold": true
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-014-HYB-010",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.1065,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-014-HYB-013",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.091,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-BN-04",
+    "language": "Native_Bangla",
+    "query_type": "specific_clinical_rules",
+    "query_text": "মেনিনজাইটিসের লালচে র‍্যাশ বা ফুসকুড়ির ওপর কাচের গ্লাস চেপে পরীক্ষা করার নিয়ম কী?",
+    "normalized_query": "মেনিনজাইটিসের লালচে র‍্যাশ বা ফুসকুড়ির ওপর কাচের গ্লাস চেপে পরীক্ষা করার নিয়ম কী?",
+    "expected_source_id": "DOC-NHS-015",
+    "gold_chunk_ids": [
+      "DOC-NHS-015-HYB-000",
+      "DOC-NHS-015-HYB-002"
+    ],
+    "best_dense_rank": 2,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 3,
+    "chunk_r1": false,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 0.3333333333333333,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-005",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.124,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.1147,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.1009,
+        "is_gold": true
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-003",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0858,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-001",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0849,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-BN-05",
+    "language": "Native_Bangla",
+    "query_type": "procedural_instructions",
+    "query_text": "নাক দিয়ে রক্ত পড়লে মাথা সামনের দিকে ঝুঁকিয়ে নাকের নরম অংশ কতক্ষণ চেপে ধরে রাখতে হবে?",
+    "normalized_query": "নাক দিয়ে রক্ত পড়লে মাথা সামনের দিকে ঝুঁকিয়ে নাকের নরম অংশ কতক্ষণ চেপে ধরে রাখতে হবে? (cuts grazes bleeding pressure clean dressing wound)",
+    "expected_source_id": "DOC-NHS-016",
+    "gold_chunk_ids": [
+      "DOC-NHS-016-HYB-000",
+      "DOC-NHS-016-HYB-001"
+    ],
+    "best_dense_rank": 2,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 2,
+    "chunk_r1": false,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 0.5,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-016-HYB-002",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.2875,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.2188,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-016-HYB-005",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1212,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-016-HYB-004",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1056,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0857,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-BN-06",
+    "language": "Native_Bangla",
+    "query_type": "symptoms",
+    "query_text": "অ্যালার্জিক রাইনাইটিস বা ধুলাবালির অ্যালার্জিতে ঘন ঘন হাঁচি ও নাক বন্ধ থাকলে কী করা যায়?",
+    "normalized_query": "অ্যালার্জিক রাইনাইটিস বা ধুলাবালির অ্যালার্জিতে ঘন ঘন হাঁচি ও নাক বন্ধ থাকলে কী করা যায়? (anaphylaxis severe allergic reaction adrenaline 999)",
+    "expected_source_id": "DOC-NHS-017",
+    "gold_chunk_ids": [
+      "DOC-NHS-017-HYB-000",
+      "DOC-NHS-017-HYB-006"
+    ],
+    "best_dense_rank": 8,
+    "dense_r5": false,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 2,
+    "chunk_r1": false,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 0.5,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-017-HYB-005",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.6716,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-017-HYB-000",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.6141,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-017-HYB-001",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.5524,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-017-HYB-004",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.505,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0964,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-BN-07",
+    "language": "Native_Bangla",
+    "query_type": "emergency_warning_signs",
+    "query_text": "তীব্র জ্বরের সাথে ঘাড় শক্ত হয়ে যাওয়া এবং উজ্জ্বল আলোর দিকে তাকাতে না পারলে কী আশঙ্কা করা হয়?",
+    "normalized_query": "তীব্র জ্বরের সাথে ঘাড় শক্ত হয়ে যাওয়া এবং উজ্জ্বল আলোর দিকে তাকাতে না পারলে কী আশঙ্কা করা হয়? (fever high temperature children fluids paracetamol)",
+    "expected_source_id": "DOC-NHS-015",
+    "gold_chunk_ids": [
+      "DOC-NHS-015-HYB-000",
+      "DOC-NHS-015-HYB-007"
+    ],
+    "best_dense_rank": 2,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-007",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.8623,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-012-HYB-002",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.0907,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0895,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0866,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0865,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-BN-08",
+    "language": "Native_Bangla",
+    "query_type": "contraindications",
+    "query_text": "নাকের রক্তপাত বন্ধ হওয়ার পর পুনরায় রক্ত পড়া ঠেকাতে ২৪ ঘণ্টার মধ্যে কী কী করা নিষেধ?",
+    "normalized_query": "নাকের রক্তপাত বন্ধ হওয়ার পর পুনরায় রক্ত পড়া ঠেকাতে ২৪ ঘণ্টার মধ্যে কী কী করা নিষেধ? (cuts grazes bleeding pressure clean dressing wound)",
+    "expected_source_id": "DOC-NHS-016",
+    "gold_chunk_ids": [
+      "DOC-NHS-016-HYB-005"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-016-HYB-005",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 1.0705,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-016-HYB-004",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.216,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1001,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-016-HYB-003",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0904,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0864,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-BN-09",
+    "language": "Native_Bangla",
+    "query_type": "treatment_self_care",
+    "query_text": "ফার্মেসিতে কোন কোন অ্যান্টিহিস্টামিন বা স্টেরয়েড নেজাল স্প্রে পাওয়া যায় নাকের অ্যালার্জির জন্য?",
+    "normalized_query": "ফার্মেসিতে কোন কোন অ্যান্টিহিস্টামিন বা স্টেরয়েড নেজাল স্প্রে পাওয়া যায় নাকের অ্যালার্জির জন্য? (anaphylaxis severe allergic reaction adrenaline 999)",
+    "expected_source_id": "DOC-NHS-017",
+    "gold_chunk_ids": [
+      "DOC-NHS-017-HYB-002",
+      "DOC-NHS-017-HYB-005"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-017-HYB-002",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.8415,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-017-HYB-005",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.3345,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-017-HYB-004",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1143,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0873,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-017-HYB-001",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.086,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-BN-10",
+    "language": "Native_Bangla",
+    "query_type": "emergency_warning_signs",
+    "query_text": "বয়স্কদের ক্ষেত্রে সেপসিসের কারণে কথা জড়িয়ে যাওয়া এবং তীব্র শ্বাসকষ্ট হলে কেন অবিলম্বে অ্যাম্বুলেন্স ডাকতে হবে?",
+    "normalized_query": "বয়স্কদের ক্ষেত্রে সেপসিসের কারণে কথা জড়িয়ে যাওয়া এবং তীব্র শ্বাসকষ্ট হলে কেন অবিলম্বে অ্যাম্বুলেন্স ডাকতে হবে? (asthma attack inhaler spacer breathing difficulty)",
+    "expected_source_id": "DOC-NHS-014",
+    "gold_chunk_ids": [
+      "DOC-NHS-014-HYB-003",
+      "DOC-NHS-014-HYB-005"
+    ],
+    "best_dense_rank": 4,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-014-HYB-003",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.2588,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-014-HYB-007",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.1669,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-014-HYB-000",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.1635,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.1155,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1071,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-SB-01",
+    "language": "Standard_Banglish",
+    "query_type": "emergency_warning_signs",
+    "query_text": "Buker majhkhane heavy pressure ba heart attack er symptom hole kobe 999 ambulance dakbo?",
+    "normalized_query": "Buker majhkhane heavy pressure ba heart attack er symptom hole kobe 999 ambulance dakbo? (emergency call 999 go to A&E)",
+    "expected_source_id": "DOC-NHS-012",
+    "gold_chunk_ids": [
+      "DOC-NHS-012-HYB-000"
+    ],
+    "best_dense_rank": 3,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-012-HYB-000",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.0986,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-012-HYB-003",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.0881,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-014-HYB-007",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0878,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-008",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0877,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0871,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-SB-02",
+    "language": "Standard_Banglish",
+    "query_type": "emergency_warning_signs",
+    "query_text": "Stroke er FAST test ki ebong mukher ekpash baka hoye gele ki korbo?",
+    "normalized_query": "Stroke er FAST test ki ebong mukher ekpash baka hoye gele ki korbo?",
+    "expected_source_id": "DOC-NHS-013",
+    "gold_chunk_ids": [
+      "DOC-NHS-013-HYB-000"
+    ],
+    "best_dense_rank": 6,
+    "dense_r5": false,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-013-HYB-000",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.0874,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0864,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-013-HYB-002",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.0857,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0856,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0848,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-SB-03",
+    "language": "Standard_Banglish",
+    "query_type": "procedural_instructions",
+    "query_text": "Nak diye rokto porle head forward kore nose pinch korar first aid rules ki?",
+    "normalized_query": "Nak diye rokto porle head forward kore nose pinch korar first aid rules ki? (cuts grazes bleeding pressure clean dressing wound)",
+    "expected_source_id": "DOC-NHS-016",
+    "gold_chunk_ids": [
+      "DOC-NHS-016-HYB-000",
+      "DOC-NHS-016-HYB-001"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 2,
+    "chunk_r1": false,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 0.5,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-016-HYB-002",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.1019,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0872,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-016-HYB-004",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0848,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-007",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0834,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-016-HYB-005",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0822,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-SB-04",
+    "language": "Standard_Banglish",
+    "query_type": "emergency_warning_signs",
+    "query_text": "Sepsis er jonno bacchader skin blue ba pale hole keno immediate A&E emergency dorkar?",
+    "normalized_query": "Sepsis er jonno bacchader skin blue ba pale hole keno immediate A&E emergency dorkar? (emergency call 999 go to A&E)",
+    "expected_source_id": "DOC-NHS-014",
+    "gold_chunk_ids": [
+      "DOC-NHS-014-HYB-001",
+      "DOC-NHS-014-HYB-005"
+    ],
+    "best_dense_rank": 4,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-014-HYB-005",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.1336,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.1245,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-014-HYB-003",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.1189,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-014-HYB-007",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.1126,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-014-HYB-001",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.1019,
+        "is_gold": true
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-SB-05",
+    "language": "Standard_Banglish",
+    "query_type": "specific_clinical_rules",
+    "query_text": "Meningitis rash check korar jonno glass tumbler test kivabe korte hoy?",
+    "normalized_query": "Meningitis rash check korar jonno glass tumbler test kivabe korte hoy?",
+    "expected_source_id": "DOC-NHS-015",
+    "gold_chunk_ids": [
+      "DOC-NHS-015-HYB-000",
+      "DOC-NHS-015-HYB-002"
+    ],
+    "best_dense_rank": 2,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-000",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.1135,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-015-HYB-005",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.1113,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0978,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0935,
+        "is_gold": true
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-001",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0927,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-SB-06",
+    "language": "Standard_Banglish",
+    "query_type": "symptoms",
+    "query_text": "Dhulabali ba pollen theke allergic rhinitis e hachi ebong runny nose hole kon medicine labhe?",
+    "normalized_query": "Dhulabali ba pollen theke allergic rhinitis e hachi ebong runny nose hole kon medicine labhe?",
+    "expected_source_id": "DOC-NHS-017",
+    "gold_chunk_ids": [
+      "DOC-NHS-017-HYB-000",
+      "DOC-NHS-017-HYB-002"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-017-HYB-000",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.4011,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-017-HYB-004",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1534,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-017-HYB-001",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1197,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-017-HYB-005",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1108,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0871,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-SB-07",
+    "language": "Standard_Banglish",
+    "query_type": "emergency_warning_signs",
+    "query_text": "Meningitis er karone gharkothin stiff neck ebong bright light e takate na parle ki korbo?",
+    "normalized_query": "Meningitis er karone gharkothin stiff neck ebong bright light e takate na parle ki korbo?",
+    "expected_source_id": "DOC-NHS-015",
+    "gold_chunk_ids": [
+      "DOC-NHS-015-HYB-000",
+      "DOC-NHS-015-HYB-007"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-000",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.3476,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-015-HYB-007",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.2817,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-005",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0908,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0892,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-006",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0888,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-SB-08",
+    "language": "Standard_Banglish",
+    "query_type": "numerical_duration",
+    "query_text": "Nosebleed koto minute er beshi continue thakle emergency hospital jete hobe?",
+    "normalized_query": "Nosebleed koto minute er beshi continue thakle emergency hospital jete hobe? (emergency call 999 go to A&E)",
+    "expected_source_id": "DOC-NHS-016",
+    "gold_chunk_ids": [
+      "DOC-NHS-016-HYB-001"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.2097,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-016-HYB-004",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.09,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-016-HYB-000",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0888,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-014-HYB-007",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0878,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-016-HYB-005",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0847,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-SB-09",
+    "language": "Standard_Banglish",
+    "query_type": "treatment_self_care",
+    "query_text": "Allergic rhinitis e steroid nasal spray kivabe use kore allergy control kora jay?",
+    "normalized_query": "Allergic rhinitis e steroid nasal spray kivabe use kore allergy control kora jay? (anaphylaxis severe allergic reaction adrenaline 999)",
+    "expected_source_id": "DOC-NHS-017",
+    "gold_chunk_ids": [
+      "DOC-NHS-017-HYB-002",
+      "DOC-NHS-017-HYB-005"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 2,
+    "chunk_r1": false,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 0.5,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-017-HYB-000",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1992,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-017-HYB-005",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1948,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-017-HYB-001",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1155,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-017-HYB-004",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.0957,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-017-HYB-002",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.0952,
+        "is_gold": true
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-SB-10",
+    "language": "Standard_Banglish",
+    "query_type": "when_to_seek_help",
+    "query_text": "Khabar por buke jala kora heartburn hole GP dekhabo naki acid reflux er medicine khabo?",
+    "normalized_query": "Khabar por buke jala kora heartburn hole GP dekhabo naki acid reflux er medicine khabo?",
+    "expected_source_id": "DOC-NHS-012",
+    "gold_chunk_ids": [
+      "DOC-NHS-012-HYB-002"
+    ],
+    "best_dense_rank": 6,
+    "dense_r5": false,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 4,
+    "chunk_r1": false,
+    "chunk_r3": false,
+    "chunk_r5": true,
+    "chunk_mrr": 0.25,
+    "source_r1": false,
+    "source_r5": true,
+    "availability_class": "TOP3_WRONG_BUT_TOP5_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0852,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-017-HYB-004",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.0846,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0842,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-012-HYB-002",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.0841,
+        "is_gold": true
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-015",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0839,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-AB-01",
+    "language": "Abbreviated_Banglish",
+    "query_type": "emergency_warning_signs",
+    "query_text": "buk betha left arm e jaw e choraile 999 ambulance lagbe?",
+    "normalized_query": "buk betha left arm e jaw e choraile 999 ambulance lagbe? (emergency call 999 go to A&E)",
+    "expected_source_id": "DOC-NHS-012",
+    "gold_chunk_ids": [
+      "DOC-NHS-012-HYB-000"
+    ],
+    "best_dense_rank": 7,
+    "dense_r5": false,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-012-HYB-000",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.1131,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-014-HYB-007",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.095,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0934,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-014-HYB-005",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0904,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-013-HYB-002",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.0903,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-AB-02",
+    "language": "Abbreviated_Banglish",
+    "query_type": "emergency_warning_signs",
+    "query_text": "mukh beke gese kotha bolte partesena stroke naki?",
+    "normalized_query": "mukh beke gese kotha bolte partesena stroke naki?",
+    "expected_source_id": "DOC-NHS-013",
+    "gold_chunk_ids": [
+      "DOC-NHS-013-HYB-000"
+    ],
+    "best_dense_rank": 13,
+    "dense_r5": false,
+    "dense_r10": false,
+    "dense_r15": true,
+    "best_final_rank": 2,
+    "chunk_r1": false,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 0.5,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-013-HYB-002",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.083,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-013-HYB-000",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.0818,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0817,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-013-HYB-001",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.0816,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0811,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-AB-03",
+    "language": "Abbreviated_Banglish",
+    "query_type": "procedural_instructions",
+    "query_text": "nak diye rokto porle head samne jukhaye nose chapbo koto min?",
+    "normalized_query": "nak diye rokto porle head samne jukhaye nose chapbo koto min? (cuts grazes bleeding pressure clean dressing wound)",
+    "expected_source_id": "DOC-NHS-016",
+    "gold_chunk_ids": [
+      "DOC-NHS-016-HYB-000",
+      "DOC-NHS-016-HYB-001"
+    ],
+    "best_dense_rank": 4,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0886,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-016-HYB-002",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0872,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0847,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-016-HYB-004",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0842,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0839,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-AB-04",
+    "language": "Abbreviated_Banglish",
+    "query_type": "emergency_warning_signs",
+    "query_text": "baby r skin neel 12 hr proshrab nai sepsis bujhar upay ki?",
+    "normalized_query": "baby r skin neel 12 hr proshrab nai sepsis bujhar upay ki?",
+    "expected_source_id": "DOC-NHS-014",
+    "gold_chunk_ids": [
+      "DOC-NHS-014-HYB-001",
+      "DOC-NHS-014-HYB-005"
+    ],
+    "best_dense_rank": 5,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 5,
+    "chunk_r1": false,
+    "chunk_r3": false,
+    "chunk_r5": true,
+    "chunk_mrr": 0.2,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP3_WRONG_BUT_TOP5_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0979,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-014-HYB-013",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.095,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-014-HYB-002",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0948,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-014-HYB-012",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0941,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-014-HYB-001",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0904,
+        "is_gold": true
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-AB-05",
+    "language": "Abbreviated_Banglish",
+    "query_type": "specific_clinical_rules",
+    "query_text": "meningitis rash glass chaple milay na tumbler test ki?",
+    "normalized_query": "meningitis rash glass chaple milay na tumbler test ki?",
+    "expected_source_id": "DOC-NHS-015",
+    "gold_chunk_ids": [
+      "DOC-NHS-015-HYB-000",
+      "DOC-NHS-015-HYB-002"
+    ],
+    "best_dense_rank": 2,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-000",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.1018,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0978,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-005",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0957,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0943,
+        "is_gold": true
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-001",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0921,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-AB-06",
+    "language": "Abbreviated_Banglish",
+    "query_type": "symptoms",
+    "query_text": "pollen dust e nak bondho hachi allergic rhinitis e ki spray nile labh?",
+    "normalized_query": "pollen dust e nak bondho hachi allergic rhinitis e ki spray nile labh?",
+    "expected_source_id": "DOC-NHS-017",
+    "gold_chunk_ids": [
+      "DOC-NHS-017-HYB-000",
+      "DOC-NHS-017-HYB-002"
+    ],
+    "best_dense_rank": 2,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 2,
+    "chunk_r1": false,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 0.5,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-017-HYB-001",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1604,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-017-HYB-000",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.132,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-017-HYB-005",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.0985,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-017-HYB-004",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.0929,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-017-HYB-006",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.0914,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-AB-07",
+    "language": "Abbreviated_Banglish",
+    "query_type": "emergency_warning_signs",
+    "query_text": "jwor shathe ghad shokto alo dekhte pare na meningitis naki?",
+    "normalized_query": "jwor shathe ghad shokto alo dekhte pare na meningitis naki?",
+    "expected_source_id": "DOC-NHS-015",
+    "gold_chunk_ids": [
+      "DOC-NHS-015-HYB-000",
+      "DOC-NHS-015-HYB-007"
+    ],
+    "best_dense_rank": 3,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-000",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0893,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-015-HYB-015",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0891,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-010",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0877,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-006",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0875,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-009",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0872,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-AB-08",
+    "language": "Abbreviated_Banglish",
+    "query_type": "contraindications",
+    "query_text": "nak er bleeding thamar por 24 ghonta ki kora jabe na?",
+    "normalized_query": "nak er bleeding thamar por 24 ghonta ki kora jabe na? (cuts grazes bleeding pressure clean dressing wound)",
+    "expected_source_id": "DOC-NHS-016",
+    "gold_chunk_ids": [
+      "DOC-NHS-016-HYB-005"
+    ],
+    "best_dense_rank": 11,
+    "dense_r5": false,
+    "dense_r10": false,
+    "dense_r15": true,
+    "best_final_rank": 2,
+    "chunk_r1": false,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 0.5,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_WRONG_BUT_TOP3_HAS_GOLD",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0849,
+        "is_gold": false
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-016-HYB-005",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0848,
+        "is_gold": true
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-016-HYB-004",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0838,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.083,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-015",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0829,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-AB-09",
+    "language": "Abbreviated_Banglish",
+    "query_type": "numerical_duration",
+    "query_text": "nak diye 20 min er beshi blood ashle direct hospital jabo?",
+    "normalized_query": "nak diye 20 min er beshi blood ashle direct hospital jabo? (emergency call 999 go to A&E)",
+    "expected_source_id": "DOC-NHS-016",
+    "gold_chunk_ids": [
+      "DOC-NHS-016-HYB-001"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0888,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-014-HYB-007",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0872,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-012-HYB-000",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.0861,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-006",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0847,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-013-HYB-002",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.0847,
+        "is_gold": false
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-AB-10",
+    "language": "Abbreviated_Banglish",
+    "query_type": "treatment_self_care",
+    "query_text": "allergy rhinitis e antihistamine pharmacy theke kemne nebo?",
+    "normalized_query": "allergy rhinitis e antihistamine pharmacy theke kemne nebo? (anaphylaxis severe allergic reaction adrenaline 999)",
+    "expected_source_id": "DOC-NHS-017",
+    "gold_chunk_ids": [
+      "DOC-NHS-017-HYB-002",
+      "DOC-NHS-017-HYB-005"
+    ],
+    "best_dense_rank": 1,
+    "dense_r5": true,
+    "dense_r10": true,
+    "dense_r15": true,
+    "best_final_rank": 1,
+    "chunk_r1": true,
+    "chunk_r3": true,
+    "chunk_r5": true,
+    "chunk_mrr": 1.0,
+    "source_r1": true,
+    "source_r5": true,
+    "availability_class": "TOP1_CORRECT",
+    "triage_class": "GOLD_IN_DENSE_TOP15",
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-017-HYB-005",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1191,
+        "is_gold": true
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-017-HYB-000",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1181,
+        "is_gold": false
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-017-HYB-004",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1131,
+        "is_gold": false
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-017-HYB-001",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.0979,
+        "is_gold": false
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-017-HYB-002",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.0943,
+        "is_gold": true
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-HN-01",
+    "language": "English",
+    "query_type": "hard_negative_confounder",
+    "query_text": "Can a severe panic attack with palpitations and hyperventilation cause non-cardiac chest discomfort?",
+    "normalized_query": "Can a severe panic attack with palpitations and hyperventilation cause non-cardiac chest discomfort?",
+    "distractor_source_id": "DOC-NHS-012",
+    "max_score": 0.1795,
+    "mean_score": 0.1015,
+    "min_score": 0.083,
+    "score_range": [
+      0.083,
+      0.1795
+    ],
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-012-HYB-002",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.1795
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-012-HYB-000",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.1431
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-012-HYB-003",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.1174
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-012-HYB-001",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.1117
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-016-HYB-000",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.095
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-HN-02",
+    "language": "English",
+    "query_type": "hard_negative_confounder",
+    "query_text": "How do you distinguish allergic rhinitis nasal discharge from a viral common cold with purulent mucus?",
+    "normalized_query": "How do you distinguish allergic rhinitis nasal discharge from a viral common cold with purulent mucus?",
+    "distractor_source_id": "DOC-NHS-017",
+    "max_score": 0.2719,
+    "mean_score": 0.1077,
+    "min_score": 0.0835,
+    "score_range": [
+      0.0835,
+      0.2719
+    ],
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-017-HYB-000",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.2719
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-017-HYB-001",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1529
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-017-HYB-004",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1091
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-017-HYB-005",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.0986
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0933
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-HN-03",
+    "language": "Standard_Banglish",
+    "query_type": "hard_negative_confounder",
+    "query_text": "Mathe trauma ba skull fracture er por nak diye clear cerebrospinal fluid porle ki korbo?",
+    "normalized_query": "Mathe trauma ba skull fracture er por nak diye clear cerebrospinal fluid porle ki korbo?",
+    "distractor_source_id": "DOC-NHS-016",
+    "max_score": 0.0857,
+    "mean_score": 0.081,
+    "min_score": 0.0795,
+    "score_range": [
+      0.0795,
+      0.0857
+    ],
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0857
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0852
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0825
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-015",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0818
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-006",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0808
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-HN-04",
+    "language": "Native_Bangla",
+    "query_type": "hard_negative_confounder",
+    "query_text": "অ্যানাফাইলাক্সিস এবং অ্যালার্জিক রাইনাইটিসের মধ্যে পার্থক্য করে কোনটিতে তাৎক্ষণিক এপিনেফ্রিন ইনজেকশন দিতে হয়?",
+    "normalized_query": "অ্যানাফাইলাক্সিস এবং অ্যালার্জিক রাইনাইটিসের মধ্যে পার্থক্য করে কোনটিতে তাৎক্ষণিক এপিনেফ্রিন ইনজেকশন দিতে হয়? (anaphylaxis severe allergic reaction adrenaline 999)",
+    "distractor_source_id": "DOC-NHS-017",
+    "max_score": 0.1192,
+    "mean_score": 0.0867,
+    "min_score": 0.0821,
+    "score_range": [
+      0.0821,
+      0.1192
+    ],
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-017-HYB-000",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1192
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-017-HYB-001",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.1011
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-017-HYB-005",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "fused_score": 0.084
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0839
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0839
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-HN-05",
+    "language": "Abbreviated_Banglish",
+    "query_type": "hard_negative_confounder",
+    "query_text": "jore kashi shathe rokt ashle haemoptysis er jonno kon test lagbe?",
+    "normalized_query": "jore kashi shathe rokt ashle haemoptysis er jonno kon test lagbe? (cuts grazes bleeding pressure clean dressing wound)",
+    "distractor_source_id": "DOC-NHS-012",
+    "max_score": 0.0851,
+    "mean_score": 0.0819,
+    "min_score": 0.0805,
+    "score_range": [
+      0.0805,
+      0.0851
+    ],
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-016-HYB-000",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0851
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-015-HYB-015",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0833
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0829
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-014-HYB-007",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0826
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-003",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0826
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-OOC-01",
+    "language": "English",
+    "query_type": "out_of_corpus",
+    "query_text": "What are the early visual field loss symptoms of acute angle-closure glaucoma?",
+    "normalized_query": "What are the early visual field loss symptoms of acute angle-closure glaucoma?",
+    "distractor_source_id": null,
+    "max_score": 0.0922,
+    "mean_score": 0.0859,
+    "min_score": 0.0782,
+    "score_range": [
+      0.0782,
+      0.0922
+    ],
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-001",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0922
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-013-HYB-001",
+        "parent_source_id": "DOC-NHS-013",
+        "source_title": "Symptoms of a stroke",
+        "fused_score": 0.0901
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0901
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0879
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-015-HYB-000",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0878
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-OOC-02",
+    "language": "English",
+    "query_type": "out_of_corpus",
+    "query_text": "What causes severe right lower quadrant rebound tenderness in acute appendicitis?",
+    "normalized_query": "What causes severe right lower quadrant rebound tenderness in acute appendicitis?",
+    "distractor_source_id": null,
+    "max_score": 0.0879,
+    "mean_score": 0.0834,
+    "min_score": 0.0787,
+    "score_range": [
+      0.0787,
+      0.0879
+    ],
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0879
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-014-HYB-013",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0879
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0866
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-015-HYB-010",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0859
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-012-HYB-003",
+        "parent_source_id": "DOC-NHS-012",
+        "source_title": "Chest pain",
+        "fused_score": 0.0846
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-OOC-03",
+    "language": "Native_Bangla",
+    "query_type": "out_of_corpus",
+    "query_text": "কিডনিতে পাথরের কারণে তীব্র কোমর ব্যথা এবং প্রস্রাবের সাথে রক্ত পড়ার ঘরোয়া চিকিৎসা কী?",
+    "normalized_query": "কিডনিতে পাথরের কারণে তীব্র কোমর ব্যথা এবং প্রস্রাবের সাথে রক্ত পড়ার ঘরোয়া চিকিৎসা কী? (cuts grazes bleeding pressure clean dressing wound)",
+    "distractor_source_id": null,
+    "max_score": 0.0917,
+    "mean_score": 0.0837,
+    "min_score": 0.0814,
+    "score_range": [
+      0.0814,
+      0.0917
+    ],
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0917
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0891
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-014-HYB-010",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0851
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-014-HYB-007",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0836
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-014-HYB-009",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0836
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-OOC-04",
+    "language": "Standard_Banglish",
+    "query_type": "out_of_corpus",
+    "query_text": "Malaria infection e prothom kobe shivering cold stage ebong periodic jwor shuru hoy?",
+    "normalized_query": "Malaria infection e prothom kobe shivering cold stage ebong periodic jwor shuru hoy?",
+    "distractor_source_id": null,
+    "max_score": 0.0877,
+    "mean_score": 0.0827,
+    "min_score": 0.0794,
+    "score_range": [
+      0.0794,
+      0.0877
+    ],
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-000",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0877
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-015-HYB-006",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0863
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-007",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0853
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0852
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-014-HYB-005",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0846
+      }
+    ]
+  },
+  {
+    "query_id": "EXP-OOC-05",
+    "language": "Abbreviated_Banglish",
+    "query_type": "out_of_corpus",
+    "query_text": "gout betha te big toe phule lal hole uric acid test kobe korbo?",
+    "normalized_query": "gout betha te big toe phule lal hole uric acid test kobe korbo?",
+    "distractor_source_id": null,
+    "max_score": 0.0845,
+    "mean_score": 0.0803,
+    "min_score": 0.0786,
+    "score_range": [
+      0.0786,
+      0.0845
+    ],
+    "final_top5_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0845
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0843
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-015-HYB-015",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "fused_score": 0.0821
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-016-HYB-000",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "fused_score": 0.0812
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "fused_score": 0.0806
+      }
+    ]
+  }
+]

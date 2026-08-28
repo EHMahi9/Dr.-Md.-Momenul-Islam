@@ -1,0 +1,15 @@
+{
+  "gate": "GATE_5.29",
+  "timestamp": "2026-08-28T18:18:05Z",
+  "benchmark_file": "D:\\my-ai-project\\Dr. Md. Momenul Islam\\research\\gate_5_28_independent_benchmark\\benchmark\\new_locked_benchmark.json",
+  "benchmark_sha256": "464612e733aeb1496c1dcdc5674e01d9504bd4ccd1244190e487c6e957dcc722",
+  "candidate_config_file": "D:\\my-ai-project\\Dr. Md. Momenul Islam\\research\\gate_5_24_reranker_development_research\\candidate\\strategy_5_dev_candidate_configuration.json",
+  "candidate_config_sha256": "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae",
+  "corpus_manifest_file": "D:\\my-ai-project\\Dr. Md. Momenul Islam\\research\\gate_5_27_ingestion\\provenance_manifest.json",
+  "corpus_chunk_count": 51,
+  "total_queries": 50,
+  "supported_queries": 40,
+  "unsupported_queries": 10,
+  "gold_integrity_pass": true,
+  "verdict": "PRE_RUN_INTEGRITY_VERIFIED"
+}

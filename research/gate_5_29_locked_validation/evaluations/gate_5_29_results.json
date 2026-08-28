@@ -1,0 +1,128 @@
+{
+  "gate": "GATE_5.29",
+  "timestamp": "2026-08-28T19:05:59Z",
+  "benchmark_name": "GATE_5.28_INDEPENDENT_EXPANDED_NHS_BENCHMARK",
+  "locked_benchmark_sha256": "464612e733aeb1496c1dcdc5674e01d9504bd4ccd1244190e487c6e957dcc722",
+  "strategy_evaluated": "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR",
+  "strategy_config_sha256": "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae",
+  "final_classification": "NEW_CORPUS_GENERALIZATION_SUPPORTED",
+  "primary_metrics": {
+    "chunk_recall_at_5": "40/40 (100.0%)"
+  },
+  "secondary_metrics": {
+    "chunk_recall_at_1": "25/40 (62.5%)",
+    "chunk_recall_at_3": "38/40 (95.0%)",
+    "chunk_mrr": 0.7862
+  },
+  "candidate_stage_metrics": {
+    "dense_recall_at_5": "33/40 (82.5%)",
+    "dense_recall_at_10": "38/40 (95.0%)",
+    "dense_recall_at_15": "40/40 (100.0%)"
+  },
+  "source_level_metrics": {
+    "source_recall_at_1": "39/40 (97.5%)",
+    "source_recall_at_5": "40/40 (100.0%)"
+  },
+  "evidence_availability_summary": {
+    "TOP1_CORRECT": 25,
+    "TOP1_WRONG_BUT_TOP3_HAS_GOLD": 13,
+    "TOP3_WRONG_BUT_TOP5_HAS_GOLD": 2,
+    "GOLD_ABSENT_FROM_TOP5": 0
+  },
+  "triage_summary": {
+    "GOLD_IN_DENSE_TOP15": 40,
+    "GOLD_OUTSIDE_DENSE15": 0,
+    "GOLD_IN_DENSE15_BUT_RERANKED_OUT": 0
+  },
+  "language_breakdown": {
+    "English": {
+      "n": 10,
+      "dense_recall_at_15": "10/10 (100.0%)",
+      "chunk_recall_at_1": "6/10 (60.0%)",
+      "chunk_recall_at_3": "10/10 (100.0%)",
+      "chunk_recall_at_5": "10/10 (100.0%)",
+      "chunk_mrr": 0.7833
+    },
+    "Native_Bangla": {
+      "n": 10,
+      "dense_recall_at_15": "10/10 (100.0%)",
+      "chunk_recall_at_1": "6/10 (60.0%)",
+      "chunk_recall_at_3": "10/10 (100.0%)",
+      "chunk_recall_at_5": "10/10 (100.0%)",
+      "chunk_mrr": 0.7667
+    },
+    "Standard_Banglish": {
+      "n": 10,
+      "dense_recall_at_15": "10/10 (100.0%)",
+      "chunk_recall_at_1": "7/10 (70.0%)",
+      "chunk_recall_at_3": "9/10 (90.0%)",
+      "chunk_recall_at_5": "10/10 (100.0%)",
+      "chunk_mrr": 0.825
+    },
+    "Abbreviated_Banglish": {
+      "n": 10,
+      "dense_recall_at_15": "10/10 (100.0%)",
+      "chunk_recall_at_1": "6/10 (60.0%)",
+      "chunk_recall_at_3": "9/10 (90.0%)",
+      "chunk_recall_at_5": "10/10 (100.0%)",
+      "chunk_mrr": 0.77
+    }
+  },
+  "document_breakdown": {
+    "DOC-NHS-012": {
+      "document_title": "Chest pain",
+      "supported_queries_count": 6,
+      "dense_recall_at_15": "6/6 (100.0%)",
+      "chunk_recall_at_5": "6/6 (100.0%)",
+      "chunk_mrr": 0.7917
+    },
+    "DOC-NHS-013": {
+      "document_title": "Symptoms of a stroke",
+      "supported_queries_count": 4,
+      "dense_recall_at_15": "4/4 (100.0%)",
+      "chunk_recall_at_5": "4/4 (100.0%)",
+      "chunk_mrr": 0.875
+    },
+    "DOC-NHS-014": {
+      "document_title": "Sepsis",
+      "supported_queries_count": 5,
+      "dense_recall_at_15": "5/5 (100.0%)",
+      "chunk_recall_at_5": "5/5 (100.0%)",
+      "chunk_mrr": 0.7067
+    },
+    "DOC-NHS-015": {
+      "document_title": "Meningitis",
+      "supported_queries_count": 7,
+      "dense_recall_at_15": "7/7 (100.0%)",
+      "chunk_recall_at_5": "7/7 (100.0%)",
+      "chunk_mrr": 0.8333
+    },
+    "DOC-NHS-016": {
+      "document_title": "Nosebleed",
+      "supported_queries_count": 10,
+      "dense_recall_at_15": "10/10 (100.0%)",
+      "chunk_recall_at_5": "10/10 (100.0%)",
+      "chunk_mrr": 0.7833
+    },
+    "DOC-NHS-017": {
+      "document_title": "Allergic rhinitis",
+      "supported_queries_count": 8,
+      "dense_recall_at_15": "8/8 (100.0%)",
+      "chunk_recall_at_5": "8/8 (100.0%)",
+      "chunk_mrr": 0.75
+    }
+  },
+  "unsupported_queries_summary": {
+    "hard_negatives": {
+      "count": 5,
+      "max_score_overall": 0.2719,
+      "mean_max_score": 0.1483
+    },
+    "out_of_corpus": {
+      "count": 5,
+      "max_score_overall": 0.0922,
+      "mean_max_score": 0.0888
+    }
+  },
+  "failure_count": 0
+}
