@@ -62,6 +62,7 @@ export const App: React.FC = () => {
         evidence: response.evidence,
         generationEnabled: response.generation_enabled,
         retrievalMetadata: response.retrieval_metadata,
+        generationResult: response.generation_result,
       };
 
       setMessages((prev) => [...prev, assistantMsg]);

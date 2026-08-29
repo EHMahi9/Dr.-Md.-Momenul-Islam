@@ -56,6 +56,14 @@ class RetrievalResponse(BaseModel):
     evidence: List[RetrievedEvidenceChunk]
     retrieval_metadata: Optional[RetrievalMetadata] = None
 
+from app.schemas.generation_models import (
+    GenerationSafetyState,
+    GenerationStatus,
+    CitationReference,
+    GroundingEvidence,
+    GenerationResult
+)
+
 class ChatMessage(BaseModel):
     role: str  # "user" or "assistant"
     content: str
@@ -78,6 +86,7 @@ class ChatResponse(BaseModel):
         "The authoritative NHS evidence passages retrieved below represent the grounding context for this query.]"
     )
     retrieval_metadata: Optional[RetrievalMetadata] = None
+    generation_result: Optional[GenerationResult] = None
 
 class CorpusTierInfo(BaseModel):
     name: str

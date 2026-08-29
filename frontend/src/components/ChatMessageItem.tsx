@@ -9,10 +9,14 @@ import {
   CheckCircle,
   AlertTriangle,
   HelpCircle,
-  XCircle
+  XCircle,
+  ShieldAlert,
+  Sparkles,
+  BookOpen
 } from 'lucide-react';
 import { Message, RetrievalOutcomeState } from '../types';
 import { EvidenceCard } from './EvidenceCard';
+import { CitationLink } from './CitationLink';
 
 interface ChatMessageItemProps {
   message: Message;
@@ -39,6 +43,8 @@ export const ChatMessageItem: React.FC<ChatMessageItemProps> = ({ message }) => 
   const evidence = message.evidence || [];
   const outcome = message.outcomeState || 'SUPPORTED_RETRIEVAL';
   const assessment = message.confidenceAssessment;
+  const genResult = message.generationResult;
+  const genStatus = genResult?.generation_status || (message.generationEnabled ? 'COMPLETED' : 'DISABLED');
 
   const renderOutcomeBadge = (state: RetrievalOutcomeState) => {
     switch (state) {
@@ -81,6 +87,87 @@ export const ChatMessageItem: React.FC<ChatMessageItemProps> = ({ message }) => 
     }
   };
 
+  const renderGenerationContent = () => {
+    switch (genStatus) {
+      case 'COMPLETED':
+        return (
+          <div className="bg-slate-50 border border-slate-200 rounded-lg p-3.5 text-xs text-slate-800 leading-relaxed space-y-2">
+            <div className="flex items-center gap-1.5 font-bold text-[11px] text-sky-800">
+              <Sparkles className="w-3.5 h-3.5 text-sky-600" />
+              <span>Grounded Evidence Summary</span>
+            </div>
+            <p className="text-xs leading-relaxed text-slate-800 font-sans whitespace-pre-wrap">
+              {genResult?.answer || message.text}
+            </p>
+            {genResult?.citations && genResult.citations.length > 0 && (
+              <div className="pt-2 border-t border-slate-200/60 flex items-center gap-1.5 flex-wrap">
+                <span className="text-[10px] text-slate-500 font-medium">Citations:</span>
+                {genResult.citations.map((c) => (
+                  <CitationLink key={c.citation_index} citation={c} />
+                ))}
+              </div>
+            )}
+            <p className="text-[10px] text-slate-400 italic pt-1">
+              {genResult?.disclaimer || "Research Prototype — Not for Medical Decision-Making."}
+            </p>
+          </div>
+        );
+
+      case 'REFUSED_SAFETY':
+        return (
+          <div className="bg-rose-50 border border-rose-200 rounded-lg p-3 text-xs text-rose-900 leading-relaxed space-y-1">
+            <div className="flex items-center gap-1.5 font-bold text-[11px] text-rose-800">
+              <ShieldAlert className="w-3.5 h-3.5 text-rose-600" />
+              <span>Safety Guardrail Triggered</span>
+            </div>
+            <p className="text-[11px] text-rose-800 leading-relaxed">
+              {genResult?.refusal_reason || "Direct synthesis refused for potential emergency or high-risk inquiry."}
+            </p>
+          </div>
+        );
+
+      case 'REFUSED_INSUFFICIENT_EVIDENCE':
+        return (
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-xs text-amber-900 leading-relaxed space-y-1">
+            <div className="flex items-center gap-1.5 font-bold text-[11px] text-amber-800">
+              <BookOpen className="w-3.5 h-3.5 text-amber-600" />
+              <span>Insufficient Evidence for Grounded Answer</span>
+            </div>
+            <p className="text-[11px] text-amber-800 leading-relaxed">
+              {genResult?.refusal_reason || "The retrieved NHS evidence does not contain sufficient details to synthesize an answer."}
+            </p>
+          </div>
+        );
+
+      case 'FAILED':
+        return (
+          <div className="bg-rose-50 border border-rose-200 rounded-lg p-3 text-xs text-rose-900 leading-relaxed">
+            <div className="flex items-center gap-1.5 font-bold mb-1 text-[11px] text-rose-800">
+              <AlertCircle className="w-3.5 h-3.5 text-rose-600" />
+              <span>Generation Error</span>
+            </div>
+            <p className="text-[11px] text-rose-800">
+              {genResult?.refusal_reason || "Synthesis failed post-generation validation checks."}
+            </p>
+          </div>
+        );
+
+      case 'DISABLED':
+      default:
+        return (
+          <div className="bg-amber-50/70 border border-amber-200 rounded-lg p-3 text-xs text-amber-900 leading-relaxed">
+            <div className="flex items-center gap-1.5 font-bold mb-1 text-[11px] text-amber-800">
+              <AlertCircle className="w-3.5 h-3.5 text-amber-600" />
+              <span>Research Mode Notice (LLM Generation Disabled)</span>
+            </div>
+            <p className="text-[11px] text-amber-900/90 font-mono">
+              {message.text}
+            </p>
+          </div>
+        );
+    }
+  };
+
   return (
     <div className="flex gap-3 justify-start items-start mb-8">
       <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-sky-700 to-sky-500 text-white flex items-center justify-center flex-shrink-0 shadow-xs">
@@ -102,16 +189,8 @@ export const ChatMessageItem: React.FC<ChatMessageItemProps> = ({ message }) => 
             </p>
           )}
 
-          {/* Generation Disabled Static Banner */}
-          <div className="bg-amber-50/70 border border-amber-200 rounded-lg p-3 text-xs text-amber-900 leading-relaxed">
-            <div className="flex items-center gap-1.5 font-bold mb-1 text-[11px] text-amber-800">
-              <AlertCircle className="w-3.5 h-3.5" />
-              <span>Research Mode Notice (LLM Generation Disabled)</span>
-            </div>
-            <p className="text-[11px] text-amber-900/90 font-mono">
-              {message.text}
-            </p>
-          </div>
+          {/* Generation Content (State-Aware) */}
+          {renderGenerationContent()}
         </div>
 
         {/* Evidence Breakdown Section */}

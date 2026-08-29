@@ -41,8 +41,15 @@ class AppSettings(BaseModel):
     LAMBDA_DENSE_FUSION: float = 0.10
     ALPHA_LEXICAL_OVERLAP: float = 0.03
     
-    # LLM Generation Status
+    # LLM Generation Configuration (Phase 6D Architecture — Generation Disabled by Protocol)
     GENERATION_ENABLED: bool = False
+    LLM_PROVIDER: str = "disabled"  # Options: "disabled", "mock", "gemini", "openai", "ollama"
+    LLM_MODEL_NAME: str = "disabled"
+    LLM_API_KEY_ENV_VAR: str = "LLM_API_KEY"  # Environment variable name for secret loading (NEVER hardcoded)
+    LLM_MAX_TOKENS: int = 1024
+    LLM_TEMPERATURE: float = 0.2
+    LLM_TIMEOUT_SECONDS: int = 30
+    LLM_MAX_RETRIES: int = 2
     
     # Database URL
     DATABASE_URL: str = "sqlite:///./prototype_app.db"

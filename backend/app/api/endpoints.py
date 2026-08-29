@@ -213,7 +213,8 @@ def chat_endpoint(
             evidence_count=len(evidence),
             evidence=evidence,
             synthetic_answer=gen_result["synthetic_answer"],
-            retrieval_metadata=metadata
+            retrieval_metadata=metadata,
+            generation_result=gen_result.get("generation_result")
         )
     except Exception as e:
         logger.error(f"Chat retrieval error for message '{clean_msg[:50]}...': {e}", exc_info=True)

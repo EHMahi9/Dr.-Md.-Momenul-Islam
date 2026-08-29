@@ -250,3 +250,271 @@ def test_provenance_clause_preservation():
     for chunk in data["evidence"]:
         assert "Open Government Licence" in chunk["provenance_clause"]
         assert chunk["source_url"].startswith("https://www.nhs.uk")
+
+# ==============================================================================
+# Phase 6D: Grounded Generation Architecture & Interface Tests
+# ==============================================================================
+
+from app.schemas.generation_models import (
+    GenerationSafetyState,
+    GenerationStatus,
+    CitationReference,
+    GroundingEvidence,
+    GroundedPrompt,
+    GenerationResult,
+    LLMRequest,
+    LLMResponse,
+    TokenUsageMetadata,
+    PostValidationResult
+)
+from app.services.generation_service import (
+    BaseGenerationService,
+    GroundedGenerationService,
+    get_generation_service
+)
+from app.services.llm_provider import (
+    BaseLLMProvider,
+    DisabledLLMProvider,
+    MockLLMProvider,
+    create_llm_provider
+)
+from app.services.prompt_builder import PromptBuilder
+from app.services.output_validator import OutputValidator
+from app.core.config import settings
+
+def test_generation_service_interface_disabled():
+    """Verify that default generation service is disabled and returns DISABLED status."""
+    gen_service = get_generation_service()
+    assert isinstance(gen_service, BaseGenerationService)
+    assert gen_service.is_generation_enabled() is False
+
+    mock_evidence = [
+        RetrievedEvidenceChunk(
+            rank=1,
+            chunk_id="DOC-NHS-005-HYB-001",
+            parent_source_id="DOC-NHS-005",
+            source_title="Burns and scalds",
+            source_url="https://www.nhs.uk/conditions/burns-and-scalds/",
+            text="Cool the burn under cold running water for 20 minutes.",
+            rerank_score=0.8800
+        )
+    ]
+    result = gen_service.generate_answer("How to treat a burn?", mock_evidence)
+    assert isinstance(result, GenerationResult)
+    assert result.generation_status == GenerationStatus.DISABLED
+    assert "disabled" in result.answer.lower()
+    assert result.confidence_state == RetrievalOutcomeState.SUPPORTED_RETRIEVAL
+    assert result.safety_state == GenerationSafetyState.SAFE_INFORMATIONAL
+
+def test_generation_result_schema_validation():
+    """Verify serialization and validation of GenerationResult model."""
+    citation = CitationReference(
+        citation_index=1,
+        chunk_id="DOC-NHS-005-HYB-001",
+        parent_source_id="DOC-NHS-005",
+        source_title="Burns and scalds",
+        source_url="https://www.nhs.uk/conditions/burns-and-scalds/",
+        excerpt_snippet="Cool the burn under cold water..."
+    )
+    val = PostValidationResult(
+        is_valid=True,
+        citations_valid=True,
+        fabricated_citations=[],
+        unsupported_claims=[],
+        safety_check_passed=True,
+        summary_notes="Clean validation."
+    )
+    result = GenerationResult(
+        answer="Cool with water [1].",
+        citations=[citation],
+        evidence_ids=["DOC-NHS-005-HYB-001"],
+        confidence_state=RetrievalOutcomeState.SUPPORTED_RETRIEVAL,
+        safety_state=GenerationSafetyState.SAFE_INFORMATIONAL,
+        generation_status=GenerationStatus.COMPLETED,
+        disclaimer="Research Prototype Disclaimer",
+        provider_name="mock",
+        model_name="mock-model",
+        token_usage=TokenUsageMetadata(prompt_tokens=100, completion_tokens=20, total_tokens=120),
+        validation_result=val
+    )
+    dumped = result.model_dump()
+    assert dumped["answer"] == "Cool with water [1]."
+    assert len(dumped["citations"]) == 1
+    assert dumped["citations"][0]["chunk_id"] == "DOC-NHS-005-HYB-001"
+    assert dumped["generation_status"] == "COMPLETED"
+
+def test_evidence_serialization_to_grounding():
+    """Verify conversion from RetrievedEvidenceChunk to GroundingEvidence."""
+    chunk = RetrievedEvidenceChunk(
+        rank=1,
+        chunk_id="DOC-NHS-006-HYB-001",
+        parent_source_id="DOC-NHS-006",
+        source_title="Cuts and grazes",
+        source_url="https://www.nhs.uk/conditions/cuts-and-grazes/",
+        text="Apply direct pressure with a clean bandage.",
+        rerank_score=0.8200,
+        raw_dense_score=0.7900,
+        lexical_overlap=0.3500
+    )
+    grounding = GroundingEvidence.from_retrieved_chunk(chunk)
+    assert grounding.chunk_id == "DOC-NHS-006-HYB-001"
+    assert grounding.retrieval_rank == 1
+    assert grounding.fused_score == 0.8200
+    assert grounding.raw_dense_score == 0.7900
+    assert grounding.lexical_overlap == 0.3500
+    assert "Open Government Licence" in grounding.provenance_clause
+
+def test_empty_evidence_generation_behavior():
+    """Verify behavior when no evidence is supplied to generation service."""
+    gen_service = GroundedGenerationService()
+    result = gen_service.generate_answer("Unknown condition query", [])
+    assert result.confidence_state == RetrievalOutcomeState.NO_RELEVANT_EVIDENCE
+    assert result.safety_state == GenerationSafetyState.UNSUPPORTED_TOPIC
+    assert result.generation_status == GenerationStatus.DISABLED
+
+def test_prompt_builder_structure_and_safety_rules():
+    """Verify that PromptBuilder embeds all required sections and safety constraints."""
+    builder = PromptBuilder()
+    evidence = [
+        RetrievedEvidenceChunk(
+            rank=1,
+            chunk_id="DOC-NHS-005-HYB-001",
+            parent_source_id="DOC-NHS-005",
+            source_title="Burns and scalds",
+            source_url="https://www.nhs.uk/conditions/burns-and-scalds/",
+            text="Cool the burn immediately with cold water.",
+            rerank_score=0.9000
+        )
+    ]
+    prompt = builder.build_prompt("How to treat a burn?", evidence)
+    assert isinstance(prompt, GroundedPrompt)
+    assert prompt.user_question == "How to treat a burn?"
+    assert len(prompt.retrieved_evidence) == 1
+    assert "MANDATORY BEHAVIORAL PROTOCOLS" in prompt.system_instructions
+    assert "NO MEDICAL HALLUCINATION" in prompt.system_instructions
+    assert "NO FABRICATED CITATIONS" in prompt.system_instructions
+    assert "NO DOCTOR PERSONA" in prompt.system_instructions
+    assert "EMERGENCY TRIAGE RULES" in prompt.safety_instructions
+    assert prompt.formatted_prompt_payload is not None
+    assert "--- EVIDENCE EXCERPT [1] ---" in prompt.formatted_prompt_payload
+    assert "DOC-NHS-005-HYB-001" in prompt.formatted_prompt_payload
+
+def test_citation_mapping_and_fabricated_detection():
+    """Verify that OutputValidator accurately maps valid citations and catches fabricated ones."""
+    validator = OutputValidator()
+    evidence = [
+        RetrievedEvidenceChunk(
+            rank=1,
+            chunk_id="DOC-NHS-005-HYB-001",
+            parent_source_id="DOC-NHS-005",
+            source_title="Burns and scalds",
+            source_url="https://www.nhs.uk/conditions/burns-and-scalds/",
+            text="Cool the burn under cool running water for 20 to 30 minutes.",
+            rerank_score=0.9000
+        ),
+        RetrievedEvidenceChunk(
+            rank=2,
+            chunk_id="DOC-NHS-005-HYB-002",
+            parent_source_id="DOC-NHS-005",
+            source_title="Burns and scalds",
+            source_url="https://www.nhs.uk/conditions/burns-and-scalds/",
+            text="Remove clothing or jewellery near the burn.",
+            rerank_score=0.8500
+        )
+    ]
+
+    # Clean text with valid citations [1] and [2]
+    clean_text = "Cool the burn with water [1]. Remove clothing near the burn [2]."
+    val_clean, citations_clean = validator.validate_output(clean_text, evidence)
+    assert val_clean.is_valid is True
+    assert val_clean.citations_valid is True
+    assert len(citations_clean) == 2
+    assert citations_clean[0].chunk_id == "DOC-NHS-005-HYB-001"
+    assert citations_clean[1].chunk_id == "DOC-NHS-005-HYB-002"
+    assert len(val_clean.fabricated_citations) == 0
+
+    # Fabricated citation [99]
+    fabricated_text = "Cool the burn [1] and apply butter immediately [99]."
+    val_fab, citations_fab = validator.validate_output(fabricated_text, evidence)
+    assert val_fab.is_valid is False
+    assert val_fab.citations_valid is False
+    assert len(val_fab.fabricated_citations) == 1
+    assert "[99]" in val_fab.fabricated_citations[0]
+
+def test_safety_state_routing_heuristics():
+    """Verify safety classifier routing against emergency, crisis, and informational queries."""
+    service = GroundedGenerationService()
+    dummy_evidence = [
+        RetrievedEvidenceChunk(
+            rank=1,
+            chunk_id="DOC-NHS-012-HYB-001",
+            parent_source_id="DOC-NHS-012",
+            source_title="Chest pain",
+            source_url="https://www.nhs.uk/conditions/chest-pain/",
+            text="Chest pain could be a medical emergency.",
+            rerank_score=0.9000
+        )
+    ]
+
+    # Emergency check
+    assert service.assess_safety("I have severe chest pain radiating to my arm", dummy_evidence) == GenerationSafetyState.POSSIBLE_EMERGENCY
+    assert service.assess_safety("buke chap ar muk beke geche", dummy_evidence) == GenerationSafetyState.POSSIBLE_EMERGENCY
+
+    # Self-harm check
+    assert service.assess_safety("I want to commit suicide", dummy_evidence) == GenerationSafetyState.SELF_HARM_OR_CRISIS
+
+    # Medication dose check
+    assert service.assess_safety("What dose of paracetamol should I take?", dummy_evidence) == GenerationSafetyState.MEDICATION_OR_TREATMENT_REQUEST
+
+    # Safe informational query
+    assert service.assess_safety("How do I wash a minor scratch?", dummy_evidence) == GenerationSafetyState.SAFE_INFORMATIONAL
+
+def test_provider_abstraction_and_mock_execution():
+    """Verify provider abstraction with DisabledLLMProvider vs MockLLMProvider."""
+    # 1. Disabled provider
+    disabled_prov = DisabledLLMProvider()
+    assert disabled_prov.is_available() is False
+    assert disabled_prov.get_provider_name() == "disabled"
+    resp_disabled = disabled_prov.complete(LLMRequest(
+        prompt=PromptBuilder().build_prompt("test", []),
+        model_name="none"
+    ))
+    assert resp_disabled.error is not None
+    assert resp_disabled.finish_reason == "generation_disabled"
+
+    # 2. Mock provider
+    mock_prov = MockLLMProvider(canned_response="Clean test summary [1].")
+    assert mock_prov.is_available() is True
+    assert mock_prov.get_provider_name() == "mock"
+    resp_mock = mock_prov.complete(LLMRequest(
+        prompt=PromptBuilder().build_prompt("test", []),
+        model_name="mock-model"
+    ))
+    assert resp_mock.error is None
+    assert resp_mock.raw_text == "Clean test summary [1]."
+    assert resp_mock.finish_reason == "stop"
+    assert resp_mock.token_usage is not None
+    assert resp_mock.token_usage.total_tokens > 0
+
+def test_provider_configuration_validation():
+    """Verify that configuration maintains generation_enabled=False and has secure defaults."""
+    assert settings.GENERATION_ENABLED is False
+    assert settings.LLM_PROVIDER == "disabled"
+    assert settings.LLM_API_KEY_ENV_VAR == "LLM_API_KEY"
+    assert settings.LLM_MAX_TOKENS == 1024
+    assert settings.LLM_TIMEOUT_SECONDS == 30
+    assert settings.LLM_MAX_RETRIES == 2
+
+def test_chat_endpoint_includes_generation_result():
+    """Verify that FastAPI /chat endpoint returns generation_result payload in DISABLED state."""
+    resp = client.post("/api/v1/chat", json={"message": "How do I cool a burn?"})
+    assert resp.status_code == 200
+    data = resp.json()
+    assert "generation_result" in data
+    gen_res = data["generation_result"]
+    assert gen_res is not None
+    assert gen_res["generation_status"] == "DISABLED"
+    assert gen_res["confidence_state"] == "SUPPORTED_RETRIEVAL"
+    assert gen_res["safety_state"] == "SAFE_INFORMATIONAL"
+    assert gen_res["provider_name"] == "disabled"
+

@@ -6,6 +6,24 @@ export type RetrievalOutcomeState =
   | 'UNSUPPORTED_BY_ACTIVE_CORPUS'
   | 'INVALID_QUERY';
 
+export type GenerationSafetyState =
+  | 'SAFE_INFORMATIONAL'
+  | 'POSSIBLE_EMERGENCY'
+  | 'HIGH_RISK_MEDICAL'
+  | 'DIAGNOSIS_SEEKING'
+  | 'MEDICATION_OR_TREATMENT_REQUEST'
+  | 'SELF_HARM_OR_CRISIS'
+  | 'UNSUPPORTED_TOPIC'
+  | 'SAFETY_REVIEW_REQUIRED';
+
+export type GenerationStatus =
+  | 'DISABLED'
+  | 'GENERATING'
+  | 'COMPLETED'
+  | 'REFUSED_SAFETY'
+  | 'REFUSED_INSUFFICIENT_EVIDENCE'
+  | 'FAILED';
+
 export interface ConfidenceAssessment {
   state: RetrievalOutcomeState;
   confidence_level: 'HIGH' | 'MODERATE' | 'LOW' | 'VERY_LOW' | 'NONE' | 'INVALID';
@@ -25,6 +43,39 @@ export interface RetrievedEvidenceChunk {
   raw_dense_score?: number;
   lexical_overlap?: number;
   provenance_clause: string;
+}
+
+export interface CitationReference {
+  citation_index: number;
+  chunk_id: string;
+  parent_source_id: string;
+  source_title: string;
+  source_url: string;
+  excerpt_snippet: string;
+}
+
+export interface PostValidationResult {
+  is_valid: boolean;
+  citations_valid: boolean;
+  fabricated_citations: string[];
+  unsupported_claims: string[];
+  safety_check_passed: boolean;
+  validation_flags: string[];
+  summary_notes: string;
+}
+
+export interface GenerationResult {
+  answer: string;
+  citations: CitationReference[];
+  evidence_ids: string[];
+  confidence_state: RetrievalOutcomeState;
+  safety_state: GenerationSafetyState;
+  generation_status: GenerationStatus;
+  refusal_reason?: string;
+  disclaimer: string;
+  provider_name: string;
+  model_name: string;
+  validation_result?: PostValidationResult;
 }
 
 export interface RetrievalMetadata {
@@ -59,6 +110,7 @@ export interface ChatResponse {
   evidence: RetrievedEvidenceChunk[];
   synthetic_answer: string;
   retrieval_metadata?: RetrievalMetadata;
+  generation_result?: GenerationResult;
 }
 
 export interface HealthResponse {
@@ -75,7 +127,7 @@ export interface HealthResponse {
 
 export interface CorpusTierInfo {
   name: string;
-  status: 'ACTIVE' | 'STAGED_RESEARCH' | 'NOT_ACTIVE';
+  status: 'ACTIVE' | 'STAGED_RESEARCH' | 'NOT_ACTIVE' | 'PROMOTED';
   document_count: number;
   chunk_count: number;
   source_ids: string[];
@@ -107,4 +159,5 @@ export interface Message {
   evidence?: RetrievedEvidenceChunk[];
   generationEnabled?: boolean;
   retrievalMetadata?: RetrievalMetadata;
+  generationResult?: GenerationResult;
 }
