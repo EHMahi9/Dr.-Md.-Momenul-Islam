@@ -1,3 +1,19 @@
+export type RetrievalOutcomeState =
+  | 'SUPPORTED_RETRIEVAL'
+  | 'LOW_CONFIDENCE_RETRIEVAL'
+  | 'POSSIBLE_MISMATCH'
+  | 'NO_RELEVANT_EVIDENCE'
+  | 'UNSUPPORTED_BY_ACTIVE_CORPUS'
+  | 'INVALID_QUERY';
+
+export interface ConfidenceAssessment {
+  state: RetrievalOutcomeState;
+  confidence_level: 'HIGH' | 'MODERATE' | 'LOW' | 'VERY_LOW' | 'NONE' | 'INVALID';
+  top_score: number;
+  score_spread: number;
+  summary_reason: string;
+}
+
 export interface RetrievedEvidenceChunk {
   rank: number;
   chunk_id: string;
@@ -11,14 +27,38 @@ export interface RetrievedEvidenceChunk {
   provenance_clause: string;
 }
 
+export interface RetrievalMetadata {
+  strategy_name: string;
+  candidate_hash: string;
+  active_corpus_name: string;
+  active_chunks_count: number;
+  dense_k: number;
+  final_top_k: number;
+}
+
+export interface RetrievalResponse {
+  status: string;
+  outcome_state: RetrievalOutcomeState;
+  confidence_assessment: ConfidenceAssessment;
+  strategy_used: string;
+  query_raw: string;
+  query_normalized: string;
+  evidence_count: number;
+  evidence: RetrievedEvidenceChunk[];
+  retrieval_metadata?: RetrievalMetadata;
+}
+
 export interface ChatResponse {
   status: string;
+  outcome_state: RetrievalOutcomeState;
+  confidence_assessment: ConfidenceAssessment;
   generation_enabled: boolean;
   disclaimer: string;
   user_query: string;
   evidence_count: number;
   evidence: RetrievedEvidenceChunk[];
   synthetic_answer: string;
+  retrieval_metadata?: RetrievalMetadata;
 }
 
 export interface HealthResponse {
@@ -62,7 +102,9 @@ export interface Message {
   sender: 'user' | 'assistant';
   text: string;
   timestamp: string;
+  outcomeState?: RetrievalOutcomeState;
+  confidenceAssessment?: ConfidenceAssessment;
   evidence?: RetrievedEvidenceChunk[];
   generationEnabled?: boolean;
+  retrievalMetadata?: RetrievalMetadata;
 }
-

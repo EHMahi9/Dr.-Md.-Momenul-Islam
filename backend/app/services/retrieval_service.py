@@ -57,6 +57,75 @@ def compute_token_overlap(q_text: str, chunk_text: str) -> float:
         return 0.0
     return len(q_tokens.intersection(c_tokens)) / len(q_tokens)
 
+from app.schemas.api_models import (
+    RetrievedEvidenceChunk,
+    RetrievalOutcomeState,
+    ConfidenceAssessment
+)
+
+def classify_retrieval_outcome(query: str, evidence: List[RetrievedEvidenceChunk]) -> Tuple[RetrievalOutcomeState, ConfidenceAssessment]:
+    """
+    Deterministic retrieval outcome classification based on ranking evidence and fused scores.
+    """
+    if not query or not query.strip():
+        return RetrievalOutcomeState.INVALID_QUERY, ConfidenceAssessment(
+            state=RetrievalOutcomeState.INVALID_QUERY,
+            confidence_level="INVALID",
+            top_score=0.0,
+            score_spread=0.0,
+            summary_reason="Query input is empty or contains only whitespace."
+        )
+    if len(query) > 1000:
+        return RetrievalOutcomeState.INVALID_QUERY, ConfidenceAssessment(
+            state=RetrievalOutcomeState.INVALID_QUERY,
+            confidence_level="INVALID",
+            top_score=0.0,
+            score_spread=0.0,
+            summary_reason="Query length exceeds maximum limit of 1000 characters."
+        )
+    if not evidence:
+        return RetrievalOutcomeState.NO_RELEVANT_EVIDENCE, ConfidenceAssessment(
+            state=RetrievalOutcomeState.NO_RELEVANT_EVIDENCE,
+            confidence_level="NONE",
+            top_score=0.0,
+            score_spread=0.0,
+            summary_reason="No evidence passages returned from active knowledge base."
+        )
+
+    top_score = evidence[0].rerank_score
+    lowest_score = evidence[-1].rerank_score if len(evidence) > 1 else top_score
+    spread = top_score - lowest_score
+
+    # Clinical retrieval confidence tiers based on Strategy 5 fused score
+    if top_score >= 0.65:
+        state = RetrievalOutcomeState.SUPPORTED_RETRIEVAL
+        conf = "HIGH"
+        reason = "Authoritative clinical evidence with strong semantic alignment retrieved from active NHS corpus."
+    elif top_score >= 0.35:
+        state = RetrievalOutcomeState.LOW_CONFIDENCE_RETRIEVAL
+        conf = "MODERATE"
+        reason = "Supporting evidence retrieved with moderate confidence. Review context carefully."
+    elif top_score >= 0.18:
+        state = RetrievalOutcomeState.POSSIBLE_MISMATCH
+        conf = "LOW"
+        reason = "Retrieved evidence has weak semantic alignment and may relate to general triage or a different condition."
+    elif top_score >= 0.10:
+        state = RetrievalOutcomeState.UNSUPPORTED_BY_ACTIVE_CORPUS
+        conf = "VERY_LOW"
+        reason = "This clinical question appears outside the 8 conditions covered in the active knowledge base."
+    else:
+        state = RetrievalOutcomeState.NO_RELEVANT_EVIDENCE
+        conf = "NONE"
+        reason = "No relevant clinical evidence found in the active knowledge base for this query."
+
+    return state, ConfidenceAssessment(
+        state=state,
+        confidence_level=conf,
+        top_score=round(top_score, 4),
+        score_spread=round(spread, 4),
+        summary_reason=reason
+    )
+
 class BaseRetrievalService(ABC):
     """Abstract interface defining the retrieval boundary."""
     

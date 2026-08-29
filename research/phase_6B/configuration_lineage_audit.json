@@ -1,0 +1,76 @@
+{
+  "audit": "PHASE_6B_CONFIGURATION_LINEAGE_AUDIT",
+  "timestamp": "2026-08-29T08:12:00Z",
+  "audit_type": "NON_EVALUATIVE_LINEAGE_AND_HASH_AUDIT",
+  "investigation_summary": "Reconciled historical hash 07f031da... vs Gate 5.29 hash 1cc216db...",
+  "hashes_audited": {
+    "hash_07f031da": {
+      "sha256": "07f031da533d47666fb5abd242f8db47b90dc584a92c0b3f399abaaf51c02736",
+      "origin": "Gate 5.21 / 5.22 / 5.23 / 5.24 Baseline Candidate (STRATEGY_2_TRACK_A_NORM_ONLY)",
+      "architecture": "Track A Normalization + E5-Small (K=15) + BGE-Reranker-v2-m3 + 0.85x Overview Debiasing (No dual-anchor score fusion)",
+      "status": "LEGACY_PRE_FUSION_BASELINE_HASH"
+    },
+    "hash_1cc216db": {
+      "sha256": "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae",
+      "origin": "Gate 5.24.1 Selected Candidate (STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR)",
+      "artifact_file": "research/gate_5_24_reranker_development_research/candidate/strategy_5_dev_candidate_configuration.json",
+      "architecture": "Track A Normalization + E5-Small (K=15) + BGE-Reranker-v2-m3 + 0.85x Overview Debiasing + Dual-Anchor Score Fusion (lambda=0.10, alpha=0.03)",
+      "status": "AUTHORITATIVE_STRATEGY_5_FROZEN_HASH"
+    }
+  },
+  "parameter_diff": {
+    "dense_model": {
+      "hash_07f031da": "intfloat/multilingual-e5-small",
+      "hash_1cc216db": "intfloat/multilingual-e5-small",
+      "backend_runtime": "intfloat/multilingual-e5-small",
+      "match": true
+    },
+    "dense_k": {
+      "hash_07f031da": 15,
+      "hash_1cc216db": 15,
+      "backend_runtime": 15,
+      "match": true
+    },
+    "cross_encoder_model": {
+      "hash_07f031da": "BAAI/bge-reranker-v2-m3",
+      "hash_1cc216db": "BAAI/bge-reranker-v2-m3",
+      "backend_runtime": "BAAI/bge-reranker-v2-m3",
+      "match": true
+    },
+    "overview_debias_multiplier": {
+      "hash_07f031da": 0.85,
+      "hash_1cc216db": 0.85,
+      "backend_runtime": 0.85,
+      "match": true
+    },
+    "lambda_dense_fusion": {
+      "hash_07f031da": 0.0,
+      "hash_1cc216db": 0.10,
+      "backend_runtime": 0.10,
+      "match": true
+    },
+    "alpha_lexical_overlap": {
+      "hash_07f031da": 0.0,
+      "hash_1cc216db": 0.03,
+      "backend_runtime": 0.03,
+      "match": true
+    },
+    "normalization_concept_dictionaries": {
+      "hash_07f031da": 9,
+      "hash_1cc216db": 9,
+      "backend_runtime": 9,
+      "match": true
+    },
+    "final_top_k": {
+      "hash_07f031da": 5,
+      "hash_1cc216db": 5,
+      "backend_runtime": 5,
+      "match": true
+    }
+  },
+  "lineage_audit_conclusion": {
+    "verdict": "HASH_DISCREPANCY_EXPLAINED_BY_STRATEGY_EVOLUTION",
+    "explanation": "Hash 07f031da... identified the pre-fusion Strategy 2 baseline frozen in Gate 5.21. Hash 1cc216db... is the direct SHA-256 hash of strategy_5_dev_candidate_configuration.json introduced in Gate 5.24.1 when dense/lexical fusion was added. The runtime backend implements the Strategy 5 fusion parameters (lambda=0.10, alpha=0.03) and exactly matches Hash 1cc216db...",
+    "action_taken": "Updated backend configuration and test constants to reference authoritative Strategy 5 hash 1cc216db..."
+  }
+}

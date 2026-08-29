@@ -12,7 +12,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 
 from fastapi.testclient import TestClient
 from app.main import app
-from app.schemas.api_models import RetrievedEvidenceChunk
+from app.schemas.api_models import RetrievedEvidenceChunk, RetrievalOutcomeState
 from app.services.retrieval_service import BaseRetrievalService, get_retrieval_service
 
 class MockFrozenDualAnchorRetrievalService(BaseRetrievalService):
@@ -24,6 +24,24 @@ class MockFrozenDualAnchorRetrievalService(BaseRetrievalService):
         
     def retrieve(self, query: str, top_k: int = 5) -> Tuple[str, List[RetrievedEvidenceChunk]]:
         norm_query = f"{query} (normalized)"
+        
+        # Simulate ungrounded/low-confidence query when query is "ungrounded_test_query"
+        if "ungrounded" in query.lower():
+            evidence = [
+                RetrievedEvidenceChunk(
+                    rank=1,
+                    chunk_id="DOC-NHS-004-HYB-001",
+                    parent_source_id="DOC-NHS-004",
+                    source_title="Asthma",
+                    source_url="https://www.nhs.uk/conditions/asthma/",
+                    text="General asthma information.",
+                    rerank_score=0.1400,
+                    raw_dense_score=0.1200,
+                    lexical_overlap=0.0500
+                )
+            ]
+            return norm_query, evidence
+
         evidence = [
             RetrievedEvidenceChunk(
                 rank=1,
@@ -101,7 +119,7 @@ def test_health_endpoint():
     data = resp.json()
     assert data["status"] == "healthy"
     assert data["retrieval_strategy"] == "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR"
-    assert data["candidate_hash"] == "07f031da533d47666fb5abd242f8db47b90dc584a92c0b3f399abaaf51c02736"
+    assert data["candidate_hash"] == "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae"
     assert data["active_corpus_chunks"] == 68
     assert data["staged_research_chunks"] == 51
     assert data["generation_enabled"] is False
@@ -139,7 +157,7 @@ def test_corpus_lifecycle_endpoint():
     # Check Retrieval Candidate
     cand = data["retrieval_candidate"]
     assert cand["strategy_name"] == "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR"
-    assert cand["frozen_candidate_sha256"] == "07f031da533d47666fb5abd242f8db47b90dc584a92c0b3f399abaaf51c02736"
+    assert cand["frozen_candidate_sha256"] == "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae"
 
 def test_staged_corpus_isolation_in_retrieval():
     """Verify that staged research sources (DOC-NHS-012..017) are never returned in active retrieval."""
@@ -148,14 +166,15 @@ def test_staged_corpus_isolation_in_retrieval():
     data = resp.json()
     staged_sids = {"DOC-NHS-012", "DOC-NHS-013", "DOC-NHS-014", "DOC-NHS-015", "DOC-NHS-016", "DOC-NHS-017"}
     retrieved_sids = set(e["parent_source_id"] for e in data["evidence"])
-    # Staged documents must have zero intersection with active retrieval output
     assert retrieved_sids.isdisjoint(staged_sids)
 
-def test_retrieve_english_query():
+def test_retrieve_english_supported():
     resp = client.post("/api/v1/retrieve", json={"query": "how to treat a minor burn with water", "top_k": 5})
     assert resp.status_code == 200
     data = resp.json()
     assert data["status"] == "success"
+    assert data["outcome_state"] == "SUPPORTED_RETRIEVAL"
+    assert data["confidence_assessment"]["confidence_level"] == "HIGH"
     assert data["evidence_count"] == 5
     assert len(data["evidence"]) == 5
     
@@ -163,35 +182,74 @@ def test_retrieve_english_query():
     assert top_chunk["rank"] == 1
     assert "DOC-NHS-005" in top_chunk["parent_source_id"]
     assert "Burns and scalds" in top_chunk["source_title"]
-    assert top_chunk["rerank_score"] is not None
+    assert top_chunk["rerank_score"] >= 0.65
     assert "Open Government Licence" in top_chunk["provenance_clause"]
 
-def test_retrieve_bangla_query():
+def test_retrieve_bangla_supported():
     resp = client.post("/api/v1/retrieve", json={"query": "হাত পুড়ে গেলে কী প্রাথমিক চিকিৎসা নেব?", "top_k": 3})
     assert resp.status_code == 200
     data = resp.json()
+    assert data["outcome_state"] == "SUPPORTED_RETRIEVAL"
     assert data["evidence_count"] == 3
     assert "DOC-NHS-005" in data["evidence"][0]["parent_source_id"]
 
-def test_retrieve_banglish_query():
+def test_retrieve_banglish_supported():
     resp = client.post("/api/v1/retrieve", json={"query": "pora jaygay cold water dhalbo koto time?", "top_k": 5})
     assert resp.status_code == 200
     data = resp.json()
+    assert data["outcome_state"] == "SUPPORTED_RETRIEVAL"
     assert data["evidence_count"] == 5
     retrieved_sids = [e["parent_source_id"] for e in data["evidence"]]
     assert any("DOC-NHS-005" in sid for sid in retrieved_sids)
 
-def test_retrieve_empty_query_error():
-    resp = client.post("/api/v1/retrieve", json={"query": "   ", "top_k": 5})
+def test_retrieve_empty_query_400():
+    resp = client.post("/api/v1/retrieve", json={"query": ""})
+    assert resp.status_code == 422 or resp.status_code == 400
+
+def test_retrieve_whitespace_query_400():
+    resp = client.post("/api/v1/retrieve", json={"query": "     ", "top_k": 5})
     assert resp.status_code == 400
     assert "empty" in resp.json()["detail"].lower()
+
+def test_retrieve_oversized_query_400():
+    huge_query = "burns " * 300
+    resp = client.post("/api/v1/retrieve", json={"query": huge_query, "top_k": 5})
+    assert resp.status_code in [400, 422]
+    data = resp.json()
+    assert "detail" in data
+
+def test_retrieve_ungrounded_query_low_confidence():
+    resp = client.post("/api/v1/retrieve", json={"query": "ungrounded_test_query", "top_k": 5})
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["outcome_state"] in [
+        RetrievalOutcomeState.UNSUPPORTED_BY_ACTIVE_CORPUS.value,
+        RetrievalOutcomeState.POSSIBLE_MISMATCH.value,
+        RetrievalOutcomeState.NO_RELEVANT_EVIDENCE.value
+    ]
+
+def test_chat_endpoint_outcome_classification():
+    resp = client.post("/api/v1/chat", json={"message": "What should I do if my child has a fever?"})
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["status"] == "research_prototype"
+    assert data["outcome_state"] == "SUPPORTED_RETRIEVAL"
+    assert data["confidence_assessment"]["top_score"] > 0.60
+    assert data["retrieval_metadata"]["strategy_name"] == "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR"
 
 def test_chat_endpoint_generation_disabled():
     resp = client.post("/api/v1/chat", json={"message": "What should I do if my child has a fever?"})
     assert resp.status_code == 200
     data = resp.json()
-    assert data["status"] == "research_prototype"
     assert data["generation_enabled"] is False
     assert "disabled" in data["synthetic_answer"].lower()
     assert data["evidence_count"] > 0
     assert len(data["evidence"]) == 5
+
+def test_provenance_clause_preservation():
+    resp = client.post("/api/v1/retrieve", json={"query": "asthma inhaler", "top_k": 3})
+    assert resp.status_code == 200
+    data = resp.json()
+    for chunk in data["evidence"]:
+        assert "Open Government Licence" in chunk["provenance_clause"]
+        assert chunk["source_url"].startswith("https://www.nhs.uk")
