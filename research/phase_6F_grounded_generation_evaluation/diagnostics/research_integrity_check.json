@@ -1,0 +1,11 @@
+{
+  "phase": "6F",
+  "active_corpus_hash": "44d0602f730d6460e6fefa431bd5c09005b48ce92b47d02832532e5868d4aa58",
+  "active_corpus_intact": true,
+  "gate_5_28_benchmark_hash": "464612e733aeb1496c1dcdc5674e01d9504bd4ccd1244190e487c6e957dcc722",
+  "gate_5_28_benchmark_intact": true,
+  "phase_6F_eval_set_hash": "c4603199028cb649617b59d2523bb1a64b92876ffcc899285a946e940257ee61",
+  "strategy_5_frozen_hash": "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae",
+  "corpus_chunks_count": 119,
+  "verified_at": "2026-08-29"
+}

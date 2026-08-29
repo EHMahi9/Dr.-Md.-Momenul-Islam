@@ -1,0 +1,95 @@
+{
+  "case_id": "EVAL-24-BGL-PARTIAL-MULTI",
+  "language": "Standard Banglish",
+  "category": "EVIDENCE_PARTIAL_AMBIGUOUS",
+  "subcategory": "multi-chunk-partial",
+  "query_raw": "allergic rhinitis ar cold flue er moddhe difference bujhbo kivabe?",
+  "query_normalized": "allergic rhinitis ar cold flue er moddhe difference bujhbo kivabe?",
+  "expected_topic": "Allergic rhinitis vs other respiratory symptoms",
+  "expected_sources": [
+    "DOC-NHS-017"
+  ],
+  "expected_grounding_status": "PARTIALLY_SUPPORTED",
+  "retrieval": {
+    "top_score": 0.1947,
+    "outcome_state": "POSSIBLE_MISMATCH",
+    "retrieved_chunk_ids": [
+      "DOC-NHS-017-HYB-000",
+      "DOC-NHS-017-HYB-001",
+      "DOC-NHS-017-HYB-004",
+      "DOC-NHS-017-HYB-005",
+      "DOC-NHS-014-HYB-006"
+    ],
+    "retrieved_sources": [
+      "DOC-NHS-017",
+      "DOC-NHS-014"
+    ],
+    "retrieval_latency_ms": 49883.08
+  },
+  "safety": {
+    "safety_state": "SAFE_INFORMATIONAL",
+    "is_emergency": false
+  },
+  "generation_raw": {
+    "text": "Allergic rhinitis (যাকে সাধারণত হাই ফিভার বা Hay fever বলা হয়) এবং সাধারণ ঠান্ডা বা ফ্লু-এর লক্ষণগুলো অনেকটা মিলে যায়, তবে এদের মধ্যে পার্থক্য বোঝার জন্য NHS-এর তথ্য অনুযায়ী নিচের বিষয়গুলো বিবেচনা করা যেতে পারে:\n\n**১. লক্ষণের মিল (Similarities):**\nAllergic rhinitis-এর সাধারণ লক্ষণগুলো ঠান্ডার মতোই হয়। এতে নিচের সমস্যাগুলো দেখা দিতে পারে:\n*   ছিঁকনি পড়া (Sneezing) [1]\n*   নাক চুলকানো (Itchy nose) [1]\n*   নাক দিয়ে পানি পড়া বা নাক বন্ধ হয়ে যাওয়া (Runny or blocked nose) [1]\n*   চোখ লাল, চুলকানো এবং পানি পড়া (Itchy, red and watery eyes) [1]\n*   কাশি (Cough) [1]\n*   মুখের ছাদের অংশ চুলকানো (Roof of mouth being itchy) [1]\n\n**২. প্রধান পার্থক্য (Key Differences):**\n*",
+    "token_usage": {
+      "prompt_tokens": 1664,
+      "completion_tokens": 300,
+      "total_tokens": 1964
+    },
+    "inference_latency_ms": 3717.45,
+    "finish_reason": "length",
+    "error": null
+  },
+  "validation": {
+    "is_valid": true,
+    "citations_count": 1,
+    "citations": [
+      {
+        "citation_index": 1,
+        "chunk_id": "DOC-NHS-017-HYB-000",
+        "parent_source_id": "DOC-NHS-017",
+        "source_title": "Allergic rhinitis",
+        "source_url": "https://www.nhs.uk/conditions/allergic-rhinitis/",
+        "excerpt_snippet": "Allergic rhinitis\n\nAllergic rhinitis is where your nose gets irritated by something you're allergic to, such as pollen, causing sneezing and other sym..."
+      }
+    ],
+    "fabricated_citations": [],
+    "safety_check_passed": true
+  },
+  "claim_audit": {
+    "classification": "DIRECTLY_SUPPORTED",
+    "reason": "Verified with 1 citations matching 1/1 key facts.",
+    "supported_claim_count": 1,
+    "unsupported_claim_count": 0
+  },
+  "policies": {
+    "policy_a": {
+      "policy": "POLICY_A_UNGATED",
+      "action": "GENERATED",
+      "text": "Allergic rhinitis (যাকে সাধারণত হাই ফিভার বা Hay fever বলা হয়) এবং সাধারণ ঠান্ডা বা ফ্লু-এর লক্ষণগুলো অনেকটা মিলে যায়, তবে এদের মধ্যে পার্থক্য বোঝার জন্য NHS-এর তথ্য অনুযায়ী নিচের বিষয়গুলো বিবেচনা করা যেতে পারে:\n\n**১. লক্ষণের মিল (Similarities):**\nAllergic rhinitis-এর সাধারণ লক্ষণগুলো ঠান্ডার মতোই হয়। এতে নিচের সমস্যাগুলো দেখা দিতে পারে:\n*   ছিঁকনি পড়া (Sneezing) [1]\n*   নাক চুলকানো (Itchy nose) [1]\n*   নাক দিয়ে পানি পড়া বা নাক বন্ধ হয়ে যাওয়া (Runny or blocked nose) [1]\n*   চোখ লাল, চুলকানো এবং পানি পড়া (Itchy, red and watery eyes) [1]\n*   কাশি (Cough) [1]\n*   মুখের ছাদের অংশ চুলকানো (Roof of mouth being itchy) [1]\n\n**২. প্রধান পার্থক্য (Key Differences):**\n*",
+      "citations_count": 1,
+      "claim_status": "DIRECTLY_SUPPORTED",
+      "is_unsupported_hallucination": false
+    },
+    "policy_b": {
+      "policy": "POLICY_B_STRICT",
+      "action": "REFUSED_INSUFFICIENT_EVIDENCE",
+      "text": "[REFUSAL: Evidence confidence state 'POSSIBLE_MISMATCH' below SUPPORTED_RETRIEVAL threshold.]",
+      "citations_count": 0,
+      "claim_status": "REFUSAL_EXECUTED",
+      "is_correct_abstention": true,
+      "is_incorrect_abstention": false
+    },
+    "policy_c": {
+      "policy": "POLICY_C_ADAPTIVE",
+      "action": "REFUSED_INSUFFICIENT_EVIDENCE",
+      "text": "[REFUSAL: Evidence confidence state 'POSSIBLE_MISMATCH' below adaptive threshold.]",
+      "citations_count": 0,
+      "claim_status": "PARTIAL_REFUSAL",
+      "is_correct_abstention": false,
+      "is_incorrect_abstention": false
+    }
+  },
+  "failure_taxonomy": "NONE"
+}

@@ -566,4 +566,124 @@ def test_smoke_results_artifact_integrity():
     assert data["valid_generations"] == 8
     assert data["directly_supported_claims"] == 8
 
+# ==============================================================================
+# Phase 6F: Evidence Gating & Grounded Generation Evaluation Offline Tests
+# ==============================================================================
+
+def test_evidence_gating_supported_state():
+    """Verify that evidence gating allows generation on supported and low-confidence states."""
+    gen_service = GroundedGenerationService(provider=MockLLMProvider())
+    allow_sup, reason_sup = gen_service.map_outcome_to_generation_policy(
+        RetrievalOutcomeState.SUPPORTED_RETRIEVAL,
+        GenerationSafetyState.SAFE_INFORMATIONAL
+    )
+    assert allow_sup is True
+    assert reason_sup is None
+
+    allow_low, reason_low = gen_service.map_outcome_to_generation_policy(
+        RetrievalOutcomeState.LOW_CONFIDENCE_RETRIEVAL,
+        GenerationSafetyState.SAFE_INFORMATIONAL
+    )
+    assert allow_low is True
+    assert "caution" in reason_low.lower() or "moderate" in reason_low.lower()
+
+def test_evidence_gating_unsupported_and_mismatch_states():
+    """Verify that evidence gating blocks generation on mismatch, unsupported, and crisis states."""
+    gen_service = GroundedGenerationService(provider=MockLLMProvider())
+
+    # Mismatch
+    allow_mis, reason_mis = gen_service.map_outcome_to_generation_policy(
+        RetrievalOutcomeState.POSSIBLE_MISMATCH,
+        GenerationSafetyState.SAFE_INFORMATIONAL
+    )
+    assert allow_mis is False
+    assert "weak" in reason_mis.lower() or "mismatch" in reason_mis.lower()
+
+    # Unsupported
+    allow_unsup, reason_unsup = gen_service.map_outcome_to_generation_policy(
+        RetrievalOutcomeState.UNSUPPORTED_BY_ACTIVE_CORPUS,
+        GenerationSafetyState.SAFE_INFORMATIONAL
+    )
+    assert allow_unsup is False
+    assert "no relevant" in reason_unsup.lower()
+
+    # No evidence
+    allow_noev, reason_noev = gen_service.map_outcome_to_generation_policy(
+        RetrievalOutcomeState.NO_RELEVANT_EVIDENCE,
+        GenerationSafetyState.SAFE_INFORMATIONAL
+    )
+    assert allow_noev is False
+
+    # Crisis / Self harm
+    allow_crisis, reason_crisis = gen_service.map_outcome_to_generation_policy(
+        RetrievalOutcomeState.SUPPORTED_RETRIEVAL,
+        GenerationSafetyState.SELF_HARM_OR_CRISIS
+    )
+    assert allow_crisis is False
+    assert "crisis" in reason_crisis.lower()
+
+def test_grounded_generation_service_with_mock_enabled(monkeypatch):
+    """Verify full generate_answer flow with mock provider when generation is enabled in test environment."""
+    mock_provider = MockLLMProvider()
+    gen_service = GroundedGenerationService(
+        provider=mock_provider,
+        prompt_builder=PromptBuilder(),
+        validator=OutputValidator()
+    )
+    # Mock is_generation_enabled to True for this unit test
+    monkeypatch.setattr(gen_service, "is_generation_enabled", lambda: True)
+
+    evidence = [
+        RetrievedEvidenceChunk(
+            rank=1,
+            chunk_id="DOC-NHS-005-HYB-001",
+            parent_source_id="DOC-NHS-005",
+            source_title="Burns and scalds",
+            source_url="https://www.nhs.uk/conditions/burns-and-scalds/",
+            text="Cool the burn under cold running water for 20 minutes.",
+            rerank_score=0.8900
+        ),
+        RetrievedEvidenceChunk(
+            rank=2,
+            chunk_id="DOC-NHS-005-HYB-002",
+            parent_source_id="DOC-NHS-005",
+            source_title="Burns and scalds",
+            source_url="https://www.nhs.uk/conditions/burns-and-scalds/",
+            text="Remove clothing or jewellery near the burnt area.",
+            rerank_score=0.8200
+        )
+    ]
+
+    res = gen_service.generate_answer("How to treat a burn?", evidence)
+    assert res.generation_status == GenerationStatus.COMPLETED
+    assert res.confidence_state == RetrievalOutcomeState.SUPPORTED_RETRIEVAL
+    assert len(res.citations) == 2
+    assert res.provider_name == "mock"
+
+def test_grounded_generation_service_refusal_when_enabled_on_unsupported(monkeypatch):
+    """Verify that when generation is enabled, an ungrounded query triggers structured REFUSED_INSUFFICIENT_EVIDENCE."""
+    gen_service = GroundedGenerationService(provider=MockLLMProvider())
+    monkeypatch.setattr(gen_service, "is_generation_enabled", lambda: True)
+
+    # Empty evidence represents out-of-corpus / ungrounded retrieval
+    res = gen_service.generate_answer("What is the artemisinin dose for malaria?", [])
+    assert res.generation_status == GenerationStatus.REFUSED_INSUFFICIENT_EVIDENCE
+    assert res.confidence_state == RetrievalOutcomeState.NO_RELEVANT_EVIDENCE
+    assert "cannot provide" in res.answer.lower() or "reason" in res.answer.lower()
+
+def test_phase_6F_eval_results_integrity():
+    """Verify that Phase 6F 48-case evaluation output file exists and has 100% citation validity."""
+    artifact_path = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "..", "..", "research", "phase_6F_grounded_generation_evaluation", "outputs", "phase_6F_evaluation_results.json")
+    )
+    assert os.path.exists(artifact_path)
+    with open(artifact_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    assert data["phase"] == "6F"
+    assert data["total_eval_cases"] == 48
+    assert data["overall_metrics"]["citation_validity_rate"] == 100.0
+    assert data["overall_metrics"]["zero_fabricated_citation_rate"] == 100.0
+    assert "policy_comparison" in data
+
+
 

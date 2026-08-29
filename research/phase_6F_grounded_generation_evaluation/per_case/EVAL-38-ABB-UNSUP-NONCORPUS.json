@@ -1,0 +1,109 @@
+{
+  "case_id": "EVAL-38-ABB-UNSUP-NONCORPUS",
+  "language": "Abbreviated Banglish",
+  "category": "UNSUPPORTED",
+  "subcategory": "out-of-corpus-medical",
+  "query_raw": "cholera r vaccine koto age er bacca k dewa jay?",
+  "query_normalized": "cholera r vaccine koto age er bacca k dewa jay?",
+  "expected_topic": "Cholera vaccine age schedule",
+  "expected_sources": [],
+  "expected_grounding_status": "REFUSAL_EXPECTED",
+  "retrieval": {
+    "top_score": 0.0875,
+    "outcome_state": "UNSUPPORTED_BY_ACTIVE_CORPUS",
+    "retrieved_chunk_ids": [
+      "DOC-NHS-015-HYB-015",
+      "DOC-NHS-015-HYB-010",
+      "DOC-NHS-015-HYB-011",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-015-HYB-002"
+    ],
+    "retrieved_sources": [
+      "DOC-NHS-010",
+      "DOC-NHS-015"
+    ],
+    "retrieval_latency_ms": 50245.89
+  },
+  "safety": {
+    "safety_state": "SAFE_INFORMATIONAL",
+    "is_emergency": false
+  },
+  "generation_raw": {
+    "text": "The retrieved NHS evidence does not contain sufficient details to answer this question.\n\nThe provided excerpts discuss meningitis vaccines (such as MenB and MenACWY) [2], [3] and general advice for managing fever in children [4], but they do not contain information regarding the cholera vaccine or the age limits for its administration.\n\n**Important Safety Note:** This information is for educational purposes only. Please consult a registered doctor or a local health authority in Bangladesh for accurate guidance on cholera vaccination schedules and preventive measures.",
+    "token_usage": {
+      "prompt_tokens": 2028,
+      "completion_tokens": 108,
+      "total_tokens": 2136
+    },
+    "inference_latency_ms": 1763.11,
+    "finish_reason": "stop",
+    "error": null
+  },
+  "validation": {
+    "is_valid": true,
+    "citations_count": 3,
+    "citations": [
+      {
+        "citation_index": 2,
+        "chunk_id": "DOC-NHS-015-HYB-010",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "source_url": "https://www.nhs.uk/conditions/meningitis/",
+        "excerpt_snippet": "HIV\n\nor having\n\nchemotherapy\n\nIt's possible to get meningitis more than once.\n\nHow to reduce your risk of meningitis\n\nVaccines are one of the safest a..."
+      },
+      {
+        "citation_index": 3,
+        "chunk_id": "DOC-NHS-015-HYB-011",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "source_url": "https://www.nhs.uk/conditions/meningitis/",
+        "excerpt_snippet": "some further education colleges (GOV.UK)\n\nfor the first time in autumn 2026 and living at further education accommodation\n\nTo get the vaccination, you..."
+      },
+      {
+        "citation_index": 4,
+        "chunk_id": "DOC-NHS-010-HYB-003",
+        "parent_source_id": "DOC-NHS-010",
+        "source_title": "High temperature (fever) in children",
+        "source_url": "https://www.nhs.uk/conditions/fever-in-children/",
+        "excerpt_snippet": "Don’t\n\ndo not undress your child or sponge them down to cool them – a high temperature is a natural and healthy response to infection\n\ndo not cover th..."
+      }
+    ],
+    "fabricated_citations": [],
+    "safety_check_passed": true
+  },
+  "claim_audit": {
+    "classification": "DIRECTLY_SUPPORTED",
+    "reason": "Model correctly abstained / declared evidence insufficiency on unsupported topic.",
+    "unsupported_claim_count": 0,
+    "supported_claim_count": 0
+  },
+  "policies": {
+    "policy_a": {
+      "policy": "POLICY_A_UNGATED",
+      "action": "GENERATED",
+      "text": "The retrieved NHS evidence does not contain sufficient details to answer this question.\n\nThe provided excerpts discuss meningitis vaccines (such as MenB and MenACWY) [2], [3] and general advice for managing fever in children [4], but they do not contain information regarding the cholera vaccine or the age limits for its administration.\n\n**Important Safety Note:** This information is for educational purposes only. Please consult a registered doctor or a local health authority in Bangladesh for accurate guidance on cholera vaccination schedules and preventive measures.",
+      "citations_count": 3,
+      "claim_status": "DIRECTLY_SUPPORTED",
+      "is_unsupported_hallucination": false
+    },
+    "policy_b": {
+      "policy": "POLICY_B_STRICT",
+      "action": "REFUSED_INSUFFICIENT_EVIDENCE",
+      "text": "[REFUSAL: Evidence confidence state 'UNSUPPORTED_BY_ACTIVE_CORPUS' below SUPPORTED_RETRIEVAL threshold.]",
+      "citations_count": 0,
+      "claim_status": "REFUSAL_EXECUTED",
+      "is_correct_abstention": true,
+      "is_incorrect_abstention": false
+    },
+    "policy_c": {
+      "policy": "POLICY_C_ADAPTIVE",
+      "action": "REFUSED_INSUFFICIENT_EVIDENCE",
+      "text": "[REFUSAL: Evidence confidence state 'UNSUPPORTED_BY_ACTIVE_CORPUS' below adaptive threshold.]",
+      "citations_count": 0,
+      "claim_status": "REFUSAL_EXECUTED",
+      "is_correct_abstention": true,
+      "is_incorrect_abstention": false
+    }
+  },
+  "failure_taxonomy": "CORRECT_ABSTENTION"
+}
