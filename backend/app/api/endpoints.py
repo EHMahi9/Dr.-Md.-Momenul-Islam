@@ -82,22 +82,27 @@ def get_corpus_lifecycle(
     staged_docs, staged_chunks, staged_sids = get_staged_corpus_stats()
     active_chunks = retrieval_service.get_chunk_count()
     
+    # Dynamically derive active source IDs from loaded corpus
+    active_source_ids = sorted(list(set(
+        c["parent_source_id"] for c in retrieval_service.chunks
+    ))) if hasattr(retrieval_service, 'chunks') else []
+    
     active_tier = CorpusTierInfo(
         name=settings.ACTIVE_CORPUS_NAME,
         status="ACTIVE",
-        document_count=8,
+        document_count=len(active_source_ids),
         chunk_count=active_chunks,
-        source_ids=["DOC-NHS-004", "DOC-NHS-005", "DOC-NHS-006", "DOC-NHS-007", "DOC-NHS-008", "DOC-NHS-009", "DOC-NHS-010", "DOC-NHS-011"],
-        description="Frozen baseline research corpus actively queried by application backend."
+        source_ids=active_source_ids,
+        description="Phase 6C promoted corpus: 8 original + 6 Gate 5.29-validated NHS sources."
     )
     
     staged_tier = CorpusTierInfo(
         name=settings.STAGED_RESEARCH_CORPUS_NAME,
-        status="STAGED_RESEARCH",
-        document_count=staged_docs,
-        chunk_count=staged_chunks,
-        source_ids=staged_sids,
-        description="Newly ingested NHS sources (Gate 5.27). Isolated in research directory; NOT active in application."
+        status="PROMOTED",
+        document_count=0,
+        chunk_count=0,
+        source_ids=[],
+        description="All 6 staged research sources (DOC-NHS-012..017) have been promoted to ACTIVE via Phase 6C."
     )
     
     validated_tier = CorpusTierInfo(
@@ -106,7 +111,7 @@ def get_corpus_lifecycle(
         document_count=0,
         chunk_count=0,
         source_ids=[],
-        description="Requires formal multi-lingual benchmark validation (Gate 5.29) prior to promotion."
+        description="No additional sources pending validation."
     )
     
     return CorpusLifecycleResponse(

@@ -1,0 +1,108 @@
+{
+  "phase": "6C",
+  "step": "01_preflight_audit",
+  "timestamp": "2026-08-29T02:27:41.434980+00:00",
+  "checks": [
+    {
+      "check": "active_corpus_inventory",
+      "chunk_count": 68,
+      "source_count": 8,
+      "source_ids": [
+        "DOC-NHS-004",
+        "DOC-NHS-005",
+        "DOC-NHS-006",
+        "DOC-NHS-007",
+        "DOC-NHS-008",
+        "DOC-NHS-009",
+        "DOC-NHS-010",
+        "DOC-NHS-011"
+      ],
+      "expected_chunks": 68,
+      "pass": true
+    },
+    {
+      "check": "staged_corpus_inventory",
+      "chunk_count": 51,
+      "source_count": 6,
+      "source_ids": [
+        "DOC-NHS-012",
+        "DOC-NHS-013",
+        "DOC-NHS-014",
+        "DOC-NHS-015",
+        "DOC-NHS-016",
+        "DOC-NHS-017"
+      ],
+      "expected_chunks": 51,
+      "expected_sources": [
+        "DOC-NHS-012",
+        "DOC-NHS-013",
+        "DOC-NHS-014",
+        "DOC-NHS-015",
+        "DOC-NHS-016",
+        "DOC-NHS-017"
+      ],
+      "source_ids_match": true,
+      "pass": true
+    },
+    {
+      "check": "chunk_id_uniqueness",
+      "active_unique": true,
+      "staged_unique": true,
+      "cross_corpus_overlap": [],
+      "pass": true
+    },
+    {
+      "check": "staged_provenance_completeness",
+      "required_fields": [
+        "chunk_id",
+        "parent_source_id",
+        "text",
+        "requested_url",
+        "source_title"
+      ],
+      "missing_count": 0,
+      "missing": [],
+      "pass": true
+    },
+    {
+      "check": "manifest_content_hashes",
+      "active_manifest_sha256": "b0fc6cb86192dd53957e873c347359bcdc6630882e3f642bc520544e57a5a803",
+      "staged_manifest_sha256": "814bc4d9eaee9f1013bc198759d52c55ea35d6e2d87ae43bc6e0efc16586fbf9",
+      "active_path": "D:\\my-ai-project\\Dr. Md. Momenul Islam\\research\\gate_5_9_optimization\\chunks\\hybrid_600\\provenance_manifest.json",
+      "staged_path": "D:\\my-ai-project\\Dr. Md. Momenul Islam\\research\\gate_5_27_ingestion\\provenance_manifest.json",
+      "pass": true
+    },
+    {
+      "check": "projected_merged_corpus",
+      "projected_chunks": 119,
+      "projected_sources": [
+        "DOC-NHS-004",
+        "DOC-NHS-005",
+        "DOC-NHS-006",
+        "DOC-NHS-007",
+        "DOC-NHS-008",
+        "DOC-NHS-009",
+        "DOC-NHS-010",
+        "DOC-NHS-011",
+        "DOC-NHS-012",
+        "DOC-NHS-013",
+        "DOC-NHS-014",
+        "DOC-NHS-015",
+        "DOC-NHS-016",
+        "DOC-NHS-017"
+      ],
+      "projected_source_count": 14,
+      "target_chunks": 119,
+      "target_match": true,
+      "pass": true
+    },
+    {
+      "check": "active_manifest_backup",
+      "backup_path": "D:\\my-ai-project\\Dr. Md. Momenul Islam\\research\\phase_6C\\backups\\pre_promotion_active_manifest.json",
+      "backup_sha256": "b0fc6cb86192dd53957e873c347359bcdc6630882e3f642bc520544e57a5a803",
+      "matches_original": true,
+      "pass": true
+    }
+  ],
+  "overall": "PREFLIGHT_PASSED"
+}

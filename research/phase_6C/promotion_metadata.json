@@ -1,0 +1,50 @@
+{
+  "promotion_id": "PHASE_6C_PROMOTION_001",
+  "timestamp": "2026-08-29T02:28:23.993781+00:00",
+  "active_manifest_path": "D:\\my-ai-project\\Dr. Md. Momenul Islam\\research\\gate_5_9_optimization\\chunks\\hybrid_600\\provenance_manifest.json",
+  "staged_manifest_path": "D:\\my-ai-project\\Dr. Md. Momenul Islam\\research\\gate_5_27_ingestion\\provenance_manifest.json",
+  "promoted_manifest_path": "D:\\my-ai-project\\Dr. Md. Momenul Islam\\research\\phase_6C\\promoted_corpus_manifest.json",
+  "promoted_manifest_sha256": "44d0602f730d6460e6fefa431bd5c09005b48ce92b47d02832532e5868d4aa58",
+  "pre_promotion_active_chunks": 68,
+  "promoted_staged_chunks": 51,
+  "post_promotion_total_chunks": 119,
+  "pre_promotion_sources": [
+    "DOC-NHS-004",
+    "DOC-NHS-005",
+    "DOC-NHS-006",
+    "DOC-NHS-007",
+    "DOC-NHS-008",
+    "DOC-NHS-009",
+    "DOC-NHS-010",
+    "DOC-NHS-011"
+  ],
+  "promoted_sources": [
+    "DOC-NHS-012",
+    "DOC-NHS-013",
+    "DOC-NHS-014",
+    "DOC-NHS-015",
+    "DOC-NHS-016",
+    "DOC-NHS-017"
+  ],
+  "post_promotion_sources": [
+    "DOC-NHS-004",
+    "DOC-NHS-005",
+    "DOC-NHS-006",
+    "DOC-NHS-007",
+    "DOC-NHS-008",
+    "DOC-NHS-009",
+    "DOC-NHS-010",
+    "DOC-NHS-011",
+    "DOC-NHS-012",
+    "DOC-NHS-013",
+    "DOC-NHS-014",
+    "DOC-NHS-015",
+    "DOC-NHS-016",
+    "DOC-NHS-017"
+  ],
+  "merge_order": "active_sorted_by_chunk_id + staged_sorted_by_chunk_id",
+  "reversible": true,
+  "rollback_backup": "D:\\my-ai-project\\Dr. Md. Momenul Islam\\research\\phase_6C\\backups\\pre_promotion_active_manifest.json",
+  "gate_5_29_validation": "PASSED",
+  "corpus_lifecycle_stage": "APPROVED_FOR_ACTIVE_CORPUS"
+}

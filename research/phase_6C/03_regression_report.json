@@ -1,0 +1,84 @@
+{
+  "phase": "6C",
+  "step": "03_regression_validation",
+  "timestamp": "2026-08-29T02:32:23.255786+00:00",
+  "checks": [
+    {
+      "check": "promoted_manifest_loadable",
+      "chunks": 119,
+      "pass": true
+    },
+    {
+      "check": "chunk_count_119",
+      "pass": true
+    },
+    {
+      "check": "source_count_14",
+      "sources": [
+        "DOC-NHS-004",
+        "DOC-NHS-005",
+        "DOC-NHS-006",
+        "DOC-NHS-007",
+        "DOC-NHS-008",
+        "DOC-NHS-009",
+        "DOC-NHS-010",
+        "DOC-NHS-011",
+        "DOC-NHS-012",
+        "DOC-NHS-013",
+        "DOC-NHS-014",
+        "DOC-NHS-015",
+        "DOC-NHS-016",
+        "DOC-NHS-017"
+      ],
+      "pass": true
+    },
+    {
+      "check": "original_active_preservation",
+      "total": 68,
+      "missing": [],
+      "modified": [],
+      "pass": true
+    },
+    {
+      "check": "staged_chunk_inclusion",
+      "total": 51,
+      "missing": [],
+      "modified": [],
+      "pass": true
+    },
+    {
+      "check": "backup_integrity",
+      "backup_sha256": "b0fc6cb86192dd53957e873c347359bcdc6630882e3f642bc520544e57a5a803",
+      "original_sha256": "b0fc6cb86192dd53957e873c347359bcdc6630882e3f642bc520544e57a5a803",
+      "pass": true
+    },
+    {
+      "check": "config_verification",
+      "promoted_path": true,
+      "corpus_name": true,
+      "staged_empty": true,
+      "version": true,
+      "strategy_hash": true,
+      "pass": true
+    },
+    {
+      "check": "no_duplicate_chunk_ids",
+      "pass": true
+    },
+    {
+      "check": "provenance_completeness",
+      "missing_fields": 0,
+      "pass": true
+    },
+    {
+      "check": "generation_disabled",
+      "pass": true
+    },
+    {
+      "check": "per_source_chunk_counts",
+      "pass": true
+    }
+  ],
+  "overall": "REGRESSION_VALIDATED",
+  "promoted_manifest_sha256": "44d0602f730d6460e6fefa431bd5c09005b48ce92b47d02832532e5868d4aa58"
+}

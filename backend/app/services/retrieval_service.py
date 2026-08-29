@@ -112,7 +112,7 @@ def classify_retrieval_outcome(query: str, evidence: List[RetrievedEvidenceChunk
     elif top_score >= 0.10:
         state = RetrievalOutcomeState.UNSUPPORTED_BY_ACTIVE_CORPUS
         conf = "VERY_LOW"
-        reason = "This clinical question appears outside the 8 conditions covered in the active knowledge base."
+        reason = "This clinical question appears outside the 14 conditions covered in the active knowledge base."
     else:
         state = RetrievalOutcomeState.NO_RELEVANT_EVIDENCE
         conf = "NONE"
@@ -161,7 +161,8 @@ class FrozenDualAnchorRetrievalService(BaseRetrievalService):
             self.chunks = json.load(f)
             
         self.chunks_by_id = {c["chunk_id"]: c for c in self.chunks}
-        print(f"[RetrievalService] Loaded {len(self.chunks)} corpus chunks across 8 NHS documents.")
+        source_count = len(set(c["parent_source_id"] for c in self.chunks))
+        print(f"[RetrievalService] Loaded {len(self.chunks)} corpus chunks across {source_count} NHS documents.")
         
         # 2. Load Neural Models on CPU
         print(f"[RetrievalService] Loading dense model: {settings.DENSE_MODEL_NAME}...")

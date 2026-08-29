@@ -8,18 +8,24 @@ from pydantic import BaseModel
 class AppSettings(BaseModel):
     APP_NAME: str = "Dr. Md. Momenul Islam - Clinical Health Intelligence"
     API_V1_PREFIX: str = "/api/v1"
-    PROJECT_VERSION: str = "0.6.0-prototype"
+    PROJECT_VERSION: str = "0.7.0-prototype"
     ENVIRONMENT: str = "research_development"
     
-    # Corpus Lifecycle Configuration
-    ACTIVE_CORPUS_NAME: str = "BASELINE_NHS_8_CONDITIONS"
+    # Corpus Lifecycle Configuration — Phase 6C Promoted
+    ACTIVE_CORPUS_NAME: str = "NHS_14_CONDITIONS"
     ACTIVE_CORPUS_MANIFEST_PATH: str = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), "..", "..", "..", "research", "gate_5_9_optimization", "chunks", "hybrid_600", "provenance_manifest.json")
+        os.path.join(os.path.dirname(__file__), "..", "..", "..", "research", "phase_6C", "promoted_corpus_manifest.json")
     )
     # Legacy alias
     CORPUS_MANIFEST_PATH: str = ACTIVE_CORPUS_MANIFEST_PATH
     
-    STAGED_RESEARCH_CORPUS_NAME: str = "EXPANDED_NHS_6_CONDITIONS"
+    # Pre-promotion backup for rollback
+    PRE_PROMOTION_BACKUP_PATH: str = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "..", "..", "..", "research", "phase_6C", "backups", "pre_promotion_active_manifest.json")
+    )
+    
+    # Staged corpus (now empty — all promoted)
+    STAGED_RESEARCH_CORPUS_NAME: str = "STAGED_EMPTY"
     STAGED_RESEARCH_MANIFEST_PATH: str = os.path.abspath(
         os.path.join(os.path.dirname(__file__), "..", "..", "..", "research", "gate_5_27_ingestion", "provenance_manifest.json")
     )
