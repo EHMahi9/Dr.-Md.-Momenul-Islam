@@ -5,6 +5,7 @@ Uses FastAPI dependency overrides for fast, deterministic unit test execution.
 
 import os
 import sys
+import json
 import pytest
 from typing import List, Tuple
 
@@ -517,4 +518,52 @@ def test_chat_endpoint_includes_generation_result():
     assert gen_res["confidence_state"] == "SUPPORTED_RETRIEVAL"
     assert gen_res["safety_state"] == "SAFE_INFORMATIONAL"
     assert gen_res["provider_name"] == "disabled"
+
+# ==============================================================================
+# Phase 6E: Real LLM Integration & Provider Offline Unit Tests
+# ==============================================================================
+
+from app.services.llm_provider import OpenAICompatibleProvider
+
+def test_openai_compatible_provider_missing_key_behavior(monkeypatch):
+    """Verify that OpenAICompatibleProvider safely returns missing_api_key error when key is unset."""
+    monkeypatch.delenv("LLM_API_KEY", raising=False)
+    monkeypatch.delenv("LIBERTAI_API_KEY", raising=False)
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+
+    provider = OpenAICompatibleProvider(api_key_env_var="NONEXISTENT_TEST_KEY_ENV_VAR")
+    assert provider.is_available() is False
+    assert provider.get_provider_name() == "openai_compatible"
+
+    req = LLMRequest(
+        prompt=PromptBuilder().build_prompt("test query", []),
+        model_name="test-model"
+    )
+    resp = provider.complete(req)
+    assert resp.finish_reason == "missing_api_key"
+    assert "missing" in resp.error.lower()
+    assert resp.raw_text == ""
+
+def test_create_llm_provider_factory_variants():
+    """Verify factory returns appropriate provider types."""
+    assert isinstance(create_llm_provider("disabled"), DisabledLLMProvider)
+    assert isinstance(create_llm_provider("mock"), MockLLMProvider)
+    assert isinstance(create_llm_provider("openai_compatible"), OpenAICompatibleProvider)
+    assert isinstance(create_llm_provider("libertai"), OpenAICompatibleProvider)
+    assert isinstance(create_llm_provider("real"), OpenAICompatibleProvider)
+
+def test_smoke_results_artifact_integrity():
+    """Verify that Phase 6E smoke test results file exists and has 100% validation rate."""
+    artifact_path = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), "..", "..", "research", "phase_6E_real_llm_integration", "outputs", "phase_6E_smoke_test_results.json")
+    )
+    assert os.path.exists(artifact_path)
+    with open(artifact_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    assert data["phase"] == "6E"
+    assert data["total_smoke_tests"] == 8
+    assert data["valid_generations"] == 8
+    assert data["directly_supported_claims"] == 8
+
 

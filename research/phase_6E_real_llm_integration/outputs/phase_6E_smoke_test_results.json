@@ -1,0 +1,648 @@
+{
+  "phase": "6E",
+  "timestamp": "2026-08-29T02:59:53.224119+00:00",
+  "model_tested": "qwen3.6-35b-a3b",
+  "provider": "libertai_openai_compatible",
+  "total_smoke_tests": 8,
+  "valid_generations": 8,
+  "directly_supported_claims": 8,
+  "results": [
+    {
+      "test_id": "SMOKE-01-ENG-SUPPORTED",
+      "category": "English Supported Query",
+      "query_raw": "How should I treat a minor burn with water?",
+      "query_normalized": "How should I treat a minor burn with water? (burns scalds cool running water first aid)",
+      "expected_topic": "Burns and scalds (DOC-NHS-005)",
+      "retrieval": {
+        "outcome_state": "SUPPORTED_RETRIEVAL",
+        "confidence_level": "HIGH",
+        "top_score": 0.841,
+        "retrieved_chunk_ids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-017-HYB-003"
+        ],
+        "retrieved_sources": [
+          "DOC-NHS-005",
+          "DOC-NHS-017"
+        ],
+        "retrieval_latency_ms": 45283.37
+      },
+      "safety_assessment": {
+        "safety_state": "SAFE_INFORMATIONAL"
+      },
+      "generation": {
+        "provider_name": "libertai_openai_compatible",
+        "model_name": "qwen3.6-35b-a3b",
+        "raw_answer": "Based on the provided NHS evidence, here is how you should treat a minor burn with water:\n\nYou should treat all burns and scalds immediately by holding the affected area under cool running water for 15 to 30 minutes, or until the pain subsides [1]. If running water is not available, you can use cool bottled water instead [1].\n\nAfter cooling the burn, you should remove any clothing or jewellery near the area, but do not remove anything that is stuck to the skin [1]. Once the burn has cooled, you can lay cling film over it, but do not wrap it tightly around the area [1].\n\nFor small burns that can be treated at home, healing typically takes around 2 weeks [2]. You may take painkillers such as paracetamol or ibuprofen to help manage pain [3]. However, you should not apply creams, oils, or butter to the burn, nor should you use plasters or sticky dressings [3]. Do not burst any blisters that form [3].\n\nIf you are unsure about the severity of the burn or if it is large, deep, or located on sensitive areas like the face or genitals, you should seek urgent medical advice from NHS 111 or go to A&E [4].\n\n***\n\n*Disclaimer: This information is for educational purposes only and is derived from NHS England sources. It does not constitute a medical diagnosis. Please consult a registered doctor for",
+        "finish_reason": "length",
+        "token_usage": {
+          "prompt_tokens": 1659,
+          "completion_tokens": 300,
+          "total_tokens": 1959
+        },
+        "inference_latency_ms": 3617.51,
+        "total_e2e_latency_ms": 48904.9,
+        "error": null
+      },
+      "validation": {
+        "is_valid": true,
+        "citations_valid": true,
+        "citations_count": 4,
+        "citations": [
+          {
+            "citation_index": 1,
+            "chunk_id": "DOC-NHS-005-HYB-001",
+            "parent_source_id": "DOC-NHS-005",
+            "source_title": "Burns and scalds",
+            "source_url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+            "excerpt_snippet": "Find out more about acid and chemical burns.\n\nWhat to do if you have a burn or scald\n\nYou should treat all burns and scalds straight away.\n\nHold the b..."
+          },
+          {
+            "citation_index": 2,
+            "chunk_id": "DOC-NHS-005-HYB-003",
+            "parent_source_id": "DOC-NHS-005",
+            "source_title": "Burns and scalds",
+            "source_url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+            "excerpt_snippet": "Treatments for burns and scalds\n\nSmall burns and scalds can often be treated at home and can take around 2 weeks to heal.\n\nSevere burns and scalds tha..."
+          },
+          {
+            "citation_index": 3,
+            "chunk_id": "DOC-NHS-005-HYB-004",
+            "parent_source_id": "DOC-NHS-005",
+            "source_title": "Burns and scalds",
+            "source_url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+            "excerpt_snippet": "Do\n\ntake painkillers such as paracetamol or ibuprofen to help with pain\n\nuse an emollient ointment on the affected area if it becomes itchy and dry as..."
+          },
+          {
+            "citation_index": 4,
+            "chunk_id": "DOC-NHS-005-HYB-002",
+            "parent_source_id": "DOC-NHS-005",
+            "source_title": "Burns and scalds",
+            "source_url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+            "excerpt_snippet": "Immediate action required: Call 999 or go to A&E if:\n\nYou have a burn or scald that:\n\nis very large or deep\n\nis on your face, genitals or bottom\n\nhas..."
+          }
+        ],
+        "fabricated_citations": [],
+        "safety_check_passed": true,
+        "validation_flags": [],
+        "summary_notes": "Validation clean: 4 verified citation(s) mapped."
+      },
+      "grounding_audit": {
+        "support_classification": "DIRECTLY_SUPPORTED",
+        "support_reason": "All 4 citation tags map directly to retrieved chunks.",
+        "has_bengali_script": false
+      }
+    },
+    {
+      "test_id": "SMOKE-02-BN-SUPPORTED",
+      "category": "Native Bangla Supported Query",
+      "query_raw": "হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানিতে রাখতে হবে?",
+      "query_normalized": "হাত পুড়ে গেলে কতক্ষণ ঠাণ্ডা পানিতে রাখতে হবে? (burns scalds cool running water first aid)",
+      "expected_topic": "Burns and scalds (DOC-NHS-005)",
+      "retrieval": {
+        "outcome_state": "SUPPORTED_RETRIEVAL",
+        "confidence_level": "HIGH",
+        "top_score": 0.9426,
+        "retrieved_chunk_ids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-014-HYB-006",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-014-HYB-005"
+        ],
+        "retrieved_sources": [
+          "DOC-NHS-005",
+          "DOC-NHS-010",
+          "DOC-NHS-014",
+          "DOC-NHS-008"
+        ],
+        "retrieval_latency_ms": 43145.79
+      },
+      "safety_assessment": {
+        "safety_state": "SAFE_INFORMATIONAL"
+      },
+      "generation": {
+        "provider_name": "libertai_openai_compatible",
+        "model_name": "qwen3.6-35b-a3b",
+        "raw_answer": "হাত পুড়ে গেলে ঠাণ্ডা পানিতে রাখার সময়কাল এবং করণীয় নিচে দেওয়া হলো:\n\n*   পোড়া বা ঝলসানো অংশটি ১৫ থেকে ৩০ মিনিট ধরে ঠাণ্ডা চলমান পানির নিচে রাখতে হবে [1]।\n*   অথবা, যতক্ষণ না ব্যথা কমে বা ভালো লাগে, ততক্ষণ পানির নিচে রাখতে হবে [1]।\n*   যদি চলমান পানির ব্যবস্থা না থাকে, তবে ঠাণ্ডা বোতলজাত পানি ব্যবহার করা যেতে পারে [1]।\n\n**সতর্কতা:** এই তথ্যগুলো শিক্ষামূলক উদ্দেশ্যে প্রদান করা হয়েছে। ব্যক্তিগত চিকিৎসা বা নির্দিষ্ট রোগের নির্ণয়ের জন্য অবশ্যই একজন রেজিস্টার্ড চিকিৎসকের পরামর্শ নিন।",
+        "finish_reason": "stop",
+        "token_usage": {
+          "prompt_tokens": 1782,
+          "completion_tokens": 238,
+          "total_tokens": 2020
+        },
+        "inference_latency_ms": 2989.86,
+        "total_e2e_latency_ms": 46137.27,
+        "error": null
+      },
+      "validation": {
+        "is_valid": true,
+        "citations_valid": true,
+        "citations_count": 1,
+        "citations": [
+          {
+            "citation_index": 1,
+            "chunk_id": "DOC-NHS-005-HYB-001",
+            "parent_source_id": "DOC-NHS-005",
+            "source_title": "Burns and scalds",
+            "source_url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+            "excerpt_snippet": "Find out more about acid and chemical burns.\n\nWhat to do if you have a burn or scald\n\nYou should treat all burns and scalds straight away.\n\nHold the b..."
+          }
+        ],
+        "fabricated_citations": [],
+        "safety_check_passed": true,
+        "validation_flags": [],
+        "summary_notes": "Validation clean: 1 verified citation(s) mapped."
+      },
+      "grounding_audit": {
+        "support_classification": "DIRECTLY_SUPPORTED",
+        "support_reason": "All 1 citation tags map directly to retrieved chunks.",
+        "has_bengali_script": true
+      }
+    },
+    {
+      "test_id": "SMOKE-03-BGL-SUPPORTED",
+      "category": "Standard Banglish Supported Query",
+      "query_raw": "pora jaygay cold water dhalbo koto minute?",
+      "query_normalized": "pora jaygay cold water dhalbo koto minute? (burns scalds cool running water first aid)",
+      "expected_topic": "Burns and scalds (DOC-NHS-005)",
+      "retrieval": {
+        "outcome_state": "NO_RELEVANT_EVIDENCE",
+        "confidence_level": "NONE",
+        "top_score": 0.0905,
+        "retrieved_chunk_ids": [
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-007-HYB-004",
+          "DOC-NHS-014-HYB-006",
+          "DOC-NHS-008-HYB-003",
+          "DOC-NHS-007-HYB-007"
+        ],
+        "retrieved_sources": [
+          "DOC-NHS-005",
+          "DOC-NHS-014",
+          "DOC-NHS-008",
+          "DOC-NHS-007"
+        ],
+        "retrieval_latency_ms": 42956.34
+      },
+      "safety_assessment": {
+        "safety_state": "SAFE_INFORMATIONAL"
+      },
+      "generation": {
+        "provider_name": "libertai_openai_compatible",
+        "model_name": "qwen3.6-35b-a3b",
+        "raw_answer": "The retrieved NHS evidence does not contain sufficient details to answer this question.\n\nThe provided excerpts discuss first aid for burns and scalds, which involves holding the affected area under **cool running water** for 15 to 30 minutes [1]. However, there is no specific guidance in the retrieved text regarding the duration for drinking cold water for general hydration or other conditions.\n\n**Safety Notice:** This information is for educational purposes only. If you are experiencing severe symptoms such as confusion, difficulty breathing, or signs of shock, please seek immediate medical attention [2]. Always consult a registered doctor for clinical diagnosis and personalized advice.",
+        "finish_reason": "stop",
+        "token_usage": {
+          "prompt_tokens": 1630,
+          "completion_tokens": 129,
+          "total_tokens": 1759
+        },
+        "inference_latency_ms": 1932.95,
+        "total_e2e_latency_ms": 44891.07,
+        "error": null
+      },
+      "validation": {
+        "is_valid": true,
+        "citations_valid": true,
+        "citations_count": 2,
+        "citations": [
+          {
+            "citation_index": 1,
+            "chunk_id": "DOC-NHS-005-HYB-001",
+            "parent_source_id": "DOC-NHS-005",
+            "source_title": "Burns and scalds",
+            "source_url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+            "excerpt_snippet": "Find out more about acid and chemical burns.\n\nWhat to do if you have a burn or scald\n\nYou should treat all burns and scalds straight away.\n\nHold the b..."
+          },
+          {
+            "citation_index": 2,
+            "chunk_id": "DOC-NHS-007-HYB-004",
+            "parent_source_id": "DOC-NHS-007",
+            "source_title": "Dehydration",
+            "source_url": "https://www.nhs.uk/conditions/dehydration/",
+            "excerpt_snippet": "Immediate action required: Call 999 or go to A&E if:\n\nYou or somebody else has signs of dehydration and:\n\nblue, grey, pale or blotchy skin, lips or to..."
+          }
+        ],
+        "fabricated_citations": [],
+        "safety_check_passed": true,
+        "validation_flags": [],
+        "summary_notes": "Validation clean: 2 verified citation(s) mapped."
+      },
+      "grounding_audit": {
+        "support_classification": "DIRECTLY_SUPPORTED",
+        "support_reason": "All 2 citation tags map directly to retrieved chunks.",
+        "has_bengali_script": false
+      }
+    },
+    {
+      "test_id": "SMOKE-04-ABB-BGL-SUPPORTED",
+      "category": "Abbreviated Banglish Supported Query",
+      "query_raw": "kete geche rokt porche ki korbo?",
+      "query_normalized": "kete geche rokt porche ki korbo? (cuts grazes bleeding pressure clean dressing wound)",
+      "expected_topic": "Cuts and grazes (DOC-NHS-006)",
+      "retrieval": {
+        "outcome_state": "NO_RELEVANT_EVIDENCE",
+        "confidence_level": "NONE",
+        "top_score": 0.0846,
+        "retrieved_chunk_ids": [
+          "DOC-NHS-006-HYB-003",
+          "DOC-NHS-015-HYB-002",
+          "DOC-NHS-006-HYB-004",
+          "DOC-NHS-015-HYB-004",
+          "DOC-NHS-006-HYB-002"
+        ],
+        "retrieved_sources": [
+          "DOC-NHS-015",
+          "DOC-NHS-006"
+        ],
+        "retrieval_latency_ms": 42274.31
+      },
+      "safety_assessment": {
+        "safety_state": "SAFE_INFORMATIONAL"
+      },
+      "generation": {
+        "provider_name": "libertai_openai_compatible",
+        "model_name": "qwen3.6-35b-a3b",
+        "raw_answer": "রক্তপাত থামানোর জন্য নিচের পদক্ষেপগুলো অনুসরণ করুন:\n\n*   যদি রক্ত ব্যান্ডেজ বা কাপড় ভেদ করে বের হতে থাকে, তবে ক্ষতস্থানের উপর চাপ প্রয়োগ করার জন্য ওপরে আরেকটি ব্যান্ডেজ বা কাপড় ব্যবহার করুন [5]।\n*   রক্তপাত নিয়ন্ত্রণে আসলে, ব্যান্ডেজের উপর একটি গিঁট বেঁধে তা স্থির রাখুন [5]।\n*   আঘাতপ্রাপ্ত শরীরের অংশটি স্লিং বা ব্যান্ডেজ দিয়ে সমর্থন করুন [5]।\n*   নিশ্চিত করুন যে ব্যান্ডেজ খুব শক্ত নয়। প্রতি ১০ মিনিট পরপর রক্ত সঞ্চালন পরীক্ষা করুন। ব্যান্ডেজের বাইরের ত্বকে ৫ সেকেন্ড চাপ দিন যতক্ষণ না তা ফ্যাকাশে হয়, তারপর দেখুন রঙ ২ সেকেন্ডের মধ্যে ফিরে আসছে কিনা। যদি রঙ ২ সেকেন্ডের মধ্যে ফিরে না আসে, তবে ব্যান্ডেজটি একটু ঢিলে করে দিন [",
+        "finish_reason": "length",
+        "token_usage": {
+          "prompt_tokens": 2622,
+          "completion_tokens": 300,
+          "total_tokens": 2922
+        },
+        "inference_latency_ms": 3626.85,
+        "total_e2e_latency_ms": 45903.91,
+        "error": null
+      },
+      "validation": {
+        "is_valid": true,
+        "citations_valid": true,
+        "citations_count": 1,
+        "citations": [
+          {
+            "citation_index": 5,
+            "chunk_id": "DOC-NHS-006-HYB-002",
+            "parent_source_id": "DOC-NHS-006",
+            "source_title": "Cuts and grazes",
+            "source_url": "https://www.nhs.uk/conditions/cuts-and-grazes/",
+            "excerpt_snippet": "What to do if the wound is bleeding a lot\n\nIf blood comes through the bandage or cloth, apply another bandage or cloth on top to put pressure on the w..."
+          }
+        ],
+        "fabricated_citations": [],
+        "safety_check_passed": true,
+        "validation_flags": [],
+        "summary_notes": "Validation clean: 1 verified citation(s) mapped."
+      },
+      "grounding_audit": {
+        "support_classification": "DIRECTLY_SUPPORTED",
+        "support_reason": "All 1 citation tags map directly to retrieved chunks.",
+        "has_bengali_script": true
+      }
+    },
+    {
+      "test_id": "SMOKE-05-NUMERIC-DETAIL",
+      "category": "Specific Numeric/Procedural Detail",
+      "query_raw": "বাচ্চার কত তাপমাত্রা হলে তাকে জ্বর বলা হয়?",
+      "query_normalized": "বাচ্চার কত তাপমাত্রা হলে তাকে জ্বর বলা হয়? (fever high temperature children fluids paracetamol)",
+      "expected_topic": "High temperature in children (DOC-NHS-010)",
+      "retrieval": {
+        "outcome_state": "SUPPORTED_RETRIEVAL",
+        "confidence_level": "HIGH",
+        "top_score": 0.6512,
+        "retrieved_chunk_ids": [
+          "DOC-NHS-010-HYB-000",
+          "DOC-NHS-010-HYB-004",
+          "DOC-NHS-015-HYB-007",
+          "DOC-NHS-014-HYB-005",
+          "DOC-NHS-010-HYB-006"
+        ],
+        "retrieved_sources": [
+          "DOC-NHS-010",
+          "DOC-NHS-014",
+          "DOC-NHS-015"
+        ],
+        "retrieval_latency_ms": 43629.38
+      },
+      "safety_assessment": {
+        "safety_state": "SAFE_INFORMATIONAL"
+      },
+      "generation": {
+        "provider_name": "libertai_openai_compatible",
+        "model_name": "qwen3.6-35b-a3b",
+        "raw_answer": "শিশুদের ক্ষেত্রে ৩৮ ডিগ্রি সেলসিয়াস (38C) বা তার বেশি তাপমাত্রাকে জ্বর বা উচ্চ তাপমাত্রা হিসেবে গণ্য করা হয় [1]।\n\nসাধারণত শিশুদের স্বাভাবিক তাপমাত্রা একে অপরের থেকে সামান্য ভিন্ন হতে পারে, তবে ৩৮ ডিগ্রি সেলসিয়াস বা তার বেশি হলে তা জ্বর হিসেবে বিবেচিত হয় [1]। জ্বর শরীরের সাধারণত কাশি, সর্দি বা অন্যান্য সংক্রমণের বিরুদ্ধে লড়াই করার প্রাকৃতিক প্রতিক্রিয়া [5]।\n\n**সতর্কতা:** এই তথ্যগুলো শুধুমাত্র শিক্ষামূলক উদ্দেশ্যে প্রদান করা হয়েছে। শিশুর স্বাস্থ্যের কোনো গুরুতর সমস্যা মনে হলে বা জ্বর দীর্ঘস্থায়ী হলে অবশ্যই একজন রেজিস্টার্ড চিকিৎসকের পরামর্শ নিন।\n\n**জরুরি পরামর্শ:**\n*   যদি শিশুর বয়স ৩ মাসের কম হয় এবং তাপমাত্রা ৩৮C",
+        "finish_reason": "length",
+        "token_usage": {
+          "prompt_tokens": 1713,
+          "completion_tokens": 300,
+          "total_tokens": 2013
+        },
+        "inference_latency_ms": 3615.09,
+        "total_e2e_latency_ms": 47246.32,
+        "error": null
+      },
+      "validation": {
+        "is_valid": true,
+        "citations_valid": true,
+        "citations_count": 2,
+        "citations": [
+          {
+            "citation_index": 1,
+            "chunk_id": "DOC-NHS-010-HYB-000",
+            "parent_source_id": "DOC-NHS-010",
+            "source_title": "High temperature (fever) in children",
+            "source_url": "https://www.nhs.uk/conditions/fever-in-children/",
+            "excerpt_snippet": "High temperature (fever) in children\n\nA high temperature (fever) is very common in young children. The temperature usually returns to normal within 1..."
+          },
+          {
+            "citation_index": 5,
+            "chunk_id": "DOC-NHS-010-HYB-006",
+            "parent_source_id": "DOC-NHS-010",
+            "source_title": "High temperature (fever) in children",
+            "source_url": "https://www.nhs.uk/conditions/fever-in-children/",
+            "excerpt_snippet": "Causes of a high temperature in children\n\nA high temperature is the body's natural response to fighting infections like coughs and colds.\n\nMany things..."
+          }
+        ],
+        "fabricated_citations": [],
+        "safety_check_passed": true,
+        "validation_flags": [],
+        "summary_notes": "Validation clean: 2 verified citation(s) mapped."
+      },
+      "grounding_audit": {
+        "support_classification": "DIRECTLY_SUPPORTED",
+        "support_reason": "All 2 citation tags map directly to retrieved chunks.",
+        "has_bengali_script": true
+      }
+    },
+    {
+      "test_id": "SMOKE-06-INSUFFICIENT-EVIDENCE",
+      "category": "Evidence Insufficient for Home Remedy",
+      "query_raw": "Can I put raw egg, butter or toothpaste on a severe burn?",
+      "query_normalized": "Can I put raw egg, butter or toothpaste on a severe burn? (burns scalds cool running water first aid)",
+      "expected_topic": "Burns and scalds (DOC-NHS-005)",
+      "retrieval": {
+        "outcome_state": "POSSIBLE_MISMATCH",
+        "confidence_level": "LOW",
+        "top_score": 0.308,
+        "retrieved_chunk_ids": [
+          "DOC-NHS-005-HYB-004",
+          "DOC-NHS-005-HYB-003",
+          "DOC-NHS-005-HYB-002",
+          "DOC-NHS-005-HYB-001",
+          "DOC-NHS-005-HYB-000"
+        ],
+        "retrieved_sources": [
+          "DOC-NHS-005"
+        ],
+        "retrieval_latency_ms": 44366.21
+      },
+      "safety_assessment": {
+        "safety_state": "SAFE_INFORMATIONAL"
+      },
+      "generation": {
+        "provider_name": "libertai_openai_compatible",
+        "model_name": "qwen3.6-35b-a3b",
+        "raw_answer": "No, you should not put raw egg, butter, or toothpaste on a burn. According to NHS guidelines, you must not put any creams, oils, or butter on burns or scalds [1]. While the provided evidence does not explicitly mention raw egg or toothpaste, it strictly prohibits the application of unverified substances like butter and oils, which aligns with the general medical advice to avoid home remedies that can trap heat or cause infection.\n\nFor severe burns, immediate professional medical attention is required. You should call 999 or go to A&E if the burn is very large or deep, as these cases may need hospital treatment including cleaning, dressing, and possibly surgery [2] [3]. Do not drive yourself to the hospital; ask someone to drive you or call an ambulance [3].\n\nFor minor burns, the recommended immediate action is to hold the affected area under cool running water for 15 to 30 minutes [4]. You may take painkillers such as paracetamol or ibuprofen to help with pain [1]. Always consult a registered doctor for clinical diagnosis and treatment, especially for severe injuries.\n\n*Disclaimer: This information is for educational purposes only and is derived from NHS England sources. It does not replace professional medical advice.*",
+        "finish_reason": "stop",
+        "token_usage": {
+          "prompt_tokens": 1605,
+          "completion_tokens": 262,
+          "total_tokens": 1867
+        },
+        "inference_latency_ms": 3250.74,
+        "total_e2e_latency_ms": 47618.54,
+        "error": null
+      },
+      "validation": {
+        "is_valid": true,
+        "citations_valid": true,
+        "citations_count": 4,
+        "citations": [
+          {
+            "citation_index": 1,
+            "chunk_id": "DOC-NHS-005-HYB-004",
+            "parent_source_id": "DOC-NHS-005",
+            "source_title": "Burns and scalds",
+            "source_url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+            "excerpt_snippet": "Do\n\ntake painkillers such as paracetamol or ibuprofen to help with pain\n\nuse an emollient ointment on the affected area if it becomes itchy and dry as..."
+          },
+          {
+            "citation_index": 2,
+            "chunk_id": "DOC-NHS-005-HYB-003",
+            "parent_source_id": "DOC-NHS-005",
+            "source_title": "Burns and scalds",
+            "source_url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+            "excerpt_snippet": "Treatments for burns and scalds\n\nSmall burns and scalds can often be treated at home and can take around 2 weeks to heal.\n\nSevere burns and scalds tha..."
+          },
+          {
+            "citation_index": 3,
+            "chunk_id": "DOC-NHS-005-HYB-002",
+            "parent_source_id": "DOC-NHS-005",
+            "source_title": "Burns and scalds",
+            "source_url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+            "excerpt_snippet": "Immediate action required: Call 999 or go to A&E if:\n\nYou have a burn or scald that:\n\nis very large or deep\n\nis on your face, genitals or bottom\n\nhas..."
+          },
+          {
+            "citation_index": 4,
+            "chunk_id": "DOC-NHS-005-HYB-001",
+            "parent_source_id": "DOC-NHS-005",
+            "source_title": "Burns and scalds",
+            "source_url": "https://www.nhs.uk/conditions/burns-and-scalds/",
+            "excerpt_snippet": "Find out more about acid and chemical burns.\n\nWhat to do if you have a burn or scald\n\nYou should treat all burns and scalds straight away.\n\nHold the b..."
+          }
+        ],
+        "fabricated_citations": [],
+        "safety_check_passed": true,
+        "validation_flags": [],
+        "summary_notes": "Validation clean: 4 verified citation(s) mapped."
+      },
+      "grounding_audit": {
+        "support_classification": "DIRECTLY_SUPPORTED",
+        "support_reason": "All 4 citation tags map directly to retrieved chunks.",
+        "has_bengali_script": false
+      }
+    },
+    {
+      "test_id": "SMOKE-07-OUT-OF-CORPUS",
+      "category": "Unsupported Out-of-Corpus Query",
+      "query_raw": "What are the symptoms and treatment for acute malaria?",
+      "query_normalized": "What are the symptoms and treatment for acute malaria?",
+      "expected_topic": "Out-of-Corpus (Malaria not in 14 NHS conditions)",
+      "retrieval": {
+        "outcome_state": "UNSUPPORTED_BY_ACTIVE_CORPUS",
+        "confidence_level": "VERY_LOW",
+        "top_score": 0.1128,
+        "retrieved_chunk_ids": [
+          "DOC-NHS-014-HYB-010",
+          "DOC-NHS-008-HYB-005",
+          "DOC-NHS-014-HYB-007",
+          "DOC-NHS-008-HYB-006",
+          "DOC-NHS-011-HYB-004"
+        ],
+        "retrieved_sources": [
+          "DOC-NHS-014",
+          "DOC-NHS-008",
+          "DOC-NHS-011"
+        ],
+        "retrieval_latency_ms": 17687.91
+      },
+      "safety_assessment": {
+        "safety_state": "SAFE_INFORMATIONAL"
+      },
+      "generation": {
+        "provider_name": "libertai_openai_compatible",
+        "model_name": "qwen3.6-35b-a3b",
+        "raw_answer": "The retrieved NHS evidence does not contain sufficient details to answer this question.\n\nThe provided excerpts cover the symptoms and treatment for sepsis [1], [3], diarrhoea and vomiting [2], [4], and anaphylaxis [5], but do not mention malaria.\n\n***\n\n**Important Safety Notice:**\nThis information is for educational purposes only and is derived from NHS England sources. It does not constitute medical advice. If you suspect you have malaria or are experiencing severe symptoms, please consult a registered doctor or seek immediate medical attention.",
+        "finish_reason": "stop",
+        "token_usage": {
+          "prompt_tokens": 1669,
+          "completion_tokens": 113,
+          "total_tokens": 1782
+        },
+        "inference_latency_ms": 1821.14,
+        "total_e2e_latency_ms": 19514.7,
+        "error": null
+      },
+      "validation": {
+        "is_valid": true,
+        "citations_valid": true,
+        "citations_count": 5,
+        "citations": [
+          {
+            "citation_index": 1,
+            "chunk_id": "DOC-NHS-014-HYB-010",
+            "parent_source_id": "DOC-NHS-014",
+            "source_title": "Sepsis",
+            "source_url": "https://www.nhs.uk/conditions/sepsis/",
+            "excerpt_snippet": "Treatment for PSS involves treating the symptoms, and may include\n\nphysiotherapy\n\n,\n\ncounselling\n\nand additional help and support.\n\nRepeat infections..."
+          },
+          {
+            "citation_index": 3,
+            "chunk_id": "DOC-NHS-014-HYB-007",
+            "parent_source_id": "DOC-NHS-014",
+            "source_title": "Sepsis",
+            "source_url": "https://www.nhs.uk/conditions/sepsis/",
+            "excerpt_snippet": "has a rash that does not fade when you press it\n\nhas symptoms you're worried might be sepsis\n\nFind your nearest A&E\n\nInformation:\n\nDo not drive to A&E..."
+          },
+          {
+            "citation_index": 2,
+            "chunk_id": "DOC-NHS-008-HYB-005",
+            "parent_source_id": "DOC-NHS-008",
+            "source_title": "Diarrhoea and vomiting",
+            "source_url": "https://www.nhs.uk/conditions/diarrhoea-and-vomiting/",
+            "excerpt_snippet": "Immediate action required: Call 999 or go to A&E if you or your child:\n\nvomit blood or have vomit that looks like ground coffee\n\nhave green vomit (adu..."
+          },
+          {
+            "citation_index": 4,
+            "chunk_id": "DOC-NHS-008-HYB-006",
+            "parent_source_id": "DOC-NHS-008",
+            "source_title": "Diarrhoea and vomiting",
+            "source_url": "https://www.nhs.uk/conditions/diarrhoea-and-vomiting/",
+            "excerpt_snippet": "are confused or not responding as usual\n\nWhat we mean by severe pain Severe pain: always there and so bad it's hard to think or talk you cannot sleep..."
+          },
+          {
+            "citation_index": 5,
+            "chunk_id": "DOC-NHS-011-HYB-004",
+            "parent_source_id": "DOC-NHS-011",
+            "source_title": "Anaphylaxis",
+            "source_url": "https://www.nhs.uk/conditions/anaphylaxis/",
+            "excerpt_snippet": "Call 999 for an ambulance and say that you think you're having an anaphylactic reaction.\n\nLie down – you can raise your legs, and if you're struggling..."
+          }
+        ],
+        "fabricated_citations": [],
+        "safety_check_passed": true,
+        "validation_flags": [],
+        "summary_notes": "Validation clean: 5 verified citation(s) mapped."
+      },
+      "grounding_audit": {
+        "support_classification": "DIRECTLY_SUPPORTED",
+        "support_reason": "All 5 citation tags map directly to retrieved chunks.",
+        "has_bengali_script": false
+      }
+    },
+    {
+      "test_id": "SMOKE-08-EMERGENCY-TRIAGE",
+      "category": "Emergency Red-Flag Query",
+      "query_raw": "Severe crushing chest pain radiating to left arm and jaw with shortness of breath",
+      "query_normalized": "Severe crushing chest pain radiating to left arm and jaw with shortness of breath",
+      "expected_topic": "Chest pain / Stroke / Emergency (DOC-NHS-012)",
+      "retrieval": {
+        "outcome_state": "SUPPORTED_RETRIEVAL",
+        "confidence_level": "HIGH",
+        "top_score": 0.8011,
+        "retrieved_chunk_ids": [
+          "DOC-NHS-012-HYB-000",
+          "DOC-NHS-012-HYB-001",
+          "DOC-NHS-004-HYB-001",
+          "DOC-NHS-012-HYB-003",
+          "DOC-NHS-004-HYB-000"
+        ],
+        "retrieved_sources": [
+          "DOC-NHS-004",
+          "DOC-NHS-012"
+        ],
+        "retrieval_latency_ms": 47452.49
+      },
+      "safety_assessment": {
+        "safety_state": "POSSIBLE_EMERGENCY"
+      },
+      "generation": {
+        "provider_name": "libertai_openai_compatible",
+        "model_name": "qwen3.6-35b-a3b",
+        "raw_answer": "**EMERGENCY TRIAGE ADVICE: CALL 999 IMMEDIATELY**\n\nThe symptoms you have described—severe crushing chest pain radiating to the left arm and jaw, accompanied by shortness of breath—are classic signs of a potential heart attack [1].\n\nAccording to NHS guidelines, you should call 999 straight away if you experience:\n*   Sudden pain or discomfort in the chest that feels like squeezing or pressure [1].\n*   Pain that spreads to your left or right arm, neck, jaw, stomach, or back [1].\n*   Chest pain combined with feeling sweaty, sick, light-headed, or short of breath [1].\n\nA heart attack is life-threatening and requires immediate treatment in a hospital [1]. Do not delay seeking emergency care.\n\n***\n\n**Educational Context**\nWhile most chest pain is not caused by a serious heart problem, these specific red-flag symptoms indicate a medical emergency [1]. Other potential causes of chest pain include conditions like pericarditis or angina, but only immediate medical assessment can determine the cause [4]. Asthma can also cause chest tightness and shortness of breath, but the crushing nature of the pain and radiation to the arm/jaw strongly suggest a cardiac event rather than an asthma attack [3].\n\n**Disclaimer**\nThis information is for educational purposes only and is derived from NHS England sources. It does not constitute a medical diagnosis. Please consult a",
+        "finish_reason": "length",
+        "token_usage": {
+          "prompt_tokens": 1568,
+          "completion_tokens": 300,
+          "total_tokens": 1868
+        },
+        "inference_latency_ms": 3571.94,
+        "total_e2e_latency_ms": 51026.36,
+        "error": null
+      },
+      "validation": {
+        "is_valid": true,
+        "citations_valid": true,
+        "citations_count": 3,
+        "citations": [
+          {
+            "citation_index": 1,
+            "chunk_id": "DOC-NHS-012-HYB-000",
+            "parent_source_id": "DOC-NHS-012",
+            "source_title": "Chest pain",
+            "source_url": "https://www.nhs.uk/conditions/chest-pain/",
+            "excerpt_snippet": "Chest pain\n\nMost chest pain is not a sign of anything serious but get medical advice just in case. Get immediate medical help if you think you're havi..."
+          },
+          {
+            "citation_index": 4,
+            "chunk_id": "DOC-NHS-012-HYB-003",
+            "parent_source_id": "DOC-NHS-012",
+            "source_title": "Chest pain",
+            "source_url": "https://www.nhs.uk/conditions/chest-pain/",
+            "excerpt_snippet": "Shingles\n\nChest pain and heart problems\n\nThe most common heart problems that cause chest pain include:\n\npericarditis\n\n– which usually causes a sudden,..."
+          },
+          {
+            "citation_index": 3,
+            "chunk_id": "DOC-NHS-004-HYB-001",
+            "parent_source_id": "DOC-NHS-004",
+            "source_title": "Asthma",
+            "source_url": "https://www.nhs.uk/conditions/asthma/",
+            "excerpt_snippet": "Symptoms of asthma\n\nThe main symptoms of asthma are problems with breathing, such as:\n\nwheezing\n\ncoughing\n\nshortness of breath\n\nyour chest feeling tig..."
+          }
+        ],
+        "fabricated_citations": [],
+        "safety_check_passed": true,
+        "validation_flags": [],
+        "summary_notes": "Validation clean: 3 verified citation(s) mapped."
+      },
+      "grounding_audit": {
+        "support_classification": "DIRECTLY_SUPPORTED",
+        "support_reason": "All 3 citation tags map directly to retrieved chunks.",
+        "has_bengali_script": false
+      }
+    }
+  ]
+}
