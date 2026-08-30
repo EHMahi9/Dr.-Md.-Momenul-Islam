@@ -1,0 +1,19 @@
+{
+  "phase": "6K",
+  "timestamp": "2026-08-29T13:49:49.095331+00:00",
+  "single_shot_enforced": true,
+  "execution_counts": {
+    "control_evaluations": 1,
+    "candidate_b_evaluations": 1,
+    "benchmark_cases_evaluated": 40
+  },
+  "zero_retries": true,
+  "zero_tuning": true,
+  "zero_modifications": true,
+  "hashes": {
+    "benchmark_sha256": "976D62DA7DB7872303E755910F286E6F895703012F7934E2809544BC1820E1A5",
+    "candidate_b_freeze_sha256": "92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A",
+    "corpus_manifest_sha256": "44D0602F730D6460E6FEFA431BD5C09005B48CE92B47D02832532E5868D4AA58",
+    "strategy_5_sha256": "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae"
+  }
+}

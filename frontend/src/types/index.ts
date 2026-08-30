@@ -78,9 +78,62 @@ export interface GenerationResult {
   validation_result?: PostValidationResult;
 }
 
+export type QueryIntentCategory =
+  | 'CLEARLY_ANSWERABLE'
+  | 'UNDERSPECIFIED_AMBIGUOUS'
+  | 'UNSUPPORTED_ACTIVE_CORPUS'
+  | 'POTENTIALLY_EMERGENCY';
+
+export type EvidenceSufficiencyState =
+  | 'SUFFICIENT'
+  | 'INSUFFICIENT'
+  | 'UNSUPPORTED'
+  | 'EMERGENCY';
+
+export type EvidencePresentationPolicy =
+  | 'SHOW_GROUNDING_CARDS'
+  | 'SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION'
+  | 'SHOW_EMERGENCY_OVERRIDE';
+
+export interface ClarificationQuestion {
+  field_to_clarify: string;
+  question_text_en: string;
+  question_text_bn: string;
+  options: string[];
+}
+
+export interface EmergencyAdvice {
+  is_emergency: boolean;
+  alert_title_en: string;
+  alert_title_bn: string;
+  action_advice_en: string;
+  action_advice_bn: string;
+  emergency_contact: string;
+}
+
+export interface QueryUnderstandingResult {
+  query_raw: string;
+  detected_language: 'en' | 'bn' | 'banglish';
+  resolved_response_language: 'en' | 'bn';
+  intent_category: QueryIntentCategory;
+  sufficiency_state: EvidenceSufficiencyState;
+  extracted_symptoms: string[];
+  extracted_body_location?: string;
+  extracted_duration?: string;
+  red_flags_detected: string[];
+  is_emergency: boolean;
+  emergency_advice?: EmergencyAdvice;
+  clarification_question?: ClarificationQuestion;
+  evidence_presentation_policy: EvidencePresentationPolicy;
+  explanation: string;
+}
+
 export interface RetrievalMetadata {
   strategy_name: string;
+  active_candidate?: string;
   candidate_hash: string;
+  candidate_b_hash?: string;
+  parent_strategy_hash?: string;
   active_corpus_name: string;
   active_chunks_count: number;
   dense_k: number;
@@ -97,6 +150,42 @@ export interface RetrievalResponse {
   evidence_count: number;
   evidence: RetrievedEvidenceChunk[];
   retrieval_metadata?: RetrievalMetadata;
+  query_understanding?: QueryUnderstandingResult;
+  evidence_presentation_policy?: EvidencePresentationPolicy;
+}
+
+export type ConversationAction = 'ANSWER' | 'CLARIFY' | 'ABSTAIN' | 'EMERGENCY';
+
+export type ClarificationState =
+  | 'NOT_NEEDED'
+  | 'IN_PROGRESS'
+  | 'RESOLVED'
+  | 'MAX_TURNS_EXCEEDED'
+  | 'UNSUPPORTED_TOPIC';
+
+export interface ConversationContextState {
+  session_id: string;
+  turn_count: number;
+  clarification_turn_count: number;
+  max_clarification_turns: number;
+  language_modality: 'en' | 'bn' | 'banglish';
+  response_language_preference: string;
+  symptom?: string;
+  body_location?: string;
+  specific_location?: string;
+  onset?: string;
+  duration?: string;
+  severity_stated?: string;
+  associated_symptoms: string[];
+  precipitating_event?: string;
+  user_age_group?: string;
+  red_flags: string[];
+  relevant_negatives: string[];
+  clarification_state: ClarificationState;
+  unanswered_fields: string[];
+  next_action: ConversationAction;
+  refined_retrieval_query?: string;
+  conversation_summary?: string;
 }
 
 export interface ChatResponse {
@@ -105,12 +194,20 @@ export interface ChatResponse {
   confidence_assessment: ConfidenceAssessment;
   generation_enabled: boolean;
   disclaimer: string;
+  session_id?: string;
   user_query: string;
+  preferred_language?: string;
+  response_language?: string;
+  next_action?: ConversationAction;
+  clarification_state?: ClarificationState;
+  context_state?: ConversationContextState;
   evidence_count: number;
   evidence: RetrievedEvidenceChunk[];
   synthetic_answer: string;
   retrieval_metadata?: RetrievalMetadata;
   generation_result?: GenerationResult;
+  query_understanding?: QueryUnderstandingResult;
+  evidence_presentation_policy?: EvidencePresentationPolicy;
 }
 
 export interface HealthResponse {
@@ -119,7 +216,10 @@ export interface HealthResponse {
   version: string;
   environment: string;
   retrieval_strategy: string;
+  active_candidate?: string;
   candidate_hash: string;
+  candidate_b_hash?: string;
+  parent_strategy_hash?: string;
   active_corpus_chunks: number;
   staged_research_chunks: number;
   generation_enabled: boolean;
@@ -141,6 +241,9 @@ export interface CorpusLifecycleResponse {
   validated_corpus: CorpusTierInfo;
   retrieval_candidate: {
     strategy_name: string;
+    active_candidate?: string;
+    candidate_b_freeze_sha256?: string;
+    parent_strategy_sha256?: string;
     frozen_candidate_sha256: string;
     dense_model: string;
     reranker_model: string;
@@ -156,8 +259,13 @@ export interface Message {
   timestamp: string;
   outcomeState?: RetrievalOutcomeState;
   confidenceAssessment?: ConfidenceAssessment;
+  nextAction?: ConversationAction;
+  clarificationState?: ClarificationState;
+  contextState?: ConversationContextState;
   evidence?: RetrievedEvidenceChunk[];
   generationEnabled?: boolean;
   retrievalMetadata?: RetrievalMetadata;
   generationResult?: GenerationResult;
+  queryUnderstanding?: QueryUnderstandingResult;
+  evidencePresentationPolicy?: EvidencePresentationPolicy;
 }

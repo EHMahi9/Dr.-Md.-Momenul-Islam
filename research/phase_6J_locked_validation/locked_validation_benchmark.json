@@ -1,0 +1,907 @@
+{
+  "benchmark_metadata": {
+    "name": "Phase 6J Locked Independent Multilingual Retrieval Benchmark",
+    "benchmark_id": "BENCHMARK_PHASE_6J_INDEPENDENT_MULTILINGUAL_V1",
+    "lock_status": "LOCKED_FOR_SINGLE_SHOT_VALIDATION",
+    "lock_timestamp": "2026-08-29T19:10:00Z",
+    "target_evaluation": "Single-shot holdout validation of Candidate B vs Strategy 5 Control",
+    "zero_leakage_verified": true,
+    "query_uniqueness_verified": true,
+    "provenance_verified": true
+  },
+  "corpus_identity": {
+    "name": "NHS_14_CONDITIONS",
+    "manifest_path": "research/phase_6C/promoted_corpus_manifest.json",
+    "manifest_sha256": "44D0602F730D6460E6FEFA431BD5C09005B48CE92B47D02832532E5868D4AA58",
+    "total_chunks": 119,
+    "total_sources": 14
+  },
+  "frozen_candidate_under_test": {
+    "name": "Candidate B (Context-Aware Compound Disambiguation)",
+    "freeze_configuration_path": "research/phase_6I_candidate_freeze/frozen_candidate_B_configuration.json",
+    "freeze_sha256": "92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A"
+  },
+  "composition": {
+    "total_cases": 40,
+    "in_corpus_cases": 36,
+    "out_of_corpus_cases": 4,
+    "modalities": {
+      "english_in_corpus": 8,
+      "native_bangla_in_corpus": 8,
+      "standard_banglish_in_corpus": 10,
+      "abbreviated_banglish_in_corpus": 10,
+      "out_of_corpus_safety": 4
+    }
+  },
+  "pre_registered_evaluation_protocol": {
+    "primary_metric": {
+      "name": "Final Chunk Recall@5 (In-Corpus N=36)",
+      "definition": "Fraction of the 36 in-corpus cases where at least one chunk from target_source_id is retrieved in the final Top-5"
+    },
+    "secondary_metrics": [
+      {
+        "name": "Final Chunk Recall@3",
+        "denominator": "N=36"
+      },
+      {
+        "name": "Final Chunk Recall@1 (Top-1 Accuracy)",
+        "denominator": "N=36"
+      },
+      {
+        "name": "Mean Reciprocal Rank (MRR@5)",
+        "denominator": "N=36"
+      },
+      {
+        "name": "Dense Recall@15",
+        "denominator": "N=36"
+      }
+    ],
+    "modality_breakdown_metrics": [
+      "Recall@5, Recall@3, Recall@1, MRR reported separately for English (N=8), Native Bangla (N=8), Standard Banglish (N=10), Abbreviated Banglish (N=10)"
+    ],
+    "safety_and_abstention_metrics": {
+      "ooc_false_positive_rate": "Fraction of 4 OOC cases returning HIGH confidence retrieval for unrelated condition (target = 0%)",
+      "cross_condition_contamination": "List of any cases where Top-1 belongs to an unrelated clinical condition"
+    },
+    "pre_registered_decision_rule": {
+      "step_1": "Compare Primary Recall@5 between Candidate B and Strategy 5 Control",
+      "step_2": "If Recall@5 is tied, compare Recall@3",
+      "step_3": "If Recall@3 is tied, compare Recall@1 (Top-1)",
+      "step_4": "If Recall@1 is tied, compare MRR@5",
+      "step_5": "Verify 0% regression on English (N=8) and Native Bangla (N=8) slices",
+      "step_6": "Verify OOC safety / false-positive rate is not degraded",
+      "rule_immutability": "This decision hierarchy is locked prior to execution and cannot be modified post-hoc."
+    }
+  },
+  "locked_cases": [
+    {
+      "case_id": "VAL-EN-001",
+      "modality": "English",
+      "query": "my child has a temperature of 39 what should I do",
+      "is_in_active_corpus": true,
+      "intended_condition": "Pediatric fever",
+      "target_source_id": "DOC-NHS-010",
+      "target_source_title": "High temperature (fever) in children",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-010-HYB-006"
+      ],
+      "clinical_provenance": "DOC-NHS-010 = High temperature (fever) in children",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-010 (High temperature (fever) in children) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-EN-002",
+      "modality": "English",
+      "query": "I have a stiff neck with a rash that does not fade when pressed with a glass",
+      "is_in_active_corpus": true,
+      "intended_condition": "Meningitis",
+      "target_source_id": "DOC-NHS-015",
+      "target_source_title": "Meningitis",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-015-HYB-000",
+        "DOC-NHS-015-HYB-001",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-003",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-015-HYB-005",
+        "DOC-NHS-015-HYB-006",
+        "DOC-NHS-015-HYB-007",
+        "DOC-NHS-015-HYB-008",
+        "DOC-NHS-015-HYB-009",
+        "DOC-NHS-015-HYB-010",
+        "DOC-NHS-015-HYB-011",
+        "DOC-NHS-015-HYB-012",
+        "DOC-NHS-015-HYB-013",
+        "DOC-NHS-015-HYB-014",
+        "DOC-NHS-015-HYB-015"
+      ],
+      "clinical_provenance": "DOC-NHS-015 = Meningitis",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-015 (Meningitis) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-EN-003",
+      "modality": "English",
+      "query": "how to use a spacer with my asthma inhaler during an attack",
+      "is_in_active_corpus": true,
+      "intended_condition": "Asthma",
+      "target_source_id": "DOC-NHS-004",
+      "target_source_title": "Asthma",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-005",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-004-HYB-007",
+        "DOC-NHS-004-HYB-008",
+        "DOC-NHS-004-HYB-009",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-014",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-016",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "clinical_provenance": "DOC-NHS-004 = Asthma",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-004 (Asthma) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-EN-004",
+      "modality": "English",
+      "query": "one side of my face is drooping and I cannot lift my arm",
+      "is_in_active_corpus": true,
+      "intended_condition": "Stroke",
+      "target_source_id": "DOC-NHS-013",
+      "target_source_title": "Symptoms of a stroke",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-013-HYB-000",
+        "DOC-NHS-013-HYB-001",
+        "DOC-NHS-013-HYB-002"
+      ],
+      "clinical_provenance": "DOC-NHS-013 = Symptoms of a stroke",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-013 (Symptoms of a stroke) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-EN-005",
+      "modality": "English",
+      "query": "my child is not producing tears and their fontanelle is sunken",
+      "is_in_active_corpus": true,
+      "intended_condition": "Dehydration",
+      "target_source_id": "DOC-NHS-007",
+      "target_source_title": "Dehydration",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-007-HYB-007"
+      ],
+      "clinical_provenance": "DOC-NHS-007 = Dehydration",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-007 (Dehydration) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-EN-006",
+      "modality": "English",
+      "query": "I have a rash and confusion after a urinary tract infection",
+      "is_in_active_corpus": true,
+      "intended_condition": "Sepsis",
+      "target_source_id": "DOC-NHS-014",
+      "target_source_title": "Sepsis",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-014-HYB-000",
+        "DOC-NHS-014-HYB-001",
+        "DOC-NHS-014-HYB-002",
+        "DOC-NHS-014-HYB-003",
+        "DOC-NHS-014-HYB-004",
+        "DOC-NHS-014-HYB-005",
+        "DOC-NHS-014-HYB-006",
+        "DOC-NHS-014-HYB-007",
+        "DOC-NHS-014-HYB-008",
+        "DOC-NHS-014-HYB-009",
+        "DOC-NHS-014-HYB-010",
+        "DOC-NHS-014-HYB-011",
+        "DOC-NHS-014-HYB-012",
+        "DOC-NHS-014-HYB-013",
+        "DOC-NHS-014-HYB-014"
+      ],
+      "clinical_provenance": "DOC-NHS-014 = Sepsis",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-014 (Sepsis) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-EN-007",
+      "modality": "English",
+      "query": "my hay fever is causing sneezing and itchy watery eyes",
+      "is_in_active_corpus": true,
+      "intended_condition": "Allergic rhinitis",
+      "target_source_id": "DOC-NHS-017",
+      "target_source_title": "Allergic rhinitis",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-017-HYB-000",
+        "DOC-NHS-017-HYB-001",
+        "DOC-NHS-017-HYB-002",
+        "DOC-NHS-017-HYB-003",
+        "DOC-NHS-017-HYB-004",
+        "DOC-NHS-017-HYB-005",
+        "DOC-NHS-017-HYB-006"
+      ],
+      "clinical_provenance": "DOC-NHS-017 = Allergic rhinitis",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-017 (Allergic rhinitis) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-EN-008",
+      "modality": "English",
+      "query": "sharp chest pain when breathing deeply that gets worse lying down",
+      "is_in_active_corpus": true,
+      "intended_condition": "Chest pain",
+      "target_source_id": "DOC-NHS-012",
+      "target_source_title": "Chest pain",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-012-HYB-000",
+        "DOC-NHS-012-HYB-001",
+        "DOC-NHS-012-HYB-002",
+        "DOC-NHS-012-HYB-003"
+      ],
+      "clinical_provenance": "DOC-NHS-012 = Chest pain",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-012 (Chest pain) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-BN-001",
+      "modality": "Native Bangla",
+      "query": "আমার বাচ্চার শরীরে লাল ফুসকুড়ি দেখা দিয়েছে এবং ঘাড় শক্ত হয়ে গেছে",
+      "is_in_active_corpus": true,
+      "intended_condition": "Meningitis",
+      "target_source_id": "DOC-NHS-015",
+      "target_source_title": "Meningitis",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-015-HYB-000",
+        "DOC-NHS-015-HYB-001",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-003",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-015-HYB-005",
+        "DOC-NHS-015-HYB-006",
+        "DOC-NHS-015-HYB-007",
+        "DOC-NHS-015-HYB-008",
+        "DOC-NHS-015-HYB-009",
+        "DOC-NHS-015-HYB-010",
+        "DOC-NHS-015-HYB-011",
+        "DOC-NHS-015-HYB-012",
+        "DOC-NHS-015-HYB-013",
+        "DOC-NHS-015-HYB-014",
+        "DOC-NHS-015-HYB-015"
+      ],
+      "clinical_provenance": "DOC-NHS-015 = Meningitis",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-015 (Meningitis) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-BN-002",
+      "modality": "Native Bangla",
+      "query": "বুকে চাপ ধরা ব্যথা হচ্ছে বাম হাতে ছড়িয়ে যাচ্ছে",
+      "is_in_active_corpus": true,
+      "intended_condition": "Chest pain",
+      "target_source_id": "DOC-NHS-012",
+      "target_source_title": "Chest pain",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-012-HYB-000",
+        "DOC-NHS-012-HYB-001",
+        "DOC-NHS-012-HYB-002",
+        "DOC-NHS-012-HYB-003"
+      ],
+      "clinical_provenance": "DOC-NHS-012 = Chest pain",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-012 (Chest pain) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-BN-003",
+      "modality": "Native Bangla",
+      "query": "সেপসিসের লক্ষণ কি কি জানতে চাই",
+      "is_in_active_corpus": true,
+      "intended_condition": "Sepsis",
+      "target_source_id": "DOC-NHS-014",
+      "target_source_title": "Sepsis",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-014-HYB-000",
+        "DOC-NHS-014-HYB-001",
+        "DOC-NHS-014-HYB-002",
+        "DOC-NHS-014-HYB-003",
+        "DOC-NHS-014-HYB-004",
+        "DOC-NHS-014-HYB-005",
+        "DOC-NHS-014-HYB-006",
+        "DOC-NHS-014-HYB-007",
+        "DOC-NHS-014-HYB-008",
+        "DOC-NHS-014-HYB-009",
+        "DOC-NHS-014-HYB-010",
+        "DOC-NHS-014-HYB-011",
+        "DOC-NHS-014-HYB-012",
+        "DOC-NHS-014-HYB-013",
+        "DOC-NHS-014-HYB-014"
+      ],
+      "clinical_provenance": "DOC-NHS-014 = Sepsis",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-014 (Sepsis) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-BN-004",
+      "modality": "Native Bangla",
+      "query": "হাঁপানি অ্যাটাকের সময় কি করবো ইনহেলার কিভাবে ব্যবহার করবো",
+      "is_in_active_corpus": true,
+      "intended_condition": "Asthma",
+      "target_source_id": "DOC-NHS-004",
+      "target_source_title": "Asthma",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-005",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-004-HYB-007",
+        "DOC-NHS-004-HYB-008",
+        "DOC-NHS-004-HYB-009",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-014",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-016",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "clinical_provenance": "DOC-NHS-004 = Asthma",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-004 (Asthma) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-BN-005",
+      "modality": "Native Bangla",
+      "query": "বাচ্চা বমি করছে আর পাতলা পায়খানা হচ্ছে কি করবো",
+      "is_in_active_corpus": true,
+      "intended_condition": "Diarrhoea and vomiting",
+      "target_source_id": "DOC-NHS-008",
+      "target_source_title": "Diarrhoea and vomiting",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-008-HYB-007"
+      ],
+      "clinical_provenance": "DOC-NHS-008 = Diarrhoea and vomiting",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-008 (Diarrhoea and vomiting) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-BN-006",
+      "modality": "Native Bangla",
+      "query": "নাক থেকে অনেকক্ষণ ধরে রক্ত পড়ছে বন্ধ হচ্ছে না",
+      "is_in_active_corpus": true,
+      "intended_condition": "Nosebleed",
+      "target_source_id": "DOC-NHS-016",
+      "target_source_title": "Nosebleed",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-016-HYB-000",
+        "DOC-NHS-016-HYB-001",
+        "DOC-NHS-016-HYB-002",
+        "DOC-NHS-016-HYB-003",
+        "DOC-NHS-016-HYB-004",
+        "DOC-NHS-016-HYB-005"
+      ],
+      "clinical_provenance": "DOC-NHS-016 = Nosebleed",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-016 (Nosebleed) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-BN-007",
+      "modality": "Native Bangla",
+      "query": "হাত কেটে রক্ত বন্ধ হচ্ছে না কি করবো",
+      "is_in_active_corpus": true,
+      "intended_condition": "Cuts and grazes",
+      "target_source_id": "DOC-NHS-006",
+      "target_source_title": "Cuts and grazes",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-006"
+      ],
+      "clinical_provenance": "DOC-NHS-006 = Cuts and grazes",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-006 (Cuts and grazes) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-BN-008",
+      "modality": "Native Bangla",
+      "query": "স্ট্রোকের জরুরি লক্ষণগুলো কি কি",
+      "is_in_active_corpus": true,
+      "intended_condition": "Stroke",
+      "target_source_id": "DOC-NHS-013",
+      "target_source_title": "Symptoms of a stroke",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-013-HYB-000",
+        "DOC-NHS-013-HYB-001",
+        "DOC-NHS-013-HYB-002"
+      ],
+      "clinical_provenance": "DOC-NHS-013 = Symptoms of a stroke",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-013 (Symptoms of a stroke) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-SB-001",
+      "modality": "Standard Banglish",
+      "query": "amar naak theke rokt pore ase bondho hocche na ki korbo",
+      "is_in_active_corpus": true,
+      "intended_condition": "Nosebleed",
+      "target_source_id": "DOC-NHS-016",
+      "target_source_title": "Nosebleed",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-016-HYB-000",
+        "DOC-NHS-016-HYB-001",
+        "DOC-NHS-016-HYB-002",
+        "DOC-NHS-016-HYB-003",
+        "DOC-NHS-016-HYB-004",
+        "DOC-NHS-016-HYB-005"
+      ],
+      "clinical_provenance": "DOC-NHS-016 = Nosebleed",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-016 (Nosebleed) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-SB-002",
+      "modality": "Standard Banglish",
+      "query": "choto bacchar 103 fever hoyeche paracetamol dewa jabe kina",
+      "is_in_active_corpus": true,
+      "intended_condition": "Pediatric fever",
+      "target_source_id": "DOC-NHS-010",
+      "target_source_title": "High temperature (fever) in children",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-010-HYB-006"
+      ],
+      "clinical_provenance": "DOC-NHS-010 = High temperature (fever) in children",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-010 (High temperature (fever) in children) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-SB-003",
+      "modality": "Standard Banglish",
+      "query": "rastaghoter gorom paani haate pore pure geche ki korte hobe",
+      "is_in_active_corpus": true,
+      "intended_condition": "Burns and scalds",
+      "target_source_id": "DOC-NHS-005",
+      "target_source_title": "Burns and scalds",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "clinical_provenance": "DOC-NHS-005 = Burns and scalds",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-005 (Burns and scalds) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-SB-004",
+      "modality": "Standard Banglish",
+      "query": "buk betha ar bomi bomi lagche oshudh ki khabo",
+      "is_in_active_corpus": true,
+      "intended_condition": "Chest pain",
+      "target_source_id": "DOC-NHS-012",
+      "target_source_title": "Chest pain",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-012-HYB-000",
+        "DOC-NHS-012-HYB-001",
+        "DOC-NHS-012-HYB-002",
+        "DOC-NHS-012-HYB-003"
+      ],
+      "clinical_provenance": "DOC-NHS-012 = Chest pain",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-012 (Chest pain) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-SB-005",
+      "modality": "Standard Banglish",
+      "query": "amar cheler gaye boro phoskuri hoyeche ar ghar diyaba thakchhe",
+      "is_in_active_corpus": true,
+      "intended_condition": "Meningitis",
+      "target_source_id": "DOC-NHS-015",
+      "target_source_title": "Meningitis",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-015-HYB-000",
+        "DOC-NHS-015-HYB-001",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-003",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-015-HYB-005",
+        "DOC-NHS-015-HYB-006",
+        "DOC-NHS-015-HYB-007",
+        "DOC-NHS-015-HYB-008",
+        "DOC-NHS-015-HYB-009",
+        "DOC-NHS-015-HYB-010",
+        "DOC-NHS-015-HYB-011",
+        "DOC-NHS-015-HYB-012",
+        "DOC-NHS-015-HYB-013",
+        "DOC-NHS-015-HYB-014",
+        "DOC-NHS-015-HYB-015"
+      ],
+      "clinical_provenance": "DOC-NHS-015 = Meningitis",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-015 (Meningitis) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-SB-006",
+      "modality": "Standard Banglish",
+      "query": "shorir e onek allergy hoyeche sneezing ar naak diye paani pore",
+      "is_in_active_corpus": true,
+      "intended_condition": "Allergic rhinitis",
+      "target_source_id": "DOC-NHS-017",
+      "target_source_title": "Allergic rhinitis",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-017-HYB-000",
+        "DOC-NHS-017-HYB-001",
+        "DOC-NHS-017-HYB-002",
+        "DOC-NHS-017-HYB-003",
+        "DOC-NHS-017-HYB-004",
+        "DOC-NHS-017-HYB-005",
+        "DOC-NHS-017-HYB-006"
+      ],
+      "clinical_provenance": "DOC-NHS-017 = Allergic rhinitis",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-017 (Allergic rhinitis) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-SB-007",
+      "modality": "Standard Banglish",
+      "query": "pet kharap saline kivabe banabo dosage koto",
+      "is_in_active_corpus": true,
+      "intended_condition": "Dehydration",
+      "target_source_id": "DOC-NHS-007",
+      "target_source_title": "Dehydration",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-007-HYB-000",
+        "DOC-NHS-007-HYB-001",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-007-HYB-003",
+        "DOC-NHS-007-HYB-004",
+        "DOC-NHS-007-HYB-005",
+        "DOC-NHS-007-HYB-006",
+        "DOC-NHS-007-HYB-007"
+      ],
+      "clinical_provenance": "DOC-NHS-007 = Dehydration",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-007 (Dehydration) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-SB-008",
+      "modality": "Standard Banglish",
+      "query": "hat kete giye onek blood porche bandage kivabe lagabo",
+      "is_in_active_corpus": true,
+      "intended_condition": "Cuts and grazes",
+      "target_source_id": "DOC-NHS-006",
+      "target_source_title": "Cuts and grazes",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-006"
+      ],
+      "clinical_provenance": "DOC-NHS-006 = Cuts and grazes",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-006 (Cuts and grazes) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-SB-009",
+      "modality": "Standard Banglish",
+      "query": "muk beke geche ekpashe haat otha jacche na stroke hoyeche ki",
+      "is_in_active_corpus": true,
+      "intended_condition": "Stroke",
+      "target_source_id": "DOC-NHS-013",
+      "target_source_title": "Symptoms of a stroke",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-013-HYB-000",
+        "DOC-NHS-013-HYB-001",
+        "DOC-NHS-013-HYB-002"
+      ],
+      "clinical_provenance": "DOC-NHS-013 = Symptoms of a stroke",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-013 (Symptoms of a stroke) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-SB-010",
+      "modality": "Standard Banglish",
+      "query": "poka kamor kheye shorir fule geche shash nite kosto hochhe",
+      "is_in_active_corpus": true,
+      "intended_condition": "Anaphylaxis",
+      "target_source_id": "DOC-NHS-011",
+      "target_source_title": "Anaphylaxis",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-009"
+      ],
+      "clinical_provenance": "DOC-NHS-011 = Anaphylaxis",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-011 (Anaphylaxis) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-AB-001",
+      "modality": "Abbreviated Banglish",
+      "query": "naak rokt bondhona kothay tipbo",
+      "is_in_active_corpus": true,
+      "intended_condition": "Nosebleed",
+      "target_source_id": "DOC-NHS-016",
+      "target_source_title": "Nosebleed",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-016-HYB-000",
+        "DOC-NHS-016-HYB-001",
+        "DOC-NHS-016-HYB-002",
+        "DOC-NHS-016-HYB-003",
+        "DOC-NHS-016-HYB-004",
+        "DOC-NHS-016-HYB-005"
+      ],
+      "clinical_provenance": "DOC-NHS-016 = Nosebleed",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-016 (Nosebleed) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-AB-002",
+      "modality": "Abbreviated Banglish",
+      "query": "bchr jor napa dose kto",
+      "is_in_active_corpus": true,
+      "intended_condition": "Pediatric fever",
+      "target_source_id": "DOC-NHS-010",
+      "target_source_title": "High temperature (fever) in children",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-010-HYB-000",
+        "DOC-NHS-010-HYB-001",
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-010-HYB-006"
+      ],
+      "clinical_provenance": "DOC-NHS-010 = High temperature (fever) in children",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-010 (High temperature (fever) in children) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-AB-003",
+      "modality": "Abbreviated Banglish",
+      "query": "gorom tel pora haat thanda pani dibo kotokhon",
+      "is_in_active_corpus": true,
+      "intended_condition": "Burns and scalds",
+      "target_source_id": "DOC-NHS-005",
+      "target_source_title": "Burns and scalds",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-005-HYB-000",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "clinical_provenance": "DOC-NHS-005 = Burns and scalds",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-005 (Burns and scalds) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-AB-004",
+      "modality": "Abbreviated Banglish",
+      "query": "buk jala khabar por acid",
+      "is_in_active_corpus": true,
+      "intended_condition": "Chest pain / Heartburn",
+      "target_source_id": "DOC-NHS-012",
+      "target_source_title": "Chest pain",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-012-HYB-000",
+        "DOC-NHS-012-HYB-001",
+        "DOC-NHS-012-HYB-002",
+        "DOC-NHS-012-HYB-003"
+      ],
+      "clinical_provenance": "DOC-NHS-012 = Chest pain (HYB-002 heartburn/indigestion)",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-012 (Chest pain) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-AB-005",
+      "modality": "Abbreviated Banglish",
+      "query": "shash kosto ghor ghor aaj",
+      "is_in_active_corpus": true,
+      "intended_condition": "Asthma",
+      "target_source_id": "DOC-NHS-004",
+      "target_source_title": "Asthma",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-004-HYB-001",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-004-HYB-003",
+        "DOC-NHS-004-HYB-004",
+        "DOC-NHS-004-HYB-005",
+        "DOC-NHS-004-HYB-006",
+        "DOC-NHS-004-HYB-007",
+        "DOC-NHS-004-HYB-008",
+        "DOC-NHS-004-HYB-009",
+        "DOC-NHS-004-HYB-010",
+        "DOC-NHS-004-HYB-011",
+        "DOC-NHS-004-HYB-012",
+        "DOC-NHS-004-HYB-013",
+        "DOC-NHS-004-HYB-014",
+        "DOC-NHS-004-HYB-015",
+        "DOC-NHS-004-HYB-016",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "clinical_provenance": "DOC-NHS-004 = Asthma",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-004 (Asthma) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-AB-006",
+      "modality": "Abbreviated Banglish",
+      "query": "matha betha 2din thk",
+      "is_in_active_corpus": true,
+      "intended_condition": "Headaches",
+      "target_source_id": "DOC-NHS-009",
+      "target_source_title": "Headaches",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-009-HYB-000",
+        "DOC-NHS-009-HYB-001",
+        "DOC-NHS-009-HYB-002",
+        "DOC-NHS-009-HYB-003",
+        "DOC-NHS-009-HYB-004"
+      ],
+      "clinical_provenance": "DOC-NHS-009 = Headaches",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-009 (Headaches) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-AB-007",
+      "modality": "Abbreviated Banglish",
+      "query": "bomi ar pet kharap salain",
+      "is_in_active_corpus": true,
+      "intended_condition": "Diarrhoea and vomiting",
+      "target_source_id": "DOC-NHS-008",
+      "target_source_title": "Diarrhoea and vomiting",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-008-HYB-000",
+        "DOC-NHS-008-HYB-001",
+        "DOC-NHS-008-HYB-002",
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-008-HYB-004",
+        "DOC-NHS-008-HYB-005",
+        "DOC-NHS-008-HYB-006",
+        "DOC-NHS-008-HYB-007"
+      ],
+      "clinical_provenance": "DOC-NHS-008 = Diarrhoea and vomiting",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-008 (Diarrhoea and vomiting) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-AB-008",
+      "modality": "Abbreviated Banglish",
+      "query": "hat kata rokt stop drsg",
+      "is_in_active_corpus": true,
+      "intended_condition": "Cuts and grazes",
+      "target_source_id": "DOC-NHS-006",
+      "target_source_title": "Cuts and grazes",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-001",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-006-HYB-006"
+      ],
+      "clinical_provenance": "DOC-NHS-006 = Cuts and grazes",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-006 (Cuts and grazes) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-AB-009",
+      "modality": "Abbreviated Banglish",
+      "query": "mach kamor fula lal anaphlx",
+      "is_in_active_corpus": true,
+      "intended_condition": "Anaphylaxis",
+      "target_source_id": "DOC-NHS-011",
+      "target_source_title": "Anaphylaxis",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-011-HYB-000",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-011-HYB-002",
+        "DOC-NHS-011-HYB-003",
+        "DOC-NHS-011-HYB-004",
+        "DOC-NHS-011-HYB-005",
+        "DOC-NHS-011-HYB-006",
+        "DOC-NHS-011-HYB-007",
+        "DOC-NHS-011-HYB-008",
+        "DOC-NHS-011-HYB-009"
+      ],
+      "clinical_provenance": "DOC-NHS-011 = Anaphylaxis",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-011 (Anaphylaxis) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-AB-010",
+      "modality": "Abbreviated Banglish",
+      "query": "sepsis sign lal dag bdy confusion",
+      "is_in_active_corpus": true,
+      "intended_condition": "Sepsis",
+      "target_source_id": "DOC-NHS-014",
+      "target_source_title": "Sepsis",
+      "target_gold_chunk_ids": [
+        "DOC-NHS-014-HYB-000",
+        "DOC-NHS-014-HYB-001",
+        "DOC-NHS-014-HYB-002",
+        "DOC-NHS-014-HYB-003",
+        "DOC-NHS-014-HYB-004",
+        "DOC-NHS-014-HYB-005",
+        "DOC-NHS-014-HYB-006",
+        "DOC-NHS-014-HYB-007",
+        "DOC-NHS-014-HYB-008",
+        "DOC-NHS-014-HYB-009",
+        "DOC-NHS-014-HYB-010",
+        "DOC-NHS-014-HYB-011",
+        "DOC-NHS-014-HYB-012",
+        "DOC-NHS-014-HYB-013",
+        "DOC-NHS-014-HYB-014"
+      ],
+      "clinical_provenance": "DOC-NHS-014 = Sepsis",
+      "evaluation_expectation": "At least one chunk from DOC-NHS-014 (Sepsis) must appear in final Top-5 evidence."
+    },
+    {
+      "case_id": "VAL-OOC-001",
+      "modality": "Standard Banglish",
+      "query": "amar cheler chickenpox hoyeche ki oshudh debo",
+      "is_in_active_corpus": false,
+      "intended_condition": "Chickenpox (NOT IN CORPUS)",
+      "target_source_id": null,
+      "target_source_title": null,
+      "target_gold_chunk_ids": [],
+      "clinical_provenance": "No chickenpox document exists in active 14-condition corpus",
+      "evaluation_expectation": "System should abstain (NO_RELEVANT_EVIDENCE or LOW_CONFIDENCE / UNSUPPORTED). No high-confidence false positive."
+    },
+    {
+      "case_id": "VAL-OOC-002",
+      "modality": "English",
+      "query": "how to treat diabetes with insulin injections",
+      "is_in_active_corpus": false,
+      "intended_condition": "Diabetes (NOT IN CORPUS)",
+      "target_source_id": null,
+      "target_source_title": null,
+      "target_gold_chunk_ids": [],
+      "clinical_provenance": "No diabetes document exists in active 14-condition corpus",
+      "evaluation_expectation": "System should abstain (NO_RELEVANT_EVIDENCE or LOW_CONFIDENCE / UNSUPPORTED). No high-confidence false positive."
+    },
+    {
+      "case_id": "VAL-OOC-003",
+      "modality": "Native Bangla",
+      "query": "দাঁতে প্রচণ্ড ব্যথা কি করবো",
+      "is_in_active_corpus": false,
+      "intended_condition": "Toothache (NOT IN CORPUS)",
+      "target_source_id": null,
+      "target_source_title": null,
+      "target_gold_chunk_ids": [],
+      "clinical_provenance": "No dental/toothache document exists in active 14-condition corpus",
+      "evaluation_expectation": "System should abstain (NO_RELEVANT_EVIDENCE or LOW_CONFIDENCE / UNSUPPORTED). No high-confidence false positive."
+    },
+    {
+      "case_id": "VAL-OOC-004",
+      "modality": "Abbreviated Banglish",
+      "query": "piles theke blood oshudh ki",
+      "is_in_active_corpus": false,
+      "intended_condition": "Hemorrhoids/Piles (NOT IN CORPUS)",
+      "target_source_id": null,
+      "target_source_title": null,
+      "target_gold_chunk_ids": [],
+      "clinical_provenance": "No hemorrhoids document exists in active 14-condition corpus",
+      "evaluation_expectation": "System should abstain (NO_RELEVANT_EVIDENCE or LOW_CONFIDENCE / UNSUPPORTED). No high-confidence false positive."
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "phase": "6K",
+  "timestamp": "2026-08-29T13:49:49.073568+00:00",
+  "evaluation_type": "SINGLE_SHOT_LOCKED_INDEPENDENT_VALIDATION",
+  "benchmark_sha256": "976D62DA7DB7872303E755910F286E6F895703012F7934E2809544BC1820E1A5",
+  "candidate_b_freeze_sha256": "92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A",
+  "corpus_manifest_sha256": "44D0602F730D6460E6FEFA431BD5C09005B48CE92B47D02832532E5868D4AA58",
+  "parent_strategy_5_sha256": "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae",
+  "final_verdict": "CANDIDATE_B_VALIDATED_WINNER",
+  "decision_reason": "Candidate B achieved higher primary Recall@5 (29/36 (80.56%) vs 28/36 (77.78%)).",
+  "regression_check_passed": true,
+  "ooc_safety_passed": true,
+  "control_summary": {
+    "system_name": "CONTROL (Frozen Strategy 5)",
+    "total_evaluated_queries": 40,
+    "in_corpus_n": 36,
+    "out_of_corpus_n": 4,
+    "elapsed_seconds": 1019.68,
+    "aggregate_in_corpus_metrics": {
+      "Recall_5": "28/36 (77.78%)",
+      "Recall_3": "28/36 (77.78%)",
+      "Recall_1_Top1": "21/36 (58.33%)",
+      "MRR_5": 0.6667,
+      "Dense_Recall_15": "31/36 (86.11%)",
+      "raw_r5_count": 28,
+      "raw_r3_count": 28,
+      "raw_r1_count": 21,
+      "raw_dense_count": 31,
+      "raw_mrr": 0.6666666666666666
+    },
+    "modality_slice_metrics": {
+      "English": {
+        "N": 8,
+        "Dense_R15": "7/8 (87.50%)",
+        "Recall_5": "7/8 (87.50%)",
+        "Recall_3": "7/8 (87.50%)",
+        "Recall_1": "7/8 (87.50%)",
+        "MRR": 0.875,
+        "raw_r5": 7,
+        "raw_r3": 7,
+        "raw_r1": 7,
+        "raw_dense": 7,
+        "raw_mrr": 0.875
+      },
+      "Native Bangla": {
+        "N": 8,
+        "Dense_R15": "8/8 (100.00%)",
+        "Recall_5": "8/8 (100.00%)",
+        "Recall_3": "8/8 (100.00%)",
+        "Recall_1": "5/8 (62.50%)",
+        "MRR": 0.7917,
+        "raw_r5": 8,
+        "raw_r3": 8,
+        "raw_r1": 5,
+        "raw_dense": 8,
+        "raw_mrr": 0.7916666666666666
+      },
+      "Standard Banglish": {
+        "N": 10,
+        "Dense_R15": "7/10 (70.00%)",
+        "Recall_5": "6/10 (60.00%)",
+        "Recall_3": "6/10 (60.00%)",
+        "Recall_1": "4/10 (40.00%)",
+        "MRR": 0.4833,
+        "raw_r5": 6,
+        "raw_r3": 6,
+        "raw_r1": 4,
+        "raw_dense": 7,
+        "raw_mrr": 0.4833333333333333
+      },
+      "Abbreviated Banglish": {
+        "N": 10,
+        "Dense_R15": "9/10 (90.00%)",
+        "Recall_5": "7/10 (70.00%)",
+        "Recall_3": "7/10 (70.00%)",
+        "Recall_1": "5/10 (50.00%)",
+        "MRR": 0.5833,
+        "raw_r5": 7,
+        "raw_r3": 7,
+        "raw_r1": 5,
+        "raw_dense": 9,
+        "raw_mrr": 0.5833333333333333
+      }
+    },
+    "ooc_safety_metrics": {
+      "ooc_cases_evaluated": 4,
+      "high_confidence_false_positives": 0,
+      "high_confidence_fp_rate": "0/4 (0.00%)",
+      "safety_passed": true
+    }
+  },
+  "candidate_b_summary": {
+    "system_name": "Candidate B (Context-Aware Compound Disambiguation)",
+    "total_evaluated_queries": 40,
+    "in_corpus_n": 36,
+    "out_of_corpus_n": 4,
+    "elapsed_seconds": 935.95,
+    "aggregate_in_corpus_metrics": {
+      "Recall_5": "29/36 (80.56%)",
+      "Recall_3": "29/36 (80.56%)",
+      "Recall_1_Top1": "22/36 (61.11%)",
+      "MRR_5": 0.6944,
+      "Dense_Recall_15": "34/36 (94.44%)",
+      "raw_r5_count": 29,
+      "raw_r3_count": 29,
+      "raw_r1_count": 22,
+      "raw_dense_count": 34,
+      "raw_mrr": 0.6944444444444444
+    },
+    "modality_slice_metrics": {
+      "English": {
+        "N": 8,
+        "Dense_R15": "7/8 (87.50%)",
+        "Recall_5": "7/8 (87.50%)",
+        "Recall_3": "7/8 (87.50%)",
+        "Recall_1": "7/8 (87.50%)",
+        "MRR": 0.875,
+        "raw_r5": 7,
+        "raw_r3": 7,
+        "raw_r1": 7,
+        "raw_dense": 7,
+        "raw_mrr": 0.875
+      },
+      "Native Bangla": {
+        "N": 8,
+        "Dense_R15": "8/8 (100.00%)",
+        "Recall_5": "8/8 (100.00%)",
+        "Recall_3": "8/8 (100.00%)",
+        "Recall_1": "5/8 (62.50%)",
+        "MRR": 0.7917,
+        "raw_r5": 8,
+        "raw_r3": 8,
+        "raw_r1": 5,
+        "raw_dense": 8,
+        "raw_mrr": 0.7916666666666666
+      },
+      "Standard Banglish": {
+        "N": 10,
+        "Dense_R15": "9/10 (90.00%)",
+        "Recall_5": "6/10 (60.00%)",
+        "Recall_3": "6/10 (60.00%)",
+        "Recall_1": "4/10 (40.00%)",
+        "MRR": 0.4833,
+        "raw_r5": 6,
+        "raw_r3": 6,
+        "raw_r1": 4,
+        "raw_dense": 9,
+        "raw_mrr": 0.4833333333333333
+      },
+      "Abbreviated Banglish": {
+        "N": 10,
+        "Dense_R15": "10/10 (100.00%)",
+        "Recall_5": "8/10 (80.00%)",
+        "Recall_3": "8/10 (80.00%)",
+        "Recall_1": "6/10 (60.00%)",
+        "MRR": 0.6833,
+        "raw_r5": 8,
+        "raw_r3": 8,
+        "raw_r1": 6,
+        "raw_dense": 10,
+        "raw_mrr": 0.6833333333333333
+      }
+    },
+    "ooc_safety_metrics": {
+      "ooc_cases_evaluated": 4,
+      "high_confidence_false_positives": 0,
+      "high_confidence_fp_rate": "0/4 (0.00%)",
+      "safety_passed": true
+    }
+  },
+  "comparative_metrics": {
+    "recall_at_5_delta": 1,
+    "recall_at_3_delta": 1,
+    "recall_at_1_delta": 1,
+    "mrr_delta": 0.0278,
+    "dense_recall_15_delta": 3
+  }
+}

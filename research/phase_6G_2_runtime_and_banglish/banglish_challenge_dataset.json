@@ -1,0 +1,110 @@
+[
+  {
+    "case_id": "DEV-CHALLENGE-001",
+    "category": "ambiguous_bleeding_anatomy",
+    "query": "nak diye rokt porle ki korbo?",
+    "expected_condition": "Nosebleed",
+    "expected_doc_id": "DOC-NHS-012",
+    "risk_target": "Should retrieve Nosebleed (DOC-NHS-012), NOT Cuts and grazes (DOC-NHS-006)",
+    "challenge_type": "Transliterated 'rokt' + anatomical site 'nak'"
+  },
+  {
+    "case_id": "DEV-CHALLENGE-002",
+    "category": "ambiguous_bleeding_trauma",
+    "query": "haat kete giye onek rokt porche ki vabe bondho korbo?",
+    "expected_condition": "Cuts and grazes",
+    "expected_doc_id": "DOC-NHS-006",
+    "risk_target": "Should retrieve Cuts and grazes (DOC-NHS-006), NOT Nosebleed (DOC-NHS-012)",
+    "challenge_type": "Trauma bleeding 'kete' + 'rokt'"
+  },
+  {
+    "case_id": "DEV-CHALLENGE-003",
+    "category": "ambiguous_burning_sensation",
+    "query": "khabar por buk jala pora korle ki oshudh khabo?",
+    "expected_condition": "Heartburn and acid reflux",
+    "expected_doc_id": "DOC-NHS-009",
+    "risk_target": "Should retrieve Heartburn (DOC-NHS-009), NOT Burns and scalds (DOC-NHS-005)",
+    "challenge_type": "Compound 'buk jala pora' (visceral burning) vs thermal burns"
+  },
+  {
+    "case_id": "DEV-CHALLENGE-004",
+    "category": "thermal_burn_procedural",
+    "query": "hate gorom chayer pani pore pure geche thanda pani dibo?",
+    "expected_condition": "Burns and scalds",
+    "expected_doc_id": "DOC-NHS-005",
+    "risk_target": "Should retrieve Burns and scalds (DOC-NHS-005), NOT Heartburn (DOC-NHS-009)",
+    "challenge_type": "Thermal scald 'gorom pani pore pure geche'"
+  },
+  {
+    "case_id": "DEV-CHALLENGE-005",
+    "category": "colloquial_gastrointestinal",
+    "query": "pet kharap ar patla paykhana hole ors saline kivabe banabo?",
+    "expected_condition": "Diarrhoea and vomiting",
+    "expected_doc_id": "DOC-NHS-007",
+    "risk_target": "Should retrieve Diarrhoea and vomiting (DOC-NHS-007)",
+    "challenge_type": "Colloquial 'pet kharap' / 'patla paykhana'"
+  },
+  {
+    "case_id": "DEV-CHALLENGE-006",
+    "category": "pediatric_fever_abbreviated",
+    "query": "bacchar 102 jor napa dewa jabe?",
+    "expected_condition": "High temperature (fever) in children",
+    "expected_doc_id": "DOC-NHS-010",
+    "risk_target": "Should retrieve High temperature in children (DOC-NHS-010)",
+    "challenge_type": "Abbreviated 'jor napa' (paracetamol trade name)"
+  },
+  {
+    "case_id": "DEV-CHALLENGE-007",
+    "category": "pediatric_rash_colloquial",
+    "query": "sharir e lal chulkani guti guti utheche pani ashe",
+    "expected_condition": "Chickenpox",
+    "expected_doc_id": "DOC-NHS-008",
+    "risk_target": "Should retrieve Chickenpox (DOC-NHS-008)",
+    "challenge_type": "Colloquial blister description 'pani ashe guti'"
+  },
+  {
+    "case_id": "DEV-CHALLENGE-008",
+    "category": "respiratory_colloquial_transliteration",
+    "query": "shash nite koshto ar shosh shobdo hole ki korbo?",
+    "expected_condition": "Asthma",
+    "expected_doc_id": "DOC-NHS-004",
+    "risk_target": "Should retrieve Asthma (DOC-NHS-004)",
+    "challenge_type": "Wheezing onomatopoeia 'shosh shobdo' + breathlessness"
+  },
+  {
+    "case_id": "DEV-CHALLENGE-009",
+    "category": "eye_infection_colloquial",
+    "query": "chokh lal hoye geche ar pishti jomche chokh jole",
+    "expected_condition": "Conjunctivitis",
+    "expected_doc_id": "DOC-NHS-016",
+    "risk_target": "Should retrieve Conjunctivitis (DOC-NHS-016)",
+    "challenge_type": "Colloquial discharge 'pishti' + sticky red eye"
+  },
+  {
+    "case_id": "DEV-CHALLENGE-010",
+    "category": "oral_infection_colloquial",
+    "query": "mukhe lal gha ar fula khawa jay na",
+    "expected_condition": "Mouth ulcers",
+    "expected_doc_id": "DOC-NHS-014",
+    "risk_target": "Should retrieve Mouth ulcers (DOC-NHS-014)",
+    "challenge_type": "Colloquial sore/ulcer 'mukhe gha'"
+  },
+  {
+    "case_id": "DEV-CHALLENGE-011",
+    "category": "cross_condition_skin_allergy",
+    "query": "pokar kamor kheye fule lal hoye chulkani hochhe",
+    "expected_condition": "Insect bites and stings",
+    "expected_doc_id": "DOC-NHS-011",
+    "risk_target": "Should retrieve Insect bites (DOC-NHS-011), NOT Chickenpox (DOC-NHS-008)",
+    "challenge_type": "Bite swelling 'pokar kamor' vs general viral rash"
+  },
+  {
+    "case_id": "DEV-CHALLENGE-012",
+    "category": "acute_headache_colloquial",
+    "query": "mathar ekpashe prochondo betha ar bomi bomi lage",
+    "expected_condition": "Migraine",
+    "expected_doc_id": "DOC-NHS-017",
+    "risk_target": "Should retrieve Migraine (DOC-NHS-017)",
+    "challenge_type": "Unilateral headache 'mathar ekpashe betha' + nausea"
+  }
+]

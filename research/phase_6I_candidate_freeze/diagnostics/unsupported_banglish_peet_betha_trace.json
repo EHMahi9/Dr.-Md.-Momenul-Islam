@@ -1,0 +1,379 @@
+{
+  "query": "amar peet e betha",
+  "normalization_trace": {
+    "raw_query": "amar peet e betha",
+    "track_a_matches": [],
+    "track_a_normalized": "amar peet e betha",
+    "candidate_b_rules_fired": [],
+    "candidate_b_normalized": "amar peet e betha",
+    "token_peet_recognized": false,
+    "token_betha_recognized": false,
+    "explanation": "'peet' is colloquial Banglish for stomach/belly (or back). Track A only has 'matha betha' for headache, not generic 'betha' or 'peet'. Track A and Candidate B have no mapping for 'peet', so the query passes through unchanged."
+  },
+  "dense_retrieval_trace": {
+    "model": "intfloat/multilingual-e5-small",
+    "dense_k": 15,
+    "top15_chunks": [
+      {
+        "rank": 1,
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "dense_score": 0.8068
+      },
+      {
+        "rank": 2,
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "dense_score": 0.7993
+      },
+      {
+        "rank": 3,
+        "chunk_id": "DOC-NHS-005-HYB-002",
+        "parent_source_id": "DOC-NHS-005",
+        "source_title": "Burns and scalds\n - NHS",
+        "dense_score": 0.7916
+      },
+      {
+        "rank": 4,
+        "chunk_id": "DOC-NHS-004-HYB-017",
+        "parent_source_id": "DOC-NHS-004",
+        "source_title": "Asthma\n - NHS",
+        "dense_score": 0.7906
+      },
+      {
+        "rank": 5,
+        "chunk_id": "DOC-NHS-010-HYB-005",
+        "parent_source_id": "DOC-NHS-010",
+        "source_title": "High temperature (fever) in children\n - NHS",
+        "dense_score": 0.7852
+      },
+      {
+        "rank": 6,
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source_id": "DOC-NHS-014",
+        "source_title": "Sepsis",
+        "dense_score": 0.7842
+      },
+      {
+        "rank": 7,
+        "chunk_id": "DOC-NHS-011-HYB-001",
+        "parent_source_id": "DOC-NHS-011",
+        "source_title": "Anaphylaxis\n - NHS",
+        "dense_score": 0.783
+      },
+      {
+        "rank": 8,
+        "chunk_id": "DOC-NHS-015-HYB-015",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "dense_score": 0.7823
+      },
+      {
+        "rank": 9,
+        "chunk_id": "DOC-NHS-006-HYB-005",
+        "parent_source_id": "DOC-NHS-006",
+        "source_title": "Cuts and grazes\n - NHS",
+        "dense_score": 0.7803
+      },
+      {
+        "rank": 10,
+        "chunk_id": "DOC-NHS-009-HYB-003",
+        "parent_source_id": "DOC-NHS-009",
+        "source_title": "Headaches\n - NHS",
+        "dense_score": 0.78
+      },
+      {
+        "rank": 11,
+        "chunk_id": "DOC-NHS-007-HYB-003",
+        "parent_source_id": "DOC-NHS-007",
+        "source_title": "Dehydration\n - NHS",
+        "dense_score": 0.7794
+      },
+      {
+        "rank": 12,
+        "chunk_id": "DOC-NHS-007-HYB-004",
+        "parent_source_id": "DOC-NHS-007",
+        "source_title": "Dehydration\n - NHS",
+        "dense_score": 0.7786
+      },
+      {
+        "rank": 13,
+        "chunk_id": "DOC-NHS-015-HYB-003",
+        "parent_source_id": "DOC-NHS-015",
+        "source_title": "Meningitis",
+        "dense_score": 0.7764
+      },
+      {
+        "rank": 14,
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source_id": "DOC-NHS-016",
+        "source_title": "Nosebleed",
+        "dense_score": 0.7752
+      },
+      {
+        "rank": 15,
+        "chunk_id": "DOC-NHS-006-HYB-004",
+        "parent_source_id": "DOC-NHS-006",
+        "source_title": "Cuts and grazes\n - NHS",
+        "dense_score": 0.7747
+      }
+    ]
+  },
+  "reranking_and_fusion_trace": {
+    "model": "BAAI/bge-reranker-v2-m3",
+    "overview_debias_multiplier": 0.85,
+    "lambda_dense_fusion": 0.1,
+    "alpha_lexical_overlap": 0.03,
+    "all_15_candidates_scored": [
+      {
+        "chunk_id": "DOC-NHS-015-HYB-002",
+        "parent_source": "DOC-NHS-015",
+        "raw_rerank_score": 0.0003,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0003,
+        "dense_score": 0.8068,
+        "dense_boost": 0.0807,
+        "token_overlap": 0.0,
+        "lexical_boost": 0.0,
+        "fused_score": 0.081
+      },
+      {
+        "chunk_id": "DOC-NHS-015-HYB-004",
+        "parent_source": "DOC-NHS-015",
+        "raw_rerank_score": 0.0003,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0003,
+        "dense_score": 0.7993,
+        "dense_boost": 0.0799,
+        "token_overlap": 0.0,
+        "lexical_boost": 0.0,
+        "fused_score": 0.0802
+      },
+      {
+        "chunk_id": "DOC-NHS-005-HYB-002",
+        "parent_source": "DOC-NHS-005",
+        "raw_rerank_score": 0.0,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0,
+        "dense_score": 0.7916,
+        "dense_boost": 0.0792,
+        "token_overlap": 0.25,
+        "lexical_boost": 0.0075,
+        "fused_score": 0.0867
+      },
+      {
+        "chunk_id": "DOC-NHS-004-HYB-017",
+        "parent_source": "DOC-NHS-004",
+        "raw_rerank_score": 0.0,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0,
+        "dense_score": 0.7906,
+        "dense_boost": 0.0791,
+        "token_overlap": 0.0,
+        "lexical_boost": 0.0,
+        "fused_score": 0.0791
+      },
+      {
+        "chunk_id": "DOC-NHS-010-HYB-005",
+        "parent_source": "DOC-NHS-010",
+        "raw_rerank_score": 0.0004,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0004,
+        "dense_score": 0.7852,
+        "dense_boost": 0.0785,
+        "token_overlap": 0.0,
+        "lexical_boost": 0.0,
+        "fused_score": 0.0789
+      },
+      {
+        "chunk_id": "DOC-NHS-014-HYB-006",
+        "parent_source": "DOC-NHS-014",
+        "raw_rerank_score": 0.0001,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0001,
+        "dense_score": 0.7842,
+        "dense_boost": 0.0784,
+        "token_overlap": 0.0,
+        "lexical_boost": 0.0,
+        "fused_score": 0.0785
+      },
+      {
+        "chunk_id": "DOC-NHS-011-HYB-001",
+        "parent_source": "DOC-NHS-011",
+        "raw_rerank_score": 0.0,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0,
+        "dense_score": 0.783,
+        "dense_boost": 0.0783,
+        "token_overlap": 0.0,
+        "lexical_boost": 0.0,
+        "fused_score": 0.0783
+      },
+      {
+        "chunk_id": "DOC-NHS-015-HYB-015",
+        "parent_source": "DOC-NHS-015",
+        "raw_rerank_score": 0.0,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0,
+        "dense_score": 0.7823,
+        "dense_boost": 0.0782,
+        "token_overlap": 0.0,
+        "lexical_boost": 0.0,
+        "fused_score": 0.0783
+      },
+      {
+        "chunk_id": "DOC-NHS-006-HYB-005",
+        "parent_source": "DOC-NHS-006",
+        "raw_rerank_score": 0.0,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0,
+        "dense_score": 0.7803,
+        "dense_boost": 0.078,
+        "token_overlap": 0.25,
+        "lexical_boost": 0.0075,
+        "fused_score": 0.0856
+      },
+      {
+        "chunk_id": "DOC-NHS-009-HYB-003",
+        "parent_source": "DOC-NHS-009",
+        "raw_rerank_score": 0.0,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0,
+        "dense_score": 0.78,
+        "dense_boost": 0.078,
+        "token_overlap": 0.25,
+        "lexical_boost": 0.0075,
+        "fused_score": 0.0855
+      },
+      {
+        "chunk_id": "DOC-NHS-007-HYB-003",
+        "parent_source": "DOC-NHS-007",
+        "raw_rerank_score": 0.0,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0,
+        "dense_score": 0.7794,
+        "dense_boost": 0.0779,
+        "token_overlap": 0.0,
+        "lexical_boost": 0.0,
+        "fused_score": 0.078
+      },
+      {
+        "chunk_id": "DOC-NHS-007-HYB-004",
+        "parent_source": "DOC-NHS-007",
+        "raw_rerank_score": 0.0,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0,
+        "dense_score": 0.7786,
+        "dense_boost": 0.0779,
+        "token_overlap": 0.25,
+        "lexical_boost": 0.0075,
+        "fused_score": 0.0854
+      },
+      {
+        "chunk_id": "DOC-NHS-015-HYB-003",
+        "parent_source": "DOC-NHS-015",
+        "raw_rerank_score": 0.0,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0,
+        "dense_score": 0.7764,
+        "dense_boost": 0.0776,
+        "token_overlap": 0.0,
+        "lexical_boost": 0.0,
+        "fused_score": 0.0777
+      },
+      {
+        "chunk_id": "DOC-NHS-016-HYB-001",
+        "parent_source": "DOC-NHS-016",
+        "raw_rerank_score": 0.0,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0,
+        "dense_score": 0.7752,
+        "dense_boost": 0.0775,
+        "token_overlap": 0.25,
+        "lexical_boost": 0.0075,
+        "fused_score": 0.0851
+      },
+      {
+        "chunk_id": "DOC-NHS-006-HYB-004",
+        "parent_source": "DOC-NHS-006",
+        "raw_rerank_score": 0.0,
+        "is_overview_chunk": false,
+        "debiased_rerank_score": 0.0,
+        "dense_score": 0.7747,
+        "dense_boost": 0.0775,
+        "token_overlap": 0.0,
+        "lexical_boost": 0.0,
+        "fused_score": 0.0775
+      }
+    ]
+  },
+  "final_top5_evidence": [
+    {
+      "rank": 1,
+      "chunk_id": "DOC-NHS-005-HYB-002",
+      "parent_source_id": "DOC-NHS-005",
+      "source_title": "Burns and scalds\n - NHS",
+      "fused_score": 0.0867,
+      "raw_rerank_score": 0.0,
+      "dense_score": 0.7916,
+      "token_overlap": 0.25,
+      "text_snippet": "Immediate action required: Call 999 or go to A&E if:\n\nYou have a burn or scald that:\n\nis very large or deep\n\nis on your ..."
+    },
+    {
+      "rank": 2,
+      "chunk_id": "DOC-NHS-006-HYB-005",
+      "parent_source_id": "DOC-NHS-006",
+      "source_title": "Cuts and grazes\n - NHS",
+      "fused_score": 0.0856,
+      "raw_rerank_score": 0.0,
+      "dense_score": 0.7803,
+      "token_overlap": 0.25,
+      "text_snippet": "a cut is larger than around 5cm (2 inches)\n\nyou've cut yourself and also feel generally unwell or have a high temperatur..."
+    },
+    {
+      "rank": 3,
+      "chunk_id": "DOC-NHS-009-HYB-003",
+      "parent_source_id": "DOC-NHS-009",
+      "source_title": "Headaches\n - NHS",
+      "fused_score": 0.0855,
+      "raw_rerank_score": 0.0,
+      "dense_score": 0.78,
+      "token_overlap": 0.25,
+      "text_snippet": "Immediate action required: Call 999 or go to A&E if:\n\nYou or a child has a headache and:\n\nhas had a seizure (fit)\n\nhas n..."
+    },
+    {
+      "rank": 4,
+      "chunk_id": "DOC-NHS-007-HYB-004",
+      "parent_source_id": "DOC-NHS-007",
+      "source_title": "Dehydration\n - NHS",
+      "fused_score": 0.0854,
+      "raw_rerank_score": 0.0,
+      "dense_score": 0.7786,
+      "token_overlap": 0.25,
+      "text_snippet": "Immediate action required: Call 999 or go to A&E if:\n\nYou or somebody else has signs of dehydration and:\n\nblue, grey, pa..."
+    },
+    {
+      "rank": 5,
+      "chunk_id": "DOC-NHS-016-HYB-001",
+      "parent_source_id": "DOC-NHS-016",
+      "source_title": "Nosebleed",
+      "fused_score": 0.0851,
+      "raw_rerank_score": 0.0,
+      "dense_score": 0.7752,
+      "token_overlap": 0.25,
+      "text_snippet": "Immediate action required:\n\nGo to A&E if:\n\nYou have a nosebleed and:\n\nyour nosebleed lasts longer than 10 to 15 minutes\n..."
+    }
+  ],
+  "confidence_assessment": {
+    "top_score": 0.0867,
+    "score_spread": 0.0016,
+    "confidence_level": "NONE",
+    "outcome_state": "NO_RELEVANT_EVIDENCE",
+    "summary_reason": "No relevant clinical evidence found in the active knowledge base for this query.",
+    "threshold_applied": "< 0.10 -> NO_RELEVANT_EVIDENCE",
+    "is_abstention_correct": true,
+    "abstention_explanation": "Top fused score is 0.0867, which is below the 0.10 threshold for active corpus relevance. The system correctly concluded NO_RELEVANT_EVIDENCE."
+  }
+}

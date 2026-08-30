@@ -51,7 +51,12 @@ class BaseGenerationService(ABC):
         pass
 
     @abstractmethod
-    def generate_response(self, query: str, evidence: List[RetrievedEvidenceChunk]) -> Dict[str, Any]:
+    def generate_response(
+        self,
+        query: str,
+        evidence: List[RetrievedEvidenceChunk],
+        preferred_language: str = "auto"
+    ) -> Dict[str, Any]:
         """Legacy dictionary interface for ChatResponse compatibility."""
         pass
 
@@ -60,7 +65,8 @@ class BaseGenerationService(ABC):
         self,
         query: str,
         evidence: List[RetrievedEvidenceChunk],
-        context: Optional[Dict[str, Any]] = None
+        context: Optional[Dict[str, Any]] = None,
+        preferred_language: str = "auto"
     ) -> GenerationResult:
         """
         Primary generation pipeline interface:
@@ -74,7 +80,12 @@ class BaseGenerationService(ABC):
         pass
 
     @abstractmethod
-    def build_grounded_prompt(self, query: str, evidence: List[RetrievedEvidenceChunk]) -> GroundedPrompt:
+    def build_grounded_prompt(
+        self,
+        query: str,
+        evidence: List[RetrievedEvidenceChunk],
+        preferred_language: str = "auto"
+    ) -> GroundedPrompt:
         """Compose structured grounded prompt contract."""
         pass
 
@@ -158,8 +169,13 @@ class GroundedGenerationService(BaseGenerationService):
 
         return GenerationSafetyState.SAFE_INFORMATIONAL
 
-    def build_grounded_prompt(self, query: str, evidence: List[RetrievedEvidenceChunk]) -> GroundedPrompt:
-        return self.prompt_builder.build_prompt(query, evidence)
+    def build_grounded_prompt(
+        self,
+        query: str,
+        evidence: List[RetrievedEvidenceChunk],
+        preferred_language: str = "auto"
+    ) -> GroundedPrompt:
+        return self.prompt_builder.build_prompt(query, evidence, preferred_language=preferred_language)
 
     def validate_output(
         self,
@@ -203,11 +219,12 @@ class GroundedGenerationService(BaseGenerationService):
         self,
         query: str,
         evidence: List[RetrievedEvidenceChunk],
-        context: Optional[Dict[str, Any]] = None
+        context: Optional[Dict[str, Any]] = None,
+        preferred_language: str = "auto"
     ) -> GenerationResult:
         """
         Full grounded generation orchestration.
-        In Phase 6D, returns GenerationStatus.DISABLED without invoking any external model.
+        In Phase 6D/6E/6F/6H, operates behind BaseLLMProvider with post-generation validation.
         """
         safety_state = self.assess_safety(query, evidence)
         evidence_ids = [c.chunk_id for c in evidence]
@@ -265,8 +282,7 @@ class GroundedGenerationService(BaseGenerationService):
                 model_name=settings.LLM_MODEL_NAME
             )
 
-        # If generation WERE enabled (future), execution path would be:
-        prompt = self.build_grounded_prompt(query, evidence)
+        prompt = self.build_grounded_prompt(query, evidence, preferred_language=preferred_language)
         llm_req = LLMRequest(
             prompt=prompt,
             model_name=settings.LLM_MODEL_NAME,
@@ -308,11 +324,16 @@ class GroundedGenerationService(BaseGenerationService):
             validation_result=val_result
         )
 
-    def generate_response(self, query: str, evidence: List[RetrievedEvidenceChunk]) -> Dict[str, Any]:
+    def generate_response(
+        self,
+        query: str,
+        evidence: List[RetrievedEvidenceChunk],
+        preferred_language: str = "auto"
+    ) -> Dict[str, Any]:
         """
         Legacy dictionary interface for ChatResponse compatibility.
         """
-        res = self.generate_answer(query, evidence)
+        res = self.generate_answer(query, evidence, preferred_language=preferred_language)
         return {
             "generation_enabled": self.is_generation_enabled(),
             "status": "research_prototype",

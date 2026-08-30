@@ -1,0 +1,185 @@
+[
+  {
+    "case_id": "DEV-CHALLENGE-001",
+    "query": "nak diye rokt porle ki korbo?",
+    "intended_condition": "Nosebleed",
+    "original_target_doc_id": "DOC-NHS-012",
+    "corrected_target_doc_id": "DOC-NHS-016",
+    "corrected_gold_chunk_ids": [
+      "DOC-NHS-016-HYB-000",
+      "DOC-NHS-016-HYB-001",
+      "DOC-NHS-016-HYB-002",
+      "DOC-NHS-016-HYB-003",
+      "DOC-NHS-016-HYB-004",
+      "DOC-NHS-016-HYB-005"
+    ],
+    "is_in_active_corpus": true,
+    "provenance_evidence": "Authoritative manifest lists DOC-NHS-016 as 'Nosebleed' (6 chunks) and DOC-NHS-012 as 'Chest pain'.",
+    "correction_reason": "Original dataset incorrectly assigned DOC-NHS-012 (Chest pain) to a nosebleed query instead of DOC-NHS-016 (Nosebleed)."
+  },
+  {
+    "case_id": "DEV-CHALLENGE-002",
+    "query": "haat kete giye onek rokt porche ki vabe bondho korbo?",
+    "intended_condition": "Cuts and grazes",
+    "original_target_doc_id": "DOC-NHS-006",
+    "corrected_target_doc_id": "DOC-NHS-006",
+    "corrected_gold_chunk_ids": [
+      "DOC-NHS-006-HYB-000",
+      "DOC-NHS-006-HYB-001",
+      "DOC-NHS-006-HYB-002",
+      "DOC-NHS-006-HYB-003",
+      "DOC-NHS-006-HYB-004",
+      "DOC-NHS-006-HYB-005",
+      "DOC-NHS-006-HYB-006"
+    ],
+    "is_in_active_corpus": true,
+    "provenance_evidence": "Authoritative manifest lists DOC-NHS-006 as 'Cuts and grazes - NHS' (7 chunks).",
+    "correction_reason": "Correct mapping preserved."
+  },
+  {
+    "case_id": "DEV-CHALLENGE-003",
+    "query": "khabar por buk jala pora korle ki oshudh khabo?",
+    "intended_condition": "Chest burning / Heartburn after eating",
+    "original_target_doc_id": "DOC-NHS-009",
+    "corrected_target_doc_id": "DOC-NHS-012",
+    "corrected_gold_chunk_ids": [
+      "DOC-NHS-012-HYB-002"
+    ],
+    "is_in_active_corpus": true,
+    "provenance_evidence": "Authoritative manifest lists DOC-NHS-009 as 'Headaches - NHS'. Chunk DOC-NHS-012-HYB-002 (under 'Chest pain') contains the differential diagnosis section for 'Heartburn or indigestion: Starts after eating...'.",
+    "correction_reason": "Original dataset incorrectly assigned DOC-NHS-009 (Headaches) to a heartburn query. The actual corpus text covering post-prandial heartburn/indigestion is located in DOC-NHS-012-HYB-002."
+  },
+  {
+    "case_id": "DEV-CHALLENGE-004",
+    "query": "hate gorom chayer pani pore pure geche thanda pani dibo?",
+    "intended_condition": "Burns and scalds",
+    "original_target_doc_id": "DOC-NHS-005",
+    "corrected_target_doc_id": "DOC-NHS-005",
+    "corrected_gold_chunk_ids": [
+      "DOC-NHS-005-HYB-000",
+      "DOC-NHS-005-HYB-001",
+      "DOC-NHS-005-HYB-002",
+      "DOC-NHS-005-HYB-003",
+      "DOC-NHS-005-HYB-004"
+    ],
+    "is_in_active_corpus": true,
+    "provenance_evidence": "Authoritative manifest lists DOC-NHS-005 as 'Burns and scalds - NHS' (5 chunks).",
+    "correction_reason": "Correct mapping preserved."
+  },
+  {
+    "case_id": "DEV-CHALLENGE-005",
+    "query": "pet kharap ar patla paykhana hole ors saline kivabe banabo?",
+    "intended_condition": "Dehydration / Diarrhoea & Vomiting / ORS",
+    "original_target_doc_id": "DOC-NHS-007",
+    "corrected_target_doc_id": "DOC-NHS-007",
+    "corrected_gold_chunk_ids": [
+      "DOC-NHS-007-HYB-000",
+      "DOC-NHS-007-HYB-001",
+      "DOC-NHS-007-HYB-002",
+      "DOC-NHS-007-HYB-003",
+      "DOC-NHS-008-HYB-000",
+      "DOC-NHS-008-HYB-003"
+    ],
+    "is_in_active_corpus": true,
+    "provenance_evidence": "Authoritative manifest lists DOC-NHS-007 as 'Dehydration - NHS' (covers oral rehydration solutions) and DOC-NHS-008 as 'Diarrhoea and vomiting - NHS'.",
+    "correction_reason": "Original dataset labeled DOC-NHS-007 as 'Diarrhoea and vomiting' when DOC-NHS-007 is Dehydration. Both DOC-NHS-007 and DOC-NHS-008 are clinically acceptable targets for ORS/diarrhoea queries."
+  },
+  {
+    "case_id": "DEV-CHALLENGE-006",
+    "query": "bacchar 102 jor napa dewa jabe?",
+    "intended_condition": "High temperature (fever) in children",
+    "original_target_doc_id": "DOC-NHS-010",
+    "corrected_target_doc_id": "DOC-NHS-010",
+    "corrected_gold_chunk_ids": [
+      "DOC-NHS-010-HYB-000",
+      "DOC-NHS-010-HYB-001",
+      "DOC-NHS-010-HYB-002",
+      "DOC-NHS-010-HYB-003",
+      "DOC-NHS-010-HYB-004",
+      "DOC-NHS-010-HYB-005",
+      "DOC-NHS-010-HYB-006"
+    ],
+    "is_in_active_corpus": true,
+    "provenance_evidence": "Authoritative manifest lists DOC-NHS-010 as 'High temperature (fever) in children - NHS' (7 chunks).",
+    "correction_reason": "Correct mapping preserved."
+  },
+  {
+    "case_id": "DEV-CHALLENGE-007",
+    "query": "sharir e lal chulkani guti guti utheche pani ashe",
+    "intended_condition": "Chickenpox / Itchy blister rash",
+    "original_target_doc_id": "DOC-NHS-008",
+    "corrected_target_doc_id": null,
+    "corrected_gold_chunk_ids": [],
+    "is_in_active_corpus": false,
+    "provenance_evidence": "Authoritative manifest lists DOC-NHS-008 as 'Diarrhoea and vomiting - NHS'. There is no Chickenpox source in the 14-condition active corpus.",
+    "correction_reason": "Dataset incorrectly mapped a Chickenpox symptom query to DOC-NHS-008 (Diarrhoea and vomiting). Chickenpox is not in the active corpus (unrepresented out-of-corpus condition)."
+  },
+  {
+    "case_id": "DEV-CHALLENGE-008",
+    "query": "shash nite koshto ar shosh shobdo hole ki korbo?",
+    "intended_condition": "Asthma",
+    "original_target_doc_id": "DOC-NHS-004",
+    "corrected_target_doc_id": "DOC-NHS-004",
+    "corrected_gold_chunk_ids": [
+      "DOC-NHS-004-HYB-000",
+      "DOC-NHS-004-HYB-001",
+      "DOC-NHS-004-HYB-002",
+      "DOC-NHS-004-HYB-003"
+    ],
+    "is_in_active_corpus": true,
+    "provenance_evidence": "Authoritative manifest lists DOC-NHS-004 as 'Asthma - NHS' (18 chunks).",
+    "correction_reason": "Correct mapping preserved."
+  },
+  {
+    "case_id": "DEV-CHALLENGE-009",
+    "query": "chokh lal hoye geche ar pishti jomche chokh jole",
+    "intended_condition": "Conjunctivitis / Sticky red eye",
+    "original_target_doc_id": "DOC-NHS-016",
+    "corrected_target_doc_id": null,
+    "corrected_gold_chunk_ids": [],
+    "is_in_active_corpus": false,
+    "provenance_evidence": "Authoritative manifest lists DOC-NHS-016 as 'Nosebleed'. There is no Conjunctivitis source in the 14-condition active corpus.",
+    "correction_reason": "Dataset incorrectly mapped a Conjunctivitis query to DOC-NHS-016 (Nosebleed). Conjunctivitis is not in the active corpus (unrepresented out-of-corpus condition)."
+  },
+  {
+    "case_id": "DEV-CHALLENGE-010",
+    "query": "mukhe lal gha ar fula khawa jay na",
+    "intended_condition": "Mouth ulcers",
+    "original_target_doc_id": "DOC-NHS-014",
+    "corrected_target_doc_id": null,
+    "corrected_gold_chunk_ids": [],
+    "is_in_active_corpus": false,
+    "provenance_evidence": "Authoritative manifest lists DOC-NHS-014 as 'Sepsis'. There is no Mouth Ulcers source in the 14-condition active corpus.",
+    "correction_reason": "Dataset incorrectly mapped a Mouth Ulcers query to DOC-NHS-014 (Sepsis). Mouth Ulcers is not in the active corpus (unrepresented out-of-corpus condition)."
+  },
+  {
+    "case_id": "DEV-CHALLENGE-011",
+    "query": "pokar kamor kheye fule lal hoye chulkani hochhe",
+    "intended_condition": "Anaphylaxis / Insect sting allergic reaction",
+    "original_target_doc_id": "DOC-NHS-011",
+    "corrected_target_doc_id": "DOC-NHS-011",
+    "corrected_gold_chunk_ids": [
+      "DOC-NHS-011-HYB-000",
+      "DOC-NHS-011-HYB-001"
+    ],
+    "is_in_active_corpus": true,
+    "provenance_evidence": "Authoritative manifest lists DOC-NHS-011 as 'Anaphylaxis - NHS'. Chunks DOC-NHS-011-HYB-000 and 001 explicitly address insect and wasp/bee sting anaphylactic reactions.",
+    "correction_reason": "Clarified condition name from general 'Insect bites' to 'Anaphylaxis / Insect sting allergy'."
+  },
+  {
+    "case_id": "DEV-CHALLENGE-012",
+    "query": "mathar ekpashe prochondo betha ar bomi bomi lage",
+    "intended_condition": "Headaches / Migraine with nausea",
+    "original_target_doc_id": "DOC-NHS-017",
+    "corrected_target_doc_id": "DOC-NHS-009",
+    "corrected_gold_chunk_ids": [
+      "DOC-NHS-009-HYB-000",
+      "DOC-NHS-009-HYB-001",
+      "DOC-NHS-009-HYB-002",
+      "DOC-NHS-009-HYB-003"
+    ],
+    "is_in_active_corpus": true,
+    "provenance_evidence": "Authoritative manifest lists DOC-NHS-009 as 'Headaches - NHS' (which covers migraines and severe headaches) and DOC-NHS-017 as 'Allergic rhinitis'.",
+    "correction_reason": "Original dataset incorrectly mapped a Migraine query to DOC-NHS-017 (Allergic rhinitis) instead of DOC-NHS-009 (Headaches)."
+  }
+]

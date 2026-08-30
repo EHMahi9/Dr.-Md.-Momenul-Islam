@@ -50,6 +50,47 @@ def normalize_query_track_a(query: str) -> str:
         return f"{query} ({' '.join(unique_terms)})"
     return query
 
+def normalize_candidate_b(query: str) -> str:
+    """
+    Candidate B: Context-Aware Compound Disambiguation (Frozen & Promoted in Phase 7A).
+    Detects multi-token compound patterns with anatomical site grounding to strictly route
+    queries and avoid cross-condition contamination.
+    Freeze SHA-256: 92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A
+    """
+    q = normalize_query_track_a(query)
+    lower_q = q.lower()
+    
+    # Compound Rules with Contextual Isolation
+    # 1. Nosebleed compound: 'nak' + bleeding (RULE_B1)
+    if re.search(r'\b(nak|nose)\b', lower_q) and re.search(r'\b(rokt|rokto|bleeding|porche|pora)\b', lower_q):
+        lower_q += " nosebleed epistaxis pinch soft part of nose lean forward bleed from nose"
+        
+    # 2. Cut / Wound compound: trauma ('kete'/'chole'/'ghotona') + bleeding (RULE_B2)
+    elif re.search(r'\b(kete|chole|keteche|injury|khoto|wound)\b', lower_q) and re.search(r'\b(rokt|rokto|bleeding|blood)\b', lower_q):
+        lower_q += " cuts and grazes cut wound bleeding pressure clean dressing bandage stop bleeding"
+        
+    # 3. Heartburn compound: 'buk' + burning/pain (RULE_B3)
+    if re.search(r'\b(buk|chest)\b', lower_q) and re.search(r'\b(jala|pora|betha|burning|pain)\b', lower_q):
+        lower_q += " heartburn acid reflux indigestion chest burning sensation antacids stomach acid"
+        
+    # 4. Thermal Burns compound: thermal agent ('agune'/'gorom pani'/'tel'/'chaye') + 'pora'/'pure' (RULE_B4)
+    elif re.search(r'\b(agune|gorom pani|tel|chayer pani|hot water|fire|steam)\b', lower_q) and re.search(r'\b(pora|pure|burn|scald)\b', lower_q):
+        lower_q += " burns and scalds cool tap water 20 minutes remove jewellery cling film thermal burn"
+        
+    # 5. Pediatric fever: 'baccha'/'shishu' + 'jor'/'fever' (RULE_B5)
+    if re.search(r'\b(baccha|bacchar|shishu|baby|child|children)\b', lower_q) and re.search(r'\b(jor|fever|tapmatra|temperature)\b', lower_q):
+        lower_q += " high temperature fever in children paracetamol plenty of fluids signs of serious illness"
+        
+    # 6. Insect bites: 'pokar kamor' (RULE_B6)
+    if re.search(r'\b(poka|pokar|insect|wasp|bee)\b', lower_q) and re.search(r'\b(kamor|khel|sting|bite|fule)\b', lower_q):
+        lower_q += " insect bites and stings redness swelling itching remove sting cold compress"
+        
+    # 7. Migraine: 'mathar ekpashe' + betha (RULE_B7)
+    if re.search(r'\b(matha|head)\b', lower_q) and re.search(r'\b(ekpashe|unilateral|one side|throbbing)\b', lower_q):
+        lower_q += " migraine severe throbbing headache dark quiet room nausea visual disturbance"
+        
+    return lower_q.strip()
+
 def compute_token_overlap(q_text: str, chunk_text: str) -> float:
     q_tokens = set(re.findall(r'\w+', q_text.lower()))
     c_tokens = set(re.findall(r'\w+', chunk_text.lower()))
@@ -138,6 +179,16 @@ class BaseRetrievalService(ABC):
     def get_strategy_name(self) -> str:
         """Return identifier of active strategy."""
         pass
+
+    @abstractmethod
+    def get_candidate_name(self) -> str:
+        """Return identifier of active retrieval candidate."""
+        pass
+
+    @abstractmethod
+    def get_candidate_hash(self) -> str:
+        """Return frozen cryptographic hash of active candidate."""
+        pass
     
     @abstractmethod
     def get_chunk_count(self) -> int:
@@ -146,12 +197,14 @@ class BaseRetrievalService(ABC):
 
 class FrozenDualAnchorRetrievalService(BaseRetrievalService):
     """
-    Production prototype wrapper around Strategy 5:
-    Track A Normalization -> E5 Small -> Top-15 -> BGE Reranker -> 0.85x Overview Debiasing -> Dual Anchor Fusion.
+    Production prototype wrapper around Strategy 5 with Promoted Candidate B:
+    Candidate B Context-Aware Disambiguation -> E5 Small -> Top-15 -> BGE Reranker -> 0.85x Overview Debiasing -> Dual Anchor Fusion.
+    Candidate B Freeze SHA-256: 92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A
+    Parent Strategy 5 SHA-256: 1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae
     """
     
     def __init__(self):
-        print(f"[RetrievalService] Initializing {settings.RETRIEVAL_STRATEGY}...")
+        print(f"[RetrievalService] Initializing {settings.RETRIEVAL_STRATEGY} with active candidate: {settings.ACTIVE_RETRIEVAL_CANDIDATE}...")
         
         # 1. Load Corpus
         if not os.path.exists(settings.CORPUS_MANIFEST_PATH):
@@ -179,13 +232,19 @@ class FrozenDualAnchorRetrievalService(BaseRetrievalService):
         
     def get_strategy_name(self) -> str:
         return settings.RETRIEVAL_STRATEGY
+
+    def get_candidate_name(self) -> str:
+        return settings.ACTIVE_RETRIEVAL_CANDIDATE
+
+    def get_candidate_hash(self) -> str:
+        return settings.CANDIDATE_B_FREEZE_SHA256
         
     def get_chunk_count(self) -> int:
         return len(self.chunks)
         
     def retrieve(self, query: str, top_k: int = 5) -> Tuple[str, List[RetrievedEvidenceChunk]]:
-        # Step 1: Normalization
-        norm_query = normalize_query_track_a(query)
+        # Step 1: Normalization (Promoted Candidate B)
+        norm_query = normalize_candidate_b(query)
         
         # Step 2: Dense Retrieval (Top-15)
         q_emb = self.dense_model.encode([f"query: {norm_query}"], normalize_embeddings=True)
@@ -194,9 +253,9 @@ class FrozenDualAnchorRetrievalService(BaseRetrievalService):
         candidate_cids = [self.chunks[idx]["chunk_id"] for idx in top_k_indices]
         candidate_dense_scores = [float(dense_scores[idx]) for idx in top_k_indices]
         
-        # Step 3: Cross-Encoder Reranking
+        # Step 3: Cross-Encoder Reranking (Optimized non-semantic sub-batching to eliminate padding overhead)
         pairs = [[query, self.chunks_by_id[cid]["text"]] for cid in candidate_cids]
-        raw_rerank_scores = self.reranker.predict(pairs)
+        raw_rerank_scores = self.reranker.predict(pairs, batch_size=8, max_length=512)
         
         # Step 4: Overview Debiasing (0.85x) & Dual Anchor Fusion
         adjusted_scores = []

@@ -1,0 +1,287 @@
+{
+  "phase": "6K",
+  "benchmark_sha256": "976D62DA7DB7872303E755910F286E6F895703012F7934E2809544BC1820E1A5",
+  "candidate_b_total_in_corpus_failures": 7,
+  "control_total_in_corpus_failures": 8,
+  "candidate_b_failure_breakdown": {
+    "GOLD_OUTSIDE_DENSE15": 2,
+    "GOLD_IN_DENSE15_BUT_RERANKED_OUT": 5
+  },
+  "candidate_b_failures_detail": [
+    {
+      "case_id": "VAL-EN-007",
+      "modality": "English",
+      "query": "my hay fever is causing sneezing and itchy watery eyes",
+      "target_source": "DOC-NHS-017",
+      "failure_type": "GOLD_OUTSIDE_DENSE15",
+      "dense_top15": [
+        "DOC-NHS-014",
+        "DOC-NHS-010",
+        "DOC-NHS-010",
+        "DOC-NHS-015",
+        "DOC-NHS-010",
+        "DOC-NHS-008",
+        "DOC-NHS-007",
+        "DOC-NHS-010",
+        "DOC-NHS-010",
+        "DOC-NHS-015",
+        "DOC-NHS-010",
+        "DOC-NHS-016",
+        "DOC-NHS-008",
+        "DOC-NHS-008",
+        "DOC-NHS-007"
+      ],
+      "final_top5": [
+        "DOC-NHS-010",
+        "DOC-NHS-010",
+        "DOC-NHS-016",
+        "DOC-NHS-010",
+        "DOC-NHS-010"
+      ]
+    },
+    {
+      "case_id": "VAL-SB-001",
+      "modality": "Standard Banglish",
+      "query": "amar naak theke rokt pore ase bondho hocche na ki korbo",
+      "target_source": "DOC-NHS-016",
+      "failure_type": "GOLD_OUTSIDE_DENSE15",
+      "dense_top15": [
+        "DOC-NHS-006",
+        "DOC-NHS-005",
+        "DOC-NHS-006",
+        "DOC-NHS-006",
+        "DOC-NHS-005",
+        "DOC-NHS-005",
+        "DOC-NHS-006",
+        "DOC-NHS-006",
+        "DOC-NHS-006",
+        "DOC-NHS-014",
+        "DOC-NHS-010",
+        "DOC-NHS-015",
+        "DOC-NHS-015",
+        "DOC-NHS-005",
+        "DOC-NHS-006"
+      ],
+      "final_top5": [
+        "DOC-NHS-006",
+        "DOC-NHS-005",
+        "DOC-NHS-006",
+        "DOC-NHS-006",
+        "DOC-NHS-005"
+      ]
+    },
+    {
+      "case_id": "VAL-SB-004",
+      "modality": "Standard Banglish",
+      "query": "buk betha ar bomi bomi lagche oshudh ki khabo",
+      "target_source": "DOC-NHS-012",
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "dense_top15": [
+        "DOC-NHS-008",
+        "DOC-NHS-008",
+        "DOC-NHS-008",
+        "DOC-NHS-014",
+        "DOC-NHS-015",
+        "DOC-NHS-008",
+        "DOC-NHS-010",
+        "DOC-NHS-015",
+        "DOC-NHS-012",
+        "DOC-NHS-007",
+        "DOC-NHS-011",
+        "DOC-NHS-008",
+        "DOC-NHS-015",
+        "DOC-NHS-007",
+        "DOC-NHS-011"
+      ],
+      "final_top5": [
+        "DOC-NHS-008",
+        "DOC-NHS-008",
+        "DOC-NHS-008",
+        "DOC-NHS-015",
+        "DOC-NHS-014"
+      ]
+    },
+    {
+      "case_id": "VAL-SB-007",
+      "modality": "Standard Banglish",
+      "query": "pet kharap saline kivabe banabo dosage koto",
+      "target_source": "DOC-NHS-007",
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "dense_top15": [
+        "DOC-NHS-015",
+        "DOC-NHS-015",
+        "DOC-NHS-015",
+        "DOC-NHS-014",
+        "DOC-NHS-015",
+        "DOC-NHS-010",
+        "DOC-NHS-010",
+        "DOC-NHS-007",
+        "DOC-NHS-015",
+        "DOC-NHS-008",
+        "DOC-NHS-004",
+        "DOC-NHS-005",
+        "DOC-NHS-004",
+        "DOC-NHS-015",
+        "DOC-NHS-017"
+      ],
+      "final_top5": [
+        "DOC-NHS-015",
+        "DOC-NHS-015",
+        "DOC-NHS-015",
+        "DOC-NHS-014",
+        "DOC-NHS-015"
+      ]
+    },
+    {
+      "case_id": "VAL-SB-010",
+      "modality": "Standard Banglish",
+      "query": "poka kamor kheye shorir fule geche shash nite kosto hochhe",
+      "target_source": "DOC-NHS-011",
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "dense_top15": [
+        "DOC-NHS-015",
+        "DOC-NHS-015",
+        "DOC-NHS-015",
+        "DOC-NHS-004",
+        "DOC-NHS-004",
+        "DOC-NHS-004",
+        "DOC-NHS-004",
+        "DOC-NHS-014",
+        "DOC-NHS-011",
+        "DOC-NHS-004",
+        "DOC-NHS-012",
+        "DOC-NHS-004",
+        "DOC-NHS-004",
+        "DOC-NHS-004",
+        "DOC-NHS-010"
+      ],
+      "final_top5": [
+        "DOC-NHS-015",
+        "DOC-NHS-015",
+        "DOC-NHS-015",
+        "DOC-NHS-004",
+        "DOC-NHS-004"
+      ]
+    },
+    {
+      "case_id": "VAL-AB-001",
+      "modality": "Abbreviated Banglish",
+      "query": "naak rokt bondhona kothay tipbo",
+      "target_source": "DOC-NHS-016",
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "dense_top15": [
+        "DOC-NHS-006",
+        "DOC-NHS-006",
+        "DOC-NHS-006",
+        "DOC-NHS-006",
+        "DOC-NHS-006",
+        "DOC-NHS-006",
+        "DOC-NHS-015",
+        "DOC-NHS-006",
+        "DOC-NHS-016",
+        "DOC-NHS-014",
+        "DOC-NHS-015",
+        "DOC-NHS-015",
+        "DOC-NHS-015",
+        "DOC-NHS-014",
+        "DOC-NHS-016"
+      ],
+      "final_top5": [
+        "DOC-NHS-006",
+        "DOC-NHS-006",
+        "DOC-NHS-006",
+        "DOC-NHS-006",
+        "DOC-NHS-006"
+      ]
+    },
+    {
+      "case_id": "VAL-AB-006",
+      "modality": "Abbreviated Banglish",
+      "query": "matha betha 2din thk",
+      "target_source": "DOC-NHS-009",
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT",
+      "dense_top15": [
+        "DOC-NHS-010",
+        "DOC-NHS-005",
+        "DOC-NHS-015",
+        "DOC-NHS-009",
+        "DOC-NHS-015",
+        "DOC-NHS-015",
+        "DOC-NHS-008",
+        "DOC-NHS-010",
+        "DOC-NHS-004",
+        "DOC-NHS-008",
+        "DOC-NHS-004",
+        "DOC-NHS-004",
+        "DOC-NHS-006",
+        "DOC-NHS-008",
+        "DOC-NHS-015"
+      ],
+      "final_top5": [
+        "DOC-NHS-010",
+        "DOC-NHS-005",
+        "DOC-NHS-010",
+        "DOC-NHS-015",
+        "DOC-NHS-015"
+      ]
+    }
+  ],
+  "control_failures_detail": [
+    {
+      "case_id": "VAL-EN-007",
+      "modality": "English",
+      "query": "my hay fever is causing sneezing and itchy watery eyes",
+      "target_source": "DOC-NHS-017",
+      "failure_type": "GOLD_OUTSIDE_DENSE15"
+    },
+    {
+      "case_id": "VAL-SB-001",
+      "modality": "Standard Banglish",
+      "query": "amar naak theke rokt pore ase bondho hocche na ki korbo",
+      "target_source": "DOC-NHS-016",
+      "failure_type": "GOLD_OUTSIDE_DENSE15"
+    },
+    {
+      "case_id": "VAL-SB-004",
+      "modality": "Standard Banglish",
+      "query": "buk betha ar bomi bomi lagche oshudh ki khabo",
+      "target_source": "DOC-NHS-012",
+      "failure_type": "GOLD_OUTSIDE_DENSE15"
+    },
+    {
+      "case_id": "VAL-SB-007",
+      "modality": "Standard Banglish",
+      "query": "pet kharap saline kivabe banabo dosage koto",
+      "target_source": "DOC-NHS-007",
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT"
+    },
+    {
+      "case_id": "VAL-SB-010",
+      "modality": "Standard Banglish",
+      "query": "poka kamor kheye shorir fule geche shash nite kosto hochhe",
+      "target_source": "DOC-NHS-011",
+      "failure_type": "GOLD_OUTSIDE_DENSE15"
+    },
+    {
+      "case_id": "VAL-AB-001",
+      "modality": "Abbreviated Banglish",
+      "query": "naak rokt bondhona kothay tipbo",
+      "target_source": "DOC-NHS-016",
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT"
+    },
+    {
+      "case_id": "VAL-AB-004",
+      "modality": "Abbreviated Banglish",
+      "query": "buk jala khabar por acid",
+      "target_source": "DOC-NHS-012",
+      "failure_type": "GOLD_OUTSIDE_DENSE15"
+    },
+    {
+      "case_id": "VAL-AB-006",
+      "modality": "Abbreviated Banglish",
+      "query": "matha betha 2din thk",
+      "target_source": "DOC-NHS-009",
+      "failure_type": "GOLD_IN_DENSE15_BUT_RERANKED_OUT"
+    }
+  ]
+}

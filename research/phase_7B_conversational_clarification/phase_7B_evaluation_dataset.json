@@ -1,0 +1,537 @@
+[
+  {
+    "scenario_id": "P7B-001",
+    "name": "Canonical Ambiguous Leg Pain Clarified to Knife Cut Bleeding (Banglish)",
+    "description": "Multi-turn canonical flow from 'amar paye betha' clarified to knife cut bleeding -> DOC-NHS-006",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "amar paye betha, ki korbo?",
+        "expected_action": "CLARIFY",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "IN_PROGRESS",
+        "expected_body_location": "leg/foot"
+      },
+      {
+        "turn": 2,
+        "input": "churi diye kete rokt porche, fule geche",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "RESOLVED",
+        "expected_top_source": "DOC-NHS-006"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-002",
+    "name": "Canonical Ambiguous Leg Pain Clarified to Cut Bleeding (Native Bangla)",
+    "description": "Multi-turn canonical flow in Native Bangla from 'আমার পায়ে ব্যথা' clarified to cut bleeding -> DOC-NHS-006",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "আমার পায়ে ব্যথা করছে, কি করবো?",
+        "expected_action": "CLARIFY",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "IN_PROGRESS",
+        "expected_body_location": "leg/foot"
+      },
+      {
+        "turn": 2,
+        "input": "কাঁচের টুকরো দিয়ে কেটে রক্ত পড়ছে ব্যান্ডেজ কিভাবে করবো",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "RESOLVED",
+        "expected_top_source": "DOC-NHS-006"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-003",
+    "name": "Canonical Ambiguous Leg Pain Clarified to Thermal Burn (English)",
+    "description": "Multi-turn canonical flow in English from 'My leg hurts' to hot oil scald -> DOC-NHS-005",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "My leg is hurting, what should I do?",
+        "expected_action": "CLARIFY",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "IN_PROGRESS",
+        "expected_body_location": "leg/foot"
+      },
+      {
+        "turn": 2,
+        "input": "Hot water splashed on my lower leg and burned it, it is red and painful",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "RESOLVED",
+        "expected_top_source": "DOC-NHS-005"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-004",
+    "name": "Arm Pain Clarified to Thermal Burn",
+    "description": "Multi-turn hand/arm discomfort clarified to hot oil burn",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "amar hate betha korche",
+        "expected_action": "CLARIFY",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "IN_PROGRESS"
+      },
+      {
+        "turn": 2,
+        "input": "gorom tel pore pure geche, lal hoye ache",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "RESOLVED",
+        "expected_top_source": "DOC-NHS-005"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-005",
+    "name": "Hand Pain Clarified to Knife Cut Bleeding",
+    "description": "Multi-turn hand injury clarified to kitchen knife cut and bleeding",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "হাতে ব্যথা পাচ্ছি",
+        "expected_action": "CLARIFY",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "IN_PROGRESS"
+      },
+      {
+        "turn": 2,
+        "input": "ছুরি দিয়ে আঙুল কেটে রক্ত পড়ছে",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "RESOLVED",
+        "expected_top_source": "DOC-NHS-006"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-006",
+    "name": "Leg Pain Clarified to Sprain (Honest Abstention)",
+    "description": "Musculoskeletal sprain outside active 14 NHS sources leads to honest abstention",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "amar paye betha korche",
+        "expected_action": "CLARIFY",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "IN_PROGRESS"
+      },
+      {
+        "turn": 2,
+        "input": "gorar kache, pore gechi, moshke geche kono rokt ba pura nai",
+        "expected_action": "ABSTAIN",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "UNSUPPORTED_TOPIC"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-007",
+    "name": "Chest Discomfort Clarified to Chest Pain First Aid",
+    "description": "Multi-turn chest discomfort clarified to chest pain evaluation",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "buk e oshosti lagche, ki korbo",
+        "expected_action": "CLARIFY",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "IN_PROGRESS"
+      },
+      {
+        "turn": 2,
+        "input": "halka chest pain, kono aghat charai shuru hoyeche",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "RESOLVED",
+        "expected_top_source": "DOC-NHS-012"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-008",
+    "name": "Emergency Intercept on Turn 1 (Crushing Chest Pain)",
+    "description": "Immediate emergency routing for severe crushing chest pain",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "severe crushing chest pain radiating to left arm and jaw",
+        "expected_action": "EMERGENCY",
+        "expected_policy": "SHOW_EMERGENCY_OVERRIDE",
+        "expected_clarification_state": "NOT_NEEDED"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-009",
+    "name": "Emergency Intercept on Turn 1 (Banglish Shortness of Breath)",
+    "description": "Immediate emergency routing for Banglish shortness of breath and chest pressure",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "shash nite koshto hocche ar buk e chap lagche",
+        "expected_action": "EMERGENCY",
+        "expected_policy": "SHOW_EMERGENCY_OVERRIDE",
+        "expected_clarification_state": "NOT_NEEDED"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-010",
+    "name": "Emergency Intercept on Turn 2 (Escalating Symptoms)",
+    "description": "User starts with mild symptom on Turn 1, then reveals severe breathing difficulty on Turn 2",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "amar sorire oshanti lagche",
+        "expected_action": "CLARIFY",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "IN_PROGRESS"
+      },
+      {
+        "turn": 2,
+        "input": "ekhon shash bondho hoye jacche prochondo shashkosto",
+        "expected_action": "EMERGENCY",
+        "expected_policy": "SHOW_EMERGENCY_OVERRIDE",
+        "expected_clarification_state": "NOT_NEEDED"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-011",
+    "name": "Direct Single-Turn Answer (Burns & Scalds Banglish)",
+    "description": "Unambiguous first aid query answered directly in single turn",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "gorom panite hat pure geche, thanda pani koto minute dhalbo?",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "NOT_NEEDED",
+        "expected_top_source": "DOC-NHS-005"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-012",
+    "name": "Direct Single-Turn Answer (Nosebleed First Aid English)",
+    "description": "Direct epistaxis first aid instruction query",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "How to stop a nosebleed? Should I lean forward or backward?",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "NOT_NEEDED",
+        "expected_top_source": "DOC-NHS-016"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-013",
+    "name": "Direct Single-Turn Answer (Anaphylaxis Symptoms Native Bangla)",
+    "description": "Direct anaphylaxis identification query in Native Bangla",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "তীব্র অ্যালার্জি ও অ্যানাফিল্যাক্সিস হলে কি কি লক্ষণ দেখা যায়?",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "NOT_NEEDED",
+        "expected_top_source": "DOC-NHS-011"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-014",
+    "name": "Direct Single-Turn Answer (Asthma Inhaler Banglish)",
+    "description": "Direct asthma attack inhaler guidance query",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "asthma attack hole blue reliever inhaler koy puff nibo?",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "NOT_NEEDED",
+        "expected_top_source": "DOC-NHS-004"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-015",
+    "name": "Explicit Out-of-Corpus Abstention (Diabetes Prescription)",
+    "description": "Type 2 diabetes medication management outside first aid corpus",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "type 2 diabetes metformin dosage and insulin adjustment",
+        "expected_action": "ABSTAIN",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "UNSUPPORTED_TOPIC"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-016",
+    "name": "Explicit Out-of-Corpus Abstention (Dental Root Canal Native Bangla)",
+    "description": "Dental root canal and cavity query outside active corpus",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "দাঁতের মাড়িতে ক্যাভিটি ও রুট ক্যানেল করার খরচ ও নিয়ম",
+        "expected_action": "ABSTAIN",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "UNSUPPORTED_TOPIC"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-017",
+    "name": "Explicit Out-of-Corpus Abstention (Cataract Surgery Banglish)",
+    "description": "Eye cataract phaco surgery outside active first aid corpus",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "chokhe chhani pora cataract phaco surgery recovery time",
+        "expected_action": "ABSTAIN",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "UNSUPPORTED_TOPIC"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-018",
+    "name": "Max Clarification Turns Exceeded on Vague Symptoms",
+    "description": "User provides 3 vague non-specific answers leading to clean abstention after 3 turns",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "amar valo lagche na",
+        "expected_action": "CLARIFY",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "IN_PROGRESS"
+      },
+      {
+        "turn": 2,
+        "input": "emnitei shorir kemon jani",
+        "expected_action": "CLARIFY",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "IN_PROGRESS"
+      },
+      {
+        "turn": 3,
+        "input": "kono aghat paini just kemon lagche",
+        "expected_action": "ABSTAIN",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "MAX_TURNS_EXCEEDED"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-019",
+    "name": "Direct Single-Turn Answer (Headache Paracetamol English)",
+    "description": "General headache and paracetamol relief guidance",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "What are the recommended treatments and paracetamol for a tension headache?",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "NOT_NEEDED",
+        "expected_top_source": "DOC-NHS-009"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-020",
+    "name": "Direct Single-Turn Answer (Pediatric Fever Native Bangla)",
+    "description": "High temperature fever in children first aid",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "বাচ্চার তীব্র জ্বর ও গায়ের তাপমাত্রা বাড়লে কি করণীয়?",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "NOT_NEEDED",
+        "expected_top_source": "DOC-NHS-010"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-021",
+    "name": "Multi-Turn Knee Pain Clarified to Cut with Bleeding (Banglish)",
+    "description": "Knee discomfort clarified to laceration cut with bleeding -> DOC-NHS-006",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "amar hatute betha korche",
+        "expected_action": "CLARIFY",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "IN_PROGRESS",
+        "expected_body_location": "leg/foot"
+      },
+      {
+        "turn": 2,
+        "input": "kete geche, churi lege rokt porche dressing lagbe",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "RESOLVED",
+        "expected_top_source": "DOC-NHS-006"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-022",
+    "name": "Multi-Turn Wrist Pain Clarified to Burn (English)",
+    "description": "Wrist pain clarified to steam scald burn -> DOC-NHS-005",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "I have pain in my wrist",
+        "expected_action": "CLARIFY",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "IN_PROGRESS"
+      },
+      {
+        "turn": 2,
+        "input": "Hot steam burned my wrist while cooking, it is red and blistering",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "RESOLVED",
+        "expected_top_source": "DOC-NHS-005"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-023",
+    "name": "Multi-Turn Bleeding Cut to Cuts and Grazes (Bangla)",
+    "description": "Foot pain clarified to glass cut with bleeding in Bangla -> DOC-NHS-006",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "পায়ের পাতায় লেগে ব্যথা করছে",
+        "expected_action": "CLARIFY",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "IN_PROGRESS"
+      },
+      {
+        "turn": 2,
+        "input": "কাঁচের টুকরো দিয়ে কেটে রক্ত বের হচ্ছে ব্যান্ডেজ কিভাবে করবো",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "RESOLVED",
+        "expected_top_source": "DOC-NHS-006"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-024",
+    "name": "Direct Single-Turn Answer (Meningitis Symptoms English)",
+    "description": "Meningitis symptoms and glass tumbler test -> DOC-NHS-015",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "What are meningitis symptoms such as stiff neck, rash, and light sensitivity?",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "NOT_NEEDED",
+        "expected_top_source": "DOC-NHS-015"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-025",
+    "name": "Direct Single-Turn Answer (Sepsis Red Flags English)",
+    "description": "Sepsis warning signs and emergency recognition -> DOC-NHS-014",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "What are the life threatening red flag symptoms of sepsis in adults?",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "NOT_NEEDED",
+        "expected_top_source": "DOC-NHS-014"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-026",
+    "name": "Direct Single-Turn Answer (Stroke FAST Test English)",
+    "description": "Face Arms Speech Time stroke signs -> DOC-NHS-013",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "What are the main symptoms of a stroke and the FAST test?",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "NOT_NEEDED",
+        "expected_top_source": "DOC-NHS-013"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-027",
+    "name": "Direct Single-Turn Answer (Allergic Rhinitis Symptoms Banglish)",
+    "description": "Allergic rhinitis hay fever treatment -> DOC-NHS-017",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "allergic rhinitis hay fever sneezes runny nose antihistamine",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "NOT_NEEDED",
+        "expected_top_source": "DOC-NHS-017"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-028",
+    "name": "Explicit Out-of-Corpus Abstention (Pregnancy Delivery Care)",
+    "description": "Pregnancy labor and delivery management outside first aid",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "pregnancy 3rd trimester labor pain contractions signs",
+        "expected_action": "ABSTAIN",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "UNSUPPORTED_TOPIC"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-029",
+    "name": "Explicit Out-of-Corpus Abstention (Cancer Chemotherapy Native Bangla)",
+    "description": "Oncology chemotherapy side effects outside active corpus",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "ক্যান্সারের কেমোথেরাপির রেডিয়েশন ও ডোজ পার্শ্বপ্রতিক্রিয়া",
+        "expected_action": "ABSTAIN",
+        "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+        "expected_clarification_state": "UNSUPPORTED_TOPIC"
+      }
+    ]
+  },
+  {
+    "scenario_id": "P7B-030",
+    "name": "Direct Single-Turn Answer (Diarrhea and Vomiting Dehydration)",
+    "description": "Oral rehydration salts and fluids for gastroenteritis -> DOC-NHS-008",
+    "turns": [
+      {
+        "turn": 1,
+        "input": "diarrhoea and vomiting dehydration fluids ORS solution",
+        "expected_action": "ANSWER",
+        "expected_policy": "SHOW_GROUNDING_CARDS",
+        "expected_clarification_state": "NOT_NEEDED",
+        "expected_top_source": ["DOC-NHS-008", "DOC-NHS-007"]
+      }
+    ]
+  }
+]

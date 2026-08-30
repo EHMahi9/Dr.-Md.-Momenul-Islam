@@ -1,0 +1,186 @@
+{
+  "queries_tested": 6,
+  "rankings_100_percent_identical": true,
+  "global_max_score_delta": 6.556510925292969e-07,
+  "average_baseline_ms": 46554.66,
+  "average_opt1_ms": 35675.25,
+  "average_opt2_ms": 36452.14,
+  "improvement_opt1_pct": 23.4,
+  "improvement_opt2_pct": 21.7,
+  "query_details": [
+    {
+      "query": "how to treat minor burns with cool water",
+      "latency_baseline_ms": 75633.1,
+      "latency_opt1_ms": 42467.27,
+      "latency_opt2_ms": 70828.33,
+      "max_score_delta": 2.2351741790771484e-08,
+      "top5_base": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-017-HYB-003",
+        "DOC-NHS-007-HYB-005"
+      ],
+      "top5_opt1": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-017-HYB-003",
+        "DOC-NHS-007-HYB-005"
+      ],
+      "top5_opt2": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-004",
+        "DOC-NHS-017-HYB-003",
+        "DOC-NHS-007-HYB-005"
+      ],
+      "top5_exact_match": true
+    },
+    {
+      "query": "clean cut or graze with clean water and dressing",
+      "latency_baseline_ms": 55020.6,
+      "latency_opt1_ms": 61801.56,
+      "latency_opt2_ms": 44037.18,
+      "max_score_delta": 1.1920928955078125e-07,
+      "top5_base": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-017-HYB-003"
+      ],
+      "top5_opt1": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-017-HYB-003"
+      ],
+      "top5_opt2": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-017-HYB-003"
+      ],
+      "top5_exact_match": true
+    },
+    {
+      "query": "বাচ্চার জ্বর হলে করণীয় কি?",
+      "latency_baseline_ms": 23860.85,
+      "latency_opt1_ms": 18060.91,
+      "latency_opt2_ms": 19568.26,
+      "max_score_delta": 3.427267074584961e-07,
+      "top5_base": [
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-014-HYB-005",
+        "DOC-NHS-007-HYB-005"
+      ],
+      "top5_opt1": [
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-014-HYB-005",
+        "DOC-NHS-007-HYB-005"
+      ],
+      "top5_opt2": [
+        "DOC-NHS-010-HYB-002",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-004-HYB-002",
+        "DOC-NHS-014-HYB-005",
+        "DOC-NHS-007-HYB-005"
+      ],
+      "top5_exact_match": true
+    },
+    {
+      "query": "কাটা বা ছড়ে যাওয়ার প্রাথমিক চিকিৎসা কি?",
+      "latency_baseline_ms": 45918.61,
+      "latency_opt1_ms": 28497.02,
+      "latency_opt2_ms": 26228.19,
+      "max_score_delta": 6.556510925292969e-07,
+      "top5_base": [
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "top5_opt1": [
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "top5_opt2": [
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-006-HYB-000",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-005-HYB-003",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "top5_exact_match": true
+    },
+    {
+      "query": "nak diye rokt porle ki korbo?",
+      "latency_baseline_ms": 38751.04,
+      "latency_opt1_ms": 32237.8,
+      "latency_opt2_ms": 31529.38,
+      "max_score_delta": 1.6370904631912708e-11,
+      "top5_base": [
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-015-HYB-005",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "top5_opt1": [
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-015-HYB-005",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "top5_opt2": [
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-015-HYB-005",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "top5_exact_match": true
+    },
+    {
+      "query": "bacchar jor hole ki paracetamol dewa jabe?",
+      "latency_baseline_ms": 40143.73,
+      "latency_opt1_ms": 30986.94,
+      "latency_opt2_ms": 26521.47,
+      "max_score_delta": 1.8917489796876907e-10,
+      "top5_base": [
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-014-HYB-014",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "top5_opt1": [
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-014-HYB-014",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "top5_opt2": [
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-014-HYB-014",
+        "DOC-NHS-005-HYB-004"
+      ],
+      "top5_exact_match": true
+    }
+  ]
+}

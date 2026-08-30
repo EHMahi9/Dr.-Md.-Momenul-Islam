@@ -1,0 +1,37 @@
+{
+  "phase": "6K",
+  "timestamp": "2026-08-29T13:16:18.930593+00:00",
+  "preflight_status": "ALL_CHECKS_PASSED",
+  "checks": [
+    {
+      "check": "benchmark_sha256",
+      "expected": "976D62DA7DB7872303E755910F286E6F895703012F7934E2809544BC1820E1A5",
+      "actual": "976D62DA7DB7872303E755910F286E6F895703012F7934E2809544BC1820E1A5",
+      "passed": true
+    },
+    {
+      "check": "candidate_b_freeze_sha256",
+      "expected": "92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A",
+      "actual": "92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A",
+      "passed": true
+    },
+    {
+      "check": "corpus_manifest_sha256",
+      "expected": "44D0602F730D6460E6FEFA431BD5C09005B48CE92B47D02832532E5868D4AA58",
+      "actual": "44D0602F730D6460E6FEFA431BD5C09005B48CE92B47D02832532E5868D4AA58",
+      "passed": true
+    },
+    {
+      "check": "lock_status",
+      "expected": "LOCKED_FOR_SINGLE_SHOT_VALIDATION",
+      "actual": "LOCKED_FOR_SINGLE_SHOT_VALIDATION",
+      "passed": true
+    },
+    {
+      "check": "case_count",
+      "expected": 40,
+      "actual": 40,
+      "passed": true
+    }
+  ]
+}

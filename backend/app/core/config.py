@@ -30,9 +30,13 @@ class AppSettings(BaseModel):
         os.path.join(os.path.dirname(__file__), "..", "..", "..", "research", "gate_5_27_ingestion", "provenance_manifest.json")
     )
     
-    # Retrieval Configuration (Frozen Strategy 5 from Gate 5.24.1 / Gate 5.29)
+    # Retrieval Configuration (Promoted Candidate B — Phase 7A; Parent Strategy 5 from Gate 5.24.1 / Gate 5.29)
     RETRIEVAL_STRATEGY: str = "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR"
-    FROZEN_CANDIDATE_SHA256: str = "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae"
+    ACTIVE_RETRIEVAL_CANDIDATE: str = "CANDIDATE_B_CONTEXT_AWARE_DISAMBIGUATION"
+    CANDIDATE_B_FREEZE_SHA256: str = "92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A"
+    PARENT_STRATEGY_SHA256: str = "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae"
+    # Legacy alias
+    FROZEN_CANDIDATE_SHA256: str = PARENT_STRATEGY_SHA256
     DENSE_MODEL_NAME: str = "intfloat/multilingual-e5-small"
     RERANKER_MODEL_NAME: str = "BAAI/bge-reranker-v2-m3"
     DENSE_K: int = 15

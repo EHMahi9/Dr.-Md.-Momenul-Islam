@@ -1,0 +1,1466 @@
+{
+  "phase": "6H",
+  "timestamp": "2026-08-29T11:01:29Z",
+  "challenge_cases_count": 12,
+  "regression_cases_count": 12,
+  "candidate_summary_metrics": {
+    "CONTROL": {
+      "dense_recall_at_15_pct": 58.33,
+      "recall_at_5_pct": 41.67,
+      "recall_at_3_pct": 41.67,
+      "top1_accuracy_pct": 25.0,
+      "mrr": 0.3333,
+      "cross_condition_contamination_rate_pct": 16.67,
+      "regression_control_top1_accuracy_pct": 66.67,
+      "regression_control_recall_at_5_pct": 66.67
+    },
+    "Candidate A (Targeted Transliteration)": {
+      "dense_recall_at_15_pct": 66.67,
+      "recall_at_5_pct": 66.67,
+      "recall_at_3_pct": 58.33,
+      "top1_accuracy_pct": 41.67,
+      "mrr": 0.5208,
+      "cross_condition_contamination_rate_pct": 16.67,
+      "regression_control_top1_accuracy_pct": 66.67,
+      "regression_control_recall_at_5_pct": 66.67
+    },
+    "Candidate B (Context Disambiguation)": {
+      "dense_recall_at_15_pct": 58.33,
+      "recall_at_5_pct": 50.0,
+      "recall_at_3_pct": 50.0,
+      "top1_accuracy_pct": 33.33,
+      "mrr": 0.4028,
+      "cross_condition_contamination_rate_pct": 8.33,
+      "regression_control_top1_accuracy_pct": 66.67,
+      "regression_control_recall_at_5_pct": 66.67
+    },
+    "Candidate C (Integrated Hybrid A+B)": {
+      "dense_recall_at_15_pct": 66.67,
+      "recall_at_5_pct": 66.67,
+      "recall_at_3_pct": 58.33,
+      "top1_accuracy_pct": 50.0,
+      "mrr": 0.5486,
+      "cross_condition_contamination_rate_pct": 16.67,
+      "regression_control_top1_accuracy_pct": 66.67,
+      "regression_control_recall_at_5_pct": 66.67
+    }
+  },
+  "detailed_results": {
+    "CONTROL": {
+      "challenge_results": [
+        {
+          "case_id": "DEV-CHALLENGE-001",
+          "query": "nak diye rokt porle ki korbo?",
+          "expected_doc_id": "DOC-NHS-012",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": true,
+          "top_chunk": "DOC-NHS-006-HYB-003",
+          "top_score": 0.0841,
+          "top5_cids": [
+            "DOC-NHS-006-HYB-003",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-006-HYB-002",
+            "DOC-NHS-006-HYB-004",
+            "DOC-NHS-015-HYB-015"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-002",
+          "query": "haat kete giye onek rokt porche ki vabe bondho korbo?",
+          "expected_doc_id": "DOC-NHS-006",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-006-HYB-003",
+          "top_score": 0.0842,
+          "top5_cids": [
+            "DOC-NHS-006-HYB-003",
+            "DOC-NHS-006-HYB-004",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-006-HYB-002",
+            "DOC-NHS-015-HYB-004"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-003",
+          "query": "khabar por buk jala pora korle ki oshudh khabo?",
+          "expected_doc_id": "DOC-NHS-009",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": true,
+          "top_chunk": "DOC-NHS-005-HYB-001",
+          "top_score": 0.0837,
+          "top5_cids": [
+            "DOC-NHS-005-HYB-001",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-010-HYB-005"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-004",
+          "query": "hate gorom chayer pani pore pure geche thanda pani dibo?",
+          "expected_doc_id": "DOC-NHS-005",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": false,
+          "rank": 2,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-015-HYB-002",
+          "top_score": 0.0842,
+          "top5_cids": [
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-005-HYB-001",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-005-HYB-002"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-005",
+          "query": "pet kharap ar patla paykhana hole ors saline kivabe banabo?",
+          "expected_doc_id": "DOC-NHS-007",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": false,
+          "rank": 2,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-008-HYB-003",
+          "top_score": 0.0852,
+          "top5_cids": [
+            "DOC-NHS-008-HYB-003",
+            "DOC-NHS-007-HYB-002",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-014-HYB-006",
+            "DOC-NHS-015-HYB-015"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-006",
+          "query": "bacchar 102 jor napa dewa jabe?",
+          "expected_doc_id": "DOC-NHS-010",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-010-HYB-003",
+          "top_score": 0.0853,
+          "top5_cids": [
+            "DOC-NHS-010-HYB-003",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-010-HYB-004",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-007",
+          "query": "sharir e lal chulkani guti guti utheche pani ashe",
+          "expected_doc_id": "DOC-NHS-008",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-005-HYB-002",
+          "top_score": 0.0825,
+          "top5_cids": [
+            "DOC-NHS-005-HYB-002",
+            "DOC-NHS-015-HYB-006",
+            "DOC-NHS-006-HYB-005",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-015-HYB-002"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-008",
+          "query": "shash nite koshto ar shosh shobdo hole ki korbo?",
+          "expected_doc_id": "DOC-NHS-004",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-004-HYB-000",
+          "top_score": 0.0852,
+          "top5_cids": [
+            "DOC-NHS-004-HYB-000",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-004-HYB-003"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-009",
+          "query": "chokh lal hoye geche ar pishti jomche chokh jole",
+          "expected_doc_id": "DOC-NHS-016",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-015-HYB-002",
+          "top_score": 0.0839,
+          "top5_cids": [
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-010-HYB-005",
+            "DOC-NHS-011-HYB-001"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-010",
+          "query": "mukhe lal gha ar fula khawa jay na",
+          "expected_doc_id": "DOC-NHS-014",
+          "dense_hit": true,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-015-HYB-002",
+          "top_score": 0.0807,
+          "top5_cids": [
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-015-HYB-003",
+            "DOC-NHS-004-HYB-017"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-011",
+          "query": "pokar kamor kheye fule lal hoye chulkani hochhe",
+          "expected_doc_id": "DOC-NHS-011",
+          "dense_hit": true,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-015-HYB-002",
+          "top_score": 0.082,
+          "top5_cids": [
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-015-HYB-003",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-014-HYB-006"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-012",
+          "query": "mathar ekpashe prochondo betha ar bomi bomi lage",
+          "expected_doc_id": "DOC-NHS-017",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-008-HYB-003",
+          "top_score": 0.0849,
+          "top5_cids": [
+            "DOC-NHS-008-HYB-003",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-007-HYB-002"
+          ]
+        }
+      ],
+      "regression_results": [
+        {
+          "case_id": "REG-EN-001",
+          "lang": "English",
+          "query": "how to treat minor burns with cool water",
+          "target_doc": "DOC-NHS-005",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-005-HYB-001"
+        },
+        {
+          "case_id": "REG-EN-002",
+          "lang": "English",
+          "query": "clean cut or graze with clean water and dressing",
+          "target_doc": "DOC-NHS-006",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-006-HYB-003"
+        },
+        {
+          "case_id": "REG-EN-003",
+          "lang": "English",
+          "query": "what are symptoms of measles in children",
+          "target_doc": "DOC-NHS-013",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-014-HYB-001"
+        },
+        {
+          "case_id": "REG-EN-004",
+          "lang": "English",
+          "query": "how to treat diarrhea with oral rehydration salts",
+          "target_doc": "DOC-NHS-007",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-007-HYB-002"
+        },
+        {
+          "case_id": "REG-EN-005",
+          "lang": "English",
+          "query": "child high temperature fever paracetamol fluids",
+          "target_doc": "DOC-NHS-010",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-010-HYB-003"
+        },
+        {
+          "case_id": "REG-EN-006",
+          "lang": "English",
+          "query": "how to stop a nosebleed by pinching nose and leaning forward",
+          "target_doc": "DOC-NHS-012",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-016-HYB-002"
+        },
+        {
+          "case_id": "REG-BN-001",
+          "lang": "Bangla",
+          "query": "বাচ্চার জ্বর হলে করণীয় কি?",
+          "target_doc": "DOC-NHS-010",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-010-HYB-002"
+        },
+        {
+          "case_id": "REG-BN-002",
+          "lang": "Bangla",
+          "query": "কাটা বা ছড়ে যাওয়ার প্রাথমিক চিকিৎসা কি?",
+          "target_doc": "DOC-NHS-006",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-006-HYB-006"
+        },
+        {
+          "case_id": "REG-BN-003",
+          "lang": "Bangla",
+          "query": "ডায়রিয়া হলে কি স্যালাইন খেতে হবে?",
+          "target_doc": "DOC-NHS-007",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-007-HYB-002"
+        },
+        {
+          "case_id": "REG-BN-004",
+          "lang": "Bangla",
+          "query": "হামের লক্ষণ কি কি?",
+          "target_doc": "DOC-NHS-013",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-004-HYB-001"
+        },
+        {
+          "case_id": "REG-BN-005",
+          "lang": "Bangla",
+          "query": "হাত পুড়ে গেলে ঠান্ডা পানি দিতে হবে?",
+          "target_doc": "DOC-NHS-005",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-005-HYB-001"
+        },
+        {
+          "case_id": "REG-BN-006",
+          "lang": "Bangla",
+          "query": "নাক দিয়ে রক্ত পড়লে কি করতে হবে?",
+          "target_doc": "DOC-NHS-012",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-016-HYB-004"
+        }
+      ]
+    },
+    "Candidate A (Targeted Transliteration)": {
+      "challenge_results": [
+        {
+          "case_id": "DEV-CHALLENGE-001",
+          "query": "nak diye rokt porle ki korbo?",
+          "expected_doc_id": "DOC-NHS-012",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": true,
+          "top_chunk": "DOC-NHS-006-HYB-002",
+          "top_score": 0.0856,
+          "top5_cids": [
+            "DOC-NHS-006-HYB-002",
+            "DOC-NHS-006-HYB-003",
+            "DOC-NHS-006-HYB-004",
+            "DOC-NHS-006-HYB-005",
+            "DOC-NHS-015-HYB-002"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-002",
+          "query": "haat kete giye onek rokt porche ki vabe bondho korbo?",
+          "expected_doc_id": "DOC-NHS-006",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-006-HYB-003",
+          "top_score": 0.0851,
+          "top5_cids": [
+            "DOC-NHS-006-HYB-003",
+            "DOC-NHS-006-HYB-002",
+            "DOC-NHS-006-HYB-004",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-015"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-003",
+          "query": "khabar por buk jala pora korle ki oshudh khabo?",
+          "expected_doc_id": "DOC-NHS-009",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": true,
+          "top_chunk": "DOC-NHS-005-HYB-001",
+          "top_score": 0.0837,
+          "top5_cids": [
+            "DOC-NHS-005-HYB-001",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-010-HYB-005"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-004",
+          "query": "hate gorom chayer pani pore pure geche thanda pani dibo?",
+          "expected_doc_id": "DOC-NHS-005",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": false,
+          "rank": 2,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-015-HYB-002",
+          "top_score": 0.0842,
+          "top5_cids": [
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-005-HYB-001",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-005-HYB-002"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-005",
+          "query": "pet kharap ar patla paykhana hole ors saline kivabe banabo?",
+          "expected_doc_id": "DOC-NHS-007",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-007-HYB-002",
+          "top_score": 0.0876,
+          "top5_cids": [
+            "DOC-NHS-007-HYB-002",
+            "DOC-NHS-008-HYB-003",
+            "DOC-NHS-008-HYB-004",
+            "DOC-NHS-007-HYB-001",
+            "DOC-NHS-008-HYB-000"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-006",
+          "query": "bacchar 102 jor napa dewa jabe?",
+          "expected_doc_id": "DOC-NHS-010",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-010-HYB-003",
+          "top_score": 0.0865,
+          "top5_cids": [
+            "DOC-NHS-010-HYB-003",
+            "DOC-NHS-008-HYB-003",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-010-HYB-004",
+            "DOC-NHS-014-HYB-006"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-007",
+          "query": "sharir e lal chulkani guti guti utheche pani ashe",
+          "expected_doc_id": "DOC-NHS-008",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": false,
+          "rank": 2,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-015-HYB-006",
+          "top_score": 0.0868,
+          "top5_cids": [
+            "DOC-NHS-015-HYB-006",
+            "DOC-NHS-008-HYB-005",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-015-HYB-001"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-008",
+          "query": "shash nite koshto ar shosh shobdo hole ki korbo?",
+          "expected_doc_id": "DOC-NHS-004",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-004-HYB-000",
+          "top_score": 0.087,
+          "top5_cids": [
+            "DOC-NHS-004-HYB-000",
+            "DOC-NHS-004-HYB-001",
+            "DOC-NHS-004-HYB-010",
+            "DOC-NHS-004-HYB-011",
+            "DOC-NHS-004-HYB-015"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-009",
+          "query": "chokh lal hoye geche ar pishti jomche chokh jole",
+          "expected_doc_id": "DOC-NHS-016",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-015-HYB-002",
+          "top_score": 0.087,
+          "top5_cids": [
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-011-HYB-001",
+            "DOC-NHS-008-HYB-005"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-010",
+          "query": "mukhe lal gha ar fula khawa jay na",
+          "expected_doc_id": "DOC-NHS-014",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-014-HYB-006",
+          "top_score": 0.0845,
+          "top5_cids": [
+            "DOC-NHS-014-HYB-006",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-011-HYB-002",
+            "DOC-NHS-008-HYB-005"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-011",
+          "query": "pokar kamor kheye fule lal hoye chulkani hochhe",
+          "expected_doc_id": "DOC-NHS-011",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": 4,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-015-HYB-002",
+          "top_score": 0.0861,
+          "top5_cids": [
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-015-HYB-001",
+            "DOC-NHS-011-HYB-001",
+            "DOC-NHS-015-HYB-007"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-012",
+          "query": "mathar ekpashe prochondo betha ar bomi bomi lage",
+          "expected_doc_id": "DOC-NHS-017",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-008-HYB-003",
+          "top_score": 0.0849,
+          "top5_cids": [
+            "DOC-NHS-008-HYB-003",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-007-HYB-002"
+          ]
+        }
+      ],
+      "regression_results": [
+        {
+          "case_id": "REG-EN-001",
+          "lang": "English",
+          "query": "how to treat minor burns with cool water",
+          "target_doc": "DOC-NHS-005",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-005-HYB-001"
+        },
+        {
+          "case_id": "REG-EN-002",
+          "lang": "English",
+          "query": "clean cut or graze with clean water and dressing",
+          "target_doc": "DOC-NHS-006",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-006-HYB-003"
+        },
+        {
+          "case_id": "REG-EN-003",
+          "lang": "English",
+          "query": "what are symptoms of measles in children",
+          "target_doc": "DOC-NHS-013",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-014-HYB-001"
+        },
+        {
+          "case_id": "REG-EN-004",
+          "lang": "English",
+          "query": "how to treat diarrhea with oral rehydration salts",
+          "target_doc": "DOC-NHS-007",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-007-HYB-002"
+        },
+        {
+          "case_id": "REG-EN-005",
+          "lang": "English",
+          "query": "child high temperature fever paracetamol fluids",
+          "target_doc": "DOC-NHS-010",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-010-HYB-003"
+        },
+        {
+          "case_id": "REG-EN-006",
+          "lang": "English",
+          "query": "how to stop a nosebleed by pinching nose and leaning forward",
+          "target_doc": "DOC-NHS-012",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-016-HYB-002"
+        },
+        {
+          "case_id": "REG-BN-001",
+          "lang": "Bangla",
+          "query": "বাচ্চার জ্বর হলে করণীয় কি?",
+          "target_doc": "DOC-NHS-010",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-010-HYB-002"
+        },
+        {
+          "case_id": "REG-BN-002",
+          "lang": "Bangla",
+          "query": "কাটা বা ছড়ে যাওয়ার প্রাথমিক চিকিৎসা কি?",
+          "target_doc": "DOC-NHS-006",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-006-HYB-006"
+        },
+        {
+          "case_id": "REG-BN-003",
+          "lang": "Bangla",
+          "query": "ডায়রিয়া হলে কি স্যালাইন খেতে হবে?",
+          "target_doc": "DOC-NHS-007",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-007-HYB-002"
+        },
+        {
+          "case_id": "REG-BN-004",
+          "lang": "Bangla",
+          "query": "হামের লক্ষণ কি কি?",
+          "target_doc": "DOC-NHS-013",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-004-HYB-001"
+        },
+        {
+          "case_id": "REG-BN-005",
+          "lang": "Bangla",
+          "query": "হাত পুড়ে গেলে ঠান্ডা পানি দিতে হবে?",
+          "target_doc": "DOC-NHS-005",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-005-HYB-001"
+        },
+        {
+          "case_id": "REG-BN-006",
+          "lang": "Bangla",
+          "query": "নাক দিয়ে রক্ত পড়লে কি করতে হবে?",
+          "target_doc": "DOC-NHS-012",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-016-HYB-004"
+        }
+      ]
+    },
+    "Candidate B (Context Disambiguation)": {
+      "challenge_results": [
+        {
+          "case_id": "DEV-CHALLENGE-001",
+          "query": "nak diye rokt porle ki korbo?",
+          "expected_doc_id": "DOC-NHS-012",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-016-HYB-002",
+          "top_score": 0.0851,
+          "top5_cids": [
+            "DOC-NHS-016-HYB-002",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-016-HYB-001",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-016-HYB-000"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-002",
+          "query": "haat kete giye onek rokt porche ki vabe bondho korbo?",
+          "expected_doc_id": "DOC-NHS-006",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-006-HYB-003",
+          "top_score": 0.0856,
+          "top5_cids": [
+            "DOC-NHS-006-HYB-003",
+            "DOC-NHS-006-HYB-004",
+            "DOC-NHS-006-HYB-002",
+            "DOC-NHS-006-HYB-006",
+            "DOC-NHS-015-HYB-015"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-003",
+          "query": "khabar por buk jala pora korle ki oshudh khabo?",
+          "expected_doc_id": "DOC-NHS-009",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": true,
+          "top_chunk": "DOC-NHS-012-HYB-002",
+          "top_score": 0.0851,
+          "top5_cids": [
+            "DOC-NHS-012-HYB-002",
+            "DOC-NHS-005-HYB-001",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-005-HYB-002"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-004",
+          "query": "hate gorom chayer pani pore pure geche thanda pani dibo?",
+          "expected_doc_id": "DOC-NHS-005",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-005-HYB-001",
+          "top_score": 0.0863,
+          "top5_cids": [
+            "DOC-NHS-005-HYB-001",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-005-HYB-002",
+            "DOC-NHS-008-HYB-003"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-005",
+          "query": "pet kharap ar patla paykhana hole ors saline kivabe banabo?",
+          "expected_doc_id": "DOC-NHS-007",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": false,
+          "rank": 2,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-008-HYB-003",
+          "top_score": 0.0852,
+          "top5_cids": [
+            "DOC-NHS-008-HYB-003",
+            "DOC-NHS-007-HYB-002",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-014-HYB-006",
+            "DOC-NHS-015-HYB-015"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-006",
+          "query": "bacchar 102 jor napa dewa jabe?",
+          "expected_doc_id": "DOC-NHS-010",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-010-HYB-003",
+          "top_score": 0.0862,
+          "top5_cids": [
+            "DOC-NHS-010-HYB-003",
+            "DOC-NHS-014-HYB-006",
+            "DOC-NHS-010-HYB-004",
+            "DOC-NHS-015-HYB-007",
+            "DOC-NHS-010-HYB-006"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-007",
+          "query": "sharir e lal chulkani guti guti utheche pani ashe",
+          "expected_doc_id": "DOC-NHS-008",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-005-HYB-002",
+          "top_score": 0.0825,
+          "top5_cids": [
+            "DOC-NHS-005-HYB-002",
+            "DOC-NHS-015-HYB-006",
+            "DOC-NHS-006-HYB-005",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-015-HYB-002"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-008",
+          "query": "shash nite koshto ar shosh shobdo hole ki korbo?",
+          "expected_doc_id": "DOC-NHS-004",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-004-HYB-000",
+          "top_score": 0.0852,
+          "top5_cids": [
+            "DOC-NHS-004-HYB-000",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-004-HYB-003"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-009",
+          "query": "chokh lal hoye geche ar pishti jomche chokh jole",
+          "expected_doc_id": "DOC-NHS-016",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-015-HYB-002",
+          "top_score": 0.0839,
+          "top5_cids": [
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-010-HYB-005",
+            "DOC-NHS-011-HYB-001"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-010",
+          "query": "mukhe lal gha ar fula khawa jay na",
+          "expected_doc_id": "DOC-NHS-014",
+          "dense_hit": true,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-015-HYB-002",
+          "top_score": 0.0807,
+          "top5_cids": [
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-015-HYB-003",
+            "DOC-NHS-004-HYB-017"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-011",
+          "query": "pokar kamor kheye fule lal hoye chulkani hochhe",
+          "expected_doc_id": "DOC-NHS-011",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": false,
+          "rank": 3,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-015-HYB-002",
+          "top_score": 0.0834,
+          "top5_cids": [
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-011-HYB-001",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-011-HYB-004"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-012",
+          "query": "mathar ekpashe prochondo betha ar bomi bomi lage",
+          "expected_doc_id": "DOC-NHS-017",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-008-HYB-003",
+          "top_score": 0.0849,
+          "top5_cids": [
+            "DOC-NHS-008-HYB-003",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-007-HYB-002"
+          ]
+        }
+      ],
+      "regression_results": [
+        {
+          "case_id": "REG-EN-001",
+          "lang": "English",
+          "query": "how to treat minor burns with cool water",
+          "target_doc": "DOC-NHS-005",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-005-HYB-001"
+        },
+        {
+          "case_id": "REG-EN-002",
+          "lang": "English",
+          "query": "clean cut or graze with clean water and dressing",
+          "target_doc": "DOC-NHS-006",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-006-HYB-003"
+        },
+        {
+          "case_id": "REG-EN-003",
+          "lang": "English",
+          "query": "what are symptoms of measles in children",
+          "target_doc": "DOC-NHS-013",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-014-HYB-001"
+        },
+        {
+          "case_id": "REG-EN-004",
+          "lang": "English",
+          "query": "how to treat diarrhea with oral rehydration salts",
+          "target_doc": "DOC-NHS-007",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-007-HYB-002"
+        },
+        {
+          "case_id": "REG-EN-005",
+          "lang": "English",
+          "query": "child high temperature fever paracetamol fluids",
+          "target_doc": "DOC-NHS-010",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-010-HYB-003"
+        },
+        {
+          "case_id": "REG-EN-006",
+          "lang": "English",
+          "query": "how to stop a nosebleed by pinching nose and leaning forward",
+          "target_doc": "DOC-NHS-012",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-016-HYB-002"
+        },
+        {
+          "case_id": "REG-BN-001",
+          "lang": "Bangla",
+          "query": "বাচ্চার জ্বর হলে করণীয় কি?",
+          "target_doc": "DOC-NHS-010",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-010-HYB-002"
+        },
+        {
+          "case_id": "REG-BN-002",
+          "lang": "Bangla",
+          "query": "কাটা বা ছড়ে যাওয়ার প্রাথমিক চিকিৎসা কি?",
+          "target_doc": "DOC-NHS-006",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-006-HYB-006"
+        },
+        {
+          "case_id": "REG-BN-003",
+          "lang": "Bangla",
+          "query": "ডায়রিয়া হলে কি স্যালাইন খেতে হবে?",
+          "target_doc": "DOC-NHS-007",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-007-HYB-002"
+        },
+        {
+          "case_id": "REG-BN-004",
+          "lang": "Bangla",
+          "query": "হামের লক্ষণ কি কি?",
+          "target_doc": "DOC-NHS-013",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-004-HYB-001"
+        },
+        {
+          "case_id": "REG-BN-005",
+          "lang": "Bangla",
+          "query": "হাত পুড়ে গেলে ঠান্ডা পানি দিতে হবে?",
+          "target_doc": "DOC-NHS-005",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-005-HYB-001"
+        },
+        {
+          "case_id": "REG-BN-006",
+          "lang": "Bangla",
+          "query": "নাক দিয়ে রক্ত পড়লে কি করতে হবে?",
+          "target_doc": "DOC-NHS-012",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-016-HYB-004"
+        }
+      ]
+    },
+    "Candidate C (Integrated Hybrid A+B)": {
+      "challenge_results": [
+        {
+          "case_id": "DEV-CHALLENGE-001",
+          "query": "nak diye rokt porle ki korbo?",
+          "expected_doc_id": "DOC-NHS-012",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": true,
+          "top_chunk": "DOC-NHS-016-HYB-002",
+          "top_score": 0.0851,
+          "top5_cids": [
+            "DOC-NHS-016-HYB-002",
+            "DOC-NHS-016-HYB-001",
+            "DOC-NHS-016-HYB-000",
+            "DOC-NHS-006-HYB-002",
+            "DOC-NHS-016-HYB-004"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-002",
+          "query": "haat kete giye onek rokt porche ki vabe bondho korbo?",
+          "expected_doc_id": "DOC-NHS-006",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-006-HYB-003",
+          "top_score": 0.0862,
+          "top5_cids": [
+            "DOC-NHS-006-HYB-003",
+            "DOC-NHS-006-HYB-004",
+            "DOC-NHS-006-HYB-002",
+            "DOC-NHS-006-HYB-001",
+            "DOC-NHS-006-HYB-006"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-003",
+          "query": "khabar por buk jala pora korle ki oshudh khabo?",
+          "expected_doc_id": "DOC-NHS-009",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": true,
+          "top_chunk": "DOC-NHS-012-HYB-002",
+          "top_score": 0.0846,
+          "top5_cids": [
+            "DOC-NHS-012-HYB-002",
+            "DOC-NHS-005-HYB-001",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-015-HYB-004"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-004",
+          "query": "hate gorom chayer pani pore pure geche thanda pani dibo?",
+          "expected_doc_id": "DOC-NHS-005",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-005-HYB-001",
+          "top_score": 0.0859,
+          "top5_cids": [
+            "DOC-NHS-005-HYB-001",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-005-HYB-002",
+            "DOC-NHS-008-HYB-003"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-005",
+          "query": "pet kharap ar patla paykhana hole ors saline kivabe banabo?",
+          "expected_doc_id": "DOC-NHS-007",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-007-HYB-002",
+          "top_score": 0.0872,
+          "top5_cids": [
+            "DOC-NHS-007-HYB-002",
+            "DOC-NHS-008-HYB-003",
+            "DOC-NHS-007-HYB-001",
+            "DOC-NHS-008-HYB-004",
+            "DOC-NHS-007-HYB-000"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-006",
+          "query": "bacchar 102 jor napa dewa jabe?",
+          "expected_doc_id": "DOC-NHS-010",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-010-HYB-003",
+          "top_score": 0.0865,
+          "top5_cids": [
+            "DOC-NHS-010-HYB-003",
+            "DOC-NHS-014-HYB-006",
+            "DOC-NHS-015-HYB-007",
+            "DOC-NHS-010-HYB-004",
+            "DOC-NHS-008-HYB-003"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-007",
+          "query": "sharir e lal chulkani guti guti utheche pani ashe",
+          "expected_doc_id": "DOC-NHS-008",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": false,
+          "rank": 3,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-005-HYB-002",
+          "top_score": 0.088,
+          "top5_cids": [
+            "DOC-NHS-005-HYB-002",
+            "DOC-NHS-015-HYB-006",
+            "DOC-NHS-008-HYB-005",
+            "DOC-NHS-005-HYB-001",
+            "DOC-NHS-015-HYB-002"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-008",
+          "query": "shash nite koshto ar shosh shobdo hole ki korbo?",
+          "expected_doc_id": "DOC-NHS-004",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-004-HYB-000",
+          "top_score": 0.0867,
+          "top5_cids": [
+            "DOC-NHS-004-HYB-000",
+            "DOC-NHS-004-HYB-001",
+            "DOC-NHS-004-HYB-010",
+            "DOC-NHS-004-HYB-011",
+            "DOC-NHS-004-HYB-008"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-009",
+          "query": "chokh lal hoye geche ar pishti jomche chokh jole",
+          "expected_doc_id": "DOC-NHS-016",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-015-HYB-002",
+          "top_score": 0.087,
+          "top5_cids": [
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-011-HYB-001",
+            "DOC-NHS-008-HYB-005"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-010",
+          "query": "mukhe lal gha ar fula khawa jay na",
+          "expected_doc_id": "DOC-NHS-014",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": true,
+          "r1_hit": true,
+          "rank": 1,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-014-HYB-006",
+          "top_score": 0.0845,
+          "top5_cids": [
+            "DOC-NHS-014-HYB-006",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-011-HYB-002",
+            "DOC-NHS-008-HYB-005"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-011",
+          "query": "pokar kamor kheye fule lal hoye chulkani hochhe",
+          "expected_doc_id": "DOC-NHS-011",
+          "dense_hit": true,
+          "r5_hit": true,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": 4,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-015-HYB-002",
+          "top_score": 0.0854,
+          "top5_cids": [
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-005-HYB-001",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-011-HYB-001",
+            "DOC-NHS-015-HYB-007"
+          ]
+        },
+        {
+          "case_id": "DEV-CHALLENGE-012",
+          "query": "mathar ekpashe prochondo betha ar bomi bomi lage",
+          "expected_doc_id": "DOC-NHS-017",
+          "dense_hit": false,
+          "r5_hit": false,
+          "r3_hit": false,
+          "r1_hit": false,
+          "rank": null,
+          "is_contaminated": false,
+          "top_chunk": "DOC-NHS-008-HYB-003",
+          "top_score": 0.0844,
+          "top5_cids": [
+            "DOC-NHS-008-HYB-003",
+            "DOC-NHS-015-HYB-002",
+            "DOC-NHS-015-HYB-015",
+            "DOC-NHS-015-HYB-004",
+            "DOC-NHS-014-HYB-006"
+          ]
+        }
+      ],
+      "regression_results": [
+        {
+          "case_id": "REG-EN-001",
+          "lang": "English",
+          "query": "how to treat minor burns with cool water",
+          "target_doc": "DOC-NHS-005",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-005-HYB-001"
+        },
+        {
+          "case_id": "REG-EN-002",
+          "lang": "English",
+          "query": "clean cut or graze with clean water and dressing",
+          "target_doc": "DOC-NHS-006",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-006-HYB-003"
+        },
+        {
+          "case_id": "REG-EN-003",
+          "lang": "English",
+          "query": "what are symptoms of measles in children",
+          "target_doc": "DOC-NHS-013",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-014-HYB-001"
+        },
+        {
+          "case_id": "REG-EN-004",
+          "lang": "English",
+          "query": "how to treat diarrhea with oral rehydration salts",
+          "target_doc": "DOC-NHS-007",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-007-HYB-002"
+        },
+        {
+          "case_id": "REG-EN-005",
+          "lang": "English",
+          "query": "child high temperature fever paracetamol fluids",
+          "target_doc": "DOC-NHS-010",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-010-HYB-003"
+        },
+        {
+          "case_id": "REG-EN-006",
+          "lang": "English",
+          "query": "how to stop a nosebleed by pinching nose and leaning forward",
+          "target_doc": "DOC-NHS-012",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-016-HYB-002"
+        },
+        {
+          "case_id": "REG-BN-001",
+          "lang": "Bangla",
+          "query": "বাচ্চার জ্বর হলে করণীয় কি?",
+          "target_doc": "DOC-NHS-010",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-010-HYB-002"
+        },
+        {
+          "case_id": "REG-BN-002",
+          "lang": "Bangla",
+          "query": "কাটা বা ছড়ে যাওয়ার প্রাথমিক চিকিৎসা কি?",
+          "target_doc": "DOC-NHS-006",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-006-HYB-006"
+        },
+        {
+          "case_id": "REG-BN-003",
+          "lang": "Bangla",
+          "query": "ডায়রিয়া হলে কি স্যালাইন খেতে হবে?",
+          "target_doc": "DOC-NHS-007",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-007-HYB-002"
+        },
+        {
+          "case_id": "REG-BN-004",
+          "lang": "Bangla",
+          "query": "হামের লক্ষণ কি কি?",
+          "target_doc": "DOC-NHS-013",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-004-HYB-001"
+        },
+        {
+          "case_id": "REG-BN-005",
+          "lang": "Bangla",
+          "query": "হাত পুড়ে গেলে ঠান্ডা পানি দিতে হবে?",
+          "target_doc": "DOC-NHS-005",
+          "r1_hit": true,
+          "r5_hit": true,
+          "top_chunk": "DOC-NHS-005-HYB-001"
+        },
+        {
+          "case_id": "REG-BN-006",
+          "lang": "Bangla",
+          "query": "নাক দিয়ে রক্ত পড়লে কি করতে হবে?",
+          "target_doc": "DOC-NHS-012",
+          "r1_hit": false,
+          "r5_hit": false,
+          "top_chunk": "DOC-NHS-016-HYB-004"
+        }
+      ]
+    }
+  }
+}

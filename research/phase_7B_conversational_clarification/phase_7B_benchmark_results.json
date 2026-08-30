@@ -1,0 +1,536 @@
+{
+  "status": "PASS",
+  "total_scenarios": 30,
+  "total_turns": 43,
+  "intent_accuracy_pct": 100.0,
+  "sufficiency_accuracy_pct": 100.0,
+  "emergency_compliance_pct": 100.0,
+  "unnecessary_clarification_pct": 0.0,
+  "max_turns_violations": 0,
+  "scenarios": [
+    {
+      "scenario_id": "P7B-001",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "amar paye betha, ki korbo?",
+          "action": "CLARIFY",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "IN_PROGRESS",
+          "top_src": "DOC-NHS-015"
+        },
+        {
+          "turn": 2,
+          "msg": "churi diye kete rokt porche, fule geche",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "RESOLVED",
+          "top_src": "DOC-NHS-006"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-002",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "\u0986\u09ae\u09be\u09b0 \u09aa\u09be\u09df\u09c7 \u09ac\u09cd\u09af\u09a5\u09be \u0995\u09b0\u099b\u09c7, \u0995\u09bf \u0995\u09b0\u09ac\u09cb?",
+          "action": "CLARIFY",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "IN_PROGRESS",
+          "top_src": "DOC-NHS-005"
+        },
+        {
+          "turn": 2,
+          "msg": "\u0995\u09be\u0981\u099a\u09c7\u09b0 \u099f\u09c1\u0995\u09b0\u09cb \u09a6\u09bf\u09df\u09c7 \u0995\u09c7\u099f\u09c7 \u09b0\u0995\u09cd\u09a4 \u09aa\u09dc\u099b\u09c7 \u09ac\u09cd\u09af\u09be\u09a8\u09cd\u09a1\u09c7\u099c \u0995\u09bf\u09ad\u09be\u09ac\u09c7 \u0995\u09b0\u09ac\u09cb",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "RESOLVED",
+          "top_src": "DOC-NHS-006"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-003",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "My leg is hurting, what should I do?",
+          "action": "CLARIFY",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "IN_PROGRESS",
+          "top_src": "DOC-NHS-011"
+        },
+        {
+          "turn": 2,
+          "msg": "Hot water splashed on my lower leg and burned it, it is red and painful",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "RESOLVED",
+          "top_src": "DOC-NHS-005"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-004",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "amar hate betha korche",
+          "action": "CLARIFY",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "IN_PROGRESS",
+          "top_src": "DOC-NHS-015"
+        },
+        {
+          "turn": 2,
+          "msg": "gorom tel pore pure geche, lal hoye ache",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "RESOLVED",
+          "top_src": "DOC-NHS-005"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-005",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "\u09b9\u09be\u09a4\u09c7 \u09ac\u09cd\u09af\u09a5\u09be \u09aa\u09be\u099a\u09cd\u099b\u09bf",
+          "action": "CLARIFY",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "IN_PROGRESS",
+          "top_src": "DOC-NHS-015"
+        },
+        {
+          "turn": 2,
+          "msg": "\u099b\u09c1\u09b0\u09bf \u09a6\u09bf\u09df\u09c7 \u0986\u0999\u09c1\u09b2 \u0995\u09c7\u099f\u09c7 \u09b0\u0995\u09cd\u09a4 \u09aa\u09dc\u099b\u09c7",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "RESOLVED",
+          "top_src": "DOC-NHS-006"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-006",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "amar paye betha korche",
+          "action": "CLARIFY",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "IN_PROGRESS",
+          "top_src": "DOC-NHS-015"
+        },
+        {
+          "turn": 2,
+          "msg": "gorar kache, pore gechi, moshke geche kono rokt ba pura nai",
+          "action": "ABSTAIN",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "UNSUPPORTED_TOPIC",
+          "top_src": "DOC-NHS-012"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-007",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "buk e oshosti lagche, ki korbo",
+          "action": "CLARIFY",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "IN_PROGRESS",
+          "top_src": "DOC-NHS-015"
+        },
+        {
+          "turn": 2,
+          "msg": "halka chest pain, kono aghat charai shuru hoyeche",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "RESOLVED",
+          "top_src": "DOC-NHS-012"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-008",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "severe crushing chest pain radiating to left arm and jaw",
+          "action": "EMERGENCY",
+          "policy": "SHOW_EMERGENCY_OVERRIDE",
+          "clar_state": "NOT_NEEDED",
+          "top_src": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-009",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "shash nite koshto hocche ar buk e chap lagche",
+          "action": "EMERGENCY",
+          "policy": "SHOW_EMERGENCY_OVERRIDE",
+          "clar_state": "NOT_NEEDED",
+          "top_src": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-010",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "amar sorire oshanti lagche",
+          "action": "CLARIFY",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "IN_PROGRESS",
+          "top_src": "DOC-NHS-015"
+        },
+        {
+          "turn": 2,
+          "msg": "ekhon shash bondho hoye jacche prochondo shashkosto",
+          "action": "EMERGENCY",
+          "policy": "SHOW_EMERGENCY_OVERRIDE",
+          "clar_state": "NOT_NEEDED",
+          "top_src": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-011",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "gorom panite hat pure geche, thanda pani koto minute dhalbo?",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "NOT_NEEDED",
+          "top_src": "DOC-NHS-005"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-012",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "How to stop a nosebleed? Should I lean forward or backward?",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "NOT_NEEDED",
+          "top_src": "DOC-NHS-016"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-013",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "\u09a4\u09c0\u09ac\u09cd\u09b0 \u0985\u09cd\u09af\u09be\u09b2\u09be\u09b0\u09cd\u099c\u09bf \u0993 \u0985\u09cd\u09af\u09be\u09a8\u09be\u09ab\u09bf\u09b2\u09cd\u09af\u09be\u0995\u09cd\u09b8\u09bf\u09b8 \u09b9\u09b2\u09c7 \u0995\u09bf \u0995\u09bf \u09b2\u0995\u09cd\u09b7\u09a3 \u09a6\u09c7\u0996\u09be \u09af\u09be\u09df?",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "NOT_NEEDED",
+          "top_src": "DOC-NHS-011"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-014",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "asthma attack hole blue reliever inhaler koy puff nibo?",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "NOT_NEEDED",
+          "top_src": "DOC-NHS-004"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-015",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "type 2 diabetes metformin dosage and insulin adjustment",
+          "action": "ABSTAIN",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "UNSUPPORTED_TOPIC",
+          "top_src": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-016",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "\u09a6\u09be\u0981\u09a4\u09c7\u09b0 \u09ae\u09be\u09dc\u09bf\u09a4\u09c7 \u0995\u09cd\u09af\u09be\u09ad\u09bf\u099f\u09bf \u0993 \u09b0\u09c1\u099f \u0995\u09cd\u09af\u09be\u09a8\u09c7\u09b2 \u0995\u09b0\u09be\u09b0 \u0996\u09b0\u099a \u0993 \u09a8\u09bf\u09df\u09ae",
+          "action": "ABSTAIN",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "UNSUPPORTED_TOPIC",
+          "top_src": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-017",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "chokhe chhani pora cataract phaco surgery recovery time",
+          "action": "ABSTAIN",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "UNSUPPORTED_TOPIC",
+          "top_src": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-018",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "amar valo lagche na",
+          "action": "CLARIFY",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "IN_PROGRESS",
+          "top_src": "DOC-NHS-015"
+        },
+        {
+          "turn": 2,
+          "msg": "emnitei shorir kemon jani",
+          "action": "CLARIFY",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "IN_PROGRESS",
+          "top_src": "DOC-NHS-012"
+        },
+        {
+          "turn": 3,
+          "msg": "kono aghat paini just kemon lagche",
+          "action": "ABSTAIN",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "MAX_TURNS_EXCEEDED",
+          "top_src": "DOC-NHS-012"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-019",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "What are the recommended treatments and paracetamol for a tension headache?",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "NOT_NEEDED",
+          "top_src": "DOC-NHS-009"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-020",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "\u09ac\u09be\u099a\u09cd\u099a\u09be\u09b0 \u09a4\u09c0\u09ac\u09cd\u09b0 \u099c\u09cd\u09ac\u09b0 \u0993 \u0997\u09be\u09df\u09c7\u09b0 \u09a4\u09be\u09aa\u09ae\u09be\u09a4\u09cd\u09b0\u09be \u09ac\u09be\u09dc\u09b2\u09c7 \u0995\u09bf \u0995\u09b0\u09a3\u09c0\u09df?",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "NOT_NEEDED",
+          "top_src": "DOC-NHS-010"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-021",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "amar hatute betha korche",
+          "action": "CLARIFY",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "IN_PROGRESS",
+          "top_src": "DOC-NHS-015"
+        },
+        {
+          "turn": 2,
+          "msg": "kete geche, churi lege rokt porche dressing lagbe",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "RESOLVED",
+          "top_src": "DOC-NHS-006"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-022",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "I have pain in my wrist",
+          "action": "CLARIFY",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "IN_PROGRESS",
+          "top_src": "DOC-NHS-012"
+        },
+        {
+          "turn": 2,
+          "msg": "Hot steam burned my wrist while cooking, it is red and blistering",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "RESOLVED",
+          "top_src": "DOC-NHS-005"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-023",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "\u09aa\u09be\u09df\u09c7\u09b0 \u09aa\u09be\u09a4\u09be\u09df \u09b2\u09c7\u0997\u09c7 \u09ac\u09cd\u09af\u09a5\u09be \u0995\u09b0\u099b\u09c7",
+          "action": "CLARIFY",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "IN_PROGRESS",
+          "top_src": "DOC-NHS-015"
+        },
+        {
+          "turn": 2,
+          "msg": "\u0995\u09be\u0981\u099a\u09c7\u09b0 \u099f\u09c1\u0995\u09b0\u09cb \u09a6\u09bf\u09df\u09c7 \u0995\u09c7\u099f\u09c7 \u09b0\u0995\u09cd\u09a4 \u09ac\u09c7\u09b0 \u09b9\u099a\u09cd\u099b\u09c7 \u09ac\u09cd\u09af\u09be\u09a8\u09cd\u09a1\u09c7\u099c \u0995\u09bf\u09ad\u09be\u09ac\u09c7 \u0995\u09b0\u09ac\u09cb",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "RESOLVED",
+          "top_src": "DOC-NHS-006"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-024",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "What are meningitis symptoms such as stiff neck, rash, and light sensitivity?",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "NOT_NEEDED",
+          "top_src": "DOC-NHS-015"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-025",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "What are the life threatening red flag symptoms of sepsis in adults?",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "NOT_NEEDED",
+          "top_src": "DOC-NHS-014"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-026",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "What are the main symptoms of a stroke and the FAST test?",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "NOT_NEEDED",
+          "top_src": "DOC-NHS-013"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-027",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "allergic rhinitis hay fever sneezes runny nose antihistamine",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "NOT_NEEDED",
+          "top_src": "DOC-NHS-017"
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-028",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "pregnancy 3rd trimester labor pain contractions signs",
+          "action": "ABSTAIN",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "UNSUPPORTED_TOPIC",
+          "top_src": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-029",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "\u0995\u09cd\u09af\u09be\u09a8\u09cd\u09b8\u09be\u09b0\u09c7\u09b0 \u0995\u09c7\u09ae\u09cb\u09a5\u09c7\u09b0\u09be\u09aa\u09bf\u09b0 \u09b0\u09c7\u09a1\u09bf\u09df\u09c7\u09b6\u09a8 \u0993 \u09a1\u09cb\u099c \u09aa\u09be\u09b0\u09cd\u09b6\u09cd\u09ac\u09aa\u09cd\u09b0\u09a4\u09bf\u0995\u09cd\u09b0\u09bf\u09df\u09be",
+          "action": "ABSTAIN",
+          "policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+          "clar_state": "UNSUPPORTED_TOPIC",
+          "top_src": null
+        }
+      ]
+    },
+    {
+      "scenario_id": "P7B-030",
+      "passed": true,
+      "trace": [
+        {
+          "turn": 1,
+          "msg": "diarrhoea and vomiting dehydration fluids ORS solution",
+          "action": "ANSWER",
+          "policy": "SHOW_GROUNDING_CARDS",
+          "clar_state": "NOT_NEEDED",
+          "top_src": "DOC-NHS-007"
+        }
+      ]
+    }
+  ]
+}

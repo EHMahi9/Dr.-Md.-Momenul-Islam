@@ -1,0 +1,470 @@
+{
+  "phase": "6I",
+  "test": "Candidate B Reproducibility",
+  "timestamp": "2026-08-29T12:52:16Z",
+  "candidate": "Candidate B (Context-Aware Compound Disambiguation)",
+  "dataset": "research/phase_6H_1_benchmark_integrity/corrected_banglish_challenge_dataset.json",
+  "score_tolerance": 1e-05,
+  "overall_verdict": "ALL_CASES_REPRODUCIBLE",
+  "total_cases": 12,
+  "passed_cases": 12,
+  "failed_cases": 0,
+  "case_details": [
+    {
+      "case_id": "DEV-CHALLENGE-001",
+      "query": "nak diye rokt porle ki korbo?",
+      "pass": true,
+      "norm_query_match": true,
+      "dense_top15_id_match": true,
+      "top5_id_match": true,
+      "max_score_delta": 0.0,
+      "score_within_tolerance": true,
+      "run1_top5_cids": [
+        "DOC-NHS-016-HYB-002",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-016-HYB-001",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-016-HYB-000"
+      ],
+      "run2_top5_cids": [
+        "DOC-NHS-016-HYB-002",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-016-HYB-001",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-016-HYB-000"
+      ],
+      "run1_top5_scores": [
+        0.085069,
+        0.084604,
+        0.084536,
+        0.084517,
+        0.08415
+      ],
+      "run2_top5_scores": [
+        0.085069,
+        0.084604,
+        0.084536,
+        0.084517,
+        0.08415
+      ]
+    },
+    {
+      "case_id": "DEV-CHALLENGE-002",
+      "query": "haat kete giye onek rokt porche ki vabe bondho korbo?",
+      "pass": true,
+      "norm_query_match": true,
+      "dense_top15_id_match": true,
+      "top5_id_match": true,
+      "max_score_delta": 0.0,
+      "score_within_tolerance": true,
+      "run1_top5_cids": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-015-HYB-015"
+      ],
+      "run2_top5_cids": [
+        "DOC-NHS-006-HYB-003",
+        "DOC-NHS-006-HYB-004",
+        "DOC-NHS-006-HYB-002",
+        "DOC-NHS-006-HYB-006",
+        "DOC-NHS-015-HYB-015"
+      ],
+      "run1_top5_scores": [
+        0.085552,
+        0.084839,
+        0.084058,
+        0.083015,
+        0.082738
+      ],
+      "run2_top5_scores": [
+        0.085552,
+        0.084839,
+        0.084058,
+        0.083015,
+        0.082738
+      ]
+    },
+    {
+      "case_id": "DEV-CHALLENGE-003",
+      "query": "khabar por buk jala pora korle ki oshudh khabo?",
+      "pass": true,
+      "norm_query_match": true,
+      "dense_top15_id_match": true,
+      "top5_id_match": true,
+      "max_score_delta": 0.0,
+      "score_within_tolerance": true,
+      "run1_top5_cids": [
+        "DOC-NHS-012-HYB-002",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "run2_top5_cids": [
+        "DOC-NHS-012-HYB-002",
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-005-HYB-002"
+      ],
+      "run1_top5_scores": [
+        0.085133,
+        0.084776,
+        0.084476,
+        0.083947,
+        0.08383
+      ],
+      "run2_top5_scores": [
+        0.085133,
+        0.084776,
+        0.084476,
+        0.083947,
+        0.08383
+      ]
+    },
+    {
+      "case_id": "DEV-CHALLENGE-004",
+      "query": "hate gorom chayer pani pore pure geche thanda pani dibo?",
+      "pass": true,
+      "norm_query_match": true,
+      "dense_top15_id_match": true,
+      "top5_id_match": true,
+      "max_score_delta": 0.0,
+      "score_within_tolerance": true,
+      "run1_top5_cids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "run2_top5_cids": [
+        "DOC-NHS-005-HYB-001",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-008-HYB-003"
+      ],
+      "run1_top5_scores": [
+        0.086328,
+        0.084313,
+        0.083842,
+        0.082873,
+        0.082697
+      ],
+      "run2_top5_scores": [
+        0.086328,
+        0.084313,
+        0.083842,
+        0.082873,
+        0.082697
+      ]
+    },
+    {
+      "case_id": "DEV-CHALLENGE-005",
+      "query": "pet kharap ar patla paykhana hole ors saline kivabe banabo?",
+      "pass": true,
+      "norm_query_match": true,
+      "dense_top15_id_match": true,
+      "top5_id_match": true,
+      "max_score_delta": 0.0,
+      "score_within_tolerance": true,
+      "run1_top5_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-014-HYB-006",
+        "DOC-NHS-015-HYB-015"
+      ],
+      "run2_top5_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-007-HYB-002",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-014-HYB-006",
+        "DOC-NHS-015-HYB-015"
+      ],
+      "run1_top5_scores": [
+        0.085203,
+        0.084254,
+        0.084204,
+        0.083991,
+        0.083598
+      ],
+      "run2_top5_scores": [
+        0.085203,
+        0.084254,
+        0.084204,
+        0.083991,
+        0.083598
+      ]
+    },
+    {
+      "case_id": "DEV-CHALLENGE-006",
+      "query": "bacchar 102 jor napa dewa jabe?",
+      "pass": true,
+      "norm_query_match": true,
+      "dense_top15_id_match": true,
+      "top5_id_match": true,
+      "max_score_delta": 0.0,
+      "score_within_tolerance": true,
+      "run1_top5_cids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-014-HYB-006",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-015-HYB-007",
+        "DOC-NHS-010-HYB-006"
+      ],
+      "run2_top5_cids": [
+        "DOC-NHS-010-HYB-003",
+        "DOC-NHS-014-HYB-006",
+        "DOC-NHS-010-HYB-004",
+        "DOC-NHS-015-HYB-007",
+        "DOC-NHS-010-HYB-006"
+      ],
+      "run1_top5_scores": [
+        0.086175,
+        0.0855,
+        0.085463,
+        0.085308,
+        0.084903
+      ],
+      "run2_top5_scores": [
+        0.086175,
+        0.0855,
+        0.085463,
+        0.085308,
+        0.084903
+      ]
+    },
+    {
+      "case_id": "DEV-CHALLENGE-007",
+      "query": "sharir e lal chulkani guti guti utheche pani ashe",
+      "pass": true,
+      "norm_query_match": true,
+      "dense_top15_id_match": true,
+      "top5_id_match": true,
+      "max_score_delta": 0.0,
+      "score_within_tolerance": true,
+      "run1_top5_cids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-015-HYB-006",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-015-HYB-002"
+      ],
+      "run2_top5_cids": [
+        "DOC-NHS-005-HYB-002",
+        "DOC-NHS-015-HYB-006",
+        "DOC-NHS-006-HYB-005",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-015-HYB-002"
+      ],
+      "run1_top5_scores": [
+        0.082534,
+        0.082465,
+        0.081628,
+        0.080811,
+        0.080644
+      ],
+      "run2_top5_scores": [
+        0.082534,
+        0.082465,
+        0.081628,
+        0.080811,
+        0.080644
+      ]
+    },
+    {
+      "case_id": "DEV-CHALLENGE-008",
+      "query": "shash nite koshto ar shosh shobdo hole ki korbo?",
+      "pass": true,
+      "norm_query_match": true,
+      "dense_top15_id_match": true,
+      "top5_id_match": true,
+      "max_score_delta": 0.0,
+      "score_within_tolerance": true,
+      "run1_top5_cids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-004-HYB-003"
+      ],
+      "run2_top5_cids": [
+        "DOC-NHS-004-HYB-000",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-004-HYB-003"
+      ],
+      "run1_top5_scores": [
+        0.08521,
+        0.084572,
+        0.084107,
+        0.083584,
+        0.083489
+      ],
+      "run2_top5_scores": [
+        0.08521,
+        0.084572,
+        0.084107,
+        0.083584,
+        0.083489
+      ]
+    },
+    {
+      "case_id": "DEV-CHALLENGE-009",
+      "query": "chokh lal hoye geche ar pishti jomche chokh jole",
+      "pass": true,
+      "norm_query_match": true,
+      "dense_top15_id_match": true,
+      "top5_id_match": true,
+      "max_score_delta": 0.0,
+      "score_within_tolerance": true,
+      "run1_top5_cids": [
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-001"
+      ],
+      "run2_top5_cids": [
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-010-HYB-005",
+        "DOC-NHS-011-HYB-001"
+      ],
+      "run1_top5_scores": [
+        0.083854,
+        0.0824,
+        0.080836,
+        0.07964,
+        0.079404
+      ],
+      "run2_top5_scores": [
+        0.083854,
+        0.0824,
+        0.080836,
+        0.07964,
+        0.079404
+      ]
+    },
+    {
+      "case_id": "DEV-CHALLENGE-010",
+      "query": "mukhe lal gha ar fula khawa jay na",
+      "pass": true,
+      "norm_query_match": true,
+      "dense_top15_id_match": true,
+      "top5_id_match": true,
+      "max_score_delta": 0.0,
+      "score_within_tolerance": true,
+      "run1_top5_cids": [
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-015-HYB-003",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "run2_top5_cids": [
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-015-HYB-003",
+        "DOC-NHS-004-HYB-017"
+      ],
+      "run1_top5_scores": [
+        0.080681,
+        0.07935,
+        0.079203,
+        0.078692,
+        0.077576
+      ],
+      "run2_top5_scores": [
+        0.080681,
+        0.07935,
+        0.079203,
+        0.078692,
+        0.077576
+      ]
+    },
+    {
+      "case_id": "DEV-CHALLENGE-011",
+      "query": "pokar kamor kheye fule lal hoye chulkani hochhe",
+      "pass": true,
+      "norm_query_match": true,
+      "dense_top15_id_match": true,
+      "top5_id_match": true,
+      "max_score_delta": 0.0,
+      "score_within_tolerance": true,
+      "run1_top5_cids": [
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "run2_top5_cids": [
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-011-HYB-001",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-011-HYB-004"
+      ],
+      "run1_top5_scores": [
+        0.083399,
+        0.083205,
+        0.081336,
+        0.081281,
+        0.08073
+      ],
+      "run2_top5_scores": [
+        0.083399,
+        0.083205,
+        0.081336,
+        0.081281,
+        0.08073
+      ]
+    },
+    {
+      "case_id": "DEV-CHALLENGE-012",
+      "query": "mathar ekpashe prochondo betha ar bomi bomi lage",
+      "pass": true,
+      "norm_query_match": true,
+      "dense_top15_id_match": true,
+      "top5_id_match": true,
+      "max_score_delta": 0.0,
+      "score_within_tolerance": true,
+      "run1_top5_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "run2_top5_cids": [
+        "DOC-NHS-008-HYB-003",
+        "DOC-NHS-015-HYB-002",
+        "DOC-NHS-015-HYB-015",
+        "DOC-NHS-015-HYB-004",
+        "DOC-NHS-007-HYB-002"
+      ],
+      "run1_top5_scores": [
+        0.084875,
+        0.084326,
+        0.083488,
+        0.083305,
+        0.083279
+      ],
+      "run2_top5_scores": [
+        0.084875,
+        0.084326,
+        0.083488,
+        0.083305,
+        0.083279
+      ]
+    }
+  ]
+}

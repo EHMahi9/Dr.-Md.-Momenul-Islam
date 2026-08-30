@@ -1,0 +1,122 @@
+[
+  {
+    "candidate_id": "CANDIDATE_A_TARGETED_TRANSLITERATION",
+    "strategy_name": "Targeted Transliteration Normalization",
+    "description": "Deterministic transliteration and colloquial mapping for high-frequency Banglish symptom expressions without contextual gating.",
+    "rules": [
+      {
+        "original_form": "rokt / rokto pora",
+        "normalized_concept": "bleeding",
+        "example_query": "nak diye rokt porche ki korbo",
+        "target_clinical_concept": "Nosebleed / Bleeding management",
+        "reason": "Dense E5 Top-15 drops non-English transliterated 'rokt' without normalization",
+        "failure_case_motivated": "Phase 6G Case DEV-BNG-001 (nak diye rokt porle ki korbo -> NO_RELEVANT_EVIDENCE)",
+        "false_positive_risk": "High if 'rokt' alone expands to 'cuts and grazes' for nosebleed queries"
+      },
+      {
+        "original_form": "buk jala / buk pora",
+        "normalized_concept": "heartburn acid reflux",
+        "example_query": "buk jala korle ki khabo",
+        "target_clinical_concept": "Heartburn and acid reflux (DOC-NHS-009)",
+        "reason": "'jala' or 'pora' without disambiguation risks matching thermal burns (DOC-NHS-005)",
+        "failure_case_motivated": "Phase 6G Case DEV-BNG-008 (buk jala korle ki korbo -> thermal burn contamination)",
+        "false_positive_risk": "Moderate without compound checking"
+      },
+      {
+        "original_form": "pet kharap / patla paykhana",
+        "normalized_concept": "diarrhea vomiting dehydration ors",
+        "example_query": "pet kharap hole ki ors khabo",
+        "target_clinical_concept": "Diarrhea and vomiting (DOC-NHS-007)",
+        "reason": "Bengali colloquial terms for gastrointestinal illness unmapped in English passages",
+        "failure_case_motivated": "Phase 6G Case DEV-BNG-003 (pet kharap hole ki korbo -> low confidence)",
+        "false_positive_risk": "Low"
+      },
+      {
+        "original_form": "shorir betha / gaa betha",
+        "normalized_concept": "body ache fever paracetamol",
+        "example_query": "shorir betha ar jor",
+        "target_clinical_concept": "High temperature / fever in children (DOC-NHS-010)",
+        "reason": "Transliterated 'shorir betha' missed by dense lexical anchor",
+        "failure_case_motivated": "Phase 6G Case DEV-BNG-005 (bacchar shorir betha ar jor)",
+        "false_positive_risk": "Low"
+      },
+      {
+        "original_form": "chulkani / lal guti",
+        "normalized_concept": "itchy rash spots blister chickenpox",
+        "example_query": "gaaye chulkani ar lal guti uthse",
+        "target_clinical_concept": "Chickenpox (DOC-NHS-008)",
+        "reason": "Colloquial Bangla rash description differs from NHS 'itchy spots'",
+        "failure_case_motivated": "Phase 6G Case DEV-BNG-007 (chulkani ar guti)",
+        "false_positive_risk": "Low"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CANDIDATE_B_CONTEXT_AWARE_DISAMBIGUATION",
+    "strategy_name": "Context-Aware Compound Disambiguation",
+    "description": "Multi-token compound detection with contextual boundary checks to isolate anatomy-specific conditions and avoid cross-condition contamination.",
+    "rules": [
+      {
+        "original_form": "nak + (rokt | rokto | bleeding)",
+        "normalized_concept": "nosebleed epistaxis pinch soft part of nose lean forward",
+        "example_query": "nak diye rokt porle ki korbo?",
+        "target_clinical_concept": "Nosebleed first aid (DOC-NHS-012)",
+        "reason": "Explicitly binds anatomical site 'nak' (nose) with symptom 'rokt' (bleeding) to strictly retrieve DOC-NHS-012 and exclude DOC-NHS-006 (cuts/grazes)",
+        "failure_case_motivated": "Phase 6G Case DEV-BNG-001 (cross-condition contamination with cuts/grazes)",
+        "false_positive_risk": "Very low (specific anatomical n-gram)"
+      },
+      {
+        "original_form": "kete + (rokt | bleeding | wound)",
+        "normalized_concept": "cut graze bleeding wound pressure clean dressing",
+        "example_query": "haat kete giye rokt porche",
+        "target_clinical_concept": "Cuts and grazes (DOC-NHS-006)",
+        "reason": "Binds trauma verb 'kete' (cut) with bleeding to route directly to cuts/grazes and prevent nosebleed false matches",
+        "failure_case_motivated": "Phase 6G Case DEV-BNG-002 (haat kete rokt)",
+        "false_positive_risk": "Very low"
+      },
+      {
+        "original_form": "buk + (jala | pora | betha)",
+        "normalized_concept": "heartburn acid reflux indigestion chest burning sensation antacid",
+        "example_query": "buk jala pora korle ki korbo?",
+        "target_clinical_concept": "Heartburn and acid reflux (DOC-NHS-009)",
+        "reason": "Guarantees 'buk' (chest) + 'pora' (burning) routes exclusively to acid reflux and strictly suppresses thermal burns (DOC-NHS-005)",
+        "failure_case_motivated": "Phase 6G Case DEV-BNG-008 (thermal burn confusion)",
+        "false_positive_risk": "Very low"
+      },
+      {
+        "original_form": "(agune | gorom pani | tel) + (pora | burn)",
+        "normalized_concept": "burns scalds cool tap water 20 minutes cling film",
+        "example_query": "hate gorom pani pore pure geche",
+        "target_clinical_concept": "Burns and scalds (DOC-NHS-005)",
+        "reason": "Binds thermal agents ('agune', 'gorom pani', 'tel') with 'pora' to route exclusively to burns and scalds first aid",
+        "failure_case_motivated": "Phase 6G Case DEV-BNG-004 (hot water scald in Banglish)",
+        "false_positive_risk": "Very low"
+      },
+      {
+        "original_form": "(baccha | shishu) + (jor | fever | tapmatra)",
+        "normalized_concept": "child high temperature fever paracetamol fluids",
+        "example_query": "bacchar onek jor ki korbo",
+        "target_clinical_concept": "High temperature (fever) in children (DOC-NHS-010)",
+        "reason": "Routes pediatric fever queries specifically to pediatric guidance (DOC-NHS-010)",
+        "failure_case_motivated": "Phase 6G Case DEV-BNG-006",
+        "false_positive_risk": "Low"
+      }
+    ]
+  },
+  {
+    "candidate_id": "CANDIDATE_C_INTEGRATED_HYBRID",
+    "strategy_name": "Targeted Transliteration + Compound Disambiguation (A + B)",
+    "description": "Two-stage normalization: Stage 1 transliterates atomic tokens; Stage 2 applies contextual compound disambiguation rules to maximize Dense Top-15 recall and eliminate cross-condition contamination.",
+    "rules": [
+      {
+        "original_form": "Candidate A Rules + Candidate B Compounds",
+        "normalized_concept": "Fully disambiguated procedural clinical concepts",
+        "example_query": "All Banglish development challenge cases",
+        "target_clinical_concept": "Condition-specific NHS guidance",
+        "reason": "Combines maximum vocabulary recall with surgical precision against cross-condition confusion",
+        "failure_case_motivated": "Phase 6G & 6H development failure analysis",
+        "false_positive_risk": "Minimal"
+      }
+    ]
+  }
+]

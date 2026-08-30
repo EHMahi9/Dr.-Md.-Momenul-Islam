@@ -1,0 +1,182 @@
+{
+  "phase": "6G.1",
+  "timestamp": "2026-08-29T08:32:12Z",
+  "active_corpus_chunks": 119,
+  "reranker_model": "BAAI/bge-reranker-v2-m3",
+  "dense_model": "intfloat/multilingual-e5-small",
+  "candidate_depth_k": 15,
+  "timeout_reproduction": {
+    "client_30s_simulation": {
+      "status_code": null,
+      "latency_ms": 30010.67,
+      "outcome": "aborted_by_client_timeout",
+      "error": "HTTPConnectionPool(host='127.0.0.1', port=8000): Read timed out. (read timeout=30.0)"
+    },
+    "server_full_duration": {
+      "status_code": 200,
+      "latency_ms": 45525.69,
+      "outcome": "completed",
+      "top_chunk": "DOC-NHS-005-HYB-001",
+      "error": null
+    },
+    "timeout_incompatibility_confirmed": true
+  },
+  "reranker_detailed_profile": {
+    "English": {
+      "query": "how to treat minor burns with cool water",
+      "candidate_count": 15,
+      "dense_search_ms": 37.1,
+      "tokenization_ms": 18.53,
+      "forward_pass_ms": 47209.64,
+      "tensor_postprocess_ms": 0.15,
+      "standard_predict_ms": 42133.03,
+      "padded_sequence_length": 472,
+      "token_sequence_lengths": [
+        146,
+        155,
+        168,
+        107,
+        162,
+        115,
+        206,
+        183,
+        110,
+        171,
+        464,
+        181,
+        472,
+        173,
+        173
+      ],
+      "min_tokens": 107,
+      "max_tokens": 472,
+      "avg_tokens": 199.1
+    },
+    "Bangla": {
+      "query": "বাচ্চার জ্বর হলে করণীয় কি?",
+      "candidate_count": 15,
+      "dense_search_ms": 33.73,
+      "tokenization_ms": 9.69,
+      "forward_pass_ms": 17036.38,
+      "tensor_postprocess_ms": 0.05,
+      "standard_predict_ms": 16053.87,
+      "padded_sequence_length": 209,
+      "token_sequence_lengths": [
+        186,
+        209,
+        174,
+        180,
+        184,
+        184,
+        176,
+        177,
+        139,
+        151,
+        154,
+        131,
+        180,
+        149,
+        188
+      ],
+      "min_tokens": 131,
+      "max_tokens": 209,
+      "avg_tokens": 170.8
+    },
+    "Banglish": {
+      "query": "nak diye rokt porle ki korbo?",
+      "candidate_count": 15,
+      "dense_search_ms": 33.2,
+      "tokenization_ms": 17.19,
+      "forward_pass_ms": 42683.69,
+      "tensor_postprocess_ms": 0.08,
+      "standard_predict_ms": 39645.75,
+      "padded_sequence_length": 473,
+      "token_sequence_lengths": [
+        465,
+        473,
+        40,
+        245,
+        163,
+        172,
+        175,
+        178,
+        174,
+        173,
+        207,
+        38,
+        106,
+        111,
+        153
+      ],
+      "min_tokens": 38,
+      "max_tokens": 473,
+      "avg_tokens": 191.5
+    }
+  },
+  "diagnostic_performance_variables": {
+    "baseline_predict": {
+      "latency_ms": 50424.54
+    },
+    "batch_size_8": {
+      "latency_ms": 37967.1,
+      "max_score_delta": 2.2351741790771484e-08
+    },
+    "batch_size_16": {
+      "latency_ms": 54751.77,
+      "max_score_delta": 0.0
+    },
+    "batch_size_32": {
+      "latency_ms": 52168.13,
+      "max_score_delta": 0.0
+    },
+    "inference_mode_comparison": {
+      "no_grad_ms": 50131.18,
+      "inference_mode_ms": 70669.02,
+      "max_score_delta": 0.0
+    },
+    "corpus_token_length_distribution": {
+      "total_chunks": 119,
+      "min_tokens": 26,
+      "max_tokens": 461,
+      "mean_tokens": 144.5,
+      "p95_tokens": 187.2,
+      "chunks_exceeding_256_tokens": 2,
+      "chunks_exceeding_512_tokens": 0
+    },
+    "cpu_thread_scaling": {
+      "threads_1": {
+        "latency_ms": 162121.96,
+        "max_score_delta": 0.0
+      },
+      "threads_2": {
+        "latency_ms": 101287.43,
+        "max_score_delta": 1.1175870895385742e-08
+      },
+      "threads_4": {
+        "latency_ms": 82600.51,
+        "max_score_delta": 5.960464477539063e-08
+      },
+      "threads_8": {
+        "latency_ms": 70741.02,
+        "max_score_delta": 5.960464477539063e-08
+      }
+    }
+  },
+  "realistic_latency_targets": {
+    "local_development_cpu": {
+      "target_range_sec": "5 - 15 s",
+      "recommended_client_timeout_sec": 60,
+      "rationale": "570M XLM-RoBERTa cross-encoder on CPU across 15 candidate pairs takes ~4.5 - 5.5s per query with no CPU contention, and up to ~15-20s during background CPU loads."
+    },
+    "research_demo_local": {
+      "target_range_sec": "5 - 10 s",
+      "recommended_client_timeout_sec": 60,
+      "rationale": "Ensures no legitimate clinical evidence queries abort prematurely while maintaining research prototype integrity."
+    },
+    "public_demo_cloud_or_gpu": {
+      "target_range_sec": "0.5 - 2.0 s",
+      "recommended_client_timeout_sec": 15,
+      "rationale": "When hosted on GPU (e.g. T4 or A10G) or with an ONNX/TorchScript optimized runtime, 15-pair forward pass drops to <300ms."
+    }
+  }
+}

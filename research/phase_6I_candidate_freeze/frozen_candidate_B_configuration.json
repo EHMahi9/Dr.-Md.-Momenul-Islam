@@ -1,0 +1,210 @@
+{
+  "freeze_metadata": {
+    "phase": "6I",
+    "freeze_date": "2026-08-29T18:25:00Z",
+    "candidate_name": "Candidate B (Context-Aware Compound Disambiguation)",
+    "candidate_id": "CANDIDATE_B_CONTEXT_AWARE_DISAMBIGUATION",
+    "selection_basis": "Phase 6H.2 independent metric audit: B dominates C on corrected in-corpus N=9 ground-truth (R@3: B=88.89% > C=77.78%; MRR: B=0.8148 > C=0.8056; R@5 tied at 88.89%; Top-1 tied at 77.78%)",
+    "selection_document": "docs/decisions/phase-6H.2-candidate-selection-correction.md",
+    "status": "FROZEN_DEVELOPMENT_CANDIDATE — NOT PROMOTED TO PRODUCTION"
+  },
+
+  "parent_strategy": {
+    "name": "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR",
+    "frozen_sha256": "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae",
+    "config_source": "backend/app/core/config.py"
+  },
+
+  "retrieval_pipeline": {
+    "step_1_normalization": {
+      "description": "Strategy 5 Track A normalization (inherited, unchanged) followed by Candidate B context-aware compound disambiguation rules",
+      "track_a_function": "normalize_query_track_a",
+      "track_a_source": "backend/app/services/retrieval_service.py:L18-L51",
+      "candidate_b_function": "normalize_candidate_b",
+      "candidate_b_source": "research/phase_6H_banglish_retrieval_experiment/run_banglish_experiment.py:L74-L112",
+      "pipeline_order": "Track A first, then Candidate B compound rules applied to Track A output"
+    },
+    "step_2_dense_retrieval": {
+      "model": "intfloat/multilingual-e5-small",
+      "query_prefix": "query: ",
+      "passage_prefix": "passage: ",
+      "normalize_embeddings": true,
+      "top_k": 15,
+      "device": "cpu"
+    },
+    "step_3_cross_encoder_reranking": {
+      "model": "BAAI/bge-reranker-v2-m3",
+      "batch_size": 8,
+      "max_length": 512,
+      "device": "cpu"
+    },
+    "step_4_overview_debiasing": {
+      "applies_to": "chunks ending with -HYB-000",
+      "multiplier": 0.85
+    },
+    "step_5_dual_anchor_fusion": {
+      "formula": "score + (lambda * dense_score) + (alpha * lexical_overlap)",
+      "lambda_dense_fusion": 0.10,
+      "alpha_lexical_overlap": 0.03,
+      "lexical_overlap_function": "compute_token_overlap (q_tokens ∩ c_tokens / |q_tokens|)"
+    },
+    "step_6_final_selection": {
+      "top_k_final": 5,
+      "ordering": "descending by fused score"
+    }
+  },
+
+  "candidate_b_disambiguation_rules": [
+    {
+      "rule_id": "RULE_B1",
+      "name": "Nosebleed compound",
+      "description": "Detects anatomical site 'nak/nose' co-occurring with bleeding tokens",
+      "trigger_pattern_1": "\\b(nak|nose)\\b",
+      "trigger_pattern_2": "\\b(rokt|rokto|bleeding|porche|pora)\\b",
+      "operator": "AND",
+      "exclusive_with": "RULE_B2 (elif)",
+      "appended_expansion": "nosebleed epistaxis pinch soft part of nose lean forward bleed from nose",
+      "target_condition": "DOC-NHS-016 (Nosebleed)"
+    },
+    {
+      "rule_id": "RULE_B2",
+      "name": "Cut / Wound compound",
+      "description": "Detects trauma verbs co-occurring with bleeding tokens (only if RULE_B1 did not fire)",
+      "trigger_pattern_1": "\\b(kete|chole|keteche|injury|khoto|wound)\\b",
+      "trigger_pattern_2": "\\b(rokt|rokto|bleeding|blood)\\b",
+      "operator": "AND (elif after RULE_B1)",
+      "exclusive_with": "RULE_B1 (takes priority)",
+      "appended_expansion": "cuts and grazes cut wound bleeding pressure clean dressing bandage stop bleeding",
+      "target_condition": "DOC-NHS-006 (Cuts and grazes)"
+    },
+    {
+      "rule_id": "RULE_B3",
+      "name": "Heartburn compound",
+      "description": "Detects 'buk/chest' co-occurring with burning/pain tokens",
+      "trigger_pattern_1": "\\b(buk|chest)\\b",
+      "trigger_pattern_2": "\\b(jala|pora|betha|burning|pain)\\b",
+      "operator": "AND",
+      "exclusive_with": "RULE_B4 (elif)",
+      "appended_expansion": "heartburn acid reflux indigestion chest burning sensation antacids stomach acid",
+      "target_condition": "DOC-NHS-012 (Chest pain — Heartburn/indigestion)"
+    },
+    {
+      "rule_id": "RULE_B4",
+      "name": "Thermal Burns compound",
+      "description": "Detects thermal agents co-occurring with burn tokens (only if RULE_B3 did not fire)",
+      "trigger_pattern_1": "\\b(agune|gorom pani|tel|chayer pani|hot water|fire|steam)\\b",
+      "trigger_pattern_2": "\\b(pora|pure|burn|scald)\\b",
+      "operator": "AND (elif after RULE_B3)",
+      "exclusive_with": "RULE_B3 (takes priority)",
+      "appended_expansion": "burns and scalds cool tap water 20 minutes remove jewellery cling film thermal burn",
+      "target_condition": "DOC-NHS-005 (Burns and scalds)"
+    },
+    {
+      "rule_id": "RULE_B5",
+      "name": "Pediatric fever compound",
+      "description": "Detects child/baby terms co-occurring with fever/temperature tokens",
+      "trigger_pattern_1": "\\b(baccha|bacchar|shishu|baby|child|children)\\b",
+      "trigger_pattern_2": "\\b(jor|fever|tapmatra|temperature)\\b",
+      "operator": "AND",
+      "exclusive_with": null,
+      "appended_expansion": "high temperature fever in children paracetamol plenty of fluids signs of serious illness",
+      "target_condition": "DOC-NHS-010 (High temperature in children)"
+    },
+    {
+      "rule_id": "RULE_B6",
+      "name": "Insect bites compound",
+      "description": "Detects insect/poka terms co-occurring with bite/sting/swelling tokens",
+      "trigger_pattern_1": "\\b(poka|pokar|insect|wasp|bee)\\b",
+      "trigger_pattern_2": "\\b(kamor|khel|sting|bite|fule)\\b",
+      "operator": "AND",
+      "exclusive_with": null,
+      "appended_expansion": "insect bites and stings redness swelling itching remove sting cold compress",
+      "target_condition": "DOC-NHS-011 (Anaphylaxis — insect sting)"
+    },
+    {
+      "rule_id": "RULE_B7",
+      "name": "Migraine compound",
+      "description": "Detects head/matha terms co-occurring with one-sided/throbbing tokens",
+      "trigger_pattern_1": "\\b(matha|head)\\b",
+      "trigger_pattern_2": "\\b(ekpashe|unilateral|one side|throbbing)\\b",
+      "operator": "AND",
+      "exclusive_with": null,
+      "appended_expansion": "migraine severe throbbing headache dark quiet room nausea visual disturbance",
+      "target_condition": "DOC-NHS-009 (Headaches — Migraine)"
+    }
+  ],
+
+  "track_a_normalization_rules": [
+    {
+      "rule_id": "TRACK_A_1",
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(pura|pure|pora|pore|burn|burns|scald|scalds|blister)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(পুড়ে|পোড়া|ফোস্কা)",
+      "expansion": "burns scalds cool running water first aid"
+    },
+    {
+      "rule_id": "TRACK_A_2",
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(kete|kata|katse|rokt|rokto|bleeding|bleed|cut|cuts|graze|grazes|antiseptic)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(কাটা|রক্ত|রক্তপাত|জীবাণুনাশক)",
+      "expansion": "cuts grazes bleeding pressure clean dressing wound"
+    },
+    {
+      "rule_id": "TRACK_A_3",
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(shash|shash\\s*kosto|shash\\s*nite\\s*kosto|inhaler|inhalers|asthma)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(হাঁপানি|শ্বাসকষ্ট|ইনহেলার)",
+      "expansion": "asthma attack inhaler spacer breathing difficulty"
+    },
+    {
+      "rule_id": "TRACK_A_4",
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(pani\\s*shunnota|pani\\s*kom|shukay|dehydration|dehydrated)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(ডিহাইড্রেশন|পানিশূন্যতা)",
+      "expansion": "dehydration fluid rehydration oral fluids"
+    },
+    {
+      "rule_id": "TRACK_A_5",
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(bomi|patla\\s*paykhana|diarrhoea|vomiting)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(বমি|ডায়রিয়া|পাতলা\\s*পায়খানা)",
+      "expansion": "diarrhoea vomiting oral rehydration fluids"
+    },
+    {
+      "rule_id": "TRACK_A_6",
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(matha\\s*betha|headache|painkiller|paracetamol)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(মাথাব্যথা|প্যারাসিটামল)",
+      "expansion": "headache pain relief painkillers paracetamol"
+    },
+    {
+      "rule_id": "TRACK_A_7",
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(jor|fever|temperature)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(বাচ্চার\\s*জ্বর|জ্বর)",
+      "expansion": "fever high temperature children fluids paracetamol"
+    },
+    {
+      "rule_id": "TRACK_A_8",
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(allergy|anaphylaxis|shash\\s*bondho)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(অ্যালার্জি|অ্যানাফাইলাক্সিস)",
+      "expansion": "anaphylaxis severe allergic reaction adrenaline 999"
+    },
+    {
+      "rule_id": "TRACK_A_9",
+      "pattern": "(?:\\b|(?<=^)|(?<=\\s))(emergency|999|hospital|duto)(?:\\b|(?=$)|(?=\\s|[.,?!]))|(জরুরি|হাসপাতাল)",
+      "expansion": "emergency call 999 go to A&E"
+    }
+  ],
+
+  "corpus_identity": {
+    "name": "NHS_14_CONDITIONS",
+    "manifest_path": "research/phase_6C/promoted_corpus_manifest.json",
+    "manifest_sha256": "44D0602F730D6460E6FEFA431BD5C09005B48CE92B47D02832532E5868D4AA58",
+    "total_chunks": 119,
+    "total_sources": 14,
+    "source_ids": [
+      "DOC-NHS-004", "DOC-NHS-005", "DOC-NHS-006", "DOC-NHS-007",
+      "DOC-NHS-008", "DOC-NHS-009", "DOC-NHS-010", "DOC-NHS-011",
+      "DOC-NHS-012", "DOC-NHS-013", "DOC-NHS-014", "DOC-NHS-015",
+      "DOC-NHS-016", "DOC-NHS-017"
+    ]
+  },
+
+  "development_metrics_at_freeze": {
+    "evaluation_phase": "6H.2 (corrected ground-truth)",
+    "dataset": "corrected_banglish_challenge_dataset.json (N=9 in-corpus)",
+    "metrics": {
+      "recall_at_5": "88.89% (8/9)",
+      "recall_at_3": "88.89% (8/9)",
+      "top_1_accuracy": "77.78% (7/9)",
+      "mrr": 0.8148,
+      "regression_control": "10/10 (100%)"
+    }
+  }
+}

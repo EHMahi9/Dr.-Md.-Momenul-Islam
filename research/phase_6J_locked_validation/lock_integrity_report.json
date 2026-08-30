@@ -1,0 +1,14 @@
+{
+  "phase": "6J",
+  "lock_timestamp": "2026-08-29T19:10:00Z",
+  "benchmark_file": "research/phase_6J_locked_validation/locked_validation_benchmark.json",
+  "benchmark_sha256": "976D62DA7DB7872303E755910F286E6F895703012F7934E2809544BC1820E1A5",
+  "lock_status": "LOCKED_FOR_SINGLE_SHOT_VALIDATION",
+  "canonical_serialization": "UTF-8 JSON formatted with indent=2, SHA-256 computed over raw file bytes",
+  "total_cases": 40,
+  "in_corpus_cases": 36,
+  "out_of_corpus_cases": 4,
+  "candidate_b_freeze_sha256": "92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A",
+  "corpus_manifest_sha256": "44D0602F730D6460E6FEFA431BD5C09005B48CE92B47D02832532E5868D4AA58",
+  "parent_strategy_5_sha256": "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae"
+}

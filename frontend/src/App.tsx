@@ -2,14 +2,15 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Header } from './components/Header';
 import { ChatInput } from './components/ChatInput';
 import { ChatMessageItem } from './components/ChatMessageItem';
-import { Message, HealthResponse } from './types';
+import { Message, HealthResponse, ConversationContextState } from './types';
 import { fetchHealth, sendChatMessage } from './services/api';
-import { ShieldCheck, Info, MessageSquare, Database, AlertTriangle, RefreshCw, Loader2 } from 'lucide-react';
+import { ShieldCheck, Info, MessageSquare, Database, AlertTriangle, RefreshCw, Loader2, RotateCcw } from 'lucide-react';
 
 export const App: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [health, setHealth] = useState<HealthResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [currentContextState, setCurrentContextState] = useState<ConversationContextState | null>(null);
   const [error, setError] = useState<{ title: string; detail: string } | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -36,7 +37,13 @@ export const App: React.FC = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, isLoading]);
 
-  const handleSendMessage = async (text: string) => {
+  const handleResetConversation = () => {
+    setMessages([]);
+    setCurrentContextState(null);
+    setError(null);
+  };
+
+  const handleSendMessage = async (text: string, preferredLang: string = 'auto') => {
     setError(null);
     const now = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
@@ -51,7 +58,15 @@ export const App: React.FC = () => {
     setIsLoading(true);
 
     try {
-      const response = await sendChatMessage(text);
+      const response = await sendChatMessage(
+        text,
+        preferredLang,
+        currentContextState,
+        currentContextState?.session_id
+      );
+
+      setCurrentContextState(response.context_state || null);
+
       const assistantMsg: Message = {
         id: `assistant-${Date.now()}`,
         sender: 'assistant',
@@ -59,10 +74,15 @@ export const App: React.FC = () => {
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         outcomeState: response.outcome_state,
         confidenceAssessment: response.confidence_assessment,
+        nextAction: response.next_action,
+        clarificationState: response.clarification_state,
+        contextState: response.context_state,
         evidence: response.evidence,
         generationEnabled: response.generation_enabled,
         retrievalMetadata: response.retrieval_metadata,
         generationResult: response.generation_result,
+        queryUnderstanding: response.query_understanding,
+        evidencePresentationPolicy: response.evidence_presentation_policy,
       };
 
       setMessages((prev) => [...prev, assistantMsg]);
@@ -127,7 +147,7 @@ export const App: React.FC = () => {
                   <span>Authoritative NHS Grounding</span>
                 </div>
                 <p className="text-[11px] text-slate-500 leading-normal">
-                  Grounds strictly against 68 indexed NHS clinical passages across 8 conditions under OGL v3.0 licensing.
+                  Grounds strictly against 119 indexed NHS clinical passages across 14 conditions under OGL v3.0 licensing.
                 </p>
               </div>
 
@@ -154,8 +174,31 @@ export const App: React.FC = () => {
           </div>
         ) : (
           <div className="flex-1 overflow-y-auto pb-4">
+            <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-200">
+              <div className="flex items-center gap-2 text-xs text-slate-500 font-medium">
+                <span>Multi-Turn Consultation Session</span>
+                {currentContextState && currentContextState.clarification_turn_count > 0 && (
+                  <span className="bg-sky-100 text-sky-800 text-[10px] font-bold px-2 py-0.5 rounded-full">
+                    Turn {currentContextState.clarification_turn_count}/{currentContextState.max_clarification_turns}
+                  </span>
+                )}
+              </div>
+              <button
+                type="button"
+                onClick={handleResetConversation}
+                className="inline-flex items-center gap-1.5 text-xs text-slate-600 hover:text-rose-700 bg-slate-100 hover:bg-rose-50 px-2.5 py-1 rounded-lg border border-slate-200 transition-colors cursor-pointer"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>New Query / Reset</span>
+              </button>
+            </div>
+
             {messages.map((msg) => (
-              <ChatMessageItem key={msg.id} message={msg} />
+              <ChatMessageItem
+                key={msg.id}
+                message={msg}
+                onSelectOption={(opt) => handleSendMessage(opt)}
+              />
             ))}
 
             {/* In-flight Loading Indicator */}

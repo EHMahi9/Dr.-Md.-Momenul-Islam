@@ -76,10 +76,11 @@ class PromptBuilder:
         self,
         query: str,
         evidence: List[RetrievedEvidenceChunk],
-        corpus_metadata: Optional[Dict[str, Any]] = None
+        corpus_metadata: Optional[Dict[str, Any]] = None,
+        preferred_language: str = "auto"
     ) -> GroundedPrompt:
         """
-        Compose the complete GroundedPrompt contract.
+        Compose the complete GroundedPrompt contract with explicit language preference.
         """
         grounding_evidence = [
             GroundingEvidence.from_retrieved_chunk(c) for c in evidence
@@ -89,10 +90,31 @@ class PromptBuilder:
             "licence": "Open Government Licence v3.0",
             "provider": "NHS England",
             "active_conditions": 14,
-            "evidence_count": len(evidence)
+            "evidence_count": len(evidence),
+            "preferred_language": preferred_language
         }
 
         formatted_evidence = self.format_evidence_block(grounding_evidence)
+
+        # Language-specific instruction
+        if preferred_language == "bn":
+            lang_instruction = (
+                "RESPONSE LANGUAGE REQUIREMENT: The user explicitly requested the answer in fluent, natural Bengali (বাংলা). "
+                "Provide the complete response in natural Bengali with accurate medical concepts while strictly grounding all claims "
+                f"in excerpts [1]..[{len(grounding_evidence)}] using inline bracket citations like [1]."
+            )
+        elif preferred_language == "en":
+            lang_instruction = (
+                "RESPONSE LANGUAGE REQUIREMENT: The user explicitly requested the answer in clear, accessible English. "
+                "Provide the complete response in English while strictly grounding all claims "
+                f"in excerpts [1]..[{len(grounding_evidence)}] using inline bracket citations like [1]."
+            )
+        else:
+            lang_instruction = (
+                "RESPONSE LANGUAGE REQUIREMENT: If the user inquiry contains Bengali script (বাংলা), respond in natural Bengali. "
+                "If the user inquiry is in English or Romanized Bengali (Banglish), respond in natural, accessible English. "
+                f"Strictly ground all factual claims in excerpts [1]..[{len(grounding_evidence)}] using inline bracket citations like [1]."
+            )
 
         full_payload = (
             f"=== SYSTEM INSTRUCTIONS ===\n{self.system_instructions}\n\n"
@@ -103,8 +125,7 @@ class PromptBuilder:
             f"=== RETRIEVED CLINICAL EVIDENCE ===\n{formatted_evidence}\n\n"
             f"=== USER INQUIRY ===\n{query.strip()}\n\n"
             f"=== GROUNDED RESPONSE INSTRUCTIONS ===\n"
-            f"Generate a clear, respectful summary answering the user inquiry based strictly on excerpts [1]..[{len(grounding_evidence)}]. "
-            f"Use inline bracket citations like [1] for every factual statement."
+            f"{lang_instruction}"
         )
 
         return GroundedPrompt(

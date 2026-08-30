@@ -24,35 +24,37 @@ export const Header: React.FC<HeaderProps> = ({ health }) => {
             <div className="flex items-center gap-2">
               <h1 className="text-xl font-bold text-slate-900 tracking-tight">Dr. Md. Momenul Islam</h1>
               <span className="bg-sky-100 text-sky-800 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider border border-sky-200">
-                Phase 6A
+                Phase 7A
               </span>
             </div>
             <p className="text-xs text-slate-500 font-medium">
-              Multilingual Clinical Evidence Retrieval System (Bangla · Banglish · English)
+              Multilingual Clinical Evidence Retrieval & Query Understanding (Bangla · Banglish · English)
             </p>
           </div>
         </div>
 
         {/* System & Retrieval Status Badges */}
         <div className="flex items-center flex-wrap gap-2 text-xs">
-          <div className="flex items-center gap-1.5 bg-slate-100 text-slate-700 px-2.5 py-1 rounded-lg border border-slate-200">
-            <Database className="w-3.5 h-3.5 text-emerald-600" />
-            <span>Active Corpus: <strong>{health?.active_corpus_chunks ?? 68} Chunks</strong> (NHS)</span>
+          <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border ${
+            health ? "bg-slate-100 text-slate-700 border-slate-200" : "bg-rose-50 text-rose-700 border-rose-200"
+          }`}>
+            <Database className={`w-3.5 h-3.5 ${health ? "text-emerald-600" : "text-rose-500"}`} />
+            <span>Active Corpus: <strong>{health ? `${health.active_corpus_chunks} Chunks` : 'Offline / Unreachable'}</strong>{health ? ' (14 NHS Sources)' : ''}</span>
           </div>
 
-          <div className="flex items-center gap-1.5 bg-amber-50 text-amber-800 px-2.5 py-1 rounded-lg border border-amber-200">
-            <Database className="w-3.5 h-3.5 text-amber-600" />
-            <span>Staged Research: <strong>{health?.staged_research_chunks ?? 51} Chunks</strong> (Locked)</span>
+          <div className="flex items-center gap-1.5 bg-slate-100 text-slate-700 px-2.5 py-1 rounded-lg border border-slate-200">
+            <Database className="w-3.5 h-3.5 text-slate-500" />
+            <span>Staged Research: <strong>{health ? `${health.staged_research_chunks} Chunks` : '0 Chunks'}</strong>{health ? ' (Promoted)' : ''}</span>
           </div>
 
           <div className="flex items-center gap-1.5 bg-sky-50 text-sky-800 px-2.5 py-1 rounded-lg border border-sky-200 font-mono text-[11px]">
             <BookOpen className="w-3.5 h-3.5 text-sky-600" />
-            <span>Candidate: <strong>Strategy 5 (Dev)</strong></span>
+            <span>Candidate: <strong>Candidate B (Context-Aware Disambiguation)</strong></span>
           </div>
 
           <div className="flex items-center gap-1.5 bg-slate-100 text-slate-600 px-2.5 py-1 rounded-lg border border-slate-200">
             <Sparkles className="w-3.5 h-3.5 text-slate-400" />
-            <span>Generation: <strong className="text-rose-600">Disabled</strong></span>
+            <span>Generation: <strong className={health?.generation_enabled ? "text-emerald-600" : "text-slate-600"}>{health?.generation_enabled ? "Enabled" : "Disabled (Default)"}</strong></span>
           </div>
         </div>
       </div>

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "QU-DEV-001",
+    "query": "amar paye betha, ki korbo?",
+    "language": "banglish",
+    "expected_intent": "UNDERSPECIFIED_AMBIGUOUS",
+    "expected_sufficiency": "INSUFFICIENT",
+    "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+    "expected_emergency": false,
+    "description": "Underspecified leg pain query without trauma or context"
+  },
+  {
+    "id": "QU-DEV-002",
+    "query": "হাত পুড়ে গেলে ঠাণ্ডা পানির নিচে কতক্ষণ রাখবো?",
+    "language": "bn",
+    "expected_intent": "CLEARLY_ANSWERABLE",
+    "expected_sufficiency": "SUFFICIENT",
+    "expected_policy": "SHOW_GROUNDING_CARDS",
+    "expected_emergency": false,
+    "description": "Supported Native Bangla burns first aid query"
+  },
+  {
+    "id": "QU-DEV-003",
+    "query": "nak diye rokt porle ki korbo?",
+    "language": "banglish",
+    "expected_intent": "CLEARLY_ANSWERABLE",
+    "expected_sufficiency": "SUFFICIENT",
+    "expected_policy": "SHOW_GROUNDING_CARDS",
+    "expected_emergency": false,
+    "description": "Supported Banglish nosebleed query"
+  },
+  {
+    "id": "QU-DEV-004",
+    "query": "What are the symptoms of diabetes?",
+    "language": "en",
+    "expected_intent": "UNSUPPORTED_ACTIVE_CORPUS",
+    "expected_sufficiency": "UNSUPPORTED",
+    "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+    "expected_emergency": false,
+    "description": "Explicit out-of-corpus query (Diabetes)"
+  },
+  {
+    "id": "QU-DEV-005",
+    "query": "amar paye betha ar shash nite koshto hocche",
+    "language": "banglish",
+    "expected_intent": "POTENTIALLY_EMERGENCY",
+    "expected_sufficiency": "EMERGENCY",
+    "expected_policy": "SHOW_EMERGENCY_OVERRIDE",
+    "expected_emergency": true,
+    "description": "Emergency red-flag query (Unilateral leg pain + Dyspnea / PE concern)"
+  },
+  {
+    "id": "QU-DEV-006",
+    "query": "matha betha ki korbo",
+    "language": "banglish",
+    "expected_intent": "UNDERSPECIFIED_AMBIGUOUS",
+    "expected_sufficiency": "INSUFFICIENT",
+    "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+    "expected_emergency": false,
+    "description": "Ambiguous headache query without duration or one-sided context"
+  },
+  {
+    "id": "QU-DEV-007",
+    "query": "buk e chap lagche ar bam haat e betha hocche",
+    "language": "banglish",
+    "expected_intent": "POTENTIALLY_EMERGENCY",
+    "expected_sufficiency": "EMERGENCY",
+    "expected_policy": "SHOW_EMERGENCY_OVERRIDE",
+    "expected_emergency": true,
+    "description": "Acute cardiac emergency red flag (Chest pressure + left arm radiation)"
+  },
+  {
+    "id": "QU-DEV-008",
+    "query": "বাচ্চার ডায়রিয়া হলে ওআরএস কিভাবে খাওয়াবো?",
+    "language": "bn",
+    "expected_intent": "CLEARLY_ANSWERABLE",
+    "expected_sufficiency": "SUFFICIENT",
+    "expected_policy": "SHOW_GROUNDING_CARDS",
+    "expected_emergency": false,
+    "description": "Supported Native Bangla diarrhea and dehydration management query"
+  },
+  {
+    "id": "QU-DEV-009",
+    "query": "How to relieve severe heartburn after eating oily foods?",
+    "language": "en",
+    "expected_intent": "CLEARLY_ANSWERABLE",
+    "expected_sufficiency": "SUFFICIENT",
+    "expected_policy": "SHOW_GROUNDING_CARDS",
+    "expected_emergency": false,
+    "description": "Supported English heartburn query"
+  },
+  {
+    "id": "QU-DEV-010",
+    "query": "dant e prochondo betha ki oshudh khabo?",
+    "language": "banglish",
+    "expected_intent": "UNSUPPORTED_ACTIVE_CORPUS",
+    "expected_sufficiency": "UNSUPPORTED",
+    "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+    "expected_emergency": false,
+    "description": "Explicit out-of-corpus query (Dental / Toothache)"
+  },
+  {
+    "id": "QU-DEV-011",
+    "query": "hate betha ki korbo",
+    "language": "banglish",
+    "expected_intent": "UNDERSPECIFIED_AMBIGUOUS",
+    "expected_sufficiency": "INSUFFICIENT",
+    "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+    "expected_emergency": false,
+    "description": "Underspecified arm pain query without context"
+  },
+  {
+    "id": "QU-DEV-012",
+    "query": "shash bondho hoye jacche shash nite parchi na",
+    "language": "banglish",
+    "expected_intent": "POTENTIALLY_EMERGENCY",
+    "expected_sufficiency": "EMERGENCY",
+    "expected_policy": "SHOW_EMERGENCY_OVERRIDE",
+    "expected_emergency": true,
+    "description": "Acute respiratory emergency red flag"
+  },
+  {
+    "id": "QU-DEV-013",
+    "query": "poka kamor diyeche fule lal hoye ache ki korbo?",
+    "language": "banglish",
+    "expected_intent": "CLEARLY_ANSWERABLE",
+    "expected_sufficiency": "SUFFICIENT",
+    "expected_policy": "SHOW_GROUNDING_CARDS",
+    "expected_emergency": false,
+    "description": "Supported Banglish insect bite query"
+  },
+  {
+    "id": "QU-DEV-014",
+    "query": "What are the first aid steps for an ankle sprain with swelling?",
+    "language": "en",
+    "expected_intent": "CLEARLY_ANSWERABLE",
+    "expected_sufficiency": "SUFFICIENT",
+    "expected_policy": "SHOW_GROUNDING_CARDS",
+    "expected_emergency": false,
+    "description": "Supported English sprain first aid query"
+  },
+  {
+    "id": "QU-DEV-015",
+    "query": "What is the recommended treatment for chickenpox blisters?",
+    "language": "en",
+    "expected_intent": "UNSUPPORTED_ACTIVE_CORPUS",
+    "expected_sufficiency": "UNSUPPORTED",
+    "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+    "expected_emergency": false,
+    "description": "Explicit out-of-corpus query (Chickenpox)"
+  },
+  {
+    "id": "QU-DEV-016",
+    "query": "komore betha ki korbo",
+    "language": "banglish",
+    "expected_intent": "UNDERSPECIFIED_AMBIGUOUS",
+    "expected_sufficiency": "INSUFFICIENT",
+    "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+    "expected_emergency": false,
+    "description": "Underspecified back/waist pain query"
+  },
+  {
+    "id": "QU-DEV-017",
+    "query": "গলা ফুলে শ্বাস বন্ধ হয়ে আসছে",
+    "language": "bn",
+    "expected_intent": "POTENTIALLY_EMERGENCY",
+    "expected_sufficiency": "EMERGENCY",
+    "expected_policy": "SHOW_EMERGENCY_OVERRIDE",
+    "expected_emergency": true,
+    "description": "Acute airway obstruction / Anaphylaxis red flag in Bangla"
+  },
+  {
+    "id": "QU-DEV-018",
+    "query": "কানে ব্যথা হলে ড্রপ দেওয়া যাবে কি?",
+    "language": "bn",
+    "expected_intent": "CLEARLY_ANSWERABLE",
+    "expected_sufficiency": "SUFFICIENT",
+    "expected_policy": "SHOW_GROUNDING_CARDS",
+    "expected_emergency": false,
+    "description": "Supported Native Bangla earache query"
+  },
+  {
+    "id": "QU-DEV-019",
+    "query": "How to manage piles and anal bleeding?",
+    "language": "en",
+    "expected_intent": "UNSUPPORTED_ACTIVE_CORPUS",
+    "expected_sufficiency": "UNSUPPORTED",
+    "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+    "expected_emergency": false,
+    "description": "Explicit out-of-corpus query (Hemorrhoids / Piles)"
+  },
+  {
+    "id": "QU-DEV-020",
+    "query": "feeling sick",
+    "language": "en",
+    "expected_intent": "UNDERSPECIFIED_AMBIGUOUS",
+    "expected_sufficiency": "INSUFFICIENT",
+    "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION",
+    "expected_emergency": false,
+    "description": "Vague malaise query in English"
+  }
+]

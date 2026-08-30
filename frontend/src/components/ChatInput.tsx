@@ -1,8 +1,8 @@
 import React, { useState, KeyboardEvent } from 'react';
-import { Send, Loader2, Languages } from 'lucide-react';
+import { Send, Loader2, Languages, Globe } from 'lucide-react';
 
 interface ChatInputProps {
-  onSendMessage: (msg: string) => void;
+  onSendMessage: (msg: string, preferredLang: string) => void;
   isLoading: boolean;
 }
 
@@ -10,16 +10,17 @@ const QUICK_PROMPTS = [
   { label: 'English', text: 'How to treat a minor burn with cool running water?' },
   { label: 'বাংলা', text: 'বাচ্চার জ্বর হলে কোন তাপমাত্রায় ১১১ কল করব?' },
   { label: 'Banglish', text: 'kete geche bleeding thamtase na ki prothom shongshep korbo?' },
-  { label: 'Anaphylaxis', text: 'EpiPen auto-injector use korar por kivabe ambulance daki?' }
+  { label: 'Nosebleed', text: 'nak die rokt porce koto minute chepe rakhbo?' }
 ];
 
 export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, isLoading }) => {
   const [input, setInput] = useState('');
+  const [responseLang, setResponseLang] = useState<'auto' | 'bn' | 'en'>('auto');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isLoading) return;
-    onSendMessage(input.trim());
+    onSendMessage(input.trim(), responseLang);
     setInput('');
   };
 
@@ -33,25 +34,69 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, isLoading }
   return (
     <div className="bg-white border-t border-slate-200 p-4 shadow-lg sticky bottom-0">
       <div className="max-w-5xl mx-auto space-y-3">
-        {/* Quick Question Starters */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-1 text-xs no-scrollbar">
-          <div className="flex items-center gap-1 text-slate-400 font-medium whitespace-nowrap pl-1">
-            <Languages className="w-3.5 h-3.5 text-sky-600" />
-            <span>Try sample:</span>
+        {/* Top Controls: Language Preference & Quick Prompts */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2.5 pb-1">
+          {/* Quick Prompts */}
+          <div className="flex items-center gap-2 overflow-x-auto text-xs no-scrollbar">
+            <div className="flex items-center gap-1 text-slate-400 font-medium whitespace-nowrap pl-1">
+              <Languages className="w-3.5 h-3.5 text-sky-600" />
+              <span>Try sample:</span>
+            </div>
+            {QUICK_PROMPTS.map((prompt, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => setInput(prompt.text)}
+                className="bg-slate-100 hover:bg-sky-50 hover:text-sky-800 text-slate-600 px-2.5 py-1 rounded-full text-xs font-normal border border-slate-200 transition-colors whitespace-nowrap flex items-center gap-1.5"
+              >
+                <span className="font-semibold text-[10px] text-sky-700 bg-sky-100/80 px-1 py-0.2 rounded">
+                  {prompt.label}
+                </span>
+                <span>{prompt.text}</span>
+              </button>
+            ))}
           </div>
-          {QUICK_PROMPTS.map((prompt, idx) => (
+
+          {/* Part H: Response Language Selector */}
+          <div className="flex items-center gap-1.5 self-start sm:self-auto bg-slate-100 p-1 rounded-lg border border-slate-200 text-xs">
+            <div className="flex items-center gap-1 text-slate-500 font-medium px-1.5">
+              <Globe className="w-3.5 h-3.5 text-slate-600" />
+              <span className="text-[11px]">Response:</span>
+            </div>
             <button
-              key={idx}
               type="button"
-              onClick={() => setInput(prompt.text)}
-              className="bg-slate-100 hover:bg-sky-50 hover:text-sky-800 text-slate-600 px-2.5 py-1 rounded-full text-xs font-normal border border-slate-200 transition-colors whitespace-nowrap flex items-center gap-1.5"
+              onClick={() => setResponseLang('auto')}
+              className={`px-2 py-0.5 rounded text-[11px] font-semibold transition-all cursor-pointer ${
+                responseLang === 'auto'
+                  ? 'bg-white text-sky-800 shadow-xs border border-slate-200'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
             >
-              <span className="font-semibold text-[10px] text-sky-700 bg-sky-100/80 px-1 py-0.2 rounded">
-                {prompt.label}
-              </span>
-              <span>{prompt.text}</span>
+              Auto
             </button>
-          ))}
+            <button
+              type="button"
+              onClick={() => setResponseLang('bn')}
+              className={`px-2 py-0.5 rounded text-[11px] font-semibold transition-all cursor-pointer ${
+                responseLang === 'bn'
+                  ? 'bg-white text-emerald-800 shadow-xs border border-slate-200'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              বাংলা
+            </button>
+            <button
+              type="button"
+              onClick={() => setResponseLang('en')}
+              className={`px-2 py-0.5 rounded text-[11px] font-semibold transition-all cursor-pointer ${
+                responseLang === 'en'
+                  ? 'bg-white text-sky-800 shadow-xs border border-slate-200'
+                  : 'text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              English
+            </button>
+          </div>
         </div>
 
         {/* Text Input Box */}

@@ -19,6 +19,12 @@ from app.services.retrieval_service import BaseRetrievalService, get_retrieval_s
 class MockFrozenDualAnchorRetrievalService(BaseRetrievalService):
     def get_strategy_name(self) -> str:
         return "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR"
+
+    def get_candidate_name(self) -> str:
+        return "CANDIDATE_B_CONTEXT_AWARE_DISAMBIGUATION"
+
+    def get_candidate_hash(self) -> str:
+        return "92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A"
         
     def get_chunk_count(self) -> int:
         return 119
@@ -120,9 +126,10 @@ def test_health_endpoint():
     data = resp.json()
     assert data["status"] == "healthy"
     assert data["retrieval_strategy"] == "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR"
-    assert data["candidate_hash"] == "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae"
+    assert data["active_candidate"] == "CANDIDATE_B_CONTEXT_AWARE_DISAMBIGUATION"
+    assert data["candidate_b_hash"] == "92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A"
     assert data["active_corpus_chunks"] == 119
-    assert data["staged_research_chunks"] == 51  # File still exists at staged path
+    assert data["staged_research_chunks"] == 0  # Phase 6H: Staged chunks promoted in Phase 6C, leaving 0 staged
     assert data["generation_enabled"] is False
 
 def test_corpus_lifecycle_endpoint():
@@ -154,7 +161,8 @@ def test_corpus_lifecycle_endpoint():
     # Check Retrieval Candidate
     cand = data["retrieval_candidate"]
     assert cand["strategy_name"] == "STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR"
-    assert cand["frozen_candidate_sha256"] == "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae"
+    assert cand["active_candidate"] == "CANDIDATE_B_CONTEXT_AWARE_DISAMBIGUATION"
+    assert cand["candidate_b_freeze_sha256"] == "92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A"
 
 def test_promoted_sources_included_in_active():
     """After Phase 6C promotion, previously-staged sources (DOC-NHS-012..017) are now active.
@@ -684,6 +692,106 @@ def test_phase_6F_eval_results_integrity():
     assert data["overall_metrics"]["citation_validity_rate"] == 100.0
     assert data["overall_metrics"]["zero_fabricated_citation_rate"] == 100.0
     assert "policy_comparison" in data
+
+# ==============================================================================
+# Phase 6H: Runtime State Bug Fix & Response Language UX Tests
+# ==============================================================================
+
+def test_phase_6h_health_state_exact_match():
+    """Regression test proving active_corpus_chunks == 119 and staged_research_chunks == 0."""
+    resp = client.get("/api/v1/health")
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["active_corpus_chunks"] == 119
+    assert data["staged_research_chunks"] == 0
+    assert data["generation_enabled"] is False
+
+def test_phase_6h_language_preference_propagation():
+    """Verify that preferred_language propagates cleanly through /chat and /retrieve contracts."""
+    # 1. Chat with Bengali preference
+    resp_bn = client.post("/api/v1/chat", json={
+        "message": "How to treat a burn with water?",
+        "preferred_language": "bn"
+    })
+    assert resp_bn.status_code == 200
+    data_bn = resp_bn.json()
+    assert data_bn["preferred_language"] == "bn"
+    assert data_bn["response_language"] == "bn"
+    assert data_bn["evidence_count"] > 0
+
+    # 2. Chat with English preference on Bangla query
+    resp_en = client.post("/api/v1/chat", json={
+        "message": "হাত পুড়ে গেলে কী করব?",
+        "preferred_language": "en"
+    })
+    assert resp_en.status_code == 200
+    data_en = resp_en.json()
+    assert data_en["preferred_language"] == "en"
+    assert data_en["response_language"] == "en"
+
+    # 3. Chat with auto preference on Native Bangla query
+    resp_auto = client.post("/api/v1/chat", json={
+        "message": "বাচ্চার জ্বর হলে করণীয় কি?",
+        "preferred_language": "auto"
+    })
+    assert resp_auto.status_code == 200
+    data_auto = resp_auto.json()
+    assert data_auto["preferred_language"] == "auto"
+    assert data_auto["response_language"] == "bn"
+
+def test_phase_6h_prompt_builder_language_customization():
+    """Verify that PromptBuilder tailors instructions based on preferred_language."""
+    builder = PromptBuilder()
+    evidence = [
+        RetrievedEvidenceChunk(
+            rank=1,
+            chunk_id="DOC-NHS-005-HYB-001",
+            parent_source_id="DOC-NHS-005",
+            source_title="Burns and scalds",
+            source_url="https://www.nhs.uk/conditions/burns-and-scalds/",
+            text="Cool the burn under cool running water for 20 minutes.",
+            rerank_score=0.9000
+        )
+    ]
+
+    # BN
+    prompt_bn = builder.build_prompt("হাত পুড়ে গেছে", evidence, preferred_language="bn")
+    assert "Bengali (বাংলা)" in prompt_bn.formatted_prompt_payload
+
+    # EN
+    prompt_en = builder.build_prompt("হাত পুড়ে গেছে", evidence, preferred_language="en")
+    assert "English" in prompt_en.formatted_prompt_payload
+
+def test_phase_6g2_retrieval_invariance_across_languages():
+    """Verify that retrieved evidence and scores are 100% identical regardless of preferred_language."""
+    query = "how to treat minor burns with cool water"
+    resp_auto = client.post("/api/v1/chat", json={"message": query, "preferred_language": "auto"})
+    resp_bn = client.post("/api/v1/chat", json={"message": query, "preferred_language": "bn"})
+    resp_en = client.post("/api/v1/chat", json={"message": query, "preferred_language": "en"})
+
+    assert resp_auto.status_code == 200
+    assert resp_bn.status_code == 200
+    assert resp_en.status_code == 200
+
+    ev_auto = resp_auto.json()["evidence"]
+    ev_bn = resp_bn.json()["evidence"]
+    ev_en = resp_en.json()["evidence"]
+
+    assert len(ev_auto) == len(ev_bn) == len(ev_en) == 5
+    for i in range(len(ev_auto)):
+        assert ev_auto[i]["chunk_id"] == ev_bn[i]["chunk_id"] == ev_en[i]["chunk_id"]
+        assert ev_auto[i]["rerank_score"] == ev_bn[i]["rerank_score"] == ev_en[i]["rerank_score"]
+
+def test_phase_6g2_banglish_auto_language_contract():
+    """Verify that romanized Banglish with preferred_language='auto' defaults to Bangla response language per Phase 7A/7B."""
+    resp = client.post("/api/v1/chat", json={"message": "nak diye rokt porle ki korbo?", "preferred_language": "auto"})
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["preferred_language"] == "auto"
+    assert data["response_language"] == "bn"
+    assert data["evidence_count"] > 0
+
+
 
 
 

@@ -1,0 +1,74 @@
+{
+  "phase": "6G.2",
+  "timestamp": "2026-08-29T09:01:20Z",
+  "endpoints_tested": {
+    "health": {
+      "latency_ms": 9.76,
+      "status": 200
+    },
+    "corpus": {
+      "latency_ms": 5.72,
+      "status": 200
+    }
+  },
+  "retrieval_breakdowns": {
+    "English": {
+      "query": "how to treat minor burns with cool water",
+      "e5_dense_ms": 40.49,
+      "bge_rerank_ms": 30534.03,
+      "total_retrieval_ms": 24710.45,
+      "top_chunk": "DOC-NHS-005-HYB-001",
+      "top_score": 0.9705
+    },
+    "Native Bangla": {
+      "query": "বাচ্চার জ্বর হলে করণীয় কি?",
+      "e5_dense_ms": 43.8,
+      "bge_rerank_ms": 16806.16,
+      "total_retrieval_ms": 27703.06,
+      "top_chunk": "DOC-NHS-010-HYB-002",
+      "top_score": 0.4342
+    },
+    "Standard Banglish": {
+      "query": "nak diye rokt porle ki korbo?",
+      "e5_dense_ms": 34.71,
+      "bge_rerank_ms": 28658.77,
+      "total_retrieval_ms": 28710.7,
+      "top_chunk": "DOC-NHS-006-HYB-003",
+      "top_score": 0.0841
+    },
+    "Abbreviated Banglish": {
+      "query": "bacchar jor napa dewa jabe?",
+      "e5_dense_ms": 38.47,
+      "bge_rerank_ms": 31225.39,
+      "total_retrieval_ms": 29012.65,
+      "top_chunk": "DOC-NHS-010-HYB-003",
+      "top_score": 0.0856
+    }
+  },
+  "latency_comparison_table": {
+    "English": {
+      "baseline_ms": 42133.03,
+      "optimized_ms": 30534.03,
+      "improvement_ms": 11599.0,
+      "improvement_pct": 27.5
+    },
+    "Native Bangla": {
+      "baseline_ms": 16053.87,
+      "optimized_ms": 16806.16,
+      "improvement_ms": -752.29,
+      "improvement_pct": -4.7
+    },
+    "Standard Banglish": {
+      "baseline_ms": 39645.75,
+      "optimized_ms": 28658.77,
+      "improvement_ms": 10986.98,
+      "improvement_pct": 27.7
+    },
+    "Abbreviated Banglish": {
+      "baseline_ms": 40143.73,
+      "optimized_ms": 31225.39,
+      "improvement_ms": 8918.34,
+      "improvement_pct": 22.2
+    }
+  }
+}

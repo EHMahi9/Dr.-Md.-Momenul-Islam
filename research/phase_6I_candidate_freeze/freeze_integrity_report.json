@@ -1,0 +1,11 @@
+{
+  "phase": "6I",
+  "generated_at": "2026-08-29T18:26:40Z",
+  "frozen_candidate": "Candidate B (Context-Aware Compound Disambiguation)",
+  "file_path": "research/phase_6I_candidate_freeze/frozen_candidate_B_configuration.json",
+  "canonical_serialization": "UTF-8 JSON file, SHA-256 computed over raw file bytes by PowerShell Get-FileHash -Algorithm SHA256",
+  "sha256": "92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A",
+  "parent_strategy_sha256": "1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae",
+  "corpus_manifest_sha256": "44D0602F730D6460E6FEFA431BD5C09005B48CE92B47D02832532E5868D4AA58",
+  "verification_command": "Get-FileHash -Path 'research/phase_6I_candidate_freeze/frozen_candidate_B_configuration.json' -Algorithm SHA256"
+}
