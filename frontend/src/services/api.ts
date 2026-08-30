@@ -1,6 +1,7 @@
 import { ChatResponse, HealthResponse, ConversationContextState } from '../types';
 
-const API_BASE = '/api/v1';
+const RAW_BASE = (import.meta.env.VITE_API_BASE_URL || '').trim();
+const API_BASE = RAW_BASE ? `${RAW_BASE.replace(/\/+$/, '')}/api/v1` : '/api/v1';
 const HEALTH_TIMEOUT_MS = 10000;
 const CHAT_TIMEOUT_MS = 75000;
 

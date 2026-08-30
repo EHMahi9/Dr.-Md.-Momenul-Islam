@@ -20,11 +20,12 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# Enable CORS for Frontend Development (Vite on localhost:5173 / localhost:3000)
+# Configure CORS for Production and Local Development
+cors_origins = settings.get_cors_origins()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
+    allow_origins=cors_origins,
+    allow_credentials=True if cors_origins != ["*"] else False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

@@ -87,6 +87,10 @@ class ConversationContextState(BaseModel):
     user_age_group: Optional[str] = None  # strictly only if explicitly provided (e.g., "child", "adult")
     red_flags: List[str] = Field(default_factory=list)
     relevant_negatives: List[str] = Field(default_factory=list)  # e.g., "no trauma reported", "no bleeding"
+    asked_questions: List[str] = Field(default_factory=list)  # Phase 7C: list of field names already asked
+    missing_high_value_fields: List[str] = Field(default_factory=list)  # Phase 7C: remaining fields
+    candidate_question_scores: Optional[Dict[str, float]] = None  # Phase 7C: inspectable utility scores
+    stopping_reason: Optional[str] = None  # Phase 7C: reason clarification stopped
     clarification_state: ClarificationState = ClarificationState.NOT_NEEDED
     unanswered_fields: List[str] = Field(default_factory=list)
     next_action: ConversationAction = ConversationAction.ANSWER
@@ -98,6 +102,8 @@ class ClarificationQuestion(BaseModel):
     question_text_en: str
     question_text_bn: str
     options: List[str] = Field(default_factory=list)
+    utility_score: Optional[float] = None  # Phase 7C: engineering utility score
+    selection_rationale: Optional[str] = None  # Phase 7C: why this question was selected
 
 class EmergencyAdvice(BaseModel):
     is_emergency: bool = True

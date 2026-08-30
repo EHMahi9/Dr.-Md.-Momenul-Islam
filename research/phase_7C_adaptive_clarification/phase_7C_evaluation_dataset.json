@@ -1,0 +1,651 @@
+{
+  "benchmark_name": "Phase 7C Adaptive Clarification & Conversation Quality Benchmark",
+  "version": "1.0.0",
+  "description": "40 comprehensive conversational scenarios evaluating adaptive question selection, duplicate prevention, early stopping, emergency routing, and Candidate B retrieval integration.",
+  "total_scenarios": 40,
+  "scenarios": [
+    {
+      "scenario_id": "SC-7C-01",
+      "category": "CLEARLY_SUPPORTED",
+      "language": "bn",
+      "turns": [
+        {
+          "user_message": "হাত পুড়ে গেলে ঠাণ্ডা পানিতে কতক্ষণ রাখবো?",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-005"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-02",
+      "category": "CLEARLY_SUPPORTED",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "How to treat a minor cut on my finger?",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-006"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-03",
+      "category": "CLEARLY_SUPPORTED",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "nak diye rokt porle ki korbo?",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-016"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-04",
+      "category": "CLEARLY_SUPPORTED",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "bacchar 102 fever uthle paracetamol dibo?",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-010"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-05",
+      "category": "CLEARLY_SUPPORTED",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "What should I do if a bee stings my arm?",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-011"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-06",
+      "category": "CLEARLY_SUPPORTED",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "buke jala pora korle antacid khabo?",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-012"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-07",
+      "category": "CLEARLY_SUPPORTED",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "matha betha hole tension headache e paracetamol kivabe khabo?",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-009"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-08",
+      "category": "CLEARLY_SUPPORTED",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "What are the signs of dehydration in diarrhea?",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-007"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-09",
+      "category": "UNDERSPECIFIED_CANONICAL_CUT",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "amar paye betha, ki korbo?",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "kete geche, rokto porche",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "RESOLVED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-006"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-10",
+      "category": "UNDERSPECIFIED_SPRAIN_OUT_OF_CORPUS",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "amar paye betha",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "pore giyechilam, moshke geche",
+          "expected_action": "ABSTAIN",
+          "expected_clarification_state": "UNSUPPORTED_TOPIC",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-11",
+      "category": "UNDERSPECIFIED_LEG_BURN",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "amar paye betha hocche",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "gorom tel pore pure geche",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "RESOLVED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-005"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-12",
+      "category": "UNDERSPECIFIED_ARM_CUT",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "amar hate betha",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "glass kete geche, bleeding hocche",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "RESOLVED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-006"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-13",
+      "category": "UNDERSPECIFIED_ARM_INSECT",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "hater moddhe betha ar lal hoye ache",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "moumachi kamor diyeche",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "RESOLVED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-011"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-14",
+      "category": "UNDERSPECIFIED_HEADACHE",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "mathaye betha korche",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "kopale halka betha paracetamol koto khabo",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "RESOLVED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-009"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-15",
+      "category": "UNDERSPECIFIED_CHEST_HEARTBURN",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "buke oshosti lagche",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "oily khabar khawar por jala pora",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "RESOLVED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-012"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-16",
+      "category": "UNDERSPECIFIED_SKIN_RASH",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "sharashorire khujli ar lal rash",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "sneezes runny nose rhinitis pollen allergy",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "RESOLVED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-017"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-17",
+      "category": "UNDERSPECIFIED_STOMACH_DIARRHEA",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "pete betha korche",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "patla paykhana ar bomi diarrhea ORS",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "RESOLVED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-008"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-18",
+      "category": "UNDERSPECIFIED_EYE_ALLERGY",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "chokhe betha ar lal hoye ache",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "chokh lal, chulkay, allergy rhinitis hay fever",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "RESOLVED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-017"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-19",
+      "category": "ABBREVIATED_BANGLISH_CUT",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "pa kete gese rkt porse",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-006"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-20",
+      "category": "ABBREVIATED_BANGLISH_BURN",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "hat pure gse grumpani",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-005"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-21",
+      "category": "AMBIGUOUS_NO_TRAUMA",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "pa e khapani",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "kono trauma hoy nai emnitei",
+          "expected_action": "ABSTAIN",
+          "expected_clarification_state": "MAX_TURNS_EXCEEDED",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-22",
+      "category": "FREE_TEXT_SPRAIN_ABSTAIN",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "gorar kache pore gie moshke gese",
+          "expected_action": "ABSTAIN",
+          "expected_clarification_state": "UNSUPPORTED_TOPIC",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-23",
+      "category": "FREE_TEXT_CHILD_FEVER",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "3 bochorer bacchar 103 jor utheche",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-010"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-24",
+      "category": "FREE_TEXT_NOSEBLEED",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "nak theke rokt jhorche",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-016"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-25",
+      "category": "UNNECESSARY_CLARIFICATION_TRAP",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "Minor cut on hand how to clean and bandage",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-006"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-26",
+      "category": "UNNECESSARY_CLARIFICATION_TRAP",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "Boiling water scalded my forearm, is cold water for 20 mins right?",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-005"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-27",
+      "category": "UNNECESSARY_CLARIFICATION_TRAP",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "Child has high temperature 38.5C, can I give paracetamol?",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-010"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-28",
+      "category": "UNNECESSARY_CLARIFICATION_TRAP",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "Nosebleed first aid: should I tilt head back or lean forward?",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-016"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-29",
+      "category": "OUT_OF_CORPUS",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "What are the main symptoms of Type 2 diabetes?",
+          "expected_action": "ABSTAIN",
+          "expected_clarification_state": "UNSUPPORTED_TOPIC",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-30",
+      "category": "OUT_OF_CORPUS",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "dante prochondo betha, cavity r root canal er jonno ki korbo?",
+          "expected_action": "ABSTAIN",
+          "expected_clarification_state": "UNSUPPORTED_TOPIC",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-31",
+      "category": "OUT_OF_CORPUS",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "How to treat high blood pressure and hypertension at home?",
+          "expected_action": "ABSTAIN",
+          "expected_clarification_state": "UNSUPPORTED_TOPIC",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-32",
+      "category": "OUT_OF_CORPUS",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "Treatment for chickenpox rash and blisters",
+          "expected_action": "ABSTAIN",
+          "expected_clarification_state": "UNSUPPORTED_TOPIC",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-33",
+      "category": "EMERGENCY_RED_FLAG",
+      "language": "banglish",
+      "turns": [
+        {
+          "user_message": "amar buke prochondo betha ar shash nite koshto hocche",
+          "expected_action": "EMERGENCY",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_EMERGENCY_OVERRIDE"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-34",
+      "category": "EMERGENCY_RED_FLAG",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "Sudden weakness on one side of face and slurred speech",
+          "expected_action": "EMERGENCY",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_EMERGENCY_OVERRIDE"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-35",
+      "category": "EMERGENCY_RED_FLAG",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "Bee sting on neck, throat is closing and tongue is swelling",
+          "expected_action": "EMERGENCY",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_EMERGENCY_OVERRIDE"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-36",
+      "category": "EMERGENCY_RED_FLAG",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "Severe headache with stiff neck, fever, and rash that does not fade under glass",
+          "expected_action": "EMERGENCY",
+          "expected_clarification_state": "NOT_NEEDED",
+          "expected_policy": "SHOW_EMERGENCY_OVERRIDE"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-37",
+      "category": "ADAPTIVE_3_TURN_STOP",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "My leg has been hurting",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "General ache without any injury",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "Calf / Shin area",
+          "expected_action": "ABSTAIN",
+          "expected_clarification_state": "MAX_TURNS_EXCEEDED",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-38",
+      "category": "BANGLA_MULTI_TURN_BURN",
+      "language": "bn",
+      "turns": [
+        {
+          "user_message": "শরীরে খুব অস্বস্তি লাগছে ও চামড়ায় ব্যথা",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "গরম তেল লেগে হাত পুড়ে গেছে ও লাল হয়ে গেছে",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "RESOLVED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-005"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-39",
+      "category": "ENGLISH_QUICK_CHIP_CUT",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "My foot is hurting",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "Cut, scrape or bleeding wound",
+          "expected_action": "ANSWER",
+          "expected_clarification_state": "RESOLVED",
+          "expected_policy": "SHOW_GROUNDING_CARDS",
+          "expected_target_source": "DOC-NHS-006"
+        }
+      ]
+    },
+    {
+      "scenario_id": "SC-7C-40",
+      "category": "ENGLISH_QUICK_CHIP_SPRAIN",
+      "language": "en",
+      "turns": [
+        {
+          "user_message": "My arm is hurting",
+          "expected_action": "CLARIFY",
+          "expected_clarification_state": "IN_PROGRESS",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        },
+        {
+          "user_message": "Sprain or injury from a fall / twist",
+          "expected_action": "ABSTAIN",
+          "expected_clarification_state": "UNSUPPORTED_TOPIC",
+          "expected_policy": "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+        }
+      ]
+    }
+  ]
+}

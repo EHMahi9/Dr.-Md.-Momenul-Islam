@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: drmomenul-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: standard
+    region: singapore
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: ENVIRONMENT
+        value: production
+      - key: CORS_ORIGINS
+        value: https://drmomenul.vercel.app,http://localhost:5173,http://127.0.0.1:5173
+      - key: GENERATION_ENABLED
+        value: false

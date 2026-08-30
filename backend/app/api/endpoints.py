@@ -378,7 +378,7 @@ def chat_endpoint(
                 qu_result.sufficiency_state = EvidenceSufficiencyState.SUFFICIENT
                 qu_result.clarification_question = None
             elif next_act == ConversationAction.CLARIFY:
-                next_clar = conv_service.plan_clarification_question(context_state, preferred_lang=pref_lang)
+                next_clar = conv_service.plan_clarification_question(context_state, preferred_lang=pref_lang, evidence=evidence)
                 if next_clar:
                     qu_result.clarification_question = next_clar
                     next_action = ConversationAction.CLARIFY
@@ -386,26 +386,29 @@ def chat_endpoint(
                     policy = "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
                 else:
                     next_action = ConversationAction.ABSTAIN
-                    clar_state = ClarificationState.MAX_TURNS_EXCEEDED
+                    clar_state = context_state.clarification_state
                     policy = "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
             else: # ABSTAIN
                 next_action = ConversationAction.ABSTAIN
-                clar_state = ClarificationState.MAX_TURNS_EXCEEDED
+                clar_state = context_state.clarification_state
                 policy = "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
         else:
             # Turn 1: Initial user query
             if qu_result.intent_category == QueryIntentCategory.UNDERSPECIFIED_AMBIGUOUS:
-                # Plan first clarification question
-                first_clar = conv_service.plan_clarification_question(context_state, preferred_lang=pref_lang)
-                if first_clar:
-                    qu_result.clarification_question = first_clar
-                next_action = ConversationAction.CLARIFY
-                clar_state = ClarificationState.IN_PROGRESS
-                policy = "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
-                
-                # Execute retrieval for diagnostic baseline
                 norm_query, evidence = retrieval_service.retrieve(clean_msg, top_k=5)
                 outcome_state, confidence_assessment = classify_retrieval_outcome(clean_msg, evidence)
+                
+                # Plan adaptive first clarification question
+                first_clar = conv_service.plan_clarification_question(context_state, preferred_lang=pref_lang, evidence=evidence)
+                if first_clar:
+                    qu_result.clarification_question = first_clar
+                    next_action = ConversationAction.CLARIFY
+                    clar_state = ClarificationState.IN_PROGRESS
+                    policy = "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
+                else:
+                    next_action = ConversationAction.ABSTAIN
+                    clar_state = context_state.clarification_state
+                    policy = "SUPPRESS_UNRELATED_CARDS_SHOW_ABSTENTION"
             else:
                 # Clearly answerable single-turn query
                 next_action = ConversationAction.ANSWER

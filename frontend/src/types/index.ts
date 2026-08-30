@@ -100,6 +100,8 @@ export interface ClarificationQuestion {
   question_text_en: string;
   question_text_bn: string;
   options: string[];
+  utility_score?: number;
+  selection_rationale?: string;
 }
 
 export interface EmergencyAdvice {
@@ -181,6 +183,10 @@ export interface ConversationContextState {
   user_age_group?: string;
   red_flags: string[];
   relevant_negatives: string[];
+  asked_questions: string[];
+  missing_high_value_fields: string[];
+  candidate_question_scores?: Record<string, number>;
+  stopping_reason?: string;
   clarification_state: ClarificationState;
   unanswered_fields: string[];
   next_action: ConversationAction;
