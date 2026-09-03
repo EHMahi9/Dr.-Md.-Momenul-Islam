@@ -87,7 +87,7 @@ The deployed container enforces identical cryptographic hashes and configuration
 
 ### 3.1 Docker Build Strategy
 - **Base Image:** `python:3.10-slim`.
-- **PyTorch Optimization:** CPU wheels installed via `--extra-index-url https://download.pytorch.org/whl/cpu` to avoid downloading 3+ GB of CUDA runtime dependencies.
+- **PyTorch Optimization:** `torch==2.14.0+cpu` is installed from the CPU-only PyTorch index before the remaining requirements, preventing pip from selecting the CUDA-enabled Torch distribution.
 - **Corpus Bundling:** Packaged directly into the container filesystem at `/app/app/data/promoted_corpus_manifest.json`, ensuring the container operates autonomously without external volume mounts.
 - **Concurrency Guard:** Single process execution (`uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}`). Uvicorn worker count must never exceed 1 on a 2 GB instance, as each worker spawns duplicate SentenceTransformer and CrossEncoder model tensors.
 
