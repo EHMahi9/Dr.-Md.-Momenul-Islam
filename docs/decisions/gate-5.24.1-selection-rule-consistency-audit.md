@@ -32,10 +32,10 @@ Strategy 5 tied the baseline on primary R@5 (90.0%) and strictly led on secondar
 ## 2. Artifact Verification
 
 All underlying artifacts from Gate 5.24 were verified:
-- [`gate_5_24_strategy_comparison.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_24_reranker_development_research/comparisons/gate_5_24_strategy_comparison.json)
-- [`reranker_diagnostic_breakdown.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_24_reranker_development_research/diagnostics/reranker_diagnostic_breakdown.json)
-- [`baseline_dev24_results.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_24_reranker_development_research/diagnostics/baseline_dev24_results.json)
-- [`dev24_benchmark.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_24_reranker_development_research/benchmark/dev24_benchmark.json) (SHA-256: `4d28ccfc59be69e2e790fb89ad71fc47479e8d92889c61a069d0af238750e485`)
+- [`gate_5_24_strategy_comparison.json`](../../research/gate_5_24_reranker_development_research/comparisons/gate_5_24_strategy_comparison.json)
+- [`reranker_diagnostic_breakdown.json`](../../research/gate_5_24_reranker_development_research/diagnostics/reranker_diagnostic_breakdown.json)
+- [`baseline_dev24_results.json`](../../research/gate_5_24_reranker_development_research/diagnostics/baseline_dev24_results.json)
+- [`dev24_benchmark.json`](../../research/gate_5_24_reranker_development_research/benchmark/dev24_benchmark.json) (SHA-256: `4d28ccfc59be69e2e790fb89ad71fc47479e8d92889c61a069d0af238750e485`)
 
 **Findings:**
 - Reported numbers in Gate 5.24 are 100% mathematically accurate and verified.

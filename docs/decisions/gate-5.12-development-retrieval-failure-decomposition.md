@@ -123,7 +123,7 @@ Based directly on the failure taxonomy, we implemented and evaluated 5 controlle
 
 ## 7. Frozen Winner Configuration
 
-The winning configuration has been formally frozen in [`research/gate_5_12_retrieval_failure_decomposition/frozen_candidate/frozen_candidate_configuration.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_12_retrieval_failure_decomposition/frozen_candidate/frozen_candidate_configuration.json):
+The winning configuration has been formally frozen in [`research/gate_5_12_retrieval_failure_decomposition/frozen_candidate/frozen_candidate_configuration.json`](../../research/gate_5_12_retrieval_failure_decomposition/frozen_candidate/frozen_candidate_configuration.json):
 
 ```json
 {

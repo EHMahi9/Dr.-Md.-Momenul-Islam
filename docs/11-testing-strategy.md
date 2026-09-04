@@ -1,6 +1,6 @@
 # Testing Strategy: Dr. Md. Momenul Islam
 
-> **Governing Documents:** This strategy is derived from the approved [Project Charter](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/00-project-charter.md), [Requirements Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md), [Safety Policy](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/03-safety-policy.md), [User Stories](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/05-user-stories.md), [System Architecture](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/06-system-architecture.md), [RAG Architecture](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/07-rag-architecture.md), [API Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/08-api-specification.md), [Data Model](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/09-data-model.md), and [UI Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/10-ui-specification.md).
+> **Governing Documents:** This strategy is derived from the approved [Project Charter](./00-project-charter.md), [Requirements Specification](./02-requirements.md), [Safety Policy](./03-safety-policy.md), [User Stories](./05-user-stories.md), [System Architecture](./06-system-architecture.md), [RAG Architecture](./07-rag-architecture.md), [API Specification](./08-api-specification.md), [Data Model](./09-data-model.md), and [UI Specification](./10-ui-specification.md). For current implementation state, see [Current Implementation State](./13-current-implementation-state.md).
 >
 > **Purpose:** Define how the system will be tested and how Track A (Antigravity-built) and Track B (manually built) will be compared fairly.
 >
@@ -110,7 +110,7 @@ Integration tests verify correct interaction **between components**.
 
 ## 6. API Testing
 
-The API must be tested against the [API Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/08-api-specification.md).
+The API must be tested against the [API Specification](./08-api-specification.md).
 
 ### 6.1 `POST /api/query` Test Cases
 
@@ -645,15 +645,14 @@ tests/
 
 ## 27. Testing Tools
 
-| Category | Purpose | Status |
+| Category | Tool | Status |
 |---|---|---|
-| Python unit-testing framework | Unit and integration tests | TO BE DECIDED (e.g., `pytest`) |
-| FastAPI test client | API contract testing | TO BE DECIDED |
-| Browser automation | UI and E2E testing | TO BE DECIDED |
-| API testing tool | HTTP-level API testing | TO BE DECIDED |
-| Security scanning | Secret detection in repository | TO BE DECIDED |
-| Repository secret scanning | Scan Git history for leaked keys | TO BE DECIDED |
-| Custom RAG evaluation scripts | Retrieval relevance and grounding evaluation | TO BE DECIDED |
+| Python unit-testing framework | `pytest` | IMPLEMENTED & VERIFIED |
+| FastAPI test client | `httpx.AsyncClient` / `TestClient` | IMPLEMENTED & VERIFIED |
+| Frontend compilation & type safety | TypeScript `tsc` (strict mode) | IMPLEMENTED & VERIFIED |
+| Production smoke testing | PowerShell `Invoke-RestMethod` / `curl` | IMPLEMENTED & VERIFIED |
+| RAG evaluation scripts | Python custom evaluation harnesses (Recall@K, MRR, Latency) | IMPLEMENTED & VERIFIED |
+| Retrieval verification | Multi-lingual test suite (English, Bangla, Banglish, Emergency) | IMPLEMENTED & VERIFIED |
 
 > Do **not** introduce a large testing framework stack unnecessarily (Project Charter §7, Architecture Principle 7).
 

@@ -116,7 +116,7 @@ BAAI/bge-reranker-v2-m3 Cross-Encoder (raw chunk text)
 Top-5 Delivered Evidence Context
 ```
 
-- **Configuration File**: [`research/gate_5_19_dual_failure_mitigation/candidate/frozen_candidate_configuration.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_19_dual_failure_mitigation/candidate/frozen_candidate_configuration.json)
+- **Configuration File**: [`research/gate_5_19_dual_failure_mitigation/candidate/frozen_candidate_configuration.json`](../../research/gate_5_19_dual_failure_mitigation/candidate/frozen_candidate_configuration.json)
 - **Configuration SHA-256 Checksum**: `5a6840ff9a4d1956a913ab85f3972c4d7481c01bfe0c7a8fe7b2d9110017621e`
 
 ---

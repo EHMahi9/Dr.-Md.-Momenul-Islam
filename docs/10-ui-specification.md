@@ -1,6 +1,6 @@
 # UI Specification: Dr. Md. Momenul Islam
 
-> **Governing Documents:** This specification is derived from the approved [Project Charter](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/00-project-charter.md), [Requirements Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md), [Safety Policy](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/03-safety-policy.md), [User Personas](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/04-user-personas.md), [User Stories](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/05-user-stories.md), [System Architecture](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/06-system-architecture.md), and [API Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/08-api-specification.md).
+> **Governing Documents:** This specification is derived from the approved [Project Charter](./00-project-charter.md), [Requirements Specification](./02-requirements.md), [Safety Policy](./03-safety-policy.md), [User Personas](./04-user-personas.md), [User Stories](./05-user-stories.md), [System Architecture](./06-system-architecture.md), and [API Specification](./08-api-specification.md). For current implementation state, see [Current Implementation State](./13-current-implementation-state.md).
 >
 > **Purpose:** Define the logical user interface for the health-information assistant so that both Track A and Track B implement a functionally equivalent experience.
 >
@@ -10,7 +10,7 @@
 > | Label | Meaning |
 > |---|---|
 > | **REQUIRED** | Mandatory for the current project |
-> | **TO BE DECIDED** | Decision not yet finalized |
+> | **IMPLEMENTED** | Active in Track A production frontend |
 > | **OUT OF SCOPE** | Deliberately excluded |
 
 ---
@@ -31,19 +31,25 @@ The interface must:
 | Make sources easy to inspect | FR-09, SRC-01–SRC-04 |
 | Remain simple enough for a general user under stressful circumstances | NFR-01, NFR-02 |
 
-> **Design Principle:** Clarity and safety take priority over visual novelty.
+> **Design Philosophy (Calm Clinical Minimalism):**
+> * Minimal cognitive load, maximal clinical clarity.
+> * Progressive disclosure: engineering metrics (hashes, chunk IDs, fused scores) are accessible via diagnostics toggles rather than dominating the primary screen.
+> * Prominent emergency triage: red-flag alerts are highlighted with high visual urgency in English and Bangla.
+> * Restrained visual styling: deep teal primary accent (`#0f766e`), warm stone-50 surfaces, and generous whitespace.
 
 ---
 
 ## 2. Frontend Technology
 
-| Attribute | Value | Status |
+| Attribute | Track A Implementation | Status |
 |---|---|---|
-| HTML | Standard semantic HTML | REQUIRED |
-| CSS | Standard CSS | REQUIRED |
-| JavaScript | Vanilla JavaScript (no frameworks) | REQUIRED |
+| **Framework** | React 18.2 + Vite 5.4 | IMPLEMENTED |
+| **Language** | TypeScript 5.2 | IMPLEMENTED |
+| **Styling** | Tailwind CSS 3.4 (Deep Teal & Warm Neutral palette) | IMPLEMENTED |
+| **Icons** | Lucide React | IMPLEMENTED |
+| **Build & Deploy** | Vercel Hobby (`https://drmomenul.vercel.app`) | IMPLEMENTED |
 
-> **Constraint:** Do not introduce React, Next.js, Vue, Angular, or another frontend framework unless a later documented decision explicitly requires it (Project Charter §7).
+> **Track Independence:** While Track B may use standard semantic HTML/CSS/Vanilla JS per initial educational guidelines, Track A utilizes a modern TypeScript/React/Tailwind component architecture with full static type validation.
 
 ---
 
@@ -455,7 +461,7 @@ The frontend communicates exclusively with:
 | Rule | Detail |
 |---|---|
 | Validate basic input before sending | Empty/whitespace check, length check |
-| Send structured JSON request | As defined in [API Specification §4](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/08-api-specification.md) |
+| Send structured JSON request | As defined in [API Specification §4](./08-api-specification.md) |
 | Handle loading state | Show indicator, prevent duplicates |
 | Handle `status: "success"` | Render all response sections |
 | Handle `status: "safety_response"` | Render safety guidance with urgency emphasis |
@@ -494,7 +500,7 @@ Both implementations must use the **same logical UI requirements** and API contr
 | Response sections displayed | Same 6 sections (answer, uncertainty, warnings, urgency, professional care, sources) |
 | Safety disclaimer presence | Same safety information visible |
 | Source presentation | Same source fields displayed |
-| API request/response handling | Same contract from [API Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/08-api-specification.md) |
+| API request/response handling | Same contract from [API Specification](./08-api-specification.md) |
 | Error state handling | Same error types handled |
 
 ### May Differ
@@ -529,7 +535,7 @@ Both implementations must use the **same logical UI requirements** and API contr
 | Loading state | NFR-03 |
 | Security (no secrets in frontend) | NFR-06, PR-03 |
 
-> All requirement IDs verified against [`02-requirements.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md).
+> All requirement IDs verified against [`02-requirements.md`](./02-requirements.md).
 
 ---
 

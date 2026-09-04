@@ -1,6 +1,6 @@
 # Requirements Specification: Dr. Md. Momenul Islam
 
-> **Governing Documents:** This requirements specification is derived from the approved [Project Charter](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/00-project-charter.md) and [Problem Statement](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/01-problem-statement.md). No requirements have been added that are not justified by those documents.
+> **Governing Documents:** This requirements specification is derived from the approved [Project Charter](./00-project-charter.md) and [Problem Statement](./01-problem-statement.md). No requirements have been added that are not justified by those documents. For current system state, see [Current Implementation State](./13-current-implementation-state.md).
 
 > **Requirement Classification Key:**
 > | Label | Meaning |

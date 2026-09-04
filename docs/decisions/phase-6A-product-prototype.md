@@ -26,7 +26,7 @@ In parallel with the independent retrieval research track (Gate 5.26), Phase 6A 
 | **Retrieval Engine** | `sentence-transformers`, `numpy` | Strategy 5 with 68 NHS chunks | ✅ Verified on EN, BN, Banglish |
 | **Database Schema** | SQLAlchemy 2.0 (PostgreSQL/SQLite) | `sources`, `chunks`, `query_logs` | ✅ Schema compiled |
 | **Frontend UI** | React 18, TypeScript, Tailwind CSS, Vite | Multi-lingual chat, Top-5 evidence viewer, provenance attribution | ✅ Built with 0 TS errors (`npm run build`) |
-| **Architecture Docs** | Markdown / GitHub Flavored | Data flow, API contracts, boundaries | ✅ [`application-architecture.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/architecture/application-architecture.md) |
+| **Architecture Docs** | Markdown / GitHub Flavored | Data flow, API contracts, boundaries | ✅ [`application-architecture.md`](../architecture/application-architecture.md) |
 
 ---
 

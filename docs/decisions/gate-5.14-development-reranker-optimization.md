@@ -112,7 +112,7 @@ We formulated and tested 6 distinct, reproducible reranking strategies on the 40
 
 ## 7. Frozen Winner Configuration
 
-The winning configuration has been formally frozen in [`research/gate_5_14_reranker_optimization/frozen_candidate/frozen_candidate_configuration.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_14_reranker_optimization/frozen_candidate/frozen_candidate_configuration.json):
+The winning configuration has been formally frozen in [`research/gate_5_14_reranker_optimization/frozen_candidate/frozen_candidate_configuration.json`](../../research/gate_5_14_reranker_optimization/frozen_candidate/frozen_candidate_configuration.json):
 
 ```json
 {

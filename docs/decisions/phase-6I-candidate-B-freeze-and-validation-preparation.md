@@ -12,7 +12,7 @@
 ## 1. Executive Summary & Selection Rationale
 
 ### Selection Background (VERIFIED FACT)
-In Phase 6H.2, an independent decision-integrity audit re-computed all candidate metrics from raw retrieval outputs ([`phase_6H_experiment_results.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6H_banglish_retrieval_experiment/outputs/phase_6H_experiment_results.json)) against ground-truth targets derived from authoritative corpus provenance ([`corrected_banglish_challenge_dataset.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6H_1_benchmark_integrity/corrected_banglish_challenge_dataset.json)).
+In Phase 6H.2, an independent decision-integrity audit re-computed all candidate metrics from raw retrieval outputs ([`phase_6H_experiment_results.json`](../../research/phase_6H_banglish_retrieval_experiment/outputs/phase_6H_experiment_results.json)) against ground-truth targets derived from authoritative corpus provenance ([`corrected_banglish_challenge_dataset.json`](../../research/phase_6H_1_benchmark_integrity/corrected_banglish_challenge_dataset.json)).
 
 The verified in-corpus (N=9) metrics are:
 
@@ -106,8 +106,8 @@ Applied to the output of Track A normalization (`lower_q`):
 ## 3. Cryptographic Freeze Integrity
 
 ### Artifact Location (VERIFIED FACT)
-- Config File: [`research/phase_6I_candidate_freeze/frozen_candidate_B_configuration.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6I_candidate_freeze/frozen_candidate_B_configuration.json)
-- Integrity Report: [`research/phase_6I_candidate_freeze/freeze_integrity_report.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6I_candidate_freeze/freeze_integrity_report.json)
+- Config File: [`research/phase_6I_candidate_freeze/frozen_candidate_B_configuration.json`](../../research/phase_6I_candidate_freeze/frozen_candidate_B_configuration.json)
+- Integrity Report: [`research/phase_6I_candidate_freeze/freeze_integrity_report.json`](../../research/phase_6I_candidate_freeze/freeze_integrity_report.json)
 
 ### Cryptographic Checksums (VERIFIED FACT)
 - **Frozen Candidate B Config SHA-256:** `92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A`
@@ -142,7 +142,7 @@ Applied to the output of Track A normalization (`lower_q`):
 ## 5. Reproducibility Test Results
 
 ### Test Protocol (VERIFIED FACT)
-[`test_reproducibility.py`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6I_candidate_freeze/test_reproducibility.py) runs Candidate B through two independent consecutive retrieval passes across the full 12 development challenge queries.
+[`test_reproducibility.py`](../../research/phase_6I_candidate_freeze/test_reproducibility.py) runs Candidate B through two independent consecutive retrieval passes across the full 12 development challenge queries.
 - Score tolerance threshold: `1e-5`
 - Evaluated elements: Normalized query text, Dense Top-15 IDs, Final Top-5 IDs, Fused score delta.
 
@@ -152,14 +152,14 @@ Applied to the output of Track A normalization (`lower_q`):
 - Cases matching 100% on Dense Top-15 Candidate IDs: 12/12
 - Cases matching 100% on Final Top-5 Candidate IDs: 12/12
 - Max score delta across all passes: `0.00e+00`
-- Reproducibility verdict: **`ALL_CASES_REPRODUCIBLE`** (Saved to [`reproducibility_report.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6I_candidate_freeze/reproducibility_report.json))
+- Reproducibility verdict: **`ALL_CASES_REPRODUCIBLE`** (Saved to [`reproducibility_report.json`](../../research/phase_6I_candidate_freeze/reproducibility_report.json))
 
 ---
 
 ## 6. Locked-Benchmark Preflight Firewall
 
 ### Firewall Architecture (VERIFIED FACT)
-Created [`preflight_firewall.py`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6I_candidate_freeze/preflight_firewall.py).
+Created [`preflight_firewall.py`](../../research/phase_6I_candidate_freeze/preflight_firewall.py).
 
 The preflight module performs 6 mandatory verification gates before allowing any neural model inference:
 1. `candidate_config_sha256`: Checks frozen candidate config against expected SHA-256.
@@ -176,7 +176,7 @@ If ANY check fails, a `PreflightFirewallError` is raised and the execution termi
 ## 7. Independent Validation Benchmark Design (NOT YET LOCKED)
 
 ### Overview (VALIDATION PLAN)
-Created [`independent_validation_benchmark_design.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6I_candidate_freeze/independent_validation_benchmark_design.json).
+Created [`independent_validation_benchmark_design.json`](../../research/phase_6I_candidate_freeze/independent_validation_benchmark_design.json).
 
 ### Design Properties (VALIDATION PLAN)
 - **Zero Query Leakage:** None of the 40 validation queries appear in the Phase 6H development challenge set or regression control set.
@@ -215,7 +215,7 @@ The evaluation protocol is locked prior to execution:
 ## 8. Future Single-Shot Validation Runner
 
 ### Script Architecture (VERIFIED FACT)
-Created [`run_locked_validation.py`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6I_candidate_freeze/run_locked_validation.py).
+Created [`run_locked_validation.py`](../../research/phase_6I_candidate_freeze/run_locked_validation.py).
 - Hardcoded safety gate: `EXECUTION_ENABLED = False`.
 - Script cannot execute until explicitly configured with the locked benchmark hash and enabled.
 - **NO VALIDATION INFERENCE WAS EXECUTED IN THIS PHASE.**
@@ -241,9 +241,9 @@ Created [`run_locked_validation.py`](file:///d:/my-ai-project/Dr.%20Md.%20Momenu
 ## 10. Historical Record Preservation
 
 The following historical documents remain unchanged and preserved:
-- [`phase-6H-banglish-retrieval-improvement.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6H-banglish-retrieval-improvement.md) (SHA-256: `4EDDD364...`)
-- [`phase-6H.1-banglish-benchmark-integrity-audit.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6H.1-banglish-benchmark-integrity-audit.md) (SHA-256: `49F68718...`)
-- [`phase-6H.2-candidate-selection-correction.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6H.2-candidate-selection-correction.md)
+- [`phase-6H-banglish-retrieval-improvement.md`](../decisions/phase-6H-banglish-retrieval-improvement.md) (SHA-256: `4EDDD364...`)
+- [`phase-6H.1-banglish-benchmark-integrity-audit.md`](../decisions/phase-6H.1-banglish-benchmark-integrity-audit.md) (SHA-256: `49F68718...`)
+- [`phase-6H.2-candidate-selection-correction.md`](../decisions/phase-6H.2-candidate-selection-correction.md)
 
 ---
 
@@ -252,7 +252,7 @@ The following historical documents remain unchanged and preserved:
 - **Candidate B Frozen:** Complete (`92224DC6...`)
 - **Parity Audited:** Complete (100% match)
 - **Reproducibility Verified:** Complete (12/12 match, $\Delta = 0.0$)
-- **Preflight Firewall:** Complete ([`preflight_firewall.py`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6I_candidate_freeze/preflight_firewall.py))
+- **Preflight Firewall:** Complete ([`preflight_firewall.py`](../../research/phase_6I_candidate_freeze/preflight_firewall.py))
 - **Validation Benchmark Designed:** Complete (40 cases, NOT locked)
 - **Future Single-Shot Runner Prepared:** Complete (`EXECUTION_ENABLED = False`)
 - **NO Locked Benchmark Executed:** Confirmed

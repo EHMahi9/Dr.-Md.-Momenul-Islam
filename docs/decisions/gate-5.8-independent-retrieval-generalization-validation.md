@@ -25,7 +25,7 @@ All embeddings, similarity matrices, rankings, and cross-encoder scores were com
 
 ## 3. Preflight Audit Summary
 
-Prior to benchmark execution, a preflight audit ([`gate-5.8-preflight-corpus-and-benchmark-audit.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/gate-5.8-preflight-corpus-and-benchmark-audit.md)) verified:
+Prior to benchmark execution, a preflight audit ([`gate-5.8-preflight-corpus-and-benchmark-audit.md`](../decisions/gate-5.8-preflight-corpus-and-benchmark-audit.md)) verified:
 - Corrected ingestion manifest SHA-256: `dedcd9edfad3106e875b42730c5ca214d1495b2f1c5893bab6669fb68bb076a7`
 - 0% source ID overlap and 0% topic overlap with the historical 3-document benchmark.
 - All 8 new documents represent distinct medical topics.

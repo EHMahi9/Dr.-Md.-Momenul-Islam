@@ -26,7 +26,7 @@ The frozen Gate 5.14 / Gate 5.15 pipeline was executed and reproduced on the 40 
 | **Final Chunk Recall@5** | 35 / 40 (87.50%) | **35 / 40 (87.50%)** | **PASS** |
 | **Final Chunk MRR** | 0.6150 | **0.6150** | **PASS** |
 
-*Verification*: Reproduction status is **PASS**. Saved in [`research/gate_5_16_reranker_failure_analysis/reproducibility/dev_reproduction_verification.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_16_reranker_failure_analysis/reproducibility/dev_reproduction_verification.json).
+*Verification*: Reproduction status is **PASS**. Saved in [`research/gate_5_16_reranker_failure_analysis/reproducibility/dev_reproduction_verification.json`](../../research/gate_5_16_reranker_failure_analysis/reproducibility/dev_reproduction_verification.json).
 
 ---
 

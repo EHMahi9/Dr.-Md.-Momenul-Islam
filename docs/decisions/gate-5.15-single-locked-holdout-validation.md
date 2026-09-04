@@ -37,7 +37,7 @@ This gate was conducted under strict scientific constraints:
 | **Holdout Separation** | Zero holdout contamination in DEV tuning | 100% Unseen & Untouched | **PASS** |
 | **Overall Integrity Status**| **ALL CHECKS PASS** | **ALL CHECKS PASS** | **PASS** |
 
-Verification report saved to: [`research/gate_5_15_locked_holdout_validation/integrity/gate_5_15_integrity_verification.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_15_locked_holdout_validation/integrity/gate_5_15_integrity_verification.json).
+Verification report saved to: [`research/gate_5_15_locked_holdout_validation/integrity/gate_5_15_integrity_verification.json`](../../research/gate_5_15_locked_holdout_validation/integrity/gate_5_15_integrity_verification.json).
 
 ---
 
@@ -141,10 +141,10 @@ The unsupported evaluation set (12 Hard Negatives + 8 Out-of-Corpus) was evaluat
 
 | Artifact | File Path | Description |
 | :--- | :--- | :--- |
-| **Integrity Verification** | [`research/gate_5_15_locked_holdout_validation/integrity/gate_5_15_integrity_verification.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_15_locked_holdout_validation/integrity/gate_5_15_integrity_verification.json) | Pre-evaluation checksum & parameter audit |
-| **Holdout Results** | [`research/gate_5_15_locked_holdout_validation/evaluations/gate_5_15_locked_holdout_results.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_15_locked_holdout_validation/evaluations/gate_5_15_locked_holdout_results.json) | Full metrics summary for supported & unsupported queries |
-| **Exact Per-Query Rankings** | [`research/gate_5_15_locked_holdout_validation/evaluations/gate_5_15_exact_rankings.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_15_locked_holdout_validation/evaluations/gate_5_15_exact_rankings.json) | Complete 15-candidate dense & reranker scores per query |
-| **Unsupported Query Safety** | [`research/gate_5_15_locked_holdout_validation/evaluations/gate_5_15_unsupported_query_results.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_15_locked_holdout_validation/evaluations/gate_5_15_unsupported_query_results.json) | Hard negative & OOC score distributions |
+| **Integrity Verification** | [`research/gate_5_15_locked_holdout_validation/integrity/gate_5_15_integrity_verification.json`](../../research/gate_5_15_locked_holdout_validation/integrity/gate_5_15_integrity_verification.json) | Pre-evaluation checksum & parameter audit |
+| **Holdout Results** | [`research/gate_5_15_locked_holdout_validation/evaluations/gate_5_15_locked_holdout_results.json`](../../research/gate_5_15_locked_holdout_validation/evaluations/gate_5_15_locked_holdout_results.json) | Full metrics summary for supported & unsupported queries |
+| **Exact Per-Query Rankings** | [`research/gate_5_15_locked_holdout_validation/evaluations/gate_5_15_exact_rankings.json`](../../research/gate_5_15_locked_holdout_validation/evaluations/gate_5_15_exact_rankings.json) | Complete 15-candidate dense & reranker scores per query |
+| **Unsupported Query Safety** | [`research/gate_5_15_locked_holdout_validation/evaluations/gate_5_15_unsupported_query_results.json`](../../research/gate_5_15_locked_holdout_validation/evaluations/gate_5_15_unsupported_query_results.json) | Hard negative & OOC score distributions |
 
 ---
 

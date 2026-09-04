@@ -21,7 +21,7 @@ Following Gate 5.24.1, which established that **`STRATEGY_5_DUAL_TOPICAL_LEXICAL
 ## 2. Status of Strategy 5 Frozen Development Candidate
 
 - **Candidate Name:** `STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR`
-- **Config Path:** [`research/gate_5_24_reranker_development_research/candidate/strategy_5_dev_candidate_configuration.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_24_reranker_development_research/candidate/strategy_5_dev_candidate_configuration.json)
+- **Config Path:** [`research/gate_5_24_reranker_development_research/candidate/strategy_5_dev_candidate_configuration.json`](../../research/gate_5_24_reranker_development_research/candidate/strategy_5_dev_candidate_configuration.json)
 - **Architecture:**
   - Track A Unicode-Safe Procedural Normalization (9 concept dictionaries)
   - Dense Model: `intfloat/multilingual-e5-small` (Candidate Depth $K=15$)

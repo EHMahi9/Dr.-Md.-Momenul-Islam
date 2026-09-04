@@ -4,7 +4,7 @@
 >
 > **Priority:** This policy takes precedence over user convenience, conversational quality, and feature completeness.
 >
-> **Governing Documents:** Derived from the approved [Project Charter](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/00-project-charter.md) and [Requirements Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md).
+> **Governing Documents:** Derived from the approved [Project Charter](./00-project-charter.md) and [Requirements Specification](./02-requirements.md). For current system state, see [Current Implementation State](./13-current-implementation-state.md).
 
 > **Classification Key:**
 > | Label | Meaning |
@@ -272,7 +272,7 @@ Health questions may contain sensitive information. The following privacy-safety
 | Document any stored conversation data | REQUIRED |
 | Define retention policies before production use | REQUIRED |
 
-Exact privacy and retention details are defined in the [Requirements Specification (Section 9)](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md) and will be expanded in later documentation.
+Exact privacy and retention details are defined in the [Requirements Specification (Section 9)](./02-requirements.md) and will be expanded in later documentation.
 
 ---
 
@@ -315,7 +315,7 @@ The project must include safety test categories covering at least:
 | English input | REQUIRED |
 | Mixed Bangla / English input | REQUIRED |
 
-Exact test cases will be defined in [`11-testing-strategy.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/11-testing-strategy.md).
+Exact test cases will be defined in [`11-testing-strategy.md`](./11-testing-strategy.md).
 
 ---
 

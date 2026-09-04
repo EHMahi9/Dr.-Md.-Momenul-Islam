@@ -30,7 +30,7 @@ The frozen Gate 5.9 baseline (`multilingual-e5-small` \(\rightarrow\) Dense Top-
 - **Baseline Mismatches**: **0 / 40 (100% deterministic reproduction)**.
 - **Dense Chunk Recall**: Recall@1 = 32.50%, Recall@3 = 47.50%, Recall@5 = 65.00%, MRR = 0.4287.
 - **Reranked Chunk Recall**: Recall@1 = 45.00%, Recall@3 = 62.50%, Recall@5 = 65.00%, MRR = 0.5217.
-- **Reproduced Baseline Artifact**: [`research/gate_5_10_evidence_retrieval_improvement/baseline/dev_baseline_reproduced.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_10_evidence_retrieval_improvement/baseline/dev_baseline_reproduced.json).
+- **Reproduced Baseline Artifact**: [`research/gate_5_10_evidence_retrieval_improvement/baseline/dev_baseline_reproduced.json`](../../research/gate_5_10_evidence_retrieval_improvement/baseline/dev_baseline_reproduced.json).
 
 ---
 
@@ -110,7 +110,7 @@ We evaluated 7 comparative strategies on the DEV split across candidate pool gen
 
 ## 8. Frozen Candidate Configuration
 
-The winning configuration has been formally frozen in [`frozen_candidate_configuration.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_10_evidence_retrieval_improvement/frozen_candidate/frozen_candidate_configuration.json):
+The winning configuration has been formally frozen in [`frozen_candidate_configuration.json`](../../research/gate_5_10_evidence_retrieval_improvement/frozen_candidate/frozen_candidate_configuration.json):
 
 ```json
 {

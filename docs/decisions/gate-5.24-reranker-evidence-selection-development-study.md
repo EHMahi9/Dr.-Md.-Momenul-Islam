@@ -19,7 +19,7 @@ Following Gate 5.23, which validated that dense candidate retrieval achieved 100
 
 ## 2. DEV-24 Benchmark Specification & Integrity
 
-- **Benchmark File**: [`research/gate_5_24_reranker_development_research/benchmark/dev24_benchmark.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_24_reranker_development_research/benchmark/dev24_benchmark.json)
+- **Benchmark File**: [`research/gate_5_24_reranker_development_research/benchmark/dev24_benchmark.json`](../../research/gate_5_24_reranker_development_research/benchmark/dev24_benchmark.json)
 - **Benchmark SHA-256**: `4d28ccfc59be69e2e790fb89ad71fc47479e8d92889c61a069d0af238750e485`
 - **Total Queries**: 40 supported queries (5 per document across `DOC-NHS-004` through `DOC-NHS-011`)
 - **Query Overlap Audit**: **0 duplicate or near-duplicate queries** against all 150 historical queries across Gates 5.8 through 5.23.

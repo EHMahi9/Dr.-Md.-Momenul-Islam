@@ -12,7 +12,7 @@
 
 ## 1. Executive Summary & Authoritative Validation Result
 
-In Phase 6K, the cryptographically locked independent multilingual validation benchmark ([`locked_validation_benchmark.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6J_locked_validation/locked_validation_benchmark.json), $N=40$ cases) was executed in single-shot mode to evaluate **Candidate B (Context-Aware Compound Disambiguation)** against the **Frozen Strategy 5 Control**.
+In Phase 6K, the cryptographically locked independent multilingual validation benchmark ([`locked_validation_benchmark.json`](../../research/phase_6J_locked_validation/locked_validation_benchmark.json), $N=40$ cases) was executed in single-shot mode to evaluate **Candidate B (Context-Aware Compound Disambiguation)** against the **Frozen Strategy 5 Control**.
 
 ### Primary Decision Outcome (VERIFIED FACT)
 Under the pre-registered decision cascade locked in Phase 6J:
@@ -124,7 +124,7 @@ flowchart TD
 
 ## 6. Execution Integrity Verification
 
-As recorded in [`phase_6K_integrity_verification.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6K_single_shot_validation/phase_6K_integrity_verification.json):
+As recorded in [`phase_6K_integrity_verification.json`](../../research/phase_6K_single_shot_validation/phase_6K_integrity_verification.json):
 - Benchmark loaded: **1 time**
 - Control evaluated: **1 time** (40 cases)
 - Candidate B evaluated: **1 time** (40 cases)
@@ -160,21 +160,21 @@ As recorded in [`phase_6K_integrity_verification.json`](file:///d:/my-ai-project
 
 ## 8. Artifacts Generated in Phase 6K
 
-1. [`phase_6K_validation_results.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6K_single_shot_validation/phase_6K_validation_results.json) — Full summary and aggregate metrics.
-2. [`phase_6K_per_query_results.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6K_single_shot_validation/phase_6K_per_query_results.json) — Per-query rankings and side-by-side case deltas.
-3. [`phase_6K_failure_analysis.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6K_single_shot_validation/phase_6K_failure_analysis.json) — Comprehensive failure taxonomy.
-4. [`phase_6K_integrity_verification.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6K_single_shot_validation/phase_6K_integrity_verification.json) — Cryptographic execution count verification.
-5. [`phase_6K_preflight.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6K_single_shot_validation/phase_6K_preflight.json) — Preflight firewall checks.
-6. [`phase-6K-single-shot-candidate-B-validation.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6K-single-shot-candidate-B-validation.md) — Authoritative decision document.
+1. [`phase_6K_validation_results.json`](../../research/phase_6K_single_shot_validation/phase_6K_validation_results.json) — Full summary and aggregate metrics.
+2. [`phase_6K_per_query_results.json`](../../research/phase_6K_single_shot_validation/phase_6K_per_query_results.json) — Per-query rankings and side-by-side case deltas.
+3. [`phase_6K_failure_analysis.json`](../../research/phase_6K_single_shot_validation/phase_6K_failure_analysis.json) — Comprehensive failure taxonomy.
+4. [`phase_6K_integrity_verification.json`](../../research/phase_6K_single_shot_validation/phase_6K_integrity_verification.json) — Cryptographic execution count verification.
+5. [`phase_6K_preflight.json`](../../research/phase_6K_single_shot_validation/phase_6K_preflight.json) — Preflight firewall checks.
+6. [`phase-6K-single-shot-candidate-B-validation.md`](../decisions/phase-6K-single-shot-candidate-B-validation.md) — Authoritative decision document.
 
 ---
 
 ## 9. Historical Record Preservation
 
 All previous decision records remain unchanged and preserved:
-- [`phase-6H-banglish-retrieval-improvement.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6H-banglish-retrieval-improvement.md)
-- [`phase-6H.1-banglish-benchmark-integrity-audit.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6H.1-banglish-benchmark-integrity-audit.md)
-- [`phase-6H.2-candidate-selection-correction.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6H.2-candidate-selection-correction.md)
-- [`phase-6I-candidate-B-freeze-and-validation-preparation.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6I-candidate-B-freeze-and-validation-preparation.md)
-- [`phase-6I-unsupported-banglish-query-observation.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6I-unsupported-banglish-query-observation.md)
-- [`phase-6J-independent-validation-benchmark-lock.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6J-independent-validation-benchmark-lock.md)
+- [`phase-6H-banglish-retrieval-improvement.md`](../decisions/phase-6H-banglish-retrieval-improvement.md)
+- [`phase-6H.1-banglish-benchmark-integrity-audit.md`](../decisions/phase-6H.1-banglish-benchmark-integrity-audit.md)
+- [`phase-6H.2-candidate-selection-correction.md`](../decisions/phase-6H.2-candidate-selection-correction.md)
+- [`phase-6I-candidate-B-freeze-and-validation-preparation.md`](../decisions/phase-6I-candidate-B-freeze-and-validation-preparation.md)
+- [`phase-6I-unsupported-banglish-query-observation.md`](../decisions/phase-6I-unsupported-banglish-query-observation.md)
+- [`phase-6J-independent-validation-benchmark-lock.md`](../decisions/phase-6J-independent-validation-benchmark-lock.md)

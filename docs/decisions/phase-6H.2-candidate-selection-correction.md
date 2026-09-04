@@ -2,9 +2,9 @@
 
 **Date:** 2026-08-29  
 **Status:** Audit Completed — Selection Correction Issued  
-**Amends:** [`phase-6H.1-banglish-benchmark-integrity-audit.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6H.1-banglish-benchmark-integrity-audit.md) and [`phase-6H-banglish-retrieval-improvement.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6H-banglish-retrieval-improvement.md)  
-**Raw Artifact:** [`phase_6H_experiment_results.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6H_banglish_retrieval_experiment/outputs/phase_6H_experiment_results.json)  
-**Corrected Dataset:** [`corrected_banglish_challenge_dataset.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6H_1_benchmark_integrity/corrected_banglish_challenge_dataset.json)  
+**Amends:** [`phase-6H.1-banglish-benchmark-integrity-audit.md`](../decisions/phase-6H.1-banglish-benchmark-integrity-audit.md) and [`phase-6H-banglish-retrieval-improvement.md`](../decisions/phase-6H-banglish-retrieval-improvement.md)  
+**Raw Artifact:** [`phase_6H_experiment_results.json`](../../research/phase_6H_banglish_retrieval_experiment/outputs/phase_6H_experiment_results.json)  
+**Corrected Dataset:** [`corrected_banglish_challenge_dataset.json`](../../research/phase_6H_1_benchmark_integrity/corrected_banglish_challenge_dataset.json)  
 **Verification Script:** [`phase_6H2_audit_v2.py`](file:///C:/Users/Admin/.gemini/antigravity/brain/597fd9c7-a863-4eaf-9850-32012e68e5c7/scratch/phase_6H2_audit_v2.py)
 
 ---
@@ -63,7 +63,7 @@ These match the Phase 6H.1 reported values exactly (the metrics themselves were 
 
 ### Source of Selection Rule
 
-No explicitly pre-registered formal selection rule document with a ranked tie-breaking ladder was found in the Phase 6H experiment artifacts. The experiment runner ([`run_banglish_experiment.py`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6H_banglish_retrieval_experiment/run_banglish_experiment.py)) computes these metrics without an automated winner-selection function. The original Phase 6H decision record ([`phase-6H-banglish-retrieval-improvement.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6H-banglish-retrieval-improvement.md)) implicitly used the following priority ladder:
+No explicitly pre-registered formal selection rule document with a ranked tie-breaking ladder was found in the Phase 6H experiment artifacts. The experiment runner ([`run_banglish_experiment.py`](../../research/phase_6H_banglish_retrieval_experiment/run_banglish_experiment.py)) computes these metrics without an automated winner-selection function. The original Phase 6H decision record ([`phase-6H-banglish-retrieval-improvement.md`](../decisions/phase-6H-banglish-retrieval-improvement.md)) implicitly used the following priority ladder:
 
 1. **Final Recall@5** (primary)
 2. **Final Recall@3**

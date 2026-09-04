@@ -1,6 +1,6 @@
 # RAG Architecture: Dr. Md. Momenul Islam
 
-> **Governing Documents:** This document is derived from the approved [Project Charter](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/00-project-charter.md), [Problem Statement](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/01-problem-statement.md), [Requirements Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md), [Safety Policy](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/03-safety-policy.md), [User Personas](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/04-user-personas.md), [User Stories](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/05-user-stories.md), and [System Architecture](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/06-system-architecture.md).
+> **Governing Documents:** This document is derived from the approved [Project Charter](./00-project-charter.md), [Problem Statement](./01-problem-statement.md), [Requirements Specification](./02-requirements.md), [Safety Policy](./03-safety-policy.md), [User Personas](./04-user-personas.md), [User Stories](./05-user-stories.md), and [System Architecture](./06-system-architecture.md). For current verified implementation state, see [Current Implementation State](./13-current-implementation-state.md).
 >
 > **Purpose:** Define the Retrieval-Augmented Generation (RAG) pipeline in enough logical detail that both Track A (agent build) and Track B (manual build) can implement the same system.
 >
@@ -74,14 +74,27 @@ The pipeline has two distinct phases:
 
 The RAG system may retrieve **only** from the project's approved knowledge base (KB-01, KB-06).
 
-### Trusted Sources (TO BE DECIDED — exact list after research)
+### Approved Trusted Sources (Implemented & Verified)
 
-Potential approved source categories (from Project Charter §8):
-* World Health Organization (WHO)
-* Government health authorities
-* Reputable public-health agencies
-* Peer-reviewed medical literature
-* Established clinical guidelines
+The active clinical knowledge base comprises **14 NHS England clinical condition documents** under Open Government Licence (OGL) v3.0, indexed into **119 verified chunks**:
+
+| Document ID | Condition Title | NHS Source Link | Chunks |
+|---|---|---|---|
+| `DOC-NHS-004` | Anaphylaxis | NHS England | 12 |
+| `DOC-NHS-005` | Burns and scalds | NHS England | 10 |
+| `DOC-NHS-006` | Chest pain | NHS England | 9 |
+| `DOC-NHS-007` | Cuts and grazes | NHS England | 8 |
+| `DOC-NHS-008` | Diarrhoea and vomiting | NHS England | 9 |
+| `DOC-NHS-009` | Choking | NHS England | 7 |
+| `DOC-NHS-010` | Concussion and head injury | NHS England | 10 |
+| `DOC-NHS-011` | Dizziness | NHS England | 8 |
+| `DOC-NHS-012` | Nosebleed | NHS England | 6 |
+| `DOC-NHS-013` | Poisoning | NHS England | 7 |
+| `DOC-NHS-014` | Shock | NHS England | 7 |
+| `DOC-NHS-015` | Sprains and strains | NHS England | 8 |
+| `DOC-NHS-016` | Stroke | NHS England | 9 |
+| `DOC-NHS-017` | High temperature in children | NHS England | 9 |
+| **Total** | **14 Conditions** | **Official NHS Clinical Guidance** | **119 Chunks** |
 
 ### Prohibited Sources
 
@@ -101,7 +114,7 @@ Each approved source must have a **documented provenance** — a clear record of
 
 | Item | Status |
 |---|---|
-| Exact approved source list | **TO BE DECIDED** (after external research) |
+| Exact approved source list | **APPROVED & ACTIVE** (14 NHS conditions, 119 chunks, OGL v3.0) |
 
 ---
 
@@ -271,12 +284,14 @@ flowchart TD
 * Similar texts produce vectors that are close together in vector space.
 * Retrieval then becomes finding stored vectors most similar to the query vector.
 
-| Item | Status |
-|---|---|
-| Embedding model | **TO BE DECIDED** |
-| Vector database (ChromaDB is a candidate) | **TO BE DECIDED** |
-| Similarity metric (cosine, dot product, etc.) | **TO BE DECIDED** |
-| Number of results to retrieve (Top-K) | **TO BE DECIDED** |
+| Item | Status | Detail |
+|---|---|---|
+| Embedding model | **IMPLEMENTED & VERIFIED** | `intfloat/multilingual-e5-small` (384 dims, native CPU) |
+| Vector storage & index | **IMPLEMENTED & VERIFIED** | In-memory normalized NumPy cosine similarity matrix |
+| Reranker model | **IMPLEMENTED & VERIFIED** | `BAAI/bge-reranker-v2-m3` cross-encoder |
+| Similarity metric | **IMPLEMENTED & VERIFIED** | Cosine similarity on L2-normalized embeddings |
+| Number of results to retrieve | **IMPLEMENTED & VERIFIED** | `K_dense = 15` (Dense retrieval), `K_final = 5` (Post-reranking) |
+| Strategy & Candidate | **IMPLEMENTED & VERIFIED** | `STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR` + Candidate B |
 
 ---
 
@@ -427,7 +442,7 @@ The LLM should produce a structured response containing:
 | `sources_used` | References to the retrieved sources used | REQUIRED (FR-09) |
 | `professional_care` | Recommendation to seek professional care (when applicable) | REQUIRED (SR-07) |
 
-The exact response schema is defined in [`08-api-specification.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/08-api-specification.md).
+The exact response schema is defined in [`08-api-specification.md`](./08-api-specification.md).
 
 | Item | Status |
 |---|---|
@@ -494,7 +509,7 @@ flowchart LR
 
 ### Attribution Display
 
-The user-facing citation format is defined in [`10-ui-specification.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/10-ui-specification.md) and [`08-api-specification.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/08-api-specification.md).
+The user-facing citation format is defined in [`10-ui-specification.md`](./10-ui-specification.md) and [`08-api-specification.md`](./08-api-specification.md).
 
 ---
 
@@ -592,7 +607,7 @@ The RAG pipeline should be evaluated on:
 | **Language Quality** | Is the response understandable in the user's language? | FR-03, FR-05 |
 | **Failure Handling** | Does the system behave correctly when retrieval fails? | NFR-04 |
 
-Exact test cases will be defined in [`11-testing-strategy.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/11-testing-strategy.md).
+Exact test cases will be defined in [`11-testing-strategy.md`](./11-testing-strategy.md).
 
 ---
 
@@ -614,18 +629,21 @@ Following the Project Charter's learning path (§6), the RAG pipeline should be 
 
 ## 20. Technology Decisions
 
-| Decision | Current Direction | Status |
+| Decision | Implemented & Verified Technology | Status |
 |---|---|---|
-| Embedding model | Not chosen | **TO BE DECIDED** |
-| Vector database | Not chosen (ChromaDB is a candidate) | **TO BE DECIDED** |
-| Chunking library/method | Not chosen | **TO BE DECIDED** |
-| Chunk size and overlap | Not chosen | **TO BE DECIDED** |
-| Similarity metric | Not chosen | **TO BE DECIDED** |
-| Top-K value | Not chosen | **TO BE DECIDED** |
-| Cross-language retrieval strategy | Not chosen | **TO BE DECIDED** |
-| Document format support beyond .txt/.md | Not chosen | **TO BE DECIDED** |
+| Embedding model | `intfloat/multilingual-e5-small` (384-dimensional dense vectors) | **IMPLEMENTED & VERIFIED** |
+| Vector database / Index | In-memory normalized NumPy cosine similarity matrix | **IMPLEMENTED & VERIFIED** |
+| Cross-encoder reranker | `BAAI/bge-reranker-v2-m3` | **IMPLEMENTED & VERIFIED** |
+| Retrieval strategy | `STRATEGY_5_DUAL_TOPICAL_LEXICAL_ANCHOR` + Candidate B | **IMPLEMENTED & VERIFIED** |
+| Chunking library/method | Semantic NHS section chunking with metadata preservation | **IMPLEMENTED & VERIFIED** |
+| Active corpus size | 119 verified chunks across 14 NHS conditions (OGL v3.0) | **IMPLEMENTED & VERIFIED** |
+| Similarity metric | Cosine similarity on L2-normalized embeddings | **IMPLEMENTED & VERIFIED** |
+| Top-K values | `K_dense = 15`, `K_final = 5` | **IMPLEMENTED & VERIFIED** |
+| Interpolation weights | $\lambda = 0.10$ (Dense), $\alpha = 0.03$ (Lexical), $\text{overview} = 0.85$ | **IMPLEMENTED & VERIFIED** |
+| Cross-language strategy | Multilingual E5 + phonetic Banglish expansion + Bengali normalization | **IMPLEMENTED & VERIFIED** |
+| LLM Generation | Locked / Disabled (`generation_enabled = false`) | **IMPLEMENTED & VERIFIED** |
 
-> **Constraint:** LangChain, LlamaIndex, and similar high-level frameworks must **NOT** be introduced unless the project documentation identifies a clear, justified reason (Project Charter §7).
+> **Constraint & Architecture Discipline:** The implementation operates strictly without heavyweight orchestration frameworks (no LangChain or LlamaIndex), maintaining a transparent, deterministic, auditable NumPy + PyTorch + HuggingFace transformers pipeline.
 
 ---
 

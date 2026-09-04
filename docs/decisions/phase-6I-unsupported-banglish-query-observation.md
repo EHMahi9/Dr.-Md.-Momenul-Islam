@@ -4,7 +4,7 @@
 **Status:** Diagnostic Audit Completed (No Code Changes)  
 **Query Investigated:** `"amar peet e betha"`  
 **Observed Behavior:** UI displayed *"No Supporting Evidence Found"* alongside Top-1 passage `DOC-NHS-005` (Burns and scalds).  
-**Artifact Trace:** [`research/phase_6I_candidate_freeze/diagnostics/unsupported_banglish_peet_betha_trace.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6I_candidate_freeze/diagnostics/unsupported_banglish_peet_betha_trace.json)  
+**Artifact Trace:** [`research/phase_6I_candidate_freeze/diagnostics/unsupported_banglish_peet_betha_trace.json`](../../research/phase_6I_candidate_freeze/diagnostics/unsupported_banglish_peet_betha_trace.json)  
 
 ---
 
@@ -47,7 +47,7 @@
 ## 3. Confidence Assessment & Abstention Trace
 
 ### Backend Classification Logic (VERIFIED FACT)
-The confidence classifier [`classify_retrieval_outcome`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/backend/app/services/retrieval_service.py#L66-L127) evaluated the top score `0.0867`:
+The confidence classifier [`classify_retrieval_outcome`](../../backend/app/services/retrieval_service.py#L66-L127) evaluated the top score `0.0867`:
 
 - **Threshold ladder:**
   - $\text{Score} \ge 0.65 \implies \text{SUPPORTED\_RETRIEVAL}$ (HIGH)
@@ -70,7 +70,7 @@ The backend abstention decision is **100% mathematically and semantically correc
 ## 4. UI Semantic Audit & UX Safety Hazard
 
 ### Frontend Rendering Path (SAFETY/UX ISSUE)
-In [`ChatMessageItem.tsx`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/frontend/src/components/ChatMessageItem.tsx):
+In [`ChatMessageItem.tsx`](../../frontend/src/components/ChatMessageItem.tsx):
 
 1. **Outcome Box (Lines 79-86, 186-190):** Correctly renders the grey badge:
    `[AlertCircle] No Supporting Evidence Found`

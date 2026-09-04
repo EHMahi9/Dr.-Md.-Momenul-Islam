@@ -50,7 +50,7 @@ Returns full structured metadata for all 3 lifecycle tiers:
 
 ## 4. Frontend UI Lifecycle Visibility
 
-The application [`Header.tsx`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/frontend/src/components/Header.tsx) displays clear status badges:
+The application [`Header.tsx`](../../frontend/src/components/Header.tsx) displays clear status badges:
 - 🟢 `Active Corpus: 68 Chunks (NHS)`
 - 🟡 `Staged Research: 51 Chunks (Locked)`
 - 🔵 `Candidate: Strategy 5 (Dev)`

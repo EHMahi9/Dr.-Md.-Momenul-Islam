@@ -177,7 +177,7 @@ Under the pre-defined selection hierarchy:
 
 ## 12. Frozen Candidate Configuration
 
-The winning configuration (`STRATEGY_2_TRACK_A_NORM_ONLY`) has been frozen in [`research/gate_5_21_evidence_selection_architecture/candidate/frozen_candidate_configuration.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_21_evidence_selection_architecture/candidate/frozen_candidate_configuration.json).
+The winning configuration (`STRATEGY_2_TRACK_A_NORM_ONLY`) has been frozen in [`research/gate_5_21_evidence_selection_architecture/candidate/frozen_candidate_configuration.json`](../../research/gate_5_21_evidence_selection_architecture/candidate/frozen_candidate_configuration.json).
 
 ### Cryptographic Configuration Checksum:
 - **Configuration SHA-256:** `07f031da533d47666fb5abd242f8db47b90dc584a92c0b3f399abaaf51c02736`

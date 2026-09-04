@@ -1,6 +1,6 @@
 # User Stories: Dr. Md. Momenul Islam
 
-> **Governing Documents:** This document is derived from the approved [Project Charter](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/00-project-charter.md), [Problem Statement](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/01-problem-statement.md), [Requirements Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md), [Safety Policy](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/03-safety-policy.md), and [User Personas](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/04-user-personas.md).
+> **Governing Documents:** This document is derived from the approved [Project Charter](./00-project-charter.md), [Problem Statement](./01-problem-statement.md), [Requirements Specification](./02-requirements.md), [Safety Policy](./03-safety-policy.md), and [User Personas](./04-user-personas.md). For current system state, see [Current Implementation State](./13-current-implementation-state.md).
 >
 > **Purpose:** Translate user personas and approved requirements into testable user stories with stable identifiers and traceability.
 >
@@ -505,9 +505,9 @@ These stories apply across all user personas and enforce mandatory safety behavi
 
 Every user story in this document must:
 
-1. **Trace** to one or more approved requirements from [`02-requirements.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md).
+1. **Trace** to one or more approved requirements from [`02-requirements.md`](./02-requirements.md).
 2. **Not silently introduce** new functionality beyond the approved scope.
-3. **Respect** the [Safety Policy](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/03-safety-policy.md).
+3. **Respect** the [Safety Policy](./03-safety-policy.md).
 4. **Not imply** clinical authority.
 5. **Be testable** where practical.
 6. **Clearly distinguish** current requirements from future ideas.

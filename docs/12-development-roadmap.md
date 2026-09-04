@@ -14,11 +14,13 @@
 [COMPLETED] Phase 7A: Query understanding, ambiguity detection, evidence sufficiency, emergency routing
 [COMPLETED] Phase 7B: Multi-turn clarification and structured conversation state
 [COMPLETED] Phase 7C: Adaptive clarification and question-utility planning
-[NEXT]      Phase 8A: Production Backend Deployment Preparation (Linux, Render, CORS, Packaging)
-[NEXT]      Phase 8B: Backend Deployment + Vercel ↔ Render Integration
-[NEXT]      Phase 8C: Cloud Runtime / Performance Optimization
-[FUTURE]    Phase 8D: LLM-Assisted Conversational Generation
-[FUTURE]    Phase 8E: Multi-Turn Grounded Generation Evaluation
+[COMPLETED] Phase 8A: Production Backend Packaging (Linux amd64 Docker, PyTorch Native, Model Caching)
+[COMPLETED] Phase 8B: Zero-Cost Backend Deployment via Tailscale Funnel + Vercel Integration
+[COMPLETED] Phase 8C: Runtime Performance Optimization (Native amd64 build, 20–34s query latency)
+[COMPLETED] Phase 8D: Frontend UI/UX Redesign (Calm Clinical Minimalism, Progressive Disclosure)
+[COMPLETED] Phase 8E: Documentation Synchronization & Authoritative State Baseline (docs/13)
+[FUTURE]    Phase 9A: LLM-Assisted Conversational Generation (when generation_enabled is revisited)
+[FUTURE]    Phase 9B: Multi-Turn Grounded Generation Evaluation
 [LATER]     Broader Source Coverage, Bangladesh National Guidance, Privacy & Clinical Governance
 ```
 
@@ -35,41 +37,23 @@
 | **Phase 7A** | Query Understanding & Ambiguity Detection | Implemented slot extraction, broad anatomy ambiguity detection, red flag heuristics, and language preference (Auto / বাংলা / EN). | **VERIFIED** |
 | **Phase 7B** | Structured Context & Multi-Turn Clarification | Implemented `ConversationContextState`, observable quick-select chips UI, and multi-turn state preservation. | **VERIFIED** |
 | **Phase 7C** | Adaptive Clarification & Question-Utility Planning | Implemented 6-factor Question-Utility Model, 4 Early Stopping Rules, duplicate question suppression (0.00%), and 0.00% unnecessary clarification rate. | **VERIFIED** |
+| **Phase 8A–8C** | Zero-Cost ($0) Production Deployment | Built native `linux/amd64` Docker image with pre-cached models; provisioned Tailscale Funnel public HTTPS URL (`https://momenul.taile15170.ts.net`); connected live Vercel frontend (`https://drmomenul.vercel.app`); latencies 20–34s. | **VERIFIED** |
+| **Phase 8D–8E** | UI/UX Redesign & Doc Sync | Redesigned frontend to "Calm Clinical Minimalism" with progressive disclosure; synchronized all governing specifications in `docs/13-current-implementation-state.md`. | **VERIFIED** |
 
 ---
 
-### B. NEXT MILESTONES (Phase 8 Production Deployment & Cloud Optimization)
+### B. FUTURE MILESTONES
 
-#### Phase 8A: Production Backend Deployment Preparation
-- **Linux / Cloud Environment Audit:** Verify PyTorch, HuggingFace transformers, and FastAPI execution on Linux cloud container targets.
-- **Render Deployment Packaging:** Author production `Dockerfile`, startup entrypoints, and container health check routes.
-- **Runtime Model Loading & Corpus Packaging:** Optimize loading of `intfloat/multilingual-e5-small` and `BAAI/bge-reranker-v2-m3` in memory-constrained cloud environments.
-- **CORS & Environment Configuration:** Secure CORS headers to allow requests from `https://drmomenul.vercel.app`.
-- **Frontend API Alignment:** Configure environment variables in frontend for remote backend endpoints.
+#### Phase 9A: LLM-Assisted Conversational Generation
+- Controlled LLM rewriting of clarification questions and grounded answers within strictly bounded evidence contexts using `BaseLLMProvider` (when protocol permits).
 
-#### Phase 8B: Backend Deployment + Vercel ↔ Render Integration
-- **Render Service Provisioning:** Deploy FastAPI backend service to Render.
-- **Vercel ↔ Render Live Integration:** Connect frontend (`https://drmomenul.vercel.app`) to live Render backend.
-- **Live Smoke & End-to-End Testing:** Execute end-to-end multi-turn query and evidence retrieval verification across web endpoints.
-
-#### Phase 8C: Cloud Runtime & Performance Optimization
-- **Cold-Start Mitigation & Caching:** Implement embedding pre-warming and model memory footprint tuning.
-- **Latency Profiling:** Measure end-to-end network and inference latency in cloud runtime.
-
----
-
-### C. FUTURE MILESTONES
-
-#### Phase 8D: LLM-Assisted Conversational Generation
-- Controlled LLM rewriting of clarification questions and grounded answers within strictly bounded evidence contexts using `BaseLLMProvider`.
-
-#### Phase 8E: Multi-Turn Grounded Generation Evaluation
+#### Phase 9B: Multi-Turn Grounded Generation Evaluation
 - Evaluation of end-to-end multi-turn generation against locked gold citations and anti-hallucination metrics.
 
 #### Later Horizons:
 1. **Broader Trusted-Source Ingestion:** Ingest vetted clinical guidance from Bangladesh national authorities (DGHS, IEDCR).
-2. **Foundation Model Comparison:** Systematic evaluation across open-weight (Llama 3, Gemma 2, Qwen 2.5) and proprietary API models.
-3. **Banglish Vocabulary Expansion:** Further Banglish vocabulary expansion remains future research work and must be evaluated as a separately versioned candidate (Candidate B configuration remains frozen).
+2. **Foundation Model Comparison:** Systematic evaluation across open-weight and proprietary models.
+3. **Banglish Vocabulary Expansion:** Evaluated as a separately versioned candidate (Candidate B configuration remains frozen).
 4. **Privacy & Telemetry:** Implement privacy-preserving telemetry, audit logging, and rate limiting.
 5. **Clinical Governance:** Multidisciplinary clinical safety review and formal clinical validation protocols.
 
@@ -77,8 +61,9 @@
 
 ## 3. Current Operational Status & Known Open Issues
 
-- **Deployment Status:** Frontend is deployed at `https://drmomenul.vercel.app`. Backend is currently a **local/research runtime** until Phase 8A/8B cloud deployment is complete.
-- **Known Open Product/UX Issue:** Phase 7C reduced irrelevant evidence exposure from 40% to 16% on its development benchmark, but did not eliminate the issue completely. This is classified as a **KNOWN OPEN PRODUCT/UX ISSUE** under active development, not a clinical safety validation result.
+- **Deployment Status:** Frontend is deployed at `https://drmomenul.vercel.app`. Backend is operational in production Docker (`drmomenul-api-test`, `linux/amd64`) exposed via Tailscale Funnel (`https://momenul.taile15170.ts.net`) with zero monthly hosting cost.
+- **Authoritative System State:** Fully detailed in [`docs/13-current-implementation-state.md`](./13-current-implementation-state.md).
+- **Known Open Product/UX Issue:** Phase 7C reduced irrelevant evidence exposure from 40% to 16% on its development benchmark. Unrelated candidate suppression policy is active in the frontend.
 - **Banglish Invariance:** The validated Candidate B configuration remains frozen. Any future vocabulary expansion will be treated as an isolated research candidate.
 
 ---

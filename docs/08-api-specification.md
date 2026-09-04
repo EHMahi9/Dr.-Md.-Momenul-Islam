@@ -1,6 +1,6 @@
 # API Specification: Dr. Md. Momenul Islam
 
-> **Governing Documents:** This specification is derived from the approved [Project Charter](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/00-project-charter.md), [Requirements Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md), [Safety Policy](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/03-safety-policy.md), [System Architecture](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/06-system-architecture.md), and [RAG Architecture](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/07-rag-architecture.md).
+> **Governing Documents:** This specification is derived from the approved [Project Charter](./00-project-charter.md), [Requirements Specification](./02-requirements.md), [Safety Policy](./03-safety-policy.md), [System Architecture](./06-system-architecture.md), and [RAG Architecture](./07-rag-architecture.md). For current verified implementation state and payload examples, see [Current Implementation State](./13-current-implementation-state.md).
 >
 > **Purpose:** Define the API contract between the frontend and backend so that both Track A (agent build) and Track B (manual build) implement the same external behavior.
 >
@@ -10,7 +10,7 @@
 > | Label | Meaning |
 > |---|---|
 > | **REQUIRED** | Mandatory for the current project |
-> | **TO BE DECIDED** | Decision not yet finalized |
+> | **IMPLEMENTED** | Verified active in production Docker container |
 > | **FUTURE** | Not part of current scope; recorded for future consideration |
 > | **OUT OF SCOPE** | Deliberately excluded |
 
@@ -21,7 +21,7 @@
 The API provides a **clear, stable contract** between the frontend and backend.
 
 ```
-Frontend  ──HTTP──▶  Backend API  ──▶  Safety / Retrieval / LLM / Validation
+Frontend  ──HTTP──▶  Backend API (/api/v1)  ──▶  Query Understanding / Reranking / Grounding
 ```
 
 The **backend** is solely responsible for:
@@ -48,7 +48,9 @@ The **backend** is solely responsible for:
 | Content type | `application/json` | REQUIRED |
 | Character encoding | UTF-8 (must support Bangla and English) | REQUIRED |
 
-For the initial implementation, `/api` without a version prefix is acceptable. A versioning strategy (e.g., `/api/v1`) will be adopted when the API stabilizes.
+* **Base URL:** `/api/v1` (versioned routing implemented and verified in production Docker container)
+* **Format:** JSON (`application/json`)
+* **Encoding:** UTF-8 (mandatory for Bengali script support)
 
 ---
 
@@ -56,9 +58,11 @@ For the initial implementation, `/api` without a version prefix is acceptable. A
 
 | Method | Path | Purpose | Status |
 |---|---|---|---|
-| `POST` | `/api/query` | Submit a health question and receive a structured response | REQUIRED |
-| `GET` | `/api/health` | Check backend service health | REQUIRED |
-| `POST` | `/api/admin/knowledge/sources` | Administrative knowledge-base management | FUTURE |
+| `GET` | `/api/v1/health` | Check backend service health, loaded models, active corpus chunks, and hashes | IMPLEMENTED & VERIFIED |
+| `POST` | `/api/v1/chat` | Unified multi-turn clinical consultation pipeline (Query understanding, Strategy 5 dual-anchor retrieval, BGE reranking, red-flag triage, passage grounding) | IMPLEMENTED & VERIFIED |
+| `GET` | `/api/v1/corpus` | Retrieve active clinical corpus metadata and 14 condition inventory | IMPLEMENTED & VERIFIED |
+| `POST` | `/api/v1/query/understand` | Slot extraction, ambiguity detection, red-flag classification, language routing | IMPLEMENTED & VERIFIED |
+| `POST` | `/api/v1/retrieve` | Direct Strategy 5 dual-anchor retrieval with cross-encoder reranking | IMPLEMENTED & VERIFIED |
 
 ---
 
@@ -796,7 +800,7 @@ Do not over-engineer versioning for the first prototype. A strategy will be adop
 | Secret protection | NFR-06, PR-03, BE-09 |
 | Privacy in errors/logs | PR-04 |
 
-> All requirement IDs verified against [`02-requirements.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md).
+> All requirement IDs verified against [`02-requirements.md`](./02-requirements.md).
 
 ---
 

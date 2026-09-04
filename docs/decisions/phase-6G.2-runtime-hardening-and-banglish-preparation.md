@@ -43,7 +43,7 @@ flowchart TD
 ### A. VERIFIED FACTS (Empirically Proven)
 1. **Timeout Consistency Hardening:**
    - Prior `CHAT_TIMEOUT_MS = 30000` aborted valid 45.5s backend inferences at $t=30.01\text{s}$.
-   - Updated `CHAT_TIMEOUT_MS = 75000` in [`frontend/src/services/api.ts`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/frontend/src/services/api.ts) provides a 50% safety buffer over worst-case local CPU latency while ensuring client requests never hang indefinitely.
+   - Updated `CHAT_TIMEOUT_MS = 75000` in [`frontend/src/services/api.ts`](../../frontend/src/services/api.ts) provides a 50% safety buffer over worst-case local CPU latency while ensuring client requests never hang indefinitely.
 2. **Semantic Equivalence of Sub-Batching (`batch_size=8, max_length=512`):**
    - Verified across English, Native Bangla, and Banglish test queries.
    - **All Top-5 Rankings Identical:** `True` (100% exact match in identical order).
@@ -54,7 +54,7 @@ flowchart TD
    - `preferred_language` cleanly propagates to `PromptBuilder` and `GenerationService`.
    - Automated tests in `backend/tests/test_api.py` passed with 37/37 green checks.
 4. **Header Truthfulness:**
-   - [`frontend/src/components/Header.tsx`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/frontend/src/components/Header.tsx) now explicitly renders `Offline / Unreachable` with rose indicator when `health === null`, eliminating hardcoded placeholder stats.
+   - [`frontend/src/components/Header.tsx`](../../frontend/src/components/Header.tsx) now explicitly renders `Offline / Unreachable` with rose indicator when `health === null`, eliminating hardcoded placeholder stats.
 
 ---
 
@@ -82,7 +82,7 @@ flowchart TD
 
 ### D. EXPERIMENT CANDIDATES (Development Preparation Only)
 The candidate proposals for Banglish retrieval improvement have been formulated under:
-[`research/phase_6G_2_runtime_and_banglish/banglish_candidate_proposals.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6G_2_runtime_and_banglish/banglish_candidate_proposals.json)
+[`research/phase_6G_2_runtime_and_banglish/banglish_candidate_proposals.json`](../../research/phase_6G_2_runtime_and_banglish/banglish_candidate_proposals.json)
 
 1. **Candidate A: Targeted Transliteration Expansion**  
    Deterministic normalization of high-frequency colloquial transliterations (`rokt` $\rightarrow$ `bleeding`, `pet kharap` $\rightarrow$ `diarrhea`, `shorir betha` $\rightarrow$ `fever/body ache`).
@@ -106,7 +106,7 @@ The candidate proposals for Banglish retrieval improvement have been formulated 
 ## 3. Development-Only Banglish Challenge Dataset
 
 Constructed from observed development failures and clinical edge cases:
-Persisted at: [`research/phase_6G_2_runtime_and_banglish/banglish_challenge_dataset.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6G_2_runtime_and_banglish/banglish_challenge_dataset.json)
+Persisted at: [`research/phase_6G_2_runtime_and_banglish/banglish_challenge_dataset.json`](../../research/phase_6G_2_runtime_and_banglish/banglish_challenge_dataset.json)
 
 | Case ID | Category | Challenge Query | Target Source | Primary Evaluation Goal |
 | :--- | :--- | :--- | :---: | :--- |

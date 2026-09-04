@@ -14,7 +14,7 @@ All analyses in this gate were performed strictly by re-scoring existing frozen 
 
 ## 2. Existing Source-Level Metric Definition & Exact Code Inspection
 
-Inspection of [`run_gate_5_9_locked_holdout_eval.py`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_9_optimization/run_gate_5_9_locked_holdout_eval.py) revealed the exact mechanism by which correctness was computed in Gate 5.9:
+Inspection of [`run_gate_5_9_locked_holdout_eval.py`](../../research/gate_5_9_optimization/run_gate_5_9_locked_holdout_eval.py) revealed the exact mechanism by which correctness was computed in Gate 5.9:
 
 ```python
 # Lines 92, 113, and 126 in run_gate_5_9_locked_holdout_eval.py:
@@ -43,11 +43,11 @@ Under source-level evaluation, retrieving `DOC-NHS-008-HYB-000` is scored as **1
 ## 4. Gold-Label Methodology
 
 To construct unbiased chunk-level gold labels:
-1. Every valid query in [`frozen_benchmark.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_8_retrieval_validation/benchmark/frozen_benchmark.json) (40 DEV queries + 40 LOCKED TEST queries) was independently inspected.
-2. The exact text of all 68 `HYBRID_600` chunks in [`provenance_manifest.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_9_optimization/chunks/hybrid_600/provenance_manifest.json) was audited.
+1. Every valid query in [`frozen_benchmark.json`](../../research/gate_5_8_retrieval_validation/benchmark/frozen_benchmark.json) (40 DEV queries + 40 LOCKED TEST queries) was independently inspected.
+2. The exact text of all 68 `HYBRID_600` chunks in [`provenance_manifest.json`](../../research/gate_5_9_optimization/chunks/hybrid_600/provenance_manifest.json) was audited.
 3. For each query, all chunks containing the necessary and sufficient clinical evidence to answer the query topic were mapped to `gold_chunk_ids`.
 4. Where multiple chunks legitimately contained relevant evidence (e.g. general first aid spanning overview and specific inhaler steps), all valid chunk IDs were included as acceptable targets.
-5. All 80 gold mappings and clinical rationales were recorded in [`chunk_gold_labels.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_9_optimization/chunk_gold_labels.json).
+5. All 80 gold mappings and clinical rationales were recorded in [`chunk_gold_labels.json`](../../research/gate_5_9_optimization/chunk_gold_labels.json).
 
 ---
 

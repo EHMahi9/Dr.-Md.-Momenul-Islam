@@ -16,7 +16,7 @@ All audits were conducted strictly on the **frozen Gate 5.9 retrieval rankings**
 
 ## 2. Gold-Label Integrity Verification
 
-An exhaustive audit of [`chunk_gold_labels.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_9_optimization/chunk_gold_labels.json) was conducted against the 68 chunks in [`provenance_manifest.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_9_optimization/chunks/hybrid_600/provenance_manifest.json) and [`frozen_benchmark.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_8_retrieval_validation/benchmark/frozen_benchmark.json):
+An exhaustive audit of [`chunk_gold_labels.json`](../../research/gate_5_9_optimization/chunk_gold_labels.json) was conducted against the 68 chunks in [`provenance_manifest.json`](../../research/gate_5_9_optimization/chunks/hybrid_600/provenance_manifest.json) and [`frozen_benchmark.json`](../../research/gate_5_8_retrieval_validation/benchmark/frozen_benchmark.json):
 
 - **Total Valid Benchmark Queries Audited**: 80 (40 DEV + 40 LOCKED TEST).
 - **Valid Gold Mappings**: **80 / 80 (100.0%)**.

@@ -45,7 +45,7 @@ flowchart TD
 | **Candidate B** (Context Disambiguation) | 58.33% (7/12) | 50.00% (6/12) | 41.67% (5/12) | 33.33% (4/12) | 0.4028 | **8.33%** | 66.67% |
 | **Candidate C** (Integrated Hybrid A+B) | **66.67% (8/12)** | **66.67% (8/12)** | **58.33% (7/12)** | **50.00% (6/12)** | **0.5486** | 16.67% | 66.67% |
 
-*All results recorded from [`research/phase_6H_banglish_retrieval_experiment/outputs/phase_6H_experiment_results.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6H_banglish_retrieval_experiment/outputs/phase_6H_experiment_results.json)*
+*All results recorded from [`research/phase_6H_banglish_retrieval_experiment/outputs/phase_6H_experiment_results.json`](../../research/phase_6H_banglish_retrieval_experiment/outputs/phase_6H_experiment_results.json)*
 
 ---
 

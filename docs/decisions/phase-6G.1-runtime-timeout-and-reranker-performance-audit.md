@@ -108,4 +108,4 @@ flowchart TD
 ## 5. Artifact Output Reference
 
 The raw empirical JSON output is persisted at:
-- [`research/phase_6G_runtime_performance/outputs/phase_6G.1_performance_audit.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6G_runtime_performance/outputs/phase_6G.1_performance_audit.json)
+- [`research/phase_6G_runtime_performance/outputs/phase_6G.1_performance_audit.json`](../../research/phase_6G_runtime_performance/outputs/phase_6G.1_performance_audit.json)

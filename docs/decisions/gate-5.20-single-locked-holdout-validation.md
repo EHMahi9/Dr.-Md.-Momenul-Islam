@@ -24,7 +24,7 @@ Prior to executing any retrieval or inference, all cryptographic checksums were 
 | **HYBRID_600 Corpus Manifest** | `71dca400059f624042fd5a1cc8be94010ce9553e3bde1428e73ad236ed79da3f` | **PASS** |
 | **Chunk Gold Labels** | `df881fa676d38d46c78e6ade1e9e69c0b2cf676b33c6b655981f673f123844ae` | **PASS** |
 
-Integrity report saved to [`research/gate_5_20_locked_holdout_validation/integrity/gate_5_20_integrity_verification.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_20_locked_holdout_validation/integrity/gate_5_20_integrity_verification.json).
+Integrity report saved to [`research/gate_5_20_locked_holdout_validation/integrity/gate_5_20_integrity_verification.json`](../../research/gate_5_20_locked_holdout_validation/integrity/gate_5_20_integrity_verification.json).
 
 ---
 
@@ -72,7 +72,7 @@ Of the 40 holdout queries, exactly 20 queries failed to place their gold evidenc
      - For headache queries (`TEST-HEA-05`, `TEST-HEA-07`, `TEST-HEA-08`), `DOC-NHS-009-HYB-003` outranked `DOC-NHS-009-HYB-002`.
      - For fever queries (`TEST-FEV-08`, `TEST-FEV-09`), `DOC-NHS-010-HYB-004` outranked `DOC-NHS-010-HYB-003`.
 
-Diagnostics data saved to [`research/gate_5_20_locked_holdout_validation/diagnostics/gate_5_20_failure_decomposition.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_20_locked_holdout_validation/diagnostics/gate_5_20_failure_decomposition.json).
+Diagnostics data saved to [`research/gate_5_20_locked_holdout_validation/diagnostics/gate_5_20_failure_decomposition.json`](../../research/gate_5_20_locked_holdout_validation/diagnostics/gate_5_20_failure_decomposition.json).
 
 ---
 

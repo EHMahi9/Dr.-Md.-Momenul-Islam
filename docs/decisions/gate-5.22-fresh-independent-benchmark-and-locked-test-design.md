@@ -24,12 +24,12 @@ Furthermore, empirical audit of the previous test annotations revealed a critica
 - **Frozen Candidate Configuration (unchanged from Gate 5.21):**  
   SHA-256: `07f031da533d47666fb5abd242f8db47b90dc584a92c0b3f399abaaf51c02736`
 - **Fresh Locked Benchmark:**  
-  Path: [`research/gate_5_22_fresh_benchmark/benchmark/fresh_locked_benchmark.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_22_fresh_benchmark/benchmark/fresh_locked_benchmark.json)  
+  Path: [`research/gate_5_22_fresh_benchmark/benchmark/fresh_locked_benchmark.json`](../../research/gate_5_22_fresh_benchmark/benchmark/fresh_locked_benchmark.json)  
   SHA-256: `a0267355615d9094fd9698ff0bbb5d9aa69311a9c822e1cd47ac12fc08573ef6`
 - **Corpus Independence Report:**  
-  Path: [`research/gate_5_22_fresh_benchmark/corpus_audit/corpus_independence_report.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_22_fresh_benchmark/corpus_audit/corpus_independence_report.json)
+  Path: [`research/gate_5_22_fresh_benchmark/corpus_audit/corpus_independence_report.json`](../../research/gate_5_22_fresh_benchmark/corpus_audit/corpus_independence_report.json)
 - **Integrity Report:**  
-  Path: [`research/gate_5_22_fresh_benchmark/integrity/benchmark_integrity_report.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_22_fresh_benchmark/integrity/benchmark_integrity_report.json)
+  Path: [`research/gate_5_22_fresh_benchmark/integrity/benchmark_integrity_report.json`](../../research/gate_5_22_fresh_benchmark/integrity/benchmark_integrity_report.json)
 
 ---
 

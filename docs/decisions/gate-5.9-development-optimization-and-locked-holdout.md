@@ -41,7 +41,7 @@ The benchmark enforces strict partition boundaries:
 
 ## 4. Corpus Hygiene & Metadata Exclusion Rule
 
-To prevent dense embedding false matches on non-medical boilerplate, a deterministic metadata exclusion filter was implemented in [`hybrid_chunker.py`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_9_optimization/hybrid_chunker.py):
+To prevent dense embedding false matches on non-medical boilerplate, a deterministic metadata exclusion filter was implemented in [`hybrid_chunker.py`](../../research/gate_5_9_optimization/hybrid_chunker.py):
 - Lines matching `^Page last reviewed:`, `^Next review due:`, `^Media last reviewed:`, or `^Media review due:` are excluded from chunk formation.
 - All legitimate clinical text, headings, bullet points, and emergency callouts remain 100% intact.
 - Structural losslessness on clinical content: **100% preserved**.
@@ -88,7 +88,7 @@ Subject to the hard constraint: **Must preserve 100% of structural boundaries (0
 
 `HYBRID_600` achieved the highest composite engineering score (\(CEI_{DEV} = 71.67\)), delivering **85.0% Recall@1, 0.9167 MRR, and 100% Bangla / 70% Banglish Recall@1** on development data while maintaining 100% structural boundary safety.
 
-The configuration was frozen in [`frozen_config_manifest.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_9_optimization/frozen_config_manifest.json) before running the locked holdout evaluation:
+The configuration was frozen in [`frozen_config_manifest.json`](../../research/gate_5_9_optimization/frozen_config_manifest.json) before running the locked holdout evaluation:
 - **Strategy**: `HYBRID_600` (target 600 chars, max 750 chars).
 - **Corpus Hygiene**: Exclude review metadata lines.
 - **Dense Embedding Model**: `intfloat/multilingual-e5-small` (384-dim, normalized, `"passage: "` and `"query: "` prefixes).
@@ -175,8 +175,8 @@ Across all 80 valid queries:
 - **Benchmark Hash**: `7debd4b7d804938d4c7ecf8f414f51d936830b5a6d9d62ebfcaedde1874c8a81`
 - **Frozen Config Hash**: `c04495e865f128bc5f67ea55b6efcfec6e8ec9ee8109d3b37937fe5d2f33c373`
 - **HYBRID_600 Chunks Hash**: `c04495e865f128bc5f67ea55b6efcfec6e8ec9ee8109d3b37937fe5d2f33c373`
-- **DEV Eval Output**: [`research/gate_5_9_optimization/evaluations/gate_5_9_dev_evaluation.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_9_optimization/evaluations/gate_5_9_dev_evaluation.json)
-- **Locked Holdout Eval Output**: [`research/gate_5_9_optimization/evaluations/gate_5_9_locked_holdout_evaluation.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_9_optimization/evaluations/gate_5_9_locked_holdout_evaluation.json)
+- **DEV Eval Output**: [`research/gate_5_9_optimization/evaluations/gate_5_9_dev_evaluation.json`](../../research/gate_5_9_optimization/evaluations/gate_5_9_dev_evaluation.json)
+- **Locked Holdout Eval Output**: [`research/gate_5_9_optimization/evaluations/gate_5_9_locked_holdout_evaluation.json`](../../research/gate_5_9_optimization/evaluations/gate_5_9_locked_holdout_evaluation.json)
 
 ---
 

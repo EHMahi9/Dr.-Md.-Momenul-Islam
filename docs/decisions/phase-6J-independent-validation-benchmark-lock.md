@@ -5,9 +5,9 @@
 **Corpus Manifest (SHA-256):** `44D0602F730D6460E6FEFA431BD5C09005B48CE92B47D02832532E5868D4AA58` (119 Chunks, 14 NHS Sources)  
 **Candidate B Freeze (SHA-256):** `92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A`  
 **Parent Strategy 5 (SHA-256):** `1cc216db046264d52bb05616e20123c71b77b56623b17a14c018d0e743ad86ae`  
-**Locked Benchmark File:** [`research/phase_6J_locked_validation/locked_validation_benchmark.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6J_locked_validation/locked_validation_benchmark.json)  
+**Locked Benchmark File:** [`research/phase_6J_locked_validation/locked_validation_benchmark.json`](../../research/phase_6J_locked_validation/locked_validation_benchmark.json)  
 **Locked Benchmark (SHA-256):** `976D62DA7DB7872303E755910F286E6F895703012F7934E2809544BC1820E1A5`  
-**Integrity Report:** [`research/phase_6J_locked_validation/lock_integrity_report.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6J_locked_validation/lock_integrity_report.json)  
+**Integrity Report:** [`research/phase_6J_locked_validation/lock_integrity_report.json`](../../research/phase_6J_locked_validation/lock_integrity_report.json)  
 
 ---
 
@@ -62,7 +62,7 @@ The locked benchmark contains **40 total cases** structured across 4 language mo
 - **Near-Duplicate Overlaps:** None. All queries feature novel phrasings, diverse symptoms, varied colloquial spelling, or specific pediatric/first-aid angles.
 
 ### B. Gold Provenance Audit (VERIFIED FACT)
-- Every one of the 36 in-corpus validation cases was audited against [`promoted_corpus_manifest.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6C/promoted_corpus_manifest.json).
+- Every one of the 36 in-corpus validation cases was audited against [`promoted_corpus_manifest.json`](../../research/phase_6C/promoted_corpus_manifest.json).
 - **Target Source Verification:** 100% of specified targets (`DOC-NHS-004` through `DOC-NHS-017`) exist in the active 14-condition corpus.
 - **Gold Chunk Enumeration:** Each case in `locked_validation_benchmark.json` contains the complete list of valid chunk IDs for its parent document (e.g. `DOC-NHS-004` $\to 18$ chunks, `DOC-NHS-015` $\to 16$ chunks, `DOC-NHS-010` $\to 7$ chunks).
 - **Intuition-Based Assignments:** **0**. All targets are grounded in authoritative NHS document titles and clinical scopes.
@@ -143,7 +143,7 @@ Step 6: Verify Safety Constraint:
 ## 7. Single-Shot Validation Runner & Preflight Firewall
 
 ### Runner Configuration (VERIFIED FACT)
-[`research/phase_6J_locked_validation/run_locked_validation.py`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/phase_6J_locked_validation/run_locked_validation.py) is equipped with:
+[`research/phase_6J_locked_validation/run_locked_validation.py`](../../research/phase_6J_locked_validation/run_locked_validation.py) is equipped with:
 - **Locked Benchmark Hash:** `976D62DA7DB7872303E755910F286E6F895703012F7934E2809544BC1820E1A5`
 - **Candidate B Freeze Hash:** `92224DC6CB0F81C92B8A2869AC562D6CC63B291E36D373F6FE22B524F594EC8A`
 - **Corpus Manifest Hash:** `44D0602F730D6460E6FEFA431BD5C09005B48CE92B47D02832532E5868D4AA58`
@@ -169,11 +169,11 @@ Step 6: Verify Safety Constraint:
 ## 9. Historical Record Preservation
 
 All previous decision records are preserved intact:
-- [`phase-6H-banglish-retrieval-improvement.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6H-banglish-retrieval-improvement.md)
-- [`phase-6H.1-banglish-benchmark-integrity-audit.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6H.1-banglish-benchmark-integrity-audit.md)
-- [`phase-6H.2-candidate-selection-correction.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6H.2-candidate-selection-correction.md)
-- [`phase-6I-candidate-B-freeze-and-validation-preparation.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6I-candidate-B-freeze-and-validation-preparation.md)
-- [`phase-6I-unsupported-banglish-query-observation.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/decisions/phase-6I-unsupported-banglish-query-observation.md)
+- [`phase-6H-banglish-retrieval-improvement.md`](../decisions/phase-6H-banglish-retrieval-improvement.md)
+- [`phase-6H.1-banglish-benchmark-integrity-audit.md`](../decisions/phase-6H.1-banglish-benchmark-integrity-audit.md)
+- [`phase-6H.2-candidate-selection-correction.md`](../decisions/phase-6H.2-candidate-selection-correction.md)
+- [`phase-6I-candidate-B-freeze-and-validation-preparation.md`](../decisions/phase-6I-candidate-B-freeze-and-validation-preparation.md)
+- [`phase-6I-unsupported-banglish-query-observation.md`](../decisions/phase-6I-unsupported-banglish-query-observation.md)
 
 ---
 

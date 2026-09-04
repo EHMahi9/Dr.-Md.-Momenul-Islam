@@ -1,6 +1,6 @@
 # User Personas: Dr. Md. Momenul Islam
 
-> **Governing Documents:** This document is derived from the approved [Project Charter](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/00-project-charter.md), [Problem Statement](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/01-problem-statement.md), [Requirements Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md), and [Safety Policy](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/03-safety-policy.md).
+> **Governing Documents:** This document is derived from the approved [Project Charter](./00-project-charter.md), [Problem Statement](./01-problem-statement.md), [Requirements Specification](./02-requirements.md), and [Safety Policy](./03-safety-policy.md). For current system state, see [Current Implementation State](./13-current-implementation-state.md).
 >
 > **Purpose:** Define realistic users and stakeholders for the system to guide design, safety, and evaluation decisions.
 
@@ -232,7 +232,7 @@ The following considerations apply across all user personas and should inform in
 * Need for clear, visible source attribution.
 * Need for clear urgency guidance.
 
-Exact accessibility standards and UI requirements will be defined in [`10-ui-specification.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/10-ui-specification.md).
+Exact accessibility standards and UI requirements will be defined in [`10-ui-specification.md`](./10-ui-specification.md).
 
 ---
 
@@ -248,4 +248,4 @@ Exact accessibility standards and UI requirements will be defined in [`10-ui-spe
 | Healthcare Professional Reviewer | Non-User Stakeholder | SR-03, SR-08, SRC-02, NFR-09 |
 | Project Developer / Maintainer | Non-User Stakeholder | NFR-05, NFR-06, KB-01–KB-06, PR-03 |
 
-> All requirement IDs have been verified against [`02-requirements.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md).
+> All requirement IDs have been verified against [`02-requirements.md`](./02-requirements.md).

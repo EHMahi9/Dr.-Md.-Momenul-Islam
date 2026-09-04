@@ -1,6 +1,6 @@
 # System Architecture: Dr. Md. Momenul Islam
 
-> **Governing Documents:** This architecture is derived from the approved [Project Charter](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/00-project-charter.md), [Problem Statement](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/01-problem-statement.md), [Requirements Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md), [Safety Policy](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/03-safety-policy.md), [User Personas](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/04-user-personas.md), and [User Stories](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/05-user-stories.md).
+> **Governing Documents:** This architecture is derived from the approved [Project Charter](./00-project-charter.md), [Problem Statement](./01-problem-statement.md), [Requirements Specification](./02-requirements.md), [Safety Policy](./03-safety-policy.md), [User Personas](./04-user-personas.md), and [User Stories](./05-user-stories.md). For current deployment architecture and empirical state, see [Current Implementation State](./13-current-implementation-state.md).
 >
 > **Purpose:** Define the logical system architecture that both implementation tracks (Track A and Track B) must follow.
 >
@@ -74,18 +74,19 @@ flowchart TD
 
 | Attribute | Detail |
 |---|---|
-| **Technology** | HTML, CSS, Vanilla JavaScript |
-| **Status** | REQUIRED |
+| **Technology** | React 18, Vite 5, TypeScript 5, Tailwind CSS 3.4, Lucide React |
+| **Status** | IMPLEMENTED (Track A) |
+| **Design Paradigm** | Calm Clinical Minimalism (Progressive Disclosure) |
 
 **Responsibilities:**
 * Present the application interface (landing page, chat interface).
-* Accept user questions in Bangla or English.
-* Display AI-generated responses.
-* Display uncertainty communication.
-* Display warning signs and urgency guidance.
-* Display source attribution.
+* Accept user questions in English, Native Bangla (বাংলা), or Banglish.
+* Display retrieved clinical evidence and grounded summaries.
+* Display uncertainty communication and retrieval confidence states.
+* Display warning signs and urgency guidance (high-visibility bilingual emergency override).
+* Display source attribution with OGL v3.0 license clause.
 * Display safety disclaimers.
-* Communicate with the backend exclusively through HTTP.
+* Communicate with the backend exclusively through HTTP (`/api/v1/chat`, `/api/v1/health`).
 
 **The frontend must NOT:**
 * Contain LLM API keys or any privileged secrets.
@@ -93,7 +94,7 @@ flowchart TD
 * Implement medical safety policy independently of the backend.
 * Be the source of truth for safety decisions.
 
-> The exact UI layout, visual design, and component specification are defined in [`10-ui-specification.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/10-ui-specification.md).
+> The exact UI layout, visual design, and component specification are defined in [`10-ui-specification.md`](./10-ui-specification.md).
 
 ---
 
@@ -117,7 +118,7 @@ flowchart TD
 
 The backend contains the **core application logic** and serves as the single orchestration point.
 
-> The exact API endpoints and response contracts are defined in [`08-api-specification.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/08-api-specification.md).
+> The exact API endpoints and response contracts are defined in [`08-api-specification.md`](./08-api-specification.md).
 
 ---
 
@@ -125,7 +126,7 @@ The backend contains the **core application logic** and serves as the single orc
 
 | Attribute | Detail |
 |---|---|
-| **Governing Document** | [Safety Policy](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/03-safety-policy.md) |
+| **Governing Document** | [Safety Policy](./03-safety-policy.md) |
 | **Status** | REQUIRED (exact medical criteria: RESEARCH REQUIRED) |
 
 The safety layer is a **first-class architectural component**, not an afterthought.
@@ -370,7 +371,7 @@ Secrets must **not** be hard-coded. Non-secret configuration should also be exte
 
 ## 15. Failure Handling
 
-The architecture defines **safe behavior** for every critical failure scenario, following [Safety Policy §13](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/03-safety-policy.md).
+The architecture defines **safe behavior** for every critical failure scenario, following [Safety Policy §13](./03-safety-policy.md).
 
 | Failure Scenario | Required Behavior | Prohibited Behavior |
 |---|---|---|
@@ -677,7 +678,7 @@ Frontend → Backend API → Safety → Retrieval → LLM → Validation → Res
 
 ## 22. Architecture Boundaries — Explicit Exclusions
 
-The following are **OUT OF SCOPE** for this architecture unless the [Project Charter](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/00-project-charter.md) is formally amended:
+The following are **OUT OF SCOPE** for this architecture unless the [Project Charter](./00-project-charter.md) is formally amended:
 
 | Excluded Capability | Status |
 |---|---|

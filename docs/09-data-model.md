@@ -1,6 +1,6 @@
 # Data Model: Dr. Md. Momenul Islam
 
-> **Governing Documents:** This document is derived from the approved [Project Charter](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/00-project-charter.md), [Requirements Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md), [Safety Policy](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/03-safety-policy.md), [System Architecture](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/06-system-architecture.md), [RAG Architecture](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/07-rag-architecture.md), and [API Specification](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/08-api-specification.md).
+> **Governing Documents:** This document is derived from the approved [Project Charter](./00-project-charter.md), [Requirements Specification](./02-requirements.md), [Safety Policy](./03-safety-policy.md), [System Architecture](./06-system-architecture.md), [RAG Architecture](./07-rag-architecture.md), and [API Specification](./08-api-specification.md). For current system state, see [Current Implementation State](./13-current-implementation-state.md).
 >
 > **Purpose:** Define the logical data model required by the current system, keeping it simple, understandable, and aligned with both implementation tracks.
 >
@@ -627,7 +627,7 @@ Both implementations must share the **same logical data model**.
 | EvaluationRun | NFR-09 |
 | EvaluationResult | NFR-09 |
 
-> All requirement IDs verified against [`02-requirements.md`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/docs/02-requirements.md).
+> All requirement IDs verified against [`02-requirements.md`](./02-requirements.md).
 
 ---
 

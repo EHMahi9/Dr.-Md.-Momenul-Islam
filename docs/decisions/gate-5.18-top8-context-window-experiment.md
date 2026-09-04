@@ -28,7 +28,7 @@ The Gate 5.16 / Gate 5.17 frozen pipeline baseline was reproduced with exact num
 | **Final Chunk Recall@5** | 35 / 40 (87.50%) | **35 / 40 (87.50%)** | **PASS** |
 | **Final Chunk MRR** | 0.6150 | **0.6150** | **PASS** |
 
-*Verification Artifact*: [`research/gate_5_18_top8_context_experiment/baseline/dev_baseline_top5_results.json`](file:///d:/my-ai-project/Dr.%20Md.%20Momenul%20Islam/research/gate_5_18_top8_context_experiment/baseline/dev_baseline_top5_results.json)
+*Verification Artifact*: [`research/gate_5_18_top8_context_experiment/baseline/dev_baseline_top5_results.json`](../../research/gate_5_18_top8_context_experiment/baseline/dev_baseline_top5_results.json)
 
 ---
 
